@@ -25,7 +25,7 @@ export const topAmmunition: AmmunitionCategory[] = [
   {
     id: 2,
     name: ".22 Long Rifle",
-    slug: "22-lr",
+    slug: "22-long-rifle",
     description: "Affordable training and small game ammunition",
     icon: Circle,
     salesCount: "2.2M+",
@@ -44,8 +44,8 @@ export const topAmmunition: AmmunitionCategory[] = [
   },
   {
     id: 4,
-    name: "5.56×45mm NATO",
-    slug: "556-nato",
+    name: "5.56×45mm NATO / .223 Remington",
+    slug: "556-223",
     description: "Standard AR-15 platform ammunition",
     icon: Target,
     salesCount: "1.6M+",
@@ -54,8 +54,8 @@ export const topAmmunition: AmmunitionCategory[] = [
   },
   {
     id: 5,
-    name: ".308 Winchester",
-    slug: "308-winchester",
+    name: ".308 Winchester / 7.62×51mm NATO",
+    slug: "308-762",
     description: "Precision rifle and hunting favorite",
     icon: Focus,
     salesCount: "1.2M+",
@@ -94,8 +94,8 @@ export const topAmmunition: AmmunitionCategory[] = [
   },
   {
     id: 9,
-    name: ".357 Magnum",
-    slug: "357-magnum",
+    name: ".357 Magnum / .38 Special",
+    slug: "357-38-special",
     description: "Versatile revolver ammunition",
     icon: Flame,
     salesCount: "650K+",
@@ -104,8 +104,8 @@ export const topAmmunition: AmmunitionCategory[] = [
   },
   {
     id: 10,
-    name: "7.62×39mm",
-    slug: "762x39",
+    name: "7.62×39mm Soviet",
+    slug: "762x39-soviet",
     description: "AK-platform standard ammunition",
     icon: Zap,
     salesCount: "620K+",
@@ -194,8 +194,8 @@ export const topAmmunition: AmmunitionCategory[] = [
   },
   {
     id: 19,
-    name: ".223 Match Grade",
-    slug: "223-match",
+    name: ".223 Remington Match & Varmint",
+    slug: "223-match-varmint",
     description: "Precision varmint and match loads",
     icon: Focus,
     salesCount: "240K+",
