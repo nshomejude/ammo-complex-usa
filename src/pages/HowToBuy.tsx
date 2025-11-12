@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ShoppingCart, UserPlus, FileCheck, CreditCard, Package, CheckCircle, ArrowRight } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -321,6 +322,8 @@ const HowToBuy = () => {
           </CardContent>
         </Card>
       </main>
+
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
@@ -292,6 +293,8 @@ const CategoryPage = () => {
           </div>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 };

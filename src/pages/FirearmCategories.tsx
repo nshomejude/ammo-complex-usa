@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { FirearmCategoryCard } from "@/components/FirearmCategoryCard";
 import { firearmCategories } from "@/data/firearmCategories";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -89,6 +90,8 @@ const FirearmCategories = () => {
           </div>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 };

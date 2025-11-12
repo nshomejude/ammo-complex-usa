@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Package, Clock, MapPin, DollarSign, AlertCircle, CheckCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -189,6 +190,8 @@ const Shipping = () => {
           </CardContent>
         </Card>
       </main>
+
+      <Footer />
     </div>
   );
 };

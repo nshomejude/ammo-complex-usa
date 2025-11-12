@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, FileCheck, AlertTriangle, HelpCircle, CheckCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -234,6 +235,8 @@ const FirearmsLicense = () => {
           </AlertDescription>
         </Alert>
       </main>
+
+      <Footer />
     </div>
   );
 };

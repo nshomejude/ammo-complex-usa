@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { FirearmCard } from "@/components/FirearmCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -188,14 +189,7 @@ const FirearmCategoryPage = () => {
         )}
       </section>
 
-      <footer className="border-t border-border bg-card mt-16">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center text-sm text-muted-foreground">
-            <p className="mb-2">© 2024 Arms Complex. All rights reserved.</p>
-            <p>Licensed Federal Firearms Dealer | Legal Sales to Authorized Buyers Only</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

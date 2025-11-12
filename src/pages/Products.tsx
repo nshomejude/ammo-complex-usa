@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { Input } from "@/components/ui/input";
@@ -156,6 +157,8 @@ const Products = () => {
           )}
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 };

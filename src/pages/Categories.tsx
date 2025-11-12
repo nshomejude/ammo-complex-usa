@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { TopSellingCard } from "@/components/TopSellingCard";
 import { topAmmunition } from "@/data/topAmmunition";
 import { products } from "@/data/products";
@@ -261,6 +262,8 @@ const Categories = () => {
           </div>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 };

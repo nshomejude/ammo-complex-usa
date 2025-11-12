@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, FileText, MapPin, AlertTriangle } from "lucide-react";
 
@@ -171,6 +172,8 @@ const About = () => {
           </CardContent>
         </Card>
       </main>
+
+      <Footer />
     </div>
   );
 };
