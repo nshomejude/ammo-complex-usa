@@ -3321,7 +3321,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Full metal jacket training ammunition",
     manufacturer: "Federal",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Federal Champion .45 ACP delivers outstanding value for high-volume shooters. Featuring the classic 230-grain full metal jacket bullet design trusted for over a century, this ammunition provides reliable performance for training and target shooting.",
+    longDescription: "Federal Champion 230-grain Full Metal Jacket ammunition represents exceptional value in .45 ACP training rounds without compromising on quality or reliability. Manufactured by Federal Premium Ammunition, a company with over 100 years of ammunition production excellence, Champion loads deliver consistent performance shooters can depend on for practice sessions, competition training, and recreational shooting. The 230-grain bullet weight represents the traditional .45 ACP standard originally specified by John Moses Browning for the legendary 1911 pistol, providing authentic full-power performance and recoil characteristics. Each cartridge features a full metal jacket bullet with a complete copper alloy jacket over a lead core, ensuring reliable feeding in all .45 ACP platforms from classic 1911 pistols to modern polymer-framed designs. The rounded bullet profile feeds smoothly through magazines and up feed ramps, minimizing potential malfunctions. Federal's quality control processes include dimensional checking of every component, ensuring consistent overall cartridge length for reliable chambering. The new production brass cases feature Federal's proprietary drawing and annealing processes, creating cases with uniform wall thickness and consistent internal capacity. These high-quality brass cases are fully reloadable, providing additional value for handloaders who wish to extend their ammunition budget. Clean-burning powder formulations minimize fouling and residue buildup in your firearm, reducing cleaning time and extending maintenance intervals. Federal's non-corrosive primers provide reliable ignition across a wide temperature range, from cold winter range sessions to hot summer days. Whether you're practicing fundamentals, running drills, or shooting informal competitions, Federal Champion provides the performance you need at a price that encourages regular practice.",
+    features: [
+      "Classic 230-grain full metal jacket bullet - traditional .45 ACP standard weight",
+      "Complete copper alloy jacket over lead core for reliable feeding",
+      "Federal-quality brass cases with consistent dimensions",
+      "Non-corrosive primers for reliable all-weather ignition",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Reloadable brass cases for handloading economy",
+      "Consistent velocities - approximately 830 fps from 5-inch barrel",
+      "Rounded bullet profile for smooth magazine feeding",
+      "Manufactured in Federal's U.S. facilities with strict quality control",
+      "Boxer-primed for easy decapping and reloading"
+    ],
+    benefits: [
+      "Outstanding value pricing for high-volume training and practice",
+      "Federal's renowned quality control ensures consistency",
+      "Reduced fouling means less cleaning and more shooting time",
+      "Reloadable brass extends ammunition budget significantly",
+      "Reliable functioning in all .45 ACP pistols and carbines",
+      "Authentic full-power .45 ACP ballistics for realistic training"
+    ],
+    useCases: [
+      "Target practice and recreational plinking at indoor and outdoor ranges",
+      "Competition training for USPSA, IDPA, and bullseye shooting",
+      "Defensive handgun training courses and drills",
+      "New shooter familiarization with .45 ACP recoil and handling",
+      "Brass collection for reloading projects",
+      "High-volume shooting sessions where cost per round matters"
+    ],
+    technicalDetails: "Federal Champion .45 ACP 230-grain FMJ ammunition is loaded to standard .45 ACP pressure specifications as established by SAAMI (Sporting Arms and Ammunition Manufacturers' Institute). From a standard 5-inch barrel, this load achieves approximately 830 feet per second muzzle velocity, delivering roughly 352 foot-pounds of muzzle energy. The 230-grain bullet features a complete copper alloy jacket approximately 0.015 inches thick encasing a lead core, with the jacket extending from the nose to the base. This full metal jacket construction ensures reliable feeding while preventing lead fouling in the barrel. The bullet diameter measures 0.451 inches with tight tolerances for consistent accuracy. Cartridge overall length is held to 1.275 inches for reliable feeding in all .45 ACP chambers and magazines. Brass cases are drawn from new production 70-30 cartridge brass (copper-zinc alloy) with wall thickness controlled for uniform internal capacity. Case heads are properly hardened to prevent primer pocket expansion during firing. Each case is formed through multiple drawing operations followed by annealing to relieve stress and ensure proper neck tension. The large pistol primer pockets accept standard large pistol primers and are formed with precise depth and diameter specifications. Powder selection emphasizes consistent burn rate for reliable cycling in both full-size pistols and compact carry guns. From quality pistols with well-maintained barrels, expect accuracy in the 2-4 inch range at 25 yards.",
+    whyChoose: "Choose Federal Champion when you want proven .45 ACP ammunition from America's most respected ammunition manufacturer at an outstanding value price. Federal has been producing quality ammunition since 1922, and that century of experience is evident in every box of Champion. Unlike bargain import brands that may use inconsistent components or less stringent quality control, Federal Champion is manufactured entirely in the United States using American-made components and Federal's rigorous production standards. The 230-grain bullet weight represents authentic .45 ACP ballistics as originally designed, providing realistic recoil and handling characteristics essential for effective training. Federal's clean-burning powder formulation is a significant advantage over cheaper alternatives, keeping your pistol cleaner and functioning reliably through extended shooting sessions. The reloadable brass cases add substantial value - many shooters report reloading Federal brass five or more times with proper care. Federal's customer service and technical support are exceptional, with knowledgeable staff available to answer questions about ammunition selection and performance. When you choose Federal Champion, you're choosing ammunition that delivers reliable performance, consistent accuracy, and outstanding value - exactly what serious shooters need for productive practice sessions. Every box represents Federal's commitment to making quality ammunition accessible to all shooters.",
+    seoKeywords: [
+      "federal champion 45 acp",
+      "45 acp ammo for sale",
+      "230 grain 45 acp",
+      "buy 45 acp ammunition online",
+      "45 acp fmj bulk",
+      "federal 45 acp training ammo",
+      "1911 ammunition",
+      "45 acp target ammo",
+      "cheap 45 acp ammo",
+      "federal 45 auto",
+      "45 acp range ammo",
+      "230gr 45 acp",
+      "federal champion pistol ammo",
+      "45 acp practice ammo",
+      "bulk 45 acp ammunition"
+    ]
   },
   {
     id: "45acp-federal-american-eagle-230",
@@ -3334,7 +3383,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Reliable range and training ammunition",
     manufacturer: "Federal",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Federal American Eagle delivers premium-quality .45 ACP training ammunition at competitive pricing. Loaded with the same attention to detail as Federal's premium hunting and defense lines, American Eagle provides match-grade consistency for serious practice.",
+    longDescription: "Federal American Eagle 230-grain Full Metal Jacket ammunition represents the perfect balance of performance and value for dedicated .45 ACP shooters. Part of Federal's extensive American Eagle line designed specifically for high-volume shooting, this ammunition is manufactured using the same precision equipment and quality components as Federal's premium hunting and defense ammunition, but packaged in cost-effective quantities for training and competition use. The 230-grain full metal jacket bullet has been the standard .45 ACP projectile for over a century, originally specified for the U.S. military's adoption of the 1911 pistol. This traditional weight provides authentic .45 ACP ballistics and recoil characteristics, essential for effective training that translates directly to defensive ammunition performance. Each bullet features a precision-formed copper alloy jacket completely encasing a carefully alloyed lead core, ensuring consistent weight and optimal feeding reliability. The jacket profile is specifically engineered for smooth feeding from all magazine types, from single-stack 1911 magazines to modern double-stack high-capacity designs. Federal's manufacturing processes include multiple quality checkpoints throughout production, with dimensional verification, weight sorting, and function testing ensuring every round meets exacting standards. The brass cases are produced from high-quality cartridge brass using Federal's proprietary deep-drawing process, creating cases with uniform wall thickness crucial for consistent internal volume and pressure characteristics. These cases are fully reloadable and highly prized by handloaders for their consistency and durability - many reloaders report successful reloading of Federal brass for ten or more cycles with proper sizing and annealing. The powder selected for American Eagle .45 ACP loads burns cleanly and completely, minimizing unburned residue that can accumulate in the action and on the breechface. Federal's non-corrosive, non-mercuric primers provide instant, reliable ignition even in adverse conditions, ensuring your pistol functions flawlessly through hundreds of rounds. Whether you're practicing for competition, training with your carry pistol, or simply enjoying range time with a classic .45 caliber pistol, Federal American Eagle delivers the consistency and reliability you need.",
+    features: [
+      "Premium 230-grain full metal jacket bullets for traditional .45 ACP ballistics",
+      "Federal-quality brass cases manufactured to tight tolerances",
+      "Non-corrosive, non-mercuric primers for all-weather reliability",
+      "Clean-burning powders reduce fouling and extend cleaning intervals",
+      "Precision-formed bullets with optimal feeding profile",
+      "Consistent velocities lot-to-lot for predictable point of impact",
+      "Fully reloadable high-quality brass cases",
+      "Approximately 890 fps from standard 5-inch barrel",
+      "Manufactured in USA with American-made components",
+      "Large pistol Boxer primers for reloading convenience"
+    ],
+    benefits: [
+      "Match-grade consistency enables precision practice and competition",
+      "Same manufacturing quality as Federal's premium ammunition lines",
+      "Reduced fouling keeps pistols running cleaner longer",
+      "Exceptional reliability across all .45 ACP platforms",
+      "Reloadable brass significantly reduces long-term ammunition costs",
+      "Federal's industry-leading customer service and support"
+    ],
+    useCases: [
+      "USPSA, IDPA, and practical pistol competition practice and matches",
+      "Concealed carry qualification and training courses",
+      "Bullseye and precision pistol shooting",
+      "Law enforcement qualification and training",
+      "Defensive pistol courses and tactical training",
+      "General range practice and recreational shooting"
+    ],
+    technicalDetails: "Federal American Eagle .45 ACP 230-grain FMJ is loaded to full-power standard pressure specifications per SAAMI guidelines. From a 5-inch barrel, this load achieves approximately 890 feet per second muzzle velocity, generating around 405 foot-pounds of muzzle energy. The full metal jacket bullet is constructed with a swaged lead core inside a copper alloy gilding metal jacket, with the jacket completely enclosing the bullet except at the base. Bullet diameter is held to 0.451 inches ±0.001 inch for optimal barrel fit and accuracy. The rounded ogive design with gentle shoulder angle ensures smooth feeding from all magazine types and reliable chambering in tight match-grade barrels. Overall cartridge length is maintained at 1.275 inches to ensure reliable feeding while maximizing powder capacity. The brass cases are manufactured from 70-30 cartridge brass (70% copper, 30% zinc) through multiple drawing operations that progressively form the case shape while work-hardening the brass. Federal's proprietary annealing process then relieves stress in the case neck and shoulder while maintaining proper hardness in the case head and body. Case wall thickness is controlled to provide consistent internal volume within ±0.5 grains of water capacity variation. Web thickness at the case head is engineered to safely contain chamber pressures while allowing proper primer seating depth. Primer pockets are formed with precision broaching tools to exact depth and diameter, accepting standard large pistol primers. The powder charge is measured volumetrically on Federal's state-of-the-art loading equipment with verification scales checking weights throughout production runs. Loaded rounds undergo multiple inspections including overall length checks, diameter measurements, and visual inspection before packaging.",
+    whyChoose: "Choose Federal American Eagle when you demand the consistency and reliability of premium ammunition for training and competition without paying match-grade prices. Federal American Eagle occupies a unique position in the ammunition market - manufactured on the same production lines with the same quality components as Federal's premium loads, but packaged efficiently for volume shooters. This isn't budget ammunition with compromised quality; it's premium ammunition with smart packaging. Serious competitors in USPSA and IDPA choose American Eagle because lot-to-lot consistency is crucial for maintaining consistent points of impact across thousands of practice rounds. The clean-burning powder formulation is a significant advantage for high-volume shooting - pistols stay cleaner and more reliable through extended practice sessions or multi-stage matches. The brass quality is exceptional, with reloaders specifically seeking out Federal American Eagle brass for its consistency, durability, and ease of processing. Federal's manufacturing takes place entirely in the United States, supporting American workers and ensuring consistent component supply. The company's commitment to innovation and quality improvement means every production run benefits from ongoing process refinement and quality enhancement. Federal's technical support team includes experienced ballisticians and customer service professionals who can answer detailed questions about ammunition performance and selection. When you choose Federal American Eagle, you're choosing ammunition trusted by competitive shooters, law enforcement trainers, and serious enthusiasts who demand consistent performance round after round. It's the ammunition you can rely on for productive practice that builds skill and confidence.",
+    seoKeywords: [
+      "federal american eagle 45 acp",
+      "45 acp training ammunition",
+      "230gr 45 acp fmj",
+      "federal 45 auto ammo",
+      "buy 45 acp online",
+      "american eagle pistol ammo",
+      "45 acp competition ammo",
+      "federal 45 acp bulk",
+      "1911 practice ammo",
+      "45 acp range ammunition",
+      "federal ae45a",
+      "45 acp target shooting",
+      "quality 45 acp ammo",
+      "federal 45 acp 230 grain",
+      "american eagle 45 auto"
+    ]
   },
   {
     id: "45acp-winchester-usa-230",
@@ -3347,7 +3445,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "High-quality brass-cased target ammunition",
     manufacturer: "Winchester",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Winchester USA represents over 150 years of ammunition manufacturing excellence in an affordable training package. Featuring quality components and Winchester's legendary reliability, this ammunition delivers consistent performance for all shooting applications.",
+    longDescription: "Winchester USA 230-grain Full Metal Jacket ammunition embodies Winchester's commitment to providing high-quality ammunition at accessible prices for American shooters. As part of the USA Forged series, this ammunition is manufactured in Winchester's American facilities using time-tested components and modern manufacturing processes refined over more than 150 years of ammunition production. The 230-grain bullet weight represents the original .45 ACP specification designed by John Moses Browning, providing authentic ballistics and terminal performance characteristics that have made the .45 ACP legendary. Each full metal jacket bullet features a precision-formed copper jacket completely encasing a lead alloy core, ensuring reliable feeding through all .45 ACP firearms from classic 1911 pistols to modern polymer-framed designs. Winchester's bullet manufacturing process includes multiple quality checks to ensure consistent weight, proper jacket thickness, and optimal bullet profile for flawless feeding and chambering. The brass cases are produced from high-quality cartridge brass through Winchester's deep-drawing process, creating uniform case walls essential for consistent internal capacity and pressure development. These cases feature Winchester's headstamp and are fully reloadable, providing excellent value for handloaders. Winchester's brass has earned a stellar reputation among reloaders for durability, consistent dimensions, and the ability to withstand multiple reloading cycles with proper care. The powder formulation selected for Winchester USA loads burns cleanly while delivering consistent velocities and reliable cycling across different pistol designs and barrel lengths. Winchester's non-corrosive primers provide reliable ignition in all weather conditions, from freezing winter temperatures to hot summer range days. Whether you're practicing marksmanship fundamentals, running defensive drills, shooting competition stages, or simply enjoying recreational range time, Winchester USA provides the performance and reliability you need without premium pricing.",
+    features: [
+      "Traditional 230-grain full metal jacket bullet - classic .45 ACP weight",
+      "High-quality Winchester brass cases with consistent dimensions",
+      "Non-corrosive Winchester primers for reliable all-weather ignition",
+      "Clean-burning powder formulation reduces fouling accumulation",
+      "Precision bullet profile ensures reliable feeding in all .45 ACP platforms",
+      "Fully reloadable brass cases valued by handloaders",
+      "Manufactured in Winchester's U.S. facilities with strict quality standards",
+      "Boxer-primed for convenient reloading",
+      "Approximately 835 fps from 5-inch barrel",
+      "Consistent lot-to-lot performance for predictable accuracy"
+    ],
+    benefits: [
+      "Winchester's 150+ year reputation for quality and reliability",
+      "Affordable pricing enables frequent practice and skill development",
+      "Clean-burning formula extends time between cleaning sessions",
+      "Reloadable brass reduces long-term shooting costs",
+      "Reliable functioning across all .45 ACP pistols and carbines",
+      "Made in USA supporting American manufacturing"
+    ],
+    useCases: [
+      "Target practice and recreational shooting at all distances",
+      "IDPA, USPSA, and practical shooting competition training",
+      "Defensive handgun courses and tactical training exercises",
+      "New shooter introduction to .45 ACP platform",
+      "Brass accumulation for handloading projects",
+      "High-volume training where ammunition cost is a consideration"
+    ],
+    technicalDetails: "Winchester USA .45 ACP 230-grain FMJ ammunition is loaded to standard SAAMI pressure specifications for .45 Automatic Colt Pistol cartridges. From a standard Government-model 5-inch barrel, this load typically achieves 835 feet per second muzzle velocity, generating approximately 356 foot-pounds of muzzle energy. The full metal jacket bullet construction features a copper alloy jacket (gilding metal - typically 90% copper, 10% zinc) completely enclosing a lead antimony alloy core except at the bullet base. Jacket thickness measures approximately 0.018-0.020 inches, providing excellent feeding reliability while maintaining bullet integrity during feeding and firing. The bullet profile features a rounded ogive with a gentle shoulder that interfaces smoothly with feed ramps and chamber leades. Bullet diameter is held to 0.451 inches with tight tolerances for consistent barrel fit and gas seal. Overall cartridge length is maintained at 1.275 inches to ensure reliable feeding from all magazine types while maximizing case capacity. Winchester's brass cases are manufactured from high-quality 70-30 cartridge brass through progressive drawing operations that work-harden the brass while forming the case shape. The annealing process then relieves stress in the case neck while maintaining proper hardness at the case head to safely contain firing pressures. Case wall thickness is controlled through precision dies to ensure consistent internal volume within narrow tolerances. Case heads feature properly formed extractor grooves and rims for reliable extraction and ejection. Primer pockets are broached to precise depth (0.130 inches) and diameter (0.210 inches) to accept standard large pistol primers. The powder charge provides consistent pressures averaging around 19,000-20,000 PSI, well within SAAMI maximum average pressure limits. From quality pistols with standard-grade barrels, typical accuracy runs 2.5-4 inches at 25 yards with five-shot groups.",
+    whyChoose: "Choose Winchester USA when you want ammunition from one of the world's most respected manufacturers at a price that encourages regular practice. Winchester has been synonymous with American firearms and ammunition since 1866, and that heritage of innovation and quality is evident in every box of USA ammunition. Unlike imported ammunition that may use inconsistent components or less stringent manufacturing standards, Winchester USA is made entirely in the United States using American components and Winchester's rigorous quality control processes. The 230-grain bullet weight provides authentic .45 ACP performance as John Browning intended, making your practice time translate directly to real-world defensive scenarios if you carry a .45 ACP pistol. Winchester's brass quality is exceptional - reloaders consistently rank Winchester brass among the best available for consistency, durability, and ease of processing. The clean-burning powder formulation keeps your pistol running reliably through extended range sessions, an important consideration for competitive shooters and those attending multi-day training courses. Winchester's customer service organization is well-established and responsive, with knowledgeable staff available to answer technical questions or address concerns. When you choose Winchester USA, you're choosing ammunition with a proven track record of reliability across millions of rounds fired in competition, training, and recreational shooting. It's ammunition you can trust for any non-defensive application where you need consistent, reliable performance without paying premium prices.",
+    seoKeywords: [
+      "winchester usa 45 acp",
+      "45 acp ammunition for sale",
+      "winchester 45 auto fmj",
+      "230 grain 45 acp ammo",
+      "buy winchester 45 acp",
+      "45 acp training rounds",
+      "winchester usa forged",
+      "45 acp target ammo",
+      "bulk 45 acp winchester",
+      "1911 ammunition",
+      "45 acp practice ammo",
+      "winchester 45 acp 230gr",
+      "cheap 45 acp ammo",
+      "winchester pistol ammunition",
+      "45 auto bulk ammo"
+    ]
   },
   {
     id: "45acp-winchester-white-box",
@@ -3360,7 +3507,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Premium target and range ammunition",
     manufacturer: "Winchester",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Winchester White Box has been America's go-to range ammunition for generations. Known for consistent performance and reliability, this iconic ammunition delivers everything recreational and competitive shooters need for productive practice sessions.",
+    longDescription: "Winchester White Box 230-grain Full Metal Jacket ammunition is arguably the most recognizable training ammunition in America, trusted by generations of shooters for consistent performance and unwavering reliability. The distinctive white cardboard box has been a fixture at shooting ranges across America for decades, representing Winchester's commitment to producing quality practice ammunition at fair prices. Part of Winchester's Service Grade line, White Box ammunition is manufactured to the same specifications as Winchester's premium ammunition lines but packaged economically for volume shooters. The 230-grain full metal jacket bullet represents the original .45 ACP loading designed over a century ago, providing authentic recoil characteristics and ballistic performance essential for effective training. Each bullet is precision-formed from a copper alloy jacket fully encasing a lead core, ensuring reliable feeding through all .45 ACP firearms regardless of magazine design or feed ramp configuration. Winchester's manufacturing process includes dimensional verification at multiple stages, with automated optical inspection checking every completed cartridge for proper overall length, bullet seating depth, and crimp uniformity. The brass cases are manufactured in Winchester's facilities using carefully controlled drawing processes that create uniform wall thickness crucial for consistent pressure development and accuracy. Winchester brass is highly regarded by reloaders worldwide for its consistency, durability, and ability to withstand numerous reloading cycles when properly sized and annealed. These cases feature the classic Winchester headstamp and are fully reloadable using standard reloading dies and components. The powder selected for White Box loads provides consistent velocities across different barrel lengths while burning cleanly to minimize fouling buildup in the barrel and action. Winchester's non-corrosive primers deliver reliable ignition in all weather conditions and storage scenarios, ensuring your ammunition performs when you need it whether it's fresh from the factory or has been stored for years. White Box ammunition has established an enviable reputation for reliability, feeding and firing flawlessly in pistols that may be finicky with other ammunition brands. Whether you're practicing for defensive scenarios, training for competition, shooting recreationally, or accumulating brass for reloading, Winchester White Box delivers dependable performance that's kept shooters coming back for generations.",
+    features: [
+      "Iconic Winchester White Box packaging - America's trusted training ammunition",
+      "Traditional 230-grain FMJ bullet for authentic .45 ACP ballistics",
+      "Premium Winchester brass cases with consistent dimensions",
+      "Non-corrosive, all-weather primers for long-term reliability",
+      "Clean-burning powder reduces maintenance requirements",
+      "Precision-formed bullets with optimal feeding characteristics",
+      "Fully reloadable brass highly valued by handloaders",
+      "Service Grade quality with strict manufacturing standards",
+      "Approximately 850 fps from 5-inch barrel",
+      "Boxer-primed for reloading convenience"
+    ],
+    benefits: [
+      "Generations of proven reliability across all .45 ACP platforms",
+      "Winchester's legendary quality control ensures consistency",
+      "Feeds reliably even in pistols finicky with other ammunition",
+      "Clean-burning formula extends time between cleaning",
+      "Premium reloadable brass reduces long-term ammunition costs",
+      "Made in USA supporting American manufacturing heritage"
+    ],
+    useCases: [
+      "General range practice and recreational shooting",
+      "Competition training for USPSA, IDPA, bullseye, and practical pistol",
+      "Defensive handgun training courses and qualification",
+      "New shooter familiarization with .45 ACP platform",
+      "Function testing and break-in of new .45 ACP pistols",
+      "Brass collection for handloading projects"
+    ],
+    technicalDetails: "Winchester White Box .45 ACP 230-grain FMJ is loaded to full-power standard pressure specifications per SAAMI standards. From a standard 5-inch Government-model barrel, this ammunition typically achieves 850 feet per second muzzle velocity, generating approximately 369 foot-pounds of energy at the muzzle. The full metal jacket bullet features a copper alloy jacket (gilding metal) completely surrounding a lead antimony alloy core, with jacket thickness of approximately 0.018 inches. The bullet profile uses a rounded ogive design that feeds smoothly from all magazine types and chambers reliably in barrels with varying throat dimensions. Bullet diameter is maintained at 0.451 inches ±0.001 inch for proper bore fit and gas sealing. Overall cartridge length measures 1.275 inches to ensure reliable feeding while maximizing available powder capacity within the case. The brass cases are manufactured through progressive drawing operations from quality 70-30 cartridge brass (70% copper, 30% zinc alloy). Winchester's case annealing process relieves stress in the case neck and shoulder area while maintaining proper hardness at the case head and body to safely contain chamber pressures. Case wall thickness is controlled to tight tolerances ensuring minimal internal capacity variation from case to case. Primer pockets are broached to precise specifications accepting standard large pistol primers with optimal depth for reliable ignition without excessive cup protrusion. The large primer flash hole is located concentrically to promote uniform powder ignition. Powder selection emphasizes consistent burn rate producing uniform pressures typically in the 19,000-21,000 PSI range, well below SAAMI maximum average pressure of 21,000 PSI. From quality pistols with standard barrels, accuracy typically runs 2-3 inches for five-shot groups at 25 yards, adequate for all practical shooting applications and general marksmanship training.",
+    whyChoose: "Choose Winchester White Box when you want ammunition with a proven track record spanning generations of satisfied shooters. The iconic white cardboard box is instantly recognizable at shooting ranges worldwide, symbolizing consistent quality and reliable performance at fair prices. Winchester has been manufacturing ammunition since 1866, and that century and a half of experience is evident in every box of White Box ammunition. Unlike budget import brands that may cut corners on quality control or component selection, White Box is manufactured entirely in the United States using American components and Winchester's rigorous manufacturing standards developed over decades of continuous improvement. The 230-grain bullet weight provides authentic .45 ACP performance matching the cartridge's original design specifications, making your training time directly applicable to defensive scenarios. Winchester White Box has established a reputation for exceptional reliability, feeding and functioning flawlessly in pistols that may experience issues with other ammunition brands - a crucial consideration for defensive pistol training and competition preparation. The brass quality is outstanding, with reloaders consistently praising Winchester brass for ease of resizing, consistent case capacity, and the ability to withstand numerous reloading cycles. Winchester's customer service and technical support are first-rate, with experienced staff available to answer questions about ammunition selection and performance. When you choose Winchester White Box, you're choosing ammunition trusted by competitive shooters, law enforcement trainers, military personnel, and recreational shooters who demand reliable performance without paying premium prices. It's ammunition that simply works, every time, allowing you to focus on improving your shooting skills rather than worrying about equipment reliability.",
+    seoKeywords: [
+      "winchester white box 45 acp",
+      "45 acp range ammo",
+      "winchester 45 auto 230gr",
+      "buy 45 acp ammunition",
+      "white box pistol ammo",
+      "45 acp training ammunition",
+      "winchester 45 acp fmj",
+      "bulk 45 acp ammo",
+      "1911 practice rounds",
+      "45 acp target shooting",
+      "winchester service grade",
+      "45 auto ammunition",
+      "cheap 45 acp rounds",
+      "winchester 45 bulk ammo",
+      "quality 45 acp training"
+    ]
   },
   {
     id: "45acp-remington-umc-230",
@@ -3373,7 +3569,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Value-priced training ammunition",
     manufacturer: "Remington",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Remington UMC (Union Metallic Cartridge) represents over 200 years of American ammunition manufacturing heritage. Offering outstanding value without compromising quality, UMC provides reliable performance for high-volume shooting.",
+    longDescription: "Remington UMC 230-grain Full Metal Jacket ammunition continues a proud tradition dating back to 1867 when the Union Metallic Cartridge Company first began producing ammunition for American shooters. Now part of the legendary Remington brand, UMC represents Remington's commitment to providing quality ammunition at prices that encourage regular practice and skill development. The 230-grain bullet weight is the traditional .45 ACP standard originally specified when the cartridge was developed for military use, providing authentic ballistic performance and recoil characteristics that have made the .45 ACP legendary among pistol cartridges. Each full metal jacket bullet features a complete copper alloy jacket fully encasing a precision-cast lead core, ensuring reliable feeding through all .45 ACP platforms from vintage 1911 pistols to modern polymer-framed designs. Remington's bullet manufacturing includes quality checks for weight consistency, proper jacket adhesion, and correct bullet profile to ensure flawless feeding and chambering. The brass cases are manufactured using Remington's time-tested drawing processes, creating uniform case walls essential for consistent internal capacity and pressure development. These cases are fully reloadable and feature the distinctive Remington-UMC headstamp valued by collectors and handloaders alike. Remington brass has earned respect among reloaders for its consistent dimensions and durability through multiple loading cycles. The powder formulation selected for UMC loads provides consistent velocities while burning relatively cleanly to minimize fouling accumulation in your pistol's barrel and action. Remington's non-corrosive Kleanbore primers deliver reliable ignition across a wide temperature range, functioning equally well in cold winter conditions and hot summer range sessions. UMC ammunition has built a reputation for excellent reliability and consistent performance, making it a favorite among budget-conscious shooters who refuse to compromise on ammunition quality. Whether you're practicing defensive techniques, training for competition, working on marksmanship fundamentals, or simply enjoying recreational shooting, Remington UMC delivers the performance you need at a price that fits your ammunition budget.",
+    features: [
+      "Classic 230-grain full metal jacket bullet - traditional .45 ACP weight",
+      "Quality Remington brass cases with consistent dimensions",
+      "Non-corrosive Kleanbore primers for reliable ignition",
+      "Relatively clean-burning powder reduces fouling",
+      "Precision-formed bullets for reliable feeding",
+      "Fully reloadable brass cases valued by handloaders",
+      "Value pricing enables high-volume practice",
+      "Approximately 835 fps from 5-inch barrel",
+      "Boxer-primed for convenient reloading",
+      "Over 200 years of ammunition manufacturing heritage"
+    ],
+    benefits: [
+      "Outstanding value for budget-conscious shooters",
+      "Remington's legendary quality standards ensure reliability",
+      "Consistent performance enables productive practice sessions",
+      "Reliable functioning across all .45 ACP pistols",
+      "Reloadable brass extends ammunition budget",
+      "American-made supporting U.S. manufacturing jobs"
+    ],
+    useCases: [
+      "High-volume range practice and recreational shooting",
+      "Competition training where ammunition cost matters",
+      "Defensive handgun training on a budget",
+      "New shooter familiarization with .45 ACP platform",
+      "Brass accumulation for reloading projects",
+      "General plinking and casual target shooting"
+    ],
+    technicalDetails: "Remington UMC .45 ACP 230-grain FMJ ammunition is loaded to standard SAAMI pressure specifications for .45 Automatic Colt Pistol. From a standard 5-inch barrel length, this load typically achieves approximately 835 feet per second muzzle velocity, generating roughly 356 foot-pounds of muzzle energy. The full metal jacket bullet construction features a copper alloy gilding metal jacket completely surrounding a lead alloy core, with jacket thickness of approximately 0.016-0.018 inches. The bullet profile incorporates a rounded nose design with gentle shoulder angle that feeds smoothly from all magazine configurations and chambers reliably in varying throat dimensions. Bullet diameter is maintained at 0.451 inches with controlled tolerances for consistent barrel fit. Overall cartridge length measures 1.275 inches to ensure reliable feeding from all magazine types while maximizing powder capacity. Remington's brass cases are manufactured from quality cartridge brass (70% copper, 30% zinc) through progressive deep-drawing operations that work-harden the material while forming the case shape. The annealing process relieves stress in the case neck and shoulder while maintaining appropriate hardness at the case head for safe pressure containment. Case wall thickness is controlled through precision tooling to minimize internal capacity variation. Case heads feature properly formed extractor grooves and rims for reliable extraction and ejection. Primer pockets are broached to accept standard large pistol primers with proper depth and diameter specifications. The powder charge generates chamber pressures typically in the 19,000-20,000 PSI range, comfortably within SAAMI specifications. From quality pistols with properly maintained barrels, accuracy typically measures 2.5-4 inches for five-shot groups at 25 yards, suitable for all practical applications including competition training and defensive practice.",
+    whyChoose: "Choose Remington UMC when you want ammunition from one of America's oldest and most respected manufacturers at prices that encourage frequent practice. Remington's ammunition heritage dates back over 200 years, making it America's oldest ammunition manufacturer still in operation. That history represents accumulated knowledge and continuous improvement that's evident in every box of UMC ammunition. Unlike bargain import brands that may use inconsistent components or less rigorous quality control, Remington UMC is manufactured using time-tested processes and quality American components. The 230-grain bullet weight provides authentic .45 ACP ballistics matching the cartridge's century-old specifications, ensuring your practice time accurately reflects real-world performance. UMC has built a solid reputation for reliability, functioning flawlessly in both modern pistols and vintage firearms that may be more sensitive to ammunition specifications. The brass cases are valued by reloaders for their consistent dimensions and ability to withstand multiple reloading cycles with proper case preparation. Remington's established customer service network provides support when you need assistance with ammunition selection or have questions about performance. When you choose Remington UMC, you're choosing ammunition that represents outstanding value without compromising the quality standards that have made Remington legendary. It's ammunition that delivers reliable, consistent performance at prices that make high-volume practice affordable, helping you develop and maintain the skills necessary for defensive proficiency or competitive success.",
+    seoKeywords: [
+      "remington umc 45 acp",
+      "45 acp bulk ammunition",
+      "umc 230 grain 45 acp",
+      "cheap 45 acp ammo",
+      "buy remington 45 auto",
+      "45 acp training rounds",
+      "budget 45 acp ammunition",
+      "remington 45 acp fmj",
+      "1911 practice ammo",
+      "45 acp range ammunition",
+      "umc pistol ammo",
+      "45 auto bulk ammo",
+      "affordable 45 acp",
+      "remington 45 acp 230gr",
+      "value 45 acp training"
+    ]
   },
   {
     id: "45acp-hornady-xtp-230",
