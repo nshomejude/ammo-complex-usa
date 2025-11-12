@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import { Search as SearchIcon, X, Target, Package, SlidersHorizontal, ChevronDown } from "lucide-react";
+import { Search as SearchIcon, X, Target, Package, SlidersHorizontal, ChevronDown, TrendingUp, Clock } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -11,6 +11,19 @@ import { Separator } from "@/components/ui/separator";
 import { useNavigate } from "react-router-dom";
 import { firearms } from "@/data/firearms";
 import { products } from "@/data/products";
+
+const POPULAR_SEARCHES = [
+  "9mm ammunition",
+  "AR-15",
+  "Glock 19",
+  ".308 Winchester",
+  "tactical rifles",
+  "hollow point",
+  "sniper rifles",
+  "concealed carry",
+  ".223 Remington",
+  "Barrett"
+];
 
 interface SearchResult {
   id: string;
@@ -24,6 +37,7 @@ interface SearchResult {
 export const Search = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
+  const [autocompleteSuggestions, setAutocompleteSuggestions] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [showAdvanced, setShowAdvanced] = useState(false);
@@ -69,14 +83,54 @@ export const Search = () => {
     const searchTimeout = setTimeout(() => {
       if (query.trim().length >= 2) {
         performSearch(query);
+        generateAutocompleteSuggestions(query);
       } else {
         setResults([]);
+        setAutocompleteSuggestions([]);
         setIsOpen(false);
       }
     }, 300);
 
     return () => clearTimeout(searchTimeout);
   }, [query]);
+
+  const generateAutocompleteSuggestions = (searchQuery: string) => {
+    const lowerQuery = searchQuery.toLowerCase();
+    const suggestions = new Set<string>();
+
+    // Add matching firearm names
+    firearms.forEach(f => {
+      const fullName = `${f.manufacturer} ${f.name}`;
+      if (fullName.toLowerCase().includes(lowerQuery)) {
+        suggestions.add(fullName);
+      }
+      // Add matching calibers
+      f.caliber.forEach(cal => {
+        if (cal.toLowerCase().includes(lowerQuery)) {
+          suggestions.add(cal);
+        }
+      });
+    });
+
+    // Add matching product names
+    products.forEach(p => {
+      if (p.name.toLowerCase().includes(lowerQuery)) {
+        suggestions.add(p.name);
+      }
+      if (p.caliber.toLowerCase().includes(lowerQuery)) {
+        suggestions.add(p.caliber);
+      }
+    });
+
+    // Add matching popular searches
+    POPULAR_SEARCHES.forEach(term => {
+      if (term.toLowerCase().includes(lowerQuery)) {
+        suggestions.add(term);
+      }
+    });
+
+    setAutocompleteSuggestions(Array.from(suggestions).slice(0, 5));
+  };
 
   const performSearch = (searchQuery: string) => {
     setIsLoading(true);
@@ -153,6 +207,7 @@ export const Search = () => {
   const handleClear = () => {
     setQuery("");
     setResults([]);
+    setAutocompleteSuggestions([]);
     setIsOpen(false);
     setShowAdvanced(false);
   };
@@ -163,6 +218,15 @@ export const Search = () => {
       setIsOpen(false);
       setShowAdvanced(false);
     }
+  };
+
+  const handleSuggestionClick = (suggestion: string) => {
+    setQuery(suggestion);
+    setIsOpen(false);
+  };
+
+  const handlePopularSearchClick = (term: string) => {
+    setQuery(term);
   };
 
   const toggleCaliber = (caliber: string) => {
@@ -199,7 +263,7 @@ export const Search = () => {
             placeholder="Search firearms and ammunition..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onFocus={() => (results.length > 0 || showAdvanced) && setIsOpen(true)}
+            onFocus={() => setIsOpen(true)}
             onKeyDown={(e) => e.key === "Enter" && handleViewAllResults()}
             className="pl-10 pr-10"
           />
@@ -230,6 +294,46 @@ export const Search = () => {
       {isOpen && (
         <Card className="absolute top-full mt-2 w-[600px] z-50 shadow-lg bg-background">
           <div className="max-h-[500px] overflow-y-auto">
+            {/* Show popular searches when input is empty or has less than 2 characters */}
+            {query.trim().length < 2 && !showAdvanced && (
+              <div className="p-4">
+                <div className="flex items-center gap-2 mb-3">
+                  <TrendingUp className="h-4 w-4 text-muted-foreground" />
+                  <h3 className="text-sm font-semibold text-muted-foreground">Popular Searches</h3>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {POPULAR_SEARCHES.map(term => (
+                    <Badge
+                      key={term}
+                      variant="outline"
+                      className="cursor-pointer hover:bg-accent"
+                      onClick={() => handlePopularSearchClick(term)}
+                    >
+                      {term}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Show autocomplete suggestions */}
+            {query.trim().length >= 1 && query.trim().length < 2 && autocompleteSuggestions.length > 0 && !showAdvanced && (
+              <div className="p-2 border-t">
+                <div className="flex items-center gap-2 px-2 py-1 mb-1">
+                  <Clock className="h-3 w-3 text-muted-foreground" />
+                  <span className="text-xs font-semibold text-muted-foreground">Suggestions</span>
+                </div>
+                {autocompleteSuggestions.map((suggestion, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => handleSuggestionClick(suggestion)}
+                    className="w-full p-2 hover:bg-accent rounded-lg transition-colors text-left text-sm"
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            )}
             {showAdvanced && (
               <div className="p-4 border-b bg-muted/30">
                 <div className="flex items-center justify-between mb-4">
@@ -297,6 +401,26 @@ export const Search = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            )}
+
+            {/* Show autocomplete dropdown when typing 2+ characters */}
+            {query.trim().length >= 2 && autocompleteSuggestions.length > 0 && !showAdvanced && (
+              <div className="p-2 border-t bg-muted/20">
+                <div className="flex items-center gap-2 px-2 py-1 mb-1">
+                  <SearchIcon className="h-3 w-3 text-muted-foreground" />
+                  <span className="text-xs font-semibold text-muted-foreground">Suggestions</span>
+                </div>
+                {autocompleteSuggestions.map((suggestion, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => handleSuggestionClick(suggestion)}
+                    className="w-full p-2 hover:bg-accent rounded-lg transition-colors text-left text-sm flex items-center gap-2"
+                  >
+                    <SearchIcon className="h-3 w-3 text-muted-foreground" />
+                    {suggestion}
+                  </button>
+                ))}
               </div>
             )}
 
