@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Categories from "./pages/Categories";
 import FirearmCategories from "./pages/FirearmCategories";
+import CategoryPage from "./pages/CategoryPage";
 import Admin from "./pages/Admin";
 import About from "./pages/About";
 import Shipping from "./pages/Shipping";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/firearm-categories" element={<FirearmCategories />} />
+          <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/about" element={<About />} />
           <Route path="/shipping" element={<Shipping />} />
