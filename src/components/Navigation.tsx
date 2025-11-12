@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
 import { Shield, ShoppingCart, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Search } from "@/components/Search";
 
 export const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
+        <div className="flex h-16 items-center justify-between gap-4">
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <Shield className="h-6 w-6 text-tactical" />
             <span className="text-xl font-bold tracking-tight">ARMS COMPLEX</span>
           </Link>
           
-          <div className="hidden md:flex items-center gap-6">
+          <div className="flex-1 max-w-xl mx-4">
+            <Search />
+          </div>
+          
+          <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
             <Link to="/products" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Products
             </Link>
@@ -45,7 +50,7 @@ export const Navigation = () => {
             </Link>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-shrink-0">
             <Button variant="ghost" size="icon">
               <User className="h-5 w-5" />
             </Button>
