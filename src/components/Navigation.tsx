@@ -19,8 +19,20 @@ export const Navigation = () => {
             <Link to="/categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Categories
             </Link>
+            <Link to="/how-to-buy" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              How to Buy
+            </Link>
+            <Link to="/shipping" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Shipping
+            </Link>
+            <Link to="/firearms-license" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              License Info
+            </Link>
             <Link to="/about" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               About
+            </Link>
+            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Contact
             </Link>
             <Link to="/admin" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Admin

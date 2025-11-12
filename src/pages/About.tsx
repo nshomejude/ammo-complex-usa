@@ -9,11 +9,71 @@ const About = () => {
       
       <main className="container mx-auto px-4 py-12">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">Legal Requirements & Compliance</h1>
+          <h1 className="text-4xl font-bold mb-4">About Arms Complex</h1>
           <p className="text-muted-foreground text-lg">
-            Arms Complex is a federally licensed firearms dealer committed to legal and responsible ammunition sales.
+            America's trusted source for quality ammunition - committed to legal compliance, customer service, and responsible firearm ownership.
           </p>
         </div>
+
+        <Card className="mb-12 border-tactical/30 bg-tactical/5">
+          <CardContent className="p-8">
+            <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+            <p className="text-muted-foreground mb-4">
+              Arms Complex is a federally licensed firearms dealer (FFL Type 01) dedicated to providing law-abiding American gun owners 
+              with reliable access to high-quality ammunition. We combine competitive pricing, extensive inventory, and strict legal 
+              compliance to serve the shooting sports community, law enforcement, and responsible citizens exercising their Second Amendment rights.
+            </p>
+            <p className="text-muted-foreground">
+              Founded in 2020, we've built our reputation on transparency, customer education, and unwavering commitment to following 
+              all federal, state, and local firearms regulations. Every transaction is handled with the utmost care to ensure legal 
+              compliance while providing exceptional service.
+            </p>
+          </CardContent>
+        </Card>
+
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Why Choose Arms Complex?</h2>
+          <div className="grid gap-6 md:grid-cols-3 mb-8">
+            <Card className="border-tactical/30">
+              <CardContent className="p-6">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-tactical/10">
+                  <Shield className="h-6 w-6 text-tactical" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">100% Legal Compliance</h3>
+                <p className="text-sm text-muted-foreground">
+                  Every sale follows strict ATF regulations and state-specific requirements. We verify all documentation and maintain complete records.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-tactical/30">
+              <CardContent className="p-6">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-tactical/10">
+                  <FileText className="h-6 w-6 text-tactical" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Extensive Selection</h3>
+                <p className="text-sm text-muted-foreground">
+                  From popular calibers to specialty ammunition, we stock products from top manufacturers for every shooting need.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-tactical/30">
+              <CardContent className="p-6">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-tactical/10">
+                  <MapPin className="h-6 w-6 text-tactical" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Nationwide Shipping</h3>
+                <p className="text-sm text-muted-foreground">
+                  We ship to all legal states with secure HazMat-compliant packaging and adult signature confirmation.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Legal Requirements & Compliance</h2>
 
         <div className="grid gap-6 lg:grid-cols-2">
           <Card>
@@ -96,6 +156,7 @@ const About = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
         </div>
 
         <Card className="mt-6 border-tactical/30 bg-tactical/5">
