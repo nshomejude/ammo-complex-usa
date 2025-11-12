@@ -158,7 +158,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Reliable range ammunition for target practice",
     manufacturer: "Winchester",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Winchester USA 55gr delivers American-made reliability for high-volume training. Trusted quality from the legendary Winchester brand at an affordable price point.",
+    longDescription: "Winchester USA ammunition represents Winchester's commitment to providing American shooters with reliable, affordable training ammunition manufactured to the same quality standards as their premium lines. As one of America's oldest and most respected ammunition manufacturers, Winchester brings over 150 years of ammunition innovation and quality control to the USA line. The 55-grain full metal jacket loading is optimized for AR-15 platforms and bolt-action .223 rifles, providing consistent accuracy and reliable function across diverse firearm types. Winchester's manufacturing process includes multiple quality control checkpoints ensuring dimensional consistency, proper powder charges, and reliable primers. The clean-burning powder formulation minimizes barrel fouling and reduces cleaning requirements - important for high-volume shooters. The reloadable brass cases feature Winchester's consistent wall thickness and primer pocket dimensions, making them popular among handloaders who collect their brass. While priced competitively for regular practice, Winchester USA doesn't compromise on reliability or consistency. The ammunition functions reliably in all AR-15 configurations from budget builds to precision setups. For shooters seeking American-made quality without premium pricing, Winchester USA delivers the performance needed for productive training sessions and recreational shooting.",
+    features: [
+      "American-made ammunition from legendary Winchester brand",
+      "55-grain full metal jacket bullet for reliable feeding",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Reloadable new production brass cases",
+      "Consistent velocities for predictable ballistics",
+      "Functions reliably in all AR-15 and .223 bolt-action rifles",
+      "Non-corrosive boxer primers for long-term storage",
+      "Quality control ensures dimensional consistency",
+      "Value pricing for high-volume shooting",
+      "Compatible with all standard .223 Remington chambers"
+    ],
+    benefits: [
+      "Winchester's 150+ year reputation for quality and reliability",
+      "Affordable pricing encourages regular practice and training",
+      "Clean burning means more shooting, less cleaning",
+      "American manufacturing supports domestic jobs",
+      "Reloadable brass adds value for handloaders",
+      "Consistent performance from batch to batch"
+    ],
+    useCases: [
+      "AR-15 range practice and plinking",
+      "Rifle zeroing and sight adjustment",
+      "Basic marksmanship training and fundamentals practice",
+      "Recreational shooting and informal competition",
+      "Brass collection for handloading projects",
+      "High-volume training on budget"
+    ],
+    technicalDetails: "Winchester USA 55gr FMJ ammunition achieves approximately 3,240 fps muzzle velocity from 24-inch test barrels and 3,050 fps from typical 16-inch AR-15 carbines, delivering 1,282 foot-pounds of muzzle energy. The 55-grain full metal jacket bullet features copper alloy jacket over lead core with exposed lead base. Bullet diameter is held to .224 inches ±0.001 for consistent bore engagement. The brass cases are drawn from commercial brass alloy (70/30 copper-zinc) with consistent wall thickness for uniform powder capacity. Primer pockets are sized for standard small rifle primers without military crimp. Powder selection emphasizes clean burning with minimal copper fouling and flash. Velocity standard deviation typically measures 30-40 fps across 10-shot strings, providing adequate consistency for training applications. Accuracy from quality AR-15 rifles averages 1.5-2.5 MOA at 100 yards - suitable for most training and recreational applications. All components are non-corrosive and non-mercuric. Cases are fully reloadable with proper handloading practices. The ammunition meets SAAMI pressure specifications with maximum average pressure approximately 55,000 psi.",
+    whyChoose: "Choose Winchester USA when you want reliable American-made ammunition without paying premium prices. Winchester's name on the box means something - it represents over 150 years of ammunition manufacturing excellence and innovation that few brands can match. While positioned as value ammunition, USA series doesn't cut corners on quality control or component selection. The ammunition functions reliably, which is critical for training where malfunctions disrupt learning and waste range time. The clean-burning powder formulation demonstrates Winchester's attention to shooter experience - less fouling means spending more time shooting and less time cleaning. For shooters who reload, Winchester brass is prized for its consistency and durability, often providing 5-10+ reloads before primer pockets loosen. The value pricing makes regular practice affordable, and regular practice is what builds and maintains shooting skills. Winchester's domestic manufacturing ensures consistent supply and supports American workers. When you choose Winchester USA, you're getting ammunition from a company that's been serving American shooters since 1866, with quality control processes refined over generations. It's the ammunition that lets you train regularly without breaking the bank while maintaining the reliability Winchester is known for.",
+    seoKeywords: [
+      "winchester usa 223",
+      "winchester 55gr fmj",
+      "buy winchester 223",
+      "ar15 training ammo",
+      "winchester usa ammo",
+      "223 range ammo",
+      "affordable 223",
+      "winchester target ammo",
+      "american made 223",
+      "winchester usa price",
+      "bulk 223 ammo",
+      "ar15 practice ammo",
+      "winchester 223 remington",
+      "training ammunition 223",
+      "reloadable 223"
+    ]
   },
   {
     id: "223-winchester-usa-62",
@@ -184,7 +233,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Budget-friendly training ammunition",
     manufacturer: "PMC",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "PMC Bronze delivers reliable 5.56 NATO performance at exceptional value pricing. South Korean quality manufacturing makes high-volume training affordable.",
+    longDescription: "PMC Bronze ammunition represents South Korea's Poongsan Corporation bringing decades of military ammunition manufacturing expertise to the civilian market. As a major supplier to the South Korean military and a NATO-approved contractor, PMC's manufacturing standards and quality control processes meet or exceed military specifications. The Bronze line specifically targets high-volume shooters who need reliability without premium pricing. PMC's investment in modern manufacturing equipment and automation allows efficient production that translates to competitive pricing while maintaining quality. The 55-grain FMJ loading is optimized for 5.56 NATO specifications, making it suitable for all AR-15 platforms including those with shorter barrels. PMC's quality control includes automated inspection systems that check every round for dimensional accuracy and proper assembly. The brass cases are manufactured in-house to PMC's specifications, ensuring consistency. While classified as training ammunition, PMC Bronze punches well above its price point in terms of reliability and accuracy. Malfunctions are rare, and accuracy is suitable for all practical applications including competition training and recreational shooting. The non-corrosive primers and brass cases make PMC Bronze popular with reloaders who appreciate the consistent case quality. For shooters seeking maximum value without compromising reliability, PMC Bronze delivers impressive performance at an attractive price point that encourages regular range sessions.",
+    features: [
+      "South Korean military contractor quality at civilian prices",
+      "5.56 NATO loading for all AR-15 configurations",
+      "55-grain full metal jacket for reliable feeding",
+      "In-house manufactured brass cases for consistency",
+      "Automated inspection ensures zero-defect production",
+      "Non-corrosive boxer primers for reloadability",
+      "Clean-burning powder reduces maintenance intervals",
+      "Reliable ignition across temperature ranges",
+      "Value pricing enables high-volume training",
+      "Proven reliability in millions of rounds fired"
+    ],
+    benefits: [
+      "Exceptional value - reliable 5.56 at budget-friendly pricing",
+      "Military-grade quality control processes",
+      "Rare malfunctions mean uninterrupted training",
+      "Accurate enough for practical shooting applications",
+      "Reloadable brass extends ammunition budget",
+      "PMC's NATO contractor credentials validate quality"
+    ],
+    useCases: [
+      "High-volume AR-15 training on limited budget",
+      "Competition practice and fundamentals training",
+      "Recreational plinking and casual shooting",
+      "Brass collection for reloading projects",
+      "New shooter training where volume is important",
+      "General range use and informal competition"
+    ],
+    technicalDetails: "PMC Bronze 55gr 5.56 NATO ammunition achieves approximately 3,200 fps muzzle velocity from 20-inch barrels and 3,000 fps from 16-inch carbines, delivering 1,250 foot-pounds of muzzle energy. The loading meets 5.56 NATO pressure specifications with higher pressures than commercial .223 Remington, making it suitable for all 5.56 and .223 Wylde chambers. The 55-grain FMJ bullet uses copper-jacketed lead core with boat tail base for enhanced ballistic coefficient. PMC manufactures brass cases in-house using automated drawing processes that ensure consistent wall thickness and case capacity. Case heads are hardened to proper specifications for reliable extraction. Primer pockets are sized for standard small rifle primers without military-style crimp. Powder selection emphasizes reliable ignition and clean burning while meeting NATO velocity specifications. Velocity standard deviation typically measures 35-45 fps, adequate for training purposes. Accuracy from AR-15 rifles averages 2-3 MOA at 100 yards - sufficient for practical applications. PMC's automated inspection systems use optical sensors to verify dimensional specifications on every round. All components are non-corrosive. Cases are suitable for reloading with typical handloading practices.",
+    whyChoose: "Choose PMC Bronze when you need reliable 5.56 NATO ammunition at the lowest possible cost without sacrificing quality. PMC's position as a NATO-approved military contractor means their manufacturing processes and quality control meet military standards - you're getting military-grade quality at civilian budget prices. This isn't imported surplus or questionable foreign ammunition; it's current-production military-spec ammo manufactured on modern equipment with extensive quality control. The consistent reliability means your training sessions won't be interrupted by malfunctions that waste time and ammunition. For shooters who understand that skill development requires thousands of rounds, PMC Bronze's value pricing makes regular practice financially sustainable. The ammunition is accurate enough for any practical application including competition practice - you won't be limited by your ammunition. Reloaders appreciate PMC brass for its consistency and durability, often getting 5+ reloads before primer pockets loosen. PMC's investment in automation and efficient manufacturing benefits shooters through lower prices without quality compromises. When you choose PMC Bronze, you're choosing ammunition that lets you shoot more for less, which is the key to developing and maintaining proficiency. The reliability and quality make it smart economics for serious training.",
+    seoKeywords: [
+      "pmc bronze 556",
+      "pmc 55gr fmj",
+      "buy pmc bronze",
+      "cheap 556 ammo",
+      "budget ar15 ammo",
+      "pmc ammunition",
+      "556 nato bulk",
+      "affordable training ammo",
+      "pmc 223 ammo",
+      "value 556",
+      "bulk training ammo",
+      "pmc bronze price",
+      "reliable cheap ammo",
+      "high volume ammo",
+      "korean 556 ammo"
+    ]
   },
   {
     id: "223-hornady-frontier",
@@ -259,7 +357,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Hollow point for varmint and predator hunting",
     manufacturer: "Hornady",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Hornady American Gunner combines hunting performance with training ammunition pricing. Hollow point bullet delivers expansion for varmints and predators affordably.",
+    longDescription: "Hornady American Gunner represents Hornady's commitment to providing affordable ammunition suitable for both training and hunting applications. The line bridges the gap between basic FMJ training ammunition and premium hunting loads, offering enhanced terminal performance at accessible pricing. The 55-grain hollow point bullet provides reliable expansion on varmints and predators while remaining cost-effective enough for regular practice. Unlike polymer-tipped bullets that command premium prices, the American Gunner's traditional hollow point design reduces manufacturing costs while delivering effective expansion on thin-skinned game. The hollow point cavity is optimized for reliable expansion at .223 velocities, fragmenting on impact to transfer maximum energy. For hunters pursuing prairie dogs, ground squirrels, coyotes, and similar game, American Gunner delivers hunting performance without premium pricing. The ammunition also serves well for training with your hunting rifle, allowing practice with the same bullet weight and trajectory as your hunting loads. Hornady's quality control ensures consistency in accuracy and terminal performance, with the same attention to detail that characterizes their premium lines. The brass cases are reloadable, providing additional value for handloaders. For shooters seeking versatile ammunition that transitions from range to field without changing loads, Hornady American Gunner delivers practical performance at budget-friendly pricing.",
+    features: [
+      "55-grain hollow point for reliable varmint expansion",
+      "Affordable pricing for hunting-grade performance",
+      "Traditional hollow point design reduces cost",
+      "Effective on prairie dogs, ground squirrels, and predators",
+      "Reloadable brass cases add value",
+      "Clean-burning powder reduces fouling",
+      "Consistent accuracy for ethical shot placement",
+      "Same bullet weight as training loads for familiarity",
+      "Suitable for both hunting and practice",
+      "Hornady quality at accessible price point"
+    ],
+    benefits: [
+      "Hunting performance without premium ammunition pricing",
+      "Versatile for both training and field use",
+      "Reliable expansion on varmint-sized game",
+      "Cost-effective for regular practice and hunting",
+      "Hornady's 75 years of ammunition innovation",
+      "Reloadable brass extends ammunition value"
+    ],
+    useCases: [
+      "Varmint hunting for prairie dogs and ground squirrels",
+      "Predator hunting for coyotes and foxes",
+      "Agricultural pest control and crop damage management",
+      "Training with expansion-capable ammunition",
+      "Hunting practice maintaining bullet weight consistency",
+      "Budget-conscious hunters seeking reliable performance"
+    ],
+    technicalDetails: "Hornady American Gunner 55gr HP ammunition achieves approximately 3,240 fps muzzle velocity from 24-inch barrels and 3,050 fps from 16-inch carbines, delivering 1,282 foot-pounds of muzzle energy. The 55-grain hollow point bullet features a precisely formed hollow point cavity optimized for expansion at .223 velocities. Upon impact at velocities above 2,000 fps, the hollow point cavity initiates expansion with the bullet typically mushrooming to approximately 1.5x original diameter while fragmenting into multiple pieces on varmint-sized game. The copper jacket is drawn to controlled thickness - thin enough at the nose for reliable expansion but thick enough at the base to maintain some weight retention. Core is lead alloy selected for reliable expansion characteristics. Bullet construction balances cost-effectiveness with hunting performance. Powder selection emphasizes clean burning and consistent velocities. Brass cases are new production drawn to standard dimensions, fully reloadable with standard handloading components. Primers are non-corrosive boxer type. Velocity standard deviation typically measures 30-45 fps, adequate for hunting applications to 300 yards. Accuracy from AR-15 and bolt-action rifles averages 1.5-2.5 MOA - sufficient for ethical varmint hunting with proper shot placement.",
+    whyChoose: "Choose Hornady American Gunner 55gr HP when you need hunting-capable ammunition that won't break the budget. Many hunters face a dilemma: premium hunting ammunition is expensive enough that practicing with it becomes cost-prohibitive, but training with cheap FMJ means hunting with unfamiliar loads. American Gunner solves this by providing hunting performance at pricing that allows regular practice. The hollow point bullet delivers reliable expansion on varmints and predators - it won't match the explosive performance of premium V-MAX or similar bullets, but it's effective and proven. For hunters who shoot dozens or hundreds of rounds annually hunting prairie dogs or predators, the cost savings versus premium ammunition is substantial. The 55-grain weight matches common training loads, so your trajectory and handling remain familiar. Hornady's quality control means the ammunition is consistent enough for ethical shot placement at reasonable hunting ranges. The reloadable brass provides additional value for handloaders who can develop custom loads matching factory ballistics. American Gunner represents Hornady's understanding that hunters need ammunition that balances performance with practical economics. When you choose American Gunner, you're getting Hornady quality and innovation at a price point that encourages you to practice and hunt regularly without ammunition costs limiting your opportunities.",
+    seoKeywords: [
+      "hornady american gunner",
+      "223 hollow point",
+      "varmint hunting ammo",
+      "buy hornady hp",
+      "affordable hunting ammo",
+      "55gr hollow point",
+      "predator hunting 223",
+      "hornady hp ammo",
+      "223 varmint loads",
+      "budget hunting ammo",
+      "prairie dog ammo",
+      "american gunner price",
+      "coyote hunting 223",
+      "hornady 55gr hp",
+      "hunting training ammo"
+    ]
   },
   {
     id: "223-black-hills-match",
@@ -334,7 +481,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Competition-grade match ammunition",
     manufacturer: "Federal",
-    grainWeight: "69gr"
+    grainWeight: "69gr",
+    shortDescription: "Federal Gold Medal 69gr delivers competition-winning accuracy for High Power and precision rifle disciplines. The choice of champions for ranges from 200 to 600 yards.",
+    longDescription: "Federal Premium Gold Medal Match 69gr Sierra MatchKing represents the optimal balance of accuracy and trajectory for competitive shooting at typical High Power and Service Rifle ranges. The 69-grain MatchKing bullet provides superior ballistic coefficient compared to lighter bullets while stabilizing in standard 1:9 twist barrels, making it more universally compatible than heavier 77-grain bullets requiring faster twists. This combination has made the 69gr MatchKing the most popular match bullet for .223 competition, winning more matches across more disciplines than any other weight. Federal's loading precision ensures every component meets match-grade specifications - powder charges are weighed individually, bullets are sorted by weight and diameter, primers are seated to precise depth, and cases are selected for uniform dimensions. The result is ammunition capable of producing sub-MOA accuracy from quality rifles with extreme spread velocities often under 20 fps. The 69gr bullet excels from 200 to 600 yards, the primary engagement distances for High Power and Service Rifle competition. Its trajectory is flat enough for precise holdovers while the ballistic coefficient provides excellent wind resistance. For CMP Games, NRA High Power, across-the-course shooting, and precision rifle competition at moderate distances, Federal Gold Medal 69gr is the proven choice of champions.",
+    features: [
+      "Sierra MatchKing 69gr HPBT bullet - competition proven",
+      "Optimal weight for 200-600 yard competition shooting",
+      "Stabilizes in standard 1:9 twist barrels",
+      "Match-grade powder charges weighed individually",
+      "Premium brass selected for dimensional consistency",
+      "Federal Gold Medal primers for ignition uniformity",
+      "Extreme spread velocities typically under 20 fps",
+      "Preferred bullet weight for High Power competition",
+      "Superior ballistic coefficient for wind resistance",
+      "Trusted by Camp Perry competitors and champions"
+    ],
+    benefits: [
+      "Competition-winning accuracy proven at Camp Perry",
+      "Universal compatibility with 1:9 and faster twist barrels",
+      "Optimal trajectory for across-the-course shooting",
+      "Federal's century of match ammunition excellence",
+      "Consistent enough for precise ballistic calculations",
+      "Saves time versus handloading while matching handload quality"
+    ],
+    useCases: [
+      "NRA High Power and CMP competition at Camp Perry",
+      "Service Rifle and Match Rifle across-the-course shooting",
+      "F-Class competition at 300 and 600 yards",
+      "Precision shooting training and practice",
+      "Law enforcement precision marksman qualification",
+      "Any application requiring match-grade .223 accuracy"
+    ],
+    technicalDetails: "Federal Gold Medal 69gr Sierra MatchKing ammunition features the renowned SMK HPBT bullet with ballistic coefficient (G1) of 0.301 and (G7) of 0.153, providing excellent long-range performance. From 20-inch barrels, the load achieves approximately 2,950 fps muzzle velocity delivering 1,335 foot-pounds of energy. The 69-grain bullet stabilizes properly in 1:9 twist barrels while performing optimally in 1:8 and 1:7 twists. Sierra's MatchKing construction uses precision-swaged lead core in uniform copper jacket with boat tail angle optimized for drag reduction. The hollow point cavity shifts center of gravity rearward for enhanced stability. Federal's loading process includes weighing powder charges to 0.1 grain tolerance, selecting cases for weight uniformity within 2 grains, and seating primers to exact depth specifications. Temperature-stable powder maintains velocity consistency from 20°F to 120°F. Velocity extreme spread typically measures 15-25 fps over 10-shot strings. Accuracy from precision AR-15s and bolt guns regularly achieves 0.5-0.75 MOA at 100 yards, with many rifles producing sub-0.5 MOA groups. The load is optimized for match chambers including .223 Wylde and 5.56 NATO match chambers.",
+    whyChoose: "Choose Federal Gold Medal 69gr when you need proven match-grade accuracy for competitive shooting at typical competition distances. The 69gr MatchKing has won more High Power matches than any other bullet weight - not because of marketing but because of documented performance at Camp Perry and competition ranges nationwide. The bullet weight provides the ideal balance: heavy enough for excellent ballistic coefficient and wind resistance, yet light enough to stabilize in standard 1:9 twist barrels that most AR-15 service rifles use. This universal compatibility means you don't need a specialized fast-twist barrel. Federal's match ammunition manufacturing is legendary, with quality control processes that ensure consistency box to box, lot to lot. When you develop a ballistic profile with Gold Medal 69gr, it remains valid because the ammunition is that consistent. For High Power competitors shooting across-the-course, the 69gr trajectory works perfectly from 200 to 600 yards with manageable holds. The accuracy eliminates ammunition as a variable - if you miss, it's on you, not the ammo. While handloading can match Gold Medal's accuracy, the time investment is substantial. Federal gives you championship-level ammunition from the box, letting you spend practice time shooting rather than loading. When medals and trophies are on the line, Federal Gold Medal 69gr is the ammunition serious competitors trust.",
+    seoKeywords: [
+      "federal gold medal 69gr",
+      "sierra matchking 69",
+      "223 match ammo",
+      "high power ammunition",
+      "buy gold medal 69gr",
+      "competition 223 ammo",
+      "service rifle ammo",
+      "camp perry ammunition",
+      "federal match 69gr",
+      "precision rifle 223",
+      "69gr matchking",
+      "across course ammo",
+      "federal premium match",
+      "match grade 223",
+      "competition shooting ammo"
+    ]
   },
   {
     id: "556-lake-city",
@@ -347,7 +543,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Military surplus ammunition from Lake City plant",
     manufacturer: "Lake City",
-    grainWeight: "62gr"
+    grainWeight: "62gr",
+    shortDescription: "Genuine Lake City M855 green tip from the U.S. military's primary ammunition plant. Authentic military-spec performance with proven combat reliability.",
+    longDescription: "Lake City Army Ammunition Plant represents America's primary source of small arms ammunition for the U.S. military, with continuous production dating back to World War II. When you purchase Lake City M855, you're getting authentic military ammunition - the exact same specification rounds issued to American forces worldwide. The Lake City facility operates under military oversight with quality control standards that exceed commercial requirements, ensuring every round meets stringent military specifications for reliability, safety, and performance. The M855 62-grain green tip loading is the current U.S. military standard infantry cartridge, replacing the earlier M193 55-grain round. The steel penetrator tip enhances barrier penetration capability while maintaining acceptable accuracy for combat applications. Lake City brass is legendary among handloaders for its durability and consistency - it's not uncommon for Lake City cases to provide 10+ reloads before primer pockets loosen. The ammunition undergoes lot acceptance testing that includes accuracy verification, pressure testing, and reliability evaluation before approval for military use. While marketed as surplus, Lake City ammunition available commercially is often current production overflow rather than aged military stocks, providing fresh ammunition with decades of shelf life remaining. For shooters seeking authentic military ammunition with proven combat credentials, Lake City M855 delivers the same reliability trusted by American forces in conflicts worldwide.",
+    features: [
+      "Authentic U.S. military ammunition from Lake City Arsenal",
+      "M855 62gr green tip with steel penetrator core",
+      "Military quality control exceeding commercial standards",
+      "Premium Lake City brass prized by handloaders",
+      "Lot-tested for accuracy, pressure, and reliability",
+      "Same specification as issued to U.S. armed forces",
+      "Enhanced barrier penetration from steel penetrator",
+      "Non-corrosive mil-spec primers",
+      "Proven combat reliability through decades of service",
+      "Crimped primer pockets for enhanced durability"
+    ],
+    benefits: [
+      "Genuine military ammunition with proven combat record",
+      "Lake City brass quality enables 10+ reloads",
+      "Barrier penetration superior to standard ball ammo",
+      "Military quality control ensures reliability",
+      "Combat-proven design trusted by U.S. forces",
+      "Long-term storage capability with proper conditions"
+    ],
+    useCases: [
+      "Tactical training simulating military loadings",
+      "Barrier penetration testing and evaluation",
+      "Long-range practice with heavier bullet weight",
+      "Brass collection for premium handloading projects",
+      "General AR-15 training with authentic military ammo",
+      "Homeland defense where barrier penetration matters"
+    ],
+    technicalDetails: "Lake City M855 features the SS109/M855 62-grain bullet with approximately 10-grain mild steel penetrator tip, lead core, and copper alloy jacket with green-painted tip for identification. From 20-inch M16A2 barrels, the load achieves approximately 3,100 fps muzzle velocity delivering 1,323 foot-pounds of energy. The steel penetrator enhances performance against barriers, penetrating mild steel, automotive glass, and light cover more effectively than M193 ball. Bullet construction includes cannelure for crimping with taper crimp or stake crimp depending on production lot. Lake City brass is manufactured from high-quality cartridge brass (70/30 copper-zinc) with consistent wall thickness and case head strength exceeding SAAMI specifications. Military crimp secures primers - this crimp must be removed before repriming when handloading. Powder is military-specification propellant optimized for function in rifle-length and carbine-length gas systems. Primers are military-specification Boxer-type, non-corrosive and non-mercuric. Velocity standard deviation varies by lot but typically measures 30-50 fps. Accuracy from military rifles averages 2-4 MOA - adequate for combat applications though not match-grade. Ammunition is packaged in military-style cardboard boxes or stripper clips depending on acquisition source. Lot numbers allow tracing to production date and specifications.",
+    whyChoose: "Choose Lake City M855 when you want authentic U.S. military ammunition with proven combat credentials. Lake City isn't just another ammunition manufacturer - it's THE ammunition plant that has supplied American forces through World War II, Korea, Vietnam, Gulf War, Iraq, Afghanistan, and every conflict in between. When you shoot Lake City, you're shooting the same ammunition trusted by American soldiers, Marines, airmen, and sailors in combat worldwide. The military quality control standards are more rigorous than commercial requirements, including lot acceptance testing that commercial ammunition doesn't undergo. The M855 green tip loading is the current U.S. military standard for good reason - it provides enhanced barrier penetration while maintaining reliability and acceptable accuracy. For handloaders, Lake City brass is the gold standard - its durability and consistency mean your brass investment provides maximum reloading potential. The military primer crimp adds one extra step during prep, but the brass quality makes it worthwhile. Lake City ammunition represents living history - each headstamp tells a story of American manufacturing and military preparedness. When you choose Lake City M855, you're not just buying ammunition; you're acquiring authentic military supplies with performance proven in the world's most demanding environments. It's the ammunition that's defended freedom worldwide.",
+    seoKeywords: [
+      "lake city m855",
+      "military surplus 556",
+      "green tip ammo",
+      "buy lake city ammo",
+      "authentic military ammo",
+      "m855 green tip",
+      "lake city arsenal",
+      "military 556 ammo",
+      "lake city brass",
+      "62gr green tip",
+      "army ammunition",
+      "surplus 556",
+      "military spec ammo",
+      "lake city 62gr",
+      "combat ammunition"
+    ]
   },
   {
     id: "223-remington-umc",
@@ -386,7 +631,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Steel-cased budget ammunition for high-volume shooting",
     manufacturer: "Wolf",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Wolf Polyformance delivers the lowest cost-per-round for AR-15 training. Steel-cased reliability makes high-volume practice affordable for budget-conscious shooters.",
+    longDescription: "Wolf Polyformance ammunition represents the ultimate solution for shooters who need to maximize training volume while minimizing ammunition costs. Manufactured in Russia's Tula Cartridge Works, one of the world's largest ammunition producers with over 130 years of manufacturing history, Wolf brings military-grade production efficiency to the civilian market through steel-cased construction. Steel cases cost significantly less to produce than brass while providing reliable function in semi-automatic firearms. The polymer coating on the steel cases serves multiple purposes: it provides lubricity for smooth feeding and extraction, it protects the steel from corrosion, and it prevents the cases from scratching chamber finishes. While steel cases aren't reloadable, the cost savings allow purchasing 50-100% more ammunition for the same money compared to brass-cased alternatives - which means more trigger time and faster skill development. The 55-grain FMJ bullet uses bi-metal jacket (copper-washed steel) rather than pure copper, further reducing cost. Wolf Polyformance has earned acceptance among high-volume shooters, training facilities, and budget-conscious enthusiasts who understand that skills development requires thousands of rounds. While accuracy doesn't match premium ammunition, it's adequate for practical training applications. For shooters focused on maximum training volume rather than target shooting or reloading, Wolf Polyformance delivers unbeatable value.",
+    features: [
+      "Steel cases with polymer coating for reliable function",
+      "Lowest cost-per-round for 5.56 NATO training",
+      "Bi-metal jacketed bullet reduces production costs",
+      "Manufactured in high-volume military ammunition plant",
+      "Berdan-primed for military-style production efficiency",
+      "Polymer coating provides lubricity and corrosion protection",
+      "Consistent function in AR-15 and AK-pattern rifles",
+      "Non-corrosive primers for long-term storage",
+      "Enables high-volume training on limited budget",
+      "Proven reliability through millions of rounds fired"
+    ],
+    benefits: [
+      "Maximum training volume for minimum investment",
+      "Cost savings enable more frequent range sessions",
+      "Reliable function despite budget pricing",
+      "Russian military manufacturing quality",
+      "Perfect for skills development where volume matters most",
+      "Frees budget for other training expenses like courses and accessories"
+    ],
+    useCases: [
+      "High-volume AR-15 training on tight budget",
+      "New shooter training where volume builds skills",
+      "Function testing and reliability verification",
+      "Plinking and recreational shooting",
+      "Training facility bulk ammunition for student use",
+      "Emergency preparedness stockpiling on budget"
+    ],
+    technicalDetails: "Wolf Polyformance 55gr FMJ uses lacquer or polymer-coated steel cases manufactured from low-carbon steel sheet. The coating provides chamber lubricity with coefficient of friction similar to brass while protecting against corrosion. Cases are Berdan-primed using non-corrosive primers - Berdan priming is more efficient for high-volume military production but makes cases non-reloadable for civilian handloaders. The 55-grain bullet features bi-metal jacket (copper-washed or copper-plated steel) over lead core, reducing copper costs while maintaining reliable function. Muzzle velocity from 16-inch barrels averages 2,900-3,000 fps, slightly lower than brass-cased 5.56 but adequate for training. Velocity standard deviation may be higher than premium ammunition, typically 50-75 fps, but this doesn't significantly impact training effectiveness at typical ranges. Accuracy from AR-15 rifles averages 3-5 MOA - sufficient for practical training though not precision work. The steel cases are approximately 25% heavier than brass cases. Chamber pressures meet SAAMI .223 specifications though some lots may approach lower end of 5.56 NATO pressures. Extraction reliability is good with properly maintained extractors, though extractors may wear faster than with brass ammunition.",
+    whyChoose: "Choose Wolf Polyformance when your primary goal is maximizing training volume within budget constraints. Skills development in shooting requires thousands of rounds - professional shooters fire tens of thousands annually to maintain proficiency. At Wolf's pricing, you can literally afford to shoot 50-100% more ammunition compared to brass-cased alternatives. This additional volume translates directly into faster skill development and better retention. While firearms enthusiasts debate steel versus brass cases, the reality is that Wolf functions reliably in quality AR-15s with proper maintenance. Yes, steel cases aren't reloadable and may increase extractor wear slightly, but these concerns are minor compared to the skill development enabled by doubling your round count. Training facilities and military surplus shooters worldwide use steel-cased ammunition because volume matters more than perfection. The Russian manufacturing at Tula represents over a century of ammunition production with quality control adequate for military use. Wolf Polyformance won't win accuracy competitions, but it will help you develop the fundamentals, increase trigger time, and build proficiency without emptying your wallet. For shooters who understand that trigger time is the key to improvement and who prioritize training volume over brass collection, Wolf Polyformance is the smart economic choice that keeps you shooting more.",
+    seoKeywords: [
+      "wolf polyformance",
+      "steel case 556",
+      "cheap 556 ammo",
+      "buy wolf ammo",
+      "budget ar15 ammo",
+      "wolf 55gr fmj",
+      "steel cased ammo",
+      "bulk training ammo",
+      "affordable 556",
+      "wolf ammunition",
+      "russian 556 ammo",
+      "cheap training ammo",
+      "high volume ammo",
+      "budget plinking ammo",
+      "wolf price"
+    ]
   },
   {
     id: "223-hornady-varmint",
@@ -461,7 +755,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Premium handload-quality ammunition",
     manufacturer: "Nosler",
-    grainWeight: "69gr"
+    grainWeight: "69gr",
+    shortDescription: "Nosler Custom Competition delivers handload precision from factory ammunition. Premium components and meticulous assembly for discerning precision shooters.",
+    longDescription: "Nosler Custom Competition ammunition represents the pinnacle of factory-loaded precision, manufactured by a company legendary for producing the finest hunting and match bullets available. Nosler's reputation was built on their revolutionary Partition bullet and has expanded through innovations like AccuBond and Ballistic Tip designs. The Custom Competition line applies Nosler's exacting standards to match ammunition, creating loads that rival or exceed the accuracy of carefully crafted handloads. Each round is assembled with hand-loading attention to detail: cases are weight-sorted and uniformed, powder charges are precisely measured, bullets are seated to exact specifications, and every loaded round undergoes inspection. The 69-grain Nosler Custom Competition HPBT bullet features ultra-tight tolerances with bullet-to-bullet weight consistency within 0.1 grains and concentricity held to match-grade specifications. The boat tail design and hollow point cavity are optimized for exceptional ballistic coefficient and stability. While Nosler Custom Competition commands premium pricing, it delivers accuracy that eliminates ammunition as a variable in precision shooting. For competitive shooters, long-range enthusiasts, and anyone demanding the absolute best accuracy from their .223 rifle, Nosler Custom Competition provides handload quality without the time investment of loading your own ammunition. The consistent performance enables development of precise ballistic data that remains valid across multiple boxes.",
+    features: [
+      "Nosler Custom Competition 69gr HPBT match bullet",
+      "Hand-loading attention with weight-sorted components",
+      "Powder charges measured to laboratory-grade precision",
+      "Premium brass selected and prepared for consistency",
+      "Bullets sorted for weight and dimensional uniformity",
+      "Ultra-tight concentricity specifications for accuracy",
+      "Optimized for precision AR-15 and bolt-action rifles",
+      "Temperature-stable powder for year-round consistency",
+      "Match-grade primers seated to precise depth",
+      "Nosler's legendary quality control and attention to detail"
+    ],
+    benefits: [
+      "Handload-quality accuracy from factory ammunition",
+      "Nosler's 75+ year reputation for premium components",
+      "Eliminates time investment required for handloading",
+      "Consistent enough for precise ballistic modeling",
+      "Competition-proven accuracy for serious shooters",
+      "Premium components throughout ensure maximum potential"
+    ],
+    useCases: [
+      "Precision rifle competition at all distances",
+      "Long-range target shooting and practice",
+      "Competition practice and fundamentals refinement",
+      "Load development baseline for handloaders",
+      "Any application demanding maximum .223 accuracy",
+      "Precision varmint hunting at extended ranges"
+    ],
+    technicalDetails: "Nosler Custom Competition 69gr HPBT ammunition features Nosler's proprietary match bullet with ballistic coefficient (G1) of approximately 0.330, providing excellent long-range trajectory. From 20-inch barrels, the load achieves approximately 2,850 fps muzzle velocity delivering 1,246 foot-pounds of energy. The bullet construction uses precision-swaged lead core in uniform copper jacket with boat tail angle optimized for minimal drag. The hollow point cavity shifts center of gravity rearward for gyroscopic stability. Nosler's loading process includes weight-sorting brass within 1-grain lots, uniforming primer pockets and flash holes, precisely measuring powder charges to 0.05-grain tolerance, and seating bullets to exact depth with minimal runout. Cases undergo multiple quality checks including wall thickness measurement and dimensional verification. Primers are seated to controlled depth for ignition consistency. Temperature-stable powder maintains velocities across wide temperature ranges. Extreme spread velocities typically measure under 15 fps over 10-shot strings - among the tightest in factory ammunition. Accuracy from precision rifles regularly achieves 0.5 MOA at 100 yards, with many rifles producing groups under 0.4 MOA. The ammunition is optimized for match chambers including .223 Wylde and tight-tolerance chambers common in precision rifles.",
+    whyChoose: "Choose Nosler Custom Competition when you demand the absolute finest factory-loaded .223 ammunition available and refuse to compromise on accuracy. Nosler built their reputation on producing premium bullets that serious hunters and shooters trust above all others, and that commitment to excellence extends throughout the Custom Competition line. The attention to detail rivals handloading: weight-sorted components, precisely measured powder, carefully seated bullets, and individual inspection. This isn't mass production - it's precision assembly focused on maximum accuracy potential. For competitive shooters, Custom Competition's consistency means ballistic data developed with one box remains valid across subsequent boxes - critical for success in precision shooting disciplines. The extreme spread velocities under 15 fps enable precise trajectory prediction at long range. While the premium pricing is notable, consider the alternative: handloading match-grade ammunition requires substantial time investment plus equipment costs. Nosler gives you handload accuracy from the box, letting you spend your time shooting rather than reloading. For precision rifle competitors and serious long-range shooters who understand the value of eliminating variables, Nosler Custom Competition represents an investment in accuracy that pays dividends in improved performance. When perfection matters, Nosler delivers.",
+    seoKeywords: [
+      "nosler custom competition",
+      "nosler 69gr hpbt",
+      "premium match ammo",
+      "buy nosler 223",
+      "handload quality ammo",
+      "nosler match ammo",
+      "custom competition 69gr",
+      "precision 223 ammo",
+      "nosler ammunition",
+      "competition 223 loads",
+      "ultra accurate 223",
+      "nosler custom price",
+      "match grade nosler",
+      "premium 223 ammo",
+      "competition shooting 223"
+    ]
   },
   {
     id: "556-federal-american-eagle",
@@ -474,7 +817,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Affordable target and training ammunition",
     manufacturer: "Federal",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Federal American Eagle delivers Federal Premium quality at value pricing. Reliable 5.56 NATO performance ideal for high-volume AR-15 training.",
+    longDescription: "Federal American Eagle represents Federal Premium's commitment to making quality ammunition accessible to all shooters through efficient manufacturing and value pricing. While positioned as their economy line, American Eagle benefits from Federal's century-plus of ammunition manufacturing expertise, quality control processes, and component sourcing. The ammunition is manufactured in Federal's Anoka, Minnesota facility using the same equipment and oversight that produces their premium lines. The 55-grain FMJ loading is optimized for AR-15 platforms, providing reliable function from carbine-length through rifle-length gas systems. Federal's powder selection emphasizes clean burning to reduce fouling and maintenance requirements - a hallmark of all Federal ammunition. The brass cases are manufactured to Federal's specifications with consistent dimensions and wall thickness, making them popular with handloaders who appreciate the quality and reliability. While American Eagle won't win bench rest competitions, it delivers accuracy suitable for practical applications including training, recreational shooting, and basic competition. The reliability is excellent - malfunctions are rare when using quality magazines and properly maintained firearms. For shooters seeking Federal quality without premium pricing, American Eagle delivers the consistency and reliability Federal is known for at a price point that encourages regular range sessions.",
+    features: [
+      "Federal Premium manufacturing quality at value pricing",
+      "Clean-burning powder reduces fouling and cleaning time",
+      "Reliable function in all AR-15 configurations",
+      "Manufactured in Federal's Minnesota facility",
+      "Consistent velocities for predictable performance",
+      "Reloadable brass cases popular with handloaders",
+      "Non-corrosive primers for long-term storage",
+      "5.56 NATO loading suitable for all AR-15 platforms",
+      "Quality control from America's leading ammunition producer",
+      "Value pricing enables high-volume training"
+    ],
+    benefits: [
+      "Federal's reputation for quality at accessible pricing",
+      "Clean burning means more shooting, less maintenance",
+      "Reliable performance encourages confidence and training",
+      "American manufacturing supports domestic economy",
+      "Consistent accuracy for practical training applications",
+      "Federal's customer service and technical support"
+    ],
+    useCases: [
+      "AR-15 training and practice sessions",
+      "Recreational plinking and informal shooting",
+      "Competition practice and fundamentals training",
+      "Rifle zeroing and sight adjustment",
+      "New shooter training where volume matters",
+      "General range use and basic tactical training"
+    ],
+    technicalDetails: "Federal American Eagle 55gr 5.56 NATO ammunition achieves approximately 3,240 fps muzzle velocity from 20-inch test barrels and 3,025 fps from 16-inch carbines, delivering 1,282 foot-pounds of muzzle energy. The loading meets 5.56 NATO pressure specifications, making it suitable for all rifles chambered in 5.56 NATO or .223 Wylde. The 55-grain FMJ bullet features copper alloy jacket over lead core with boat tail base for improved ballistic coefficient compared to flat-base designs. Federal's brass cases are drawn from high-quality cartridge brass with consistent wall thickness controlled to tight tolerances. Primer pockets are sized for standard small rifle primers without military crimp, simplifying reloading preparation. Federal's powder selection emphasizes temperature stability and clean burning, with minimal copper fouling and residue. Velocity standard deviation typically measures 30-40 fps across 10-shot strings - adequate for training and practical applications. Accuracy from AR-15 rifles averages 1.5-2.5 MOA at 100 yards, suitable for training, competition practice, and general shooting. All components are non-corrosive and non-mercuric. Federal's quality control includes multiple inspection points during manufacturing plus lot sampling for pressure and accuracy verification.",
+    whyChoose: "Choose Federal American Eagle when you want Federal Premium quality without paying premium prices. Federal has been producing ammunition for over 100 years, and their manufacturing expertise is evident even in value-priced lines like American Eagle. The ammunition is made in the same facility, on similar equipment, with the same quality control oversight as Federal's premium products. The primary differences are component selection optimized for value and packaging - the reliability and consistency remain Federal-grade. The clean-burning powder is a Federal hallmark that benefits all shooters through reduced cleaning time and extended maintenance intervals. For shooters who understand that trigger time is the key to skill development, American Eagle's value pricing enables more frequent range sessions and higher round counts. The brass quality makes it attractive for handloaders looking to collect quality cases. Federal's customer service is excellent, with knowledgeable staff and comprehensive technical resources. American Eagle represents Federal's understanding that affordability matters - by offering quality ammunition at accessible prices, they enable more Americans to shoot more often. When you choose American Eagle, you're getting Federal reliability and a century of manufacturing expertise in ammunition that encourages you to train regularly and shoot often.",
+    seoKeywords: [
+      "federal american eagle",
+      "american eagle 556",
+      "federal 55gr fmj",
+      "buy american eagle",
+      "federal training ammo",
+      "556 nato ammo",
+      "federal ar15 ammo",
+      "american eagle price",
+      "federal value ammo",
+      "556 bulk ammo",
+      "federal range ammo",
+      "american eagle 223",
+      "federal plinking ammo",
+      "budget federal ammo",
+      "federal 556 fmj"
+    ]
   },
   {
     id: "223-fiocchi",
