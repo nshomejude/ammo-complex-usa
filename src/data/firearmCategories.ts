@@ -14,7 +14,11 @@ import {
   Layers,
   Radio,
   Binary,
-  Telescope
+  Telescope,
+  History,
+  Star,
+  Home,
+  Skull
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -261,5 +265,71 @@ export const firearmCategories: FirearmCategory[] = [
     trending: false,
     recommendedAmmo: [".22 LR", ".410 Bore"],
     ageRequirement: 18
+  },
+  {
+    id: "22",
+    name: "Black Powder/Muzzleloaders",
+    slug: "muzzleloaders",
+    description: "Traditional and modern muzzleloading rifles for hunting and historical shooting",
+    icon: History,
+    salesCount: "16.2K",
+    trending: true,
+    recommendedAmmo: [".50 CAL", ".45 CAL"],
+    ageRequirement: 18
+  },
+  {
+    id: "23",
+    name: "1911-Style Pistols",
+    slug: "1911-pistols",
+    description: "Classic .45 ACP single-action pistols and modern variants",
+    icon: Award,
+    salesCount: "21.5K",
+    trending: true,
+    recommendedAmmo: [".45 ACP", "9mm", ".38 Super"],
+    ageRequirement: 21
+  },
+  {
+    id: "24",
+    name: "Striker-Fired Polymer Pistols",
+    slug: "striker-fired-pistols",
+    description: "Modern polymer-frame striker-fired duty and carry pistols",
+    icon: Zap,
+    salesCount: "32.7K",
+    trending: true,
+    recommendedAmmo: ["9mm", ".40 S&W", ".45 ACP"],
+    ageRequirement: 21
+  },
+  {
+    id: "25",
+    name: "Cowboy Action/Western Firearms",
+    slug: "cowboy-western",
+    description: "Single-action revolvers and lever rifles for western shooting sports",
+    icon: Star,
+    salesCount: "13.8K",
+    trending: true,
+    recommendedAmmo: [".45 Colt", ".357 Magnum", ".44-40"],
+    ageRequirement: 21
+  },
+  {
+    id: "26",
+    name: "Home Defense Firearms",
+    slug: "home-defense",
+    description: "Purpose-built firearms optimized for home protection scenarios",
+    icon: Home,
+    salesCount: "25.4K",
+    trending: true,
+    recommendedAmmo: ["9mm", "12 GA", "5.56 NATO"],
+    ageRequirement: 21
+  },
+  {
+    id: "27",
+    name: "Hunting Handguns",
+    slug: "hunting-handguns",
+    description: "Powerful revolvers and single-shot pistols for big game hunting",
+    icon: Skull,
+    salesCount: "9.3K",
+    trending: false,
+    recommendedAmmo: [".44 Magnum", ".454 Casull", ".500 S&W"],
+    ageRequirement: 21
   }
 ];
