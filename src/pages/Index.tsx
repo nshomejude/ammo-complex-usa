@@ -1,14 +1,22 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { CategoryCard } from "@/components/CategoryCard";
+import { TopSellingCard } from "@/components/TopSellingCard";
 import { ProductCard } from "@/components/ProductCard";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, TrendingUp } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 const Index = () => {
   const featuredProducts = products.filter(p => p.inStock).slice(0, 4);
+
+  const topSellingCategories = [
+    { ...categories[1], salesCount: "12.5K", trending: true }, // Pistol
+    { ...categories[0], salesCount: "9.8K", trending: true }, // Rifle
+    { ...categories[3], salesCount: "8.2K", trending: false }, // Rimfire
+    { ...categories[2], salesCount: "6.4K", trending: false }, // Shotgun
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -16,7 +24,7 @@ const Index = () => {
       <Hero />
       
       <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-8 border-warning bg-warning/10">
+        <Alert className="mb-12 border-warning bg-warning/10">
           <AlertCircle className="h-4 w-4 text-warning" />
           <AlertTitle className="text-warning-foreground">Legal Notice</AlertTitle>
           <AlertDescription className="text-warning-foreground">
@@ -24,6 +32,29 @@ const Index = () => {
             you are legally permitted to purchase ammunition in your jurisdiction.
           </AlertDescription>
         </Alert>
+
+        <div className="mb-16">
+          <div className="mb-8 flex items-center gap-3">
+            <TrendingUp className="h-8 w-8 text-tactical" />
+            <div>
+              <h2 className="text-3xl font-bold">Top Selling Categories</h2>
+              <p className="text-muted-foreground">Most popular ammunition types this month</p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {topSellingCategories.map((category) => (
+              <TopSellingCard 
+                key={category.slug} 
+                name={category.name}
+                icon={category.icon}
+                salesCount={category.salesCount}
+                slug={category.slug}
+                trending={category.trending}
+              />
+            ))}
+          </div>
+        </div>
 
         <div className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Shop by Category</h2>
