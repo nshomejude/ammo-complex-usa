@@ -3631,7 +3631,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Extreme Terminal Performance hollow point",
     manufacturer: "Hornady",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Hornady XTP (eXtreme Terminal Performance) represents decades of hollow point bullet engineering excellence. Trusted by law enforcement and civilian defenders worldwide, XTP delivers reliable expansion and deep penetration in defensive scenarios.",
+    longDescription: "Hornady XTP 230-grain Jacketed Hollow Point ammunition represents the culmination of over 40 years of hollow point bullet development and refinement. The XTP bullet design was revolutionary when introduced, featuring controlled expansion characteristics that set new standards for defensive ammunition performance. Each XTP bullet is manufactured using Hornady's precise swaging process, creating a jacket and core combination that expands reliably across a wide velocity range while maintaining structural integrity for deep penetration. The 230-grain weight provides substantial mass for barrier penetration and momentum retention, crucial factors in real-world defensive scenarios. Hornady's serrated jacket design features precisely engineered folds that initiate controlled expansion upon impact with soft tissue, creating a larger wound cavity while preventing jacket separation from the core. The bullet's thick jacket walls near the base ensure the bullet holds together during penetration through intermediate barriers like heavy clothing, wallboard, or automotive glass. Each cartridge is loaded with carefully selected propellants that deliver consistent velocities and reliable function across different pistol designs and barrel lengths. Hornady's quality control processes include X-ray inspection of completed bullets to verify internal construction, dimensional measurement of every component, and function testing in multiple firearms. The brass cases are manufactured from high-quality cartridge brass with strict attention to wall thickness uniformity and proper case hardness. These cases are fully reloadable, allowing defensive shooters to practice with economical reloads while reserving factory ammunition for carry purposes. Hornady's primers are specially formulated to provide reliable ignition even after extended storage or exposure to temperature extremes, crucial for ammunition that may be carried for months or years before use. XTP ammunition has earned widespread adoption among law enforcement agencies, competitive shooters, and armed citizens who demand proven defensive performance. The consistent expansion and penetration characteristics have been documented in countless real-world defensive encounters and standardized testing protocols including FBI testing methodology. Whether carried in a full-size 1911 for duty use, a compact pistol for concealed carry, or a home defense firearm, Hornady XTP delivers the terminal performance you need when your life depends on it.",
+    features: [
+      "Precision-swaged 230-grain XTP jacketed hollow point bullet",
+      "Serrated jacket design for controlled expansion across velocity ranges",
+      "Thick jacket walls at bullet base prevent separation during penetration",
+      "Reliable expansion from 4-inch and 5-inch barrel lengths",
+      "Carefully selected propellants for consistent velocity and function",
+      "High-quality brass cases for reliable feeding and extraction",
+      "Specially formulated primers for all-weather reliability",
+      "Fully reloadable cases for practice ammunition economy",
+      "Approximately 890 fps from 5-inch barrel at standard pressure",
+      "Tested and proven in FBI protocol and real-world defensive encounters"
+    ],
+    benefits: [
+      "Four decades of proven defensive performance in real-world scenarios",
+      "Controlled expansion provides optimal wound cavity with deep penetration",
+      "Functions reliably in all .45 ACP pistols and carbines",
+      "Jacket design prevents over-expansion or fragmentation",
+      "Consistent performance reduces concerns about ammunition reliability",
+      "Hornady's reputation for innovation and quality assurance"
+    ],
+    useCases: [
+      "Personal defense carry ammunition for concealed carry pistols",
+      "Home defense firearms and bedside pistols",
+      "Law enforcement duty ammunition for patrol officers",
+      "Backup gun ammunition for security professionals",
+      "Defensive carbine ammunition for .45 ACP PCCs",
+      "Personal protection for citizens with lawful carry permits"
+    ],
+    technicalDetails: "Hornady XTP .45 ACP 230-grain JHP is loaded to standard pressure specifications, generating approximately 890 feet per second from a 5-inch barrel with around 405 foot-pounds of muzzle energy. The XTP bullet features Hornady's proprietary swaging process that bonds the gilding metal jacket to the lead core through mechanical interlock rather than chemical bonding. The serrated jacket mouth includes six precisely spaced serrations that control expansion initiation and petal formation. Jacket thickness measures approximately 0.025 inches at the base tapering to 0.015 inches at the serrations, providing controlled expansion while maintaining core retention. The bullet cavity depth and diameter are optimized for reliable expansion at .45 ACP velocities, typically expanding to 0.65-0.75 inch diameter while retaining 95-99% of original bullet weight. In calibrated ballistic gelatin testing per FBI protocol, XTP consistently penetrates 12-16 inches through bare gelatin and 14-18 inches through heavy clothing barriers, meeting FBI depth requirements. The brass cases use Hornady's proprietary annealing process for consistent neck tension and reliable bullet retention during feeding. Overall cartridge length is held to 1.275 inches for reliable feeding in all .45 ACP chambers. Chamber pressures average 19,000-20,000 PSI, within SAAMI specifications. From quality defensive pistols, accuracy typically measures 2-3 inches at 25 yards, more than adequate for defensive scenarios.",
+    whyChoose: "Choose Hornady XTP when you want proven defensive ammunition with four decades of documented real-world performance. XTP represents one of the most thoroughly tested and validated defensive bullet designs ever created, with countless law enforcement shootings and civilian defensive encounters demonstrating its effectiveness. Unlike newer designs that make claims based primarily on ballistic gelatin testing, XTP has proven itself in the most demanding test possible - actual defensive scenarios where lives hung in the balance. Hornady's manufacturing quality is exceptional, with every bullet undergoing X-ray inspection to verify proper core and jacket construction before loading. The controlled expansion characteristics mean XTP performs consistently whether fired from a compact carry pistol or a full-size duty weapon, eliminating concerns about barrel length sensitivity. Many competitive defensive ammunition designs cost significantly more while offering similar or inferior performance to XTP. The reloadable brass cases allow you to practice with economical reloads that perfectly replicate your carry ammunition's dimensions and feeding characteristics. Hornady's customer service and technical support are outstanding, with knowledgeable staff available to answer questions about ammunition selection and performance. When you choose Hornady XTP, you're choosing ammunition trusted by multiple generations of law enforcement officers and armed citizens who put their lives on the line. It's ammunition with a proven track record of stopping threats quickly and reliably when defensive force is necessary.",
+    seoKeywords: [
+      "hornady xtp 45 acp",
+      "45 acp hollow point",
+      "230 grain jhp 45 acp",
+      "buy 45 acp defense ammo",
+      "hornady 45 acp jhp",
+      "xtp self defense ammunition",
+      "45 acp carry ammo",
+      "hornady defensive ammo",
+      "best 45 acp hollow point",
+      "1911 defense ammunition",
+      "45 acp personal defense",
+      "hornady xtp 230 grain",
+      "concealed carry 45 acp",
+      "law enforcement 45 acp",
+      "premium 45 acp jhp"
+    ]
   },
   {
     id: "45acp-hornady-critical-duty",
@@ -3644,7 +3693,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Law enforcement grade barrier-blind ammunition",
     manufacturer: "Hornady",
-    grainWeight: "220gr"
+    grainWeight: "220gr",
+    shortDescription: "Hornady Critical Duty with FlexLock technology represents the pinnacle of barrier-blind defensive ammunition engineering. Designed specifically for law enforcement duty use, it delivers consistent expansion and penetration through all common barriers.",
+    longDescription: "Hornady Critical Duty 220-grain FlexLock ammunition was engineered specifically to meet the demanding requirements of law enforcement duty use while exceeding FBI protocol testing standards. The revolutionary FlexLock bullet design incorporates multiple advanced technologies to ensure consistent performance regardless of the barriers encountered in real-world defensive scenarios. The FlexLock bullet features a large mechanical jacket-to-core interlock band that prevents jacket-core separation during penetration through intermediate barriers like auto glass, heavy clothing, wallboard, plywood, or sheet metal. This mechanical lock is far superior to traditional jacket-core bonding methods, maintaining bullet integrity even under the most severe penetration challenges. The patented Flex Tip design uses a soft polymer insert in the hollow point cavity that prevents clogging when passing through barriers while initiating reliable expansion upon entering soft tissue. Traditional hollow points often fail to expand after barrier penetration because the cavity becomes packed with barrier material, but FlexLock's Flex Tip eliminates this failure mode. Each bullet is manufactured using Hornady's precision swaging equipment with tolerances measured in ten-thousandths of an inch, ensuring absolute consistency from bullet to bullet. The 220-grain weight provides optimal momentum for barrier penetration while remaining within standard pressure specifications for reliable function in all .45 ACP pistols. Hornady selected propellants specifically formulated for consistent performance from both compact carry pistols with 3.5-inch barrels and full-size duty pistols with 5-inch barrels, eliminating concerns about barrel length sensitivity. The flash-suppressed powder formulation maintains shooter night vision during low-light defensive scenarios, a critical consideration for law enforcement and civilian defensive use. Low-flash performance also reduces muzzle signature in indoor environments where multiple shots may be necessary. Each cartridge undergoes rigorous quality control including dimensional inspection, pressure testing, and function verification in multiple firearms platforms. The nickel-plated brass cases provide several advantages over standard brass: enhanced corrosion resistance for ammunition carried daily, improved visibility for chamber checks in low light, and reduced friction for reliable feeding and extraction. Critical Duty has been adopted by numerous federal, state, and local law enforcement agencies as duty ammunition after passing their rigorous testing protocols. When barriers stand between you and effective threat stoppage, Hornady Critical Duty delivers the barrier-blind performance that may save your life.",
+    features: [
+      "Revolutionary FlexLock bullet with 220-grain weight optimized for barriers",
+      "Patented Flex Tip prevents cavity clogging through barrier material",
+      "Mechanical InterLock band prevents jacket-core separation",
+      "Nickel-plated cases for corrosion resistance and improved feeding",
+      "Flash-suppressed powder for reduced muzzle signature in low light",
+      "Optimized for both compact and full-size .45 ACP pistols",
+      "Passes all FBI protocol testing including barrier tests",
+      "Consistent expansion and penetration regardless of barriers encountered",
+      "Standard pressure loading for universal pistol compatibility",
+      "Approximately 900 fps from 5-inch barrel, 850 fps from 4-inch barrel"
+    ],
+    benefits: [
+      "Barrier-blind performance eliminates concerns about intermediate barriers",
+      "Adopted by federal, state, and local law enforcement agencies nationwide",
+      "Flex Tip technology ensures reliable expansion in all scenarios",
+      "Flash-suppressed for maintained night vision in defensive encounters",
+      "Nickel cases provide enhanced visibility and corrosion resistance",
+      "Functions reliably in all .45 ACP pistols regardless of barrel length"
+    ],
+    useCases: [
+      "Law enforcement duty carry for patrol officers and detectives",
+      "Federal agent duty ammunition for FBI, DEA, ATF, and other agencies",
+      "Personal defense carry where barrier penetration is a concern",
+      "Home defense where walls and barriers may be encountered",
+      "Security professional duty ammunition for armed security officers",
+      "Civilian concealed carry in urban environments with barriers"
+    ],
+    technicalDetails: "Hornady Critical Duty .45 ACP 220-grain FlexLock is loaded to standard pressure specifications generating approximately 900 feet per second from 5-inch barrels and 850 fps from 4-inch barrels, with muzzle energies around 395-400 foot-pounds. The FlexLock bullet construction features a heavy jacket (0.030-0.035 inches thick at base) with the proprietary InterLock ring mechanically locking the jacket to the lead core. The InterLock ring is a raised band on the core that fits into a corresponding groove inside the jacket, creating a mechanical connection that resists separation under extreme stress. The Flex Tip is manufactured from a soft elastomeric polymer that compresses during barrier penetration while preventing cavity contamination. Upon entering soft tissue, the Flex Tip is driven rearward into the cavity, initiating controlled expansion. In FBI protocol ballistic gelatin testing, Critical Duty consistently penetrates 14-18 inches through bare gelatin, heavy clothing, wallboard, plywood, and auto glass barriers while expanding to 0.65-0.75 inch diameter and retaining 95-99% of original bullet weight. The nickel-plated cases provide superior corrosion resistance compared to standard brass, important for ammunition carried daily in varying environmental conditions. Case plating also reduces coefficient of friction by approximately 20%, improving feeding reliability in pistols with tight chambers or feed ramps. Flash-suppressed powder reduces muzzle flash by up to 50% compared to standard loads, preserving night-adapted vision. From quality defensive pistols, accuracy measures 2-3 inches at 25 yards, exceeding defensive accuracy requirements.",
+    whyChoose: "Choose Hornady Critical Duty when barrier penetration and consistent terminal performance are non-negotiable requirements. Critical Duty was engineered specifically for law enforcement duty use where officers face unknown scenarios that may involve shooting through auto glass during vehicle stops, through interior walls pursuing suspects in structures, or through heavy clothing in all weather conditions. The FlexLock bullet's ability to maintain integrity and deliver consistent expansion after barrier penetration represents a genuine breakthrough in ammunition technology, validated through extensive FBI protocol testing and real-world law enforcement shootings. Multiple federal agencies including FBI and DEA selected Critical Duty after exhaustive testing of competing ammunition designs, demonstrating its superiority in the most demanding scenarios. The flash-suppressed powder is a critical advantage in low-light defensive encounters, allowing rapid follow-up shots without temporary blindness from muzzle flash. Nickel-plated cases provide practical advantages for duty carry including enhanced corrosion resistance, improved chamber check visibility, and superior feeding reliability. Unlike many defensive loads optimized for bare gelatin testing, Critical Duty was engineered specifically for barrier-blind performance, the actual challenges faced in real-world defensive scenarios. Hornady's quality control and consistency ensure every round performs as designed when your life depends on it. When you choose Critical Duty, you're choosing ammunition engineered for the worst-case scenarios where barriers stand between you and effective threat stoppage. It's ammunition trusted by professionals who face danger as part of their job, now available for responsible armed citizens.",
+    seoKeywords: [
+      "hornady critical duty 45 acp",
+      "45 acp barrier blind ammo",
+      "flexlock 45 acp ammunition",
+      "law enforcement 45 acp",
+      "hornady 45 acp defense",
+      "buy critical duty 45 acp",
+      "fbi protocol 45 acp",
+      "duty carry 45 acp ammo",
+      "nickel plated 45 acp",
+      "220 grain 45 acp jhp",
+      "best 45 acp duty ammo",
+      "hornady flexlock 220gr",
+      "barrier penetration 45 acp",
+      "critical duty ammunition",
+      "professional 45 acp defense"
+    ]
   },
   {
     id: "45acp-speer-gold-dot-230",
@@ -3657,7 +3755,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Premium bonded self-defense ammunition",
     manufacturer: "Speer",
-    grainWeight: "230gr +P"
+    grainWeight: "230gr +P",
+    shortDescription: "Speer Gold Dot represents the gold standard in bonded-core defensive ammunition. The proprietary Uni-Cor bonding process creates a jacket-core bond so strong that separation is virtually impossible, ensuring reliable performance in critical situations.",
+    longDescription: "Speer Gold Dot 230-grain +P Jacketed Hollow Point ammunition represents over three decades of bonded-core ammunition development and real-world validation. The revolutionary Uni-Cor electrochemical bonding process literally grows the copper jacket onto the lead core one molecule at a time, creating an inseparable bond that ensures the bullet performs as designed regardless of barriers encountered or impact velocities. This is fundamentally different from mechanical bonding or core-jacket friction, providing unmatched reliability in defensive scenarios. The 230-grain +P loading combines traditional .45 ACP bullet weight with enhanced velocity, delivering approximately 950 feet per second from 5-inch barrels - significantly faster than standard pressure loads while remaining safe in all modern .45 ACP pistols rated for +P ammunition. This increased velocity translates to deeper penetration and more energetic expansion, crucial factors in stopping determined threats quickly. Speer's hollow point cavity design has been refined through extensive testing to provide reliable expansion across the velocity range encountered from different barrel lengths, from compact 3.5-inch carry pistols to full-size 5-inch duty weapons. The cavity depth and diameter are precisely engineered to initiate expansion immediately upon impact while the bonded core ensures the bullet stays together during penetration through clothing, intermediate barriers, or bone. Each Gold Dot bullet undergoes Speer's rigorous quality control including X-ray inspection to verify proper core-jacket bonding, weight sorting to ensure consistency, and dimensional inspection of critical features. Gold Dot has earned adoption by more law enforcement agencies than any other defensive ammunition, with thousands of agencies including state police, sheriff's departments, and federal agencies trusting Gold Dot for duty carry. This widespread adoption reflects countless successful defensive shootings where Gold Dot performed exactly as designed, stopping threats quickly and reliably. The brass cases are manufactured to exacting specifications with nickel plating for enhanced corrosion resistance and improved feeding reliability. Nickel cases also provide better visibility during chamber checks in low light conditions, an important consideration for concealed carry and duty use. Speer's primers are specially formulated for reliable ignition after extended carry including exposure to temperature extremes, humidity, and the physical stresses of daily carry. When your life depends on one shot stopping a deadly threat, Speer Gold Dot delivers the proven performance trusted by professionals nationwide.",
+    features: [
+      "Proprietary Uni-Cor bonded-core technology prevents jacket-core separation",
+      "Enhanced +P velocity - approximately 950 fps from 5-inch barrel",
+      "230-grain bullet weight provides optimal mass and momentum",
+      "Precisely engineered hollow point cavity for reliable expansion",
+      "Nickel-plated brass cases for corrosion resistance and feeding reliability",
+      "Functions reliably in all .45 ACP pistols rated for +P ammunition",
+      "Adopted by more law enforcement agencies than any competing design",
+      "Consistent performance from 3.5-inch to 5-inch barrel lengths",
+      "Specially formulated primers for all-weather reliability",
+      "Proven in thousands of real-world defensive encounters"
+    ],
+    benefits: [
+      "Uni-Cor bonding ensures bullet integrity in all defensive scenarios",
+      "Enhanced +P velocity increases energy delivery and penetration",
+      "Three decades of proven real-world performance",
+      "Functions reliably in 1911 pistols and modern polymer-framed designs",
+      "Trusted by more law enforcement professionals than any competitor",
+      "Nickel cases provide enhanced durability for daily carry"
+    ],
+    useCases: [
+      "Law enforcement duty carry for patrol officers and investigators",
+      "Personal defense concealed carry in pistols rated for +P",
+      "Home defense in full-size and compact .45 ACP pistols",
+      "Federal agent duty ammunition for multiple agencies",
+      "Security professional duty carry for armed security",
+      "Civilian defensive carry where maximum performance is required"
+    ],
+    technicalDetails: "Speer Gold Dot .45 ACP 230-grain +P JHP is loaded to +P pressure specifications generating approximately 950 feet per second from 5-inch barrels, 920 fps from 4.5-inch barrels, and 875 fps from 4-inch barrels. Muzzle energy measures approximately 460 foot-pounds from 5-inch barrels. The Uni-Cor bonding process uses electrochemical deposition to grow the gilding metal jacket onto the lead core, creating a molecular-level bond that cannot separate under any practical circumstances. Jacket thickness measures approximately 0.030 inches at the bullet base, providing structural integrity during penetration. The hollow point cavity features six precisely spaced petals that fold outward during expansion, creating a mushroom shape with diameter typically expanding to 0.70-0.80 inch while retaining 98-100% of original bullet weight. In FBI protocol ballistic gelatin testing, Gold Dot +P consistently penetrates 13-17 inches through bare gelatin and 15-18 inches through heavy clothing, denim, and intermediate barriers. The bonded construction ensures consistent performance even after passing through auto glass, wallboard, or heavy bone. Nickel-plated cases reduce friction during feeding and extraction while providing superior corrosion resistance compared to standard brass. +P pressures average 23,000 PSI, exceeding standard pressure but within SAAMI +P specifications of 23,000 PSI maximum. This ammunition should only be used in firearms rated for +P ammunition - consult your firearm manufacturer. From quality defensive pistols, accuracy measures 2-2.5 inches at 25 yards, exceeding requirements for defensive scenarios.",
+    whyChoose: "Choose Speer Gold Dot +P when you want the defensive ammunition trusted by more law enforcement professionals than any competing design. Gold Dot's adoption by thousands of agencies nationwide isn't based on marketing or endorsement deals - it's based on rigorous testing protocols and decades of proven real-world performance. The Uni-Cor bonding process represents a genuine technological advantage, ensuring the bullet performs as designed regardless of what barriers are encountered between you and the threat. Unlike mechanical bonding or friction-fit jacket designs that can separate under stress, Uni-Cor's molecular-level bond is permanent and unbreakable. The +P loading provides enhanced velocity and energy compared to standard pressure loads, increasing wound cavity size and penetration depth for faster threat stoppage. This performance advantage can be critical in defensive scenarios where fractions of a second determine survival. Speer's manufacturing quality control is legendary, with every bullet undergoing inspection and testing to ensure consistency. The nickel-plated cases provide practical advantages for duty carry including corrosion resistance when carried in contact with perspiration, and improved feeding reliability in tight chambers. Gold Dot has been documented in thousands of defensive shootings by law enforcement and civilians, consistently demonstrating effective threat stoppage with predictable performance. When you choose Speer Gold Dot +P, you're choosing ammunition with an unmatched track record of saving lives when defensive force was necessary. It's the defensive ammunition preferred by professionals who carry for a living, now available for responsible armed citizens who demand the same proven performance.",
+    seoKeywords: [
+      "speer gold dot 45 acp",
+      "45 acp +p ammunition",
+      "230 grain +p 45 acp",
+      "bonded hollow point 45 acp",
+      "buy gold dot 45 acp",
+      "law enforcement 45 acp ammo",
+      "speer 45 acp jhp",
+      "premium 45 acp defense",
+      "best 45 acp +p",
+      "duty carry 45 acp",
+      "speer 230gr +p jhp",
+      "1911 +p ammunition",
+      "concealed carry 45 acp +p",
+      "bonded core 45 acp",
+      "professional grade 45 acp"
+    ]
   },
   {
     id: "45acp-federal-hst-230",
@@ -3670,7 +3817,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Law enforcement standard hollow point",
     manufacturer: "Federal",
-    grainWeight: "230gr +P"
+    grainWeight: "230gr +P",
+    shortDescription: "Federal HST (Hi-Shok Two) represents Federal's premier law enforcement defensive ammunition. Engineered to deliver maximum expansion with optimal penetration depth, HST has become the defensive standard for federal, state, and local agencies.",
+    longDescription: "Federal HST 230-grain +P Jacketed Hollow Point ammunition represents the pinnacle of Federal's century-plus experience in ammunition development and manufacturing. HST was designed specifically for law enforcement duty use after extensive consultation with federal agencies and tactical teams regarding real-world performance requirements. The result is ammunition that consistently delivers maximum terminal performance across all common defensive scenarios. The HST bullet design features a deep hollow point cavity with strategically engineered jacket skives that control expansion characteristics with mathematical precision. Upon impact, the jacket petals fold outward in a consistent pattern creating a large frontal diameter for maximum energy transfer while the thick jacket base maintains structural integrity during barrier penetration. The 230-grain +P loading delivers significantly enhanced velocity compared to standard pressure ammunition, achieving approximately 950 feet per second from 5-inch barrels. This increased velocity translates directly into more energetic expansion and deeper penetration, critical factors in stopping determined attackers quickly. Federal's proprietary bonding process creates a strong mechanical connection between the copper jacket and lead core, preventing separation during penetration through barriers or heavy bone. This bonding is so effective that HST bullets typically retain 98-100% of their original weight even after passing through auto glass, wallboard, or heavy clothing. The hollow point cavity design remains functional even after barrier penetration, unlike traditional hollow points that become clogged and fail to expand. Each cartridge is loaded with Federal's carefully formulated propellant optimized for consistent performance across different barrel lengths, from compact carry pistols to full-size duty weapons. Flash-suppressed powder formulation reduces muzzle signature in low-light conditions, maintaining shooter night vision for rapid follow-up shots if necessary. The nickel-plated brass cases provide several advantages: enhanced corrosion resistance for daily carry, improved visibility during chamber checks, and reduced friction for reliable feeding and extraction. Federal's primers are specially formulated to provide reliable ignition after extended storage or environmental exposure, ensuring your defensive ammunition functions when needed regardless of carry duration. HST has been adopted by numerous federal agencies including FBI, DEA, and U.S. Marshals Service along with thousands of state and local law enforcement agencies nationwide. This widespread adoption reflects HST's consistently superior performance in standardized testing protocols and real-world defensive encounters. When every defensive scenario is different and you need ammunition that performs consistently regardless of circumstances, Federal HST delivers the proven capability trusted by professionals.",
+    features: [
+      "Advanced HST bullet design with engineered jacket skives for controlled expansion",
+      "Enhanced +P velocity - approximately 950 fps from 5-inch barrel",
+      "Traditional 230-grain weight provides optimal momentum and penetration",
+      "Proprietary bonding prevents jacket-core separation through barriers",
+      "Nickel-plated cases for corrosion resistance and improved feeding",
+      "Flash-suppressed powder for maintained night vision",
+      "Deep cavity design ensures expansion even after barrier penetration",
+      "Optimized for barrel lengths from 3.5 to 5 inches",
+      "Adopted by FBI, DEA, U.S. Marshals, and thousands of agencies",
+      "Consistent performance validated through FBI protocol testing"
+    ],
+    benefits: [
+      "Federal's 100+ years of ammunition expertise in every cartridge",
+      "Proven barrier-blind performance through all common obstacles",
+      "Enhanced +P velocity increases wound cavity and penetration",
+      "Trusted by federal law enforcement agencies nationwide",
+      "Flash suppression critical for low-light defensive scenarios",
+      "Reliable expansion and penetration regardless of circumstances"
+    ],
+    useCases: [
+      "Federal law enforcement duty carry for FBI, DEA, ATF, U.S. Marshals",
+      "State and local police duty ammunition for patrol and investigations",
+      "Personal defense concealed carry in +P-rated pistols",
+      "Home defense for maximum terminal performance",
+      "Security professional duty carry for armed security officers",
+      "Civilian defensive carry where proven performance is essential"
+    ],
+    technicalDetails: "Federal HST .45 ACP 230-grain +P JHP is loaded to +P pressure specifications generating approximately 950 feet per second from 5-inch barrels, 920 fps from 4.5-inch barrels, and 880 fps from 4-inch barrels. Muzzle energy measures approximately 460 foot-pounds from 5-inch barrels. The HST bullet features a deep hollow point cavity with six precisely positioned jacket skives that control petal formation during expansion. Jacket thickness measures approximately 0.025-0.030 inches at the bullet base, ensuring structural integrity during penetration. Federal's bonding process creates strong mechanical adhesion between the jacket and lead core, preventing separation under the extreme stresses of barrier penetration. In FBI protocol ballistic gelatin testing, HST consistently expands to 0.75-0.90 inch diameter while penetrating 13-17 inches through bare gelatin and 14-18 inches through heavy clothing, auto glass, wallboard, and plywood barriers. Bullet weight retention typically exceeds 98%, with most recovered bullets retaining 99-100% of original weight. The flash-suppressed powder formulation reduces visible muzzle flash by approximately 50% compared to standard loads, crucial for maintaining night-adapted vision during low-light defensive encounters. Nickel-plated cases reduce feeding friction and provide superior corrosion resistance compared to standard brass, important for ammunition carried daily. +P pressures average 23,000 PSI, within SAAMI +P specifications. This ammunition should only be used in firearms specifically rated for +P ammunition - consult manufacturer specifications. From quality defensive pistols, accuracy measures 2-2.5 inches at 25 yards with five-shot groups.",
+    whyChoose: "Choose Federal HST when you want the defensive ammunition selected by America's premier federal law enforcement agencies after the most rigorous testing protocols in existence. HST wasn't designed for civilian marketing appeal - it was engineered specifically to meet the demanding requirements of federal agents operating in unpredictable high-risk scenarios where ammunition performance can mean the difference between life and death. The FBI's adoption of HST followed exhaustive testing including barrier penetration, consistency validation, and real-world performance analysis that exceeded any civilian testing protocol. When the FBI stakes agents' lives on HST performance, you can trust it will perform when your life depends on it. The HST bullet's ability to maintain expansion capability after barrier penetration represents a significant technological achievement, ensuring consistent terminal performance regardless of what obstacles are encountered. The +P loading provides enhanced velocity and energy compared to standard pressure loads, translating into larger wound cavities and deeper penetration for faster threat incapacitation. Federal's manufacturing quality is legendary, with statistical process controls and quality verification at every production stage ensuring consistency from lot to lot and cartridge to cartridge. The flash-suppressed powder is a critical advantage in defensive scenarios that frequently occur in low-light conditions, allowing rapid follow-up shot placement without temporary blindness from muzzle flash. When you choose Federal HST, you're choosing the same ammunition trusted by FBI agents, DEA investigators, U.S. Marshals, and thousands of state and local officers who face danger professionally. It's ammunition with a proven track record in the most demanding real-world scenarios possible.",
+    seoKeywords: [
+      "federal hst 45 acp",
+      "45 acp +p defense ammo",
+      "federal 230gr +p jhp",
+      "buy hst 45 acp online",
+      "fbi 45 acp ammunition",
+      "law enforcement 45 acp",
+      "premium 45 acp hollow point",
+      "federal hst +p ammunition",
+      "best 45 acp defense ammo",
+      "duty carry 45 acp",
+      "federal hst 230 grain",
+      "1911 +p jhp ammo",
+      "concealed carry 45 +p",
+      "federal law enforcement ammo",
+      "professional 45 acp defense"
+    ]
   },
   {
     id: "45acp-winchester-pdx1-230",
@@ -3683,7 +3879,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Bonded hollow point for personal defense",
     manufacturer: "Winchester",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Winchester PDX1 Defender represents Winchester's premium personal defense ammunition line. Featuring bonded-core technology and optimized expansion characteristics, PDX1 delivers reliable defensive performance for law enforcement and civilian carry.",
+    longDescription: "Winchester PDX1 Defender 230-grain Jacketed Hollow Point ammunition represents over 150 years of Winchester ammunition expertise applied to modern defensive requirements. PDX1 was developed through extensive collaboration between Winchester's engineering team and law enforcement professionals to create ammunition that delivers optimal terminal performance in real-world defensive scenarios. The bonded-core bullet design uses Winchester's proprietary bonding process to permanently attach the copper jacket to the lead core, preventing separation during penetration through intermediate barriers or heavy bone. This bonding ensures the bullet maintains its designed expansion characteristics and weight retention even under the most demanding circumstances. The 230-grain bullet weight provides the mass and momentum necessary for deep penetration, crucial when facing determined attackers or scenarios requiring penetration through barriers to reach vital areas. Winchester's hollow point cavity design has been optimized through extensive ballistic gelatin testing to provide consistent expansion across the velocity range produced by different barrel lengths, from compact 3.5-inch carry guns to full-size 5-inch duty pistols. The cavity depth and profile ensure reliable expansion initiation while the bonded construction maintains bullet integrity during the expansion process. Each PDX1 cartridge is loaded with Winchester's carefully selected propellant formulated to deliver consistent velocities and reliable function across all .45 ACP pistol designs. The powder burns cleanly to minimize fouling while providing the consistent pressure curve necessary for reliable cycling in both full-size and compact pistols. Winchester's primers are specially formulated to provide reliable ignition across a wide temperature range and after extended storage, ensuring your defensive ammunition performs when needed regardless of environmental conditions or carry duration. The nickel-plated brass cases provide multiple advantages over standard brass: enhanced corrosion resistance crucial for ammunition carried daily, improved visibility during chamber checks in low light, and reduced friction for reliable feeding in tight chambers. PDX1 Defender has earned adoption by numerous law enforcement agencies and widespread acceptance among armed citizens who demand proven defensive performance. Winchester's commitment to quality is evident in the rigorous testing each lot undergoes, including pressure testing, velocity verification, accuracy validation, and function testing in multiple firearms. When your defensive firearm needs ammunition that delivers consistent, reliable performance in critical situations, Winchester PDX1 Defender provides the proven capability trusted by professionals and responsible citizens nationwide.",
+    features: [
+      "Bonded-core 230-grain jacketed hollow point bullet",
+      "Winchester's proprietary jacket-to-core bonding prevents separation",
+      "Optimized hollow point cavity for consistent expansion",
+      "Standard pressure loading safe in all .45 ACP pistols",
+      "Nickel-plated brass cases for corrosion resistance and feeding reliability",
+      "Clean-burning propellant reduces fouling and maintenance",
+      "Reliable performance from 3.5-inch to 5-inch barrel lengths",
+      "Approximately 875 fps from 5-inch barrel, 850 fps from 4-inch barrel",
+      "Adopted by law enforcement agencies nationwide",
+      "Proven expansion and penetration through FBI protocol testing"
+    ],
+    benefits: [
+      "Winchester's 150+ year reputation for quality and innovation",
+      "Bonded construction ensures consistent performance through barriers",
+      "Standard pressure safe for all .45 ACP pistols including vintage 1911s",
+      "Nickel cases provide practical advantages for daily carry",
+      "Reliable function in both modern and classic firearms platforms",
+      "Outstanding value for premium defensive ammunition"
+    ],
+    useCases: [
+      "Personal defense concealed carry in all .45 ACP pistols",
+      "Home defense for reliable threat stoppage",
+      "Law enforcement backup gun ammunition",
+      "Security professional carry ammunition",
+      "Defensive ammunition for classic 1911 pistols",
+      "Bedside home defense pistols and safe guns"
+    ],
+    technicalDetails: "Winchester PDX1 Defender .45 ACP 230-grain JHP is loaded to standard pressure specifications, generating approximately 875 feet per second from 5-inch barrels and 850 fps from 4-inch barrels. Muzzle energy measures approximately 390-400 foot-pounds depending on barrel length. The bonded-core bullet features Winchester's proprietary bonding process that chemically and mechanically joins the gilding metal jacket to the lead antimony alloy core, creating a permanent bond that resists separation. Jacket thickness measures approximately 0.025 inches at the bullet base, providing structural support during penetration. The hollow point cavity is precisely engineered with depth and diameter optimized for .45 ACP velocities, featuring six strategically placed jacket notches that control petal formation during expansion. In FBI protocol ballistic gelatin testing, PDX1 consistently expands to 0.65-0.75 inch diameter while penetrating 13-16 inches through bare gelatin and 14-17 inches through heavy clothing and intermediate barriers. Bullet weight retention typically exceeds 97%, with most recovered bullets retaining 98-100% of original weight despite significant expansion. The nickel-plated cases undergo Winchester's proprietary plating process that deposits a uniform nickel layer providing corrosion resistance and reduced friction. Standard pressure loads average 19,000-21,000 PSI, well within SAAMI specifications and safe for all .45 ACP firearms including older designs. From quality defensive pistols with properly maintained barrels, accuracy typically measures 2-3 inches for five-shot groups at 25 yards, exceeding defensive accuracy requirements.",
+    whyChoose: "Choose Winchester PDX1 Defender when you want premium defensive ammunition from one of the world's most respected ammunition manufacturers at an outstanding value. Winchester's 150+ year history of ammunition innovation and manufacturing excellence is evident in every aspect of PDX1's design and production. The bonded-core construction provides genuine performance advantages, ensuring the bullet maintains its designed expansion and penetration characteristics even after passing through barriers or striking bone. Unlike some premium defensive loads that require +P pressures, PDX1 achieves excellent performance at standard pressures, making it safe for use in all .45 ACP pistols including vintage 1911s and compact carry guns that may not be rated for +P ammunition. This universal compatibility is a significant practical advantage, allowing you to select optimal defensive ammunition regardless of your specific firearm. The nickel-plated cases provide real-world benefits for defensive carry including superior corrosion resistance when carried against your body, enhanced visibility during chamber checks, and improved feeding reliability. Winchester's manufacturing quality control ensures consistent performance from cartridge to cartridge and lot to lot, critical for defensive ammunition where you may practice with one lot and carry different lot for extended periods. PDX1 Defender has proven itself in real-world defensive scenarios and law enforcement shootings, demonstrating effective threat stoppage with predictable performance. Winchester's customer service and technical support organization is well-established and responsive, with experienced staff available to answer questions about ammunition selection and performance. When you choose Winchester PDX1 Defender, you're choosing defensive ammunition that combines proven technology, consistent performance, and outstanding value from America's most iconic ammunition brand. It's ammunition you can trust for the most important role - protecting your life and your loved ones when defensive force becomes necessary.",
+    seoKeywords: [
+      "winchester pdx1 45 acp",
+      "45 acp defense ammunition",
+      "winchester 230gr jhp",
+      "pdx1 defender 45 acp",
+      "buy 45 acp hollow point",
+      "bonded 45 acp ammo",
+      "winchester defender ammo",
+      "45 acp personal defense",
+      "1911 defense ammunition",
+      "concealed carry 45 acp",
+      "pdx1 45 auto",
+      "winchester 45 acp jhp",
+      "home defense 45 acp",
+      "premium 45 acp ammo",
+      "best 45 acp carry ammo"
+    ]
   },
   {
     id: "45acp-fiocchi-230",
@@ -3696,7 +3941,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Italian-made quality training ammunition",
     manufacturer: "Fiocchi",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Fiocchi brings over 145 years of Italian ammunition craftsmanship to American shooters. Known for precision manufacturing and quality components, Fiocchi delivers reliable training ammunition trusted by competitive shooters and enthusiasts worldwide.",
+    longDescription: "Fiocchi 230-grain Full Metal Jacket ammunition represents Italian ammunition manufacturing excellence applied to the classic American .45 ACP cartridge. Founded in 1876, Fiocchi has been producing quality ammunition for nearly 150 years, earning a worldwide reputation for precision manufacturing and consistent performance. This dedication to quality is evident in every aspect of their .45 ACP training ammunition. The 230-grain bullet weight is the traditional .45 ACP standard originally specified for the 1911 pistol, providing authentic ballistics and recoil characteristics that make training translate directly to defensive ammunition performance. Each full metal jacket bullet features a precision-formed copper alloy jacket completely encasing a lead core, ensuring reliable feeding through all .45 ACP platforms from classic 1911 pistols to modern polymer-framed designs. Fiocchi's bullet manufacturing process emphasizes consistency, with strict weight tolerances and dimensional controls ensuring uniform performance from bullet to bullet. The rounded bullet profile has been optimized through decades of production to feed smoothly from all magazine types and chamber reliably in barrels with varying throat dimensions. Fiocchi's brass cases are manufactured from high-quality European cartridge brass using precision deep-drawing equipment that creates uniform wall thickness crucial for consistent internal capacity and pressure characteristics. These cases feature the distinctive Fiocchi headstamp and are fully reloadable, providing excellent value for handloaders who wish to extend their ammunition budget. European reloaders have long prized Fiocchi brass for its durability and consistency through multiple loading cycles. The powder formulation selected for Fiocchi's .45 ACP loads burns relatively cleanly while delivering consistent velocities necessary for reliable function across different pistol designs. Fiocchi's non-corrosive Boxer primers provide reliable ignition across a wide temperature range, functioning equally well in cold European winters and hot American summers. Quality control throughout Fiocchi's manufacturing process includes dimensional verification, weight checking, and function testing ensuring every cartridge meets their exacting standards. Fiocchi ammunition has earned particular favor among competitive shooters who appreciate the lot-to-lot consistency crucial for maintaining consistent points of impact across thousands of practice rounds. Whether you're training for USPSA or IDPA competition, practicing defensive techniques, or simply enjoying range time with a classic .45 caliber pistol, Fiocchi delivers the European quality and consistency American shooters have come to appreciate.",
+    features: [
+      "Classic 230-grain full metal jacket bullet - traditional .45 ACP weight",
+      "Precision-manufactured using Italian craftsmanship and technology",
+      "High-quality European brass cases with consistent dimensions",
+      "Non-corrosive Boxer primers for all-weather reliability",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Fully reloadable brass cases valued by handloaders",
+      "Approximately 830 fps from 5-inch barrel",
+      "Strict quality control ensures lot-to-lot consistency",
+      "Reliable feeding in all .45 ACP pistols and carbines",
+      "145+ years of ammunition manufacturing heritage"
+    ],
+    benefits: [
+      "Italian precision manufacturing delivers consistent performance",
+      "Excellent value for quality European ammunition",
+      "Lot-to-lot consistency favored by competitive shooters",
+      "Reloadable brass extends ammunition investment",
+      "Reliable functioning across all .45 ACP platforms",
+      "Clean-burning formula reduces cleaning frequency"
+    ],
+    useCases: [
+      "USPSA and IDPA competition practice and matches",
+      "Target practice and recreational range shooting",
+      "Defensive handgun training courses",
+      "Brass collection for reloading projects",
+      "High-volume training where consistency matters",
+      "Match preparation and zero verification"
+    ],
+    technicalDetails: "Fiocchi .45 ACP 230-grain FMJ ammunition is loaded to standard SAAMI pressure specifications. From a standard 5-inch barrel, this load achieves approximately 830 feet per second muzzle velocity, generating roughly 352 foot-pounds of muzzle energy. The full metal jacket bullet construction features a copper alloy jacket (typically 90% copper, 10% zinc gilding metal) completely enclosing a lead core except at the bullet base. Jacket thickness measures approximately 0.015-0.018 inches, providing reliable feeding while preventing lead fouling. The rounded bullet ogive with gentle shoulder angle feeds smoothly from all magazine configurations. Bullet diameter is maintained at 0.451 inches with tight tolerances for consistent barrel fit. Overall cartridge length measures 1.275 inches for reliable feeding while maximizing powder capacity. Fiocchi's brass cases are manufactured from premium European cartridge brass (70-30 copper-zinc alloy) through progressive drawing operations. The case annealing process relieves stress while maintaining proper hardness distribution from case mouth to case head. Case wall thickness is controlled to minimize internal volume variation, crucial for consistent pressures and velocities. Primer pockets are precisely broached to accept standard large pistol primers with optimal depth for reliable ignition. Chamber pressures average 19,000-20,000 PSI, well within SAAMI specifications. From quality pistols with properly maintained barrels, accuracy typically measures 2.5-3.5 inches for five-shot groups at 25 yards, suitable for all training and recreational applications.",
+    whyChoose: "Choose Fiocchi when you want European quality and consistency in your .45 ACP training ammunition. Fiocchi's nearly 150-year history of ammunition manufacturing represents accumulated knowledge and continuous improvement that's evident in every cartridge. Unlike budget ammunition that may use inconsistent components or less rigorous quality control, Fiocchi maintains the high standards that have made Italian manufacturing legendary worldwide. Competitive shooters particularly appreciate Fiocchi's lot-to-lot consistency - when you practice with thousands of rounds and need consistent points of impact for skill development, Fiocchi delivers the uniformity serious shooters demand. The brass quality is excellent, with reloaders consistently praising Fiocchi cases for durability, uniform dimensions, and ease of processing through multiple loading cycles. Fiocchi's manufacturing takes place in modern facilities using precision equipment and quality European components, ensuring consistent supply and reliable performance. The company's commitment to innovation while respecting traditional manufacturing excellence means every production run benefits from both proven methods and modern quality control technology. When you choose Fiocchi, you're choosing ammunition that represents the best of European precision manufacturing at prices competitive with domestic brands. It's ammunition trusted by shooters worldwide who demand consistent performance for training, competition, and recreational shooting. The distinctive Fiocchi packaging and headstamp represent a heritage of quality that Italian manufacturing is famous for, now available to American shooters who appreciate craftsmanship and consistency.",
+    seoKeywords: [
+      "fiocchi 45 acp",
+      "italian 45 acp ammo",
+      "230 grain 45 acp fmj",
+      "buy fiocchi ammunition",
+      "european 45 acp ammo",
+      "fiocchi 45 auto",
+      "quality 45 acp training",
+      "fiocchi pistol ammunition",
+      "45 acp range ammo",
+      "competition 45 acp ammo",
+      "fiocchi 230gr fmj",
+      "premium 45 acp training",
+      "italian ammunition",
+      "1911 practice ammo",
+      "fiocchi 45 acp bulk"
+    ]
   },
   {
     id: "45acp-buffalo-bore-255",
@@ -3709,7 +4003,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Heavy +P load for maximum penetration",
     manufacturer: "Buffalo Bore",
-    grainWeight: "255gr +P"
+    grainWeight: "255gr +P",
+    shortDescription: "Buffalo Bore represents the pinnacle of heavy-for-caliber .45 ACP ammunition. The 255-grain hard cast +P load delivers exceptional penetration for dangerous game defense, hunting, and wilderness carry where maximum power is essential.",
+    longDescription: "Buffalo Bore 255-grain Hard Cast +P ammunition pushes the .45 ACP cartridge to its absolute performance limits, creating a potent defensive and hunting round capable of handling threats that would overwhelm conventional hollow point designs. This specialized ammunition is designed for specific scenarios where deep, straight-line penetration is more important than expansion - primarily defense against dangerous animals, hunting medium game, and wilderness carry where bear or large predator encounters are possible. The 255-grain bullet weight is significantly heavier than standard .45 ACP ammunition, providing substantially increased momentum and sectional density for deep penetration through heavy bone, muscle, and tissue. Buffalo Bore's hard cast bullet is manufactured from a special lead alloy hardened with tin and antimony, creating a projectile that resists deformation during penetration while cutting a full-caliber wound channel through even the toughest barriers. Unlike soft lead or jacketed bullets that may deform or fragment when striking heavy bone, hard cast bullets maintain their shape and continue penetrating in a straight line toward vital organs. The flat nose design on Buffalo Bore's hard cast bullet creates a larger wound channel than round nose designs while maintaining feeding reliability in .45 ACP pistols. The +P loading significantly increases velocity compared to standard pressure ammunition, with the 255-grain bullet achieving approximately 1,000 feet per second from 5-inch barrels. This combination of heavy bullet weight and enhanced velocity delivers impressive energy levels approaching .44 Magnum performance from a semi-automatic pistol platform. Buffalo Bore's loading practices are meticulous, with each cartridge hand-inspected and loaded in small batches to ensure consistent quality. The company's reputation for producing the most powerful ammunition possible within safe pressure limits is legendary among handgun hunters and those who carry in dangerous game country. However, this ammunition's power comes with important considerations: the +P pressures and heavy bullet weight generate substantial recoil, more than many shooters expect from .45 ACP. Additionally, not all .45 ACP pistols are suitable for this ammunition - only modern, robust firearms specifically rated for +P ammunition should be used. Vintage 1911 pistols, aluminum-framed guns, and compact carry pistols may not be appropriate platforms. Buffalo Bore provides detailed guidance on suitable firearms for their heavy loads. When you need maximum penetration and power from a .45 ACP for wilderness defense, hunting, or specialized defensive scenarios, Buffalo Bore 255-grain Hard Cast +P delivers performance that must be experienced to be believed.",
+    features: [
+      "Heavy 255-grain hard cast bullet for maximum penetration",
+      "Enhanced +P loading achieves approximately 1,000 fps from 5-inch barrel",
+      "Hardened lead alloy resists deformation during penetration",
+      "Flat nose design creates full-caliber wound channel",
+      "Suitable for dangerous game defense and medium game hunting",
+      "Straight-line penetration through heavy bone and tissue",
+      "Hand-inspected quality control in small batch production",
+      "Approximately 565 foot-pounds muzzle energy from 5-inch barrel",
+      "Heavy recoil - suitable only for robust +P-rated firearms",
+      "Made in USA with premium American components"
+    ],
+    benefits: [
+      "Maximum penetration for dangerous game defense scenarios",
+      "Hard cast construction maintains bullet integrity through barriers",
+      "Enhanced velocity increases energy delivery and penetration depth",
+      "Buffalo Bore's reputation for producing maximum-power safe loads",
+      "Specialized ammunition for scenarios requiring extreme penetration",
+      "Viable hunting round for medium game within appropriate ranges"
+    ],
+    useCases: [
+      "Wilderness defense against bears, wild boar, and large predators",
+      "Handgun hunting for medium game including deer and hogs",
+      "Alaska and backcountry carry for dangerous game protection",
+      "Specialized defensive scenarios requiring maximum penetration",
+      "Trail guide and outdoor professional protection",
+      "Alternative to magnum revolvers for wilderness carry"
+    ],
+    technicalDetails: "Buffalo Bore .45 ACP 255-grain Hard Cast +P ammunition is loaded to enhanced +P pressures generating approximately 1,000 feet per second from 5-inch barrels and 950 fps from 4-inch barrels. Muzzle energy measures approximately 565 foot-pounds from 5-inch barrels, approaching .44 Magnum performance levels. The hard cast bullet is manufactured from lead alloyed with approximately 6-8% antimony and 2% tin, creating a Brinell hardness of approximately 16-18 - hard enough to resist deformation while maintaining some ductility. The flat nose profile features a meplat (flat) diameter of approximately 0.350 inches, creating substantial tissue disruption. The bullet length is approximately 0.750 inches, providing excellent sectional density of 0.179 for deep penetration. Buffalo Bore reports penetration depths exceeding 36 inches in ballistic gelatin, with straight-line penetration through simulated heavy bone barriers. The heavy bullet and +P pressures generate chamber pressures approaching 23,000-24,000 PSI, at the upper limit of safe +P specifications. Recoil energy is substantial - approximately 50% greater than standard 230-grain loads. This ammunition should only be fired in modern, robust firearms specifically rated for +P ammunition. Buffalo Bore specifically recommends full-size 1911 pistols with steel frames, full-size Glock 21, and similarly robust modern designs. Not suitable for aluminum-framed pistols, compact carry guns, or vintage firearms. Test fire several rounds to ensure your specific firearm handles the pressures and recoil safely before relying on this ammunition.",
+    whyChoose: "Choose Buffalo Bore 255-grain Hard Cast +P when you need the absolute maximum power and penetration possible from a .45 ACP for wilderness defense or hunting applications. Buffalo Bore has built its reputation on producing the most powerful ammunition possible within safe pressure limits, and this load represents their expertise applied to the .45 ACP platform. For those who carry in bear country, guide hunters in Alaska, or face potential encounters with dangerous game, this ammunition provides semi-automatic firepower approaching magnum revolver performance. The hard cast bullet's ability to penetrate straight through heavy bone and tissue makes it uniquely suited for stopping charges from bears, wild boar, or large predators - scenarios where hollow point expansion is irrelevant and deep penetration to vital organs is essential. Hunters appreciate the combination of power and accuracy for taking medium game at appropriate ranges, transforming the .45 ACP from a defensive cartridge into a viable hunting round. Buffalo Bore's small-batch production and hand inspection ensure quality and consistency that mass-produced ammunition cannot match. However, this is specialized ammunition requiring serious consideration - the heavy recoil, specific firearm requirements, and intended use cases make it inappropriate for general defensive carry or casual shooting. When chosen for its intended purposes and fired from appropriate firearms, Buffalo Bore 255-grain Hard Cast +P delivers unmatched penetration and stopping power from a semi-automatic platform. It's ammunition for serious situations where nothing else will do.",
+    seoKeywords: [
+      "buffalo bore 45 acp",
+      "45 acp +p heavy load",
+      "255 grain 45 acp",
+      "hard cast 45 acp ammo",
+      "bear defense 45 acp",
+      "hunting 45 acp ammunition",
+      "maximum penetration 45 acp",
+      "buffalo bore heavy 45 acp",
+      "wilderness defense ammo",
+      "dangerous game 45 acp",
+      "buffalo bore +p",
+      "heavy 45 acp load",
+      "flat nose 45 acp",
+      "alaska carry 45 acp",
+      "handgun hunting ammunition"
+    ]
   },
   {
     id: "45acp-black-hills-230",
@@ -3722,7 +4065,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Premium hollow point for defense",
     manufacturer: "Black Hills",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Black Hills Ammunition represents small-batch precision manufacturing with a focus on quality over quantity. Trusted by military special operations and competitive shooters, Black Hills delivers match-grade consistency in defensive ammunition.",
+    longDescription: "Black Hills 230-grain Jacketed Hollow Point ammunition embodies the company's philosophy of producing the finest ammunition possible through meticulous attention to detail and small-batch manufacturing processes. Founded by former military personnel with deep shooting backgrounds, Black Hills has earned legendary status among military special operations units, competitive precision shooters, and discerning armed citizens who demand absolute reliability and consistency. The 230-grain hollow point bullet represents the traditional .45 ACP weight combined with modern hollow point technology for optimal defensive performance. Black Hills selects premium bullets from respected manufacturers, carefully testing multiple designs before selecting the optimal projectile for their loading specifications. Each bullet is individually inspected before loading, ensuring dimensional consistency and freedom from defects. The hollow point cavity is designed to provide reliable expansion at .45 ACP velocities while maintaining structural integrity during penetration through barriers or heavy tissue. Black Hills' loading process emphasizes consistency above all else. Each powder charge is individually weighed to exact specifications rather than relying solely on volumetric measuring, ensuring minimal velocity variation from round to round. This level of precision is typically reserved for match ammunition but Black Hills applies it to their defensive loads as well. The brass cases are selected from premium manufacturers and undergo additional inspection before loading. Black Hills' proprietary case preparation includes uniform flash hole deburring and primer pocket uniforming, details that enhance ignition consistency and accuracy. These cases feature the distinctive Black Hills headstamp and are fully reloadable, highly prized by handloaders for their exceptional quality and consistency. Black Hills uses carefully selected powders known for clean burning characteristics and consistent pressure curves across varying temperatures. This ensures your ammunition performs identically whether carried through a hot summer day or a cold winter night. The primers are selected from premium manufacturers and hand-seated to precise depths, contributing to the exceptional accuracy Black Hills ammunition is famous for. Black Hills ammunition undergoes extensive testing during development, with thousands of rounds fired through various firearms to validate reliability, accuracy, and terminal performance. Once a load is established, Black Hills maintains those specifications with minimal lot-to-lot variation, a critical factor for those who practice with one lot and carry different production runs. When you need defensive ammunition manufactured with the same attention to detail as match-grade competition ammunition, Black Hills delivers precision and reliability that has earned the trust of America's most elite military units.",
+    features: [
+      "Premium 230-grain jacketed hollow point for optimal expansion",
+      "Small-batch production with individual inspection and hand-loading",
+      "Powder charges individually weighed for maximum consistency",
+      "Premium brass cases with enhanced case preparation",
+      "Selected primers hand-seated to precise depths",
+      "Clean-burning powders for reduced fouling",
+      "Approximately 875 fps from 5-inch barrel",
+      "Match-grade consistency in defensive ammunition",
+      "Trusted by military special operations units",
+      "Made in USA with premium American components"
+    ],
+    benefits: [
+      "Small-batch precision ensures consistent quality and performance",
+      "Minimal velocity variation enables precise shot placement",
+      "Used by military special operations and elite units",
+      "Premium components selected for reliability and accuracy",
+      "Exceptional brass quality highly valued by reloaders",
+      "Black Hills' reputation for uncompromising quality standards"
+    ],
+    useCases: [
+      "Personal defense carry for those demanding maximum quality",
+      "Home defense where reliability is paramount",
+      "Special operations backup gun ammunition",
+      "Defensive carry by military and law enforcement professionals",
+      "Precision defensive shooting applications",
+      "Carry ammunition for high-value firearms"
+    ],
+    technicalDetails: "Black Hills .45 ACP 230-grain JHP is loaded to standard pressure specifications, generating approximately 875 feet per second from 5-inch barrels with muzzle energy around 390 foot-pounds. Black Hills' precision loading practices result in velocity standard deviations typically under 15 fps, exceptional consistency that rivals match-grade ammunition. The jacketed hollow point bullet features a carefully engineered cavity depth and diameter optimized for reliable expansion at .45 ACP velocities. Expansion typically measures 0.65-0.75 inch diameter with penetration depths of 13-16 inches in ballistic gelatin, meeting FBI protocol requirements. Bullet weight retention exceeds 97% in most scenarios. Black Hills' brass cases are selected from premium manufacturers and undergo additional preparation including flash hole deburring to remove manufacturing burrs that can affect ignition consistency, primer pocket uniforming to ensure consistent primer seating depth, and case mouth chamfering for smooth bullet seating. Overall cartridge length is held to extremely tight tolerances (±0.003 inches) for consistent feeding and chambering. Chamber pressures average 20,000 PSI with minimal variation lot-to-lot. From quality defensive pistols, Black Hills ammunition consistently delivers accuracy in the 1.5-2.5 inch range at 25 yards, significantly tighter than most defensive ammunition and approaching match-grade performance. This exceptional accuracy combined with reliable terminal performance makes Black Hills a favorite among those who refuse to compromise on ammunition quality.",
+    whyChoose: "Choose Black Hills when you demand the absolute highest quality defensive ammunition regardless of cost. Black Hills has built its reputation on producing ammunition for the most demanding customers in the world - military special operations units whose lives depend on equipment that functions flawlessly under the most extreme conditions imaginable. When SEAL teams and Delta Force operators trust Black Hills for mission-critical ammunition, you can trust it will perform when your life hangs in the balance. Black Hills' small-batch production methodology ensures quality control that mass-production simply cannot achieve. Every cartridge receives individual attention and inspection, eliminating the statistical quality variations inherent in high-volume manufacturing. The precision loading practices including individually weighing powder charges results in consistency that rivals custom hand-loaded ammunition. Competitive precision shooters choose Black Hills when tournaments are won by fractions of an inch, demonstrating the accuracy potential of their ammunition. This same precision in defensive loads means your rounds impact exactly where aimed, critical in defensive scenarios where precise shot placement determines success or failure. Black Hills' brass is legendary among reloaders, consistently ranked among the finest available for durability, uniform dimensions, and minimal preparation required for reloading. The company's unwavering commitment to quality over quantity means they will never compromise standards to increase production volume. When you choose Black Hills, you're choosing ammunition manufactured to standards that exceed industry norms, by a company whose reputation was built serving America's most elite warfighters. It's premium ammunition in the truest sense - built without compromise for those who demand perfection.",
+    seoKeywords: [
+      "black hills 45 acp",
+      "premium 45 acp ammo",
+      "230 grain jhp 45 acp",
+      "black hills ammunition",
+      "match grade 45 acp",
+      "special operations ammo",
+      "precision 45 acp jhp",
+      "buy black hills 45 acp",
+      "elite 45 acp defense",
+      "military 45 acp ammo",
+      "black hills 230gr",
+      "high quality 45 acp",
+      "small batch ammunition",
+      "best 45 acp jhp",
+      "1911 premium ammo"
+    ]
   },
   {
     id: "45acp-hornady-custom-185",
@@ -3735,7 +4127,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Lighter weight hollow point for reduced recoil",
     manufacturer: "Hornady",
-    grainWeight: "185gr"
+    grainWeight: "185gr",
+    shortDescription: "Hornady Custom 185-grain XTP offers reduced recoil while maintaining effective defensive performance. The lighter bullet weight combined with Hornady's proven XTP technology creates an ideal option for recoil-sensitive shooters and compact carry pistols.",
+    longDescription: "Hornady Custom 185-grain XTP Jacketed Hollow Point ammunition brings together lighter bullet weight and proven XTP expansion technology to create defensive ammunition ideally suited for shooters who need reduced recoil without compromising terminal performance. The 185-grain weight is significantly lighter than the traditional 230-grain .45 ACP standard, reducing felt recoil by approximately 20-25% while maintaining the expansion and penetration characteristics necessary for effective threat stoppage. This makes it an excellent choice for several scenarios: compact carry pistols where reduced recoil improves controllability, newer shooters building defensive skills, those with arthritis or hand strength concerns, and anyone who finds full-power .45 ACP ammunition uncomfortable to shoot accurately. The XTP (eXtreme Terminal Performance) bullet design represents Hornady's decades of hollow point development and refinement. Despite the lighter weight, the 185-grain XTP maintains the core design elements that made the XTP famous: controlled expansion across varying impact velocities, reliable performance through barriers, and deep penetration with near-perfect weight retention. The lighter bullet achieves higher velocities than 230-grain loads - approximately 1,000 feet per second from 5-inch barrels - compensating for reduced bullet mass with increased velocity. This results in similar energy levels to 230-grain standard pressure loads but with flatter trajectories and reduced recoil impulse. Hornady's precision swaging process creates a jacket-core combination that expands reliably upon impact while maintaining structural integrity during penetration. The serrated jacket mouth features six precisely engineered folds that initiate controlled expansion, creating a larger frontal diameter for enhanced wound cavity while the thick jacket base prevents separation. Each cartridge is loaded with Hornady's carefully selected propellant formulated to achieve optimal velocities from varying barrel lengths. Whether fired from a compact 3.5-inch carry gun or a full-size 5-inch duty pistol, the 185-grain XTP delivers consistent expansion and penetration. The powder burns cleanly to minimize fouling and residue accumulation, keeping your pistol running reliably through extended practice sessions. Hornady's quality control processes include X-ray inspection of bullets, dimensional verification of all components, and pressure testing to ensure every lot meets specifications. The brass cases are manufactured using Hornady's proprietary processes creating cases with uniform wall thickness and proper hardness for reliable feeding and extraction. These cases are fully reloadable, allowing defensive shooters to practice with economical reloads matching their carry ammunition's dimensions and feeding characteristics. For shooters who find traditional 230-grain .45 ACP too punishing for accurate shooting or extended practice sessions, Hornady's 185-grain XTP provides an outstanding compromise between shootability and terminal performance.",
+    features: [
+      "Lighter 185-grain XTP bullet reduces recoil by 20-25% vs 230-grain loads",
+      "Higher velocity - approximately 1,000 fps from 5-inch barrel",
+      "Proven XTP expansion technology with serrated jacket design",
+      "Controlled expansion maintains deep penetration capability",
+      "Optimized for compact carry pistols and full-size firearms",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Approximately 410 foot-pounds muzzle energy",
+      "Fully reloadable high-quality Hornady brass",
+      "Suitable for recoil-sensitive shooters",
+      "Flatter trajectory than heavier bullet weights"
+    ],
+    benefits: [
+      "Reduced recoil improves accuracy and controllability",
+      "Ideal for compact carry pistols with short sight radius",
+      "Easier to shoot accurately for extended practice sessions",
+      "Proven XTP technology ensures reliable terminal performance",
+      "Higher velocity provides flatter trajectory at defensive distances",
+      "Hornady's reputation for quality and innovation"
+    ],
+    useCases: [
+      "Concealed carry in compact .45 ACP pistols",
+      "Defensive ammunition for recoil-sensitive shooters",
+      "Training and carry for shooters with arthritis or hand concerns",
+      "Backup gun ammunition in compact Officer-size 1911s",
+      "Home defense where faster follow-up shots are advantageous",
+      "Introduction to .45 ACP defensive ammunition for newer shooters"
+    ],
+    technicalDetails: "Hornady Custom .45 ACP 185-grain XTP is loaded to standard pressure specifications generating approximately 1,000 feet per second from 5-inch barrels, 970 fps from 4-inch barrels, and 920 fps from 3.5-inch compact barrels. Muzzle energy measures approximately 410 foot-pounds, comparable to 230-grain standard pressure loads despite reduced bullet weight. The lighter bullet's higher velocity partially compensates for reduced mass in energy calculations. The XTP bullet construction features Hornady's precision swaging process creating mechanical interlock between the gilding metal jacket and lead core. Jacket thickness measures approximately 0.020-0.025 inches at the bullet base, providing structural integrity during expansion. The serrated jacket mouth with six folds controls petal formation during expansion. In FBI protocol ballistic gelatin testing, the 185-grain XTP typically expands to 0.60-0.70 inch diameter while penetrating 11-14 inches through bare gelatin and 13-16 inches through heavy clothing barriers. The lighter weight and higher velocity result in slightly shallower penetration compared to 230-grain loads, but still well within FBI protocol requirements of 12-18 inches. Bullet weight retention typically exceeds 97%, with most recovered bullets retaining 98-100% despite significant expansion. Recoil energy is approximately 25% less than 230-grain loads, a significant reduction that improves controllability and reduces shooter fatigue. From quality defensive pistols, accuracy typically measures 2-3 inches at 25 yards. The lighter bullet and higher velocity produce noticeably flatter trajectory at defensive distances beyond 15 yards.",
+    whyChoose: "Choose Hornady 185-grain XTP when you want effective defensive performance with significantly reduced recoil compared to traditional .45 ACP loads. The lighter bullet weight makes this ammunition particularly well-suited for compact carry pistols where controlling full-power loads can be challenging. Compact .45s with their reduced weight and shorter sight radius benefit enormously from ammunition that's easier to shoot accurately under stress. The XTP bullet's proven track record of reliable expansion and penetration means you're not sacrificing terminal performance for shootability - you're optimizing both for your specific needs. Shooters with arthritis, limited hand strength, or other physical concerns that make heavy-recoiling ammunition uncomfortable can maintain effective defensive capability with the 185-grain XTP. The reduced recoil also enables more productive practice sessions, allowing you to fire more rounds before fatigue affects accuracy. Higher velocity provides practical advantages including flatter trajectory at typical defensive distances and energy delivery comparable to heavier loads. Hornady's quality control ensures every cartridge performs as designed when your life depends on it. The brass cases are reloadable, allowing you to practice extensively with economical reloads while reserving factory ammunition for carry. When you choose Hornady 185-grain XTP, you're choosing ammunition engineered for optimal balance between shootability and defensive effectiveness, backed by Hornady's decades of hollow point development expertise.",
+    seoKeywords: [
+      "hornady 185 grain 45 acp",
+      "light recoil 45 acp ammo",
+      "185gr xtp 45 acp",
+      "reduced recoil 45 acp",
+      "compact 45 acp ammo",
+      "hornady custom 45 acp",
+      "45 acp low recoil jhp",
+      "185 grain hollow point",
+      "carry 45 acp ammunition",
+      "officer 1911 ammo",
+      "compact 45 defense",
+      "hornady 45 acp jhp",
+      "light bullet 45 acp",
+      "45 acp xtp 185",
+      "manageable 45 acp ammo"
+    ]
   },
   {
     id: "45acp-magtech-230",
@@ -3748,7 +4189,56 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Budget-friendly training ammunition",
     manufacturer: "Magtech",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Magtech brings Brazilian ammunition manufacturing expertise to value-conscious American shooters. Known for reliable performance at competitive prices, Magtech delivers quality training ammunition that enables frequent practice without breaking the bank.",
+    longDescription: "Magtech 230-grain Full Metal Jacket ammunition represents outstanding value in .45 ACP training rounds, manufactured by CBC (Companhia Brasileira de Cartuchos), one of the largest ammunition manufacturers in the world. Founded in 1926, CBC operates one of the most technologically advanced ammunition production facilities globally, combining modern manufacturing equipment with nearly a century of ammunition production experience. This combination of scale and expertise allows Magtech to deliver quality ammunition at prices that encourage regular practice and skill development. The 230-grain bullet weight is the traditional .45 ACP standard originally specified for the 1911 pistol, providing authentic ballistics and recoil characteristics that make practice time directly applicable to defensive scenarios. Each full metal jacket bullet features a copper alloy jacket completely encasing a lead core, ensuring reliable feeding through all .45 ACP platforms from vintage 1911 pistols to modern polymer-framed designs. Magtech's large-scale manufacturing enables investment in precision equipment and quality control systems that ensure consistency despite competitive pricing. The bullet manufacturing process includes weight sorting and dimensional verification to maintain uniform performance. The rounded bullet profile has been optimized to feed reliably from all magazine types and chamber smoothly in varying throat configurations. Magtech's brass cases are manufactured using modern deep-drawing equipment creating uniform wall thickness crucial for consistent internal capacity and pressure development. These cases feature the distinctive Magtech headstamp and are fully reloadable, providing additional value for handloaders who wish to extend their ammunition budget. Many reloaders specifically seek out Magtech brass for its consistent dimensions and ability to withstand multiple loading cycles with proper case preparation. The powder formulation selected for Magtech .45 ACP loads provides consistent velocities while burning relatively cleanly to minimize fouling accumulation. Magtech's non-corrosive Boxer primers deliver reliable ignition across varying temperature conditions, functioning dependably whether you're shooting in cold winter weather or hot summer range days. Quality control throughout CBC's manufacturing facility includes automated inspection systems checking dimensional specifications, weight tolerances, and visual defects. Statistical process control methods ensure production remains within specification limits, providing lot-to-lot consistency important for training and competition use. Magtech ammunition has built a solid reputation for reliability, functioning flawlessly in pistols ranging from finicky custom competition guns to duty weapons that must perform under adverse conditions. Whether you're accumulating high round counts for USPSA or IDPA competition, running defensive training drills, or simply enjoying recreational range time, Magtech delivers the reliable performance you need at prices that make high-volume shooting affordable.",
+    features: [
+      "Traditional 230-grain full metal jacket bullet - classic .45 ACP weight",
+      "Manufactured by CBC - one of the world's largest ammunition producers",
+      "Quality brass cases with consistent dimensions",
+      "Non-corrosive Boxer primers for reliable ignition",
+      "Clean-burning powder reduces maintenance requirements",
+      "Fully reloadable brass valued by handloaders",
+      "Approximately 830 fps from 5-inch barrel",
+      "Value pricing enables high-volume practice",
+      "Reliable functioning in all .45 ACP pistols",
+      "Nearly 100 years of ammunition manufacturing heritage"
+    ],
+    benefits: [
+      "Outstanding value pricing for budget-conscious shooters",
+      "Large-scale manufacturing ensures consistent supply availability",
+      "Reliable performance across all .45 ACP platforms",
+      "Reloadable brass extends ammunition investment",
+      "Clean burning reduces cleaning frequency",
+      "CBC's modern manufacturing delivers consistent quality"
+    ],
+    useCases: [
+      "High-volume range practice and training",
+      "Competition practice where ammunition cost is important",
+      "New shooter familiarization with .45 ACP platform",
+      "Defensive training drills and courses",
+      "Brass collection for reloading projects",
+      "Recreational shooting and plinking"
+    ],
+    technicalDetails: "Magtech .45 ACP 230-grain FMJ ammunition is loaded to standard SAAMI pressure specifications. From a standard 5-inch barrel, this load achieves approximately 830 feet per second muzzle velocity, generating roughly 352 foot-pounds of muzzle energy. The full metal jacket bullet construction features a copper alloy jacket (gilding metal) completely surrounding a lead core except at the bullet base. Jacket thickness measures approximately 0.015-0.018 inches, providing reliable feeding while preventing lead fouling. The bullet profile uses a rounded ogive design that feeds smoothly from all magazine configurations and chambers reliably in barrels with varying throat dimensions. Bullet diameter is maintained at 0.451 inches with controlled tolerances for consistent barrel fit. Overall cartridge length measures 1.275 inches to ensure reliable feeding while maximizing available powder capacity. Magtech's brass cases are manufactured from quality cartridge brass (70% copper, 30% zinc alloy) through progressive drawing operations that work-harden the material while forming the case shape. The annealing process relieves stress in the case neck and shoulder area while maintaining proper hardness at the case head to safely contain chamber pressures. Case wall thickness is controlled to minimize internal capacity variation from case to case. Primer pockets are precisely broached to accept standard large pistol primers with optimal depth for reliable ignition. Chamber pressures average 19,000-20,000 PSI, well within SAAMI specifications and safe for all .45 ACP firearms including older designs. From quality pistols with properly maintained barrels, accuracy typically measures 2.5-4 inches for five-shot groups at 25 yards, adequate for all training and recreational applications.",
+    whyChoose: "Choose Magtech when ammunition budget is a primary consideration but you refuse to compromise on reliability and consistency. Magtech's position as a brand of CBC - one of the world's largest ammunition manufacturers - provides significant advantages in pricing without sacrificing quality. The company's massive production scale enables investment in modern manufacturing equipment and quality control systems that smaller manufacturers cannot afford. This translates into consistent ammunition that performs reliably despite competitive pricing. Unlike some budget brands that may use inconsistent components or less rigorous quality control to achieve low prices, Magtech maintains quality standards that have earned widespread acceptance among competitive shooters and training-focused enthusiasts. The 230-grain bullet weight provides authentic .45 ACP ballistics matching the cartridge's original specifications, ensuring your practice time translates directly to real-world performance. Magtech ammunition has proven reliable across all .45 ACP platforms, from classic 1911 pistols to modern polymer-framed designs, eliminating concerns about ammunition-related malfunctions during training. The reloadable brass cases provide additional value, allowing handloaders to practice extensively while controlling costs. Magtech's international presence and production capacity ensure consistent product availability, avoiding the supply disruptions that can affect smaller manufacturers. When you choose Magtech, you're choosing ammunition that represents the sweet spot between value pricing and reliable performance - perfect for shooters who practice frequently and need ammunition costs that don't discourage regular training. It's honest, reliable ammunition at fair prices from a company with nearly a century of manufacturing experience.",
+    seoKeywords: [
+      "magtech 45 acp",
+      "cheap 45 acp ammo",
+      "budget 45 acp ammunition",
+      "230 grain 45 acp fmj",
+      "value 45 acp training",
+      "magtech 45 auto",
+      "affordable 45 acp ammo",
+      "bulk 45 acp ammunition",
+      "1911 practice ammo",
+      "magtech pistol ammo",
+      "45 acp range ammo",
+      "inexpensive 45 acp",
+      "magtech 230gr fmj",
+      "economy 45 acp ammo",
+      "45 acp training rounds"
+    ]
   },
   {
     id: "45acp-sellier-bellot-230",
@@ -3761,7 +4251,15 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Czech-made brass-cased ammunition",
     manufacturer: "Sellier & Bellot",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Sellier & Bellot brings over 195 years of Czech ammunition manufacturing tradition to American shooters. Known for precision manufacturing and excellent brass quality, S&B delivers reliable European craftsmanship at competitive prices.",
+    longDescription: "Sellier & Bellot 230-grain Full Metal Jacket ammunition represents nearly two centuries of Czech ammunition manufacturing excellence applied to the classic American .45 ACP cartridge. Founded in 1825, Sellier & Bellot is one of the oldest continuously operating ammunition manufacturers in the world, with a rich heritage of supplying military forces, law enforcement agencies, and civilian shooters across Europe and beyond. This deep experience is evident in every aspect of their .45 ACP training ammunition. The 230-grain bullet weight is the traditional .45 ACP standard, providing authentic ballistics and recoil characteristics essential for effective training. Each full metal jacket bullet features precision-formed copper alloy jacket completely encasing a lead core, ensuring reliable feeding through all .45 ACP firearms. S&B's manufacturing emphasizes consistency and quality, with strict dimensional controls and quality verification throughout production. The brass cases are manufactured from high-quality European cartridge brass using precision deep-drawing equipment, creating uniform wall thickness crucial for consistent performance. S&B brass is highly regarded by reloaders worldwide for its durability, consistent dimensions, and ability to withstand numerous reloading cycles. The non-corrosive primers provide reliable ignition across wide temperature ranges, and the clean-burning powder minimizes fouling. Whether practicing for competition, training defensive skills, or enjoying recreational shooting, Sellier & Bellot delivers European quality at prices that encourage regular practice.",
+    features: ["Traditional 230-grain FMJ bullet", "195+ years manufacturing heritage", "Premium European brass cases", "Non-corrosive primers", "Clean-burning powder", "Fully reloadable brass", "Approximately 830 fps from 5-inch barrel", "Consistent European manufacturing quality", "Reliable in all .45 ACP platforms", "Outstanding value for quality ammunition"],
+    benefits: ["European precision manufacturing standards", "Excellent brass quality for reloading", "Consistent lot-to-lot performance", "Competitive pricing for quality ammunition", "Reliable functioning in all pistols", "Nearly 200 years of proven expertise"],
+    useCases: ["Range practice and training", "Competition preparation", "Defensive handgun courses", "Brass collection for reloading", "High-volume shooting", "General recreational shooting"],
+    technicalDetails: "Sellier & Bellot .45 ACP 230-grain FMJ is loaded to SAAMI specifications, achieving approximately 830 fps from 5-inch barrels with 352 foot-pounds energy. The FMJ bullet features complete copper jacket over lead core with 0.451-inch diameter. Cases are drawn from 70-30 cartridge brass with controlled wall thickness. Primers are non-corrosive Boxer type. Chamber pressures average 19,000-20,000 PSI. Accuracy typically 2.5-3.5 inches at 25 yards from quality pistols.",
+    whyChoose: "Choose Sellier & Bellot when you want European manufacturing precision at competitive American prices. S&B's nearly 200-year history represents accumulated expertise evident in consistent quality and reliability. The brass quality is exceptional - reloaders consistently rank S&B among the finest available. Unlike budget brands, S&B maintains quality standards that have made Czech manufacturing legendary. When you choose S&B, you're choosing ammunition trusted across Europe for generations, now available to American shooters who appreciate craftsmanship and value.",
+    seoKeywords: ["sellier bellot 45 acp", "czech 45 acp ammo", "sb 230 grain 45 acp", "european 45 acp", "sellier bellot 45 auto", "quality 45 acp training", "sb pistol ammunition", "45 acp range ammo", "sellier bellot fmj", "czech ammunition", "45 acp brass ammo", "sb 45 acp bulk", "european pistol ammo", "sellier bellot 230gr", "quality training 45 acp"]
   },
   {
     id: "45acp-corbon-jhp-200",
@@ -3774,7 +4272,15 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "High-performance +P hollow point",
     manufacturer: "Cor-Bon",
-    grainWeight: "200gr +P"
+    grainWeight: "200gr +P",
+    shortDescription: "Cor-Bon pioneered high-performance defensive ammunition with innovative bullet weights and enhanced velocities. The 200-grain +P represents optimal balance between the lighter 185-grain and heavier 230-grain loads for maximum versatility.",
+    longDescription: "Cor-Bon 200-grain +P Jacketed Hollow Point ammunition exemplifies the company's philosophy of maximizing defensive performance through innovative bullet weights and enhanced velocities. The 200-grain weight occupies the sweet spot between lighter 185-grain loads and traditional 230-grain ammunition, providing excellent momentum for penetration while maintaining higher velocities than heavier bullets. The +P loading pushes this optimized bullet weight to approximately 1,050 feet per second from 5-inch barrels, delivering impressive energy levels and flat trajectories. Cor-Bon's jacketed hollow point design features a deep cavity engineered for reliable expansion at these enhanced velocities, creating substantial wound cavities while maintaining penetration depth necessary for effective threat stoppage. The company's small-batch loading practices ensure consistent quality and performance. Each cartridge receives individual attention during manufacturing, with careful powder measuring and quality inspection. The nickel-plated cases provide corrosion resistance for daily carry and improved feeding reliability. Cor-Bon has earned respect among knowledgeable defensive shooters for pushing performance boundaries while maintaining safe pressure levels. When you need maximum performance from your .45 ACP in a package that balances expansion, penetration, and controllability, Cor-Bon's 200-grain +P delivers.",
+    features: ["Optimized 200-grain JHP bullet weight", "Enhanced +P velocity ~1,050 fps", "Deep cavity for reliable expansion", "Nickel-plated cases", "Small-batch precision loading", "Approximately 490 foot-pounds energy", "Suitable for +P-rated pistols", "Proven defensive performance", "Clean-burning powder", "Premium American manufacturing"],
+    benefits: ["Optimal bullet weight balances expansion and penetration", "Enhanced velocity increases energy delivery", "Flatter trajectory than 230-grain loads", "Nickel cases for carry durability", "Cor-Bon's innovation and quality reputation", "High performance in compact and full-size pistols"],
+    useCases: ["Personal defense concealed carry", "Home defense applications", "Law enforcement backup guns", "Compact .45 ACP carry pistols", "Situations requiring maximum performance", "Defensive carry in +P-rated firearms"],
+    technicalDetails: "Cor-Bon .45 ACP 200-grain +P JHP achieves approximately 1,050 fps from 5-inch barrels and 1,000 fps from 4-inch barrels, generating around 490 foot-pounds energy. The JHP expands to 0.65-0.75 inch while penetrating 12-15 inches in gelatin. Weight retention exceeds 95%. +P pressures at 23,000 PSI. Only use in +P-rated firearms. Accuracy typically 2-3 inches at 25 yards.",
+    whyChoose: "Choose Cor-Bon 200-grain +P when you want innovative defensive ammunition that maximizes .45 ACP potential. Cor-Bon pioneered high-performance defensive loads, and the 200-grain +P represents their expertise in balancing bullet weight and velocity for optimal results. The intermediate weight provides advantages of both lighter and heavier loads - good expansion like 185-grain with penetration approaching 230-grain. Small-batch loading ensures quality. When you demand maximum performance, Cor-Bon delivers.",
+    seoKeywords: ["corbon 45 acp", "200 grain 45 acp +p", "cor-bon jhp 45 acp", "high performance 45 acp", "corbon +p ammunition", "45 acp defense ammo", "200gr hollow point", "premium 45 acp jhp", "corbon defensive ammo", "45 acp +p carry", "cor-bon 200 grain", "high velocity 45 acp", "corbon pistol ammo", "enhanced 45 acp", "maximum performance 45"]
   },
   {
     id: "45acp-aguila-230",
@@ -3787,7 +4293,15 @@ export const products: Product[] = [
     categorySlug: "45-acp",
     description: "Mexican-made value training ammunition",
     manufacturer: "Aguila",
-    grainWeight: "230gr"
+    grainWeight: "230gr",
+    shortDescription: "Aguila brings Mexican ammunition manufacturing expertise to budget-conscious American shooters. With modern facilities and quality control, Aguila delivers reliable training ammunition at exceptional value prices.",
+    longDescription: "Aguila 230-grain Full Metal Jacket ammunition represents outstanding value in .45 ACP training rounds, manufactured by one of Mexico's premier ammunition producers. Aguila operates modern manufacturing facilities equipped with contemporary production equipment, enabling them to produce quality ammunition at competitive prices that make frequent practice affordable. The 230-grain bullet weight is the traditional .45 ACP standard, providing authentic ballistics and recoil characteristics for realistic training. Each FMJ bullet features copper alloy jacket over lead core for reliable feeding in all .45 ACP pistols. Aguila's manufacturing includes quality control checkpoints throughout production, with dimensional verification and function testing ensuring consistent performance. The brass cases are fully reloadable, manufactured from quality cartridge brass with uniform wall thickness. Aguila's non-corrosive primers provide reliable ignition, and the powder formulation burns relatively cleanly to minimize fouling. For shooters who practice frequently and need ammunition costs that don't discourage regular training, Aguila delivers the reliability and consistency necessary for productive practice sessions at prices among the most competitive available.",
+    features: ["Traditional 230-grain FMJ bullet", "Modern manufacturing facilities", "Quality brass cases", "Non-corrosive primers", "Clean-burning powder", "Fully reloadable brass", "Approximately 830 fps", "Value pricing", "Reliable in all .45 ACP pistols", "Consistent performance"],
+    benefits: ["Exceptional value for high-volume shooting", "Modern manufacturing quality control", "Reliable functioning", "Reloadable brass extends budget", "Aguila's growing reputation for quality", "Affordable practice enables skill development"],
+    useCases: ["High-volume range practice", "Training on limited budget", "New shooter familiarization", "Brass collection for reloading", "Casual recreational shooting", "Practice ammunition for frequent shooters"],
+    technicalDetails: "Aguila .45 ACP 230-grain FMJ is loaded to SAAMI specifications, achieving approximately 830 fps from 5-inch barrels with 352 foot-pounds energy. FMJ bullet with complete copper jacket. Brass cases from quality cartridge brass. Non-corrosive Boxer primers. Pressures average 19,000-20,000 PSI. Accuracy typically 2.5-4 inches at 25 yards.",
+    whyChoose: "Choose Aguila when ammunition budget is primary concern but you need reliable performance. Aguila's modern manufacturing and quality control deliver consistent ammunition at prices among the most competitive available. Perfect for shooters who practice frequently and need affordable ammunition that functions reliably. When you choose Aguila, you're choosing ammunition that makes regular practice affordable without compromising basic reliability.",
+    seoKeywords: ["aguila 45 acp", "cheap 45 acp ammo", "budget 45 acp ammunition", "affordable 45 acp", "aguila 230 grain", "value 45 acp training", "inexpensive 45 acp", "bulk 45 acp ammo", "economy 45 acp", "aguila pistol ammo", "45 acp practice rounds", "mexican ammunition", "aguila 45 auto", "discount 45 acp", "low cost 45 acp"]
   },
 
   // Pistol Ammunition - .380 ACP Category
