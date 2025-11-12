@@ -12,6 +12,7 @@ import CategoryPage from "./pages/CategoryPage";
 import Firearms from "./pages/Firearms";
 import FirearmCategoryPage from "./pages/FirearmCategoryPage";
 import FirearmDetail from "./pages/FirearmDetail";
+import SearchResults from "./pages/SearchResults";
 import Admin from "./pages/Admin";
 import About from "./pages/About";
 import Shipping from "./pages/Shipping";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/firearms" element={<Firearms />} />
           <Route path="/firearm-category/:slug" element={<FirearmCategoryPage />} />
           <Route path="/firearm/:id" element={<FirearmDetail />} />
+          <Route path="/search" element={<SearchResults />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/about" element={<About />} />
           <Route path="/shipping" element={<Shipping />} />
