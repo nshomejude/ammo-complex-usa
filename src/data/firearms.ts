@@ -524,7 +524,56 @@ export const firearms: Firearm[] = [
     capacity: "16+1",
     barrelLength: "4 inches",
     weight: "28 oz",
-    finish: "Black Melonite"
+    finish: "Black Melonite",
+    shortDescription: "The Springfield Armory XD combines innovative safety features with proven Croatian HS2000 reliability. Features unique grip safety and loaded chamber indicator for enhanced security.",
+    longDescription: "The Springfield Armory XD (Xtreme Duty) represents American importation and refinement of Croatia's highly successful HS2000 service pistol. Originally designed for Croatian military and law enforcement, the HS2000 earned a reputation for exceptional reliability and durability in demanding conditions. Springfield Armory recognized the design's potential and began importing it in 2001 as the XD, quickly gaining acceptance among American law enforcement and civilian shooters. The XD's most distinctive feature is its grip safety - a feature rarely found on modern striker-fired pistols - which provides an additional layer of security against accidental discharge while maintaining the simplicity and quick deployment of striker-fired operation. The loaded chamber indicator provides both visual and tactile confirmation of a chambered round, while the striker status indicator shows whether the striker is cocked. These features address safety concerns without requiring manual safety manipulation that can slow defensive response. The XD's ergonomics feature a low bore axis and aggressive grip texturing for excellent control. The Ultra Safety Assurance (USA) trigger system incorporates three automatic safeties plus the grip safety for comprehensive drop protection. Springfield's extensive testing and quality control ensure each XD meets rigorous standards. For shooters seeking a striker-fired pistol with enhanced safety features and proven reliability, the XD delivers exceptional value.",
+    features: [
+      "Unique grip safety provides additional layer of security",
+      "Loaded chamber indicator for visual and tactile status confirmation",
+      "Striker status indicator shows cocked/uncocked condition",
+      "Ultra Safety Assurance trigger with three automatic safeties",
+      "Low bore axis design for reduced muzzle rise",
+      "Aggressive grip texturing for secure control",
+      "Melonite-treated slide and barrel for corrosion resistance",
+      "Ambidextrous magazine release for all shooters",
+      "High-capacity magazines with witness holes",
+      "Comes standard with carrying case and multiple magazines"
+    ],
+    benefits: [
+      "Enhanced safety from grip safety prevents unauthorized use",
+      "Proven reliability through Croatian military service",
+      "Exceptional value with included accessories and case",
+      "Low bore axis improves recoil management and speed",
+      "Simple operation combines with multiple safety features",
+      "Springfield Armory's lifetime warranty and customer support"
+    ],
+    useCases: [
+      "Home defense with enhanced safety features for secure storage",
+      "Law enforcement duty use by agencies preferring grip safeties",
+      "Concealed carry for those wanting additional safety mechanisms",
+      "Competition shooting in Production and Limited divisions",
+      "Range training with visual/tactile safety confirmations",
+      "First handgun for new shooters appreciating multiple safety features"
+    ],
+    technicalDetails: "The Springfield XD features a cold-hammer-forged barrel with Melonite treatment providing corrosion resistance and surface hardness of approximately 70 HRC. The barrel uses conventional land-and-groove rifling with 1:10 twist rate for 9mm models. The polymer frame is reinforced with steel inserts at critical areas including the locking block and slide rails. The slide is machined from forged steel and receives the same Melonite treatment as the barrel. The grip safety must be fully depressed before the trigger can move, adding a manual safety element to the striker-fired design. The trigger safety, firing pin safety, and out-of-battery safety provide drop protection, while the grip safety prevents trigger manipulation unless properly held. Trigger pull weight measures approximately 5.5 pounds with short reset. The loaded chamber indicator protrudes from the slide top when a round is chambered, visible and palpable in darkness. Magazine capacity varies by caliber: 16+1 for 9mm, 12+1 for .40 S&W, and 10+1 for .45 ACP in full-size configuration. The XD is designed to exceed SAAMI and international proof standards.",
+    whyChoose: "Choose the Springfield Armory XD when you want enhanced safety features combined with proven striker-fired performance. The grip safety addresses a primary concern many shooters have with striker-fired pistols - the lack of a manual safety - while maintaining the simplicity and speed of striker-fired operation. Unlike thumb safeties that require deliberate manipulation, the grip safety engages automatically when you establish a proper grip, providing security without slowing your response. The loaded chamber and striker status indicators give you immediate visual and tactile feedback about the pistol's condition - valuable for administrative handling and stress situations. Springfield Armory's importation and quality control ensure every XD meets American standards, backed by their excellent lifetime warranty and customer service. The Croatian HS2000 design has proven itself through military and police service, providing reliability credentials that match more expensive competitors. The XD's exceptional value package includes carrying case, holster, magazine pouch, and multiple magazines - items that would cost hundreds separately. For shooters seeking a reliable, safe, and well-equipped striker-fired pistol at an attractive price, the Springfield XD delivers outstanding value.",
+    seoKeywords: [
+      "springfield xd for sale",
+      "springfield armory xd",
+      "xd pistol 9mm",
+      "buy springfield xd",
+      "grip safety pistol",
+      "xd service model",
+      "springfield xd price",
+      "reliable 9mm pistol",
+      "xd tactical",
+      "springfield 9mm",
+      "duty pistol grip safety",
+      "xd mod 2",
+      "springfield pistol",
+      "xd review",
+      "striker fired grip safety"
+    ]
   },
   {
     id: "walther-ppq",
@@ -539,7 +588,56 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4 inches",
     weight: "24.5 oz",
-    finish: "Tenifer Black"
+    finish: "Tenifer Black",
+    shortDescription: "The Walther PPQ (Police Pistol Quick Defense) delivers German engineering excellence with the finest striker-fired trigger available. Trusted by German police and discerning shooters worldwide.",
+    longDescription: "The Walther PPQ represents over 130 years of German firearms engineering applied to modern striker-fired pistol design. Walther, inventor of the double-action pistol mechanism and manufacturer of legendary firearms including the P38 and PPK, brought their considerable expertise to create a striker-fired pistol that sets new standards for trigger quality and ergonomics. The PPQ's trigger is universally praised by firearms experts and competitors as the finest factory striker-fired trigger available, featuring a light, crisp break with short, positive reset that many consider superior even to custom-tuned triggers. This trigger excellence isn't accidental - Walther spent years refining the mechanism, drawing on their century-plus experience in trigger design. The ergonomics are equally impressive, with grip geometry that points naturally and provides excellent recoil management. The grip features interchangeable backstraps and optional large frame for customized fit. Walther's Quick Defense trigger requires no manual safety manipulation, relying instead on multiple internal safeties for drop protection while ensuring immediate readiness. The cold-hammer-forged barrel delivers exceptional accuracy and longevity. German police adoption validates the PPQ's reliability and durability for professional use. For shooters who prioritize trigger quality and ergonomics, the PPQ delivers performance that justifies its premium positioning.",
+    features: [
+      "Best-in-class striker-fired trigger with light pull and crisp break",
+      "Quick Defense trigger system for immediate readiness",
+      "Cold-hammer-forged barrel for accuracy and extended life",
+      "Tenifer coating provides extreme hardness and corrosion resistance",
+      "Ergonomic grip geometry for natural pointing and recoil control",
+      "Interchangeable backstraps for customized fit",
+      "Ambidextrous slide stop and reversible magazine release",
+      "Front slide serrations for press checks",
+      "Large trigger guard for gloved operation",
+      "Proven reliability through German police service"
+    ],
+    benefits: [
+      "Superior trigger eliminates need for aftermarket upgrades",
+      "German engineering ensures precision manufacturing and reliability",
+      "Excellent ergonomics reduce fatigue during extended shooting",
+      "Accurate shooting from exceptional trigger and barrel quality",
+      "Minimal recoil from low bore axis and grip design",
+      "Walther's heritage and reputation for quality firearms"
+    ],
+    useCases: [
+      "Competition shooting in USPSA Production and Carry Optics",
+      "Law enforcement duty use by German and international police",
+      "Concealed carry for those preferring full-size platforms",
+      "Home defense with immediate readiness and high capacity",
+      "Range shooting for trigger enthusiasts and precision shooters",
+      "Professional training and instruction emphasizing trigger control"
+    ],
+    technicalDetails: "The Walther PPQ features a cold-hammer-forged barrel manufactured in Germany using Walther's traditional hammer-forging process that creates dense, stress-free steel with exceptional accuracy potential and service life exceeding 100,000 rounds. The barrel uses conventional land-and-groove rifling with polygonal profile and 1:10 twist rate. The slide and barrel receive Walther's proprietary Tenifer treatment - a nitriding process creating surface hardness of 70 HRC with corrosion resistance exceeding hard chrome or Melonite. The polymer frame uses reinforced composition with steel inserts at critical stress points. The trigger mechanism delivers approximately 5.6-pound pull weight with minimal take-up, clean break, and reset of just 0.1 inches - among the shortest resets available. The striker safety, firing pin block, and trigger safety provide drop protection from any angle. Magazine capacity is 15 rounds for 9mm using steel body construction with polymer base pad. Overall length measures 7.1 inches with 4-inch barrel, height of 5.3 inches, width of 1.3 inches. The PPQ meets German CIP proof standards which exceed SAAMI specifications.",
+    whyChoose: "Choose the Walther PPQ when you demand the finest trigger and ergonomics available on a production striker-fired pistol. The PPQ's trigger isn't just marketing hyperbole - it's verifiable by handling the pistol at any dealer, and it consistently wins trigger comparisons against all competitors including pistols costing significantly more. This trigger quality comes from Walther's 130+ years of firearms engineering, including invention of the double-action mechanism and refinement through countless military and police contracts. The ergonomics reflect similar attention to detail, with natural grip angle and weight distribution that minimize fatigue and maximize control. German police adoption provides real-world validation of the PPQ's reliability and durability in professional duty applications. Walther's manufacturing quality is legendary, with precision tolerances and attention to detail that reflect German engineering standards. The cold-hammer-forged barrel ensures accuracy and longevity that will outlast the shooter. While the PPQ commands a premium price over budget striker-fired pistols, the difference in trigger quality and overall refinement is immediately apparent. For serious shooters who understand the value of superior triggers and ergonomics, the PPQ represents an excellent investment that delivers premium performance every time you shoot.",
+    seoKeywords: [
+      "walther ppq for sale",
+      "walther ppq m2",
+      "buy walther ppq",
+      "best trigger pistol",
+      "german police pistol",
+      "ppq 9mm",
+      "walther ppq price",
+      "ppq review",
+      "striker fired best trigger",
+      "walther service pistol",
+      "ppq q5 match",
+      "german 9mm pistol",
+      "walther ppq tactical",
+      "competition pistol 9mm",
+      "ppq optics ready"
+    ]
   },
   {
     id: "beretta-92",
@@ -554,7 +652,56 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4.9 inches",
     weight: "33.3 oz",
-    finish: "Bruniton Black"
+    finish: "Bruniton Black",
+    shortDescription: "The Beretta 92FS is the legendary Italian service pistol that served as the U.S. military's M9 for over three decades. Proven reliability through billions of rounds in combat worldwide.",
+    longDescription: "The Beretta 92FS represents one of the most successful service pistol designs in history, serving as the U.S. military's primary sidearm (designated M9) from 1985 to 2017. During this 32-year period, the M9 proved itself through countless deployments including Desert Storm, Iraq, Afghanistan, and numerous other conflicts, accumulating a service record that few pistols can match. Beretta's design traces its lineage back to 1975 with continuous refinement based on military and law enforcement feedback worldwide. The 92FS features an open-slide design that enhances reliability by allowing debris and carbon fouling to escape rather than accumulate in the action. The falling block locking system is inherently accurate, contributing to the 92FS's reputation for exceptional precision. The double-action/single-action trigger provides safe carry with a long, deliberate first shot followed by crisp single-action shots for follow-up accuracy. The external hammer and frame-mounted safety/decocker provide multiple manual safety options preferred by many military and law enforcement users. The reversible magazine release, ambidextrous safety, and large controls make the 92FS truly ambidextrous. Beretta's manufacturing heritage spanning nearly 500 years ensures world-class quality. For shooters seeking a service pistol with unmatched combat credentials and Italian craftsmanship, the 92FS delivers proven performance.",
+    features: [
+      "Open-slide design for enhanced reliability in adverse conditions",
+      "Falling block locking system for exceptional accuracy",
+      "Double-action/single-action trigger with frame-mounted safety/decocker",
+      "Reversible magazine release for ambidextrous operation",
+      "Chrome-lined barrel for extended service life and corrosion resistance",
+      "Beretta's proprietary Bruniton non-reflective black finish",
+      "Three-dot sight system with dovetailed front sight",
+      "Ambidextrous frame-mounted safety for all shooters",
+      "Oversized trigger guard for gloved operation",
+      "Combat-proven reliability through 30+ years of military service"
+    ],
+    benefits: [
+      "Proven through billions of rounds in actual military combat",
+      "Exceptional accuracy from falling block locking system",
+      "Safe double-action first shot for administrative handling",
+      "Nearly 500 years of Beretta firearms manufacturing expertise",
+      "Reliable operation with vast range of 9mm ammunition types",
+      "Smooth shooting with minimal felt recoil from weight and design"
+    ],
+    useCases: [
+      "Military service sidearm - proven through decades of combat",
+      "Law enforcement duty pistol for agencies preferring DA/SA designs",
+      "Home defense with high capacity and proven reliability",
+      "Competition shooting in Stock Service Pistol divisions",
+      "Range shooting and training with classic service pistol design",
+      "Collection piece representing modern military pistol history"
+    ],
+    technicalDetails: "The Beretta 92FS features a chrome-lined barrel manufactured from high-strength steel with conventional land-and-groove rifling using a 1:10 twist rate optimized for 9mm NATO and commercial loads. The open-slide design allows the barrel to be visible from above, promoting reliability by shedding debris during operation. The falling block locking system uses the Walther-pattern design where the barrel locks to the slide through a rectangular block beneath the chamber that is cammed downward during recoil. This system is inherently accurate due to consistent barrel-to-slide lockup. The frame is forged aluminum alloy with steel reinforcements at high-stress areas. The slide is machined from high-strength steel bar stock and receives Beretta's Bruniton finish - a corrosion-resistant treatment that provides matte black appearance. Double-action trigger pull measures approximately 12 pounds while single-action measures 5.5 pounds. The automatic firing pin block prevents discharge unless trigger is pulled fully to the rear. Magazine capacity is 15 rounds with steel construction. The pistol successfully completed U.S. military trials including accuracy, reliability, and endurance testing where it fired 35,000 rounds without a parts failure.",
+    whyChoose: "Choose the Beretta 92FS when you want a service pistol with unmatched military credentials and nearly 500 years of manufacturing heritage behind it. The 92FS's adoption as the M9 by the U.S. military came after the most rigorous testing program ever conducted for a service pistol, and it exceeded all requirements. For 32 years, the M9 served American forces in every climate and combat environment imaginable, from desert sandstorms to jungle humidity to arctic cold. This real-world testing dwarfs anything commercial pistol manufacturers can claim. The Beretta name represents quality and reliability dating to 1526, making it the world's oldest industrial company. This isn't just marketing - nearly five centuries of gunmaking expertise is embedded in every 92FS. The open-slide design and falling block locking system provide reliability and accuracy that set standards others follow. The smooth double-action/single-action trigger system is preferred by many professionals for its safety and versatility. Beretta's customer service and warranty support are excellent, with parts readily available. When you choose the 92FS, you're acquiring a piece of firearms history that will serve faithfully for generations while retaining both functional and collector value.",
+    seoKeywords: [
+      "beretta 92fs for sale",
+      "beretta 92",
+      "m9 pistol",
+      "buy beretta 92fs",
+      "military service pistol",
+      "beretta 9mm",
+      "92fs price",
+      "italian service pistol",
+      "beretta m9",
+      "da/sa 9mm pistol",
+      "military sidearm",
+      "beretta 92fs review",
+      "combat pistol 9mm",
+      "beretta service pistol",
+      "92fs holster"
+    ]
   },
   {
     id: "fn-fiveseven",
@@ -584,7 +731,56 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.5 inches",
     weight: "30 oz",
-    finish: "Black Nitride"
+    finish: "Black Nitride",
+    shortDescription: "The Ruger American Pistol delivers professional-grade features at an accessible price. American-made quality with modular grip system and exceptional trigger for duty or personal defense.",
+    longDescription: "The Ruger American Pistol represents Ruger's engineering expertise applied to creating a full-size duty pistol that competes with offerings from manufacturers charging significantly more. Ruger, founded in 1949 and renowned for producing reliable, affordable firearms, designed the American Pistol specifically to meet law enforcement requirements while remaining accessible to civilian shooters. The result is a pistol incorporating features typically found only on premium models including a modular grip system, ambidextrous controls, and an excellent trigger - all at a price point that encourages widespread adoption. The trigger system deserves special mention, featuring a short take-up, crisp break at approximately 6 pounds, and positive reset that rivals triggers on pistols costing hundreds more. The modular grip frame system allows fitting the pistol to different hand sizes using wraparound grip modules rather than simple backstraps, providing more comprehensive customization. The low bore axis design reduces muzzle rise for faster follow-up shots. The stainless steel barrel receives wear-resistant nitride treatment. Genuine Novak LoMount Carry three-dot sights provide excellent sight picture. Ruger's recoil-reducing barrel cam combined with the pistol's weight tames 9mm recoil effectively. With adoption by several law enforcement agencies and overwhelmingly positive user feedback, the American Pistol proves that premium features don't require premium prices when backed by Ruger's manufacturing efficiency and commitment to value.",
+    features: [
+      "Modular wrap-around grip system for comprehensive fit customization",
+      "Genuine Novak LoMount Carry three-dot sights as standard",
+      "Excellent trigger with short take-up, crisp break, and positive reset",
+      "Low bore axis design reduces muzzle rise and accelerates recovery",
+      "Stainless steel slide and barrel with wear-resistant nitride finish",
+      "Ambidextrous slide stop and magazine release for all shooters",
+      "Recoil-reducing barrel cam system for manageable shooting",
+      "Aggressive grip texturing for secure control in all conditions",
+      "Automatic internal safeties including trigger safety and striker block",
+      "Ruger's lifetime service policy backing every pistol"
+    ],
+    benefits: [
+      "Professional-grade features at budget-friendly pricing",
+      "Excellent trigger quality rivals custom work on premium pistols",
+      "True modularity allows perfect fit for different hand sizes",
+      "American manufacturing by one of America's largest firearms producers",
+      "Proven reliability through law enforcement adoption and testing",
+      "Outstanding value proposition with premium features included"
+    ],
+    useCases: [
+      "Law enforcement duty weapon for cost-conscious agencies",
+      "Home defense with high capacity and reliable operation",
+      "Concealed carry for those preferring full-size pistols",
+      "Range training and practice with affordable, quality platform",
+      "Competition shooting in Production and Carry Optics divisions",
+      "First handgun offering professional features at entry-level price"
+    ],
+    technicalDetails: "The Ruger American Pistol features a one-piece precision-cast stainless steel chassis embedded within the polymer grip frame, providing exceptional rigidity and durability. The slide is machined from stainless steel bar stock and receives black nitride treatment providing corrosion resistance and surface hardness of approximately 70 HRC. The barrel is also stainless steel with nitride coating and conventional rifling using 1:10 twist rate for 9mm. The trigger mechanism provides approximately 6-pound pull with distinct take-up, crisp break, and audible/tactile reset at 0.25 inches. The trigger safety must be depressed to allow trigger movement, while internal striker safety and firing pin block prevent discharge if dropped. The modular grip system uses full wraparound grip modules in three sizes rather than simple backstrap inserts, allowing more comprehensive fit adjustment. Genuine Novak LoMount Carry sights are drift-adjustable for windage with dovetail-mounted front sight allowing easy replacement. Magazine capacity is 17 rounds for 9mm models using steel body construction. Overall length measures 8 inches with 4.5-inch barrel, height of 5.8 inches, width of 1.2 inches, and weight of 30 ounces unloaded. The pistol meets SAAMI pressure specifications with testing exceeding commercial requirements.",
+    whyChoose: "Choose the Ruger American Pistol when you want professional-grade features without paying premium prices. Ruger's position as one of America's largest and most successful firearms manufacturers enables economies of scale that allow offering features typically reserved for more expensive pistols. The trigger quality alone would justify the pistol's price - it's genuinely excellent, requiring no aftermarket work to be competitive. The modular grip system provides true customization rather than the minimal adjustment offered by simple backstrap changes. Genuine Novak sights come standard - these same sights cost $100+ as aftermarket additions to other pistols. The American Pistol's adoption by law enforcement agencies validates its reliability and durability for professional duty use. Ruger backs every pistol with their industry-leading service policy - they'll repair or replace any Ruger firearm regardless of age or ownership, no warranty card or receipt required. This commitment to customer satisfaction is unmatched in the industry. American manufacturing in Ruger's Connecticut and New Hampshire facilities ensures quality control and supports American jobs. For shooters seeking maximum value and features, the Ruger American Pistol delivers exceptional bang for the buck without compromising quality or reliability.",
+    seoKeywords: [
+      "ruger american pistol",
+      "ruger pistol for sale",
+      "buy ruger american",
+      "budget duty pistol",
+      "ruger 9mm pistol",
+      "american pistol price",
+      "best value 9mm",
+      "ruger service pistol",
+      "american pistol review",
+      "modular grip pistol",
+      "ruger duty gun",
+      "affordable 9mm pistol",
+      "ruger striker fired",
+      "law enforcement pistol",
+      "american made pistol"
+    ]
   },
   {
     id: "taurus-g3",
@@ -599,7 +795,56 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4 inches",
     weight: "25 oz",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Taurus G3 delivers remarkable features and reliability at an entry-level price point. Perfect for budget-conscious shooters seeking full-size capacity and performance with lifetime warranty.",
+    longDescription: "The Taurus G3 represents the Brazilian manufacturer's commitment to providing reliable, feature-rich firearms at prices accessible to all shooters. Taurus has evolved significantly from its early reputation, investing heavily in quality control, modern manufacturing, and customer service. The G3 benefits from this transformation, offering features and performance that compete with pistols costing twice as much. The striker-fired design incorporates lessons learned from Taurus's popular G2 series while addressing user feedback with improved trigger, better ergonomics, and enhanced reliability. The trigger is notably refined for the price point, with smooth take-up and crisp break that surprises shooters expecting budget-grade performance. The frame features aggressive texturing providing secure grip without being uncomfortable against skin or clothing. Memory pads on the grip provide reference points for consistent hand placement. Slide serrations front and rear enable easy manipulation. The 17-round capacity matches full-size duty pistols costing significantly more. Adjustable rear sight allows windage correction. Most impressively, every G3 includes Taurus's lifetime warranty - unlimited, transferable coverage for the life of the pistol regardless of ownership. This warranty demonstrates Taurus's confidence in the G3's durability and their commitment to customer satisfaction. For new shooters, budget-conscious buyers, or anyone seeking a reliable home defense pistol without breaking the bank, the G3 delivers exceptional value.",
+    features: [
+      "Exceptional value pricing makes reliable pistol accessible to all",
+      "17+1 capacity matches full-size duty pistols",
+      "Improved trigger with smooth take-up and crisp break",
+      "Aggressive grip texturing with memory pad reference points",
+      "Enhanced slide serrations front and rear for easy manipulation",
+      "Adjustable rear sight for windage correction",
+      "Accessory rail for weapon lights and lasers",
+      "Restrike capability allows second strike on stubborn primers",
+      "Manual safety option available for enhanced security",
+      "Taurus lifetime warranty - unlimited and transferable"
+    ],
+    benefits: [
+      "Unbeatable price-to-performance ratio in full-size 9mm category",
+      "High capacity provides substantial firepower for defense",
+      "Reliable performance backed by lifetime warranty",
+      "User-friendly features make it ideal for new shooters",
+      "Light weight reduces carry fatigue",
+      "Taurus's improved quality control ensures consistency"
+    ],
+    useCases: [
+      "Budget-friendly home defense solution with full-size capability",
+      "First handgun for new shooters entering gun ownership",
+      "Backup or vehicle gun where value pricing is important",
+      "Range training without concern about wear on expensive pistol",
+      "Lending or loaner gun for introducing friends to shooting",
+      "Emergency preparedness where multiple firearms are desired"
+    ],
+    technicalDetails: "The Taurus G3 features a steel slide and barrel with matte black Tenifer-style finish providing corrosion resistance and durability. The barrel is cold-forged with conventional rifling using 1:10 twist rate optimized for 9mm ammunition from 115 to 147 grains. The polymer frame is reinforced with steel chassis at critical stress points including locking block area and slide rails. The trigger mechanism delivers approximately 6-7 pound pull weight with defined take-up, break, and short reset. The restrike capability allows a second trigger pull on rounds that fail to fire on first strike - a unique feature in this price category that can be valuable with marginal ammunition. Trigger safety, firing pin block, and striker safety provide drop protection. The manual safety (on equipped models) blocks the trigger bar. Magazine capacity is 17 rounds using steel body with polymer follower. Sights are three-dot configuration with drift-adjustable rear. Overall length measures 7.3 inches with 4-inch barrel, height of 5.5 inches, width of 1.2 inches, and weight of 25 ounces unloaded. The G3 is manufactured in Taurus's Brazilian facility with final assembly and quality control in the United States.",
+    whyChoose: "Choose the Taurus G3 when budget is a primary consideration but you refuse to compromise on essential features and reliability. The G3 proves that quality firearms don't require premium pricing when a manufacturer focuses on value engineering and efficient production. Taurus has invested substantially in modernizing their manufacturing and quality control, and the G3 reflects this commitment with performance that competes with pistols costing twice as much. The lifetime warranty demonstrates Taurus's confidence - it's unlimited, transferable, and covers everything, providing peace of mind rare even among premium manufacturers. For new shooters entering gun ownership, the G3's combination of manageable price, full-size capacity, user-friendly features, and lifetime support makes it an ideal first pistol. The 17-round capacity provides defensive firepower matching duty pistols, while the light weight makes it comfortable for extended carry or use. The restrike capability is a thoughtful feature that can prove valuable with budget ammunition or older primers. While firearms enthusiasts may prefer more expensive brands, the G3 proves that reliable, feature-rich pistols are accessible to shooters at all economic levels. For anyone seeking a dependable 9mm pistol for home defense, training, or general use at a price that won't strain the budget, the Taurus G3 delivers remarkable value backed by comprehensive warranty support.",
+    seoKeywords: [
+      "taurus g3 for sale",
+      "taurus g3 price",
+      "buy taurus g3",
+      "budget 9mm pistol",
+      "cheap reliable pistol",
+      "taurus g3 review",
+      "affordable home defense",
+      "best value 9mm",
+      "taurus pistol",
+      "g3 9mm",
+      "entry level pistol",
+      "taurus lifetime warranty",
+      "cheap 9mm handgun",
+      "budget duty pistol",
+      "first handgun 9mm"
+    ]
   },
   {
     id: "canik-tp9sf",

@@ -272,7 +272,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Premium match-grade ammunition for precision shooting",
     manufacturer: "Black Hills",
-    grainWeight: "77gr"
+    grainWeight: "77gr",
+    shortDescription: "Black Hills 77gr Sierra MatchKing is the ammunition of choice for military precision shooters and competitors. Hand-loaded quality with factory consistency.",
+    longDescription: "Black Hills Ammunition has earned legendary status among precision shooters, military snipers, and competitive marksmen for producing ammunition that rivals custom handloads. Founded by former military personnel who understood the needs of precision shooters, Black Hills has become the preferred supplier to elite military units including USMC scout snipers, Navy SEALs, and Army Rangers. The 77-grain Sierra MatchKing loading represents the pinnacle of .223 Remington accuracy potential, optimized for long-range precision work. The heavy 77-grain bullet provides superior ballistic coefficient compared to lighter bullets, maintaining velocity and resisting wind drift at extended ranges. Sierra's MatchKing bullets are manufactured to incredibly tight tolerances with bullet-to-bullet weight consistency within 0.1 grains and dimensional uniformity that ensures predictable flight characteristics. Black Hills' loading process incorporates techniques typically associated with handloading: powder charges are precisely measured, bullets are carefully seated to optimal depth, and each round undergoes individual inspection. The ammunition is loaded specifically for .223 Wylde chambers and tight-bore match barrels with 1:8 or faster twist rates. While premium-priced, Black Hills 77gr delivers accuracy that eliminates the ammunition variable, allowing shooters to focus purely on technique. For precision rifle competitors, long-range enthusiasts, and anyone demanding the absolute best accuracy from their .223 rifle, Black Hills 77gr Sierra MatchKing is worth every penny.",
+    features: [
+      "Sierra MatchKing 77gr HPBT - competition-proven bullet design",
+      "Optimized for 1:8 twist or faster precision barrels",
+      "Hand-loading attention with precision powder charges",
+      "Premium brass selected for consistency and quality",
+      "Individually inspected rounds ensure zero defects",
+      "Loads optimized for .223 Wylde match chambers",
+      "Superior ballistic coefficient for long-range performance",
+      "Temperature-stable powder for consistent velocities",
+      "Minimal velocity deviation batch to batch",
+      "Used by elite military precision shooters"
+    ],
+    benefits: [
+      "Match-winning accuracy from factory ammunition",
+      "Eliminates ammunition as accuracy variable in precision shooting",
+      "Superior long-range performance compared to lighter bullets",
+      "Black Hills' military contract quality for civilian shooters",
+      "Consistent enough to develop precise ballistic data",
+      "Saves time versus handloading while matching handload accuracy"
+    ],
+    useCases: [
+      "Long-range precision rifle competitions beyond 600 yards",
+      "High Power and Service Rifle competition at Camp Perry",
+      "Law enforcement sniper training and deployment",
+      "Precision varmint hunting at extended ranges",
+      "Load development baseline for handloaders",
+      "Any application where maximum .223 accuracy is required"
+    ],
+    technicalDetails: "Black Hills 77gr Sierra MatchKing ammunition features the legendary SMK bullet with extremely high ballistic coefficient (G1 BC of 0.372, G7 BC of 0.189) providing exceptional long-range performance. The 77-grain HPBT bullet achieves approximately 2,750 fps from 20-inch barrels and 2,650 fps from 18-inch precision rifles, delivering 1,293 foot-pounds of muzzle energy. The heavier bullet requires 1:8 twist or faster for proper stabilization - it will not stabilize in 1:9 or slower twists. The bullet construction uses precision-swaged lead core in thick copper jacket with perfectly formed boat tail and hollow point cavity. Black Hills' loading process includes precise powder measurement to 0.1 grain consistency, careful bullet seating to precise depth, and individual round inspection. Premium brass cases are selected for uniform weight and dimensions. Primers are seated to precise depth for consistent ignition. Temperature-stable powder maintains consistent velocities from 20°F to 120°F. Extreme spread velocities typically measure under 20 fps for 10-shot strings. Accuracy from quality precision rifles regularly achieves 0.5 MOA or better at 100 yards, with many rifles producing sub-0.3 MOA groups. The ammunition is specifically designed for bolt-action precision rifles and precision AR-15s with match chambers.",
+    whyChoose: "Choose Black Hills 77gr Sierra MatchKing when you demand the absolute best accuracy available in factory-loaded .223 ammunition. Black Hills' reputation among military precision shooters isn't marketing - it's earned through documented performance in the most demanding applications imaginable. When USMC scout snipers and Navy SEAL snipers choose Black Hills for precision work, they're making decisions based on accuracy that can mean the difference between mission success and failure. That same quality is available to civilian shooters. The 77gr MatchKing bullet is proven in High Power competition, winning national championships and setting records. The heavy bullet's superior ballistic coefficient means it's simply better than lighter bullets for long-range work - it bucks wind better, maintains velocity longer, and delivers more energy on target. Black Hills' attention to detail in loading means you're getting ammunition that rivals the best handloads without the time investment of loading your own. For competitive shooters, the consistency means you can develop precise ballistic data that remains valid box to box. For precision shooting enthusiasts, Black Hills eliminates the ammunition variable so you can focus purely on your shooting fundamentals. While it's premium-priced, the accuracy delivered justifies every cent for serious precision work.",
+    seoKeywords: [
+      "black hills 77gr",
+      "sierra matchking ammo",
+      "223 match ammunition",
+      "buy black hills 77gr",
+      "precision rifle ammo",
+      "long range 223",
+      "mk262 equivalent",
+      "military match ammo",
+      "77gr sierra matchking",
+      "black hills ammunition",
+      "high power ammo",
+      "service rifle ammunition",
+      "match grade 223",
+      "sniper ammo 223",
+      "competition 223"
+    ]
   },
   {
     id: "223-federal-gold-medal",
@@ -350,7 +399,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Explosive expansion for varmint hunting",
     manufacturer: "Hornady",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Hornady Varmint Express with V-MAX bullets delivers explosive expansion for varmint and predator hunting. Precision accuracy meets devastating terminal performance.",
+    longDescription: "Hornady Varmint Express ammunition featuring the revolutionary V-MAX bullet represents the gold standard in varmint and predator ammunition. The V-MAX (Varmint Maximum) bullet combines match-grade accuracy with explosive terminal performance specifically engineered for rapid expansion on small-bodied game. The polymer tip serves multiple purposes: it enhances ballistic coefficient for flatter trajectory and reduced wind drift, it protects the hollow point cavity from debris and deformation in magazines, and most importantly, it acts as a wedge driving into the hollow point cavity upon impact to initiate violent, immediate expansion. The copper jacket is precisely formed with engineered thickness variations - thinner at the front for instant expansion and thicker at the base to prevent premature jacket separation. Upon impact, even at ranges beyond 300 yards, the V-MAX bullet fragments explosively, transferring maximum energy to the target and producing instant incapacitation critical for ethical varmint hunting. The accuracy is exceptional, with groups under 1 MOA common from quality rifles, enabling precise shot placement at extended ranges. Hornady's manufacturing process includes powder charges measured to tight tolerances and case selection for consistency. For prairie dog hunters, predator callers, and varmint shooters who demand both accuracy and explosive terminal performance, Hornady Varmint Express with V-MAX bullets is the premier choice.",
+    features: [
+      "V-MAX polymer-tipped bullet for explosive varmint performance",
+      "Match-grade accuracy for precise shot placement",
+      "Engineered jacket thickness for controlled, violent expansion",
+      "Polymer tip enhances ballistic coefficient and initiates expansion",
+      "Optimized for prairie dogs, ground squirrels, and predators",
+      "Flat trajectory enables extended-range shooting",
+      "Minimal pelt damage on fur-bearing predators when properly placed",
+      "Consistent velocities from precision powder charges",
+      "Premium brass cases for reliability and reloadability",
+      "Proven terminal performance across wide velocity range"
+    ],
+    benefits: [
+      "Explosive expansion ensures instant incapacitation of varmints",
+      "Exceptional accuracy enables ethical long-range shots",
+      "Polymer tip prevents bullet deformation in magazines",
+      "Flat trajectory simplifies range estimation in the field",
+      "Hornady quality ensures consistent performance shot after shot",
+      "Ideal balance of accuracy and terminal effect for varmint hunting"
+    ],
+    useCases: [
+      "Prairie dog hunting at ranges from 100 to 400+ yards",
+      "Predator calling for coyotes, foxes, and bobcats",
+      "Ground squirrel and gopher control",
+      "Woodchuck and groundhog hunting",
+      "Crop damage control and agricultural pest management",
+      "Any varmint hunting requiring accuracy and explosive expansion"
+    ],
+    technicalDetails: "Hornady Varmint Express 55gr V-MAX ammunition achieves approximately 3,240 fps muzzle velocity from 24-inch barrels, delivering 1,282 foot-pounds of muzzle energy. The V-MAX bullet features a red polymer tip over a precisely formed hollow point cavity. The ballistic coefficient (G1) of 0.255 provides enhanced long-range performance compared to flat-base bullets. Upon impact at velocities above 2,000 fps, the polymer tip drives rearward into the hollow point, initiating violent expansion with the bullet typically fragmenting into dozens of pieces. This fragmentation creates a massive temporary wound cavity while the multiple fragments create numerous permanent wound channels - ideal for instant incapacitation of small-bodied game. The copper jacket features controlled thickness variations: approximately 0.015 inches at the ogive thinning to 0.008 inches at the nose for instant expansion, while thickening to 0.020 inches at the base to prevent premature separation. Core is precision-swaged lead. Powder selection emphasizes clean burning and temperature stability. Cases are new production brass with flash holes deburred. Primers are non-corrosive. Accuracy from quality varmint rifles typically achieves 0.75-1.25 MOA at 100 yards, providing precision necessary for small-target varmint hunting.",
+    whyChoose: "Choose Hornady Varmint Express V-MAX when you need ammunition specifically engineered for varmint hunting's unique requirements - the combination of precision accuracy for small targets at extended ranges and explosive terminal performance for instant incapacitation. The V-MAX bullet isn't just a hollow point with a plastic tip - it's the result of extensive engineering and testing to optimize every aspect of varmint bullet performance. The polymer tip's dual role improving ballistic coefficient while initiating expansion demonstrates Hornady's innovative approach. Varmint hunters understand the importance of instant incapacitation - wounded varmints that escape to burrows are unrecoverable and represent ethical failures. The V-MAX's violent, explosive expansion ensures game drops in place. The match-grade accuracy means you can confidently take ethical shots at ranges where lesser ammunition would be questionable. Hornady's reputation for quality and innovation, spanning 75 years, ensures every component is manufactured to exacting standards. For predator callers, the V-MAX provides rapid expansion while minimizing pelt damage when shots are properly placed. Whether hunting prairie dogs in the Dakotas, calling coyotes in Texas, or controlling agricultural pests, Hornady Varmint Express V-MAX delivers the accuracy and terminal performance that makes every shot count.",
+    seoKeywords: [
+      "hornady v-max",
+      "varmint ammunition",
+      "223 varmint ammo",
+      "buy hornady vmax",
+      "prairie dog ammo",
+      "predator hunting ammo",
+      "explosive bullet 223",
+      "coyote hunting ammo",
+      "hornady varmint express",
+      "55gr v-max",
+      "accurate varmint ammo",
+      "223 hunting ammunition",
+      "polymer tip ammo",
+      "ground squirrel ammo",
+      "varmint hunting 223"
+    ]
   },
   {
     id: "223-nosler-custom",
