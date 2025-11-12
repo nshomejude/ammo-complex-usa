@@ -13,6 +13,14 @@ export interface Firearm {
   weight: string;
   finish: string;
   imageUrl?: string;
+  // Ballistic data
+  ballisticData?: {
+    effectiveRange: string;
+    maxRange?: string;
+    muzzleVelocity: string;
+    muzzleEnergy: string;
+    accuracy?: string; // MOA or group size
+  };
 }
 
 export const firearms: Firearm[] = [
@@ -1540,7 +1548,14 @@ export const firearms: Firearm[] = [
     capacity: "7+1",
     barrelLength: "29 inches",
     weight: "27 lbs",
-    finish: "Cerakote FDE"
+    finish: "Cerakote FDE",
+    ballisticData: {
+      effectiveRange: "2,500+ meters",
+      maxRange: "3,000 meters",
+      muzzleVelocity: "3,000 fps (.408 CheyTac)",
+      muzzleEnergy: "8,200 ft-lbs",
+      accuracy: "0.5 MOA or better"
+    }
   },
   {
     id: "remington-msr",
@@ -1555,7 +1570,14 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "27 inches",
     weight: "15.4 lbs",
-    finish: "Black Cerakote"
+    finish: "Black Cerakote",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,800 meters",
+      muzzleVelocity: "2,960 fps (.338 Lapua)",
+      muzzleEnergy: "4,768 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "barrett-mrad",
@@ -1570,7 +1592,14 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "24 inches",
     weight: "14.8 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,940 fps (.338 Lapua)",
+      muzzleEnergy: "4,712 ft-lbs",
+      accuracy: "Sub-MOA guaranteed"
+    }
   },
   {
     id: "accuracy-international-axmc",
@@ -1585,7 +1614,14 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "27 inches",
     weight: "15.3 lbs",
-    finish: "Pale Brown"
+    finish: "Pale Brown",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,950 fps (.338 Lapua)",
+      muzzleEnergy: "4,750 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "sako-trg-42",
@@ -1600,7 +1636,14 @@ export const firearms: Firearm[] = [
     capacity: "5+1",
     barrelLength: "27 inches",
     weight: "11.9 lbs",
-    finish: "Black Phosphate"
+    finish: "Black Phosphate",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,800 meters",
+      muzzleVelocity: "2,920 fps (.338 Lapua)",
+      muzzleEnergy: "4,650 ft-lbs",
+      accuracy: "0.3 MOA"
+    }
   },
   {
     id: "mcmillan-tac-50",
@@ -1615,7 +1658,14 @@ export const firearms: Firearm[] = [
     capacity: "5+1",
     barrelLength: "29 inches",
     weight: "26 lbs",
-    finish: "Olive Drab"
+    finish: "Olive Drab",
+    ballisticData: {
+      effectiveRange: "2,000 meters",
+      maxRange: "3,500+ meters (record: 3,540m)",
+      muzzleVelocity: "2,799 fps",
+      muzzleEnergy: "13,350 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "desert-tech-srs-a2",
@@ -1630,7 +1680,14 @@ export const firearms: Firearm[] = [
     capacity: "6+1",
     barrelLength: "26 inches",
     weight: "14.5 lbs",
-    finish: "Flat Dark Earth"
+    finish: "Flat Dark Earth",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,950 fps (.338 Lapua)",
+      muzzleEnergy: "4,750 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "pgm-hecate-ii",
@@ -1645,7 +1702,14 @@ export const firearms: Firearm[] = [
     capacity: "7+1",
     barrelLength: "27.5 inches",
     weight: "30.9 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "1,800 meters",
+      maxRange: "2,500 meters",
+      muzzleVelocity: "2,788 fps",
+      muzzleEnergy: "13,241 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "savage-110ba",
@@ -1660,7 +1724,14 @@ export const firearms: Firearm[] = [
     capacity: "5+1",
     barrelLength: "24 inches",
     weight: "15.6 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,900 fps (.338 Lapua)",
+      muzzleEnergy: "4,587 ft-lbs",
+      accuracy: "Sub-MOA"
+    }
   },
   {
     id: "hk-g28",
@@ -1675,7 +1746,14 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "16.5 inches",
     weight: "9.9 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "800 meters",
+      maxRange: "1,000 meters",
+      muzzleVelocity: "2,580 fps",
+      muzzleEnergy: "2,559 ft-lbs",
+      accuracy: "1.5 MOA"
+    }
   },
   {
     id: "knight-armament-m110",
@@ -1690,7 +1768,14 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "20 inches",
     weight: "15.3 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "800 meters",
+      maxRange: "1,000 meters",
+      muzzleVelocity: "2,650 fps",
+      muzzleEnergy: "2,700 ft-lbs",
+      accuracy: "1 MOA or better"
+    }
   },
   {
     id: "blaser-r93-tactical",
@@ -1705,7 +1790,14 @@ export const firearms: Firearm[] = [
     capacity: "5+1",
     barrelLength: "25.6 inches",
     weight: "12.1 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,920 fps (.338 Lapua)",
+      muzzleEnergy: "4,650 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "steyr-ssg-08",
@@ -1720,7 +1812,14 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "25.6 inches",
     weight: "12.3 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,930 fps (.338 Lapua)",
+      muzzleEnergy: "4,680 ft-lbs",
+      accuracy: "Sub-MOA guaranteed"
+    }
   },
   {
     id: "tikka-t3x-tac-a1",
@@ -1735,7 +1834,14 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "24 inches",
     weight: "10.8 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "1,000 meters",
+      maxRange: "1,200 meters",
+      muzzleVelocity: "2,700 fps (.308)",
+      muzzleEnergy: "2,800 ft-lbs",
+      accuracy: "Sub-MOA guaranteed"
+    }
   },
   {
     id: "fn-ballista",
@@ -1750,7 +1856,14 @@ export const firearms: Firearm[] = [
     capacity: "8+1",
     barrelLength: "24 inches",
     weight: "14.3 lbs",
-    finish: "Flat Dark Earth"
+    finish: "Flat Dark Earth",
+    ballisticData: {
+      effectiveRange: "1,500 meters (.338 Lapua)",
+      maxRange: "1,700 meters",
+      muzzleVelocity: "2,950 fps (.338 Lapua)",
+      muzzleEnergy: "4,750 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "christensen-mpr",
@@ -1765,7 +1878,14 @@ export const firearms: Firearm[] = [
     capacity: "5+1",
     barrelLength: "26 inches",
     weight: "7.2 lbs",
-    finish: "Black/Carbon"
+    finish: "Black/Carbon",
+    ballisticData: {
+      effectiveRange: "1,200 meters",
+      maxRange: "1,500 meters",
+      muzzleVelocity: "2,850 fps (.300 Win Mag)",
+      muzzleEnergy: "3,501 ft-lbs",
+      accuracy: "0.5 MOA"
+    }
   },
   {
     id: "lwrc-repr-mk2",
@@ -1780,7 +1900,14 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "20 inches",
     weight: "11.5 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "800 meters",
+      maxRange: "1,000 meters",
+      muzzleVelocity: "2,650 fps (.308)",
+      muzzleEnergy: "2,700 ft-lbs",
+      accuracy: "1 MOA"
+    }
   },
   {
     id: "sig-cross",
@@ -1795,7 +1922,14 @@ export const firearms: Firearm[] = [
     capacity: "5+1",
     barrelLength: "16 inches",
     weight: "6.5 lbs",
-    finish: "Black"
+    finish: "Black",
+    ballisticData: {
+      effectiveRange: "800 meters",
+      maxRange: "1,000 meters",
+      muzzleVelocity: "2,580 fps (.308)",
+      muzzleEnergy: "2,559 ft-lbs",
+      accuracy: "Sub-MOA"
+    }
   },
   {
     id: "armalite-ar-10",
@@ -1810,7 +1944,14 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "20 inches",
     weight: "11 lbs",
-    finish: "Black Anodized"
+    finish: "Black Anodized",
+    ballisticData: {
+      effectiveRange: "800 meters",
+      maxRange: "1,000 meters",
+      muzzleVelocity: "2,650 fps",
+      muzzleEnergy: "2,700 ft-lbs",
+      accuracy: "1 MOA"
+    }
   },
   {
     id: "springfield-waypoint",
@@ -1825,7 +1966,14 @@ export const firearms: Firearm[] = [
     capacity: "3+1",
     barrelLength: "22 inches",
     weight: "6.9 lbs",
-    finish: "Evergreen Camo"
+    finish: "Evergreen Camo",
+    ballisticData: {
+      effectiveRange: "1,000 meters",
+      maxRange: "1,200 meters",
+      muzzleVelocity: "2,850 fps (6.5 PRC)",
+      muzzleEnergy: "3,028 ft-lbs",
+      accuracy: "Sub-MOA guaranteed"
+    }
   },
 
   // Category 6: AR-Platform Rifles (20 products)
