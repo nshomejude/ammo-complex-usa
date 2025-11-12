@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProductCard } from "@/components/ProductCard";
 import { FirearmCard } from "@/components/FirearmCard";
+import { EngagementSimulator } from "@/components/EngagementSimulator";
 import { firearms } from "@/data/firearms";
 import { firearmCategories } from "@/data/firearmCategories";
 import { products } from "@/data/products";
@@ -126,40 +127,49 @@ const FirearmDetail = () => {
             </Card>
 
             {firearm.ballisticData && (
-              <Card className="mb-6 border-tactical/30">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-tactical" />
-                    Ballistic Performance
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-sm text-muted-foreground">Effective Range</p>
-                    <p className="font-semibold text-tactical">{firearm.ballisticData.effectiveRange}</p>
-                  </div>
-                  {firearm.ballisticData.maxRange && (
+              <>
+                <Card className="mb-6 border-tactical/30">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Shield className="h-5 w-5 text-tactical" />
+                      Ballistic Performance
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Maximum Range</p>
-                      <p className="font-semibold">{firearm.ballisticData.maxRange}</p>
+                      <p className="text-sm text-muted-foreground">Effective Range</p>
+                      <p className="font-semibold text-tactical">{firearm.ballisticData.effectiveRange}</p>
                     </div>
-                  )}
-                  <div>
-                    <p className="text-sm text-muted-foreground">Muzzle Velocity</p>
-                    <p className="font-semibold">{firearm.ballisticData.muzzleVelocity}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Muzzle Energy</p>
-                    <p className="font-semibold">{firearm.ballisticData.muzzleEnergy}</p>
-                  </div>
-                  {firearm.ballisticData.accuracy && (
-                    <div className="md:col-span-2">
-                      <p className="text-sm text-muted-foreground">Accuracy</p>
-                      <p className="font-semibold text-tactical">{firearm.ballisticData.accuracy}</p>
+                    {firearm.ballisticData.maxRange && (
+                      <div>
+                        <p className="text-sm text-muted-foreground">Maximum Range</p>
+                        <p className="font-semibold">{firearm.ballisticData.maxRange}</p>
+                      </div>
+                    )}
+                    <div>
+                      <p className="text-sm text-muted-foreground">Muzzle Velocity</p>
+                      <p className="font-semibold">{firearm.ballisticData.muzzleVelocity}</p>
                     </div>
-                  )}
-                </CardContent>
-              </Card>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Muzzle Energy</p>
+                      <p className="font-semibold">{firearm.ballisticData.muzzleEnergy}</p>
+                    </div>
+                    {firearm.ballisticData.accuracy && (
+                      <div className="md:col-span-2">
+                        <p className="text-sm text-muted-foreground">Accuracy</p>
+                        <p className="font-semibold text-tactical">{firearm.ballisticData.accuracy}</p>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+
+                <EngagementSimulator
+                  effectiveRange={firearm.ballisticData.effectiveRange}
+                  maxRange={firearm.ballisticData.maxRange}
+                  muzzleEnergy={firearm.ballisticData.muzzleEnergy}
+                  accuracy={firearm.ballisticData.accuracy}
+                />
+              </>
             )}
 
             <div className="space-y-3">
