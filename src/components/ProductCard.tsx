@@ -2,8 +2,10 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
+  id: string;
   name: string;
   caliber: string;
   rounds: number;
@@ -12,9 +14,10 @@ interface ProductCardProps {
   image?: string;
 }
 
-export const ProductCard = ({ name, caliber, rounds, price, inStock }: ProductCardProps) => {
+export const ProductCard = ({ id, name, caliber, rounds, price, inStock }: ProductCardProps) => {
   return (
-    <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50">
+    <Link to={`/product/${id}`}>
+      <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full">
       <div className="aspect-square bg-secondary flex items-center justify-center">
         <div className="text-center p-6">
           <div className="text-4xl font-bold text-tactical mb-2">{caliber}</div>
@@ -40,9 +43,10 @@ export const ProductCard = ({ name, caliber, rounds, price, inStock }: ProductCa
           disabled={!inStock}
         >
           <ShoppingCart className="mr-2 h-4 w-4" />
-          Add to Cart
+          {inStock ? 'View Details' : 'Out of Stock'}
         </Button>
       </CardFooter>
-    </Card>
+      </Card>
+    </Link>
   );
 };
