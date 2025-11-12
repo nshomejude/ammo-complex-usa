@@ -13,7 +13,8 @@ import {
   Activity,
   Layers,
   Radio,
-  Binary
+  Binary,
+  Telescope
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -83,6 +84,17 @@ export const firearmCategories: FirearmCategory[] = [
     salesCount: "12.4K",
     trending: true,
     recommendedAmmo: ["6.5 CM", ".308 WIN", ".300 Win Mag"],
+    ageRequirement: 18
+  },
+  {
+    id: "21",
+    name: "Tactical Sniper Rifles",
+    slug: "tactical-sniper-rifles",
+    description: "Military and law enforcement precision rifles for extreme range accuracy",
+    icon: Telescope,
+    salesCount: "8.9K",
+    trending: true,
+    recommendedAmmo: [".338 Lapua", ".300 Win Mag", ".50 BMG", ".408 CheyTac"],
     ageRequirement: 18
   },
   {
