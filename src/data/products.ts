@@ -2424,7 +2424,58 @@ export const products: Product[] = [
     categorySlug: "9mm-luger",
     description: "High-quality range ammunition for practice and training",
     manufacturer: "Winchester",
-    grainWeight: "115gr"
+    grainWeight: "115gr",
+    shortDescription: "Winchester White Box 115gr delivers American-made reliability for high-volume training. Trusted by shooters worldwide for consistent performance at competitive pricing.",
+    longDescription: "Winchester White Box (USA Forged) 115-grain Full Metal Jacket represents Winchester's value-focused training ammunition line designed for high-volume shooters who demand reliability without premium pricing. As part of Winchester's USA line, White Box ammunition carries the Winchester name's 150+ year heritage of ammunition manufacturing excellence while targeting budget-conscious shooters. The familiar white packaging has become iconic at shooting ranges across America, trusted by competitive shooters, law enforcement trainers, and recreational enthusiasts. Winchester's approach with White Box emphasizes efficiency and value - streamlined packaging, economical components, and optimized production processes deliver substantial cost savings passed to shooters. Despite the budget-friendly pricing, White Box maintains Winchester's commitment to reliability and consistency. The 115-grain bullet weight represents the most popular choice for 9mm training, offering excellent ballistics that mirror many defensive loads. This weight provides manageable recoil in all pistol sizes from full-size competition guns to compact carry pistols, making it ideal for skill development that translates directly to defensive scenarios. The full metal jacket bullet design prevents barrel leading while ensuring reliable feeding across all semi-automatic pistol designs. Winchester manufactures White Box at its facilities using established production processes refined over decades. The ammunition features lead core bullets with copper alloy jackets, standard brass cases, and non-corrosive primers. While not incorporating premium features like nickel-plated cases or sealed primers, the components are manufactured to specifications ensuring reliable function. Each production lot undergoes quality control testing for pressure compliance and dimensional accuracy. Winchester's statistical process control monitors production to maintain consistency across large production runs. The ammunition functions reliably in pistols from all major manufacturers including Glock, SIG Sauer, Smith & Wesson, Springfield Armory, Ruger, and countless others. Malfunctions are rare when using quality magazines and properly maintained firearms. For shooters who want the Winchester name on their ammunition without premium pricing, White Box delivers dependable performance that encourages regular range time and skills development.",
+    features: [
+      "115-grain full metal jacket - standard training weight for 9mm",
+      "American-made by Winchester with 150+ years of expertise",
+      "Lead core with copper alloy jacket prevents barrel leading",
+      "Reliable feeding in all 9mm pistol platforms",
+      "Reloadable brass cases suitable for handloading",
+      "Non-corrosive Boxer primers for reliable ignition",
+      "Consistent ballistics match defensive ammunition for realistic training",
+      "Value-focused pricing for high-volume shooting",
+      "Packaged in iconic white boxes with 50-round capacity",
+      "Quality control testing for pressure and dimensional compliance",
+      "Compatible with all 9mm Luger chambered firearms",
+      "Proven reliability across diverse shooting conditions"
+    ],
+    benefits: [
+      "Winchester quality and reputation at budget-friendly pricing",
+      "Perfect for high-volume training without breaking the budget",
+      "Ballistics replicate defensive loads for practical training value",
+      "Reliable function reduces malfunctions during practice",
+      "Reloadable brass extends ammunition budget through handloading",
+      "Widely available at retailers and online dealers"
+    ],
+    useCases: [
+      "High-volume range training and target shooting",
+      "Competitive shooting practice for USPSA, IDPA, and Steel Challenge",
+      "Defensive pistol training courses and drills",
+      "New shooter instruction and fundamentals practice",
+      "Function testing of pistols, magazines, and modifications",
+      "Recreational plinking and informal target practice"
+    ],
+    technicalDetails: "Winchester White Box 115-grain FMJ is loaded to SAAMI standard pressure specifications with maximum average pressure of 35,000 PSI. The 115-grain full metal jacket bullet achieves approximately 1,190 fps muzzle velocity from 4-inch barrels, producing 362 ft-lbs muzzle energy. From compact 3.5-inch barrels typical of carry pistols, velocity is approximately 1,140 fps with 332 ft-lbs energy. These velocities closely match many defensive loads, providing realistic training. The bullet construction features a lead antimony alloy core (approximately 97% lead, 3% antimony for hardness) completely jacketed on sides and nose with copper alloy jacket. Jacket material is gilding metal (approximately 90% copper, 10% zinc) with thickness of approximately 0.018 inches. The bullet base remains exposed in traditional FMJ fashion. Bullet profile uses a truncated cone design with optimized ogive for reliable feeding across pistol types. Overall loaded length is 1.145-1.165 inches to ensure proper chambering. Brass cases are drawn from standard cartridge brass alloy (70% copper, 30% zinc) using Winchester's established forming processes. Cases feature appropriate hardness for reliable extraction while remaining soft enough for multiple reloading cycles. Flash holes measure approximately 0.080 inches diameter, formed during case production. Primer pockets are sized for standard small pistol primers with internal anvil design. Winchester uses non-corrosive small pistol primers manufactured to ensure reliable ignition across temperature ranges. Powder selection emphasizes economical production while maintaining adequate burning characteristics for velocity consistency. Lot-to-lot velocity variation typically shows standard deviations under 45 fps. Quality control includes automated inspection of critical case dimensions and random sampling for pressure testing via piezoelectric methodology. Accuracy testing from quality 9mm pistols produces groups of 3-5 inches at 25 yards - adequate for all training applications.",
+    whyChoose: "Choose Winchester White Box 115gr when you want the Winchester name and American manufacturing at prices that encourage regular shooting. White Box occupies an important market position - it costs less than Winchester's premium lines yet maintains the quality control and consistency expected from one of America's oldest ammunition manufacturers. The ammunition works reliably, feeds well, and shoots consistently - the essential requirements for training ammunition. While it lacks premium features like nickel-plated cases or sealed primers, these omissions reduce cost without impacting training value. The 115-grain weight provides realistic recoil characteristics matching many defensive loads, making practice time translate directly to defensive skills. Winchester's quality control ensures the ammunition will function reliably in properly maintained firearms with quality magazines. Malfunctions attributable to the ammunition itself are rare. The reloadable brass cases provide additional value for handloaders, with Winchester brass earning good reputation for durability and dimensional consistency. Cases typically last through multiple reloading cycles with proper sizing and maintenance. For competitive shooters building skills, concealed carriers maintaining proficiency, or recreational shooters enjoying range time, White Box delivers Winchester reliability at accessible pricing. The iconic white packaging is instantly recognizable at ranges nationwide, a testament to its widespread popularity among American shooters. When you need ammunition for training rather than collection, White Box delivers practical performance backed by Winchester's manufacturing expertise.",
+    seoKeywords: [
+      "winchester white box 9mm",
+      "white box 115gr",
+      "winchester usa 9mm",
+      "cheap 9mm training ammo",
+      "buy winchester 9mm online",
+      "9mm white box bulk",
+      "winchester usa forged",
+      "budget 9mm ammunition",
+      "9mm fmj training",
+      "winchester 115 grain",
+      "range ammo 9mm",
+      "white box ammo for sale",
+      "winchester 9mm bulk",
+      "affordable 9mm practice",
+      "winchester usa 115gr"
+    ]
   },
   {
     id: "9mm-remington-umc-115",
@@ -2476,7 +2527,58 @@ export const products: Product[] = [
     categorySlug: "9mm-luger",
     description: "Budget-friendly training ammunition with excellent reliability",
     manufacturer: "PMC",
-    grainWeight: "115gr"
+    grainWeight: "115gr",
+    shortDescription: "PMC Bronze 115gr delivers South Korean military-contractor quality at exceptional value. Reliable performance makes high-volume training affordable for budget-conscious shooters.",
+    longDescription: "PMC Bronze 115-grain Full Metal Jacket ammunition represents South Korea's Poongsan Corporation bringing military manufacturing expertise to the civilian training market at remarkably competitive pricing. As a major supplier to the South Korean military and NATO-approved contractor, PMC's manufacturing standards meet rigorous military specifications. The Bronze line specifically targets high-volume civilian shooters and law enforcement training who need reliable ammunition at prices encouraging regular practice. PMC's modern manufacturing facilities feature advanced automation and quality control systems that rival any ammunition producer globally. This investment in manufacturing technology enables PMC to produce consistent, reliable ammunition at costs lower than many American manufacturers while maintaining quality. The 115-grain FMJ loading represents the universal standard for 9mm training ammunition, offering an ideal balance of velocity, energy, and manageable recoil. This weight performs well across all pistol designs from full-size competition guns to subcompact carry pistols. The ballistics closely match many defensive loads, making PMC Bronze excellent for training that translates to real-world scenarios. The full metal jacket bullet design uses lead core with copper alloy jacket, preventing barrel leading while ensuring reliable feeding. PMC's bullet manufacturing process produces consistent dimensions and concentricity, contributing to reliable feeding and decent accuracy. The company's quality control includes automated inspection systems checking every round for dimensional accuracy, proper bullet seating, and correct crimp. Pressure testing validates each production lot meets SAAMI specifications. PMC Bronze uses new production brass cases manufactured in-house to PMC's specifications. These cases feature consistent dimensions and appropriate hardness for reliable extraction while remaining suitable for reloading. Non-corrosive Boxer primers provide reliable ignition across temperature ranges. The ammunition has earned strong reputation among American shooters for functioning reliably in diverse pistol platforms. Malfunctions are rare, and accuracy is suitable for all practical training applications. For shooters seeking maximum training volume at minimum cost without sacrificing reliability, PMC Bronze delivers outstanding value. The ammunition's popularity among competitive shooters, training facilities, and budget-conscious enthusiasts validates its performance-to-price ratio.",
+    features: [
+      "115-grain full metal jacket - universal training weight for 9mm",
+      "South Korean military contractor manufacturing quality",
+      "NATO-approved production standards and quality control",
+      "Lead core with copper alloy jacket prevents barrel leading",
+      "Modern automated production with consistent quality",
+      "Reliable feeding in all major 9mm pistol platforms",
+      "New production brass cases with consistent dimensions",
+      "Non-corrosive Boxer primers for reliable ignition and reloading",
+      "Clean-burning powder reduces maintenance requirements",
+      "Exceptional value pricing for high-volume shooting",
+      "Automated inspection of every round for quality assurance",
+      "Popular choice among competitive shooters and training facilities"
+    ],
+    benefits: [
+      "Military contractor quality at civilian-friendly pricing",
+      "Outstanding reliability reduces training interruptions from malfunctions",
+      "Excellent value enables more trigger time for the same budget",
+      "Ballistics match defensive loads for realistic training",
+      "Reloadable brass extends ammunition investment",
+      "PMC's reputation for consistency and quality control"
+    ],
+    useCases: [
+      "High-volume training for competitive shooting",
+      "Law enforcement training courses and qualifications",
+      "Concealed carry permit courses and practice",
+      "New shooter instruction emphasizing fundamentals",
+      "Budget-friendly recreational target shooting",
+      "Function testing of pistols, magazines, and equipment"
+    ],
+    technicalDetails: "PMC Bronze 115-grain FMJ is loaded to SAAMI standard pressure specifications with maximum average pressure of 35,000 PSI. The 115-grain full metal jacket bullet achieves approximately 1,150 fps muzzle velocity from 4-inch barrels, producing 338 ft-lbs muzzle energy. From 3.5-inch compact barrels, velocity is approximately 1,100 fps with 309 ft-lbs energy. These velocities are slightly conservative compared to some manufacturers, contributing to softer recoil and reduced wear on firearms. The bullet construction features lead antimony alloy core (approximately 97-98% lead, 2-3% antimony) completely jacketed with copper alloy jacket on sides and nose. Jacket material is gilding metal (90/10 copper-zinc composition) approximately 0.018-0.020 inches thick. The bullet base remains exposed in traditional FMJ style. Bullet profile uses a round nose configuration with ogive optimized for reliable feeding. Bullet concentricity is tightly controlled through PMC's automated manufacturing process, contributing to consistent feeding and accuracy. Overall loaded length is 1.145-1.160 inches meeting SAAMI specifications. Brass cases are manufactured in-house using cartridge brass alloy (70/30 copper-zinc). Cases undergo multi-draw process to achieve proper dimensions and hardness. Wall thickness is controlled for consistent internal capacity and reliable extraction. Flash holes measure approximately 0.080 inches diameter, formed during case manufacturing. Primer pockets are sized for standard small pistol primers with internal anvil design. PMC uses non-corrosive Boxer primers from its own primer manufacturing operations, ensuring consistent ignition characteristics. Powder selection emphasizes economical production while maintaining clean burning properties. Velocity consistency typically shows standard deviations under 40 fps within production lots. Quality control includes automated dimensional inspection using optical systems, statistical sampling for pressure testing via piezoelectric methodology, and functionality testing. Accuracy from quality 9mm pistols produces groups of 3-4 inches at 25 yards, suitable for all training purposes.",
+    whyChoose: "Choose PMC Bronze 115gr when you want military-grade manufacturing quality at budget ammunition prices. PMC's unique position as a South Korean military contractor means the manufacturing processes, equipment, and quality control used for Bronze ammunition meet military specifications. This translates to reliability and consistency rare at this price point. The ammunition functions flawlessly across diverse 9mm platforms - Glocks, SIGs, Smith & Wessons, Berettas, 1911s, and countless others. Shooters consistently report that PMC Bronze simply works, with malfunctions being extremely rare in properly maintained firearms. The value proposition is compelling - PMC Bronze typically costs 10-20% less than comparable American ammunition while delivering similar or better reliability. This price difference becomes significant for high-volume shooters. A competitive shooter practicing with 500 rounds monthly saves enough over premium brands to buy an additional 100+ rounds with PMC Bronze. The savings enable more training without sacrificing reliability. PMC's brass cases have earned good reputation among reloaders for consistent quality and durability. Cases typically survive multiple reloading cycles with proper sizing and annealing. For budget-conscious competitive shooters, concealed carriers maintaining proficiency, or recreational shooters maximizing range time, PMC Bronze delivers exceptional value. The ammunition's widespread popularity among serious shooters who track cost-per-round validates its performance. When you need reliable ammunition in quantity without premium pricing, PMC Bronze delivers South Korean military quality at prices that keep you shooting.",
+    seoKeywords: [
+      "pmc bronze 9mm",
+      "pmc 115gr fmj",
+      "cheap 9mm training ammo",
+      "buy pmc 9mm online",
+      "pmc bronze bulk",
+      "budget 9mm ammunition",
+      "pmc 115 grain",
+      "9mm range ammo",
+      "pmc 9mm for sale",
+      "affordable 9mm training",
+      "pmc bronze review",
+      "best budget 9mm",
+      "pmc 9mm bulk deal",
+      "korean 9mm ammo",
+      "value 9mm ammunition"
+    ]
   },
   {
     id: "9mm-fiocchi-115",
@@ -2489,7 +2591,58 @@ export const products: Product[] = [
     categorySlug: "9mm-luger",
     description: "Italian-made quality ammunition for range training",
     manufacturer: "Fiocchi",
-    grainWeight: "115gr"
+    grainWeight: "115gr",
+    shortDescription: "Fiocchi 115gr brings Italian precision manufacturing to 9mm training ammunition. Over 145 years of craftsmanship delivering superior consistency and accuracy.",
+    longDescription: "Fiocchi of America 115-grain Full Metal Jacket ammunition represents Italian ammunition manufacturing excellence applied to training ammunition. Founded in 1876 in Lecco, Italy, Fiocchi has refined ammunition production through nearly 150 years of continuous operation, developing expertise that shows in every cartridge. The company's Italian heritage emphasizes precision, quality control, and attention to detail - hallmarks of Italian manufacturing culture. Fiocchi's American presence through Fiocchi of America ensures product availability while maintaining Italian manufacturing standards. The 9mm 115-grain FMJ loading reflects Fiocchi's commitment to producing training ammunition that exceeds typical budget offerings in consistency and accuracy. Unlike pure value-focused competitors, Fiocchi emphasizes tighter manufacturing tolerances and more extensive quality control. The result is ammunition that performs noticeably better than its modest pricing suggests. Shooters consistently report that Fiocchi ammunition delivers better accuracy and more consistent velocities than comparably-priced alternatives. The 115-grain bullet weight provides universal compatibility with all 9mm pistols while offering ballistics that closely match defensive ammunition. This makes Fiocchi ideal for training that translates directly to defensive scenarios. The full metal jacket bullet uses lead core with precision copper jacket, optimized for reliable feeding and consistent performance. Fiocchi's manufacturing processes emphasize precision in every detail - case dimensions, powder charges, bullet seating depth, and crimp consistency all receive careful attention. Italian manufacturing culture values doing things right over doing things fast, resulting in ammunition that consistently outperforms expectations. Quality control includes multiple inspection points throughout production, pressure testing, and accuracy validation. Fiocchi's brass cases are manufactured to high standards with excellent dimensional consistency, making them popular with reloaders. The cases feature proper hardness for reliable extraction yet remain soft enough for multiple reloading cycles. Non-corrosive Boxer primers provide reliable ignition. Whether training for competition, zeroing carry pistols, or enjoying recreational shooting, Fiocchi delivers Italian quality at surprisingly accessible pricing. The ammunition functions flawlessly in pistols from all manufacturers and consistently delivers better-than-expected accuracy.",
+    features: [
+      "115-grain full metal jacket with precision Italian manufacturing",
+      "145+ years of ammunition expertise from established Italian manufacturer",
+      "Tighter tolerances than typical budget training ammunition",
+      "Extensive quality control with multiple inspection checkpoints",
+      "Lead core with precision copper jacket for reliable feeding",
+      "Superior accuracy compared to similarly-priced alternatives",
+      "Premium brass cases with excellent dimensional consistency",
+      "Non-corrosive Boxer primers for reliable ignition",
+      "Clean-burning powder formulation reduces fouling",
+      "American distribution through Fiocchi of America",
+      "Compatible with all 9mm Luger chambered pistols",
+      "Excellent brass quality for serious reloaders"
+    ],
+    benefits: [
+      "Italian precision manufacturing at mid-range pricing",
+      "Noticeably better consistency than budget alternatives",
+      "Superior accuracy suitable for precision training",
+      "Reliable function across all 9mm pistol platforms",
+      "Premium brass extends value through reloading",
+      "145+ year reputation for quality and innovation"
+    ],
+    useCases: [
+      "Precision training requiring better-than-average accuracy",
+      "Competitive shooting practice for accuracy-focused disciplines",
+      "Zeroing and validation of pistol sights and optics",
+      "Concealed carry practice emphasizing accurate shot placement",
+      "Recreational shooting where consistency matters",
+      "Premium brass source for serious handloaders"
+    ],
+    technicalDetails: "Fiocchi 115-grain FMJ is loaded to SAAMI standard pressure specifications with maximum average pressure of 35,000 PSI. The 115-grain full metal jacket bullet achieves approximately 1,200 fps muzzle velocity from 4-inch barrels, producing 368 ft-lbs muzzle energy. From 3.5-inch compact barrels, velocity is approximately 1,150 fps with 338 ft-lbs energy. These velocities are slightly higher than some budget competitors, providing ballistics closer to defensive ammunition. The bullet construction features lead antimony alloy core with copper alloy jacket approximately 0.020-0.022 inches thick - slightly heavier than economy ammunition for improved concentricity and feeding reliability. Jacket material is gilding metal (90/10 copper-zinc) with precision drawn construction. The jacket completely covers bullet sides and nose with traditional exposed lead base. Fiocchi's manufacturing process ensures excellent bullet concentricity and minimal runout, contributing to superior accuracy. Bullet profile uses round nose design with optimized ogive for universal feeding compatibility. Overall loaded length is 1.150-1.165 inches meeting SAAMI specifications with tighter tolerances than budget ammunition. Brass cases are manufactured from high-quality cartridge brass (70/30 copper-zinc) with tight controls on wall thickness and internal capacity. Case hardness is carefully controlled - hard enough for reliable extraction yet soft enough for multiple reloading cycles. Flash holes are precisely drilled (not punched) for uniform ignition characteristics. Primer pockets are cut to exact dimensions with clean square corners appreciated by reloaders. Fiocchi uses non-corrosive Boxer primers optimized for consistent ignition. Powder selection emphasizes consistent metering for minimal velocity variation and clean burning for reduced fouling. Quality control includes automated dimensional inspection using advanced optical systems, pressure testing via piezoelectric methodology, and extensive accuracy testing. Velocity consistency within lots typically shows standard deviations under 30 fps. Accuracy testing from quality 9mm pistols produces groups of 2.5-3.5 inches at 25 yards - noticeably better than budget ammunition.",
+    whyChoose: "Choose Fiocchi 115gr when you want accuracy and consistency exceeding typical training ammunition without premium match ammunition pricing. Fiocchi occupies an interesting market position - it costs slightly more than pure budget brands but significantly less than premium American ammunition, while delivering performance closer to the premium category. The Italian manufacturing heritage shows in the details: tighter tolerances, better quality control, superior consistency. Shooters who try Fiocchi often become loyal customers, impressed by how well it shoots relative to its pricing. The ammunition is particularly popular with competitive shooters who want quality practice ammunition and with precision-oriented recreational shooters who appreciate good accuracy. Fiocchi's brass cases have earned excellent reputation among reloaders for quality and longevity. The cases feature consistent dimensions, proper hardness, precisely drilled flash holes, and clean primer pockets - qualities that extend case life through numerous reloading cycles. Reloaders report Fiocchi brass often outlasts brass from premium American manufacturers. For shooters who appreciate European manufacturing quality and attention to detail, Fiocchi delivers impressive value. It's accurate enough for serious practice, consistent enough for reliable training, and affordable enough for regular use. Whether you're a competitive shooter seeking quality practice ammunition, an enthusiast who demands accuracy, or a handloader seeking premium brass, Fiocchi delivers performance consistently exceeding expectations for its price point. The nearly 150-year heritage of Italian craftsmanship is evident in every cartridge.",
+    seoKeywords: [
+      "fiocchi 9mm ammo",
+      "fiocchi 115gr fmj",
+      "italian 9mm ammunition",
+      "buy fiocchi 9mm online",
+      "fiocchi 115 grain",
+      "precision 9mm training",
+      "fiocchi 9mm for sale",
+      "quality 9mm range ammo",
+      "fiocchi 9mm bulk",
+      "accurate 9mm ammunition",
+      "fiocchi brass 9mm",
+      "italian made 9mm",
+      "fiocchi 9mm review",
+      "premium training 9mm",
+      "fiocchi pistol ammo"
+    ]
   },
   {
     id: "9mm-cci-blazer-115",
@@ -2502,7 +2655,58 @@ export const products: Product[] = [
     categorySlug: "9mm-luger",
     description: "Reliable brass-cased ammunition for training",
     manufacturer: "CCI",
-    grainWeight: "115gr"
+    grainWeight: "115gr",
+    shortDescription: "CCI Blazer Brass 115gr delivers American-made reliability from a trusted name in ammunition. Quality components and proven consistency at competitive pricing.",
+    longDescription: "CCI Blazer Brass 115-grain Full Metal Jacket represents CCI's value-focused training ammunition featuring brass cases and proven reliability. As part of Vista Outdoor's ammunition portfolio (which includes Federal, Speer, and CCI), Blazer Brass benefits from shared manufacturing technology and quality control systems with premium brands. CCI introduced the Blazer line to target budget-conscious shooters, initially with aluminum cases, then added Blazer Brass with reloadable brass cases for shooters wanting reloading capability. Today, Blazer Brass occupies an important niche - it offers CCI quality and American manufacturing at prices competitive with import ammunition. The 115-grain bullet weight represents the universal standard for 9mm training, providing ballistics matching many defensive loads. This weight offers manageable recoil across all pistol sizes from full-size duty guns to compact carry pistols, making it ideal for training that translates to defensive scenarios. The full metal jacket bullet design uses lead core with copper alloy jacket, preventing barrel fouling while ensuring reliable feeding. CCI manufactures Blazer Brass at its facilities using components from Vista Outdoor's integrated supply chain. The brass cases are manufactured to CCI specifications, primers come from CCI's primer division (one of the world's largest primer manufacturers), and the ammunition benefits from manufacturing processes refined across multiple brands. This integration allows CCI to offer Blazer Brass at competitive pricing while maintaining quality standards. The ammunition undergoes quality control testing including pressure validation and dimensional inspection. CCI's statistical process control monitors production continuously. Blazer Brass functions reliably across diverse 9mm platforms - the ammunition feeds well, fires consistently, and extracts reliably. Malfunctions are rare in properly maintained firearms. Accuracy is suitable for all training applications including competitive shooting practice, defensive training, and recreational target shooting. The brass cases are reloadable, adding value for handloaders. For shooters seeking American-made ammunition from a respected manufacturer at budget-friendly pricing, Blazer Brass delivers solid performance backed by CCI's reputation.",
+    features: [
+      "115-grain full metal jacket - standard training weight for 9mm",
+      "American-made by CCI with Vista Outdoor manufacturing resources",
+      "Reloadable brass cases suitable for handloading",
+      "Lead core with copper alloy jacket prevents barrel fouling",
+      "CCI primers - from one of the world's largest primer manufacturers",
+      "Reliable feeding in all major 9mm pistol platforms",
+      "Clean-burning powder formulation reduces maintenance",
+      "Ballistics match defensive ammunition for realistic training",
+      "Quality control backed by Vista Outdoor's integrated systems",
+      "Budget-friendly pricing for high-volume shooting",
+      "Packaged in 50-round boxes with reusable trays",
+      "Part of CCI's trusted ammunition family"
+    ],
+    benefits: [
+      "CCI quality and reliability at competitive pricing",
+      "American manufacturing supports domestic ammunition production",
+      "Reloadable brass extends ammunition budget",
+      "Reliable function reduces training interruptions",
+      "Vista Outdoor's resources ensure consistent availability",
+      "CCI's reputation for primers translates to reliable ignition"
+    ],
+    useCases: [
+      "High-volume training for competitive shooting",
+      "Defensive handgun practice and drills",
+      "Law enforcement training courses on a budget",
+      "New shooter instruction emphasizing fundamentals",
+      "Recreational target shooting and plinking",
+      "Function testing of pistols and magazines"
+    ],
+    technicalDetails: "CCI Blazer Brass 115-grain FMJ is loaded to SAAMI standard pressure specifications with maximum average pressure of 35,000 PSI. The 115-grain full metal jacket bullet achieves approximately 1,145 fps muzzle velocity from 4-inch barrels, producing 335 ft-lbs muzzle energy. From 3.5-inch compact barrels, velocity is approximately 1,095 fps with 306 ft-lbs energy. These velocities are slightly conservative, contributing to soft recoil and reduced wear. The bullet construction features lead antimony alloy core completely jacketed on sides and nose with copper alloy jacket. Jacket material is gilding metal (90/10 copper-zinc composition) approximately 0.018 inches thick. The bullet base remains exposed in traditional FMJ style. Bullet profile uses a round nose design with ogive optimized for feeding reliability. Overall loaded length is 1.145-1.160 inches meeting SAAMI specifications. Brass cases are manufactured from standard cartridge brass alloy (70/30 copper-zinc) using established forming processes. Cases feature appropriate hardness for reliable extraction while remaining suitable for reloading. Wall thickness is controlled for consistent internal capacity. Flash holes measure approximately 0.080 inches diameter, formed during case manufacturing. Primer pockets are sized for standard small pistol primers with internal anvil design. CCI uses its own primers - among the most respected in the industry for consistent ignition and reliability. CCI's primer manufacturing expertise ensures reliable ignition across temperature ranges and storage conditions. Powder selection emphasizes economical production while maintaining clean burning characteristics. Velocity consistency within production lots typically shows standard deviations under 35 fps. Quality control includes automated dimensional inspection, pressure testing via piezoelectric transducer methodology, and functionality validation. CCI's integration with Federal and Speer means manufacturing best practices are shared across brands. Accuracy testing from quality 9mm pistols produces groups of 3-4 inches at 25 yards, suitable for all practical training applications.",
+    whyChoose: "Choose CCI Blazer Brass 115gr when you want American-made ammunition from a respected manufacturer at import-competitive pricing. CCI's position within Vista Outdoor provides significant advantages - shared manufacturing technology with Federal and Speer, integrated component supply from CCI's primer division, and economies of scale reducing costs. These advantages translate to ammunition that punches above its price class in terms of reliability and consistency. CCI's primer expertise particularly benefits Blazer Brass. Reliable ignition is foundational to ammunition performance, and CCI primers are among the most respected globally. This means Blazer Brass fires reliably in all conditions including extreme temperatures and after extended storage. The ammunition functions well across diverse platforms - it feeds reliably, fires consistently, and extracts cleanly. Shooters report that malfunctions with Blazer Brass are rare when using quality firearms and magazines. The brass cases add significant value for reloaders. While not featuring the premium quality of Federal brass, Blazer Brass cases are suitable for multiple reloading cycles with proper case management. This reloadability provides budget benefits not available with aluminum-cased ammunition. For competitive shooters practicing regularly, concealed carriers maintaining skills, or recreational shooters enjoying range time, Blazer Brass delivers CCI reliability at prices encouraging regular shooting. The ammunition's popularity validates its value proposition - shooters return to Blazer Brass because it works reliably at competitive pricing. When you want American manufacturing and CCI quality without premium pricing, Blazer Brass delivers solid performance backed by Vista Outdoor's resources.",
+    seoKeywords: [
+      "cci blazer brass 9mm",
+      "blazer brass 115gr",
+      "cci 9mm training ammo",
+      "buy blazer brass online",
+      "cci 115 grain 9mm",
+      "blazer brass bulk",
+      "9mm brass case ammo",
+      "cci 9mm for sale",
+      "blazer brass review",
+      "budget 9mm training",
+      "cci blazer 9mm fmj",
+      "reloadable 9mm ammo",
+      "blazer brass 9mm bulk",
+      "american made 9mm",
+      "cci 9mm ammunition"
+    ]
   },
   {
     id: "9mm-federal-hst-124-plus-p",
@@ -2771,7 +2975,58 @@ export const products: Product[] = [
     categorySlug: "9mm-luger",
     description: "Czech-made ammunition with consistent performance",
     manufacturer: "Sellier & Bellot",
-    grainWeight: "115gr"
+    grainWeight: "115gr",
+    shortDescription: "Sellier & Bellot 115gr combines nearly 200 years of Czech manufacturing excellence with competitive pricing. European precision at American-friendly prices.",
+    longDescription: "Sellier & Bellot 9mm 115-grain Full Metal Jacket ammunition brings Czech Republic manufacturing excellence to American shooters at remarkably competitive pricing. Founded in 1825 in Vlašim, Czech Republic, Sellier & Bellot represents one of the world's oldest continuously operating ammunition manufacturers with nearly two centuries of expertise. The company survived world wars, political upheavals, and dramatic market changes while maintaining production and reputation for quality. Today, S&B operates as part of CBC Global Ammunition group (which also includes Magtech), allowing investment in modern equipment while preserving traditional Czech quality standards. The 9mm 115-grain FMJ represents S&B's commitment to producing reliable, accurate ammunition at prices competing with budget brands while delivering performance approaching premium manufacturers. Czech manufacturing culture emphasizes precision engineering and thorough quality control - values deeply embedded in S&B's operations. The 115-grain bullet weight offers universal compatibility with all 9mm pistols while providing ballistics matching defensive ammunition for realistic training. This weight delivers manageable recoil even from compact carry pistols, making it ideal for building skills transferable to defensive scenarios. The full metal jacket bullet uses lead core with copper jacket, optimized for reliable feeding in semi-automatic pistols. S&B's European manufacturing facilities feature modern CNC equipment and automated production lines with extensive quality control checkpoints throughout production. Each component - bullets, cases, primers, powder - meets strict specifications before assembly. Finished ammunition undergoes testing for dimensional accuracy, pressure compliance, and functionality. S&B's reputation in Europe as trusted supplier to military, law enforcement, and civilian markets translates well to American shooters seeking value without sacrificing quality. The ammunition performs reliably across diverse pistol platforms from Glock to SIG to Beretta and countless others. Accuracy exceeds expectations for the price point. The brass cases are popular with reloaders for their consistent quality and durability through multiple loading cycles. For budget-conscious shooters who refuse to compromise on reliability, S&B delivers impressive value backed by nearly two centuries of manufacturing expertise.",
+    features: [
+      "115-grain full metal jacket - universal training weight for 9mm",
+      "Nearly 200 years of Czech Republic manufacturing expertise",
+      "European precision manufacturing standards and quality control",
+      "Lead core with copper jacket for reliable feeding and consistency",
+      "Modern CNC equipment and automated production lines",
+      "Part of CBC Global Ammunition ensuring supply stability",
+      "Non-corrosive Boxer primers for reliable ignition and reloading",
+      "Reloadable brass cases with excellent dimensional consistency",
+      "Clean-burning powder reduces maintenance requirements",
+      "Value pricing rivals budget brands with superior quality",
+      "Trusted supplier to European military and law enforcement",
+      "Proven reliability across all major 9mm pistol platforms"
+    ],
+    benefits: [
+      "Nearly 200-year manufacturing heritage ensures consistent quality",
+      "European precision at budget-friendly American pricing",
+      "Better accuracy and consistency than comparably-priced alternatives",
+      "Reliable function reduces training interruptions",
+      "Excellent brass quality extends value through reloading",
+      "CBC Global backing ensures consistent availability"
+    ],
+    useCases: [
+      "High-volume training and target shooting",
+      "Competitive shooting practice for USPSA, IDPA, Steel Challenge",
+      "Law enforcement training on a budget",
+      "New shooter instruction emphasizing repetition",
+      "Recreational plinking and informal target practice",
+      "Premium brass source for serious handloaders"
+    ],
+    technicalDetails: "Sellier & Bellot 115-grain FMJ is loaded to SAAMI standard pressure specifications with maximum average pressure of 35,000 PSI. The 115-grain full metal jacket bullet achieves approximately 1,180 fps muzzle velocity from 4-inch barrels, producing 356 ft-lbs muzzle energy. From 3.5-inch compact barrels, velocity is approximately 1,130 fps with 326 ft-lbs energy. These velocities closely match American ammunition providing realistic training ballistics. The bullet construction features lead antimony alloy core completely jacketed on sides and nose with copper alloy jacket. Jacket material is gilding metal approximately 0.020 inches thick, providing reliable feeding while preventing barrel fouling. The bullet base remains exposed in traditional FMJ style. Bullet profile uses round nose design with ogive optimized for universal feeding compatibility. S&B's manufacturing precision ensures excellent bullet concentricity contributing to reliable feeding and consistent accuracy. Overall loaded length is 1.150-1.165 inches meeting SAAMI specifications. Brass cases are manufactured from standard cartridge brass alloy (70/30 copper-zinc) using multi-draw forming process. Cases feature consistent wall thickness and flash hole uniformity appreciated by reloaders. Case hardness is controlled for reliable extraction while remaining suitable for multiple reloading cycles. Flash holes are precisely formed during manufacturing. Primer pockets are cut to exact dimensions with clean, square corners. S&B uses non-corrosive Boxer primers manufactured to European standards for reliability and longevity. Powder selection emphasizes consistent velocities with clean burning characteristics. Quality control includes automated dimensional inspection using optical systems, pressure testing via piezoelectric methodology, and functionality testing in various pistol platforms. Velocity consistency within lots typically shows standard deviations under 35 fps. Accuracy testing from quality 9mm pistols produces groups of 2.5-3.5 inches at 25 yards - better than many comparably-priced alternatives.",
+    whyChoose: "Choose Sellier & Bellot 115gr when you want European manufacturing quality at prices typically associated with budget ammunition. S&B occupies a unique market position - it costs less than American premium brands like Federal and Winchester, often matching or beating import budget brands on price, yet delivers superior consistency and reliability. The nearly 200-year manufacturing heritage translates to refined production processes and quality control evident in the ammunition's performance. Shooters consistently report that S&B ammunition functions reliably, produces decent accuracy, and provides reloadable brass of good quality. European shooters have trusted S&B for generations, and American shooters are increasingly discovering its value proposition. The company's position as part of CBC Global Ammunition ensures supply stability and ongoing investment in manufacturing capabilities. The ammunition works exceptionally well for high-volume training where reliability matters more than premium features. It's accurate enough for practical applications including competitive shooting practice while priced low enough to encourage regular shooting. S&B brass has earned particular respect among reloaders for its consistent dimensions, appropriate hardness, and durability through multiple loading cycles. Cases typically survive 5-8+ reloadings with proper sizing and annealing. For budget-conscious shooters who refuse to compromise on reliability, S&B delivers impressive performance. It's particularly popular with shooting clubs, training facilities, and high-volume shooters who've learned that S&B punches well above its price class in terms of consistency, reliability, and value. Nearly two centuries of ammunition manufacturing expertise is evident in every cartridge.",
+    seoKeywords: [
+      "sellier bellot 9mm",
+      "s&b 115gr fmj",
+      "sellier bellot 9mm ammo",
+      "buy sb 9mm online",
+      "czech 9mm ammunition",
+      "sellier 9mm for sale",
+      "sb 115 grain 9mm",
+      "budget 9mm training",
+      "sellier bellot bulk",
+      "european 9mm ammo",
+      "s&b 9mm review",
+      "sellier bellot brass",
+      "czech made 9mm",
+      "affordable 9mm training",
+      "sb 9mm ammunition"
+    ]
   },
   {
     id: "9mm-magtech-115",
@@ -2784,7 +3039,58 @@ export const products: Product[] = [
     categorySlug: "9mm-luger",
     description: "Value-priced training ammunition with reliable ignition",
     manufacturer: "Magtech",
-    grainWeight: "115gr"
+    grainWeight: "115gr",
+    shortDescription: "Magtech 115gr delivers Brazilian manufacturing excellence at exceptional value. Military-contractor quality makes high-volume training affordable without compromising reliability.",
+    longDescription: "Magtech 9mm 115-grain Full Metal Jacket ammunition brings Brazilian manufacturing efficiency and quality to American shooters at remarkably competitive pricing. Manufactured by CBC (Companhia Brasileira de Cartuchos) in Brazil, Magtech benefits from one of the world's largest and most modern ammunition production facilities. CBC operates as a major military supplier to Brazil and numerous other nations, bringing military-grade manufacturing processes and quality control to commercial ammunition production. As part of CBC Global Ammunition (which also includes Sellier & Bellot), Magtech benefits from shared technology and quality standards across multiple international facilities. The Magtech brand specifically targets high-volume civilian shooters, competitive shooters, and law enforcement training markets, offering reliable performance at prices encouraging regular shooting. The 115-grain FMJ loading represents the universal standard for 9mm training ammunition, offering an ideal balance of velocity, energy, and manageable recoil. This weight functions reliably across all pistol designs from full-size duty guns to subcompact carry pistols. The ballistics closely match many defensive loads, making Magtech excellent for training that translates to defensive scenarios. The full metal jacket bullet uses lead core with copper alloy jacket, optimized for reliable feeding in semi-automatic actions and preventing barrel leading. CBC's modern production facilities feature extensive automation with computerized quality control systems monitoring critical dimensions and specifications throughout production. Each component undergoes inspection before assembly, and finished ammunition is tested for pressure compliance and functionality. The result is ammunition that functions flawlessly in diverse pistol platforms regardless of manufacturer or model. Magtech has earned strong reputation among American shooters for reliable ignition, consistent velocities, and excellent accuracy for its price point. The ammunition feeds reliably, fires consistently, and extracts cleanly. Malfunctions are rare in properly maintained firearms with quality magazines. The brass cases are manufactured in-house to CBC specifications, providing consistent quality suitable for reloading. For budget-conscious shooters seeking maximum training volume without reliability concerns, Magtech delivers outstanding value backed by military-contractor manufacturing standards.",
+    features: [
+      "115-grain full metal jacket - universal 9mm training weight",
+      "Brazilian military contractor manufacturing quality",
+      "Part of CBC Global Ammunition with worldwide facilities",
+      "Modern automated production with extensive quality control",
+      "Lead core with copper alloy jacket for reliable feeding",
+      "Non-corrosive Boxer primers for reliable ignition and reloading",
+      "Reloadable brass cases manufactured in-house to CBC specifications",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Proven reliability across all major pistol platforms",
+      "Exceptional value pricing for maximum training volume",
+      "Popular choice among competitive shooters and training facilities",
+      "Military-grade quality control applied to commercial production"
+    ],
+    benefits: [
+      "Military contractor quality at civilian-friendly pricing",
+      "Outstanding reliability reduces training interruptions",
+      "Maximum value enables more trigger time per dollar",
+      "Ballistics match defensive ammunition for realistic practice",
+      "Reloadable brass extends ammunition investment",
+      "CBC Global backing ensures consistent supply"
+    ],
+    useCases: [
+      "High-volume competitive shooting training",
+      "Law enforcement training courses and qualifications",
+      "Budget-focused defensive handgun practice",
+      "New shooter instruction emphasizing repetition",
+      "Recreational target shooting and plinking",
+      "Function testing of pistols and magazine reliability"
+    ],
+    technicalDetails: "Magtech 115-grain FMJ is loaded to SAAMI standard pressure specifications with maximum average pressure of 35,000 PSI. The 115-grain full metal jacket bullet achieves approximately 1,135 fps muzzle velocity from 4-inch barrels, producing 329 ft-lbs muzzle energy. From 3.5-inch compact barrels, velocity is approximately 1,085 fps with 301 ft-lbs energy. These slightly conservative velocities contribute to soft recoil and reduced firearm wear while providing adequate training ballistics. The bullet construction features lead antimony alloy core (approximately 97-98% lead, 2-3% antimony for hardness) completely jacketed on sides and nose with copper alloy jacket. Jacket material is gilding metal (90/10 copper-zinc) approximately 0.018-0.020 inches thick. The bullet base remains exposed in traditional FMJ fashion. Bullet profile uses round nose design with ogive optimized for universal feeding compatibility. Overall loaded length is 1.145-1.160 inches meeting SAAMI specifications. Brass cases are manufactured in-house using modern high-speed production equipment. Cases are drawn from standard cartridge brass alloy (70/30 copper-zinc) through multi-stage forming process. Wall thickness is controlled for consistent internal capacity and reliable extraction. Case hardness is appropriate for extraction while remaining suitable for reloading. Flash holes measure approximately 0.080 inches diameter, formed during case manufacturing. Primer pockets are sized for standard small pistol primers with internal anvil design. Magtech uses non-corrosive Boxer primers from CBC's primer manufacturing operations, ensuring reliable ignition. Powder selection emphasizes economical production while maintaining clean burning characteristics and consistent velocities. Quality control includes automated dimensional inspection using optical systems, statistical sampling for pressure testing via piezoelectric methodology, and functionality testing in various pistol platforms. Velocity consistency within production lots typically shows standard deviations under 40 fps. Accuracy testing from quality 9mm pistols produces groups of 3-4 inches at 25 yards, suitable for all training purposes.",
+    whyChoose: "Choose Magtech 115gr when you want military-contractor manufacturing quality at budget ammunition prices. CBC's status as a major military supplier to Brazil and other nations means the manufacturing processes and quality control used for Magtech meet military specifications. This translates to reliability and consistency impressive for the price point. The ammunition functions flawlessly across diverse 9mm platforms - it feeds reliably, fires consistently, and extracts cleanly. Shooters consistently report that Magtech simply works, with malfunctions being extremely rare in properly maintained firearms. The value proposition is compelling - Magtech typically costs 10-20% less than American ammunition while delivering equal or better reliability than budget American brands. This price difference becomes significant for high-volume shooters. A competitive shooter practicing with 500 rounds monthly saves enough with Magtech to purchase additional ammunition or equipment. The savings enable maximum training volume without sacrificing reliability. Magtech brass has earned good reputation among reloaders for consistent quality and durability. Cases typically survive multiple reloading cycles with proper sizing. The brass may not match premium American brass in longevity, but it performs well for several loadings. For budget-conscious competitive shooters, concealed carriers maintaining proficiency, law enforcement agencies managing training budgets, or recreational shooters maximizing range time, Magtech delivers exceptional value. The ammunition's widespread popularity among serious shooters validates its performance. Many competitive shooters and training facilities rely on Magtech as their primary practice ammunition, testament to its reliability and value. When you need dependable ammunition in quantity at the lowest reasonable price, Magtech delivers Brazilian military-contractor quality that keeps you shooting.",
+    seoKeywords: [
+      "magtech 9mm ammo",
+      "magtech 115gr fmj",
+      "cheap 9mm training ammo",
+      "buy magtech 9mm online",
+      "magtech 9mm bulk",
+      "budget 9mm ammunition",
+      "magtech 115 grain",
+      "9mm value ammo",
+      "magtech 9mm for sale",
+      "affordable 9mm training",
+      "magtech 9mm review",
+      "best budget 9mm",
+      "magtech bulk deal",
+      "brazilian 9mm ammo",
+      "magtech 9mm brass"
+    ]
   },
   {
     id: "9mm-blazer-brass-124",
