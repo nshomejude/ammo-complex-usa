@@ -35,7 +35,7 @@ const FirearmCategories = () => {
             <Shield className="h-10 w-10 text-tactical" />
             <div>
               <h1 className="text-4xl font-bold">Firearm Categories</h1>
-              <p className="text-muted-foreground">Top 20 most popular firearm types for licensed civilian markets</p>
+              <p className="text-muted-foreground">Browse all firearm categories including sniper rifles, 1911 pistols, and specialty firearms</p>
             </div>
           </div>
         </div>
