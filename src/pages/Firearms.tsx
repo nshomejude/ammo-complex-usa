@@ -22,6 +22,17 @@ const Firearms = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 20;
 
+  // Advanced filters
+  const [filters, setFilters] = useState({
+    priceRange: [0, 5000] as [number, number],
+    selectedBrands: [] as string[],
+    stockStatus: "all" as "all" | "inStock" | "outOfStock"
+  });
+
+  // Get unique manufacturers from firearms
+  const availableManufacturers = Array.from(new Set(firearms.map(f => f.manufacturer))).sort();
+  const maxPrice = Math.max(...firearms.map(f => f.price));
+
   const filteredFirearms = firearms
     .filter(firearm => {
       if (categoryFilter !== "all" && firearm.categorySlug !== categoryFilter) return false;
@@ -35,8 +46,20 @@ const Firearms = () => {
       
       if (!matchesSearch) return false;
       
-      if (stockFilter === "in-stock") return firearm.inStock;
-      if (stockFilter === "out-of-stock") return !firearm.inStock;
+      // Stock filter (legacy)
+      if (stockFilter === "in-stock" && !firearm.inStock) return false;
+      if (stockFilter === "out-of-stock" && firearm.inStock) return false;
+      
+      // Advanced price filter
+      if (firearm.price < filters.priceRange[0] || firearm.price > filters.priceRange[1]) return false;
+      
+      // Advanced manufacturer filter
+      if (filters.selectedBrands.length > 0 && !filters.selectedBrands.includes(firearm.manufacturer)) return false;
+      
+      // Advanced stock filter
+      if (filters.stockStatus === "inStock" && !firearm.inStock) return false;
+      if (filters.stockStatus === "outOfStock" && firearm.inStock) return false;
+      
       return true;
     })
     .sort((a, b) => {
@@ -61,7 +84,13 @@ const Firearms = () => {
   return (
     <SidebarProvider>
       <div className="min-h-screen bg-background flex w-full">
-        <ShopSidebar type="firearms" />
+        <ShopSidebar 
+          type="firearms"
+          filters={filters}
+          onFiltersChange={setFilters}
+          availableBrands={availableManufacturers}
+          maxPrice={maxPrice}
+        />
         
         <div className="flex-1 flex flex-col">
           <Navigation />
@@ -84,7 +113,19 @@ const Firearms = () => {
             <Shield className="h-10 w-10 text-tactical" />
             <div>
               <h1 className="text-4xl font-bold">Browse All Firearms</h1>
-              <p className="text-muted-foreground text-lg">Explore our complete catalog of firearms across all categories</p>
+              <div className="flex items-center gap-2">
+                <p className="text-muted-foreground text-lg">Explore our complete catalog of firearms across all categories</p>
+                {(filters.selectedBrands.length > 0 || 
+                  filters.priceRange[0] > 0 || 
+                  filters.priceRange[1] < maxPrice ||
+                  filters.stockStatus !== "all") && (
+                  <Badge variant="destructive">
+                    {filters.selectedBrands.length + 
+                     (filters.priceRange[0] > 0 || filters.priceRange[1] < maxPrice ? 1 : 0) +
+                     (filters.stockStatus !== "all" ? 1 : 0)} Active Filters
+                  </Badge>
+                )}
+              </div>
             </div>
           </div>
 

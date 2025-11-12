@@ -14,11 +14,37 @@ const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
 
+  // Advanced filters
+  const [filters, setFilters] = useState({
+    priceRange: [0, 1000] as [number, number],
+    selectedBrands: [] as string[],
+    stockStatus: "all" as "all" | "inStock" | "outOfStock"
+  });
+
+  // Get unique brands from products
+  const availableBrands = Array.from(new Set(products.map(p => p.name.split(" ")[0]))).sort();
+  const maxPrice = Math.max(...products.map(p => p.price));
+
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          product.caliber.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = categoryFilter === "all" || product.category === categoryFilter;
-    return matchesSearch && matchesCategory;
+    
+    // Price filter
+    const matchesPrice = product.price >= filters.priceRange[0] && 
+                        product.price <= filters.priceRange[1];
+    
+    // Brand filter
+    const productBrand = product.name.split(" ")[0];
+    const matchesBrand = filters.selectedBrands.length === 0 || 
+                        filters.selectedBrands.includes(productBrand);
+    
+    // Stock filter
+    const matchesStock = filters.stockStatus === "all" ||
+                        (filters.stockStatus === "inStock" && product.inStock) ||
+                        (filters.stockStatus === "outOfStock" && !product.inStock);
+    
+    return matchesSearch && matchesCategory && matchesPrice && matchesBrand && matchesStock;
   });
 
   const inStockCount = products.filter(p => p.inStock).length;
@@ -101,7 +127,13 @@ const Products = () => {
   return (
     <SidebarProvider>
       <div className="min-h-screen bg-background flex w-full">
-        <ShopSidebar type="products" />
+        <ShopSidebar 
+          type="products" 
+          filters={filters}
+          onFiltersChange={setFilters}
+          availableBrands={availableBrands}
+          maxPrice={maxPrice}
+        />
         
         <div className="flex-1 flex flex-col">
           <Navigation />
@@ -116,15 +148,25 @@ const Products = () => {
                 <Package className="h-10 w-10 text-primary" />
                 <h1 className="text-4xl font-bold">All Ammunition Products</h1>
               </div>
-          <p className="text-muted-foreground mb-4">
-            Browse our complete selection of {products.length} ammunition products for rifles, pistols, 
-            shotguns, and specialty applications
-          </p>
-          <div className="flex gap-2">
-            <Badge variant="secondary">{inStockCount} In Stock</Badge>
-            <Badge variant="outline">FFL Verified</Badge>
-          </div>
-        </header>
+              <p className="text-muted-foreground mb-4">
+                Browse our complete selection of {products.length} ammunition products for rifles, pistols, 
+                shotguns, and specialty applications
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary">{inStockCount} In Stock</Badge>
+                <Badge variant="outline">FFL Verified</Badge>
+                {(filters.selectedBrands.length > 0 || 
+                  filters.priceRange[0] > 0 || 
+                  filters.priceRange[1] < maxPrice ||
+                  filters.stockStatus !== "all") && (
+                  <Badge variant="destructive" className="cursor-pointer">
+                    {filters.selectedBrands.length + 
+                     (filters.priceRange[0] > 0 || filters.priceRange[1] < maxPrice ? 1 : 0) +
+                     (filters.stockStatus !== "all" ? 1 : 0)} Active Filters
+                  </Badge>
+                )}
+              </div>
+            </header>
 
         <div className="mb-8 flex flex-col gap-4 md:flex-row">
           <div className="relative flex-1">

@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Package, Grid3x3, Shield, Home, Filter } from "lucide-react";
+import { Package, Grid3x3, Shield, Home, Filter, X, DollarSign } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -14,17 +14,85 @@ import {
 } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+
+interface FilterOptions {
+  priceRange: [number, number];
+  selectedBrands: string[];
+  stockStatus: "all" | "inStock" | "outOfStock";
+}
 
 interface ShopSidebarProps {
   type?: "products" | "categories" | "firearms";
+  filters?: FilterOptions;
+  onFiltersChange?: (filters: FilterOptions) => void;
+  availableBrands?: string[];
+  maxPrice?: number;
 }
 
-export function ShopSidebar({ type = "products" }: ShopSidebarProps) {
+export function ShopSidebar({ 
+  type = "products",
+  filters,
+  onFiltersChange,
+  availableBrands = [],
+  maxPrice = 1000
+}: ShopSidebarProps) {
   const location = useLocation();
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
 
   const isActive = (path: string) => location.pathname === path;
+
+  const handlePriceChange = (value: number[]) => {
+    if (onFiltersChange && filters) {
+      onFiltersChange({
+        ...filters,
+        priceRange: [value[0], value[1]]
+      });
+    }
+  };
+
+  const handleBrandToggle = (brand: string) => {
+    if (onFiltersChange && filters) {
+      const newBrands = filters.selectedBrands.includes(brand)
+        ? filters.selectedBrands.filter(b => b !== brand)
+        : [...filters.selectedBrands, brand];
+      onFiltersChange({
+        ...filters,
+        selectedBrands: newBrands
+      });
+    }
+  };
+
+  const handleStockChange = (status: "all" | "inStock" | "outOfStock") => {
+    if (onFiltersChange && filters) {
+      onFiltersChange({
+        ...filters,
+        stockStatus: status
+      });
+    }
+  };
+
+  const clearFilters = () => {
+    if (onFiltersChange) {
+      onFiltersChange({
+        priceRange: [0, maxPrice],
+        selectedBrands: [],
+        stockStatus: "all"
+      });
+    }
+  };
+
+  const hasActiveFilters = filters && (
+    filters.priceRange[0] > 0 || 
+    filters.priceRange[1] < maxPrice ||
+    filters.selectedBrands.length > 0 ||
+    filters.stockStatus !== "all"
+  );
 
   const navigationItems = [
     { title: "Home", url: "/", icon: Home },
@@ -66,17 +134,30 @@ export function ShopSidebar({ type = "products" }: ShopSidebarProps) {
   ];
 
   return (
-    <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible="icon">
+    <Sidebar className={collapsed ? "w-16" : "w-72"} collapsible="icon">
       <SidebarHeader className="border-b border-border p-4">
         {!collapsed && (
-          <div className="flex items-center gap-2">
-            <Filter className="h-5 w-5 text-tactical" />
-            <span className="font-semibold">Shop Navigation</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Filter className="h-5 w-5 text-tactical" />
+              <span className="font-semibold">Filters & Navigation</span>
+            </div>
+            {hasActiveFilters && (
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={clearFilters}
+                className="h-7 px-2 text-xs"
+              >
+                Clear
+              </Button>
+            )}
           </div>
         )}
       </SidebarHeader>
 
-      <SidebarContent>
+      <ScrollArea className="flex-1">
+        <SidebarContent>
         {/* Main Navigation */}
         <SidebarGroup>
           <SidebarGroupLabel>Navigate</SidebarGroupLabel>
@@ -97,6 +178,116 @@ export function ShopSidebar({ type = "products" }: ShopSidebarProps) {
         </SidebarGroup>
 
         <Separator className="my-2" />
+
+        {/* Advanced Filters */}
+        {!collapsed && (type === "products" || type === "firearms") && filters && onFiltersChange && (
+          <>
+            {/* Price Range Filter */}
+            <SidebarGroup>
+              <SidebarGroupLabel className="flex items-center gap-2">
+                <DollarSign className="h-4 w-4" />
+                Price Range
+              </SidebarGroupLabel>
+              <SidebarGroupContent className="px-3 py-4">
+                <div className="space-y-4">
+                  <Slider
+                    value={filters.priceRange}
+                    onValueChange={handlePriceChange}
+                    max={maxPrice}
+                    step={10}
+                    min={0}
+                    className="w-full"
+                  />
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <span>${filters.priceRange[0]}</span>
+                    <span>${filters.priceRange[1]}</span>
+                  </div>
+                </div>
+              </SidebarGroupContent>
+            </SidebarGroup>
+
+            <Separator className="my-2" />
+
+            {/* Stock Status Filter */}
+            <SidebarGroup>
+              <SidebarGroupLabel>Stock Status</SidebarGroupLabel>
+              <SidebarGroupContent className="px-3 py-2">
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <Checkbox
+                      id="stock-all"
+                      checked={filters.stockStatus === "all"}
+                      onCheckedChange={() => handleStockChange("all")}
+                    />
+                    <Label htmlFor="stock-all" className="text-sm cursor-pointer">
+                      All Items
+                    </Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Checkbox
+                      id="stock-in"
+                      checked={filters.stockStatus === "inStock"}
+                      onCheckedChange={() => handleStockChange("inStock")}
+                    />
+                    <Label htmlFor="stock-in" className="text-sm cursor-pointer">
+                      In Stock Only
+                    </Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Checkbox
+                      id="stock-out"
+                      checked={filters.stockStatus === "outOfStock"}
+                      onCheckedChange={() => handleStockChange("outOfStock")}
+                    />
+                    <Label htmlFor="stock-out" className="text-sm cursor-pointer">
+                      Out of Stock
+                    </Label>
+                  </div>
+                </div>
+              </SidebarGroupContent>
+            </SidebarGroup>
+
+            <Separator className="my-2" />
+
+            {/* Brand Filter */}
+            {availableBrands.length > 0 && (
+              <>
+                <SidebarGroup>
+                  <SidebarGroupLabel>
+                    {type === "firearms" ? "Manufacturer" : "Brand"}
+                    {filters.selectedBrands.length > 0 && (
+                      <Badge variant="secondary" className="ml-2">
+                        {filters.selectedBrands.length}
+                      </Badge>
+                    )}
+                  </SidebarGroupLabel>
+                  <SidebarGroupContent className="px-3 py-2">
+                    <ScrollArea className="h-[200px]">
+                      <div className="space-y-3">
+                        {availableBrands.map((brand) => (
+                          <div key={brand} className="flex items-center space-x-2">
+                            <Checkbox
+                              id={`brand-${brand}`}
+                              checked={filters.selectedBrands.includes(brand)}
+                              onCheckedChange={() => handleBrandToggle(brand)}
+                            />
+                            <Label 
+                              htmlFor={`brand-${brand}`} 
+                              className="text-sm cursor-pointer flex-1"
+                            >
+                              {brand}
+                            </Label>
+                          </div>
+                        ))}
+                      </div>
+                    </ScrollArea>
+                  </SidebarGroupContent>
+                </SidebarGroup>
+                <Separator className="my-2" />
+              </>
+            )}
+          </>
+        )}
 
         {/* Type-specific content */}
         {type === "products" && (
@@ -244,6 +435,7 @@ export function ShopSidebar({ type = "products" }: ShopSidebarProps) {
           </>
         )}
       </SidebarContent>
+      </ScrollArea>
     </Sidebar>
   );
 }
