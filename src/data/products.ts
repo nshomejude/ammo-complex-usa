@@ -10,6 +10,15 @@ export interface Product {
   description: string;
   manufacturer?: string;
   grainWeight?: string;
+  // Rich content fields
+  shortDescription?: string;
+  longDescription?: string;
+  features?: string[];
+  benefits?: string[];
+  useCases?: string[];
+  technicalDetails?: string;
+  whyChoose?: string;
+  seoKeywords?: string[];
 }
 
 export const products: Product[] = [
@@ -25,7 +34,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Military-spec training ammunition with consistent performance",
     manufacturer: "Federal",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Federal XM193 delivers authentic military-specification performance for civilian shooters. Manufactured to the same exacting standards as military contract ammunition, it provides reliable accuracy and consistent performance.",
+    longDescription: "Federal XM193 55-grain Full Metal Jacket ammunition represents the gold standard in 5.56 NATO training and target ammunition. Produced using the same specifications as ammunition supplied to the U.S. military, XM193 provides shooters with authentic mil-spec performance at an accessible price point. The 55-grain bullet is loaded to true 5.56 NATO pressures, delivering higher velocities than commercial .223 Remington loads. Each cartridge is assembled with precision on Federal's state-of-the-art production equipment, ensuring consistency from round to round. The full metal jacket bullet design features a copper alloy jacket over a lead core, providing reliable feeding and reduced barrel fouling. Federal's strict quality control processes include multiple inspections throughout production, pressure testing, and accuracy validation. The reloadable brass cases feature Federal's proprietary annealing process for consistent neck tension and extended case life. Clean-burning powder formulation minimizes residue buildup, keeping your rifle cleaner longer. Whether you're zeroing optics, practicing fundamentals, or training for competition, XM193 delivers the performance serious shooters demand at a price that encourages regular range time.",
+    features: [
+      "True military-specification 5.56 NATO loading with M193 ball equivalent performance",
+      "55-grain full metal jacket bullet with copper alloy jacket",
+      "Federal-exclusive primer formulation for consistent ignition",
+      "Reloadable new production brass cases with military-style crimp",
+      "Clean-burning powder reduces fouling and maintenance requirements",
+      "Manufactured on the same production lines as military contract ammunition",
+      "Strict quality control with statistical process controls",
+      "Boxer primers for easy reloading",
+      "Packed in reusable plastic trays within sturdy cardboard boxes",
+      "Batch-tested for accuracy and velocity consistency"
+    ],
+    benefits: [
+      "Authentic military performance at civilian-accessible pricing",
+      "Exceptional accuracy for training and target applications",
+      "High reliability - function tested in multiple AR-15 platforms",
+      "Consistent velocities enable precise ballistic calculations",
+      "Reloadable brass extends ammunition budget through reloading",
+      "Federal's 100+ year reputation for quality and innovation"
+    ],
+    useCases: [
+      "AR-15 target practice and plinking at all distances",
+      "Rifle zeroing and sight-in procedures",
+      "Competition training for 3-gun, service rifle, and practical rifle",
+      "Law enforcement training and qualification courses",
+      "Defensive carbine courses and tactical training",
+      "Varmint hunting for prairie dogs, ground squirrels, and coyotes"
+    ],
+    technicalDetails: "Federal XM193 ammunition is loaded to military M193 ball specifications with higher pressure and velocity than commercial .223 Remington. The 55-grain FMJ bullet achieves approximately 3,165 fps muzzle velocity from a 20-inch barrel, delivering 1,223 foot-pounds of muzzle energy. Bullet construction uses a copper alloy jacket (gilding metal) approximately 0.020 inches thick over a lead antimony alloy core. The jacket design promotes reliable feeding while the exposed lead base allows slight expansion at close range. Powder selection emphasizes clean burning with minimal flash, optimized for 14.5-inch to 20-inch barrels. Cases are drawn from new production brass alloy (cartridge brass 70-30 copper-zinc) with wall thickness controlled to tight tolerances for consistent internal capacity. Primer pockets are sized for standard small rifle primers with military-style crimp. Each lot undergoes pressure testing in universal receiver with copper crusher or piezoelectric transducer methodology to verify pressures meet SAAMI/NATO specifications. Accuracy testing demonstrates typical group sizes of 1.5-2.5 MOA from quality AR-15 rifles with appropriate barrels.",
+    whyChoose: "Choose Federal XM193 when you want proven military-grade ammunition from America's most trusted ammunition manufacturer. Federal has supplied ammunition to the U.S. military for over a century, and that same commitment to quality is evident in every box of XM193. Unlike import ammunition or budget brands, XM193 is manufactured entirely in the United States using American-made components meeting strict quality specifications. Federal's Anoka, Minnesota facility produces XM193 alongside military contract ammunition, so you're getting the same quality as issued to armed forces. The clean-burning powder formulation means less time cleaning and more time shooting, while the reloadable brass provides additional value for handloaders. Federal's customer service and technical support are second to none, with resources available for shooters at all skill levels. When you choose XM193, you're choosing ammunition trusted by military, law enforcement, and serious civilian shooters for its unwavering consistency and reliability. Every box represents Federal's commitment to producing the finest ammunition available.",
+    seoKeywords: [
+      "federal xm193",
+      "5.56 nato ammo",
+      "556 ammunition for sale",
+      "buy xm193 online",
+      "military spec 556",
+      "ar15 ammo 55gr",
+      "federal 5.56 fmj",
+      "556 nato bulk ammo",
+      "ar15 training ammo",
+      "xm193 bulk",
+      "federal american eagle",
+      "556 target ammo",
+      "mil spec 556",
+      "federal 556 nato",
+      "ar15 range ammo"
+    ]
   },
   {
     id: "556-federal-xm855",
@@ -261,7 +319,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Premium match-grade ammunition for long-range precision",
     manufacturer: "Federal",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Federal Premium Gold Medal Match with Sierra MatchKing bullets is the choice of competitive shooters and precision marksmen worldwide. Competition-proven accuracy in a factory-loaded round.",
+    longDescription: "Federal Premium Gold Medal Match represents the pinnacle of precision rifle ammunition manufacturing. Loaded with the legendary Sierra MatchKing 168-grain hollow point boat tail bullet, this ammunition has dominated competitive shooting for decades, winning more championships than any other factory-loaded match ammunition. The Sierra MatchKing bullet features a precisely formed boat tail that reduces drag and enhances ballistic coefficient, combined with a hollow point that shifts the center of gravity rearward for exceptional stability. Federal's exclusive manufacturing process includes hand-weighing powder charges, carefully matching bullets by weight and dimension, and loading on specialized equipment dedicated solely to match ammunition production. Each primer is individually seated to precise depth specifications, and every loaded round undergoes dimensional inspection. The result is ammunition capable of sub-MOA accuracy from quality rifles, with extreme spread velocities often under 15 fps. Professional shooters, military and law enforcement snipers, and serious long-range enthusiasts rely on Gold Medal Match for its uncompromising consistency and accuracy. Whether competing in F-Class, Palma, or tactical precision competitions, or engaging targets beyond 1,000 yards, Gold Medal Match delivers the performance demanded by the world's most accomplished marksmen.",
+    features: [
+      "Sierra MatchKing 168gr HPBT bullet - competition proven design",
+      "Match-grade powder individually weighed for consistency",
+      "Federal Gold Medal primers for optimal ignition uniformity",
+      "Premium brass cases selected for weight and dimensional consistency",
+      "Specially formulated propellant optimized for .308 Winchester",
+      "Tight velocity standard deviation typically under 15 fps",
+      "Manufactured on dedicated match ammunition production equipment",
+      "Each component inspected and measured during assembly",
+      "Boat tail design for superior ballistic coefficient",
+      "Optimal stability across wide range of barrel twist rates"
+    ],
+    benefits: [
+      "Proven accuracy - capable of sub-0.5 MOA from precision rifles",
+      "Exceptional consistency enables precise ballistic predictions",
+      "Trusted by military and law enforcement precision marksmen",
+      "Eliminates variables - focus on shooting fundamentals",
+      "Temperature-stable powder performs consistently year-round",
+      "Saves time - no need for handloading to achieve match performance"
+    ],
+    useCases: [
+      "Long-range precision rifle competitions including F-Class and Palma",
+      "Law enforcement and military sniper training and qualification",
+      "Benchrest and position shooting competitions",
+      "Long-range target practice from 300 to 1,000+ yards",
+      "Load development baseline for handloaders",
+      "Precision hunting for medium to large game at extended ranges"
+    ],
+    technicalDetails: "Federal Gold Medal Match 168gr loads achieve approximately 2,650 fps muzzle velocity from 24-inch test barrels with 2,619 foot-pounds muzzle energy. The Sierra MatchKing 168gr HPBT bullet features a ballistic coefficient (G1) of 0.462 and (G7) of 0.237, providing excellent long-range trajectory and reduced wind drift. Bullet construction consists of a precision-drawn copper-alloy jacket of uniform thickness surrounding a precision-swaged lead core. The boat tail angle is optimized at approximately 9 degrees for reduced drag while maintaining stability. The hollow point cavity is precisely formed to shift the center of gravity rearward, enhancing gyroscopic stability and accuracy. Federal's powder selection emphasizes temperature stability across -40°F to 125°F, with burn rate optimized for .308 Winchester case capacity and common barrel lengths from 20 to 26 inches. Brass cases undergo multiple quality checks including case wall thickness measurement, flash hole uniformity verification, and case head hardness testing. Primers are seated to precise depth specifications using specialized tooling. Statistical process controls monitor every aspect of production with rejection of any lots exceeding strict tolerance limits. Ammunition is lot-tested for accuracy using precision test fixtures, with typical 100-yard groups measuring 0.5 inches or less.",
+    whyChoose: "Choose Federal Premium Gold Medal Match when you demand absolute precision and consistency. This is the ammunition trusted by U.S. military snipers, countless law enforcement agencies, and Olympic-level competitive shooters worldwide. Federal's commitment to match ammunition excellence spans over 40 years, with continuous investment in technology and processes that produce the world's most accurate factory ammunition. The legendary Sierra MatchKing bullet has set the standard for match accuracy since 1971, and Federal's precision loading maximizes its potential. Unlike bulk ammunition where tolerances are measured in thousandths, Gold Medal components are held to ten-thousandths of an inch specifications. Every box represents hours of engineering, precision manufacturing, and rigorous quality control. When match scores, duty performance, or precision hunting success depend on your ammunition's accuracy, choose the brand that champions trust - Federal Premium Gold Medal Match. Your investment in Gold Medal ammunition is an investment in performance that simply cannot be achieved with lesser ammunition, saving you frustration and delivering results when it matters most.",
+    seoKeywords: [
+      "federal gold medal match",
+      "308 match ammo",
+      "sierra matchking 168gr",
+      "precision rifle ammunition",
+      "308 competition ammo",
+      "buy gold medal 308",
+      "long range 308 ammo",
+      "match grade 308",
+      "308 sniper ammo",
+      "federal premium 308",
+      "168 grain matchking",
+      "best 308 accuracy",
+      "308 win match",
+      "competitive shooting 308",
+      "tactical precision ammo"
+    ]
   },
   {
     id: "308-hornady-match",

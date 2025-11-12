@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { products } from "@/data/products";
-import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus } from "lucide-react";
+import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus, Target, Award, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 
@@ -188,8 +190,20 @@ const ProductDetail = () => {
           <div className="space-y-6" itemScope itemType="https://schema.org/Product">
             <div>
               <h1 className="text-4xl font-bold mb-2" itemProp="name">{product.name}</h1>
-              <p className="text-lg text-muted-foreground" itemProp="description">{product.description}</p>
+              <p className="text-lg text-muted-foreground" itemProp="description">
+                {product.shortDescription || product.description}
+              </p>
             </div>
+
+            {product.whyChoose && (
+              <Alert className="border-tactical/50 bg-tactical/5">
+                <Award className="h-5 w-5 text-tactical" />
+                <AlertTitle className="text-base font-bold">Why Choose This Ammunition</AlertTitle>
+                <AlertDescription className="text-sm mt-2 leading-relaxed line-clamp-3">
+                  {product.whyChoose}
+                </AlertDescription>
+              </Alert>
+            )}
 
             <div className="flex items-center gap-3">
               {product.inStock ? (
@@ -269,6 +283,169 @@ const ProductDetail = () => {
             </Alert>
           </div>
         </article>
+
+        {/* Detailed Information Tabs */}
+        <section className="mb-12">
+          <Tabs defaultValue="overview" className="w-full">
+            <TabsList className="grid w-full grid-cols-4 lg:w-auto lg:inline-grid">
+              <TabsTrigger value="overview">Overview</TabsTrigger>
+              <TabsTrigger value="features">Features & Benefits</TabsTrigger>
+              <TabsTrigger value="technical">Technical Details</TabsTrigger>
+              <TabsTrigger value="uses">Use Cases</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="overview" className="mt-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Package className="h-5 w-5 text-tactical" />
+                    Product Overview
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="prose prose-slate max-w-none">
+                  <div className="text-base leading-relaxed space-y-4">
+                    {product.longDescription ? (
+                      product.longDescription.split('\n\n').map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                      ))
+                    ) : (
+                      <p>{product.description}</p>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="features" className="mt-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                {product.features && product.features.length > 0 && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <CheckCircle className="h-5 w-5 text-tactical" />
+                        Key Features
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-3">
+                        {product.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <CheckCircle className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                            <span className="text-sm">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {product.benefits && product.benefits.length > 0 && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Award className="h-5 w-5 text-tactical" />
+                        Benefits
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-3">
+                        {product.benefits.map((benefit, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <Award className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                            <span className="text-sm">{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
+
+              {(!product.features || product.features.length === 0) && 
+               (!product.benefits || product.benefits.length === 0) && (
+                <Card>
+                  <CardContent className="py-8 text-center text-muted-foreground">
+                    Detailed features and benefits information coming soon.
+                  </CardContent>
+                </Card>
+              )}
+            </TabsContent>
+
+            <TabsContent value="technical" className="mt-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Zap className="h-5 w-5 text-tactical" />
+                    Technical Specifications & Ballistic Details
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="prose prose-slate max-w-none">
+                  {product.technicalDetails ? (
+                    <div className="text-sm leading-relaxed space-y-4">
+                      {product.technicalDetails.split('\n\n').map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-sm text-muted-foreground">Caliber</p>
+                        <p className="font-semibold">{product.caliber}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">Rounds per Box</p>
+                        <p className="font-semibold">{product.rounds}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">Grain Weight</p>
+                        <p className="font-semibold">{product.grainWeight || 'Varies'}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">Manufacturer</p>
+                        <p className="font-semibold">{product.manufacturer || 'Various'}</p>
+                      </div>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="uses" className="mt-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Target className="h-5 w-5 text-tactical" />
+                    Recommended Applications
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {product.useCases && product.useCases.length > 0 ? (
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {product.useCases.map((useCase, idx) => (
+                        <div key={idx} className="flex items-start gap-3 p-4 rounded-lg border bg-secondary/30">
+                          <Target className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                          <p className="text-sm">{useCase}</p>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">
+                        This ammunition is suitable for various applications including:
+                      </p>
+                      <ul className="list-disc list-inside space-y-1 text-sm">
+                        <li>Target practice and range training</li>
+                        <li>Competition shooting</li>
+                        {product.category === 'rifle' && <li>Hunting and sporting use</li>}
+                        {product.name.includes('Defense') && <li>Personal defense and home protection</li>}
+                      </ul>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </section>
 
         {/* Product Specifications */}
         <div className="grid gap-6 lg:grid-cols-3 mb-12">
@@ -379,6 +556,31 @@ const ProductDetail = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* FAQ Section */}
+          <div className="col-span-full mt-6">
+            <h3 className="text-2xl font-bold mb-4">Frequently Asked Questions</h3>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>What are the age requirements?</AccordionTrigger>
+                <AccordionContent>
+                  Federal law requires 18+ for rifle/shotgun ammo and 21+ for handgun ammo. Valid ID required.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Is this ammunition reloadable?</AccordionTrigger>
+                <AccordionContent>
+                  {product.category === 'rimfire' ? 'No, rimfire ammunition is not reloadable.' : 'Yes, features brass cases with boxer primers suitable for reloading.'}
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>How should I store ammunition?</AccordionTrigger>
+                <AccordionContent>
+                  Store in a cool, dry place away from heat and moisture. Keep in original packaging or airtight container.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
 
           <div className="space-y-6">
             <Card className="border-tactical/30 bg-tactical/5">

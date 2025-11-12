@@ -21,6 +21,15 @@ export interface Firearm {
     muzzleEnergy: string;
     accuracy?: string; // MOA or group size
   };
+  // Rich content fields
+  shortDescription?: string;
+  longDescription?: string;
+  features?: string[];
+  benefits?: string[];
+  useCases?: string[];
+  technicalDetails?: string;
+  whyChoose?: string;
+  seoKeywords?: string[];
 }
 
 export const firearms: Firearm[] = [
@@ -38,7 +47,55 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.49 inches",
     weight: "25.06 oz",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Glock 17 is the original full-size polymer pistol that revolutionized the firearms industry. Adopted by law enforcement and military units in over 65 countries, it sets the standard for reliability and durability.",
+    longDescription: "The Glock 17 Gen5 represents over three decades of continuous refinement and innovation in pistol design. As the pistol that started the polymer revolution, the Glock 17 has earned its reputation through millions of rounds fired in the world's most demanding conditions. From police departments to special forces units, the Glock 17 has proven itself time and again as a reliable, accurate, and exceptionally durable service pistol. The Gen5 model incorporates feedback from military and law enforcement professionals worldwide, featuring improved ergonomics, enhanced accuracy, and refined trigger characteristics. With its 17-round magazine capacity, the Glock 17 provides substantial firepower in a package that remains surprisingly manageable for shooters of all experience levels. The pistol's simple design with only 34 parts means it's incredibly easy to maintain and virtually impervious to adverse conditions including extreme temperatures, sand, mud, and water immersion.",
+    features: [
+      "Safe Action trigger system with three independent safety mechanisms",
+      "Polymer frame with aggressive texturing for secure grip in all conditions",
+      "Glock Marksman Barrel (GMB) for enhanced accuracy and polygonal rifling",
+      "nDLC coating on slide and barrel for superior corrosion resistance",
+      "Ambidextrous slide stop levers for left and right-handed shooters",
+      "No finger grooves for improved universal fit and comfort",
+      "Flared magazine well for faster reloads under stress",
+      "Reversible magazine catch for left-handed operation",
+      "Enhanced trigger with smoother pull and cleaner break"
+    ],
+    benefits: [
+      "Unmatched reliability with documented 100,000+ round service life",
+      "Low recoil and excellent shootability for rapid accurate fire",
+      "Minimal maintenance requirements - field strips in seconds without tools",
+      "Vast aftermarket support with countless accessories and upgrades available",
+      "High magazine capacity provides tactical advantage",
+      "Consistent trigger pull every time for predictable performance"
+    ],
+    useCases: [
+      "Law enforcement duty weapon for patrol and special operations",
+      "Home defense with high capacity and reliable operation",
+      "Competition shooting in multiple divisions including USPSA and IDPA",
+      "Professional security and executive protection details",
+      "Military sidearm for support personnel and special forces",
+      "Concealed carry for those who prefer full-size platforms"
+    ],
+    technicalDetails: "The Glock 17 Gen5 features a precision-machined barrel with enhanced polygonal rifling that provides superior accuracy while extending barrel life. The barrel and slide receive a diamond-like carbon (nDLC) surface treatment that provides extreme hardness and corrosion resistance far exceeding traditional finishes. The polymer frame is injection molded from a proprietary high-strength polymer composite that maintains its structural integrity across temperature ranges from -40°F to 200°F. The Safe Action trigger system employs three independent automatic safeties (trigger safety, firing pin safety, and drop safety) that sequentially disengage only when the trigger is deliberately pulled, providing an exceptional level of security against accidental discharge. The trigger pull weight is factory set to approximately 5.5 pounds with minimal take-up and a crisp, consistent break. The recoil spring assembly uses a dual recoil spring configuration that reduces felt recoil and improves long-term reliability.",
+    whyChoose: "Choose the Glock 17 when you need a proven, battle-tested pistol that will perform flawlessly when it matters most. With adoption by elite military units including US Special Forces, Navy SEALs, and countless law enforcement agencies worldwide, the Glock 17 has earned its reputation through real-world performance in the most demanding conditions imaginable. The pistol's legendary reliability means you can trust it to function in any environment, whether that's arctic cold, desert heat, or tropical humidity. Glock's limited lifetime warranty and world-class customer service ensure your investment is protected for decades. With millions of Glock pistols in service globally, parts, magazines, and accessories are readily available everywhere. The Glock 17 isn't just a pistol - it's a commitment to uncompromising reliability and performance backed by over 30 years of proven service.",
+    seoKeywords: [
+      "glock 17 gen5",
+      "glock 17 for sale",
+      "buy glock 17 online",
+      "glock 17 9mm pistol",
+      "full size service pistol",
+      "law enforcement pistol",
+      "duty pistol 9mm",
+      "reliable 9mm handgun",
+      "glock gen5 features",
+      "best 9mm pistol",
+      "police service pistol",
+      "tactical 9mm pistol",
+      "glock 17 price",
+      "glock 17 review",
+      "polymer pistol 9mm"
+    ]
   },
   {
     id: "glock-19",
@@ -68,7 +125,56 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.7 inches",
     weight: "29.4 oz",
-    finish: "Nitron Black"
+    finish: "Nitron Black",
+    shortDescription: "The SIG Sauer P320 is the revolutionary modular pistol that won the U.S. military's Modular Handgun System competition. Trusted by the armed forces as the M17/M18, it offers unparalleled versatility and performance.",
+    longDescription: "The SIG Sauer P320 represents a paradigm shift in pistol design with its innovative modular construction. After a rigorous evaluation process, the U.S. military selected the P320 to replace the legendary M9, designating it as the M17 (full-size) and M18 (compact). This historic adoption validates the P320's exceptional accuracy, reliability, and versatility. Unlike traditional pistols where the frame is the serialized firearm, the P320's fire control unit is the registered component, allowing users to easily swap grip modules, slides, and barrels to configure the pistol for different roles and preferences. This modularity means one P320 can serve as a duty pistol, compact carry gun, or competition pistol simply by changing components. The striker-fired trigger system delivers a smooth, consistent pull that enhances accuracy, while the low bore axis reduces muzzle rise for faster follow-up shots. With its impressive track record in military service and law enforcement adoption across the United States, the P320 has proven itself as one of the finest service pistols available today.",
+    features: [
+      "Modular fire control unit allows easy customization and caliber changes",
+      "Striker-fired action with smooth, consistent trigger pull",
+      "Low bore axis design reduces muzzle flip and improves control",
+      "SIGLITE night sights for low-light visibility as standard",
+      "Removable grip module available in multiple sizes and configurations",
+      "Optics-ready slide cuts on many models for red dot mounting",
+      "Ambidextrous slide catch lever and reversible magazine release",
+      "Enhanced grip texture for secure handling in all conditions",
+      "Nitron-coated stainless steel slide for corrosion resistance",
+      "Three-point takedown - no trigger pull required for disassembly"
+    ],
+    benefits: [
+      "Proven military reliability through U.S. Army Modular Handgun System trials",
+      "Unmatched versatility - one gun can be configured for multiple roles",
+      "Exceptional accuracy from cold-hammer-forged barrel",
+      "Easy caliber conversion allows investment in one platform",
+      "Superior ergonomics with interchangeable grip modules for perfect fit",
+      "Strong aftermarket support from SIG and third-party manufacturers"
+    ],
+    useCases: [
+      "Military duty sidearm - official U.S. Armed Forces service pistol (M17/M18)",
+      "Law enforcement duty weapon for patrol and investigative personnel",
+      "Home defense with customizable grip and accessory options",
+      "Competitive shooting in USPSA, IDPA, and other action pistol sports",
+      "Concealed carry when configured with compact or subcompact grip modules",
+      "Professional training and instruction - one platform for all skill levels"
+    ],
+    technicalDetails: "The P320's innovative modular design centers around the serialized fire control unit, a stainless steel chassis that houses the trigger, sear, and disconnector. This FCU can be installed in different grip modules ranging from subcompact to full-size, allowing the same registered firearm to be reconfigured for different applications. The barrel is cold-hammer forged for exceptional accuracy and longevity, with 1:10 twist rate optimized for 9mm NATO ball and defensive ammunition. The striker assembly features a robust design with dual springs and a wide striker face for reliable ignition. The trigger system provides a crisp break at approximately 5.5 to 6 pounds with short reset. The polymer grip module features an integrated magazine well and is reinforced with steel inserts at high-stress points. The slide receives a durable Nitron coating over stainless steel construction, providing excellent corrosion resistance and wear characteristics. The P320 is designed to meet rigorous military specifications including mean rounds between failure (MRBF) exceeding 30,000 rounds.",
+    whyChoose: "Choose the SIG Sauer P320 when you want the pistol chosen by the world's most powerful military after the most comprehensive handgun evaluation in history. The U.S. Army's rigorous testing including accuracy, durability, reliability, ergonomics, and maintainability proved the P320 superior to competitors. This isn't marketing hype - it's documented performance under controlled testing conditions. The P320's modular design means your investment grows with your needs; start with a full-size and add compact or subcompact grip modules as desired. SIG Sauer's commitment to innovation is evident in continuous P320 improvements and the vast array of factory accessories available. With adoption by the U.S. Army, Marine Corps, Navy, Air Force, Coast Guard, and thousands of law enforcement agencies, parts and support will be available for decades. The P320 combines proven performance with unprecedented versatility, backed by SIG Sauer's reputation for excellence and comprehensive warranty coverage.",
+    seoKeywords: [
+      "sig p320 for sale",
+      "sig sauer p320",
+      "m17 military pistol",
+      "buy sig p320 online",
+      "modular pistol system",
+      "sig p320 9mm",
+      "army m17 handgun",
+      "best modular pistol",
+      "sig p320 compact",
+      "military service pistol",
+      "sig p320 full size",
+      "p320 grip modules",
+      "sig p320 price",
+      "duty pistol 9mm",
+      "sig p320 review"
+    ]
   },
   {
     id: "sig-p226",
