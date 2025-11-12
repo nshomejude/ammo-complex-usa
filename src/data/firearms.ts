@@ -1465,8 +1465,67 @@ export const firearms: Firearm[] = [
     weight: "7.8 lbs",
     finish: "Black"
   },
+  {
+    id: "barrett-m82a1",
+    name: "M82A1",
+    manufacturer: "Barrett",
+    categorySlug: "precision-rifles",
+    caliber: [".50 BMG"],
+    price: 11999,
+    inStock: false,
+    description: "Legendary .50 BMG semi-automatic anti-materiel rifle. Extreme long-range capability with devastating power.",
+    actionType: "Semi-Automatic",
+    capacity: "10+1",
+    barrelLength: "29 inches",
+    weight: "30.9 lbs",
+    finish: "Black"
+  },
+  {
+    id: "daniel-defense-delta5",
+    name: "Delta 5",
+    manufacturer: "Daniel Defense",
+    categorySlug: "precision-rifles",
+    caliber: ["6.5 CREEDMOOR", ".308 WIN"],
+    price: 2599,
+    inStock: true,
+    description: "Modular precision rifle system with tool-free barrel changes. American-made excellence for tactical and competition use.",
+    actionType: "Bolt-Action",
+    capacity: "5+1",
+    barrelLength: "24 inches",
+    weight: "9.5 lbs",
+    finish: "Black"
+  },
+  {
+    id: "cadex-cdx33",
+    name: "CDX-33 Patriot",
+    manufacturer: "Cadex Defense",
+    categorySlug: "precision-rifles",
+    caliber: ["6.5 CREEDMOOR", ".338 LAPUA MAG"],
+    price: 7499,
+    inStock: true,
+    description: "Canadian-made tactical chassis rifle with exceptional accuracy and modularity. Competition-grade precision.",
+    actionType: "Bolt-Action",
+    capacity: "5+1",
+    barrelLength: "27 inches",
+    weight: "14.2 lbs",
+    finish: "FDE"
+  },
+  {
+    id: "springfield-waypoint",
+    name: "2020 Waypoint",
+    manufacturer: "Springfield Armory",
+    categorySlug: "precision-rifles",
+    caliber: ["6.5 CREEDMOOR", ".308 WIN"],
+    price: 1799,
+    inStock: true,
+    description: "Modern precision hunting rifle with carbon fiber barrel. Sub-MOA accuracy in a lightweight, weather-resistant package.",
+    actionType: "Bolt-Action",
+    capacity: "5+1",
+    barrelLength: "22 inches",
+    weight: "6.5 lbs",
+    finish: "Tungsten Cerakote"
+  },
 
-  // I'll continue with remaining categories...
   // Category 6: AR-Platform Rifles (20 products)
   {
     id: "colt-ar15",
