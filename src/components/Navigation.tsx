@@ -17,7 +17,10 @@ export const Navigation = () => {
               Products
             </Link>
             <Link to="/categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Categories
+              Ammo Categories
+            </Link>
+            <Link to="/firearm-categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Firearm Types
             </Link>
             <Link to="/how-to-buy" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               How to Buy

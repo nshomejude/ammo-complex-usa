@@ -1,22 +1,23 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { CategoryCard } from "@/components/CategoryCard";
-import { TopSellingCard } from "@/components/TopSellingCard";
+import { FirearmCategoryCard } from "@/components/FirearmCategoryCard";
 import { ProductCard } from "@/components/ProductCard";
 import { categories } from "@/data/categories";
+import { firearmCategories } from "@/data/firearmCategories";
 import { products } from "@/data/products";
 import { AlertCircle, TrendingUp } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const featuredProducts = products.filter(p => p.inStock).slice(0, 4);
 
-  const topSellingCategories = [
-    { ...categories[1], salesCount: "12.5K", trending: true }, // Pistol
-    { ...categories[0], salesCount: "9.8K", trending: true }, // Rifle
-    { ...categories[3], salesCount: "8.2K", trending: false }, // Rimfire
-    { ...categories[2], salesCount: "6.4K", trending: false }, // Shotgun
-  ];
+  // Top 8 firearm categories for homepage
+  const topFirearmCategories = firearmCategories
+    .sort((a, b) => parseFloat(b.salesCount.replace('K', '')) - parseFloat(a.salesCount.replace('K', '')))
+    .slice(0, 8);
 
   return (
     <div className="min-h-screen bg-background">
@@ -37,22 +38,23 @@ const Index = () => {
           <div className="mb-8 flex items-center gap-3">
             <TrendingUp className="h-8 w-8 text-tactical" />
             <div>
-              <h2 className="text-3xl font-bold">Top Selling Categories</h2>
-              <p className="text-muted-foreground">Most popular ammunition types this month</p>
+              <h2 className="text-3xl font-bold">Top Selling Firearm Categories</h2>
+              <p className="text-muted-foreground">Most popular firearm types in the civilian market</p>
             </div>
           </div>
           
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {topSellingCategories.map((category) => (
-              <TopSellingCard 
-                key={category.slug} 
-                name={category.name}
-                icon={category.icon}
-                salesCount={category.salesCount}
-                slug={category.slug}
-                trending={category.trending}
-              />
+            {topFirearmCategories.map((category) => (
+              <FirearmCategoryCard key={category.id} {...category} />
             ))}
+          </div>
+
+          <div className="mt-6 text-center">
+            <Link to="/firearm-categories">
+              <Button variant="outline" className="border-tactical text-tactical hover:bg-tactical hover:text-tactical-foreground">
+                View All 20 Categories
+              </Button>
+            </Link>
           </div>
         </div>
 
