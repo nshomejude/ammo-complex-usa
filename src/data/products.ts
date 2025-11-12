@@ -1224,7 +1224,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Extremely Low Drag bullet for precision shooting",
     manufacturer: "Hornady",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Hornady Match 168gr ELD-Match delivers revolutionary ballistic performance with Heat Shield tip technology. The future of precision rifle ammunition for serious long-range shooters.",
+    longDescription: "Hornady Match ammunition with 168-grain ELD-Match (Extremely Low Drag Match) bullets represents a quantum leap in precision rifle ammunition technology. The revolutionary ELD-Match bullet features Hornady's proprietary Heat Shield tip, engineered to resist aerodynamic heating that degrades polymer tips during flight. Traditional polymer-tipped match bullets experience tip deformation at extended ranges, degrading ballistic coefficient and consistency. Hornady's Heat Shield tip maintains its shape throughout the entire trajectory, preserving the advertised BC values all the way to the target. The result is unprecedented accuracy and consistency at extreme distances exceeding 1,000 yards. The 168-grain ELD-Match bullet combines a streamlined secant ogive profile, optimized boat tail, and precisely formed hollow point cavity for maximum ballistic efficiency. Hornady's AMP (Advanced Manufacturing Process) bullet jacket technology ensures concentricity within 0.0003 inches, critical for precision accuracy. Each cartridge is loaded with match-grade powder carefully selected for optimal velocity consistency and temperature stability. Hornady's stringent quality control includes statistical process monitoring at every manufacturing stage. The result is factory-loaded ammunition capable of rivaling premium handloads, with velocities consistent within single-digit standard deviations. Whether competing in PRS, F-Class, or other precision disciplines, or pursuing long-range hunting opportunities, Hornady Match with ELD bullets delivers the consistency demanded by today's most discerning marksmen.",
+    features: [
+      "ELD-Match bullet with Heat Shield tip resists aerodynamic heating",
+      "Secant ogive profile maximizes ballistic coefficient",
+      "AMP bullet jackets ensure 0.0003-inch concentricity",
+      "Match-grade powder for exceptional velocity consistency",
+      "Optimized boat tail design for drag reduction",
+      "Swaged lead core perfectly balanced within jacket",
+      "Premium brass cases with consistent wall thickness",
+      "Non-corrosive primers selected for match reliability",
+      "Typical velocity SD under 10 fps across temperature ranges",
+      "Verified ballistic coefficient maintains accuracy to extreme range"
+    ],
+    benefits: [
+      "Heat Shield technology maintains BC accuracy to 1,500+ yards",
+      "Sub-0.5 MOA accuracy potential from quality precision rifles",
+      "Consistent performance eliminates guesswork in trajectory calculation",
+      "Temperature-stable powder performs reliably year-round",
+      "Factory-loaded convenience with handload-quality performance",
+      "Hornady's ballistic research provides reliable trajectory data"
+    ],
+    useCases: [
+      "Long-range precision competitions including PRS and F-Class",
+      "Extended-range target practice from 600 to 1,500 yards",
+      "Precision varmint hunting at extreme distances",
+      "Long-range big game hunting where precision is critical",
+      "Load development baseline for ELD bullet handloading",
+      "Law enforcement precision marksman training"
+    ],
+    technicalDetails: "Hornady Match 168gr ELD-Match achieves approximately 2,700 fps muzzle velocity from 24-inch barrels, delivering 2,719 foot-pounds of energy. The ELD-Match bullet features a verified G1 ballistic coefficient of 0.523 and G7 BC of 0.268 - among the highest in its weight class. The Heat Shield tip is manufactured from heat-resistant polymer formulated to withstand temperatures exceeding 400 degrees Fahrenheit generated during supersonic flight. This maintains tip geometry and BC accuracy throughout the trajectory, unlike conventional polymer tips that deform from aerodynamic heating. The secant ogive profile features an aggressive 8-caliber radius optimized for reduced drag while maintaining stability in standard 1:10 to 1:12 twist barrels. AMP jacket technology involves proprietary manufacturing processes ensuring uniform thickness variation under 0.0001 inches, critical for precision accuracy. Core-to-jacket bond is optimized through controlled swaging pressures. Boat tail angle is precision-formed at 9 degrees for optimal drag reduction. Powder selection emphasizes low temperature sensitivity with velocity variation typically under 1.5 fps per degree Fahrenheit. Primers are match-grade with controlled flash hole diameter and anvil height. Brass cases feature controlled flash hole deburring and consistent primer pocket depth. Quality control includes optical inspection, dimensional gauging, and live-fire accuracy validation from precision test barrels.",
+    whyChoose: "Choose Hornady Match with ELD bullets when cutting-edge ballistic technology matters. Hornady revolutionized long-range shooting with the ELD bullet, solving the aerodynamic heating problem that plagued polymer-tipped match bullets for decades. The Heat Shield tip isn't marketing hyperbole - it's patented technology delivering measurable improvements in long-range accuracy and consistency. Hornady's commitment to scientific ballistic research provides shooters with accurate trajectory data verified through Doppler radar testing, eliminating guesswork in long-range calculations. The AMP jacket process represents Hornady's obsessive attention to precision manufacturing, producing bullets with concentricity tolerances previously achievable only through premium custom bullet makers. Unlike many competitors using off-the-shelf bullets, Hornady manufactures their own bullets in-house, controlling every aspect of quality. The combination of revolutionary bullet design and precision loading creates ammunition capable of winning major precision rifle competitions - in fact, ELD bullets have won numerous PRS championships. When your shooting demands the absolute best ballistic performance available in factory ammunition, when you need BC values that remain true to extreme distances, choose Hornady Match with ELD bullets. It's the ammunition that redefined what's possible in factory-loaded precision rifle ammunition.",
+    seoKeywords: [
+      "hornady match 308",
+      "eld match bullet",
+      "168 grain eld",
+      "precision 308 ammo",
+      "hornady match grade",
+      "best 308 match ammo",
+      "long range 308",
+      "heat shield bullet",
+      "prs competition ammo",
+      "buy hornady match",
+      "308 win match",
+      "eld 168gr",
+      "hornady precision",
+      "competition 308 ammo",
+      "accurate 308 ammunition"
+    ]
   },
   {
     id: "308-hornady-sst",
@@ -1237,7 +1286,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Super Shock Tip for hunting with controlled expansion",
     manufacturer: "Hornady",
-    grainWeight: "150gr"
+    grainWeight: "150gr",
+    shortDescription: "Hornady SST (Super Shock Tip) combines flat trajectory with devastating terminal performance. The perfect balance of velocity, accuracy, and controlled expansion for medium to large game hunting.",
+    longDescription: "Hornady Super Shock Tip (SST) ammunition represents the ideal fusion of ballistic efficiency and controlled expansion for hunting applications. The 150-grain SST bullet features a polymer tip that initiates rapid but controlled expansion while the secant ogive profile delivers flat trajectories rivaling match bullets. Hornady's InterLock ring mechanically locks the core and jacket together during expansion, ensuring 70-90% weight retention even when encountering heavy bone. This controlled expansion creates massive wound channels while the retained weight ensures deep penetration for reliable vital zone reach on deer, elk, and similar-sized game. The SST bullet's design philosophy centers on maximizing both external and terminal ballistics - the sleek polymer tip and boat tail reduce drag for flat shooting trajectories, while the InterLock ring ensures the bullet performs devastatingly upon impact. Loaded with Hornady's carefully selected powders, SST ammunition delivers consistent velocities optimized for hunting accuracy requirements. The combination of 150-grain bullet weight and .308 Winchester delivers moderate recoil, making shot placement easier while providing sufficient energy for ethical harvests at ranges extending to 400 yards. Each component is selected to perform reliably across temperature extremes encountered during hunting seasons. Whether pursuing whitetails from a treestand, elk in mountain basins, or plains game in open country, Hornady SST delivers the accuracy, trajectory, and terminal performance serious hunters demand.",
+    features: [
+      "Polymer tip initiates rapid controlled expansion upon impact",
+      "InterLock ring mechanically bonds core to jacket",
+      "Secant ogive profile for flat trajectory and wind resistance",
+      "Boat tail design enhances accuracy and ballistic coefficient",
+      "Cannelure crimped for consistent bullet pull and feeding",
+      "Premium hunting powder optimized for 150-grain bullets",
+      "Flash-suppressed powder for low-light hunting situations",
+      "Reloadable brass cases with consistent capacity",
+      "Non-corrosive primers reliable in all temperatures",
+      "150-grain weight balances velocity and penetration"
+    ],
+    benefits: [
+      "Flatter trajectory extends effective hunting range",
+      "Controlled expansion creates massive wound channels",
+      "70-90% weight retention ensures deep penetration",
+      "Match-grade accuracy from hunting ammunition (1-1.5 MOA)",
+      "Moderate recoil facilitates accurate shot placement",
+      "Performs reliably on game from deer to elk size"
+    ],
+    useCases: [
+      "Whitetail and mule deer hunting at all realistic ranges",
+      "Elk, moose, and large game hunting to 350 yards",
+      "Mountain hunting where flat trajectory is critical",
+      "Plains game hunting requiring long-range precision",
+      "Multi-game ammunition for varied hunting opportunities",
+      "Competition hunting scenarios requiring both accuracy and performance"
+    ],
+    technicalDetails: "Hornady SST 150gr achieves approximately 2,820 fps muzzle velocity from 24-inch barrels, delivering 2,648 foot-pounds of energy. The SST bullet features a G1 ballistic coefficient of 0.415, providing excellent trajectory flatness. At 300 yards, velocity remains approximately 2,350 fps with 1,839 foot-pounds of energy - ample for decisive harvests on medium to large game. The polymer tip is color-coded red for SST identification and engineered to drive rearward upon impact, initiating expansion from the hollow cavity beneath. The InterLock ring is mechanically formed into the bullet jacket during manufacturing, creating a physical barrier preventing core-jacket separation during expansion and penetration. Jacket thickness is tapered - thicker at the base for weight retention, thinner at the nose for controlled expansion. The secant ogive profile features approximately 7-caliber radius, optimizing ballistic coefficient while maintaining feeding reliability. Cannelure placement is precisely located for optimal case mouth crimp, preventing bullet setback during magazine feeding. Powder selection emphasizes clean burning with flash suppression for dawn and dusk hunting. Temperature stability ensures consistent velocities from sub-zero mountain hunts to warm-weather plains hunting. Brass cases are manufactured to Hornady's standards with consistent flash hole diameter and primer pocket depth. Terminal performance testing demonstrates expansion to approximately 0.55-0.65 caliber with 70-90% weight retention through heavy bone and tissue.",
+    whyChoose: "Choose Hornady SST when you demand premium hunting performance without sacrificing the accuracy needed for ethical long-range harvests. SST ammunition bridges the gap between match accuracy and devastating terminal performance, delivering sub-MOA accuracy from quality hunting rifles while performing reliably on game from whitetails to elk. The InterLock ring technology ensures consistent expansion and weight retention across various impact velocities and angles, critical when hunting conditions rarely provide perfect broadside shots. Hornady's commitment to scientific bullet design means SST bullets are extensively tested in ballistic gelatin and on game animals, ensuring real-world performance matches design objectives. The 150-grain weight strikes an ideal balance in .308 Winchester - sufficient weight for deep penetration on large game while maintaining velocity for flat trajectory and reduced wind drift. The polymer tip provides both ballistic efficiency in flight and reliable expansion initiation upon impact, even at extended ranges where velocity diminishes. Hornady's reputation for quality control ensures every cartridge performs consistently, so you can practice with confidence knowing your hunting ammunition will perform identically. When your hunting success depends on a single well-placed shot combining accuracy and terminal performance, trust Hornady SST - the ammunition that's harvested more game than many hunters see in a lifetime.",
+    seoKeywords: [
+      "hornady sst 308",
+      "150 grain hunting ammo",
+      "deer hunting 308",
+      "hornady super shock tip",
+      "308 hunting ammunition",
+      "buy hornady sst",
+      "elk hunting 308",
+      "controlled expansion bullets",
+      "308 win hunting",
+      "best 308 hunting ammo",
+      "interlock bullets",
+      "medium game ammunition",
+      "whitetail ammo 308",
+      "hornady hunting loads",
+      "polymer tip hunting"
+    ]
   },
   {
     id: "308-black-hills",
@@ -1250,7 +1348,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Match-grade ammunition used by military and law enforcement",
     manufacturer: "Black Hills",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Black Hills Gold Match ammunition is trusted by U.S. military snipers and elite law enforcement units. Hand-loaded precision that's proven in the world's most demanding applications.",
+    longDescription: "Black Hills Ammunition represents the gold standard in precision rifle ammunition, trusted by U.S. military special operations units, FBI HRT, and countless law enforcement agencies for mission-critical applications. Unlike mass-produced ammunition, Black Hills Match is essentially hand-loaded production ammunition, with experienced technicians hand-weighing powder charges and inspecting components throughout assembly. The 168-grain match hollow point bullet is the proven standard for precision shooting applications, offering exceptional accuracy potential from 100 to 800 yards. Black Hills' loading process emphasizes consistency above all else - every powder charge is individually weighed, every primer is seated to precise specifications, and every loaded round is visually inspected before packaging. This meticulous attention to detail produces ammunition with velocity standard deviations often in single digits, enabling precise ballistic predictions essential for first-round hits at extended ranges. The company's reputation was forged supplying ammunition to military and law enforcement where failure isn't an option - where a sniper's first shot must be accurate and decisive. That same uncompromising quality extends to every box of Black Hills Match sold to civilian shooters. Whether you're a competitive shooter pursuing national championships, a precision rifle enthusiast practicing long-range marksmanship, or developing your skills for tactical applications, Black Hills Match provides the consistency and accuracy that eliminates ammunition as a variable in your shooting equation.",
+    features: [
+      "Hand-weighed powder charges for extreme consistency",
+      "Premium 168gr match hollow point bullets",
+      "Individually inspected components throughout assembly",
+      "Small-batch production ensures quality control",
+      "Selected brass cases sorted by weight and capacity",
+      "Premium match-grade primers",
+      "Extreme velocity standard deviation typically under 10 fps",
+      "New production brass fully reloadable",
+      "Non-corrosive and non-mercuric components",
+      "Trusted by U.S. military and federal law enforcement"
+    ],
+    benefits: [
+      "Proven performance in military and law enforcement service",
+      "Hand-loaded quality in factory ammunition",
+      "Exceptional accuracy - sub-0.5 MOA potential from precision rifles",
+      "Consistency enables precise ballistic calculations",
+      "Eliminates ammunition variables in precision shooting",
+      "Small-batch production provides lot-to-lot consistency"
+    ],
+    useCases: [
+      "Law enforcement and military sniper applications",
+      "Long-range precision rifle competitions",
+      "Tactical rifle training and qualification",
+      "Precision target shooting from 300 to 800 yards",
+      "Load development baseline for handloaders",
+      "Competition benchrest and F-Class shooting"
+    ],
+    technicalDetails: "Black Hills Match 168gr achieves approximately 2,650 fps muzzle velocity from 24-inch test barrels with 2,619 foot-pounds of muzzle energy. The 168-grain match hollow point bullet features a boat tail design with ballistic coefficient (G1) of approximately 0.450-0.462 depending on bullet manufacturer. Black Hills sources premium match bullets from manufacturers including Sierra, Hornady, and others, selecting lots meeting their stringent accuracy and consistency requirements. Each powder charge is hand-weighed to within 0.1 grains, using match-grade powder selected for temperature stability and consistent burn characteristics. Brass cases are sourced from premium manufacturers, sorted by weight to ensure consistent internal capacity, and processed to Black Hills' specifications including uniform primer pocket depth and flash hole deburring. Primers are match-grade with controlled sensitivity and consistent ignition characteristics. The hand-loading process includes multiple quality control checkpoints - component inspection, powder verification, loaded round dimensional checks, and visual inspection. Lot testing includes accuracy validation from precision test rifles and chronograph testing to verify velocity consistency. Statistical process controls monitor powder weighing equipment calibration and environmental conditions. Typical velocity extreme spread measures 20-30 fps across 20-round boxes with standard deviation under 10 fps. Accuracy from quality precision rifles typically produces groups measuring 0.3-0.7 MOA at 100 yards.",
+    whyChoose: "Choose Black Hills Match when you need ammunition with proven performance in the world's most demanding applications. Black Hills earned its reputation supplying precision ammunition to U.S. military special operations and federal law enforcement agencies - organizations where ammunition reliability and accuracy are literally matters of life and death. The hand-loading approach means every box receives the attention to detail that most shooters can only achieve through meticulous handloading - except Black Hills does it with industrial quality control and consistency. While other manufacturers have moved toward high-volume automated production, Black Hills maintains their commitment to small-batch, hand-loaded precision ammunition. This isn't merely marketing - you can see the difference in chronograph standard deviations and downrange accuracy. The military and law enforcement community's continued reliance on Black Hills for mission-critical applications speaks volumes about the ammunition's reliability and consistency. When you choose Black Hills Match, you're choosing ammunition loaded by experienced technicians who understand that precision matters, using components selected for performance rather than cost, assembled with processes that prioritize consistency over production volume. For competitive shooters, tactical professionals, and precision rifle enthusiasts who demand the absolute best, Black Hills Match delivers hand-loaded quality in every box.",
+    seoKeywords: [
+      "black hills match",
+      "308 sniper ammo",
+      "military precision ammunition",
+      "168gr match ammo",
+      "law enforcement 308",
+      "buy black hills 308",
+      "tactical match ammo",
+      "hand loaded match",
+      "premium 308 ammunition",
+      "black hills gold",
+      "competition 308 ammo",
+      "precision rifle ammunition",
+      "sniper grade ammo",
+      "best match 308",
+      "federal contract ammo"
+    ]
   },
   {
     id: "308-winchester-usa",
@@ -1263,7 +1410,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Value-priced target and training ammunition",
     manufacturer: "Winchester",
-    grainWeight: "147gr"
+    grainWeight: "147gr",
+    shortDescription: "Winchester USA 147gr FMJ delivers reliable performance for high-volume training and practice. American-made quality from the legendary Winchester brand at an accessible price point.",
+    longDescription: "Winchester USA ammunition in .308 Winchester provides shooters with American-made reliability and consistent performance for training and target shooting applications. As part of Winchester's USA series, this ammunition represents their commitment to providing affordable training ammunition without compromising the quality control standards that have made Winchester a trusted name for over 150 years. The 147-grain full metal jacket bullet is optimized for reliable feeding and consistent accuracy in semi-automatic and bolt-action .308 rifles. The FMJ design features a copper alloy jacket fully enclosing the lead core, reducing barrel leading and copper fouling compared to exposed-base designs. This cleaner operation means more time shooting and less time cleaning - critical for productive training sessions. Winchester's manufacturing process includes quality control checkpoints ensuring dimensional consistency, proper powder charges, and reliable ignition across temperature extremes. The brass cases are manufactured to Winchester's specifications, featuring consistent wall thickness and primer pocket dimensions that make them popular among handloaders who collect their fired brass. While priced competitively for regular practice, Winchester USA doesn't sacrifice reliability - the ammunition functions consistently in diverse rifle platforms from budget hunting rifles to precision tactical rifles. For shooters seeking to develop and maintain proficiency with their .308 rifles, Winchester USA provides the shot-to-shot consistency needed for meaningful training at a price point that encourages regular range sessions.",
+    features: [
+      "American-made ammunition from legendary Winchester brand",
+      "147-grain full metal jacket for reduced fouling",
+      "Reliable function in semi-automatic and bolt-action rifles",
+      "Clean-burning powder reduces maintenance requirements",
+      "Reloadable new production brass cases",
+      "Non-corrosive boxer primers for long-term storage",
+      "Consistent velocities suitable for training applications",
+      "Value pricing enables high-volume practice",
+      "Quality control ensures reliable ignition and feeding",
+      "Copper alloy jacket reduces barrel wear"
+    ],
+    benefits: [
+      "Winchester's 150+ year reputation for quality ammunition",
+      "Affordable pricing encourages regular practice",
+      "Clean burning means more shooting, less cleaning",
+      "Reliable feeding reduces training interruptions",
+      "American manufacturing supports domestic economy",
+      "Reloadable brass provides additional value"
+    ],
+    useCases: [
+      ".308 rifle familiarization and training",
+      "Target practice and informal plinking",
+      "Rifle zeroing and sight adjustment",
+      "Basic marksmanship fundamentals practice",
+      "High-volume training on budget",
+      "Brass collection for handloading projects"
+    ],
+    technicalDetails: "Winchester USA 147gr FMJ achieves approximately 2,750 fps muzzle velocity from 24-inch test barrels, delivering 2,465 foot-pounds of muzzle energy. From typical 20-inch barrels found on many .308 rifles, velocity is approximately 2,680 fps. The 147-grain full metal jacket bullet features copper alloy jacket completely enclosing the lead core, with bullet diameter held to .308 inches ±0.001 for consistent bore engagement. The boat tail base design provides some aerodynamic advantage while ensuring reliable feeding from detachable magazines. Brass cases are drawn from commercial brass alloy with consistent wall thickness for uniform powder capacity. Case specifications meet SAAMI standards for .308 Winchester with overall loaded length optimized for magazine compatibility in both military-pattern and sporting rifles. Primer pockets are sized for standard large rifle primers without military crimp, facilitating straightforward reloading. Powder selection emphasizes clean burning with moderate pressure curve suitable for various action types. Velocity standard deviation typically measures 35-50 fps across 10-shot strings - adequate for training and general target applications within 300 yards. Accuracy from quality rifles averages 1.5-2.5 MOA at 100 yards, suitable for training applications. All components are non-corrosive and non-mercuric. Maximum average pressure conforms to SAAMI specifications of approximately 62,000 psi.",
+    whyChoose: "Choose Winchester USA when you need reliable .308 ammunition for regular training and practice without premium pricing. Winchester's name carries weight in the ammunition industry - it represents over 150 years of continuous innovation and quality manufacturing that few brands can match. While positioned as value-priced training ammunition, USA series maintains Winchester's commitment to reliability and consistency. The ammunition functions dependably in diverse rifle platforms, critical when training with different firearms or teaching new shooters. Clean-burning powder demonstrates Winchester's attention to the shooter experience - reduced fouling means spending more time shooting and less time cleaning between range sessions. For reloaders, Winchester brass is highly regarded for its consistency and durability, often providing 5-8+ loading cycles before case retirement. The value pricing makes regular practice economically feasible, and regular practice is what builds and maintains rifle proficiency. Winchester's domestic manufacturing ensures consistent product availability and supports American workers and economy. When you choose Winchester USA, you're buying ammunition from a company that's served American shooters and military since 1866, with quality control processes refined through generations of production experience. It's training ammunition that works reliably when you need it to, at a price that lets you train as often as you should.",
+    seoKeywords: [
+      "winchester usa 308",
+      "308 training ammo",
+      "147 grain fmj",
+      "cheap 308 ammo",
+      "buy winchester 308",
+      "308 target ammo",
+      "affordable 308 win",
+      "range ammo 308",
+      "bulk 308 ammunition",
+      "winchester 308 fmj",
+      "practice 308 ammo",
+      "american made 308",
+      "value 308 ammunition",
+      "training rifle ammo",
+      "winchester target loads"
+    ]
   },
   {
     id: "308-winchester-match",
@@ -1276,7 +1472,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Competition-grade precision ammunition",
     manufacturer: "Winchester",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Winchester Match combines legendary Sierra MatchKing bullets with Winchester's precision loading for competition-grade performance. Trusted accuracy from America's most storied ammunition manufacturer.",
+    longDescription: "Winchester Match ammunition represents Winchester's commitment to precision shooters, combining the legendary Sierra MatchKing bullet with Winchester's advanced manufacturing processes. The 168-grain Sierra MatchKing hollow point boat tail bullet has dominated competitive shooting for decades, earning more championships than any other match bullet design. Its precision-formed boat tail reduces drag while the hollow point shifts the center of gravity rearward, enhancing gyroscopic stability for exceptional accuracy. Winchester loads these proven bullets using match-grade components and quality control processes specifically designed for precision ammunition production. Each cartridge receives more attention than standard production ammunition, with powder charges held to tighter tolerances and primers seated to precise specifications. The result is factory-loaded ammunition delivering accuracy and consistency approaching premium handloads at a more accessible price point than some competitors. Winchester's advanced manufacturing technology, combined with over 150 years of ammunition expertise, ensures shot-to-shot consistency essential for competitive success. The ammunition performs reliably across temperature extremes and maintains accuracy throughout extended shooting sessions. Whether competing in Service Rifle, F-Class, or tactical precision disciplines, or simply pursuing personal accuracy goals at extended ranges, Winchester Match delivers the performance serious shooters demand from match-grade ammunition.",
+    features: [
+      "Legendary Sierra MatchKing 168gr HPBT bullet",
+      "Match-grade powder for enhanced consistency",
+      "Premium large rifle primers for uniform ignition",
+      "Select brass cases with controlled dimensions",
+      "Boat tail design for superior ballistic coefficient",
+      "Hollow point promotes accuracy and stability",
+      "Clean-burning powder reduces fouling",
+      "Optimized for barrel lengths from 20 to 26 inches",
+      "Consistent velocities within tight tolerances",
+      "Reloadable Winchester brass cases"
+    ],
+    benefits: [
+      "Competition-proven Sierra MatchKing accuracy",
+      "Sub-MOA potential from quality precision rifles",
+      "Consistent performance enables reliable ballistic predictions",
+      "Winchester quality control ensures reliability",
+      "More affordable than some premium match competitors",
+      "Temperature-stable performance for year-round shooting"
+    ],
+    useCases: [
+      "Competitive shooting including Service Rifle and F-Class",
+      "Long-range target practice from 300 to 800 yards",
+      "Precision rifle training and skill development",
+      "Benchrest and position shooting competitions",
+      "Load development comparison and baseline",
+      "Tactical precision rifle practice"
+    ],
+    technicalDetails: "Winchester Match 168gr achieves approximately 2,680 fps muzzle velocity from 24-inch barrels, delivering 2,678 foot-pounds of muzzle energy. The Sierra MatchKing 168gr HPBT bullet features a G1 ballistic coefficient of 0.462 and G7 BC of 0.237, providing excellent trajectory flatness and wind resistance to 800 yards. The bullet construction consists of a precision-drawn copper alloy jacket with controlled thickness variation under 0.001 inches, surrounding a precisely-swaged lead core. The hollow point cavity is formed to exacting specifications, shifting the center of gravity rearward to enhance stability. Boat tail angle is approximately 9 degrees, optimized to reduce base drag without compromising stability in standard twist rates from 1:10 to 1:12. Winchester's powder selection emphasizes temperature stability with velocity variation typically under 2 fps per degree Fahrenheit change. Match-grade powder is measured to tighter tolerances than standard production, with typical velocity standard deviation under 20 fps. Brass cases are manufactured to Winchester's specifications with consistent wall thickness, uniform primer pocket depth, and controlled flash hole diameter. Primers are selected for consistent sensitivity and ignition characteristics. Quality control includes dimensional inspection of loaded ammunition and periodic accuracy validation from precision test rifles. Groups from quality bolt-action rifles typically measure 0.75-1.25 MOA at 100 yards, suitable for most competitive and training applications.",
+    whyChoose: "Choose Winchester Match when you want competition-grade ammunition combining the proven Sierra MatchKing bullet with Winchester's manufacturing excellence, at a price point more accessible than some premium competitors. Winchester's legacy in ammunition manufacturing spans over 150 years, including supplying U.S. military forces through multiple conflicts and providing ammunition for countless shooting champions. That expertise is evident in Winchester Match - this isn't marketing, it's measurable performance. The Sierra MatchKing bullet choice demonstrates Winchester's commitment to using proven components rather than proprietary bullets of uncertain performance. MatchKing bullets have won more competitions than any competing design, providing shooters with confidence backed by decades of competitive success. Winchester's advanced manufacturing facilities and quality control processes ensure consistency from lot to lot, critical when you're developing loads or competing in multi-day events. The ammunition's temperature stability means your zero and trajectory calculations remain valid whether shooting in summer heat or winter cold. For shooters seeking match-grade performance without premium pricing, or those preferring American-made ammunition from a legendary manufacturer, Winchester Match delivers reliable accuracy and consistency. It's ammunition that respects shooting tradition while incorporating modern manufacturing technology, from a company that understands what precision shooters need because they've been serving them since before most other brands existed.",
+    seoKeywords: [
+      "winchester match 308",
+      "sierra matchking ammo",
+      "168gr match ammunition",
+      "competition 308 ammo",
+      "winchester precision",
+      "buy winchester match",
+      "308 win match grade",
+      "matchking 168 grain",
+      "service rifle ammo",
+      "f-class ammunition",
+      "winchester match grade",
+      "accurate 308 ammo",
+      "precision target 308",
+      "winchester 308 smk",
+      "competition rifle ammo"
+    ]
   },
   {
     id: "762-pmc-bronze",
@@ -1289,7 +1534,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Budget-friendly training ammunition",
     manufacturer: "PMC",
-    grainWeight: "147gr"
+    grainWeight: "147gr",
+    shortDescription: "PMC Bronze delivers reliable performance and consistent accuracy at an economical price. Trusted by military and law enforcement agencies worldwide for high-volume training.",
+    longDescription: "PMC Bronze ammunition represents exceptional value in .308/7.62 NATO training ammunition, providing consistent performance at prices that encourage regular practice. Manufactured by Poongsan Corporation in South Korea, PMC supplies ammunition to military forces worldwide including the South Korean military, demonstrating their capability to meet military specifications. The 147-grain full metal jacket bullet is loaded to 7.62 NATO specifications, providing slightly higher pressure and velocity than commercial .308 Winchester loads. This makes PMC Bronze ideal for training with military-pattern rifles while remaining safe in commercial .308 Winchester chambers. The full metal jacket design features a copper alloy jacket completely enclosing the lead core, reducing barrel fouling and ensuring reliable feeding in semi-automatic rifle platforms. PMC's modern manufacturing facilities incorporate quality control processes ensuring dimensional consistency and reliable function across diverse rifle platforms. The non-corrosive Boxer primers and reloadable brass cases provide additional value, with many shooters collecting fired PMC brass for reloading projects. PMC Bronze's consistency and reliability make it popular among high-volume shooters, training academies, and budget-conscious shooters who refuse to compromise on reliability. Whether you're conducting carbine training, practicing fundamentals, or simply enjoying range time with your .308 rifle, PMC Bronze delivers the performance needed at a price that won't limit your trigger time.",
+    features: [
+      "Military-spec 7.62 NATO loading for authentic training",
+      "147-grain full metal jacket for reliable feeding",
+      "Manufactured to military quality standards",
+      "Non-corrosive Boxer primers for long-term storage",
+      "Reloadable new production brass cases",
+      "Clean-burning powder reduces maintenance",
+      "Copper alloy jacket minimizes barrel wear",
+      "Consistent velocities for predictable performance",
+      "Value pricing enables high-volume training",
+      "Functions reliably in military and commercial rifles"
+    ],
+    benefits: [
+      "Trusted by military and law enforcement agencies",
+      "Affordable pricing for budget-conscious shooters",
+      "Reliable function in semi-automatic platforms",
+      "Clean burning reduces cleaning frequency",
+      "Reloadable brass adds value for handloaders",
+      "7.62 NATO spec ideal for military-pattern rifles"
+    ],
+    useCases: [
+      "High-volume training and practice sessions",
+      "AR-10 and M14/M1A rifle training",
+      "Military-pattern rifle familiarization",
+      "Target shooting and informal plinking",
+      "Brass collection for reloading projects",
+      "Training academy bulk ammunition needs"
+    ],
+    technicalDetails: "PMC Bronze 147gr FMJ achieves approximately 2,750 fps muzzle velocity from 24-inch barrels, delivering 2,465 foot-pounds of muzzle energy. As 7.62 NATO specification ammunition, it operates at slightly higher pressure than commercial .308 Winchester (approximately 60,000 psi vs 62,000 psi), though remaining safe in all firearms chambered for .308 Winchester. The 147-grain FMJ bullet features a copper alloy jacket (typically 90/10 copper-zinc gilding metal) completely enclosing the lead core with thickness approximately 0.015-0.020 inches. Bullet diameter is held to .308 inches within tight tolerances for consistent bore engagement. The boat tail base design aids feeding reliability while providing minor ballistic advantage. Brass cases are manufactured from commercial brass alloy with consistent wall thickness for uniform powder capacity. Flash hole diameter and primer pocket depth meet military specifications. Powder selection emphasizes clean burning with moderate flash, suitable for both indoor and outdoor range use. Velocity standard deviation typically measures 40-55 fps across 10-shot strings, adequate for training applications to 300 yards. Accuracy from quality rifles averages 1.5-2.5 MOA at 100 yards, suitable for general training and target shooting. All components are non-corrosive and non-mercuric. Cases are fully reloadable following standard reloading practices.",
+    whyChoose: "Choose PMC Bronze when you need reliable .308/7.62 NATO ammunition that won't strain your ammunition budget. PMC's status as a military ammunition supplier demonstrates their capability to meet stringent quality and reliability standards - these aren't cut-rate imports of questionable origin. Poongsan Corporation manufactures ammunition for the South Korean military and exports to military forces worldwide, bringing that same quality control to their commercial Bronze line. The 7.62 NATO loading provides authentic training experience for shooters using military-pattern rifles, while remaining safe in commercial .308 chambers. The affordable pricing is critical - regular practice is what builds and maintains shooting skills, and PMC Bronze's pricing enables shooters to train more frequently than premium ammunition budgets allow. The ammunition's reliability in semi-automatic platforms makes it ideal for AR-10, M14/M1A, SCAR, and similar rifles where malfunction-free operation is essential. PMC's modern manufacturing facilities and quality control processes ensure consistent lot-to-lot performance, so ammunition purchased today shoots similarly to ammunition purchased months from now. For training facilities, competitive shooters practicing for matches, or recreational shooters seeking maximum trigger time per dollar, PMC Bronze delivers reliable performance at prices that make regular practice financially feasible.",
+    seoKeywords: [
+      "pmc bronze 308",
+      "cheap 7.62 nato",
+      "pmc 147 grain",
+      "bulk 308 ammo",
+      "affordable 762 ammo",
+      "buy pmc bronze",
+      "training 308 ammunition",
+      "762 nato fmj",
+      "budget rifle ammo",
+      "ar10 training ammo",
+      "pmc 308 win",
+      "economical 308",
+      "range ammo 762",
+      "pmc military ammo",
+      "high volume 308"
+    ]
   },
   {
     id: "762-pmc-xtac",
@@ -1302,7 +1596,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Tactical-grade military-spec ammunition",
     manufacturer: "PMC",
-    grainWeight: "147gr"
+    grainWeight: "147gr",
+    shortDescription: "PMC X-TAC ammunition meets military specifications with enhanced quality control. Professional-grade performance designed for tactical and defensive applications.",
+    longDescription: "PMC X-TAC represents PMC's premium tactical ammunition line, designed specifically for law enforcement, military, and serious defensive applications. While PMC Bronze provides reliable training ammunition, X-TAC takes quality control and component selection to the next level, incorporating enhanced manufacturing processes and more rigorous testing protocols. The 147-grain full metal jacket bullet is loaded to authentic 7.62 NATO specifications, delivering the velocity and pressure characteristics of military-issue ammunition. Each component in X-TAC ammunition undergoes additional quality inspections beyond standard Bronze production - brass cases are sorted for dimensional consistency, powder charges are held to tighter tolerances, and primers are selected for optimal sensitivity and reliability across temperature extremes. The result is ammunition that functions flawlessly in tactical applications where failure isn't acceptable. X-TAC's consistent velocities enable precise ballistic calculations for long-range engagements, while the reliable ignition ensures function in adverse conditions from arctic cold to desert heat. The ammunition's clean-burning powder formulation reduces fouling in extended training sessions or prolonged engagements. Adopted by numerous law enforcement agencies and military units for training and duty use, X-TAC bridges the gap between budget training ammunition and premium match ammunition, providing tactical-grade reliability at a more accessible price point than many competitors. Whether conducting tactical rifle training, preparing for duty applications, or serious defensive practice, PMC X-TAC delivers military-specification performance with enhanced consistency.",
+    features: [
+      "Authentic 7.62 NATO military specifications",
+      "Enhanced quality control beyond standard production",
+      "147-grain FMJ optimized for tactical rifles",
+      "Premium components selected for reliability",
+      "Tight velocity tolerances for consistent ballistics",
+      "Reliable function across temperature extremes",
+      "Clean-burning powder for extended sessions",
+      "Reloadable brass cases with consistent dimensions",
+      "Non-corrosive primers for long-term storage",
+      "Adopted by law enforcement and military units"
+    ],
+    benefits: [
+      "Military-grade reliability for tactical applications",
+      "Enhanced consistency over standard training ammunition",
+      "Functions flawlessly in semi-automatic platforms",
+      "Temperature stability ensures reliable ignition",
+      "Clean burning reduces maintenance requirements",
+      "Professional performance at accessible pricing"
+    ],
+    useCases: [
+      "Law enforcement tactical training and duty use",
+      "Military training with authentic ammunition",
+      "Defensive rifle practice and preparation",
+      "Tactical carbine courses and competitions",
+      "AR-10 and military-pattern rifle training",
+      "High-reliability applications where failure isn't acceptable"
+    ],
+    technicalDetails: "PMC X-TAC 147gr FMJ achieves approximately 2,750 fps muzzle velocity from 24-inch test barrels, delivering 2,465 foot-pounds of muzzle energy. Loaded to 7.62 NATO specifications with maximum average pressure approximately 60,000 psi, X-TAC operates at military pressure levels while remaining safe in all .308 Winchester chambers. The 147-grain FMJ bullet features premium copper alloy jacket with controlled thickness variation, completely enclosing a precisely-formed lead core. Bullet diameter is held to .308 inches ±0.0005, tighter than standard production tolerances. The boat tail design enhances feeding reliability and provides ballistic advantage. Brass cases undergo additional sorting for weight and dimensional consistency, ensuring uniform internal capacity critical for velocity consistency. Flash hole diameter is deburred and held to precise specifications. Powder charges are measured with enhanced accuracy, using formulations selected for temperature stability - velocity variation typically under 2 fps per degree Fahrenheit. Primers are selected for consistent sensitivity across temperature extremes from -40°F to 125°F. Velocity standard deviation typically measures 25-35 fps across 10-shot strings, tighter than standard training ammunition. Accuracy from quality rifles averages 1.25-2.0 MOA at 100 yards, suitable for tactical and duty applications. All components are non-corrosive and non-mercuric with extended shelf life under proper storage conditions.",
+    whyChoose: "Choose PMC X-TAC when your applications demand enhanced reliability and consistency beyond standard training ammunition. X-TAC represents PMC's commitment to serving professional end users - law enforcement, military, and serious armed citizens who need ammunition they can stake their lives on. The enhanced quality control processes and tighter component tolerances provide measurably better consistency than budget training ammunition, evident in chronograph testing and downrange accuracy. While costing slightly more than PMC Bronze, X-TAC's performance improvements justify the investment for tactical applications, defensive practice, and situations where reliability is paramount. The ammunition's adoption by law enforcement agencies and military units demonstrates its reliability and consistency in professional applications. PMC's reputation as a military ammunition supplier means X-TAC incorporates lessons learned from military service, with enhancements specifically addressing the needs of tactical users. The authentic 7.62 NATO loading provides training experience matching duty ammunition characteristics, critical for realistic practice. The clean-burning formulation demonstrates attention to end-user experience, reducing cleaning requirements during extended training or qualification courses. For shooters who need more consistency than training ammunition provides but find match ammunition pricing prohibitive for regular practice, X-TAC occupies the ideal middle ground - tactical-grade reliability at practical pricing that enables regular training with ammunition performing like what you'd stake your life on.",
+    seoKeywords: [
+      "pmc xtac 308",
+      "tactical 762 nato",
+      "law enforcement 308",
+      "pmc x-tac ammo",
+      "duty grade 308",
+      "buy pmc xtac",
+      "military spec 762",
+      "tactical training ammo",
+      "reliable 308 ammo",
+      "professional 762 nato",
+      "pmc tactical ammunition",
+      "defensive 308 win",
+      "ar10 duty ammo",
+      "enhanced 308 ammo",
+      "precision training 762"
+    ]
   },
   {
     id: "308-lapua-scenar",
@@ -1315,7 +1658,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Finnish precision match ammunition",
     manufacturer: "Lapua",
-    grainWeight: "167gr"
+    grainWeight: "167gr",
+    shortDescription: "Lapua Scenar ammunition represents the pinnacle of precision rifle ammunition from Finland's legendary manufacturer. Uncompromising quality used by Olympic shooters and military snipers worldwide.",
+    longDescription: "Lapua Scenar ammunition embodies the uncompromising pursuit of precision that has made Lapua the choice of Olympic champions, world record holders, and elite military snipers globally. Manufactured in Finland by Nammo Lapua, this ammunition represents over 100 years of precision ammunition manufacturing expertise refined to near perfection. The 167-grain Scenar bullet is legendary among precision shooters for its exceptional accuracy and consistency - it's not uncommon for Scenar-loaded ammunition to produce groups measuring under 0.3 MOA from premium precision rifles. The Scenar bullet design features a meticulously optimized hollow point boat tail profile with drag coefficient characteristics superior to most competing match bullets. Lapua's manufacturing processes include tolerances measured in ten-thousandths of an inch, with quality control so stringent that every single bullet and loaded round meets specifications that other manufacturers reserve for occasional batch testing. The brass cases are manufactured to Lapua's legendary standards - renowned among reloaders worldwide for unmatched consistency, durability, and the ability to be reloaded 10-20+ times while maintaining accuracy and reliability. Lapua's powder formulations are proprietary and temperature-stable across extreme ranges, with velocity standard deviations often measuring in single digits. Whether competing in 300-meter Olympic matches, 1000-yard F-Class competitions, or conducting precision long-range shooting, Lapua Scenar delivers accuracy and consistency that simply cannot be matched by lesser ammunition. This is ammunition engineered without compromise for shooters who demand absolute precision.",
+    features: [
+      "Legendary 167gr Scenar HPBT bullet with superior BC",
+      "Lapua brass cases - the world's finest reloading brass",
+      "Proprietary temperature-stable powder formulations",
+      "Extreme manufacturing tolerances - ten-thousandths of an inch",
+      "Every component and loaded round individually inspected",
+      "Velocity SD typically under 10 fps",
+      "Optimized hollow point boat tail design",
+      "Precision swaged bullets with perfect concentricity",
+      "Premium European primers for consistent ignition",
+      "Manufactured entirely in Finland to ISO 9001 standards"
+    ],
+    benefits: [
+      "Unmatched accuracy - 0.25-0.5 MOA potential from precision rifles",
+      "Trusted by Olympic shooters and world champions",
+      "Single-digit velocity standard deviations enable precise calculations",
+      "Lapua brass cases reloadable 10-20+ times",
+      "Temperature-stable performance across extreme conditions",
+      "Eliminates ammunition as a variable in precision shooting"
+    ],
+    useCases: [
+      "Olympic 300-meter rifle competition",
+      "F-Class long-range precision competition",
+      "Military and law enforcement sniper applications",
+      "Extreme long-range target shooting beyond 1,000 yards",
+      "Precision rifle competitions requiring maximum accuracy",
+      "Load development baseline and accuracy standard"
+    ],
+    technicalDetails: "Lapua Scenar 167gr achieves approximately 2,670 fps muzzle velocity from 24-inch barrels, delivering 2,647 foot-pounds of muzzle energy. The Scenar 167gr HPBT bullet features a G1 ballistic coefficient of 0.448 and G7 BC of 0.230, with optimized drag characteristics providing exceptional trajectory flatness and wind resistance. The bullet features a precision-formed hollow point cavity optimized for accuracy rather than expansion, with boat tail angle precisely controlled for minimal base drag. Lapua's manufacturing process includes proprietary bullet jacket drawing technology producing uniform thickness within 0.0001 inches, critical for perfect concentricity and accuracy. The lead core is precision-swaged to exact weight and concentrically positioned within the jacket. Every bullet undergoes optical inspection and dimensional verification before loading. Brass cases are manufactured from proprietary brass alloy with extremely consistent wall thickness, flash hole diameter held within 0.0005 inches, and primer pocket depth controlled to 0.001-inch tolerance. Powder charges use Lapua's proprietary temperature-stable formulations with typical velocity standard deviation under 10 fps and extreme spread under 25 fps across 20-round boxes. Primers are European-manufactured to match-grade specifications. Quality control includes 100% inspection of components, pressure testing of production lots, and accuracy validation from precision test barrels. Groups from quality precision rifles typically measure 0.25-0.5 MOA at 100 yards, with many rifles producing groups under 0.3 MOA consistently.",
+    whyChoose: "Choose Lapua Scenar when you demand the absolute finest precision rifle ammunition available regardless of cost. Lapua represents the pinnacle of ammunition manufacturing - this isn't marketing hyperbole, it's measurable reality evident in chronograph standard deviations, group sizes, and championship results. Olympic shooters choose Lapua because when gold medals are decided by fractions of a point, ammunition consistency is non-negotiable. Military snipers choose Lapua because when lives depend on first-round hits at extreme range, ammunition reliability and accuracy cannot be compromised. Competitive shooters choose Lapua because when match standings are separated by single points, perfect ammunition eliminates one variable in the accuracy equation. The legendary Lapua brass alone justifies much of the cost - it's simply the finest reloading brass manufactured anywhere, period. Reloaders worldwide seek out Lapua brass for its consistency, durability, and unmatched accuracy potential. The Scenar bullet's design has won more international competitions than many shooters will attend in a lifetime. Lapua's manufacturing tolerances and quality control processes exceed what most ammunition manufacturers achieve in their premium lines - this is Lapua's standard production. When your shooting demands absolute precision, when you refuse to accept ammunition limitations compromising your accuracy potential, when you need ammunition that performs identically from arctic cold to desert heat, choose Lapua Scenar. It costs more because it's worth more - it's the ammunition choice for shooters who accept no compromise in pursuit of perfect accuracy.",
+    seoKeywords: [
+      "lapua scenar 308",
+      "167 grain scenar",
+      "best 308 match ammo",
+      "lapua ammunition",
+      "olympic shooting ammo",
+      "buy lapua scenar",
+      "finnish match ammo",
+      "premium 308 ammunition",
+      "world class precision",
+      "scenar bullet",
+      "lapua brass 308",
+      "competition match 308",
+      "extreme accuracy ammo",
+      "military sniper 308",
+      "precision rifle scenar"
+    ]
   },
   {
     id: "308-nosler-custom",
@@ -1328,7 +1720,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Premium handload-quality match ammunition",
     manufacturer: "Nosler",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Nosler Custom Competition delivers handload-quality precision in factory ammunition. Built using Nosler's match-grade bullets and legendary attention to detail for competition excellence.",
+    longDescription: "Nosler Custom Competition ammunition represents Nosler's commitment to providing competitive shooters with factory-loaded ammunition matching the quality and consistency of premium handloads. Unlike mass-produced ammunition, Nosler Custom Competition is assembled using the same meticulous processes and component selection that serious handloaders employ in their quest for ultimate accuracy. Each cartridge features Nosler's own Custom Competition 168-grain BTHP (Boat Tail Hollow Point) bullet, specifically designed for match accuracy rather than terminal performance. These bullets are manufactured to the same stringent tolerances as Nosler's premium hunting bullets, with jackets drawn to precise specifications and lead cores swaged for perfect concentricity. Nosler hand-selects powder charges rather than relying solely on automated equipment, ensuring consistency that translates to minimal velocity variation. The brass cases are selected and prepared following handloading best practices - sorted by weight, sized precisely, and inspected for defects. Primers are seated to consistent depths using specialized equipment that ensures uniform ignition characteristics. The result is ammunition delivering velocity standard deviations and accuracy levels approaching what dedicated handloaders achieve through meticulous attention to detail. Whether competing in benchrest, long-range precision matches, or pursuing personal accuracy goals, Nosler Custom Competition provides match-grade performance without the time investment required for handloading. For shooters who appreciate handload-quality ammunition but lack the time, equipment, or inclination for reloading, Nosler Custom Competition delivers premium performance in factory-loaded convenience.",
+    features: [
+      "Nosler Custom Competition 168gr BTHP match bullet",
+      "Hand-selected powder charges for consistency",
+      "Weight-sorted brass cases for uniform capacity",
+      "Precision-seated primers to controlled depth",
+      "Match-grade components throughout",
+      "Small-batch production ensures quality control",
+      "Boat tail design for superior ballistic coefficient",
+      "Hollow point optimized for accuracy, not expansion",
+      "Clean-burning powder for reduced fouling",
+      "Handload-quality attention to detail in every cartridge"
+    ],
+    benefits: [
+      "Handload-quality performance in factory ammunition",
+      "Extreme consistency - velocity SD typically under 15 fps",
+      "Sub-MOA accuracy potential from quality rifles",
+      "Saves time - no need for handloading equipment or process",
+      "Nosler quality control ensures lot-to-lot consistency",
+      "Small-batch production provides match-grade attention"
+    ],
+    useCases: [
+      "Competitive benchrest shooting",
+      "Long-range precision competitions",
+      "Target shooting requiring maximum accuracy",
+      "Competition training and practice",
+      "Load development comparison and baseline",
+      "Shooters seeking handload quality without reloading"
+    ],
+    technicalDetails: "Nosler Custom Competition 168gr achieves approximately 2,650 fps muzzle velocity from 24-inch barrels, delivering 2,619 foot-pounds of muzzle energy. The Nosler Custom Competition 168gr BTHP bullet features a ballistic coefficient (G1) of approximately 0.462, matching other premium 168-grain match bullets in this class. Bullet construction emphasizes concentricity and uniformity - jackets are drawn through precision dies with thickness variation under 0.001 inches, and lead cores are swaged to exact weight and positioned concentrically within jackets. The boat tail angle is optimized at approximately 9 degrees for drag reduction while maintaining stability in standard twist rates. Hollow point cavity is formed precisely for weight distribution optimization rather than terminal expansion. Nosler's powder selection process involves testing multiple lots to identify formulations providing optimal velocity consistency and temperature stability. Powder charges are weighed and inspected rather than relying solely on volumetric measurement. Brass cases are manufactured to Nosler's specifications, sorted by weight to ensure consistent internal capacity critical for velocity uniformity. Primer pockets are uniformed and flash holes deburred as part of Nosler's handload-quality preparation. Primers are seated to precise depth specifications using specialized tooling. Quality control includes dimensional inspection of loaded ammunition and accuracy validation from precision test rifles. Typical velocity standard deviation measures 10-15 fps across production lots. Accuracy from quality bolt-action rifles typically produces groups measuring 0.5-1.0 MOA at 100 yards.",
+    whyChoose: "Choose Nosler Custom Competition when you want handload-quality precision without investing time in the reloading process. Nosler built their reputation on premium hunting bullets, and that same obsessive attention to quality extends to their Custom Competition line. Unlike many manufacturers who load match ammunition on high-volume production lines, Nosler approaches Custom Competition with a handloader's mindset - carefully selecting components, weighing charges, and inspecting every aspect of production. This isn't marketing - it's a measurably different approach evident in velocity consistency and accuracy. For competitive shooters who handload their match ammunition, Nosler Custom Competition provides ready-to-shoot ammunition for practice and load development comparison. The consistency allows you to focus on shooting fundamentals and wind reading rather than worrying about ammunition variables. For shooters who appreciate what handloading can achieve but lack the time, equipment, or desire to reload, Custom Competition delivers that performance in factory-loaded convenience. Nosler's small-batch production approach ensures the attention to detail that high-volume production cannot maintain. When you need ammunition that eliminates consistency concerns, that performs with the precision serious competitors demand, choose Nosler Custom Competition. It's ammunition assembled by a company that understands what precision shooters need because they're shooters themselves, loaded with the care and attention you'd give your own handloads.",
+    seoKeywords: [
+      "nosler custom competition",
+      "308 match ammunition",
+      "168gr nosler",
+      "handload quality ammo",
+      "premium 308 match",
+      "buy nosler custom",
+      "competition 308 ammo",
+      "nosler bthp",
+      "benchrest ammunition",
+      "precision match 308",
+      "nosler 308 win",
+      "accurate competition ammo",
+      "small batch match",
+      "premium target 308",
+      "nosler match grade"
+    ]
   },
   {
     id: "308-nosler-partition",
@@ -1341,7 +1782,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Dual-core hunting bullet for deep penetration",
     manufacturer: "Nosler",
-    grainWeight: "165gr"
+    grainWeight: "165gr",
+    shortDescription: "Nosler Partition - the legendary dual-core hunting bullet trusted for over 75 years. Guaranteed penetration and expansion on the toughest game animals worldwide.",
+    longDescription: "Nosler Partition ammunition represents one of hunting's most storied and proven bullet designs, trusted by hunters worldwide for over 75 years. The revolutionary Partition bullet was created by John Nosler in 1948 after a hunting experience where conventional bullets failed on tough game, and it remains the standard by which all premium hunting bullets are judged. The unique dual-core design features a solid copper partition dividing the bullet into front and rear sections. The front core is designed to expand rapidly upon impact, creating a massive wound channel and devastating energy transfer. The rear core, protected by the partition barrier and thicker jacket, is engineered to retain virtually 100% of its weight and drive deep for vital zone penetration regardless of angle or intervening bone. This dual-performance design ensures both explosive expansion for shock and deep penetration for lethality - advantages competing designs struggle to achieve simultaneously. Nosler loads Partition bullets using premium components and careful attention to hunting accuracy requirements. The 165-grain weight in .308 Winchester provides an ideal balance of velocity, energy, and sectional density for hunting everything from whitetails to elk, moose, and even dangerous game. Partition ammunition has accounted for more game animals across more continents than most hunters will see in multiple lifetimes. When your hunting opportunity represents significant investment, planning, and perhaps once-in-a-lifetime chances, Partition ammunition provides the reliability and terminal performance that ethical hunters demand.",
+    features: [
+      "Legendary dual-core Partition bullet design",
+      "Copper partition barrier prevents core separation",
+      "Front core designed for rapid controlled expansion",
+      "Rear core retains 100% weight for deep penetration",
+      "Tapered jacket - thin forward, thick at partition",
+      "165-grain weight ideal for medium to large game",
+      "Premium hunting powder for optimal velocity",
+      "Reloadable Nosler brass cases",
+      "Clean-burning formulation for hunting reliability",
+      "Over 75 years of proven field performance"
+    ],
+    benefits: [
+      "Guaranteed penetration regardless of angle or bone",
+      "Reliable expansion across impact velocities",
+      "Proven performance on game from deer to dangerous species",
+      "Trusted by professional hunters and guides worldwide",
+      "Consistent accuracy for ethical shot placement",
+      "Nosler's legendary quality control and consistency"
+    ],
+    useCases: [
+      "Elk, moose, and large game hunting",
+      "Whitetail and mule deer hunting at all ranges",
+      "Mountain hunting requiring reliable penetration",
+      "Heavy bone penetration for shoulder shots",
+      "Dangerous game backup ammunition",
+      "All-around hunting ammunition for varied game species"
+    ],
+    technicalDetails: "Nosler Partition 165gr achieves approximately 2,800 fps muzzle velocity from 24-inch barrels, delivering 2,873 foot-pounds of muzzle energy. At 300 yards, velocity remains approximately 2,415 fps with 2,136 foot-pounds of energy - ample for decisive harvests on large game. The Partition bullet features dual lead cores separated by a copper partition wall approximately 0.020-0.025 inches thick, mechanically interlocked into the bullet jacket. The forward core occupies approximately 60% of bullet length, designed to expand to approximately 2x caliber while the rear 40% retains virtually complete weight. Jacket thickness is tapered - approximately 0.015 inches at the nose, increasing to 0.035+ inches at the partition and base. This controlled thickness variation ensures the front expands while the rear penetrates. The partition wall physically prevents the front core from affecting rear core performance, ensuring deep penetration even when the front core fully expands or fragments. Sectional density of 0.248 provides excellent penetration characteristics for the weight class. Nosler's powder selection emphasizes consistent velocities across temperature ranges with clean burning for hunting reliability. Terminal performance testing demonstrates front core expansion to 0.55-0.65 caliber with rear core retention of 95-100% weight, driving through 30+ inches of tissue and heavy bone. The Partition consistently penetrates vitals from any reasonable angle, including heavy shoulder bone that stops lesser bullets.",
+    whyChoose: "Choose Nosler Partition when you need absolutely guaranteed terminal performance on game animals. The Partition isn't the newest design or the highest BC bullet, but it's the most proven dangerous game and large game bullet in existence - over 75 years of field success on every continent and game species imaginable. Professional hunters and guides worldwide carry Partition ammunition because when clients pay tens of thousands for hunting opportunities, when dangerous game may charge if wounded, bullet failure is not acceptable. The Partition's dual-core design delivers something competing bullets struggle to achieve - both rapid expansion for shock and deep penetration for vital zone reach, regardless of impact angle or intervening obstacles. Unlike bonded core or homogeneous copper bullets that may pencil through at close range or fail to expand at distance, the Partition performs predictably across impact velocities from point-blank to 400+ yards. The partition barrier's physical separation of cores is mechanical, not chemical - it cannot fail regardless of impact velocity or angle. Nosler's quality control ensures every Partition bullet meets specifications - these aren't seconds or budget bullets, they're premium components loaded to premium standards. When your hunting success depends on a single perfect shot, when game animals represent significant investment or once-in-a-lifetime opportunities, when ethical harvesting demands bullets that simply will not fail, choose Nosler Partition - the bullet that defined premium hunting ammunition and remains the standard against which all others are measured.",
+    seoKeywords: [
+      "nosler partition 308",
+      "165 grain partition",
+      "premium hunting 308",
+      "elk hunting ammo",
+      "nosler partition ammo",
+      "buy nosler partition",
+      "big game 308",
+      "guaranteed penetration",
+      "308 hunting loads",
+      "dual core bullets",
+      "moose hunting 308",
+      "partition bullet",
+      "dangerous game 308",
+      "premium 308 hunting",
+      "nosler 308 win"
+    ]
   },
   {
     id: "308-federal-matchking",
