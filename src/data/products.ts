@@ -1844,7 +1844,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Long-range precision with Sierra MatchKing bullet",
     manufacturer: "Federal",
-    grainWeight: "175gr"
+    grainWeight: "175gr",
+    shortDescription: "Federal Premium Gold Medal Match 175gr extends effective precision range beyond 1,000 yards. The preferred choice of military and law enforcement snipers for long-range engagements.",
+    longDescription: "Federal Premium Gold Medal Match with 175-grain Sierra MatchKing represents the pinnacle of long-range precision ammunition, specifically engineered for extended-distance engagements where 168-grain bullets begin to lose effectiveness. While the 168gr MatchKing dominates from 100-800 yards, the 175gr MatchKing is specifically designed for maintaining supersonic stability and accuracy beyond 1,000 yards. This heavier bullet's superior ballistic coefficient and sectional density provide better wind resistance and energy retention at extreme distances. The 175gr MatchKing was adopted by U.S. military snipers specifically for its extended transonic range - it remains supersonic past 1,000 yards where 168gr bullets transition to subsonic flight with associated accuracy degradation. Federal's precision loading process includes hand-weighing powder charges, matching bullets by weight and dimension, and loading on equipment dedicated exclusively to match ammunition production. The result is ammunition with extreme spread velocities often measuring under 15 fps - critical consistency for precise ballistic calculations at extreme range. Whether engaging targets beyond 800 yards in competition, conducting long-range law enforcement operations, or pursuing personal long-range shooting goals, Federal Premium 175gr Gold Medal Match delivers the consistency and accuracy demanded by the world's most accomplished long-range marksmen.",
+    features: [
+      "Sierra MatchKing 175gr HPBT optimized for extreme range",
+      "Superior ballistic coefficient for long-range trajectory",
+      "Remains supersonic beyond 1,000 yards",
+      "Match-grade powder individually weighed",
+      "Federal Gold Medal primers for consistent ignition",
+      "Premium brass selected for dimensional consistency",
+      "Velocity standard deviation typically under 15 fps",
+      "Optimized for extended-range precision shooting",
+      "Temperature-stable powder across climate extremes",
+      "Trusted by military and law enforcement snipers"
+    ],
+    benefits: [
+      "Extended effective range compared to 168gr bullets",
+      "Superior wind resistance at long range",
+      "Maintains supersonic stability past 1,000 yards",
+      "Eliminates transonic accuracy degradation",
+      "Military-proven long-range performance",
+      "Sub-0.5 MOA accuracy potential from precision rifles"
+    ],
+    useCases: [
+      "Long-range precision competitions beyond 800 yards",
+      "Military and law enforcement sniper applications",
+      "Extended-range target shooting to 1,200+ yards",
+      "F-Class and long-range Palma competitions",
+      "Load development for long-range shooting",
+      "Precision varmint hunting at extreme distances"
+    ],
+    technicalDetails: "Federal Gold Medal Match 175gr achieves approximately 2,600 fps muzzle velocity from 24-inch barrels, delivering 2,627 foot-pounds of muzzle energy. The Sierra MatchKing 175gr HPBT bullet features a G1 ballistic coefficient of 0.505 and G7 BC of 0.259 - significantly higher than 168gr bullets. This superior BC translates to flatter trajectory, reduced wind drift, and better energy retention at extended ranges. Critically, the 175gr MatchKing remains supersonic to approximately 1,150 yards from typical .308 Winchester velocities, compared to 168gr bullets transitioning to subsonic around 900 yards. Maintaining supersonic flight eliminates the transonic instability that degrades accuracy as bullets slow through the sound barrier. Bullet construction features a precisely-formed copper alloy jacket with controlled thickness variation under 0.001 inches, surrounding a swaged lead core positioned concentrically. The boat tail design with approximately 9-degree angle optimizes drag reduction while maintaining stability in 1:10 to 1:12 twist barrels. Federal's powder selection emphasizes temperature stability, with velocity variation typically under 1.5 fps per degree Fahrenheit. Brass cases undergo rigorous dimensional inspection including wall thickness measurement and flash hole uniformity. Primers are seated to precise depth specifications using specialized equipment. Quality control includes statistical process monitoring and accuracy validation showing typical groups under 0.5 MOA from precision rifles.",
+    whyChoose: "Choose Federal Premium 175gr Gold Medal Match when your precision shooting extends beyond 800 yards where 168gr bullets lose effectiveness. The 175gr MatchKing isn't simply a heavier version of the 168gr - it's specifically engineered for extended-range performance. Military snipers transitioned from 168gr to 175gr specifically because extended combat engagements required bullets maintaining supersonic stability past 1,000 yards. The transonic transition where bullets slow through the sound barrier causes accuracy degradation that's eliminated by using 175gr bullets that stay supersonic longer. Federal's loading precision ensures this inherent bullet advantage translates to real-world accuracy - tight velocity standard deviations enable precise ballistic calculations critical at ranges where a few fps velocity variation significantly impacts trajectory. The 175gr's superior ballistic coefficient reduces wind drift proportionally more than the 7-grain weight increase suggests - at 1,000 yards, the difference in wind drift can mean the difference between hits and misses. For F-Class shooters competing at 1,000 yards, long-range precision rifle competitors, or anyone serious about extended-range accuracy, the 175gr Gold Medal Match is the logical choice. It's not about incremental improvement - it's about maintaining accuracy and consistency at ranges where lighter bullets fundamentally lose precision. Choose 175gr Gold Medal Match when you shoot where others can't.",
+    seoKeywords: [
+      "federal 175gr match",
+      "long range 308 ammo",
+      "sierra matchking 175",
+      "1000 yard 308",
+      "sniper ammunition 308",
+      "federal premium 175gr",
+      "extended range match",
+      "308 win long range",
+      "gold medal 175 grain",
+      "precision 308 ammo",
+      "f-class ammunition",
+      "military sniper 308",
+      "buy 175gr matchking",
+      "supersonic 308 ammo",
+      "extreme distance 308"
+    ]
   },
   {
     id: "308-remington-core-lokt",
@@ -1857,7 +1906,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Classic hunting ammunition with proven performance",
     manufacturer: "Remington",
-    grainWeight: "150gr"
+    grainWeight: "150gr",
+    shortDescription: "Remington Core-Lokt - 'America's Favorite' with over 80 years proven performance. More game has been taken with Core-Lokt than any other ammunition in history.",
+    longDescription: "Remington Core-Lokt represents American hunting ammunition heritage, having harvested more game animals than any other ammunition since its introduction in 1939. The revolutionary Core-Lokt design mechanically locks the lead core to the copper jacket during the expansion process, preventing the catastrophic core-jacket separation that plagued early hunting bullets. This mechanical locking ensures controlled expansion and reliable weight retention across impact velocities from close-range to extended distances. The 150-grain Pointed Soft Point (PSP) in .308 Winchester provides an ideal balance of velocity, trajectory, and terminal performance for deer-sized game. The pointed profile offers better ballistic coefficient than round-nose designs, delivering flatter trajectory for extended-range shots while the exposed lead tip initiates reliable expansion upon impact. Remington's tapered jacket design is thinner at the point for reliable expansion initiation and thicker toward the base for weight retention and penetration. The result is consistent mushroom-shaped expansion creating large wound channels while retaining 70-85% bullet weight for deep penetration through vitals. Core-Lokt's proven performance isn't marketing - it's verified through over eight decades of field use by millions of hunters across North America and worldwide. The ammunition's reliability across diverse game species, shot angles, and impact velocities makes it a versatile choice for hunters pursuing whitetail, mule deer, black bear, and similar-sized game. Whether you're a seasoned hunter appreciating Core-Lokt's proven track record or a new hunter seeking reliable performance at an accessible price point, Core-Lokt delivers the terminal performance ethical hunters demand.",
+    features: [
+      "Core-Lokt design mechanically locks core to jacket",
+      "150-grain Pointed Soft Point for flat trajectory",
+      "Tapered jacket - thin forward, thick at base",
+      "Exposed lead tip for reliable expansion initiation",
+      "70-85% weight retention through heavy bone",
+      "Over 80 years of proven field performance",
+      "Clean-burning hunting powder formulation",
+      "Reloadable Remington brass cases",
+      "Non-corrosive primers for long-term storage",
+      "Value pricing for regular practice and hunting"
+    ],
+    benefits: [
+      "Proven on more game than any other ammunition",
+      "Reliable expansion across impact velocities",
+      "Controlled expansion prevents core separation",
+      "Flat trajectory extends effective hunting range",
+      "Affordable pricing doesn't compromise performance",
+      "Trusted by generations of American hunters"
+    ],
+    useCases: [
+      "Whitetail and mule deer hunting at all ranges",
+      "Black bear hunting in typical conditions",
+      "General medium game hunting to 350 yards",
+      "Woods hunting where moderate range is typical",
+      "Budget-conscious hunters seeking proven performance",
+      "First-time hunters wanting reliable ammunition"
+    ],
+    technicalDetails: "Remington Core-Lokt 150gr PSP achieves approximately 2,820 fps muzzle velocity from 24-inch barrels, delivering 2,648 foot-pounds of muzzle energy. At 200 yards, velocity remains approximately 2,480 fps with 2,048 foot-pounds - ample for decisive harvests on deer-sized game. The pointed soft point bullet features a ballistic coefficient of approximately 0.370, providing reasonable trajectory flatness for hunting applications. The exposed lead tip initiates expansion upon impact with even light tissue, expanding to approximately 1.5-1.8x original diameter depending on impact velocity and medium encountered. The Core-Lokt design mechanically interlocks core and jacket through controlled expansion of the jacket base during swaging, creating a physical barrier preventing separation during the violent expansion process. Jacket thickness is tapered from approximately 0.015 inches at the point to 0.030+ inches at the base, ensuring the nose expands while the base retains weight and drives deep. Typical weight retention measures 70-85% depending on impact velocity and bone encountered, with the retained weight ensuring penetration through vitals from various shot angles. Sectional density of 0.226 provides adequate penetration for deer-sized game. Remington's powder selection emphasizes clean burning and consistent velocities across typical hunting temperature ranges. Terminal performance testing demonstrates reliable expansion from 2,800 fps down to approximately 1,800 fps, covering realistic hunting distances from point-blank to 350+ yards in .308 Winchester.",
+    whyChoose: "Choose Remington Core-Lokt when you want proven hunting performance backed by over 80 years of field success. Core-Lokt isn't the newest design, the highest BC bullet, or the most expensive ammunition - but it's taken more game animals than any competing ammunition, period. That track record represents real-world reliability across millions of successful hunts, diverse game species, and every conceivable hunting condition. The Core-Lokt design solved the core-jacket separation problem that plagued hunting bullets, and its fundamental effectiveness hasn't been obsoleted by newer designs. The 150-grain weight in .308 Winchester has been the go-to choice for deer hunters for generations because it simply works - adequate velocity for flat trajectory, sufficient weight for penetration, and proven terminal performance. The value pricing makes Core-Lokt ammunition practical for hunters to practice with what they hunt with, building confidence in their ammunition's point of impact. Many hunters have used Core-Lokt exclusively throughout their hunting careers, harvesting deer, bear, and other game reliably season after season. Remington's quality control, while not match-grade, ensures hunting-level accuracy (1.5-2.5 MOA) adequate for ethical shot placement at realistic hunting distances. When you choose Core-Lokt, you're choosing ammunition your grandfather probably used, ammunition that will likely be used by your grandchildren - not because of tradition alone, but because it works. It's honest ammunition that does exactly what hunters need without pretense or premium pricing.",
+    seoKeywords: [
+      "remington core lokt 308",
+      "core lokt 150 grain",
+      "deer hunting 308",
+      "classic hunting ammo",
+      "308 psp ammunition",
+      "buy core lokt 308",
+      "affordable hunting 308",
+      "whitetail ammo 308",
+      "remington 308 hunting",
+      "proven hunting loads",
+      "medium game 308",
+      "traditional hunting ammo",
+      "308 win hunting",
+      "pointed soft point 308",
+      "reliable deer ammo"
+    ]
   },
   {
     id: "308-hornady-superformance",
@@ -1870,7 +1968,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "High-velocity hunting ammunition",
     manufacturer: "Hornady",
-    grainWeight: "165gr"
+    grainWeight: "165gr",
+    shortDescription: "Hornady Superformance increases .308 Winchester velocity by 100-200 fps without increased pressure. Revolutionary propellant technology extends effective hunting range with magnum-like performance.",
+    longDescription: "Hornady Superformance ammunition represents a revolutionary advancement in rifle cartridge performance, achieving velocities previously impossible without increasing chamber pressure beyond SAAMI specifications. Through proprietary progressive-burning propellant technology, Superformance loads deliver 100-200 fps more velocity than conventional ammunition in the same cartridge - transforming .308 Winchester ballistics to rival .30-06 performance. The 165-grain SST (Super Shock Tip) bullet combines Hornady's aerodynamic polymer tip with InterLock ring technology, delivering both the flat trajectory enabled by increased velocity and the devastating terminal performance demanded for ethical harvests. The polymer tip initiates rapid controlled expansion while the InterLock ring mechanically bonds core to jacket, ensuring 70-90% weight retention even through heavy bone. Superformance propellants are temperature-stable across extreme hunting conditions, maintaining consistent velocities from arctic cold to summer heat. The increased velocity translates to meaningful hunting advantages - flatter trajectory extends maximum point-blank range, reduced time of flight minimizes wind drift and animal movement, and increased energy delivery ensures decisive terminal performance at extended distances. Whether hunting open country where shots may exceed 300 yards, or pursuing game requiring maximum energy transfer, Superformance provides magnum-like performance from standard .308 Winchester chambers without magnum recoil, cost, or barrel wear. The combination of revolutionary propellant technology and proven SST bullet design creates hunting ammunition that genuinely extends effective range and terminal performance beyond what conventional .308 ammunition can achieve.",
+    features: [
+      "Proprietary Superformance propellant technology",
+      "100-200 fps velocity increase over conventional loads",
+      "165-grain SST bullet with polymer tip and InterLock ring",
+      "Temperature-stable across -40°F to 140°F",
+      "SAAMI-specification pressures - safe in all .308 rifles",
+      "Flat trajectory rivals .30-06 Springfield performance",
+      "Controlled expansion with 70-90% weight retention",
+      "Clean-burning propellant reduces fouling",
+      "Reloadable Hornady brass cases",
+      "Non-corrosive primers for reliable ignition"
+    ],
+    benefits: [
+      "Magnum-like velocity without magnum recoil or cost",
+      "Extended effective hunting range beyond conventional .308",
+      "Flatter trajectory simplifies range estimation",
+      "Increased energy delivery ensures decisive harvests",
+      "Temperature stability provides consistent performance",
+      "Safe in all .308 Winchester rifles - no modifications needed"
+    ],
+    useCases: [
+      "Open country hunting where extended range is common",
+      "Elk and larger game requiring increased energy",
+      "Mountain hunting where flat trajectory is critical",
+      "Windy conditions benefiting from reduced time of flight",
+      "Hunters wanting maximum .308 performance",
+      "Converting from magnum calibers while retaining performance"
+    ],
+    technicalDetails: "Hornady Superformance 165gr SST achieves approximately 2,940 fps muzzle velocity from 24-inch barrels - nearly 150 fps faster than conventional .308 Winchester loads with the same bullet weight. This delivers 3,165 foot-pounds of muzzle energy, approaching .30-06 Springfield performance levels. At 300 yards, Superformance maintains approximately 2,485 fps with 2,264 foot-pounds of energy, providing significantly better trajectory and energy retention than standard-velocity .308 loads. The velocity increase translates to approximately 2-3 inches less drop at 300 yards and 4-6 inches less at 400 yards compared to conventional loads, meaningfully extending maximum point-blank range. The SST bullet features a G1 ballistic coefficient of 0.435, providing good aerodynamic efficiency. The polymer tip is color-coded red and engineered to drive rearward upon impact, initiating expansion from the hollow cavity beneath. InterLock ring is mechanically formed during manufacturing, creating a physical bond preventing core-jacket separation during expansion. Superformance propellants use proprietary progressive-burning technology that increases propellant efficiency, extracting more velocity from the same case capacity. Critically, this is achieved while maintaining SAAMI maximum average pressure of 62,000 psi, ensuring safe operation in all .308 Winchester rifles. Temperature stability testing demonstrates velocity variation under 1.5 fps per degree Fahrenheit - critical reliability across hunting season temperature ranges. Terminal performance shows consistent expansion to 1.5-1.7x caliber with 70-90% weight retention through heavy tissue and bone.",
+    whyChoose: "Choose Hornady Superformance when you want maximum performance from your .308 Winchester rifle. Superformance isn't incremental improvement - it's revolutionary propellant technology delivering meaningful velocity increases that translate to real hunting advantages. The 100-200 fps velocity gain over conventional ammunition isn't just a number on a chronograph; it's flatter trajectory that extends your maximum point-blank range, reduced wind drift that increases hit probability in windy conditions, and increased energy delivery that ensures decisive terminal performance at extended distances. For hunters who've considered stepping up to .30-06 or magnum calibers for their ballistic advantages, Superformance provides similar performance gains while retaining the moderate recoil, lower ammunition cost, and reduced barrel wear of .308 Winchester. The temperature stability ensures your zero and trajectory calculations remain valid whether hunting in September heat or November cold. Unlike handload attempts to push velocities beyond safe limits, Superformance achieves increased performance while remaining within SAAMI pressure specifications through proprietary propellant technology rather than dangerous pressure increases. Hornady's quality control ensures this cutting-edge performance doesn't compromise reliability or safety. The SST bullet's proven terminal performance means the increased velocity translates to genuine hunting advantages, not just impressive chronograph numbers. When you need your .308 Winchester to perform at its absolute best, when hunting situations demand every bit of performance your cartridge can deliver, choose Hornady Superformance - ammunition that redefines what's possible from standard cartridges.",
+    seoKeywords: [
+      "hornady superformance 308",
+      "high velocity 308",
+      "165 grain sst",
+      "fast 308 ammo",
+      "superformance ammunition",
+      "buy superformance 308",
+      "flat shooting 308",
+      "extended range hunting",
+      "308 win superformance",
+      "magnum performance 308",
+      "long range hunting 308",
+      "hornady 165gr sst",
+      "high energy 308",
+      "elk hunting 308",
+      "premium velocity 308"
+    ]
   },
   {
     id: "308-fiocchi-match",
@@ -1883,7 +2030,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Italian precision match ammunition",
     manufacturer: "Fiocchi",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Fiocchi Exacta combines Italian precision manufacturing with legendary Sierra MatchKing bullets. Premium match-grade performance at competitive pricing for serious shooters.",
+    longDescription: "Fiocchi Exacta ammunition represents Italian precision engineering applied to competitive match ammunition manufacturing. As one of Europe's oldest ammunition manufacturers, Fiocchi brings over 140 years of ammunition expertise to their Exacta match line, combining the legendary Sierra MatchKing 168-grain bullet with premium components and precision loading processes. The Sierra MatchKing bullet has dominated competitive shooting for decades, and Fiocchi's loading expertise maximizes its accuracy potential through careful component selection and assembly. Unlike budget ammunition prioritizing volume production, Exacta receives enhanced attention throughout manufacturing - powder charges are held to tighter tolerances, primers are seated to consistent depths, and loaded ammunition undergoes dimensional inspection ensuring SAAMI specification compliance. Fiocchi's modern manufacturing facility in Ozark, Missouri incorporates advanced quality control technology ensuring lot-to-lot consistency. The result is match-grade ammunition delivering sub-MOA accuracy from quality rifles at pricing more accessible than some premium competitors. Fiocchi sources premium brass and carefully selects powder formulations for temperature stability and velocity consistency. Whether competing in Service Rifle, tactical precision matches, or pursuing personal long-range shooting goals, Fiocchi Exacta delivers reliable match-grade performance. For shooters seeking proven Sierra MatchKing accuracy combined with Fiocchi's manufacturing quality, Exacta provides competition-worthy performance without premium-tier pricing. It's ammunition that respects both competitive shooting's accuracy demands and shooters' ammunition budgets.",
+    features: [
+      "Sierra MatchKing 168gr HPBT - competition proven",
+      "Fiocchi precision loading with enhanced quality control",
+      "Match-grade powder for velocity consistency",
+      "Premium large rifle primers for uniform ignition",
+      "Select brass cases with controlled dimensions",
+      "Boat tail design for superior ballistic coefficient",
+      "Clean-burning powder reduces barrel fouling",
+      "Manufactured in Fiocchi's Missouri facility",
+      "Quality control ensures lot-to-lot consistency",
+      "Competitive pricing for match-grade ammunition"
+    ],
+    benefits: [
+      "Sierra MatchKing proven accuracy at accessible pricing",
+      "Sub-MOA potential from quality precision rifles",
+      "Consistent velocities enable reliable ballistic calculations",
+      "Clean burning reduces maintenance requirements",
+      "More affordable than some premium match competitors",
+      "Fiocchi's 140+ years ammunition manufacturing expertise"
+    ],
+    useCases: [
+      "Competitive shooting including Service Rifle and tactical matches",
+      "Long-range target practice from 300 to 800 yards",
+      "Precision rifle training and skill development",
+      "High-volume competition practice on budget",
+      "Load development baseline and comparison",
+      "Shooters seeking match quality at competitive prices"
+    ],
+    technicalDetails: "Fiocchi Exacta 168gr achieves approximately 2,700 fps muzzle velocity from 24-inch barrels, delivering 2,719 foot-pounds of muzzle energy. The Sierra MatchKing 168gr HPBT bullet features a G1 ballistic coefficient of 0.462 and G7 BC of 0.237, providing excellent long-range trajectory and wind resistance. Bullet construction consists of a precision-drawn copper alloy jacket with controlled thickness surrounding a precisely-swaged lead core. The hollow point cavity shifts the center of gravity rearward, enhancing gyroscopic stability and accuracy. Boat tail angle of approximately 9 degrees reduces base drag while maintaining stability in standard 1:10 to 1:12 twist rates. Fiocchi's powder selection emphasizes clean burning and temperature stability, with velocity variation typically measuring 25-35 fps standard deviation - tighter than training ammunition though not quite matching top-tier match loads. Brass cases meet SAAMI specifications with consistent wall thickness and flash hole dimensions. Primers are large rifle standard selected for consistent sensitivity and ignition characteristics. Quality control includes periodic accuracy validation from test barrels and chronograph verification of velocities. Ammunition undergoes dimensional inspection ensuring proper overall length, case length, and concentricity. Groups from quality bolt-action rifles typically measure 0.75-1.25 MOA at 100 yards - suitable for most competitive and training applications. All components are non-corrosive with extended shelf life under proper storage.",
+    whyChoose: "Choose Fiocchi Exacta when you want proven Sierra MatchKing accuracy without paying premium-tier pricing. Fiocchi's decision to load the legendary MatchKing bullet demonstrates their commitment to proven performance rather than proprietary bullets of uncertain quality. The MatchKing has won more competitions than most shooters will attend in their careers, providing confidence backed by decades of competitive success. Fiocchi's 140+ years of ammunition manufacturing experience ensures they understand what precision shooters need - consistency, reliability, and accuracy. Their modern U.S. manufacturing facility combines old-world attention to quality with contemporary technology and quality control. While Exacta may not achieve the extreme consistency of top-tier match ammunition costing 50% more, it delivers accuracy adequate for most competitive shooting and training at pricing that enables higher practice volume. For shooters developing precision rifle skills, competitors practicing for matches, or anyone requiring match-grade accuracy on a working shooter's budget, Exacta represents intelligent value. You're getting legendary Sierra MatchKing bullets loaded by a company with over a century of ammunition expertise, at prices that make regular practice financially feasible. It's ammunition that respects both the shooter's need for accuracy and their ammunition budget reality. Choose Fiocchi Exacta when you want match-grade performance without premium-tier pricing compromising your trigger time.",
+    seoKeywords: [
+      "fiocchi exacta 308",
+      "sierra matchking ammo",
+      "affordable match 308",
+      "fiocchi match grade",
+      "168gr matchking",
+      "buy fiocchi exacta",
+      "competition 308 ammo",
+      "budget match ammunition",
+      "precision 308 target",
+      "fiocchi 308 win",
+      "value match ammo",
+      "italian precision 308",
+      "exacta ammunition",
+      "competitive shooting 308",
+      "accurate 308 ammo"
+    ]
   },
   {
     id: "308-norma-match",
@@ -1896,7 +2092,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Swedish precision ammunition for competition",
     manufacturer: "Norma",
-    grainWeight: "168gr"
+    grainWeight: "168gr",
+    shortDescription: "Norma Match ammunition represents Swedish precision engineering at its finest. Over 100 years of ammunition expertise combined with Sierra MatchKing bullets for championship-level accuracy.",
+    longDescription: "Norma Precision ammunition embodies Scandinavian commitment to precision engineering, combining over 100 years of Swedish ammunition manufacturing expertise with the proven Sierra MatchKing 168-grain bullet. Norma's reputation among European competitive shooters mirrors Lapua's - both represent the pinnacle of precision ammunition manufacturing with tolerances and quality control exceeding what most American manufacturers achieve in standard production. Norma's Match ammunition receives the same meticulous attention as their premium hunting lines, with components selected for consistency and assembled using processes emphasizing precision over production volume. The legendary Sierra MatchKing bullet is loaded using Norma's proprietary powder formulations developed through extensive ballistic research and testing. Norma brass is renowned among reloaders worldwide as second only to Lapua for consistency, uniformity, and durability - many precision handloaders specifically seek Norma brass for its quality. Each loaded cartridge undergoes quality inspections ensuring dimensional consistency and concentricity critical for match-grade accuracy. Norma's commitment to temperature-stable propellants ensures consistent velocities across the extreme temperature ranges encountered in European competition shooting. Whether competing in 300-meter Olympic events, F-Class long-range competitions, or tactical precision matches, Norma Match delivers the consistency demanded by shooters who accept no compromise in ammunition quality. For American shooters seeking European precision engineering combined with proven Sierra MatchKing bullets, Norma Match represents an outstanding alternative to domestic match ammunition.",
+    features: [
+      "Sierra MatchKing 168gr HPBT competition bullet",
+      "Norma proprietary match-grade powder formulations",
+      "Premium Norma brass - renowned for consistency and durability",
+      "Swedish precision manufacturing with stringent quality control",
+      "Temperature-stable across extreme competition conditions",
+      "Enhanced component inspection throughout assembly",
+      "Clean-burning powder reduces fouling",
+      "Velocity standard deviation typically under 15 fps",
+      "Over 100 years Swedish ammunition expertise",
+      "Brass reloadable 10+ times with proper care"
+    ],
+    benefits: [
+      "European precision engineering quality",
+      "Sub-0.75 MOA accuracy from quality rifles",
+      "Norma brass provides exceptional reloading value",
+      "Consistent performance across temperature extremes",
+      "Quality approaching premium Lapua at lower cost",
+      "Trusted by European competitive shooters"
+    ],
+    useCases: [
+      "Competitive precision shooting at all distances",
+      "F-Class and long-range target competitions",
+      "European-style 300-meter rifle competitions",
+      "Tactical precision matches requiring consistent accuracy",
+      "Brass collection for premium handloading projects",
+      "Shooters seeking European precision engineering"
+    ],
+    technicalDetails: "Norma Match 168gr achieves approximately 2,690 fps muzzle velocity from 24-inch barrels, delivering 2,700 foot-pounds of muzzle energy. The Sierra MatchKing 168gr HPBT bullet features a G1 ballistic coefficient of 0.462 and G7 BC of 0.237, providing excellent trajectory characteristics to 800 yards. Norma's proprietary powder formulations are developed through extensive pressure testing and ballistic research, optimizing burn rates for .308 Winchester case capacity and common barrel lengths. Temperature stability is exceptional - velocity variation typically under 1.5 fps per degree Fahrenheit, critical for maintaining zero and trajectory calculations across seasonal temperature changes. Norma brass cases are manufactured from proprietary brass alloy with extremely consistent wall thickness (variation typically under 0.001 inches), uniform primer pocket depth, and precise flash hole diameter. Case hardness is carefully controlled through annealing processes ensuring consistent neck tension and extended case life - Norma brass typically withstands 10-15+ reloading cycles before primer pockets loosen or case mouths split. Primers are European-manufactured to match-grade specifications. Quality control includes statistical process monitoring, dimensional inspection of loaded ammunition, and periodic accuracy validation from precision test barrels. Velocity standard deviation typically measures 10-15 fps across production lots. Accuracy from quality precision rifles produces groups measuring 0.5-1.0 MOA at 100 yards consistently. Norma's loading concentricity typically measures under 0.002 inches total indicated runout.",
+    whyChoose: "Choose Norma Match when you want European precision engineering combined with proven American match bullets. Norma represents over a century of Swedish ammunition manufacturing excellence, with quality standards approaching Lapua's legendary precision at a more accessible price point. Norma's reputation among European competitive shooters is exceptional - they're trusted in competitions where medals are decided by fractions of a point and ammunition consistency is critical. The decision to load Sierra MatchKing bullets demonstrates Norma's commitment to proven performance rather than promoting proprietary bullets. MatchKings have dominated competitive shooting for decades, and Norma's precision loading maximizes their accuracy potential. Norma brass alone justifies significant portion of the cost - it's simply superb reloading brass, second only to Lapua in consistency and durability. Many precision handloaders purchase Norma ammunition specifically for the brass, considering the loaded ammunition essentially free. The temperature stability is exceptional, reflecting Norma's Scandinavian heritage where competitions occur in extreme conditions from arctic cold to summer warmth. For shooters who appreciate European engineering quality, who demand consistency approaching top-tier precision ammunition, who value exceptional brass for reloading, Norma Match delivers outstanding performance. It bridges the gap between American match ammunition and ultra-premium Lapua, providing most of Lapua's consistency at 10-15% lower cost. Choose Norma Match when you want precision that European shooters trust.",
+    seoKeywords: [
+      "norma match 308",
+      "swedish precision ammo",
+      "norma 168gr",
+      "premium match 308",
+      "norma ammunition",
+      "buy norma match",
+      "european match ammo",
+      "precision 308 win",
+      "norma brass 308",
+      "competition grade 308",
+      "matchking 168 grain",
+      "scandinavian ammunition",
+      "high quality 308",
+      "norma precision",
+      "reloadable match 308"
+    ]
   },
   {
     id: "308-lapua-mega",
@@ -1909,7 +2154,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Premium hunting soft point for big game",
     manufacturer: "Lapua",
-    grainWeight: "170gr"
+    grainWeight: "170gr",
+    shortDescription: "Lapua Mega delivers uncompromising terminal performance for serious big game hunting. Finnish precision engineering applied to premium hunting bullet design for reliable harvests on tough game.",
+    longDescription: "Lapua Mega ammunition represents Finland's legendary precision manufacturing applied to big game hunting, combining Lapua's obsessive quality control with a premium soft point bullet engineered specifically for reliable terminal performance on large, tough game animals. While Lapua is renowned for match ammunition excellence, their Mega hunting line demonstrates that same commitment to precision applied to terminal ballistics and hunting reliability. The 170-grain Mega bullet features a unique design optimized for controlled expansion, deep penetration, and high weight retention - critical characteristics for ethical harvests on elk, moose, bear, and similar-sized game. The bullet's mechanical jacket locking system ensures core retention during expansion, while the controlled expansion rate creates large wound channels without fragmenting or losing weight prematurely. Lapua's manufacturing tolerances apply to Mega as they do to Scenar match ammunition - components are held to specifications measured in ten-thousandths of an inch, ensuring shot-to-shot consistency that translates to hunting-level accuracy (1-1.5 MOA) from quality rifles. The proprietary powder formulations provide temperature stability across hunting season conditions from early September warmth to late November cold. Lapua brass cases, legendary among reloaders, provide additional value through exceptional durability and consistency enabling 10-20+ reloading cycles. Whether pursuing Scandinavian moose, North American elk, European red stag, or dangerous game as backup ammunition, Lapua Mega delivers premium terminal performance with the consistency and reliability expected from Finland's most prestigious ammunition manufacturer.",
+    features: [
+      "Premium 170gr soft point bullet for big game",
+      "Controlled expansion with mechanical jacket locking",
+      "High weight retention through heavy bone and tissue",
+      "Lapua legendary brass cases - world's finest reloading brass",
+      "Temperature-stable powder across hunting conditions",
+      "Finnish precision manufacturing with extreme tolerances",
+      "Hunting-grade accuracy (1-1.5 MOA) from quality rifles",
+      "Deep penetration for vital zone reach on tough game",
+      "Clean-burning powder for hunting reliability",
+      "Optimized for medium to large game animals"
+    ],
+    benefits: [
+      "Reliable terminal performance on elk, moose, and bear",
+      "Controlled expansion creates large wound channels",
+      "High weight retention ensures deep penetration",
+      "Lapua consistency eliminates ammunition variables",
+      "Premium brass reloadable 10-20+ times",
+      "Temperature stability maintains zero and trajectory"
+    ],
+    useCases: [
+      "Elk and moose hunting requiring deep penetration",
+      "Large game hunting where shot angles may be challenging",
+      "European red stag and similar-sized game",
+      "Scandinavian-style big game hunting",
+      "Backup ammunition for dangerous game applications",
+      "Hunters demanding absolute ammunition reliability"
+    ],
+    technicalDetails: "Lapua Mega 170gr achieves approximately 2,650 fps muzzle velocity from 24-inch barrels, delivering 2,652 foot-pounds of muzzle energy. The heavier 170-grain weight provides sectional density of 0.256, excellent for penetration on large game. At 300 yards, velocity remains approximately 2,265 fps with 1,936 foot-pounds - ample energy for decisive harvests on elk-sized game. The Mega bullet features a mechanically-locked core design where the jacket is formed around the lead core in a manner that prevents separation during expansion - not merely bonded chemically but physically locked mechanically. Expansion is controlled to approximately 1.8-2.0x original diameter, creating massive wound channels while retaining 85-95% of original weight even through heavy shoulder bone. The soft point design features exposed lead at the tip for reliable expansion initiation even at reduced velocities, critical when hunting at extended ranges where impact velocity diminishes. Jacket thickness is progressively controlled - thinner at the expansion point, progressively thicker toward the base for weight retention. Lapua's powder formulations are temperature-stable with velocity variation under 1.5 fps per degree Fahrenheit. Brass cases are manufactured to Lapua's legendary standards with wall thickness variation under 0.0005 inches, primer pocket and flash hole dimensions held to extreme tolerances. Terminal performance testing demonstrates consistent expansion and penetration exceeding 30 inches through heavy tissue and bone, with retained weight fragments maintaining coherence rather than fragmenting.",
+    whyChoose: "Choose Lapua Mega when your hunting demands absolute reliability and premium terminal performance. Lapua applies the same obsessive precision to hunting ammunition as they do to their world-champion match ammunition - this isn't a side product line, it's Lapua-quality engineering applied to hunting bullets. The Mega bullet design reflects Scandinavian hunting tradition where game animals are large, tough, and shots must be decisive regardless of angle or intervening obstacles. European hunters pursue moose that rival North American elk in size, in conditions where follow-up shots may be impossible - ammunition must perform perfectly on the first shot. Lapua Mega delivers that reliability through controlled expansion mechanics ensuring the bullet performs predictably across impact velocities from close-range to extended distances. The mechanical jacket locking prevents the premature core separation that causes lesser bullets to fail on heavy bone, ensuring penetration reaches vitals regardless of shot angle. The legendary Lapua brass alone represents significant value, often lasting 15-20+ reloading cycles while maintaining accuracy - many hunters purchase Lapua ammunition as much for the brass as the loaded ammunition. Lapua's quality control ensures every cartridge performs identically, eliminating ammunition variables from your hunting equation. When your hunting opportunity represents significant investment, when game animals are large and tough, when ethical harvesting demands bullets that simply cannot fail, choose Lapua Mega - premium ammunition from the manufacturer that accepts no compromise in pursuit of perfection.",
+    seoKeywords: [
+      "lapua mega 308",
+      "170 grain hunting",
+      "premium elk ammo",
+      "lapua hunting ammunition",
+      "big game 308",
+      "moose hunting 308",
+      "finnish hunting ammo",
+      "controlled expansion 308",
+      "lapua brass 308",
+      "premium 308 hunting",
+      "deep penetration ammo",
+      "large game 308 win",
+      "reliable hunting 308",
+      "scandinavian ammunition",
+      "elk hunting loads"
+    ]
   },
   {
     id: "308-barnes-ttsx",
@@ -1922,7 +2216,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "All-copper monolithic hunting bullet for deep penetration",
     manufacturer: "Barnes",
-    grainWeight: "150gr"
+    grainWeight: "150gr",
+    shortDescription: "Barnes Tipped TSX delivers devastating terminal performance with 100% weight retention. All-copper monolithic construction ensures deep penetration and reliable expansion across all impact velocities.",
+    longDescription: "Barnes Tipped Triple-Shock X (TTSX) ammunition represents revolutionary advancement in hunting bullet technology through all-copper monolithic construction. Unlike conventional lead-core bullets that may fragment or lose weight, the solid copper TTSX bullet retains virtually 100% of its weight while expanding to approximately 2x original diameter - delivering both the devastating wound channels of rapid expansion and the deep penetration of premium bonded bullets. The polymer tip serves dual purposes: it improves ballistic coefficient for flatter trajectory while initiating immediate expansion upon impact even at reduced velocities encountered at extended ranges. The bullet's monolithic copper construction features precision-machined grooves (Barnes' Multiple-Ring technology) that reduce bearing surface, minimizing pressure and barrel fouling while improving accuracy. Four precisely engineered petals peel back upon expansion, creating a devastating wound channel while the solid copper shank drives deep through tissue and bone. TTSX bullets expand reliably across an exceptionally wide velocity range from 1,500 fps to over 3,000 fps, ensuring consistent performance from point-blank to extreme hunting distances. The all-copper construction makes TTSX ideal for jurisdictions requiring lead-free ammunition, while providing terminal performance advantages over conventional bullets. Whether hunting whitetails in the woodlot, pursuing elk in mountain basins, or taking game at extended ranges across open prairie, Barnes TTSX delivers reliable, devastating terminal performance with absolute weight retention and deep penetration regardless of shot angle or intervening obstacles.",
+    features: [
+      "Solid copper monolithic construction - 100% weight retention",
+      "Polymer tip improves BC and initiates reliable expansion",
+      "Four-petal expansion design for massive wound channels",
+      "Multiple-Ring grooves reduce fouling and pressure",
+      "Expands reliably from 1,500 to 3,000+ fps",
+      "Lead-free construction for restricted jurisdictions",
+      "Deep penetration through heavy bone and tissue",
+      "Premium hunting powder optimized for accuracy",
+      "Clean-burning formulation for hunting reliability",
+      "Reloadable brass cases for handloading"
+    ],
+    benefits: [
+      "Guaranteed 100% weight retention - no fragmentation",
+      "Devastating wound channels from controlled expansion",
+      "Deep penetration ensures vital zone reach",
+      "Performs consistently across all impact velocities",
+      "Environmentally friendly lead-free construction",
+      "Reduced barrel fouling compared to conventional bullets"
+    ],
+    useCases: [
+      "Whitetail and mule deer hunting at all ranges",
+      "Elk hunting requiring deep bone penetration",
+      "Jurisdictions requiring non-lead ammunition",
+      "Extended-range hunting where velocity varies",
+      "Environmentally conscious hunters avoiding lead",
+      "All-around hunting ammunition for diverse game"
+    ],
+    technicalDetails: "Barnes TTSX 150gr achieves approximately 2,820 fps muzzle velocity from 24-inch barrels, delivering 2,648 foot-pounds of muzzle energy. The TTSX bullet features a ballistic coefficient (G1) of approximately 0.420, enhanced by the polymer tip compared to original TSX design. At impact, the polymer tip drives rearward into the hollow cavity, initiating expansion from the precisely-engineered nose. Four petals peel back consistently to approximately 2x original diameter (approximately 0.62 inches), creating massive wound channels while the solid copper shank behind the petals retains complete structural integrity, driving deep through tissue. The monolithic copper construction means there's no core-jacket interface to separate - expansion is purely mechanical petal formation, ensuring 95-100% weight retention regardless of impact velocity, angle, or medium encountered. The Multiple-Ring grooves machined into the bullet shank serve multiple purposes: they reduce bearing surface contact with the bore, lowering pressures approximately 5,000 psi compared to similar-weight conventional bullets; they create relief grooves capturing copper fouling, keeping bores cleaner; and they improve accuracy through reduced friction and consistent engraving. TTSX bullets expand reliably from approximately 1,500 fps (limit of reliable expansion) to over 3,200 fps, covering realistic .308 Winchester hunting ranges from point-blank to 500+ yards. Terminal performance testing demonstrates consistent 30-36 inches penetration through heavy tissue and bone with retained weight typically 98-100%.",
+    whyChoose: "Choose Barnes TTSX when you demand absolute terminal performance reliability combined with deep penetration. The all-copper monolithic design isn't just environmentally friendly - it's a fundamentally superior approach to hunting bullet construction. Conventional lead-core bullets, even premium bonded designs, may lose 10-30% of their weight through fragmentation, with those fragments spreading randomly rather than contributing to penetration. TTSX bullets retain virtually 100% weight while still creating massive wound channels through controlled petal expansion. This combination of characteristics - rapid expansion creating hydraulic shock and large wounds, coupled with deep penetration from retained weight - is difficult for conventional bullets to match. The wide velocity window of reliable expansion means TTSX performs identically whether you connect at 50 yards (high velocity) or 400 yards (reduced velocity), eliminating the expansion uncertainty of conventional bullets at varying ranges. For hunters in California, Arizona, and other jurisdictions requiring non-lead ammunition, TTSX provides not merely compliance but superior performance to the lead-core ammunition being replaced. The reduced barrel fouling is tangible - copper TTSX bullets foul barrels less than conventional gilding metal-jacketed bullets, extending time between cleaning. Barnes pioneered all-copper hunting bullets and has refined the design through decades of real-world use on game worldwide. When your hunting demands bullets that expand rapidly yet penetrate deeply, that perform identically at varying ranges, that retain complete weight while creating massive wounds, choose Barnes TTSX - the bullet that redefined what hunting bullets should be.",
+    seoKeywords: [
+      "barnes ttsx 308",
+      "all copper bullets",
+      "lead free 308 ammo",
+      "barnes tipped tsx",
+      "monolithic hunting bullets",
+      "buy barnes ttsx",
+      "california legal 308",
+      "deep penetration ammo",
+      "copper hunting loads",
+      "barnes 308 ammunition",
+      "non lead 308",
+      "premium hunting 308",
+      "weight retention bullets",
+      "elk hunting copper",
+      "barnes triple shock"
+    ]
   },
   {
     id: "308-sellier-bellot",
@@ -1935,7 +2278,56 @@ export const products: Product[] = [
     categorySlug: "308-762",
     description: "Czech-made affordable training ammunition",
     manufacturer: "Sellier & Bellot",
-    grainWeight: "147gr"
+    grainWeight: "147gr",
+    shortDescription: "Sellier & Bellot delivers reliable European-manufactured training ammunition at budget-friendly prices. Over 190 years of Czech ammunition expertise ensures consistent performance.",
+    longDescription: "Sellier & Bellot (S&B) represents nearly two centuries of Central European ammunition manufacturing excellence, producing reliable training and target ammunition since 1825. As one of Europe's oldest ammunition manufacturers, S&B brings extensive experience to every cartridge, combining traditional quality standards with modern manufacturing technology. The 147-grain full metal jacket in .308 Winchester provides affordable, reliable performance for high-volume training, target practice, and recreational shooting. S&B's manufacturing facility in Vlašim, Czech Republic employs modern production equipment and quality control processes ensuring dimensional consistency and reliable function across diverse rifle platforms. The full metal jacket bullet design features complete copper alloy enclosure of the lead core, reducing barrel leading and providing reliable feeding in both semi-automatic and bolt-action rifles. While positioned as budget-friendly training ammunition, S&B maintains European manufacturing standards that often exceed import ammunition from other regions. The brass cases are reloadable, providing additional value for handloaders who collect their fired brass. S&B's clean-burning powder formulation reduces fouling compared to some surplus or budget ammunition, keeping rifles cleaner during extended range sessions. For shooters seeking affordable .308 ammunition without sacrificing reliability or reloadability, Sellier & Bellot provides European manufacturing quality at prices competitive with other training ammunition. Whether you're conducting high-volume carbine training, practicing fundamentals, or simply enjoying range time with your .308 rifle, S&B delivers the consistency and reliability needed at a price encouraging regular practice.",
+    features: [
+      "European manufacturing with 190+ years expertise",
+      "147-grain full metal jacket for reliable feeding",
+      "Clean-burning powder reduces barrel fouling",
+      "Reloadable brass cases with boxer primers",
+      "Non-corrosive components for long-term storage",
+      "Consistent velocities for training applications",
+      "Copper alloy jacket minimizes barrel wear",
+      "Budget-friendly pricing for high-volume shooting",
+      "Functions reliably in semi-auto and bolt rifles",
+      "Modern Czech manufacturing quality control"
+    ],
+    benefits: [
+      "Affordable pricing enables regular practice",
+      "European manufacturing quality standards",
+      "Clean burning reduces cleaning frequency",
+      "Reliable function in diverse rifle platforms",
+      "Reloadable brass adds value for handloaders",
+      "Nearly 200 years ammunition manufacturing heritage"
+    ],
+    useCases: [
+      "High-volume training and practice sessions",
+      ".308 rifle familiarization and skill development",
+      "Target shooting and informal plinking",
+      "Budget-conscious training on limited budgets",
+      "Brass collection for reloading projects",
+      "Recreational shooting and range days"
+    ],
+    technicalDetails: "Sellier & Bellot 147gr FMJ achieves approximately 2,750 fps muzzle velocity from 24-inch barrels, delivering 2,465 foot-pounds of muzzle energy. From typical 20-22 inch sporting rifle barrels, velocity is approximately 2,650-2,700 fps. The 147-grain full metal jacket bullet features copper alloy jacket (typically 90/10 gilding metal) completely enclosing the lead core, with bullet diameter held to .308 inches within standard tolerances. The boat tail base design provides minor aerodynamic advantage while ensuring reliable feeding from detachable magazines. Brass cases are manufactured from commercial brass alloy with consistent wall thickness suitable for multiple reloading cycles. Case dimensions conform to SAAMI .308 Winchester specifications with primer pockets sized for standard large rifle primers without military crimp. Powder selection emphasizes clean burning with moderate flash, suitable for both indoor and outdoor range use. Velocity standard deviation typically measures 40-60 fps across 10-shot strings - adequate consistency for training and target applications within 300 yards. Accuracy from quality rifles averages 1.5-3.0 MOA at 100 yards, suitable for general training and recreational shooting rather than precision competitions. All components are non-corrosive and non-mercuric with extended shelf life. Maximum average pressure conforms to SAAMI specifications of approximately 62,000 psi. S&B ammunition meets CIP (European) standards which often exceed SAAMI specifications in certain testing protocols.",
+    whyChoose: "Choose Sellier & Bellot when you need reliable .308 training ammunition at the most affordable pricing available from a reputable manufacturer. S&B's nearly 200-year heritage in ammunition manufacturing demonstrates their staying power - companies don't survive two centuries without maintaining quality and reliability. While some shooters dismiss budget ammunition as inferior, S&B's European manufacturing standards often exceed ammunition from other budget-priced sources. The Czech Republic has extensive ammunition manufacturing tradition, and S&B represents the premium end of Czech commercial ammunition production. The ammunition functions reliably in diverse platforms - critical when training with multiple rifles or teaching new shooters. Clean-burning powder demonstrates S&B's attention to shooter experience even in their budget line, reducing the cleaning burden compared to truly cheap surplus or imported ammunition. For reloaders, S&B brass is solid quality - not Lapua or Norma level, but certainly adequate for 5-8+ loading cycles with proper care. The budget pricing is critical for shooters who understand that regular practice is what builds skills, and expensive premium ammunition budgets often result in less practice than cheaper ammunition enabling higher volume. S&B provides the reliability needed for productive training at prices that make regular range sessions financially feasible. When you need .308 ammunition that works reliably without breaking your budget, when you prioritize trigger time over premium components, choose Sellier & Bellot - honest, reliable ammunition from a manufacturer that's been serving shooters since before cartridge ammunition existed.",
+    seoKeywords: [
+      "sellier bellot 308",
+      "cheap 308 ammo",
+      "sb 147 grain",
+      "affordable 308 win",
+      "budget training 308",
+      "buy sellier bellot",
+      "czech ammunition",
+      "economical 308 ammo",
+      "sb 308 fmj",
+      "bulk 308 training",
+      "reloadable 308 brass",
+      "value 308 ammunition",
+      "high volume 308",
+      "range ammo 308",
+      "european 308 ammo"
+    ]
   },
 
   // Rifle Ammunition - 7.62×39mm Soviet Category
