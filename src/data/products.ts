@@ -220,7 +220,58 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Heavier bullet weight for improved accuracy",
     manufacturer: "Winchester",
-    grainWeight: "62gr"
+    grainWeight: "62gr",
+    shortDescription: "Winchester USA 62-grain FMJ bridges the gap between standard 55-grain loads and heavy match ammunition. Optimized weight for enhanced accuracy and wind resistance.",
+    longDescription: "Winchester USA 62-grain Full Metal Jacket ammunition represents the sweet spot for shooters seeking enhanced performance over standard 55-grain loads without the premium pricing of match ammunition. The 62-grain bullet weight provides several ballistic advantages: improved wind resistance, better energy retention at distance, and enhanced terminal performance. This load is particularly popular with competitive shooters and law enforcement agencies who want performance approaching green tip M855 ammunition but in commercial .223 Remington pressure levels suitable for all AR-15 rifles. Winchester's 62-grain FMJ uses a conventional lead core with copper jacket, unlike the steel-core M855, making it range-friendly and legal at facilities that prohibit steel-core projectiles. The heavier bullet stabilizes well in 1:9 twist barrels while performing excellently in faster 1:7 and 1:8 twist rates common on modern AR-15s. Winchester's advanced manufacturing processes ensure each cartridge meets exacting specifications for dimensional consistency and concentricity. The brass cases are drawn from high-quality cartridge brass alloy and undergo Winchester's multi-stage annealing process for optimal neck tension and case life. Boxer primers are precisely seated and sealed to prevent moisture contamination. The powder charge is optimized for consistent velocities across various barrel lengths from 16 to 20 inches. Winchester's quality control includes statistical process control throughout production with automated inspection systems checking critical dimensions. Pressure testing ensures SAAMI compliance while accuracy testing validates typical performance. The 62-grain weight offers noticeably improved accuracy over budget 55-grain ammunition, making it ideal for zeroing optics, precision practice, and situations where accuracy matters. Whether you're shooting steel targets at 300 yards, preparing for competition, or conducting precision training, Winchester USA 62-grain delivers reliable performance round after round.",
+    features: [
+      "62-grain FMJ bullet provides enhanced accuracy over standard 55-grain loads",
+      "Improved ballistic coefficient for better wind resistance and energy retention",
+      "Commercial .223 Remington pressure suitable for all AR-15 platforms",
+      "Lead core construction - legal at ranges prohibiting steel-core ammunition",
+      "Optimized for 1:7, 1:8, and 1:9 twist rate barrels common on AR-15s",
+      "Winchester's precision-drawn brass cases with consistent wall thickness",
+      "Multi-stage annealing process ensures optimal case performance",
+      "Non-corrosive Boxer primers for reliable ignition and easy reloading",
+      "Clean-burning powder formulation reduces fouling and maintenance",
+      "Quality control with automated inspection and statistical process control",
+      "Packaged in sturdy boxes with reusable plastic trays",
+      "Manufactured in the USA at Winchester's Oxford, Mississippi facility"
+    ],
+    benefits: [
+      "Better accuracy than budget 55-grain loads at competitive pricing",
+      "Enhanced long-range performance for targets beyond 200 yards",
+      "Legal at all ranges including those prohibiting steel-core ammunition",
+      "Excellent choice for zeroing optics and precision practice",
+      "Reloadable brass extends your ammunition investment",
+      "Winchester's 150+ year reputation for quality and innovation"
+    ],
+    useCases: [
+      "Precision target shooting at 100-300 yard distances",
+      "Competition training for service rifle and 3-gun matches",
+      "Zeroing and validation of rifle optics and sights",
+      "Law enforcement training and qualification courses",
+      "Defensive carbine courses requiring precision accuracy",
+      "Varmint hunting where enhanced accuracy is beneficial"
+    ],
+    technicalDetails: "Winchester USA 62-grain FMJ is loaded to .223 Remington specifications (SAAMI maximum average pressure of 55,000 PSI) rather than higher-pressure 5.56 NATO specifications, making it safe in all AR-15 rifles including those with .223-only chambers. The 62-grain full metal jacket bullet achieves approximately 3,000 fps muzzle velocity from a 20-inch barrel, delivering 1,237 foot-pounds of muzzle energy. From more common 16-inch carbine barrels, velocity is approximately 2,850 fps with 1,118 ft-lbs energy. The bullet features a lead antimony alloy core with copper alloy (gilding metal) jacket approximately 0.020 inches thick. Jacket design promotes reliable feeding in semi-automatic actions while the boat-tail base design improves ballistic coefficient to approximately 0.265 G1. Case construction uses cartridge brass (70% copper, 30% zinc) drawn to Winchester's tight tolerances for consistent internal capacity and wall thickness. Flash hole diameter is precisely reamed for uniform ignition. Powder selection emphasizes clean burning with optimized burn rate for 14.5-inch to 20-inch barrels. Each production lot undergoes pressure testing using universal receiver with piezoelectric transducer to verify SAAMI compliance. Accuracy testing from quality test rifles typically produces groups of 1.5-2.0 MOA, significantly better than economy ammunition.",
+    whyChoose: "Choose Winchester USA 62-grain when you want noticeable accuracy improvements over standard ball ammunition without paying premium match ammunition prices. This load represents exceptional value - it delivers much of the precision performance of match ammunition at approximately half the cost. The 62-grain weight provides real ballistic advantages: better wind bucking ability, improved energy retention, and enhanced accuracy potential. Unlike green tip M855 ammunition with its steel penetrator core, Winchester USA 62-grain uses conventional lead core construction that's universally range-legal. This makes it ideal for shooters who want M855-like performance characteristics without range restrictions. The commercial .223 Remington pressure specification ensures safe function in all AR-15 rifles including those with .223-only chambers that shouldn't shoot 5.56 NATO ammunition. Winchester's manufacturing excellence shines through in the consistency and reliability of this ammunition. The Oxford, Mississippi production facility combines modern automation with human expertise, resulting in ammunition that feeds, fires, and extracts reliably while delivering impressive accuracy. Reloadable brass cases add value for handloaders. Whether you're a competitive shooter seeking affordable practice ammunition, a law enforcement officer qualifying with duty rifle, or an enthusiast who demands accuracy without premium pricing, Winchester USA 62-grain delivers outstanding performance and value.",
+    seoKeywords: [
+      "winchester usa 62gr",
+      "223 rem 62 grain",
+      "winchester 62gr fmj",
+      "buy 223 62 grain",
+      "ar15 62gr ammo",
+      "223 remington 62gr",
+      "winchester usa ammo",
+      "62 grain 223 for sale",
+      "ar15 accuracy ammo",
+      "223 match ammo budget",
+      "winchester 62 grain bulk",
+      "ar15 precision ammo",
+      "223 62gr online",
+      "winchester usa 223",
+      "ar15 62 grain"
+    ]
   },
   {
     id: "556-pmc-bronze",
@@ -605,7 +656,58 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Value-priced range ammunition",
     manufacturer: "Remington",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Remington UMC delivers American-made reliability at exceptional value. Over a century of ammunition manufacturing excellence in an affordable training round.",
+    longDescription: "Remington UMC (Union Metallic Cartridge) .223 Remington ammunition traces its lineage to one of America's oldest and most respected ammunition manufacturers. The UMC brand specifically targets high-volume shooters who need reliable performance without premium pricing. Remington's approach with UMC focuses on streamlined packaging and efficient production processes that reduce costs while maintaining the quality standards expected from America's oldest ammunition company. The 55-grain full metal jacket loading represents the most popular weight for .223 Remington, offering versatility across all shooting applications from plinking to training. This weight stabilizes in all common AR-15 twist rates from 1:12 to 1:7, making it universally compatible. Remington's 55-grain FMJ bullet uses a lead core with copper alloy jacket, providing reliable feeding and consistent performance. The ammunition is loaded to .223 Remington specifications rather than higher-pressure 5.56 NATO, ensuring safe function in all AR-15 rifles including bolt-actions and those with .223-only chambers. Remington's manufacturing facilities in Lonoke, Arkansas, combine modern automated production equipment with quality control processes refined over two centuries. Each component undergoes inspection, and finished ammunition is tested for reliability and safety. The brass cases are drawn from high-quality cartridge brass using Remington's established manufacturing processes. These cases feature proper hardness for reliable extraction while remaining soft enough for reloading. Non-corrosive Boxer primers provide consistent ignition, and the powder formulation emphasizes clean burning to reduce maintenance requirements. For shooters seeking maximum training volume at competitive pricing, Remington UMC delivers American-made quality that encourages regular range time and skills development.",
+    features: [
+      "American-made ammunition from one of the nation's oldest manufacturers",
+      "55-grain FMJ bullet - most versatile weight for .223 Remington",
+      "Compatible with all AR-15 twist rates from 1:12 to 1:7",
+      ".223 Remington pressure specification safe for all rifles",
+      "Lead core with copper alloy jacket for reliable feeding",
+      "Reloadable brass cases with consistent quality",
+      "Non-corrosive Boxer primers for reliable ignition",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Value-focused packaging reduces per-round cost",
+      "Quality control processes backed by 200+ years of experience",
+      "Manufactured at Remington's Lonoke, Arkansas facility",
+      "Streamlined production for competitive pricing"
+    ],
+    benefits: [
+      "Trusted American brand quality at budget-friendly pricing",
+      "Universal compatibility with all .223/5.56 chambered rifles",
+      "Reliable function tested across multiple AR-15 platforms",
+      "Reloadable brass extends ammunition budget through handloading",
+      "Consistent performance encourages regular training and practice",
+      "Remington's customer support and technical resources"
+    ],
+    useCases: [
+      "High-volume AR-15 range training and target practice",
+      "New shooter instruction and fundamentals training",
+      "Plinking and recreational shooting at all distances",
+      "Function testing and break-in of new rifles",
+      "Competition practice for budget-conscious shooters",
+      "Reloading component source for quality brass cases"
+    ],
+    technicalDetails: "Remington UMC 55-grain FMJ is loaded to .223 Remington specifications with SAAMI maximum average pressure of 55,000 PSI. The 55-grain full metal jacket bullet achieves approximately 3,240 fps muzzle velocity from a 24-inch test barrel, with real-world velocities of approximately 3,100 fps from 20-inch barrels and 2,900 fps from 16-inch carbine barrels. Muzzle energy from a 20-inch barrel is approximately 1,175 foot-pounds. The bullet construction features a lead antimony alloy core encased in a copper alloy jacket approximately 0.018-0.020 inches thick. The jacket completely encapsulates the sides and nose of the bullet with the base remaining exposed, which is standard for economical FMJ ammunition. Cases are manufactured from cartridge brass (70% copper, 30% zinc) and drawn using multi-stage processes to achieve proper dimensions and hardness. Case wall thickness is controlled for consistent internal capacity, though tolerances are slightly looser than premium match ammunition to reduce production costs. Boxer primers are standard small rifle size with non-corrosive formulation. Powder selection emphasizes economical production while maintaining clean burning characteristics and consistent velocities. Each production lot undergoes pressure testing and functionality validation, though accuracy testing is less extensive than premium lines. Typical accuracy from quality AR-15 rifles ranges from 2-3 MOA, adequate for all practical training and plinking applications.",
+    whyChoose: "Choose Remington UMC when you want American-made ammunition quality at prices that encourage regular shooting. While Remington has faced challenges in recent years, the UMC line continues to deliver reliable performance for training and practice applications. The ammunition benefits from Remington's extensive experience and established manufacturing processes. UMC represents an excellent choice for high-volume shooters who prioritize value over premium features. The ammunition functions reliably in AR-15 platforms, and malfunctions are rare. Accuracy is adequate for practical applications, though not matching premium lines. The reloadable brass cases provide additional value for handloaders who can reduce their per-round costs through reloading. UMC occupies an important niche in the market - it's noticeably less expensive than premium brands like Federal and Winchester, but maintains better quality control and consistency than import budget brands. For shooters who want to support American ammunition manufacturing while keeping costs manageable, UMC delivers solid performance. It's particularly well-suited for newer shooters building skills, high-volume trainers concerned with costs, and anyone who values regular range time over premium features. When your goal is trigger time and repetitions rather than one-hole groups, Remington UMC delivers reliable performance at a price that keeps you shooting.",
+    seoKeywords: [
+      "remington umc 223",
+      "umc 55gr fmj",
+      "remington 223 ammo",
+      "buy umc 223 online",
+      "ar15 umc ammo",
+      "223 remington umc",
+      "remington umc bulk",
+      "cheap 223 ammo",
+      "umc 223 for sale",
+      "remington 223 fmj",
+      "ar15 training ammo",
+      "umc 55 grain",
+      "remington umc 55gr",
+      "223 rem bulk ammo",
+      "budget ar15 ammo"
+    ]
   },
   {
     id: "223-sellier-bellot",
@@ -618,7 +720,58 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Czech-made quality ammunition",
     manufacturer: "Sellier & Bellot",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Sellier & Bellot combines nearly 200 years of Czech manufacturing excellence with competitive pricing. European precision at American-friendly prices.",
+    longDescription: "Sellier & Bellot .223 Remington ammunition brings Czech Republic manufacturing excellence to the American market at remarkably competitive pricing. Founded in 1825 in Vlašim, Czech Republic, Sellier & Bellot represents one of the world's oldest continuously operating ammunition manufacturers with nearly two centuries of expertise. The company survived world wars, communist control, and market upheavals while maintaining production and reputation for quality. Today, S&B operates as part of the CBC Global Ammunition group, allowing investment in modern equipment while preserving traditional quality standards. The .223 Remington 55-grain FMJ represents S&B's commitment to producing reliable, accurate ammunition at prices that compete with budget brands while delivering performance approaching premium manufacturers. Czech manufacturing culture emphasizes precision engineering and quality control, evident in S&B ammunition's consistency. The 55-grain FMJ loading uses a lead core with full copper jacket, optimized for reliable feeding in semi-automatic rifles. S&B loads this ammunition to .223 Remington specifications rather than 5.56 NATO, making it appropriate for all rifles chambered in .223 or 5.56. The company's European manufacturing facilities feature modern CNC equipment and automated production lines with extensive quality control checkpoints. Each component - bullets, cases, primers, and powder - meets strict specifications before assembly. Finished ammunition undergoes testing for dimensional accuracy, pressure compliance, and functionality. S&B's reputation in Europe as a trusted supplier to military, law enforcement, and civilian markets translates well to American shooters seeking value without sacrificing quality. The ammunition performs reliably across diverse AR-15 platforms and environmental conditions, making it popular with volume shooters and training facilities.",
+    features: [
+      "Czech Republic manufacturing with nearly 200 years of expertise",
+      "55-grain FMJ - universally compatible weight for .223 platforms",
+      "Full copper jacket over lead core for reliable feeding",
+      ".223 Remington specification safe for all rifle chambers",
+      "European precision manufacturing standards and quality control",
+      "Non-corrosive Boxer primers for reliable ignition and reloading",
+      "Reloadable brass cases with consistent dimensions",
+      "Clean-burning powder formulation reduces maintenance",
+      "Compatible with all AR-15 twist rates from 1:12 to 1:7",
+      "Part of CBC Global Ammunition group ensuring supply stability",
+      "Value pricing that rivals budget brands with better quality",
+      "Proven reliability in European military and law enforcement use"
+    ],
+    benefits: [
+      "European precision quality at budget-friendly American pricing",
+      "Nearly 200-year manufacturing heritage ensures consistent quality",
+      "Reliable function tested across multiple rifle platforms",
+      "Better accuracy and consistency than comparably-priced alternatives",
+      "Reloadable brass extends ammunition investment",
+      "Excellent choice for high-volume training and practice"
+    ],
+    useCases: [
+      "High-volume AR-15 training and target shooting",
+      "Plinking and recreational shooting at all ranges",
+      "New shooter instruction and fundamentals development",
+      "Competition practice for budget-conscious competitors",
+      "Function testing of AR-15 rifles and components",
+      "Source of quality brass for handloading and reloading"
+    ],
+    technicalDetails: "Sellier & Bellot .223 Remington 55-grain FMJ is loaded to SAAMI .223 Remington specifications with maximum average pressure of 55,000 PSI. The 55-grain full metal jacket bullet achieves approximately 3,250 fps muzzle velocity from 24-inch test barrels, with typical velocities of 3,100 fps from 20-inch barrels and 2,900 fps from common 16-inch carbine barrels. Muzzle energy from a 20-inch barrel is approximately 1,175 foot-pounds. The bullet features a lead antimony alloy core completely jacketed with copper alloy (gilding metal) on sides and nose, with exposed lead base. Jacket thickness is approximately 0.020 inches, providing reliable feeding and expansion prevention. The FMJ design stabilizes well in all common twist rates including 1:12, 1:9, 1:8, and 1:7. Brass cases are manufactured from standard cartridge brass alloy (70/30 copper-zinc composition) using multi-draw process to achieve proper dimensions and hardness. S&B cases are known for consistent wall thickness and flash hole uniformity. Boxer primers use non-corrosive compounds for long-term storage reliability and environmental safety. Powder selection emphasizes consistent velocities with clean burning characteristics. Quality control includes automated dimensional inspection, pressure testing via piezoelectric transducer methodology, and functionality testing in various rifle platforms. Typical accuracy from quality AR-15 rifles is 2.0-2.5 MOA, representing excellent value for the price point.",
+    whyChoose: "Choose Sellier & Bellot .223 Remington when you want European manufacturing quality at prices typically associated with budget ammunition. S&B occupies a unique market position - it costs less than American premium brands like Federal and Winchester, often matching or beating import budget brands on price, yet delivers superior consistency and reliability. The nearly 200-year manufacturing heritage translates to refined production processes and quality control that shows in the ammunition's performance. Shooters consistently report that S&B ammunition functions reliably, produces decent accuracy, and provides reloadable brass of good quality. The company's position as part of CBC Global Ammunition (which includes Magtech and other brands) ensures supply stability and ongoing investment in manufacturing capabilities. European shooters have trusted S&B for generations, and American shooters are increasingly discovering its value proposition. The ammunition works exceptionally well for high-volume training where reliability matters more than premium features. It's accurate enough for practical applications while priced low enough to encourage regular shooting. For budget-conscious shooters who refuse to compromise on reliability, S&B delivers impressive performance. It's particularly popular with shooting clubs, training facilities, and high-volume shooters who've learned that S&B punches well above its price class in terms of consistency and quality.",
+    seoKeywords: [
+      "sellier bellot 223",
+      "s&b 55gr fmj",
+      "sellier bellot 223 ammo",
+      "buy sb 223 online",
+      "czech 223 ammunition",
+      "sellier 223 for sale",
+      "sb 55 grain 223",
+      "budget 223 ammo",
+      "ar15 sb ammo",
+      "sellier bellot ar15",
+      "223 rem czech made",
+      "sb 223 bulk",
+      "sellier bellot fmj",
+      "cheap 223 training ammo",
+      "european 223 ammo"
+    ]
   },
   {
     id: "556-wolf-polyformance",
@@ -879,7 +1032,58 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Italian-made precision ammunition",
     manufacturer: "Fiocchi",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Fiocchi brings Italian precision engineering to .223 Remington ammunition. Over 145 years of European craftsmanship delivering consistent accuracy and reliability.",
+    longDescription: "Fiocchi of America .223 Remington 55-grain FMJ ammunition represents Italian ammunition manufacturing excellence refined over 145+ years of continuous operation. Founded in 1876 in Lecco, Italy, Fiocchi has grown from a small family operation into one of Europe's premier ammunition manufacturers, known particularly for precision shotshell and centerfire rifle ammunition. Fiocchi's approach emphasizes quality control and consistency, hallmarks of Italian manufacturing culture that values craftsmanship alongside efficiency. The company's American presence through Fiocchi of America ensures product availability and customer support while maintaining Italian manufacturing standards. The .223 Remington 55-grain FMJ loading reflects Fiocchi's commitment to producing reliable, accurate ammunition suitable for both training and precision applications. Unlike budget-focused competitors, Fiocchi emphasizes tighter manufacturing tolerances and more extensive quality control, resulting in ammunition that consistently delivers better accuracy than its modest pricing suggests. The 55-grain full metal jacket bullet uses a lead core with copper alloy jacket, optimized for reliable feeding and consistent performance. Fiocchi loads this ammunition to .223 Remington specifications, making it safe for all rifles including those with .223-only chambers. Italian manufacturing emphasizes precision in every detail - case dimensions, powder charges, bullet seating depth, and crimp consistency all receive careful attention. Fiocchi's quality control processes include multiple inspection points throughout production, pressure testing, and accuracy validation. The result is ammunition that performs noticeably better than many comparably-priced alternatives. Shooters appreciate Fiocchi's consistency - velocities vary minimally from shot to shot, improving accuracy and making ballistic calculations more reliable. The ammunition functions flawlessly in AR-15 platforms, and the brass cases are excellent for reloading. Whether you're training for competition, zeroing optics, or enjoying recreational range time, Fiocchi delivers Italian quality at surprisingly accessible pricing.",
+    features: [
+      "Italian manufacturing with 145+ years of ammunition expertise",
+      "55-grain FMJ bullet with precision copper jacket construction",
+      "Tighter manufacturing tolerances than typical budget ammunition",
+      "Extensive quality control with multiple inspection checkpoints",
+      ".223 Remington specification safe for all rifle chambers",
+      "Premium brass cases with excellent dimensional consistency",
+      "Non-corrosive Boxer primers for reliable ignition",
+      "Clean-burning powder optimized for consistent velocities",
+      "Compatible with all AR-15 twist rates from 1:12 to 1:7",
+      "American distribution through Fiocchi of America",
+      "Better-than-expected accuracy for the price point",
+      "Excellent brass quality for reloading applications"
+    ],
+    benefits: [
+      "Italian precision manufacturing at mid-range pricing",
+      "Noticeably better consistency than budget alternatives",
+      "Superior accuracy makes it suitable for precision practice",
+      "Reliable function across all AR-15 platforms",
+      "Premium brass cases extend value through reloading",
+      "145+ year reputation for quality and innovation"
+    ],
+    useCases: [
+      "Precision target practice requiring better-than-average accuracy",
+      "Competition training for service rifle and 3-gun",
+      "Zeroing and validation of rifle optics and sights",
+      "AR-15 training courses emphasizing accuracy fundamentals",
+      "Recreational shooting where consistency matters",
+      "Source of premium brass for serious handloaders"
+    ],
+    technicalDetails: "Fiocchi .223 Remington 55-grain FMJ is loaded to SAAMI .223 Remington specifications with maximum average pressure of 55,000 PSI. The 55-grain full metal jacket bullet achieves approximately 3,240 fps muzzle velocity from 24-inch test barrels, with real-world velocities of approximately 3,100 fps from 20-inch barrels and 2,900 fps from 16-inch carbine barrels. Muzzle energy from a 20-inch barrel is approximately 1,170 foot-pounds. The bullet construction features a lead antimony alloy core with copper alloy jacket approximately 0.020-0.022 inches thick, slightly heavier than economy ammunition for improved jacket integrity. The jacket completely covers the bullet sides and nose with traditional exposed lead base. Fiocchi's precision manufacturing ensures excellent concentricity and minimal bullet runout, contributing to superior accuracy. Brass cases are manufactured from high-quality cartridge brass (70/30 copper-zinc) with tight tolerances on wall thickness and internal capacity. Case hardness is carefully controlled - hard enough for reliable extraction yet soft enough for multiple reloading cycles. Flash holes are precisely drilled for uniform ignition. Boxer primers use non-corrosive formulation optimized for consistent ignition. Powder selection emphasizes not just clean burning but also consistent metering for minimal velocity variation. Quality control includes automated dimensional inspection using advanced optical systems, pressure testing via piezoelectric methodology, and extensive accuracy testing. Typical accuracy from quality AR-15 rifles is 1.5-2.0 MOA, noticeably better than most budget ammunition.",
+    whyChoose: "Choose Fiocchi .223 Remington when you want accuracy and consistency that exceeds typical training ammunition but without premium match ammunition pricing. Fiocchi occupies an interesting market position - it costs slightly more than budget brands but significantly less than premium American ammunition, while delivering performance closer to the premium category. The Italian manufacturing heritage shows in the details: tighter tolerances, better quality control, and more consistent performance. Shooters who try Fiocchi often become loyal customers, impressed by how well it shoots compared to its modest pricing. The ammunition is particularly popular with competitive shooters who want match-quality practice ammunition and with precision-oriented recreational shooters. Fiocchi's brass cases have earned an excellent reputation among reloaders for their quality and longevity. The cases feature consistent dimensions, proper hardness, and clean primer pockets, often lasting through numerous reloading cycles. For shooters who appreciate European manufacturing quality and attention to detail, Fiocchi delivers impressive value. It's accurate enough for serious practice, consistent enough for reliable ballistic calculations, and affordable enough for regular use. Whether you're a competitive shooter seeking quality practice ammunition, an enthusiast who demands accuracy, or a handloader seeking premium brass, Fiocchi delivers performance that consistently exceeds expectations for its price point.",
+    seoKeywords: [
+      "fiocchi 223 ammo",
+      "fiocchi 55gr fmj",
+      "italian 223 ammunition",
+      "buy fiocchi 223 online",
+      "fiocchi 223 remington",
+      "ar15 fiocchi ammo",
+      "fiocchi 223 for sale",
+      "precision 223 ammo",
+      "fiocchi 55 grain",
+      "223 rem fiocchi",
+      "italian made 223",
+      "fiocchi ar15",
+      "fiocchi 223 bulk",
+      "quality 223 training ammo",
+      "fiocchi rifle ammo"
+    ]
   },
   {
     id: "556-magtech",
@@ -892,7 +1096,58 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Reliable Brazilian-made training ammunition",
     manufacturer: "Magtech",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Magtech delivers Brazilian manufacturing excellence at exceptional value pricing. Part of CBC Global Ammunition, ensuring consistent quality and supply stability.",
+    longDescription: "Magtech 5.56 NATO 55-grain FMJ ammunition brings Brazilian manufacturing efficiency and quality to American shooters at remarkably competitive pricing. Manufactured by CBC (Companhia Brasileira de Cartuchos) in Brazil, Magtech benefits from one of the world's largest and most modern ammunition production facilities. CBC operates as a major military supplier to Brazil and numerous other nations, bringing military-grade manufacturing processes and quality control to commercial ammunition production. As part of CBC Global Ammunition (which also includes Sellier & Bellot), Magtech benefits from shared technology and quality standards across multiple facilities worldwide. The Magtech brand specifically targets high-volume civilian and law enforcement training markets, offering reliable performance at prices that encourage regular shooting. The 5.56 NATO 55-grain FMJ loading represents the most versatile and popular weight for AR-15 platforms, functioning reliably across barrel lengths from 10.5-inch pistols to 20-inch rifles. Magtech loads this ammunition to true 5.56 NATO specifications rather than lower-pressure .223 Remington, providing higher velocities and energy similar to military M193 ball ammunition. This makes it ideal for shooters with 5.56 NATO chambered rifles who want full-power performance. The ammunition uses a lead core full metal jacket bullet with copper alloy jacket optimized for reliable feeding in semi-automatic actions. CBC's modern production facilities feature extensive automation with computerized quality control systems monitoring critical dimensions and specifications throughout production. Each component - bullets, cases, primers, powder - meets strict specifications before assembly. The result is ammunition that functions flawlessly in diverse AR-15 platforms and environmental conditions. Magtech has earned strong reputation among American shooters for reliable ignition, consistent velocities, and excellent accuracy for its price point. For budget-conscious shooters who refuse to compromise on reliability, Magtech delivers outstanding value.",
+    features: [
+      "True 5.56 NATO loading with full military-specification pressure",
+      "55-grain FMJ bullet - universal compatibility across AR-15 platforms",
+      "Manufactured by CBC, major military supplier with modern facilities",
+      "Part of CBC Global Ammunition ensuring supply stability",
+      "Lead core with copper alloy jacket for reliable feeding",
+      "Non-corrosive Boxer primers for reliable ignition and reloading",
+      "Reloadable brass cases with consistent quality",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Compatible with all AR-15 barrel lengths from pistols to rifles",
+      "Stabilizes in all twist rates from 1:12 to 1:7",
+      "Quality control with automated inspection systems",
+      "Competitive pricing rivals budget brands with better consistency"
+    ],
+    benefits: [
+      "Full-power 5.56 NATO performance at budget-friendly pricing",
+      "Military contractor quality applied to commercial production",
+      "Reliable function tested across diverse AR-15 platforms",
+      "Consistent velocities improve accuracy and predictability",
+      "Reloadable brass extends ammunition investment",
+      "Excellent choice for high-volume training and practice"
+    ],
+    useCases: [
+      "High-volume AR-15 training and target shooting",
+      "Law enforcement training courses and qualifications",
+      "Competitive shooting practice for 3-gun and service rifle",
+      "Tactical training courses requiring reliable ammunition",
+      "Plinking and recreational shooting at all distances",
+      "Function testing of AR-15 rifles and components"
+    ],
+    technicalDetails: "Magtech 5.56 NATO 55-grain FMJ is loaded to military 5.56 NATO specifications with higher pressure than .223 Remington (approximately 58,000 PSI vs 55,000 PSI), making it suitable only for rifles marked 5.56 NATO or .223 Wylde. The 55-grain full metal jacket bullet achieves approximately 3,165 fps muzzle velocity from 20-inch barrels, matching M193 ball ammunition performance. From common 16-inch carbine barrels, velocity is approximately 2,950 fps with 1,061 foot-pounds of muzzle energy. The bullet features lead antimony alloy core with copper alloy (gilding metal) jacket approximately 0.020 inches thick. The jacket fully encapsulates bullet sides and nose with exposed lead base, standard for economical military-style ammunition. Bullet design promotes reliable feeding in semi-automatic actions while maintaining jacket integrity through barrel rifling. Brass cases are manufactured using modern high-speed production equipment with tight tolerances on critical dimensions. Cases are drawn from standard cartridge brass alloy (70% copper, 30% zinc) and undergo multi-stage forming process. Wall thickness is controlled for consistent internal capacity, improving velocity consistency. Flash holes are precisely formed for uniform primer ignition. Boxer primers use non-corrosive formulation meeting military specifications for reliability and storage life. Powder selection emphasizes clean burning with minimal flash, optimized for barrel lengths from 14.5 to 20 inches. Quality control includes statistical process control with automated dimensional inspection, pressure testing via piezoelectric transducer methodology, and functionality testing. Typical accuracy from quality AR-15 rifles is 2.0-2.5 MOA, excellent for training and practical applications.",
+    whyChoose: "Choose Magtech 5.56 NATO when you want full-power military-specification performance at prices typically associated with budget ammunition. Magtech delivers exceptional value - it performs like premium American ammunition but costs significantly less. The true 5.56 NATO loading provides higher velocities and energy than .223 Remington, important for shooters who want authentic AR-15 performance. CBC's status as a major military contractor means the production processes and quality control used for Magtech meet military standards. This translates to reliable ignition in all conditions, consistent velocities, and minimal malfunctions. American shooters have embraced Magtech for its reliability and value, making it popular with everyone from casual plinkers to serious competitors. The ammunition functions flawlessly across diverse AR-15 platforms including short-barreled pistols, carbines, and full-length rifles. Magtech's brass cases have earned good reputation among reloaders for their consistent quality and durability through multiple loading cycles. The cases feature proper hardness and clean primer pockets, making them suitable for handloading. For high-volume shooters, training facilities, and budget-conscious competitors, Magtech delivers performance that belies its modest pricing. It's particularly popular with shooters who've learned that country of origin matters less than manufacturing standards and quality control. Magtech proves that Brazilian manufacturing can compete with and often exceed American budget brands while maintaining lower pricing. When your goal is maximum trigger time without reliability concerns, Magtech delivers outstanding value.",
+    seoKeywords: [
+      "magtech 556 nato",
+      "magtech 55gr fmj",
+      "brazilian 556 ammo",
+      "buy magtech 556 online",
+      "magtech ar15 ammo",
+      "556 nato magtech",
+      "magtech 55 grain",
+      "budget 556 ammo",
+      "magtech 556 for sale",
+      "ar15 magtech ammunition",
+      "556 training ammo",
+      "magtech bulk 556",
+      "cheap 556 nato",
+      "magtech rifle ammo",
+      "cbc 556 ammunition"
+    ]
   },
 
   // Rifle Ammunition - .308 Winchester / 7.62×51mm NATO Category
