@@ -1,12 +1,14 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
+import { ShopSidebar } from "@/components/ShopSidebar";
 import { products } from "@/data/products";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Package } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -97,15 +99,23 @@ const Products = () => {
   }, [inStockCount]);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      
-      <main className="container mx-auto px-4 py-12">
-        <header className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Package className="h-10 w-10 text-primary" />
-            <h1 className="text-4xl font-bold">All Ammunition Products</h1>
-          </div>
+    <SidebarProvider>
+      <div className="min-h-screen bg-background flex w-full">
+        <ShopSidebar type="products" />
+        
+        <div className="flex-1 flex flex-col">
+          <Navigation />
+          
+          <main className="container mx-auto px-4 py-12">
+            <div className="mb-4">
+              <SidebarTrigger className="mb-4" />
+            </div>
+            
+            <header className="mb-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Package className="h-10 w-10 text-primary" />
+                <h1 className="text-4xl font-bold">All Ammunition Products</h1>
+              </div>
           <p className="text-muted-foreground mb-4">
             Browse our complete selection of {products.length} ammunition products for rifles, pistols, 
             shotguns, and specialty applications
@@ -155,11 +165,13 @@ const Products = () => {
               <p className="text-muted-foreground">No products found matching your criteria.</p>
             </div>
           )}
-        </section>
-      </main>
+          </section>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+        </div>
+      </div>
+    </SidebarProvider>
   );
 };
 

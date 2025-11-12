@@ -1,12 +1,14 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { TopSellingCard } from "@/components/TopSellingCard";
+import { ShopSidebar } from "@/components/ShopSidebar";
 import { topAmmunition } from "@/data/topAmmunition";
 import { products } from "@/data/products";
 import { Input } from "@/components/ui/input";
 import { useState, useMemo, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Package } from "lucide-react";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const Categories = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -152,12 +154,20 @@ const Categories = () => {
   }, [totalProducts, totalCategories, categoriesWithCounts]);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      
-      <main className="container mx-auto px-4 py-12">
-        {/* Header Section with SEO-optimized content */}
-        <header className="mb-12">
+    <SidebarProvider>
+      <div className="min-h-screen bg-background flex w-full">
+        <ShopSidebar type="categories" />
+        
+        <div className="flex-1 flex flex-col">
+          <Navigation />
+          
+          <main className="container mx-auto px-4 py-12">
+            <div className="mb-4">
+              <SidebarTrigger className="mb-4" />
+            </div>
+            
+            {/* Header Section with SEO-optimized content */}
+            <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <Package className="h-10 w-10 text-primary" />
             <h1 className="text-4xl font-bold">Ammunition Catalog</h1>
@@ -264,7 +274,9 @@ const Categories = () => {
       </main>
 
       <Footer />
-    </div>
+      </div>
+      </div>
+    </SidebarProvider>
   );
 };
 

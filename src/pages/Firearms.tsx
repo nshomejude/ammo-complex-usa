@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { FirearmCard } from "@/components/FirearmCard";
+import { ShopSidebar } from "@/components/ShopSidebar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -11,6 +12,7 @@ import { firearmCategories } from "@/data/firearmCategories";
 import { Search, Filter, Shield } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const Firearms = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -57,11 +59,19 @@ const Firearms = () => {
   const paginatedFirearms = filteredFirearms.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      
-      <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-8 border-warning bg-warning/10">
+    <SidebarProvider>
+      <div className="min-h-screen bg-background flex w-full">
+        <ShopSidebar type="firearms" />
+        
+        <div className="flex-1 flex flex-col">
+          <Navigation />
+          
+          <section className="container mx-auto px-4 py-16">
+            <div className="mb-4">
+              <SidebarTrigger className="mb-4" />
+            </div>
+            
+            <Alert className="mb-8 border-warning bg-warning/10">
           <AlertCircle className="h-4 w-4 text-warning" />
           <AlertTitle className="text-warning-foreground">FFL Transfer Required</AlertTitle>
           <AlertDescription className="text-warning-foreground">
@@ -228,7 +238,9 @@ const Firearms = () => {
       </section>
 
       <Footer />
-    </div>
+      </div>
+      </div>
+    </SidebarProvider>
   );
 };
 
