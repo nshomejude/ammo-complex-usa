@@ -1,0 +1,48 @@
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { ShoppingCart } from "lucide-react";
+
+interface ProductCardProps {
+  name: string;
+  caliber: string;
+  rounds: number;
+  price: number;
+  inStock: boolean;
+  image?: string;
+}
+
+export const ProductCard = ({ name, caliber, rounds, price, inStock }: ProductCardProps) => {
+  return (
+    <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50">
+      <div className="aspect-square bg-secondary flex items-center justify-center">
+        <div className="text-center p-6">
+          <div className="text-4xl font-bold text-tactical mb-2">{caliber}</div>
+          <div className="text-sm text-muted-foreground">{rounds} Rounds</div>
+        </div>
+      </div>
+      
+      <CardContent className="p-4">
+        <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
+        <div className="flex items-center justify-between">
+          <span className="text-2xl font-bold text-tactical">${price.toFixed(2)}</span>
+          {inStock ? (
+            <Badge variant="outline" className="border-tactical text-tactical">In Stock</Badge>
+          ) : (
+            <Badge variant="outline" className="border-destructive text-destructive">Out of Stock</Badge>
+          )}
+        </div>
+      </CardContent>
+      
+      <CardFooter className="p-4 pt-0">
+        <Button 
+          className="w-full bg-tactical hover:bg-tactical/90" 
+          disabled={!inStock}
+        >
+          <ShoppingCart className="mr-2 h-4 w-4" />
+          Add to Cart
+        </Button>
+      </CardFooter>
+    </Card>
+  );
+};
