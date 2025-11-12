@@ -19,12 +19,14 @@ export const FirearmCategoryCard = ({
   icon: Icon, 
   description, 
   salesCount, 
+  slug,
   trending,
   recommendedAmmo,
   ageRequirement
 }: FirearmCategoryCardProps) => {
   return (
-    <Card className="group relative cursor-pointer overflow-hidden transition-all hover:shadow-xl hover:border-tactical/50 hover:scale-[1.02]">
+    <Link to={`/firearm-category/${slug}`}>
+      <Card className="group relative cursor-pointer overflow-hidden transition-all hover:shadow-xl hover:border-tactical/50 hover:scale-[1.02]">
       {trending && (
         <Badge className="absolute top-3 right-3 bg-accent text-accent-foreground border-0 z-10">
           <TrendingUp className="h-3 w-3 mr-1" />
@@ -65,5 +67,6 @@ export const FirearmCategoryCard = ({
         </div>
       </CardContent>
     </Card>
+    </Link>
   );
 };

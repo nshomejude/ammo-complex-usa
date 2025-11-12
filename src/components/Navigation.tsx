@@ -19,6 +19,9 @@ export const Navigation = () => {
             <Link to="/categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Ammo Categories
             </Link>
+            <Link to="/firearms" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Firearms
+            </Link>
             <Link to="/firearm-categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Firearm Types
             </Link>
