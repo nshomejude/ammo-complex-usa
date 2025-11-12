@@ -176,10 +176,10 @@ const ProductDetail = () => {
         <article className="grid gap-8 lg:grid-cols-2 mb-12">
           {/* Product Image/Placeholder */}
           <Card className="overflow-hidden">
-            <div className="aspect-square bg-secondary flex items-center justify-center p-12">
+            <div className="aspect-square bg-secondary flex items-center justify-center p-8">
               <div className="text-center">
-                <div className="text-8xl font-bold text-tactical mb-4">{product.caliber}</div>
-                <div className="text-2xl text-muted-foreground">{product.rounds} Rounds</div>
+                <div className="text-5xl font-bold text-tactical mb-2">{product.caliber}</div>
+                <div className="text-base text-muted-foreground">{product.rounds} Rounds</div>
               </div>
             </div>
           </Card>
