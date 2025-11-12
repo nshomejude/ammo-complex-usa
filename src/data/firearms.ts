@@ -110,7 +110,56 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4.02 inches",
     weight: "23.65 oz",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Glock 19 is the world's most popular pistol, perfectly balancing compact concealability with full-size shootability. Trusted by more law enforcement agencies and civilians than any other handgun.",
+    longDescription: "The Glock 19 Gen5 represents the perfect compromise between size and capability, earning its reputation as the most versatile and widely adopted pistol in modern history. With over 65% of U.S. law enforcement agencies carrying Glock pistols, and the Glock 19 being the most common model, it has proven itself as the ultimate do-everything handgun. The compact 19 retains the reliability and durability of the full-size Glock 17 while reducing both length and height for improved concealability. Despite its compact dimensions, the Glock 19 maintains a full-size grip that accommodates all but the largest hands, providing excellent control and comfortable extended shooting sessions. The Gen5 iteration incorporates refinements based on millions of rounds of real-world use, including the renowned Glock Marksman Barrel for enhanced accuracy, ambidextrous slide stops, and removal of finger grooves for universal comfort. Whether serving as a duty pistol, concealed carry gun, competition pistol, or home defense weapon, the Glock 19 excels in every role. Its 15+1 capacity provides substantial firepower in a package small enough for all-day concealed carry, while the reduced size and weight minimize fatigue during training. The Glock 19 has become the gold standard by which all other compact pistols are judged.",
+    features: [
+      "Compact dimensions ideal for concealed carry without sacrificing shootability",
+      "15+1 capacity provides excellent firepower in compact package",
+      "Glock Marksman Barrel with enhanced polygonal rifling for superior accuracy",
+      "Gen5 nDLC coating provides extreme corrosion and wear resistance",
+      "Ambidextrous slide stop levers accommodate all shooters",
+      "Universal grip without finger grooves fits all hand sizes",
+      "Safe Action trigger system with three independent safeties",
+      "Flared magazine well enables faster reloads",
+      "Reversible magazine catch for left-handed operation",
+      "Reduced slide protrusion for smoother concealed carry draw"
+    ],
+    benefits: [
+      "Ultimate versatility - excels as duty, carry, competition, and home defense pistol",
+      "Legendary Glock reliability proven through billions of rounds fired",
+      "Perfect size balance - concealable yet controllable",
+      "Unmatched aftermarket support with countless holster and accessory options",
+      "Easy maintenance and parts availability worldwide",
+      "Holds value exceptionally well - Glocks retain resale value"
+    ],
+    useCases: [
+      "Primary concealed carry pistol for armed civilians",
+      "Law enforcement duty weapon for detectives and plain-clothes officers",
+      "Backup gun for uniformed officers carrying full-size pistols",
+      "Competition shooting in Production and Carry Optics divisions",
+      "Home defense with weapon-mounted light capability",
+      "International travel - rental Glock 19s available at most ranges worldwide"
+    ],
+    technicalDetails: "The Glock 19 Gen5 features the enhanced Glock Marksman Barrel with improved polygonal rifling that increases accuracy while extending barrel life beyond 100,000 rounds. The barrel and slide receive nDLC (diamond-like carbon) coating providing hardness rating of 85 HRC and corrosion resistance superior to any conventional finish. The compact dimensions measure 7.36 inches in overall length with a 4.02-inch barrel, while height measures 5.04 inches and width just 1.26 inches. Unloaded weight of 23.65 ounces with loaded weight of approximately 30 ounces makes it ideal for all-day carry. The polymer frame is reinforced with steel inserts at critical stress points and features an integrated beavertail and accessory rail for light/laser mounting. The trigger maintains the Safe Action system with trigger safety, firing pin safety, and drop safety, delivering a consistent 5.5-pound pull weight. The dual recoil spring assembly reduces felt recoil and improves longevity. Magazine design uses steel body with polymer follower and floor plate, with witness holes for round counting.",
+    whyChoose: "Choose the Glock 19 when you want the most proven, most trusted, and most versatile pistol available today. No other handgun has been tested more extensively in real-world conditions by military, law enforcement, and civilian users across the globe. The Glock 19's dominance in the market isn't by accident - it's earned through uncompromising performance and reliability. When federal agencies including the FBI, DEA, and Secret Service issue Glock 19s, they're making decisions based on rigorous testing and evaluation. That same legendary reliability is available to you. The Glock 19's compact size means you can actually carry it every day without discomfort, while its full-size shootability means you'll perform well when it matters. With Glock's limited lifetime warranty, world-class customer service, and global parts availability, you're investing in a pistol that will serve you for decades. The massive aftermarket support means customization options are limitless, from simple upgrades to complete transformations. Choose the Glock 19 and join millions of satisfied users worldwide who trust their lives to this exceptional pistol.",
+    seoKeywords: [
+      "glock 19 gen5",
+      "glock 19 for sale",
+      "buy glock 19 online",
+      "best concealed carry pistol",
+      "compact 9mm pistol",
+      "glock 19 price",
+      "most popular handgun",
+      "law enforcement pistol",
+      "ccw pistol 9mm",
+      "glock 19 review",
+      "duty pistol compact",
+      "best 9mm carry gun",
+      "glock 19 holster",
+      "reliable compact pistol",
+      "glock 19 gen5 features"
+    ]
   },
   {
     id: "sig-p320",
@@ -189,7 +238,56 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4.4 inches",
     weight: "34 oz",
-    finish: "Nitron Black"
+    finish: "Nitron Black",
+    shortDescription: "The SIG Sauer P226 is the legendary service pistol carried by elite special operations forces worldwide. Proven through decades of Navy SEAL missions and law enforcement service.",
+    longDescription: "The SIG Sauer P226 earned its legendary status through selection by the U.S. Navy SEALs and continues to serve the world's most elite warfighters decades later. When the U.S. military sought to replace the 1911 pistol, the P226 tied with the Beretta 92 in reliability testing, with both pistols firing over 35,000 rounds without a failure. The Navy SEALs chose the P226 for its superior corrosion resistance in maritime environments and exceptional accuracy. This storied pistol features a double-action/single-action trigger system that provides a long, deliberate first shot followed by short, crisp subsequent shots - ideal for defensive use. The all-metal construction with aluminum alloy frame and stainless steel slide provides a solid, confidence-inspiring feel while managing recoil effectively. Unlike many polymer pistols, the P226's steel slide-to-frame fit creates an inherently accurate platform that has set the standard for service pistol accuracy. The E2 (Enhanced Ergonomics) grip reduces reach to trigger while maintaining full magazine capacity, accommodating a wider range of shooters. SIG's proprietary Nitron finish provides corrosion resistance that exceeds military specifications. Whether you're a professional requiring the ultimate duty pistol or an enthusiast who appreciates time-tested quality, the P226 delivers uncompromising performance backed by real-world operational history.",
+    features: [
+      "Double-action/single-action trigger for safe carry with fast first-shot capability",
+      "All-metal construction with aluminum alloy frame and stainless steel slide",
+      "Proprietary Nitron finish exceeds 200-hour salt spray test requirements",
+      "E2 enhanced ergonomic grip reduces trigger reach without reducing capacity",
+      "SIGLITE night sights for 24/7 operational capability",
+      "Cold-hammer-forged barrel for match-grade accuracy and extended life",
+      "Four-point safety system including decocking lever",
+      "Accessory rail for weapon-mounted lights and lasers",
+      "Reversible magazine release for ambidextrous operation",
+      "Short reset trigger for rapid follow-up shots"
+    ],
+    benefits: [
+      "Navy SEAL proven reliability in extreme maritime and combat conditions",
+      "Superior accuracy from tight slide-to-frame fit and quality barrel",
+      "Safe double-action first shot doesn't require manual safety manipulation",
+      "All-metal construction provides enhanced recoil management",
+      "Exceptional corrosion resistance for humid and maritime environments",
+      "SIG Sauer's legendary German-Swiss engineering and quality control"
+    ],
+    useCases: [
+      "Special operations and military special forces sidearm",
+      "Law enforcement duty pistol for federal, state, and local agencies",
+      "Professional security and executive protection details",
+      "Competition shooting in Stock Service Pistol and similar divisions",
+      "Maritime security and coast guard applications",
+      "Home defense for those preferring hammer-fired DA/SA pistols"
+    ],
+    technicalDetails: "The P226 features a cold-hammer-forged barrel manufactured to match-grade tolerances with 1:10 twist rate optimized for 9mm ammunition from 115 to 147 grains. The stainless steel slide is precision-machined and receives SIG's proprietary Nitron finish - a physical vapor deposition process creating a surface hardness of 69 HRC with salt spray resistance exceeding 200 hours. The aluminum alloy frame uses 7000-series aluminum with hard-coat anodizing for corrosion protection and wear resistance. The double-action trigger pull measures approximately 10 pounds with smooth stacking, while single-action pull measures 4.4 pounds with minimal take-up and crisp break. Short reset of approximately 0.1 inches enables rapid accurate fire. The E2 grip reduces circumference while maintaining 15-round magazine capacity through optimized geometry. The decocking lever safely lowers the hammer without trigger manipulation. The firing pin is mechanically locked until the trigger is pulled fully to the rear. The P226 is designed to meet or exceed MIL-STD-810 standards for durability and has demonstrated mean rounds between failure exceeding 35,000 rounds in military testing.",
+    whyChoose: "Choose the SIG Sauer P226 when you demand a pistol with proven combat credentials and uncompromising quality. The P226's selection by Navy SEALs wasn't based on cost or politics - it was chosen because it performed flawlessly in the most rigorous testing imaginable and continues to serve in the world's most demanding environments. Unlike pistols whose reputations are built on marketing, the P226's legend comes from actual operational use in conflicts worldwide. The all-metal construction provides a shooting experience that many consider superior to polymer pistols, with reduced felt recoil and enhanced accuracy. SIG Sauer's commitment to quality is evident in every aspect of the P226, from the cold-hammer-forged barrel to the hand-fitted slide-to-frame assembly. The double-action/single-action trigger system is preferred by many professionals for its inherent safety and versatility. When you choose the P226, you're choosing the pistol trusted by America's most elite warriors and law enforcement professionals who demand absolute reliability. SIG Sauer's warranty and customer service are industry-leading, and the P226's all-metal construction means it will outlast polymer alternatives by decades.",
+    seoKeywords: [
+      "sig p226 for sale",
+      "sig sauer p226",
+      "navy seal pistol",
+      "buy sig p226 online",
+      "da/sa pistol 9mm",
+      "sig p226 legion",
+      "best duty pistol",
+      "sig p226 price",
+      "military service pistol",
+      "sig p226 review",
+      "elite forces pistol",
+      "sig p226 9mm",
+      "tactical pistol",
+      "sig sauer service pistol",
+      "p226 navy"
+    ]
   },
   {
     id: "sig-p229",
@@ -219,7 +317,56 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.25 inches",
     weight: "24.25 oz",
-    finish: "Armornite Black"
+    finish: "Armornite Black",
+    shortDescription: "The Smith & Wesson M&P9 M2.0 combines American manufacturing excellence with modern striker-fired performance. Trusted by over 400 law enforcement agencies nationwide.",
+    longDescription: "The Smith & Wesson M&P (Military & Police) 9mm represents over 170 years of firearms manufacturing expertise applied to modern defensive pistol design. Introduced in 2005 and significantly improved with the M2.0 generation, the M&P9 has earned widespread adoption by law enforcement agencies including major departments in Los Angeles, Chicago, and hundreds of other jurisdictions. Smith & Wesson specifically designed the M&P series based on extensive input from military and law enforcement end-users, resulting in a pistol that excels in real-world duty applications. The M2.0 generation introduced a completely redesigned trigger system with crisp break and short, audible reset that rivals much more expensive pistols. The aggressive grip texturing provides secure purchase in all conditions including rain, blood, and sweat - critical for duty use. Four interchangeable palm swell grip inserts allow customization to fit any hand size, addressing the primary complaint with first-generation models. The stainless steel slide features enhanced serrations both front and rear for positive manipulation. Smith & Wesson's proprietary Armornite finish provides corrosion resistance exceeding hard chrome. With 17+1 capacity, low bore axis, and excellent ergonomics, the M&P9 M2.0 delivers everything needed in a modern service pistol at an American-made price point.",
+    features: [
+      "M2.0 enhanced trigger with crisp break and short tactile reset",
+      "Aggressive grip texturing for secure control in adverse conditions",
+      "Four interchangeable palm swell inserts for customized fit",
+      "17+1 capacity provides substantial firepower",
+      "Low bore axis reduces muzzle rise and accelerates split times",
+      "Enhanced front and rear slide serrations for positive manipulation",
+      "Armornite corrosion-resistant finish exceeds hard chrome durability",
+      "Stainless steel chassis embedded in polymer frame for durability",
+      "Rigid trigger guard allows aggressive support hand grip",
+      "Ambidextrous slide stop and reversible magazine release"
+    ],
+    benefits: [
+      "Proven law enforcement reliability with over 400 agencies using M&P pistols",
+      "Superior ergonomics with customizable grip to fit all hand sizes",
+      "Outstanding value - features typically found on more expensive pistols",
+      "Made in USA by America's oldest firearms manufacturer",
+      "Excellent aftermarket support for accessories and modifications",
+      "Smith & Wesson lifetime service policy and customer support"
+    ],
+    useCases: [
+      "Law enforcement duty weapon for patrol and investigators",
+      "Home defense with weapon light mounting capability",
+      "Concealed carry for those preferring full-size platforms",
+      "Competition shooting in USPSA Production and Carry Optics divisions",
+      "Professional firearms training and instruction",
+      "First responder backup gun with full-size capability"
+    ],
+    technicalDetails: "The M&P9 M2.0 features a stainless steel slide and barrel with Smith & Wesson's proprietary Armornite finish, a nitrocarburizing process that creates a 65-70 HRC surface hardness exceeding traditional finishes. The barrel is conventionally rifled with 1:10 twist rate for optimal 9mm performance with bullet weights from 115 to 147 grains. The polymer frame is reinforced with a stainless steel chassis at critical stress points including locking block area and slide rails. The trigger mechanism delivers approximately 5.5-6 pound pull weight with defined wall, crisp break, and short reset of approximately 0.25 inches. The striker safety, trigger safety, and sear release lever provide drop safety while allowing immediate trigger-pull firing. Magazine capacity is 17 rounds with extended floor plate, using proven steel body construction with polymer follower. The Picatinny-style accessory rail accommodates standard weapon lights and lasers. Overall length measures 7.4 inches with 4.25-inch barrel, height of 5.5 inches, width of 1.2 inches, and weight of 24.25 ounces unloaded. The pistol is designed to meet law enforcement torture testing requirements including 18,000+ round endurance testing.",
+    whyChoose: "Choose the Smith & Wesson M&P9 M2.0 when you want American quality, proven law enforcement reliability, and exceptional value. Smith & Wesson's 170+ year history of manufacturing firearms for military, law enforcement, and civilian use is unmatched in American gunmaking. The M&P series was developed specifically for professional end-users with input from law enforcement trainers and operators, resulting in a pistol refined for real-world duty applications. With adoption by over 400 law enforcement agencies including major metropolitan departments, the M&P's reliability is documented through millions of duty rounds. The M2.0 improvements address every criticism of earlier models while retaining all the features that made M&P pistols successful. The enhanced trigger system rivals custom work while remaining at a factory price point. Four interchangeable grip inserts mean the M&P can be perfectly fitted to your hand - something few other manufacturers offer. Smith & Wesson stands behind their products with a lifetime service policy that ensures your M&P will serve you for decades. When you buy an M&P, you're supporting American manufacturing while getting a pistol that performs as well as options costing hundreds more.",
+    seoKeywords: [
+      "smith and wesson mp9",
+      "mp9 m2.0 for sale",
+      "buy mp9 online",
+      "smith wesson 9mm pistol",
+      "law enforcement pistol",
+      "mp9 2.0 price",
+      "best duty pistol",
+      "smith wesson striker fired",
+      "mp9 review",
+      "american made 9mm",
+      "police duty pistol",
+      "mp9 compact",
+      "smith wesson service pistol",
+      "mp9 holster",
+      "reliable 9mm pistol"
+    ]
   },
   {
     id: "cz-75",
@@ -234,7 +381,56 @@ export const firearms: Firearm[] = [
     capacity: "16+1",
     barrelLength: "4.6 inches",
     weight: "35 oz",
-    finish: "Black Polycoat"
+    finish: "Black Polycoat",
+    shortDescription: "The CZ 75 is the legendary Czech pistol that combined Eastern Bloc reliability with exceptional ergonomics. One of the most widely copied handgun designs in history.",
+    longDescription: "The CZ 75, introduced in 1975, revolutionized service pistol design with its innovative combination of features that would influence handgun development for decades. Designed behind the Iron Curtain when firearms patents weren't recognized, the CZ 75's excellence led to more copies and variants than perhaps any other pistol design - a testament to its inherent brilliance. The CZ 75's most distinctive feature is its slide-inside-frame design where the slide rides on rails inside the frame rather than outside, lowering the bore axis and improving control. The steel frame provides substantial weight that tames recoil while the ergonomic grip design has been praised by shooters worldwide as one of the most comfortable and natural-pointing handguns ever made. The double-action/single-action trigger system offers versatility and safety, while the manual thumb safety (or decocker in some variants) provides additional peace of mind. CZ's manufacturing heritage dating to 1936 ensures quality construction and attention to detail. The pistol has served military and law enforcement units in over 60 countries and has dominated competitive shooting in IPSC Standard division for decades. For shooters who appreciate traditional all-steel construction, refined ergonomics, and proven performance, the CZ 75 represents the pinnacle of double-action pistol design.",
+    features: [
+      "All-steel construction with forged carbon steel slide and frame",
+      "Slide-inside-frame design for lower bore axis and improved control",
+      "Exceptional ergonomics with natural pointing characteristics",
+      "Double-action/single-action trigger with manual safety or decocker options",
+      "Cold-hammer-forged barrel for match-grade accuracy",
+      "High-capacity 16+1 rounds in standard-height magazines",
+      "Ambidextrous manual safety on B model",
+      "Adjustable three-dot sights for precision shot placement",
+      "Accessory rail on SP-01 variants for light mounting",
+      "Multiple variants available including compact, competition, and tactical models"
+    ],
+    benefits: [
+      "Superior accuracy from steel construction and tight tolerances",
+      "Legendary reliability proven through military service in 60+ countries",
+      "Exceptional recoil management from all-steel weight",
+      "Ergonomics praised by experts as among the best ever designed",
+      "Outstanding value compared to other premium all-steel pistols",
+      "Massive aftermarket support from CZ Custom and third-party manufacturers"
+    ],
+    useCases: [
+      "IPSC and USPSA competition shooting in Standard and Production divisions",
+      "Military and law enforcement duty use internationally",
+      "Home defense for those preferring substantial weight and capacity",
+      "Precision target shooting and training",
+      "Competitive shooting sports requiring double-action pistols",
+      "Collection piece representing iconic Cold War era design"
+    ],
+    technicalDetails: "The CZ 75 features a forged carbon steel frame and slide with surface hardening for wear resistance. The barrel is cold-hammer forged from chrome-moly steel with conventional land-and-groove rifling using 6 grooves and 1:10 twist rate optimized for 9mm. The unique slide-inside-frame design uses internal frame rails, lowering the bore axis to approximately 0.5 inches above the web of the hand - significantly lower than most service pistols. This design reduces muzzle rise and accelerates recovery between shots. The double-action trigger pull measures approximately 10-12 pounds with smooth stacking, while single-action measures 4-5 pounds with minimal travel and crisp break. The firing pin block safety prevents discharge if dropped. Magazine capacity is 16 rounds using steel body with witness holes. The grip angle of approximately 105 degrees provides natural pointing for most shooters. Steel frame weight helps manage recoil with loaded weight of approximately 42 ounces. The pistol's locking system uses a modified Browning cam system with single locking lug engaging the ejection port. Quality control includes individual function testing and accuracy verification.",
+    whyChoose: "Choose the CZ 75 when you want a pistol representing the pinnacle of traditional steel-framed handgun design. The CZ 75's influence on modern pistol development cannot be overstated - it has been copied more than any other design because it simply got so many things right. While modern pistols chase lighter weight through polymer construction, the CZ 75's substantial steel provides recoil management and accuracy that lightweight guns cannot match. The ergonomics are legendary, with even competitors acknowledging the CZ 75's exceptional handling characteristics. For competition shooters, the CZ 75 and its variants have dominated IPSC Standard division for decades, winning world championships repeatedly. CZ's manufacturing quality, honed through over 85 years of firearms production, ensures your CZ 75 is built to last generations. The vast aftermarket support from CZ Custom and numerous third-party manufacturers means customization options are nearly limitless. When you choose a CZ 75, you're not just buying a pistol - you're acquiring an icon that has influenced handgun design worldwide and will continue to deliver exceptional performance for decades to come.",
+    seoKeywords: [
+      "cz 75 for sale",
+      "cz 75 b",
+      "buy cz 75 online",
+      "cz 75 sp-01",
+      "czech pistol 9mm",
+      "cz 75 price",
+      "best steel frame pistol",
+      "cz 75 review",
+      "competition pistol 9mm",
+      "cz 75 variants",
+      "tactical 9mm pistol",
+      "cz 75 compact",
+      "ipsc pistol",
+      "cz 75 bd",
+      "double action pistol"
+    ]
   },
   {
     id: "hk-vp9",
@@ -249,7 +445,56 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4.09 inches",
     weight: "26.56 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Heckler & Koch VP9 combines German engineering excellence with modern striker-fired performance. Features the finest factory trigger available on any production striker-fired pistol.",
+    longDescription: "The Heckler & Koch VP9 (Volkspistole, or 'People's Pistol') represents H&K's entry into the striker-fired pistol market, bringing with it the legendary German engineering and quality that has made Heckler & Koch firearms the choice of special forces units worldwide. Unlike rushed-to-market competitors, H&K spent years developing the VP9, studying existing designs and incorporating innovations that address common striker-fired pistol shortcomings. The result is a pistol that sets new standards for trigger quality, ergonomics, and accuracy in the striker-fired category. The VP9's trigger is widely considered the finest factory striker-fired trigger available, featuring a light, crisp break with short, positive reset that rivals custom work. The patented grip system allows customization with interchangeable backstraps and side panels, providing 27 different size combinations to fit virtually any hand size perfectly. The charging supports (extended slide releases) on both sides enable easy slide manipulation without changing grip. H&K's cold-hammer-forged polygonal bore barrel delivers exceptional accuracy and longevity. The aggressive grip texturing provides secure purchase without being abrasive to skin or clothing. Every component reflects H&K's military-grade quality standards, from the enhanced polymer formulation to the precision-machined slide and barrel. For shooters who demand German quality and are willing to pay for superiority, the VP9 delivers performance that justifies its premium price.",
+    features: [
+      "Best-in-class striker-fired trigger with light pull and crisp break",
+      "Patented customizable grip system with interchangeable backstraps and panels",
+      "27 different grip size configurations for perfect fit",
+      "Extended charging supports (slide releases) for ambidextrous operation",
+      "Cold-hammer-forged polygonal bore barrel for accuracy and longevity",
+      "Hostile Environment finish for extreme corrosion resistance",
+      "Luminescent three-dot sights with photoluminescent option",
+      "Enhanced aggressive grip texturing for secure control",
+      "Extended Picatinny-style rail for lights and accessories",
+      "HK quality construction exceeding NATO AC 225 specifications"
+    ],
+    benefits: [
+      "Superior trigger quality eliminates need for aftermarket upgrades",
+      "Perfect grip customization for all hand sizes improves control",
+      "German engineering ensures reliability exceeding 30,000+ rounds",
+      "Exceptional accuracy from precision barrel and tight tolerances",
+      "Ambidextrous controls accommodate left and right-handed shooters",
+      "H&K's reputation for quality backed by rigorous testing and warranty"
+    ],
+    useCases: [
+      "Law enforcement duty pistol for agencies preferring striker-fired designs",
+      "Competition shooting in USPSA Production and Carry Optics divisions",
+      "Home defense with customizable grip and accessory mounting",
+      "Professional firearms instruction and training facilities",
+      "Concealed carry for those who prefer full-size platforms",
+      "Range use for shooters who appreciate premium quality and accuracy"
+    ],
+    technicalDetails: "The VP9 features H&K's renowned cold-hammer-forged barrel manufactured using the same process as their military firearms. The polygonal bore design with approximately 8 lands and grooves creates a seal that increases velocity by 50-100 fps compared to conventional rifling while extending barrel life beyond 100,000 rounds. The barrel is made from cannon-grade steel with 1:10 twist rate. The slide is precision-machined from high-strength steel and receives H&K's proprietary Hostile Environment finish - a multi-stage process providing corrosion resistance exceeding 1,000 hours of salt spray testing. The polymer frame uses H&K's enhanced formulation with 40% fiberglass reinforcement for rigidity and temperature stability from -40°F to 185°F. The striker assembly features a unique dual spring system reducing striker energy variation. Trigger pull weight measures 5.4 pounds with minimal take-up, clean break, and short reset of 0.1 inches. The firing pin safety, trigger safety, and out-of-battery safety provide drop safety from any angle. The VP9 exceeds NATO AC 225 testing requirements including 91,000 mean rounds between failures in official testing.",
+    whyChoose: "Choose the Heckler & Koch VP9 when you demand German engineering excellence and refuse to compromise on quality. While other manufacturers rush products to market, H&K spent years perfecting the VP9, resulting in a pistol that sets benchmarks others strive to meet. The VP9's trigger is so refined that many shooters purchasing the pistol cannot believe it's factory stock - it rivals custom trigger work costing hundreds of dollars. This isn't marketing hyperbole; it's verifiable by handling the pistol at any dealer. The extensive grip customization means the VP9 can be perfectly fitted to your hand, something mass-produced pistols simply cannot offer. H&K's military heritage ensures the VP9 is built to standards that exceed civilian requirements - the same quality that makes H&K firearms the choice of Germany's GSG 9, British SAS, and U.S. Delta Force. While the VP9 costs more than budget striker-fired pistols, the difference in quality is immediately apparent in handling and shooting. H&K backs the VP9 with excellent warranty support and customer service. When you choose the VP9, you're investing in the finest striker-fired pistol currently produced - a firearm that will deliver premium performance for decades while retaining value better than cheaper alternatives.",
+    seoKeywords: [
+      "hk vp9 for sale",
+      "heckler koch vp9",
+      "buy vp9 online",
+      "hk vp9 price",
+      "best striker fired pistol",
+      "german 9mm pistol",
+      "vp9 trigger",
+      "hk vp9 review",
+      "premium 9mm pistol",
+      "vp9 optics ready",
+      "heckler koch striker fired",
+      "vp9 tactical",
+      "german service pistol",
+      "hk vp9 sk",
+      "match grade 9mm"
+    ]
   },
   {
     id: "hk-usp",

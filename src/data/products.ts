@@ -96,7 +96,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "NATO-spec penetrator ammunition",
     manufacturer: "Federal",
-    grainWeight: "62gr"
+    grainWeight: "62gr",
+    shortDescription: "Federal XM855 62-grain green tip ammunition meets NATO SS109 specifications with enhanced barrier penetration. The preferred training and duty round for military and law enforcement.",
+    longDescription: "Federal XM855 62-grain ammunition represents the current NATO-standard infantry cartridge, adopted by the United States and NATO allies as the SS109/M855 specification. The distinctive green tip identifies the steel penetrator core that provides superior performance against barriers compared to standard ball ammunition. Originally developed to improve penetration through Soviet helmets and body armor at extended ranges, the M855 design delivers consistent performance from short-barreled carbines through full-length rifles. Federal manufactures XM855 to the same specifications as military contract ammunition, ensuring compatibility with all 5.56 NATO chambered firearms. The 62-grain bullet offers better wind resistance and terminal performance at ranges beyond 300 yards compared to lighter 55-grain bullets. The steel penetrator tip enhances barrier penetration through automotive glass, light cover, and intermediate barriers - critical for law enforcement and defensive applications. Federal's quality control ensures consistent velocities and reliable ignition across temperature extremes. The reloadable brass cases and non-corrosive primers make XM855 excellent for both training and duty use. Whether preparing for duty, training tactical scenarios, or engaging targets at extended ranges, Federal XM855 delivers authentic military-specification performance.",
+    features: [
+      "Steel penetrator tip for enhanced barrier penetration capability",
+      "NATO SS109/M855 specification for military compatibility",
+      "62-grain bullet weight for improved long-range performance",
+      "Federal military-grade primer for consistent ignition",
+      "Optimized powder charge for carbine and rifle length barrels",
+      "Reloadable new production brass cases",
+      "Clean-burning powder reduces maintenance requirements",
+      "Green tip identification for easy recognition",
+      "Crimped primer pockets for enhanced durability",
+      "Batch-tested for accuracy and consistency"
+    ],
+    benefits: [
+      "Superior barrier penetration compared to standard ball ammunition",
+      "Improved wind resistance for better long-range accuracy",
+      "Consistent performance from 10.5-inch to 20-inch barrels",
+      "Military-specification reliability for duty applications",
+      "Federal Premium quality at accessible pricing",
+      "Non-corrosive primers for long-term storage capability"
+    ],
+    useCases: [
+      "Law enforcement patrol and tactical applications",
+      "Military training and qualification courses",
+      "Duty ammunition where barrier penetration is priority",
+      "Long-range target practice beyond 300 yards",
+      "Competition shooting in service rifle and 3-gun",
+      "Home defense in rural areas requiring barrier penetration"
+    ],
+    technicalDetails: "Federal XM855 features a 62-grain SS109-pattern bullet with mild steel penetrator tip weighing approximately 10 grains, surrounded by a lead core and copper alloy jacket. The green-painted tip identifies the steel penetrator. From a 20-inch barrel, XM855 achieves approximately 3,000 fps muzzle velocity delivering 1,238 foot-pounds of energy. The heavier 62-grain bullet offers superior ballistic coefficient (G1 BC of 0.304) compared to 55-grain M193, improving wind resistance and maintaining velocity at extended ranges. The bullet is optimized for 1:7 and 1:9 twist rate barrels, though it stabilizes in 1:8 as well. The steel penetrator enhances performance against barriers, penetrating 3/8-inch mild steel at close range and maintaining effectiveness through automotive glass and light cover. Powder selection is optimized for consistent performance across temperature ranges from -40°F to 125°F. Cases are drawn from new production brass with military-style crimp for primer retention. Federal's quality control includes pressure testing to verify NATO specification compliance and accuracy testing demonstrating 2-3 MOA groups from quality rifles.",
+    whyChoose: "Choose Federal XM855 when you need proven military-specification ammunition with enhanced barrier penetration capability. As the current NATO-standard cartridge, M855/SS109 has been proven through decades of military service worldwide. Federal's manufacturing ensures you receive the same quality supplied to U.S. military forces, with quality control processes that exceed commercial ammunition standards. The 62-grain bullet's superior barrier penetration makes it ideal for law enforcement and defensive applications where defeating intermediate barriers may be necessary. The improved ballistic coefficient provides better long-range performance than lighter bullets, maintaining velocity and energy at extended distances. Federal's commitment to consistency means you can rely on XM855 for both training and duty - practice with what you carry. The clean-burning powder and non-corrosive primers ensure your rifle stays cleaner and your ammunition stores indefinitely. When you choose Federal XM855, you're choosing the ammunition trusted by military and law enforcement professionals worldwide, backed by Federal's century-plus reputation for ammunition manufacturing excellence.",
+    seoKeywords: [
+      "federal xm855",
+      "green tip ammo",
+      "556 green tip",
+      "buy xm855 online",
+      "m855 ammo for sale",
+      "62gr penetrator",
+      "nato 556 ammo",
+      "ss109 ammunition",
+      "law enforcement 556",
+      "green tip 556",
+      "federal 62gr",
+      "duty ammo 556",
+      "xm855 bulk",
+      "military spec 556",
+      "barrier penetration ammo"
+    ]
   },
   {
     id: "223-winchester-usa-55",
@@ -148,7 +197,56 @@ export const products: Product[] = [
     categorySlug: "556-223",
     description: "Military-grade components for reliability",
     manufacturer: "Hornady",
-    grainWeight: "55gr"
+    grainWeight: "55gr",
+    shortDescription: "Hornady Frontier combines Lake City military brass with Hornady's legendary bullet quality. Rugged, reliable ammunition engineered for the demands of high-volume shooting.",
+    longDescription: "Hornady Frontier ammunition represents a unique partnership bringing together Lake City Army Ammunition Plant's military brass production with Hornady's 75 years of bullet manufacturing expertise. This combination creates ammunition that exceeds typical range ammo quality while maintaining attractive pricing for high-volume shooters. The military brass from Lake City provides the durability and consistency expected from ammunition used to train America's armed forces, with case head strength and primer pocket longevity exceeding commercial brass. Hornady's 55-grain FMJ bullets feature precise copper jacket concentricity and weight uniformity typically found only in premium target ammunition. The result is training ammunition that delivers exceptional accuracy and reliability at a price point encouraging regular practice. Frontier ammunition uses clean-burning propellants that minimize barrel fouling and reduce cleaning time. Non-corrosive primers ensure long-term storage capability and ease of maintenance. The brass cases are fully reloadable, providing additional value for handloaders. Hornady's quality control processes include multiple inspections throughout assembly, ensuring every round meets specifications for dimensional consistency and ballistic performance. Whether zeroing optics, practicing fundamentals, or training for competition, Hornady Frontier delivers performance that bridges the gap between budget practice ammunition and premium match-grade rounds.",
+    features: [
+      "Lake City military brass for durability and consistency",
+      "Hornady 55-grain FMJ bullet with precision jacket construction",
+      "Clean-burning propellant reduces fouling and maintenance",
+      "Non-corrosive primers for long-term storage",
+      "Fully reloadable boxer-primed brass cases",
+      "Consistent velocities for predictable ballistics",
+      "Military-grade quality control standards",
+      "Sealed primers and case mouths for moisture resistance",
+      "Accurate from all AR-15 platform barrel lengths",
+      "Reliable feeding and extraction in semi-automatic rifles"
+    ],
+    benefits: [
+      "Superior brass quality from America's premier military ammunition plant",
+      "Hornady bullet quality ensures consistent accuracy",
+      "Cleaner shooting means less time cleaning, more time shooting",
+      "Reloadable brass extends ammunition budget significantly",
+      "Reliable performance in all weather and temperature conditions",
+      "Hornady's reputation for innovation and quality manufacturing"
+    ],
+    useCases: [
+      "High-volume AR-15 training and practice sessions",
+      "Competition training for 3-gun, practical rifle, and service rifle",
+      "Rifle zeroing and ballistic validation",
+      "Defensive carbine training courses",
+      "Brass collection for reloading projects",
+      "General plinking and recreational shooting"
+    ],
+    technicalDetails: "Hornady Frontier 55-grain ammunition achieves approximately 3,240 fps muzzle velocity from 24-inch barrels and 3,025 fps from 16-inch carbines, delivering 1,282 foot-pounds of muzzle energy. The 55-grain FMJ bullet features a gilding metal jacket (copper-zinc alloy) with wall thickness held to tight tolerances ensuring concentricity within 0.0015 inches. Bullet weight variation is controlled to ±0.3 grains for consistency. The Lake City brass cases are manufactured from cartridge brass alloy (70% copper, 30% zinc) drawn to military specifications with consistent wall thickness and case head strength exceeding SAAMI requirements. Primer pockets are precisely sized for boxer large rifle primers with military-style crimp removed during processing. Powder selection emphasizes clean burning with minimal flash, optimized for barrel lengths from 10.5 to 20 inches. Velocity standard deviation typically measures 25-35 fps, providing predictable ballistics for training applications. Accuracy from quality AR-15 rifles averages 1.5-2.5 MOA with proper ammunition and technique. All components are non-corrosive and non-mercuric for indefinite storage in controlled conditions.",
+    whyChoose: "Choose Hornady Frontier when you want ammunition that exceeds typical range ammo without the premium price of match-grade loads. The combination of Lake City military brass with Hornady bullets creates synergy that elevates Frontier above ordinary training ammunition. Lake City has manufactured billions of rounds for U.S. military forces, and their brass quality is legendary among handloaders for durability and consistency. Hornady's bullet manufacturing precision ensures accuracy approaching match ammunition at a fraction of the cost. This makes Frontier ideal for serious shooters who demand reliability and consistency but need to practice regularly without breaking the bank. The reloadable brass adds tremendous value - many shooters report getting 5-10+ reloads from Frontier brass, essentially making the ammunition pay for itself. Hornady's commitment to quality is backed by rigorous testing and quality control processes that ensure every box performs consistently. The clean-burning powder formulation means you'll spend less time cleaning and more time shooting. When you choose Hornady Frontier, you're getting the best of both worlds: military-grade components combined with commercial ammunition innovation, resulting in training ammunition that performs above its price point.",
+    seoKeywords: [
+      "hornady frontier",
+      "223 remington ammo",
+      "lake city brass",
+      "buy hornady 223",
+      "training ammunition 223",
+      "ar15 ammo",
+      "hornady 55gr fmj",
+      "223 bulk ammo",
+      "reloadable 223",
+      "hornady frontier price",
+      "military brass ammo",
+      "ar15 range ammo",
+      "hornady 223",
+      "frontier ammunition",
+      "lake city hornady"
+    ]
   },
   {
     id: "223-hornady-american-gunner",
