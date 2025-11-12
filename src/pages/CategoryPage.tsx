@@ -7,7 +7,7 @@ import { topAmmunition } from "@/data/topAmmunition";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Package, Filter } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Select,
   SelectContent,
@@ -84,19 +84,107 @@ const CategoryPage = () => {
     }
   });
 
+  const inStockCount = sortedProducts.filter(p => p.inStock).length;
+
+  // SEO: Update document title and meta tags
+  useEffect(() => {
+    if (categoryName) {
+      document.title = `${categoryName} Ammunition - ${sortedProducts.length} Products | Arms Complex`;
+
+      const updateMeta = (name: string, content: string) => {
+        let meta = document.querySelector(`meta[name="${name}"]`);
+        if (!meta) {
+          meta = document.createElement("meta");
+          meta.setAttribute("name", name);
+          document.head.appendChild(meta);
+        }
+        meta.setAttribute("content", content);
+      };
+
+      updateMeta("description", `Shop ${sortedProducts.length} ${categoryName} products. ${categoryDescription} ${inStockCount} in stock. Licensed FFL dealer with competitive prices.`);
+      updateMeta("keywords", `${categoryName}, ${categoryName} ammunition, buy ${categoryName}, ammo for sale, in stock ammunition, FFL dealer`);
+
+      // Open Graph
+      const updateOG = (property: string, content: string) => {
+        let tag = document.querySelector(`meta[property="${property}"]`);
+        if (!tag) {
+          tag = document.createElement("meta");
+          tag.setAttribute("property", property);
+          document.head.appendChild(tag);
+        }
+        tag.setAttribute("content", content);
+      };
+
+      updateOG("og:title", `${categoryName} Ammunition | Arms Complex`);
+      updateOG("og:description", `${categoryDescription} ${sortedProducts.length} products available.`);
+      updateOG("og:type", "product.group");
+      updateOG("og:url", window.location.href);
+
+      // Canonical
+      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.setAttribute("rel", "canonical");
+        document.head.appendChild(canonical);
+      }
+      canonical.href = window.location.href;
+
+      // Structured data
+      const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": `${categoryName} Ammunition`,
+        "description": categoryDescription,
+        "url": window.location.href,
+        "numberOfItems": sortedProducts.length,
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Categories",
+              "item": `${window.location.origin}/categories`
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": categoryName
+            }
+          ]
+        }
+      };
+
+      let script = document.querySelector('script[type="application/ld+json"][data-page="category"]');
+      if (!script) {
+        script = document.createElement("script");
+        script.setAttribute("type", "application/ld+json");
+        script.setAttribute("data-page", "category");
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(structuredData);
+    }
+
+    return () => {
+      document.title = "Arms Complex - Licensed Ammunition Dealer";
+    };
+  }, [categoryName, categoryDescription, sortedProducts.length, inStockCount]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
 
       <main className="container mx-auto px-4 py-12">
-        <Link to="/categories">
-          <Button variant="ghost" className="mb-6">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Categories
-          </Button>
-        </Link>
+        <nav aria-label="Breadcrumb">
+          <Link to="/categories">
+            <Button variant="ghost" className="mb-6">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Categories
+            </Button>
+          </Link>
+        </nav>
 
-        <div className="mb-12">
+        <header className="mb-12">
           <div className="flex items-start gap-4 mb-4">
             {CategoryIcon && (
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-xl bg-tactical/10 text-tactical">
@@ -120,7 +208,7 @@ const CategoryPage = () => {
               )}
             </div>
           </div>
-        </div>
+        </header>
 
         <div className="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
           <div className="flex items-center gap-2 text-muted-foreground">

@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { products } from "@/data/products";
 import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
 
 const ProductDetail = () => {
@@ -55,21 +55,124 @@ const ProductDetail = () => {
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 3);
 
+  // SEO: Update document title and meta tags
+  useEffect(() => {
+    document.title = `${product.name} - ${product.caliber} ${product.rounds} Rounds | Arms Complex`;
+
+    const updateMeta = (name: string, content: string) => {
+      let meta = document.querySelector(`meta[name="${name}"]`);
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute("name", name);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", content);
+    };
+
+    updateMeta("description", `Buy ${product.name} - ${product.description} ${product.rounds} rounds of ${product.caliber}. ${product.inStock ? "In stock" : "Out of stock"}. Price: $${product.price}. Licensed FFL dealer.`);
+    updateMeta("keywords", `${product.name}, ${product.caliber}, ${product.caliber} ammunition, buy ${product.caliber}, ${product.rounds} rounds, ammunition for sale`);
+
+    // Open Graph
+    const updateOG = (property: string, content: string) => {
+      let tag = document.querySelector(`meta[property="${property}"]`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("property", property);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", content);
+    };
+
+    updateOG("og:title", `${product.name} | Arms Complex`);
+    updateOG("og:description", product.description);
+    updateOG("og:type", "product");
+    updateOG("og:url", window.location.href);
+    updateOG("og:price:amount", product.price.toString());
+    updateOG("og:price:currency", "USD");
+    updateOG("og:availability", product.inStock ? "in stock" : "out of stock");
+
+    // Canonical
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.href = window.location.href;
+
+    // Product structured data
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": product.name,
+      "description": product.description,
+      "sku": product.id,
+      "brand": {
+        "@type": "Brand",
+        "name": product.manufacturer || "Various"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": window.location.href,
+        "priceCurrency": "USD",
+        "price": product.price,
+        "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Arms Complex"
+        }
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Caliber",
+          "value": product.caliber
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Rounds",
+          "value": product.rounds
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Category",
+          "value": product.category
+        }
+      ]
+    };
+
+    let script = document.querySelector('script[type="application/ld+json"][data-page="product"]');
+    if (!script) {
+      script = document.createElement("script");
+      script.setAttribute("type", "application/ld+json");
+      script.setAttribute("data-page", "product");
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(structuredData);
+
+    return () => {
+      document.title = "Arms Complex - Licensed Ammunition Dealer";
+    };
+  }, [product]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       
       <main className="container mx-auto px-4 py-8">
-        <Button 
-          variant="ghost" 
-          onClick={() => navigate(-1)}
-          className="mb-6"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back
-        </Button>
+        <nav aria-label="Breadcrumb">
+          <Button 
+            variant="ghost" 
+            onClick={() => navigate(-1)}
+            className="mb-6"
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back
+          </Button>
+        </nav>
 
-        <div className="grid gap-8 lg:grid-cols-2 mb-12">
+        <article className="grid gap-8 lg:grid-cols-2 mb-12">
           {/* Product Image/Placeholder */}
           <Card className="overflow-hidden">
             <div className="aspect-square bg-secondary flex items-center justify-center p-12">
@@ -81,10 +184,10 @@ const ProductDetail = () => {
           </Card>
 
           {/* Product Info */}
-          <div className="space-y-6">
+          <div className="space-y-6" itemScope itemType="https://schema.org/Product">
             <div>
-              <h1 className="text-4xl font-bold mb-2">{product.name}</h1>
-              <p className="text-lg text-muted-foreground">{product.description}</p>
+              <h1 className="text-4xl font-bold mb-2" itemProp="name">{product.name}</h1>
+              <p className="text-lg text-muted-foreground" itemProp="description">{product.description}</p>
             </div>
 
             <div className="flex items-center gap-3">
@@ -164,7 +267,7 @@ const ProductDetail = () => {
               </AlertDescription>
             </Alert>
           </div>
-        </div>
+        </article>
 
         {/* Product Specifications */}
         <div className="grid gap-6 lg:grid-cols-3 mb-12">
