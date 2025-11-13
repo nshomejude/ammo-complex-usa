@@ -55,14 +55,6 @@ export default {
           DEFAULT: "hsl(var(--warning))",
           foreground: "hsl(var(--warning-foreground))",
         },
-        home3: {
-          primary: "hsl(var(--home3-primary))",
-          "primary-hover": "hsl(var(--home3-primary-hover))",
-          secondary: "hsl(var(--home3-secondary))",
-          accent: "hsl(var(--home3-accent))",
-          "accent-light": "hsl(var(--home3-accent-light))",
-          dark: "hsl(var(--home3-dark))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
