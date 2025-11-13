@@ -4,16 +4,23 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { reviews } from "@/data/reviews";
+import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 
 export default function Reviews8() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
 
   const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
     if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
+
+  const totalPages = Math.ceil(filteredReviews.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedReviews = filteredReviews.slice(startIndex, startIndex + itemsPerPage);
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, i) => (
@@ -108,7 +115,7 @@ export default function Reviews8() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredReviews.map(review => (
+              {paginatedReviews.map(review => (
                 <Card 
                   key={review.id} 
                   className="bg-[hsl(0,0%,15%)] border border-[hsl(45,93%,47%)]/20 hover:border-[hsl(45,93%,47%)]/60 hover:shadow-2xl hover:shadow-[hsl(45,93%,47%)]/10 transition-all duration-300"
@@ -135,6 +142,38 @@ export default function Reviews8() {
                 </Card>
               ))}
             </div>
+
+            {totalPages > 1 && (
+              <Pagination className="mt-12">
+                <PaginationContent>
+                  <PaginationItem>
+                    <PaginationPrevious 
+                      onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                      className={currentPage === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                    />
+                  </PaginationItem>
+                  
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                    <PaginationItem key={page}>
+                      <PaginationLink
+                        onClick={() => setCurrentPage(page)}
+                        isActive={currentPage === page}
+                        className="cursor-pointer"
+                      >
+                        {page}
+                      </PaginationLink>
+                    </PaginationItem>
+                  ))}
+                  
+                  <PaginationItem>
+                    <PaginationNext 
+                      onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                      className={currentPage === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                    />
+                  </PaginationItem>
+                </PaginationContent>
+              </Pagination>
+            )}
           </div>
         </div>
       </div>
