@@ -44,10 +44,10 @@ const Home2 = () => {
     }
 
     // Apply custom color scheme for Home 2
-    document.documentElement.style.setProperty('--home2-primary', '220 90% 45%');
-    document.documentElement.style.setProperty('--home2-primary-hover', '220 90% 40%');
-    document.documentElement.style.setProperty('--home2-accent', '280 70% 55%');
-    document.documentElement.style.setProperty('--home2-accent-light', '280 70% 97%');
+    document.documentElement.style.setProperty('--home2-primary', '0 85% 55%');
+    document.documentElement.style.setProperty('--home2-primary-hover', '0 85% 50%');
+    document.documentElement.style.setProperty('--home2-accent', '10 90% 60%');
+    document.documentElement.style.setProperty('--home2-accent-light', '0 90% 97%');
     
     return () => {
       // Clean up on unmount
@@ -141,7 +141,7 @@ const Home2 = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(220,90%,95%)] via-background to-background border-b">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(0,90%,95%)] via-background to-background border-b">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
         <div className="container relative mx-auto px-4 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
