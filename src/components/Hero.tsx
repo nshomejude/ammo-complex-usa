@@ -109,7 +109,7 @@ export const Hero = () => {
                       <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl transform transition-transform duration-700" style={{ color: 'hsl(var(--home2-primary))' }}>
                         {slide.title}
                       </h1>
-                      <p className="mb-8 text-base text-muted-foreground md:text-lg max-w-3xl mx-auto leading-relaxed transform transition-all duration-700 delay-100">
+                      <p className="mb-8 text-base md:text-lg max-w-3xl mx-auto leading-relaxed transform transition-all duration-700 delay-100" style={{ color: 'hsl(var(--home2-accent))' }}>
                         {slide.description}
                       </p>
                     </div>
