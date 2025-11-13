@@ -10,6 +10,12 @@ export interface Product {
   description: string;
   manufacturer?: string;
   grainWeight?: string;
+  quantityVariations?: {
+    rounds: number;
+    price: number;
+    inStock: boolean;
+    image?: string;
+  }[];
   // Rich content fields
   shortDescription?: string;
   longDescription?: string;

@@ -20,12 +20,17 @@ import {
 } from "lucide-react";
 import { ProductCard } from "@/components/ProductCard";
 import { FirearmCard } from "@/components/FirearmCard";
-import { products } from "@/data/products";
-import { firearms } from "@/data/firearms";
+import { products as rawProducts } from "@/data/products";
+import { firearms as rawFirearms } from "@/data/firearms";
+import { addProductVariations, addFirearmVariations } from "@/utils/addDefaultVariations";
 import { categories } from "@/data/categories";
 import { useEffect } from "react";
 
 const Home2 = () => {
+  // Add variations to all products and firearms
+  const products = rawProducts.map(addProductVariations);
+  const firearms = rawFirearms.map(addFirearmVariations);
+  
   const topProducts = products.filter(p => p.inStock).slice(0, 8);
   const topFirearms = firearms.filter(f => f.inStock).slice(0, 4);
 

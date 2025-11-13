@@ -2,7 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
-import { products } from "@/data/products";
+import { products as rawProducts } from "@/data/products";
+import { addProductVariations } from "@/utils/addDefaultVariations";
 import { categories } from "@/data/categories";
 import { topAmmunition } from "@/data/topAmmunition";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,9 @@ import {
 } from "@/components/ui/select";
 
 const CategoryPage = () => {
+  // Add variations to all products
+  const products = rawProducts.map(addProductVariations);
+  
   const { slug } = useParams<{ slug: string }>();
   const [sortBy, setSortBy] = useState("name");
   const [stockFilter, setStockFilter] = useState("all");

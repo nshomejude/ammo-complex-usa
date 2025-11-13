@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { TopSellingCard } from "@/components/TopSellingCard";
 import { ShopSidebar } from "@/components/ShopSidebar";
 import { topAmmunition } from "@/data/topAmmunition";
-import { products } from "@/data/products";
+import { products as rawProducts } from "@/data/products";
+import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Input } from "@/components/ui/input";
 import { useState, useMemo, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +12,9 @@ import { Package } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const Categories = () => {
+  // Add variations to all products
+  const products = rawProducts.map(addProductVariations);
+  
   const [searchTerm, setSearchTerm] = useState("");
 
   // Calculate actual product counts for each category

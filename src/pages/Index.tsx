@@ -6,8 +6,9 @@ import { FirearmCategoryCard } from "@/components/FirearmCategoryCard";
 import { ProductCard } from "@/components/ProductCard";
 import { categories } from "@/data/categories";
 import { firearmCategories } from "@/data/firearmCategories";
-import { products } from "@/data/products";
-import { firearms } from "@/data/firearms";
+import { products as rawProducts } from "@/data/products";
+import { firearms as rawFirearms } from "@/data/firearms";
+import { addProductVariations, addFirearmVariations } from "@/utils/addDefaultVariations";
 import { FirearmCard } from "@/components/FirearmCard";
 import { AlertCircle, TrendingUp } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -15,6 +16,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Index = () => {
+  // Add variations to all products and firearms
+  const products = rawProducts.map(addProductVariations);
+  const firearms = rawFirearms.map(addFirearmVariations);
+  
   const featuredProducts = products.filter(p => p.inStock).slice(0, 4);
   const featuredFirearms = firearms.filter(f => f.inStock).slice(0, 8);
 

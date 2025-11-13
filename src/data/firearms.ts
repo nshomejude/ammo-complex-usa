@@ -13,6 +13,12 @@ export interface Firearm {
   weight: string;
   finish: string;
   imageUrl?: string;
+  quantityVariations?: {
+    quantity: number;
+    price: number;
+    inStock: boolean;
+    image?: string;
+  }[];
   // Ballistic data
   ballisticData?: {
     effectiveRange: string;

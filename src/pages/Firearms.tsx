@@ -7,7 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
-import { firearms } from "@/data/firearms";
+import { firearms as rawFirearms } from "@/data/firearms";
+import { addFirearmVariations } from "@/utils/addDefaultVariations";
 import { firearmCategories } from "@/data/firearmCategories";
 import { Search, Filter, Shield } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -15,6 +16,9 @@ import { AlertCircle } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const Firearms = () => {
+  // Add variations to all firearms
+  const firearms = rawFirearms.map(addFirearmVariations);
+  
   const [searchQuery, setSearchQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [sortBy, setSortBy] = useState("name");

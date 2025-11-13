@@ -9,15 +9,20 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ProductCard } from "@/components/ProductCard";
 import { FirearmCard } from "@/components/FirearmCard";
 import { EngagementSimulator } from "@/components/EngagementSimulator";
-import { firearms } from "@/data/firearms";
+import { firearms as rawFirearms } from "@/data/firearms";
 import { firearmCategories } from "@/data/firearmCategories";
-import { products } from "@/data/products";
+import { products as rawProducts } from "@/data/products";
+import { addFirearmVariations, addProductVariations } from "@/utils/addDefaultVariations";
 import { Shield, Phone, Mail, MapPin, AlertTriangle, CheckCircle, Target, Award } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
 import { useEffect } from "react";
 
 const FirearmDetail = () => {
+  // Add variations to all firearms and products
+  const firearms = rawFirearms.map(addFirearmVariations);
+  const products = rawProducts.map(addProductVariations);
+  
   const { id } = useParams();
   const firearm = firearms.find(f => f.id === id);
 

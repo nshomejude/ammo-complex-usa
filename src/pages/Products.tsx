@@ -2,7 +2,8 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { ShopSidebar } from "@/components/ShopSidebar";
-import { products } from "@/data/products";
+import { products as rawProducts } from "@/data/products";
+import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, Package } from "lucide-react";
@@ -11,6 +12,9 @@ import { Badge } from "@/components/ui/badge";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const Products = () => {
+  // Add variations to all products
+  const products = rawProducts.map(addProductVariations);
+  
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
 

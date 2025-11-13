@@ -12,13 +12,17 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Separator } from "@/components/ui/separator";
-import { firearms } from "@/data/firearms";
+import { firearms as rawFirearms } from "@/data/firearms";
+import { addFirearmVariations } from "@/utils/addDefaultVariations";
 import { firearmCategories } from "@/data/firearmCategories";
 import { Search, Filter, SlidersHorizontal, X } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 
 const FirearmCategoryPage = () => {
+  // Add variations to all firearms
+  const firearms = rawFirearms.map(addFirearmVariations);
+  
   const { slug } = useParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("name");

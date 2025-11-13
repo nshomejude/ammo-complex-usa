@@ -12,13 +12,18 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { firearms } from "@/data/firearms";
-import { products } from "@/data/products";
+import { firearms as rawFirearms } from "@/data/firearms";
+import { products as rawProducts } from "@/data/products";
+import { addFirearmVariations, addProductVariations } from "@/utils/addDefaultVariations";
 import { Filter, X, SlidersHorizontal } from "lucide-react";
 
 type SortOption = "relevance" | "price-asc" | "price-desc" | "name-asc" | "name-desc";
 
 const SearchResults = () => {
+  // Add variations to all firearms and products
+  const firearms = rawFirearms.map(addFirearmVariations);
+  const products = rawProducts.map(addProductVariations);
+  
   const [searchParams] = useSearchParams();
   const query = searchParams.get("q") || "";
   

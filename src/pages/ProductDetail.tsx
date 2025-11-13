@@ -8,12 +8,16 @@ import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { products } from "@/data/products";
+import { products as rawProducts } from "@/data/products";
+import { addProductVariations } from "@/utils/addDefaultVariations";
 import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus, Target, Award, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 
 const ProductDetail = () => {
+  // Add variations to all products
+  const products = rawProducts.map(addProductVariations);
+  
   const { id } = useParams();
   const navigate = useNavigate();
   const product = products.find(p => p.id === id);
