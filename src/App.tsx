@@ -116,6 +116,16 @@ const App = () => (
           <Route path="/contact9" element={<Contact9 />} />
           <Route path="/contact10" element={<Contact10 />} />
           <Route path="/contact11" element={<Contact11 />} />
+          <Route path="/reviews1" element={<Reviews1 />} />
+          <Route path="/reviews2" element={<Reviews2 />} />
+          <Route path="/reviews3" element={<Reviews3 />} />
+          <Route path="/reviews4" element={<Reviews4 />} />
+          <Route path="/reviews5" element={<Reviews5 />} />
+          <Route path="/reviews6" element={<Reviews6 />} />
+          <Route path="/reviews7" element={<Reviews7 />} />
+          <Route path="/reviews8" element={<Reviews8 />} />
+          <Route path="/reviews9" element={<Reviews9 />} />
+          <Route path="/reviews10" element={<Reviews10 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
