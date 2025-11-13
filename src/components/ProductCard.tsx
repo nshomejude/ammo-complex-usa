@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import placeholderImage from "@/assets/placeholder-product.jpg";
 import { useState } from "react";
 import { ShippingCalculator } from "@/components/ShippingCalculator";
+import { WishlistButton } from "@/components/WishlistButton";
+import { ComparisonButton } from "@/components/ComparisonButton";
 
 interface ProductCardProps {
   id: string;
@@ -68,8 +70,12 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
           {selectedVariation.rounds} Rounds
         </Badge>
         
+        <div className="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <WishlistButton productId={id} productName={name} variant="icon" />
+        </div>
+        
         {hasPriceChange && showPriceChange && (
-          <div className={`absolute top-2 left-2 px-3 py-1.5 rounded-full backdrop-blur-sm font-semibold text-sm animate-scale-in ${
+          <div className={`absolute bottom-2 left-2 px-3 py-1.5 rounded-full backdrop-blur-sm font-semibold text-sm animate-scale-in ${
             isCheaper 
               ? 'bg-green-500/90 text-white' 
               : 'bg-orange-500/90 text-white'
@@ -142,7 +148,7 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
         <ShippingCalculator quantity={selectedVariation.rounds} />
       </CardContent>
       
-      <CardFooter className="p-4 pt-0">
+      <CardFooter className="p-4 pt-0 flex flex-col gap-2">
         <Button 
           className="w-full bg-tactical hover:bg-tactical/90 transition-all duration-300" 
           disabled={!selectedVariation.inStock}
@@ -150,6 +156,13 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
           <ShoppingCart className="mr-2 h-4 w-4" />
           {selectedVariation.inStock ? 'View Details' : 'Out of Stock'}
         </Button>
+        
+        <ComparisonButton 
+          productId={id} 
+          productName={name} 
+          variant="checkbox" 
+          className="justify-center"
+        />
       </CardFooter>
       </Card>
     </Link>
