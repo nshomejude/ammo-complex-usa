@@ -201,11 +201,10 @@ const Products = () => {
               <ProductCard 
                 key={product.id} 
                 {...product}
-                grainWeight={product.grainWeight}
-                grainWeightVariations={[
-                  { grainWeight: '55gr', price: product.price - 2, inStock: true },
-                  { grainWeight: '62gr', price: product.price, inStock: true },
-                  { grainWeight: '77gr', price: product.price + 3, inStock: product.inStock },
+                quantityVariations={[
+                  { rounds: 20, price: product.price, inStock: true },
+                  { rounds: 50, price: product.price * 2.3, inStock: true },
+                  { rounds: 100, price: product.price * 4.2, inStock: product.inStock },
                 ]}
               />
             ))}

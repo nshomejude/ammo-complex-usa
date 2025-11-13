@@ -15,28 +15,26 @@ interface FirearmCardProps {
   inStock: boolean;
   actionType: string;
   image?: string;
-  finish?: string;
-  finishVariations?: {
-    finish: string;
+  capacity?: string;
+  quantityVariations?: {
+    quantity: number;
     price: number;
     inStock: boolean;
     image?: string;
-    colorCode: string;
   }[];
 }
 
-export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPrice, inStock: initialInStock, actionType, image: initialImage, finish: initialFinish, finishVariations }: FirearmCardProps) => {
+export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPrice, inStock: initialInStock, actionType, image: initialImage, capacity, quantityVariations }: FirearmCardProps) => {
   const [selectedVariation, setSelectedVariation] = useState({
-    finish: initialFinish || '',
+    quantity: 1,
     price: initialPrice,
     inStock: initialInStock,
-    image: initialImage,
-    colorCode: ''
+    image: initialImage
   });
   
   const [showPriceChange, setShowPriceChange] = useState(false);
 
-  const handleFinishClick = (e: React.MouseEvent, variant: { finish: string; price: number; inStock: boolean; image?: string; colorCode: string }) => {
+  const handleQuantityClick = (e: React.MouseEvent, variant: { quantity: number; price: number; inStock: boolean; image?: string }) => {
     e.preventDefault();
     e.stopPropagation();
     
@@ -44,11 +42,10 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPri
     setTimeout(() => setShowPriceChange(false), 2000);
     
     setSelectedVariation({
-      finish: variant.finish,
+      quantity: variant.quantity,
       price: variant.price,
       inStock: variant.inStock,
-      image: variant.image || initialImage,
-      colorCode: variant.colorCode
+      image: variant.image || initialImage
     });
   };
 
@@ -68,11 +65,9 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPri
               e.currentTarget.src = placeholderImage;
             }}
           />
-          {selectedVariation.finish && (
-            <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
-              {selectedVariation.finish}
-            </Badge>
-          )}
+          <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
+            Qty: {selectedVariation.quantity}
+          </Badge>
           
           {hasPriceChange && showPriceChange && (
             <div className={`absolute top-2 left-2 px-3 py-1.5 rounded-full backdrop-blur-sm font-semibold text-sm animate-scale-in ${
@@ -89,16 +84,16 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPri
           <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
           <p className="text-xs text-muted-foreground mb-2">{manufacturer} • {actionType}</p>
           
-          {finishVariations && finishVariations.length > 0 && (
+          {quantityVariations && quantityVariations.length > 0 && (
             <div className="mb-3">
-              <p className="text-xs text-muted-foreground mb-1.5">Finish Options:</p>
-              <div className="flex flex-wrap gap-2">
-                {finishVariations.map((variant, idx) => (
+              <p className="text-xs text-muted-foreground mb-1.5">Quantity:</p>
+              <div className="flex flex-wrap gap-1.5">
+                {quantityVariations.map((variant, idx) => (
                   <button
                     key={idx}
-                    onClick={(e) => handleFinishClick(e, variant)}
-                    className={`group/swatch relative px-3 py-1.5 text-xs font-semibold rounded-md border transition-all duration-200 flex items-center gap-2 ${
-                      variant.finish === selectedVariation.finish
+                    onClick={(e) => handleQuantityClick(e, variant)}
+                    className={`px-3 py-1.5 text-xs font-semibold rounded-md border transition-all duration-200 ${
+                      variant.quantity === selectedVariation.quantity
                         ? 'bg-tactical text-tactical-foreground border-tactical shadow-sm scale-105'
                         : variant.inStock
                         ? 'bg-secondary border-border hover:border-tactical/50 hover:bg-tactical/10 hover:scale-105'
@@ -106,11 +101,7 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPri
                     }`}
                     disabled={!variant.inStock}
                   >
-                    <span 
-                      className="w-4 h-4 rounded-full border-2 border-white shadow-sm"
-                      style={{ backgroundColor: variant.colorCode }}
-                    />
-                    {variant.finish}
+                    {variant.quantity}
                   </button>
                 ))}
               </div>

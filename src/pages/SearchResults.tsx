@@ -328,12 +328,10 @@ const SearchResults = () => {
                         <FirearmCard 
                           key={firearm.id} 
                           {...firearm}
-                          finish={firearm.finish}
-                          finishVariations={[
-                            { finish: 'Matte Black', price: firearm.price, inStock: true, colorCode: '#1a1a1a' },
-                            { finish: 'FDE', price: firearm.price + 25, inStock: true, colorCode: '#8b7355' },
-                            { finish: 'OD Green', price: firearm.price + 30, inStock: true, colorCode: '#4a5d3f' },
-                            { finish: 'Stainless', price: firearm.price + 40, inStock: firearm.inStock, colorCode: '#c0c0c0' },
+                          quantityVariations={[
+                            { quantity: 1, price: firearm.price, inStock: true },
+                            { quantity: 2, price: firearm.price * 1.9, inStock: true },
+                            { quantity: 3, price: firearm.price * 2.7, inStock: firearm.inStock },
                           ]}
                         />
                       ))}
@@ -351,11 +349,10 @@ const SearchResults = () => {
                         <ProductCard 
                           key={product.id} 
                           {...product}
-                          grainWeight={product.grainWeight}
-                          grainWeightVariations={[
-                            { grainWeight: '55gr', price: product.price - 2, inStock: true },
-                            { grainWeight: '62gr', price: product.price, inStock: true },
-                            { grainWeight: '77gr', price: product.price + 3, inStock: product.inStock },
+                          quantityVariations={[
+                            { rounds: 20, price: product.price, inStock: true },
+                            { rounds: 50, price: product.price * 2.3, inStock: true },
+                            { rounds: 100, price: product.price * 4.2, inStock: product.inStock },
                           ]}
                         />
                       ))}

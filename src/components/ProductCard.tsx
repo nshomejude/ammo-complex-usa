@@ -14,18 +14,17 @@ interface ProductCardProps {
   price: number;
   inStock: boolean;
   image?: string;
-  grainWeight?: string;
-  grainWeightVariations?: {
-    grainWeight: string;
+  quantityVariations?: {
+    rounds: number;
     price: number;
     inStock: boolean;
     image?: string;
   }[];
 }
 
-export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, inStock: initialInStock, image: initialImage, grainWeight: initialGrainWeight, grainWeightVariations }: ProductCardProps) => {
+export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: initialPrice, inStock: initialInStock, image: initialImage, quantityVariations }: ProductCardProps) => {
   const [selectedVariation, setSelectedVariation] = useState({
-    grainWeight: initialGrainWeight || '',
+    rounds: initialRounds,
     price: initialPrice,
     inStock: initialInStock,
     image: initialImage
@@ -33,7 +32,7 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
   
   const [showPriceChange, setShowPriceChange] = useState(false);
 
-  const handleVariationClick = (e: React.MouseEvent, variant: { grainWeight: string; price: number; inStock: boolean; image?: string }) => {
+  const handleVariationClick = (e: React.MouseEvent, variant: { rounds: number; price: number; inStock: boolean; image?: string }) => {
     e.preventDefault();
     e.stopPropagation();
     
@@ -41,7 +40,7 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
     setTimeout(() => setShowPriceChange(false), 2000);
     
     setSelectedVariation({
-      grainWeight: variant.grainWeight,
+      rounds: variant.rounds,
       price: variant.price,
       inStock: variant.inStock,
       image: variant.image || initialImage
@@ -64,11 +63,9 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
             e.currentTarget.src = placeholderImage;
           }}
         />
-        {selectedVariation.grainWeight && (
-          <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
-            {selectedVariation.grainWeight}
-          </Badge>
-        )}
+        <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
+          {selectedVariation.rounds} Rounds
+        </Badge>
         
         {hasPriceChange && showPriceChange && (
           <div className={`absolute top-2 left-2 px-3 py-1.5 rounded-full backdrop-blur-sm font-semibold text-sm animate-scale-in ${
@@ -83,18 +80,18 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
       
       <CardContent className="p-4">
         <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
-        <p className="text-xs text-muted-foreground mb-2">{caliber} • {rounds} Rounds</p>
+        <p className="text-xs text-muted-foreground mb-2">{caliber}</p>
         
-        {grainWeightVariations && grainWeightVariations.length > 0 && (
+        {quantityVariations && quantityVariations.length > 0 && (
           <div className="mb-3">
-            <p className="text-xs text-muted-foreground mb-1.5">Grain Weight:</p>
+            <p className="text-xs text-muted-foreground mb-1.5">Quantity:</p>
             <div className="flex flex-wrap gap-1.5">
-              {grainWeightVariations.map((variant, idx) => (
+              {quantityVariations.map((variant, idx) => (
                 <button
                   key={idx}
                   onClick={(e) => handleVariationClick(e, variant)}
                   className={`px-3 py-1.5 text-xs font-semibold rounded-md border transition-all duration-200 ${
-                    variant.grainWeight === selectedVariation.grainWeight
+                    variant.rounds === selectedVariation.rounds
                       ? 'bg-tactical text-tactical-foreground border-tactical shadow-sm scale-105'
                       : variant.inStock
                       ? 'bg-secondary border-border hover:border-tactical/50 hover:bg-tactical/10 hover:scale-105'
@@ -102,7 +99,7 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
                   }`}
                   disabled={!variant.inStock}
                 >
-                  {variant.grainWeight}
+                  {variant.rounds}
                 </button>
               ))}
             </div>
