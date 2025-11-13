@@ -29,6 +29,34 @@ export const Navigation = () => {
     { path: "/home11", label: "Home 11 - Wholesale" },
   ];
 
+  const aboutPages = [
+    { path: "/about", label: "About (Original)" },
+    { path: "/about2", label: "About 2 - Our Legacy" },
+    { path: "/about3", label: "About 3 - Built on Trust" },
+    { path: "/about4", label: "About 4 - Our People" },
+    { path: "/about5", label: "About 5 - Innovation First" },
+    { path: "/about6", label: "About 6 - Manufacturing Edge" },
+    { path: "/about7", label: "About 7 - Global Impact" },
+    { path: "/about8", label: "About 8 - Safety & Responsibility" },
+    { path: "/about9", label: "About 9 - Our Mission" },
+    { path: "/about10", label: "About 10 - Strength Through Innovation" },
+    { path: "/about11", label: "About 11 - The Arms Complex Story" },
+  ];
+
+  const contactPages = [
+    { path: "/contact", label: "Contact (Original)" },
+    { path: "/contact2", label: "Contact 2 - Reach Us" },
+    { path: "/contact3", label: "Contact 3 - Global Offices" },
+    { path: "/contact4", label: "Contact 4 - Talk to Us" },
+    { path: "/contact5", label: "Contact 5 - Visit Our Facility" },
+    { path: "/contact6", label: "Contact 6 - Corporate Communication" },
+    { path: "/contact7", label: "Contact 7 - Distributor Access" },
+    { path: "/contact8", label: "Contact 8 - Customer Support" },
+    { path: "/contact9", label: "Contact 9 - Regional Hubs" },
+    { path: "/contact10", label: "Contact 10 - Sales Network" },
+    { path: "/contact11", label: "Contact 11 - Headquarters" },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
@@ -104,12 +132,30 @@ export const Navigation = () => {
             <Link to="/firearms-license" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               License Info
             </Link>
-            <Link to="/about" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              About
-            </Link>
-            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Contact
-            </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                About <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64">
+                {aboutPages.map((page) => (
+                  <DropdownMenuItem key={page.path} asChild>
+                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Contact <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64">
+                {contactPages.map((page) => (
+                  <DropdownMenuItem key={page.path} asChild>
+                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link to="/admin" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Admin
             </Link>
@@ -136,6 +182,44 @@ export const Navigation = () => {
                     <AccordionContent>
                       <div className="flex flex-col gap-2 pl-4">
                         {landingPages.map((page) => (
+                          <Link
+                            key={page.path}
+                            to={page.path}
+                            onClick={() => setOpen(false)}
+                            className="py-2 text-sm hover:text-tactical transition-colors"
+                          >
+                            {page.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="about-pages">
+                    <AccordionTrigger className="text-base font-semibold">
+                      About
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-2 pl-4">
+                        {aboutPages.map((page) => (
+                          <Link
+                            key={page.path}
+                            to={page.path}
+                            onClick={() => setOpen(false)}
+                            className="py-2 text-sm hover:text-tactical transition-colors"
+                          >
+                            {page.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="contact-pages">
+                    <AccordionTrigger className="text-base font-semibold">
+                      Contact
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-2 pl-4">
+                        {contactPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
@@ -204,22 +288,6 @@ export const Navigation = () => {
                   className="text-base font-medium hover:text-tactical transition-colors"
                 >
                   License Info
-                </Link>
-                
-                <Link
-                  to="/about"
-                  onClick={() => setOpen(false)}
-                  className="text-base font-medium hover:text-tactical transition-colors"
-                >
-                  About
-                </Link>
-                
-                <Link
-                  to="/contact"
-                  onClick={() => setOpen(false)}
-                  className="text-base font-medium hover:text-tactical transition-colors"
-                >
-                  Contact
                 </Link>
                 
                 <Link
