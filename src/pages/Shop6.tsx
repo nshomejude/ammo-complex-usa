@@ -12,6 +12,8 @@ import { Search, Shield, Eye } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { QuickViewModal } from "@/components/QuickViewModal";
+import { ComparisonModal } from "@/components/ComparisonModal";
+import { ComparisonBar } from "@/components/ComparisonBar";
 
 const products = rawProducts.map(addProductVariations);
 
@@ -19,6 +21,7 @@ export default function Shop6() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
+  const [isComparisonOpen, setIsComparisonOpen] = useState(false);
 
   const maxPrice = useMemo(() => Math.max(...products.map(p => p.price)), []);
 
@@ -179,6 +182,14 @@ export default function Shop6() {
         isOpen={isQuickViewOpen}
         onClose={() => setIsQuickViewOpen(false)}
       />
+
+      <ComparisonModal
+        isOpen={isComparisonOpen}
+        onClose={() => setIsComparisonOpen(false)}
+        products={products}
+      />
+
+      <ComparisonBar onCompare={() => setIsComparisonOpen(true)} />
     </SidebarProvider>
   );
 }

@@ -13,6 +13,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { QuickViewModal } from "@/components/QuickViewModal";
+import { ComparisonModal } from "@/components/ComparisonModal";
+import { ComparisonBar } from "@/components/ComparisonBar";
 
 const products = rawProducts.map(addProductVariations);
 
@@ -21,6 +23,7 @@ export default function Shop10() {
   const [compareMode, setCompareMode] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
+  const [isComparisonOpen, setIsComparisonOpen] = useState(false);
 
   const maxPrice = useMemo(() => Math.max(...products.map(p => p.price)), []);
 
@@ -205,6 +208,14 @@ export default function Shop10() {
         isOpen={isQuickViewOpen}
         onClose={() => setIsQuickViewOpen(false)}
       />
+
+      <ComparisonModal
+        isOpen={isComparisonOpen}
+        onClose={() => setIsComparisonOpen(false)}
+        products={products}
+      />
+
+      <ComparisonBar onCompare={() => setIsComparisonOpen(true)} />
     </SidebarProvider>
   );
 }
