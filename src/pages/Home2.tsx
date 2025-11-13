@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Hero } from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,7 +14,6 @@ import {
   Zap,
   CheckCircle,
   Star,
-  TrendingUp,
   Package,
   Lock,
   Users,
@@ -21,23 +21,18 @@ import {
   Flame,
   Medal,
   Phone,
-  Mail,
-  MapPin,
   ArrowRight,
   CircleDot,
   Sparkles,
   Quote
 } from "lucide-react";
 import { ProductCard } from "@/components/ProductCard";
-import { FirearmCard } from "@/components/FirearmCard";
 import { products } from "@/data/products";
-import { firearms } from "@/data/firearms";
 import { categories } from "@/data/categories";
 import { useEffect } from "react";
 
 const Home2 = () => {
   const topProducts = products.filter(p => p.inStock).slice(0, 8);
-  const topFirearms = firearms.filter(f => f.inStock).slice(0, 4);
 
   useEffect(() => {
     // SEO Meta Tags
@@ -258,79 +253,7 @@ const Home2 = () => {
       `}</style>
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(0,75%,96%)] via-background to-background border-b">
-        <div className="absolute inset-0 home2-pattern opacity-50" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
-        <div className="container relative mx-auto px-4 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 home2-accent-bg home2-accent border-[hsl(var(--home2-accent))] rounded-full px-4 py-2">
-                <Shield className="h-4 w-4" />
-                <span className="font-semibold">Licensed FFL Dealer Since 2020</span>
-              </div>
-              <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight">
-                <span className="block">Premium Firearms</span>
-                <span className="block">&</span>
-                <span className="block home2-accent">Combat-Ready Ammunition</span>
-              </h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-xl leading-relaxed">
-                Trusted by military, law enforcement, and civilian shooters nationwide. 
-                Fast shipping, competitive prices, and expert support.
-              </p>
-              <div className="flex items-center gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 home2-accent" />
-                  <span className="font-medium">Authentic Products</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 home2-accent" />
-                  <span className="font-medium">24hr Shipping</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 home2-accent" />
-                  <span className="font-medium">Expert Support</span>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <Link to="/products">
-                  <Button size="lg" className="home2-primary text-lg px-8 py-6">
-                    <CircleDot className="mr-2 h-5 w-5" />
-                    Shop Ammunition
-                  </Button>
-                </Link>
-                <Link to="/firearms">
-                  <Button size="lg" variant="outline" className="border-2 border-[hsl(var(--home2-primary))] home2-accent hover:bg-[hsl(var(--home2-accent-light))] text-lg px-8 py-6">
-                    <Crosshair className="mr-2 h-5 w-5" />
-                    Browse Firearms
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              {topFirearms.map((firearm, index) => (
-                <Card key={firearm.id} className={`home2-card-hover border-2 ${index === 0 ? 'col-span-2' : ''}`}>
-                  <CardContent className="p-6">
-                    <div className="relative">
-                      {firearm.imageUrl && (
-                        <img 
-                          src={firearm.imageUrl} 
-                          alt={firearm.name} 
-                          className="w-full h-32 object-contain mb-4"
-                        />
-                      )}
-                      <Badge className="absolute top-0 right-0 home2-primary">In Stock</Badge>
-                    </div>
-                    <p className="font-bold text-base mb-2 line-clamp-1">{firearm.name}</p>
-                    <p className="home2-accent font-bold text-xl">${firearm.price.toLocaleString()}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Features Bar */}
       <section className="border-b bg-[hsl(var(--home2-dark))] text-white">
