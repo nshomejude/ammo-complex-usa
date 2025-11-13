@@ -70,6 +70,20 @@ export const Navigation = () => {
     { path: "/reviews10", label: "Reviews 10 - Tech Inspired" },
   ];
 
+  const shopPages = [
+    { path: "/products", label: "Products (Original)" },
+    { path: "/shop2", label: "Shop 2 - Premium Clean Dark" },
+    { path: "/shop3", label: "Shop 3 - Tactical Arsenal" },
+    { path: "/shop4", label: "Shop 4 - Dual Filter Layout" },
+    { path: "/shop5", label: "Shop 5 - Glassmorphic" },
+    { path: "/shop6", label: "Shop 6 - Military Armory" },
+    { path: "/shop7", label: "Shop 7 - Dual Sidebar" },
+    { path: "/shop8", label: "Shop 8 - Modern Live Filter" },
+    { path: "/shop9", label: "Shop 9 - Compact Pagination" },
+    { path: "/shop10", label: "Shop 10 - Premium Collection" },
+    { path: "/shop11", label: "Shop 11 - Ultimate Arsenal" },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
@@ -122,6 +136,18 @@ export const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/home11" className="w-full cursor-pointer">Home 11 - Wholesale</Link>
                 </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Shop <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64">
+                {shopPages.map((page) => (
+                  <DropdownMenuItem key={page.path} asChild>
+                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
+                  </DropdownMenuItem>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
             <Link to="/products" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
@@ -264,6 +290,25 @@ export const Navigation = () => {
                     <AccordionContent>
                       <div className="flex flex-col gap-2 pl-4">
                         {reviewsPages.map((page) => (
+                          <Link
+                            key={page.path}
+                            to={page.path}
+                            onClick={() => setOpen(false)}
+                            className="py-2 text-sm hover:text-tactical transition-colors"
+                          >
+                            {page.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="shop-pages">
+                    <AccordionTrigger className="text-base font-semibold">
+                      Shop Pages
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-2 pl-4">
+                        {shopPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
