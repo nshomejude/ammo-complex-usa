@@ -57,6 +57,19 @@ export const Navigation = () => {
     { path: "/contact11", label: "Contact 11 - Headquarters" },
   ];
 
+  const reviewsPages = [
+    { path: "/reviews1", label: "Reviews 1 - Dark Minimal" },
+    { path: "/reviews2", label: "Reviews 2 - Industrial Metallic" },
+    { path: "/reviews3", label: "Reviews 3 - Masonry Layout" },
+    { path: "/reviews4", label: "Reviews 4 - Split Screen" },
+    { path: "/reviews5", label: "Reviews 5 - Gradient Navy" },
+    { path: "/reviews6", label: "Reviews 6 - Tactical Cards" },
+    { path: "/reviews7", label: "Reviews 7 - Elegant Light" },
+    { path: "/reviews8", label: "Reviews 8 - Dark Gold Accents" },
+    { path: "/reviews9", label: "Reviews 9 - Military Rugged" },
+    { path: "/reviews10", label: "Reviews 10 - Tech Inspired" },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
@@ -156,6 +169,18 @@ export const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Reviews <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64">
+                {reviewsPages.map((page) => (
+                  <DropdownMenuItem key={page.path} asChild>
+                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link to="/admin" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Admin
             </Link>
@@ -220,6 +245,25 @@ export const Navigation = () => {
                     <AccordionContent>
                       <div className="flex flex-col gap-2 pl-4">
                         {contactPages.map((page) => (
+                          <Link
+                            key={page.path}
+                            to={page.path}
+                            onClick={() => setOpen(false)}
+                            className="py-2 text-sm hover:text-tactical transition-colors"
+                          >
+                            {page.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="reviews-pages">
+                    <AccordionTrigger className="text-base font-semibold">
+                      Reviews
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-2 pl-4">
+                        {reviewsPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
