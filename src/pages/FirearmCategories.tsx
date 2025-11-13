@@ -29,36 +29,36 @@ const FirearmCategories = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-4 py-12">
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Shield className="h-10 w-10 text-tactical" />
+      <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
+        <div className="mb-6 sm:mb-8">
+          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-tactical" />
             <div>
-              <h1 className="text-4xl font-bold">Firearm Categories</h1>
-              <p className="text-muted-foreground">Browse all firearm categories including sniper rifles, 1911 pistols, and specialty firearms</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Firearm Categories</h1>
+              <p className="text-sm sm:text-base text-muted-foreground">Browse all firearm categories including sniper rifles, 1911 pistols, and specialty firearms</p>
             </div>
           </div>
         </div>
 
-        <Alert className="mb-8 border-warning bg-warning/10">
+        <Alert className="mb-6 sm:mb-8 border-warning bg-warning/10">
           <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">Information Notice</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+          <AlertTitle className="text-sm sm:text-base text-warning-foreground">Information Notice</AlertTitle>
+          <AlertDescription className="text-xs sm:text-sm text-warning-foreground">
             Arms Complex specializes in ammunition sales. These categories represent the types of firearms our ammunition supports. 
             All ammunition purchases require proper licensing and age verification.
           </AlertDescription>
         </Alert>
 
-        <div className="mb-8 flex flex-col md:flex-row gap-4">
+        <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           <Input
             placeholder="Search firearm categories..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="md:flex-1"
+            className="sm:flex-1"
           />
           
           <Select value={filterType} onValueChange={setFilterType}>
-            <SelectTrigger className="w-full md:w-[200px]">
+            <SelectTrigger className="w-full sm:w-[200px]">
               <SelectValue placeholder="Filter by type" />
             </SelectTrigger>
             <SelectContent>
@@ -71,22 +71,22 @@ const FirearmCategories = () => {
           </Select>
         </div>
 
-        <div className="mb-6">
-          <p className="text-sm text-muted-foreground">
+        <div className="mb-4 sm:mb-6">
+          <p className="text-xs sm:text-sm text-muted-foreground">
             Showing <span className="font-semibold text-foreground">{filteredCategories.length}</span> of{" "}
             <span className="font-semibold text-foreground">{firearmCategories.length}</span> categories
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {filteredCategories.map((category) => (
             <FirearmCategoryCard key={category.id} {...category} />
           ))}
         </div>
 
         {filteredCategories.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-muted-foreground">No categories match your search criteria.</p>
+          <div className="text-center py-8 sm:py-12">
+            <p className="text-sm sm:text-base text-muted-foreground">No categories match your search criteria.</p>
           </div>
         )}
       </main>

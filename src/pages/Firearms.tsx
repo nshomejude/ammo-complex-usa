@@ -99,31 +99,31 @@ const Firearms = () => {
         <div className="flex-1 flex flex-col">
           <Navigation />
           
-          <section className="container mx-auto px-4 py-16">
-            <div className="mb-4">
-              <SidebarTrigger className="mb-4" />
+          <section className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12 lg:py-16">
+            <div className="mb-3 sm:mb-4">
+              <SidebarTrigger className="mb-3 sm:mb-4" />
             </div>
             
-            <Alert className="mb-8 border-warning bg-warning/10">
+            <Alert className="mb-6 sm:mb-8 border-warning bg-warning/10">
           <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">FFL Transfer Required</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+          <AlertTitle className="text-sm sm:text-base text-warning-foreground">FFL Transfer Required</AlertTitle>
+          <AlertDescription className="text-xs sm:text-sm text-warning-foreground">
             All firearm purchases require transfer to a licensed FFL dealer. Age restrictions and background checks apply.
           </AlertDescription>
         </Alert>
 
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Shield className="h-10 w-10 text-tactical" />
+        <div className="mb-6 sm:mb-8">
+          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-tactical" />
             <div>
-              <h1 className="text-4xl font-bold">Browse All Firearms</h1>
-              <div className="flex items-center gap-2">
-                <p className="text-muted-foreground text-lg">Explore our complete catalog of firearms across all categories</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Browse All Firearms</h1>
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground">Explore our complete catalog of firearms across all categories</p>
                 {(filters.selectedBrands.length > 0 || 
                   filters.priceRange[0] > 0 || 
                   filters.priceRange[1] < maxPrice ||
                   filters.stockStatus !== "all") && (
-                  <Badge variant="destructive">
+                  <Badge variant="destructive" className="text-xs sm:text-sm">
                     {filters.selectedBrands.length + 
                      (filters.priceRange[0] > 0 || filters.priceRange[1] < maxPrice ? 1 : 0) +
                      (filters.stockStatus !== "all" ? 1 : 0)} Active Filters
@@ -133,8 +133,8 @@ const Firearms = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div className="relative lg:col-span-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
+            <div className="relative sm:col-span-2 lg:col-span-2">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input
                 placeholder="Search firearms..."
@@ -143,7 +143,7 @@ const Firearms = () => {
                   setSearchQuery(e.target.value);
                   setCurrentPage(1);
                 }}
-                className="pl-10"
+                className="pl-10 h-10 sm:h-11"
               />
             </div>
             
@@ -151,7 +151,7 @@ const Firearms = () => {
               setCategoryFilter(value);
               setCurrentPage(1);
             }}>
-              <SelectTrigger>
+              <SelectTrigger className="h-10 sm:h-11">
                 <Filter className="mr-2 h-4 w-4" />
                 <SelectValue placeholder="Category" />
               </SelectTrigger>
@@ -164,7 +164,7 @@ const Firearms = () => {
             </Select>
 
             <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger>
+              <SelectTrigger className="h-10 sm:h-11">
                 <SelectValue placeholder="Sort by" />
               </SelectTrigger>
               <SelectContent>
@@ -176,12 +176,12 @@ const Firearms = () => {
             </Select>
           </div>
 
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-4 sm:mb-6">
             <Select value={stockFilter} onValueChange={(value) => {
               setStockFilter(value);
               setCurrentPage(1);
             }}>
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-full sm:w-[180px] h-10 sm:h-11">
                 <SelectValue placeholder="Stock status" />
               </SelectTrigger>
               <SelectContent>
@@ -209,8 +209,8 @@ const Firearms = () => {
 
         {paginatedFirearms.length > 0 ? (
           <>
-            <div className="flex justify-between items-center mb-6">
-              <p className="text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 Showing {startIndex + 1}-{Math.min(startIndex + itemsPerPage, filteredFirearms.length)} of {filteredFirearms.length} firearms
               </p>
               <div className="flex gap-2">
@@ -219,10 +219,11 @@ const Firearms = () => {
                   size="sm"
                   onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                   disabled={currentPage === 1}
+                  className="text-xs sm:text-sm"
                 >
                   Previous
                 </Button>
-                <Badge variant="outline" className="px-3 py-1">
+                <Badge variant="outline" className="px-2 sm:px-3 py-1 text-xs sm:text-sm">
                   Page {currentPage} of {totalPages}
                 </Badge>
                 <Button
@@ -230,13 +231,14 @@ const Firearms = () => {
                   size="sm"
                   onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                   disabled={currentPage === totalPages}
+                  className="text-xs sm:text-sm"
                 >
                   Next
                 </Button>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-6">
               {paginatedFirearms.map((firearm) => (
                 <FirearmCard 
                   key={firearm.id} 
