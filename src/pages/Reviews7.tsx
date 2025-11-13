@@ -58,6 +58,23 @@ export default function Reviews7() {
       </div>
 
       <div className="container mx-auto px-4 py-16">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold">{filteredReviews.length} Reviews</h2>
+          <Dialog open={showSubmitForm} onOpenChange={setShowSubmitForm}>
+            <DialogTrigger asChild>
+              <Button className="gap-2">
+                <Plus className="h-4 w-4" />
+                Write Review
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>Submit Your Review</DialogTitle>
+              </DialogHeader>
+              <ReviewSubmissionForm onSuccess={() => setShowSubmitForm(false)} />
+            </DialogContent>
+          </Dialog>
+        </div>
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Minimalist Sidebar */}
           <aside className="w-full lg:w-80">
@@ -112,7 +129,14 @@ export default function Reviews7() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
               {paginatedReviews.map(review => (
-                <Card key={review.id} className="bg-card border border-border hover:shadow-xl transition-shadow duration-500">
+                <Card 
+                  key={review.id} 
+                  className="bg-card border border-border hover:shadow-xl transition-shadow duration-500 cursor-pointer hover:border-primary/50"
+                  onClick={() => {
+                    setSelectedReview(review);
+                    setShowReviewModal(true);
+                  }}
+                >
                   <div className="p-8 space-y-5">
                     <div className="flex items-center gap-1">
                       {renderStars(review.rating)}
@@ -164,6 +188,12 @@ export default function Reviews7() {
           </div>
         </div>
       </div>
+      
+      <ReviewDetailModal 
+        review={selectedReview}
+        open={showReviewModal}
+        onOpenChange={setShowReviewModal}
+      />
     </div>
   );
 }
