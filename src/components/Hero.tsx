@@ -1,54 +1,139 @@
 import { Button } from "@/components/ui/button";
-import { Shield, CheckCircle } from "lucide-react";
+import { Shield, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+
+interface HeroSlide {
+  id: number;
+  title: string;
+  description: string;
+}
+
+const defaultSlides: HeroSlide[] = [
+  {
+    id: 1,
+    title: "Premium Ammunition for Licensed Buyers",
+    description: "Shop quality ammo with FFL verification and compliance"
+  },
+  {
+    id: 2,
+    title: "Trusted by Law-Abiding Gun Owners",
+    description: "Secure purchases with verified firearms licenses"
+  },
+  {
+    id: 3,
+    title: "Top Brands - Federal, Hornady & More",
+    description: "Authorized dealer offering competitive pricing"
+  },
+  {
+    id: 4,
+    title: "Fast & Legal Ammunition Shipping",
+    description: "Compliant delivery to all eligible states"
+  }
+];
 
 export const Hero = () => {
+  const [slides, setSlides] = useState<HeroSlide[]>(defaultSlides);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  useEffect(() => {
+    const savedSlides = localStorage.getItem('heroSlides');
+    if (savedSlides) {
+      setSlides(JSON.parse(savedSlides));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on('select', onSelect);
+    onSelect();
+
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi]);
+
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+
   return (
     <section className="relative overflow-hidden border-b border-border">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-tactical/10" />
-      
-      <div className="container relative mx-auto px-4 py-24 md:py-32">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-tactical/30 bg-tactical/10 px-4 py-2">
-            <Shield className="h-4 w-4 text-tactical" />
-            <span className="text-sm font-medium text-tactical">Licensed FFL Dealer</span>
+      <div className="container relative mx-auto px-4 py-14 md:py-20">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-6 flex justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full border-2 border-tactical/30 bg-tactical/10 px-4 py-2">
+              <Shield className="h-4 w-4 text-tactical" />
+              <span className="text-sm font-medium text-tactical">Licensed FFL Dealer</span>
+            </div>
           </div>
-          
-          <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl">
-            Premium Ammunition
-            <span className="block text-tactical">For Licensed Buyers</span>
-          </h1>
-          
-          <p className="mb-8 text-lg text-muted-foreground md:text-xl">
-            Quality ammunition for law-abiding citizens. All sales require valid firearms license verification and comply with federal and state regulations.
-          </p>
 
-          <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <div className="relative">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex">
+                {slides.map((slide) => (
+                  <div key={slide.id} className="min-w-0 flex-[0_0_100%]">
+                    <div className="text-center">
+                      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+                        {slide.title}
+                      </h1>
+                      <p className="mb-8 text-lg text-muted-foreground md:text-xl">
+                        {slide.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <button
+              onClick={scrollPrev}
+              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-colors hover:bg-accent"
+              aria-label="Previous slide"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+
+            <button
+              onClick={scrollNext}
+              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-colors hover:bg-accent"
+              aria-label="Next slide"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+          </div>
+
+          <div className="mb-8 flex justify-center gap-2">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => emblaApi?.scrollTo(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === selectedIndex ? 'w-8 bg-tactical' : 'w-2 bg-border'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link to="/products">
-              <Button size="lg" className="w-full sm:w-auto bg-tactical hover:bg-tactical/90">
+              <Button size="lg" className="w-full sm:w-auto bg-tactical hover:bg-tactical/90 px-8 py-6">
                 Browse Products
               </Button>
             </Link>
             <Link to="/about">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 px-8 py-6">
                 Legal Requirements
               </Button>
             </Link>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 text-sm md:grid-cols-3">
-            <div className="flex items-center justify-center gap-2">
-              <CheckCircle className="h-5 w-5 text-tactical" />
-              <span>FFL Verified Sales</span>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <CheckCircle className="h-5 w-5 text-tactical" />
-              <span>Legal State Shipping</span>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <CheckCircle className="h-5 w-5 text-tactical" />
-              <span>Secure Transactions</span>
-            </div>
           </div>
         </div>
       </div>
