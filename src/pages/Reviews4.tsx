@@ -1,19 +1,27 @@
 import { useState } from "react";
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, Plus } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
-import { reviews } from "@/data/reviews";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Review } from "@/data/reviews";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { useReviews } from "@/contexts/ReviewContext";
+import { ReviewDetailModal } from "@/components/ReviewDetailModal";
+import { ReviewSubmissionForm } from "@/components/ReviewSubmissionForm";
 
 export default function Reviews4() {
+  const { reviews } = useReviews();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
+  const [selectedReview, setSelectedReview] = useState<Review | null>(null);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
 
   const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;

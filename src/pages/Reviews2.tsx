@@ -1,18 +1,27 @@
 import { useState } from "react";
-import { Star, Filter } from "lucide-react";
+import { Star, Filter, Plus } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { reviews } from "@/data/reviews";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Review } from "@/data/reviews";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { useReviews } from "@/contexts/ReviewContext";
+import { ReviewDetailModal } from "@/components/ReviewDetailModal";
+import { ReviewSubmissionForm } from "@/components/ReviewSubmissionForm";
 
 export default function Reviews2() {
+  const { reviews } = useReviews();
   const [ratingFilter, setRatingFilter] = useState<string>("all");
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("recent");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
+  const [selectedReview, setSelectedReview] = useState<Review | null>(null);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
 
   let filteredReviews = reviews.filter(review => {
     if (ratingFilter !== "all" && review.rating < parseInt(ratingFilter)) return false;
@@ -51,6 +60,23 @@ export default function Reviews2() {
       </div>
 
       <div className="container mx-auto px-4 py-12">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold">{filteredReviews.length} Reviews</h2>
+          <Dialog open={showSubmitForm} onOpenChange={setShowSubmitForm}>
+            <DialogTrigger asChild>
+              <Button className="gap-2">
+                <Plus className="h-4 w-4" />
+                Write Review
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>Submit Your Review</DialogTitle>
+              </DialogHeader>
+              <ReviewSubmissionForm onSuccess={() => setShowSubmitForm(false)} />
+            </DialogContent>
+          </Dialog>
+        </div>
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="w-full lg:w-72 space-y-6">
@@ -171,6 +197,12 @@ export default function Reviews2() {
           </div>
         </div>
       </div>
+      
+      <ReviewDetailModal 
+        review={selectedReview}
+        open={showReviewModal}
+        onOpenChange={setShowReviewModal}
+      />
     </div>
   );
 }

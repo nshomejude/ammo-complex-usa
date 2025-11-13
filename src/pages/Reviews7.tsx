@@ -1,16 +1,25 @@
 import { useState } from "react";
-import { Star, ThumbsUp } from "lucide-react";
+import { Star, ThumbsUp, Plus } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { reviews } from "@/data/reviews";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Review } from "@/data/reviews";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { useReviews } from "@/contexts/ReviewContext";
+import { ReviewDetailModal } from "@/components/ReviewDetailModal";
+import { ReviewSubmissionForm } from "@/components/ReviewSubmissionForm";
 
 export default function Reviews7() {
+  const { reviews } = useReviews();
   const [ratingFilter, setRatingFilter] = useState<string>("all");
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
+  const [selectedReview, setSelectedReview] = useState<Review | null>(null);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
 
   const filteredReviews = reviews.filter(review => {
     if (ratingFilter !== "all" && review.rating < parseInt(ratingFilter)) return false;
