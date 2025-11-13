@@ -4,15 +4,16 @@ import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { ShopSidebar } from "@/components/ShopSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { products as rawProducts } from "@/data/products";
+import { products as rawProducts, Product } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Star, TrendingUp, Filter, X } from "lucide-react";
+import { Search, Star, TrendingUp, Filter, X, Eye } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { QuickViewModal } from "@/components/QuickViewModal";
 
 const products = rawProducts.map(addProductVariations);
 
@@ -20,11 +21,18 @@ export default function Shop11() {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("popularity");
   const [showFilters, setShowFilters] = useState(true);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
   const [filters, setFilters] = useState({
     priceRange: [0, 1000] as [number, number],
     selectedBrands: [] as string[],
     stockStatus: "all" as "all" | "inStock" | "outOfStock",
   });
+
+  const handleQuickView = (product: Product) => {
+    setSelectedProduct(product);
+    setIsQuickViewOpen(true);
+  };
 
   const availableBrands = useMemo(() => {
     const brands = new Set(products.map(p => p.manufacturer).filter(Boolean));
@@ -199,8 +207,17 @@ export default function Shop11() {
               {/* Products Grid - 4 columns ultimate layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {filteredProducts.map((product) => (
-                  <div key={product.id} className="group">
+                  <div key={product.id} className="relative group">
                     <ProductCard {...product} />
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                      onClick={() => handleQuickView(product)}
+                    >
+                      <Eye className="h-4 w-4 mr-1" />
+                      Quick View
+                    </Button>
                   </div>
                 ))}
               </div>
@@ -278,6 +295,12 @@ export default function Shop11() {
 
         <Footer />
       </div>
+
+      <QuickViewModal
+        product={selectedProduct}
+        isOpen={isQuickViewOpen}
+        onClose={() => setIsQuickViewOpen(false)}
+      />
     </SidebarProvider>
   );
 }
