@@ -5,16 +5,6 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
 import { reviews } from "@/data/reviews";
-  { id: 1, productName: "LWRC IC-DI", rating: 5, summary: "Piston-driven AR excellence. Cold-hammer-forged barrel delivers sub-MOA accuracy consistently.", reviewer: "3-Gun Pro", date: "2024-03-29", type: "Firearms", price: 1899, reliability: 98, accuracy: 95, value: 85 },
-  { id: 2, productName: "Prvi Partizan Match", rating: 4, summary: "Serbian match ammunition offering exceptional quality at competitive prices. Great for precision work.", reviewer: "F-Class Shooter", date: "2024-03-28", type: "Ammunition", price: 28, reliability: 92, accuracy: 90, value: 95 },
-  { id: 3, productName: "Safariland Protech Helmet", rating: 5, summary: "NIJ Level IIIA ballistic protection with excellent comfort for extended wear.", reviewer: "Tactical Team Member", date: "2024-03-26", type: "Accessories", price: 425, reliability: 99, accuracy: 88, value: 80 },
-  { id: 4, productName: "Tikka T3x TAC A1", rating: 5, summary: "Finnish precision bolt-action. Exceptional accuracy with competition-ready features out of the box.", reviewer: "PRS Competitor", date: "2024-03-24", type: "Firearms", price: 1899, reliability: 97, accuracy: 98, value: 90 },
-  { id: 5, productName: "Lapua Scenar-L", rating: 5, summary: "World-class match ammunition. The choice of champions for extreme long-range precision.", reviewer: "1000-Yard Champion", date: "2024-03-22", type: "Ammunition", price: 65, reliability: 99, accuracy: 99, value: 85 },
-  { id: 6, productName: "Garmin Foretrex 701", rating: 5, summary: "Military GPS with ballistic calculator. Essential navigation tool for serious shooters.", reviewer: "Long Range Instructor", date: "2024-03-20", type: "Accessories", price: 599, reliability: 96, accuracy: 94, value: 88 },
-  { id: 7, productName: "Staccato P", rating: 5, summary: "2011-style perfection. Carries like a dream and shoots like a race gun.", reviewer: "Carry Optics Champion", date: "2024-03-18", type: "Firearms", price: 2499, reliability: 98, accuracy: 97, value: 82 },
-  { id: 8, productName: "Norma Match .308", rating: 5, summary: "Premium Scandinavian ammunition. Consistent velocities and excellent accuracy.", reviewer: "Match Director", date: "2024-03-16", type: "Ammunition", price: 38, reliability: 95, accuracy: 94, value: 88 },
-  { id: 9, productName: "Steiner DBAL-A3", rating: 5, summary: "Civilian legal dual-beam aiming laser. Military durability with multiple modes.", reviewer: "Night Vision Operator", date: "2024-03-14", type: "Accessories", price: 1599, reliability: 98, accuracy: 96, value: 80 },
-];
 
 export default function Reviews10() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
@@ -133,7 +123,7 @@ export default function Reviews10() {
                       <div className="flex items-center gap-1">
                         {renderStars(review.rating)}
                       </div>
-                      <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">{review.type}</span>
+                      <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">{review.productType}</span>
                     </div>
                     
                     <h3 className="text-lg font-black text-foreground uppercase tracking-tight leading-tight">
@@ -141,41 +131,15 @@ export default function Reviews10() {
                     </h3>
                     
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {review.summary}
+                      {review.reviewSummary}
                     </p>
-
-                    {/* Performance Metrics */}
-                    <div className="space-y-3 bg-primary/5 p-4 rounded-lg">
-                      <div>
-                        <div className="flex justify-between text-xs font-bold mb-1">
-                          <span>Reliability</span>
-                          <span className="text-primary">{review.reliability}%</span>
-                        </div>
-                        <Progress value={review.reliability} className="h-2" />
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-xs font-bold mb-1">
-                          <span>Accuracy</span>
-                          <span className="text-primary">{review.accuracy}%</span>
-                        </div>
-                        <Progress value={review.accuracy} className="h-2" />
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-xs font-bold mb-1">
-                          <span>Value</span>
-                          <span className="text-primary">{review.value}%</span>
-                        </div>
-                        <Progress value={review.value} className="h-2" />
-                      </div>
-                    </div>
 
                     <div className="border-t-2 border-primary/20 pt-4">
                       <div className="flex justify-between items-center">
                         <div>
-                          <p className="text-xs font-bold text-foreground">{review.reviewer}</p>
-                          <p className="text-xs text-muted-foreground mt-1">{review.date}</p>
+                          <p className="text-xs font-bold text-foreground">{review.reviewerName}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{new Date(review.reviewDate).toLocaleDateString()}</p>
                         </div>
-                        <p className="text-2xl font-black text-primary">${review.price}</p>
                       </div>
                     </div>
                   </div>

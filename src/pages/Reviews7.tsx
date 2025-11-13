@@ -4,16 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { reviews } from "@/data/reviews";
-  { id: 1, productName: "Colt 1911 Government", rating: 5, summary: "Timeless classic with over a century of proven performance. Beautifully crafted and incredibly accurate.", reviewer: "John Browning Fan", date: "2024-03-26", type: "Firearms", price: 899 },
-  { id: 2, productName: "Remington UMC 9mm", rating: 4, summary: "Dependable bulk ammunition for high-volume training. Consistent performance at a budget-friendly price.", reviewer: "Training Coordinator", date: "2024-03-25", type: "Ammunition", price: 17 },
-  { id: 3, productName: "Harris Bipod", rating: 5, summary: "Rock-solid stability for precision shooting. Spring-loaded legs and smooth panning.", reviewer: "Long Range Shooter", date: "2024-03-23", type: "Accessories", price: 99 },
-  { id: 4, productName: "Ruger American Rifle", rating: 5, summary: "Outstanding accuracy straight from the box. Incredible value for a precision bolt-action.", reviewer: "Hunter Mike Davis", date: "2024-03-21", type: "Firearms", price: 499 },
-  { id: 5, productName: "Hornady Frontier 5.56", rating: 4, summary: "Quality Lake City brass with Hornady bullets. Great for semi-auto rifles.", reviewer: "AR Enthusiast", date: "2024-03-19", type: "Ammunition", price: 27 },
-  { id: 6, productName: "Blackhawk SERPA Holster", rating: 3, summary: "Secure retention but requires practice for smooth draw. Good budget option.", reviewer: "Deputy Sheriff", date: "2024-03-17", type: "Accessories", price: 45 },
-  { id: 7, productName: "Savage Axis II Precision", rating: 5, summary: "Sub-MOA accuracy at an unbeatable price point. Perfect for new precision shooters.", reviewer: "Precision Instructor", date: "2024-03-15", type: "Firearms", price: 549 },
-  { id: 8, productName: "Federal American Eagle", rating: 4, summary: "Reliable range ammunition with clean-burning powder. Great for practice sessions.", reviewer: "Range Regular", date: "2024-03-13", type: "Ammunition", price: 20 },
-  { id: 9, productName: "Bushnell TRS-25 Red Dot", rating: 4, summary: "Budget-friendly red dot that holds zero surprisingly well. Great for first-time optic users.", reviewer: "Budget Shooter", date: "2024-03-11", type: "Accessories", price: 69 },
-];
 
 export default function Reviews7() {
   const [ratingFilter, setRatingFilter] = useState<string>("all");
@@ -113,11 +103,11 @@ export default function Reviews7() {
                     </div>
                     <h3 className="text-2xl font-light text-foreground">{review.productName}</h3>
                     <p className="text-base text-muted-foreground leading-relaxed font-light">
-                      {review.summary}
+                      {review.reviewSummary}
                     </p>
                     <div className="border-t border-border pt-5">
-                      <p className="text-sm font-medium text-foreground">{review.reviewer}</p>
-                      <p className="text-sm text-muted-foreground mt-2 font-light">{review.date}</p>
+                      <p className="text-sm font-medium text-foreground">{review.reviewerName}</p>
+                      <p className="text-sm text-muted-foreground mt-2 font-light">{new Date(review.reviewDate).toLocaleDateString()}</p>
                     </div>
                   </div>
                 </Card>

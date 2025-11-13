@@ -4,16 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { reviews } from "@/data/reviews";
-  { id: 1, productName: "Barrett M82A1", rating: 5, summary: "The legendary .50 BMG platform. Devastating long-range capability with unmatched power.", reviewer: "Sniper Course Instructor", date: "2024-03-28", type: "Firearms", price: 8900 },
-  { id: 2, productName: "Black Hills MK 262", rating: 5, summary: "Match-grade 5.56 ammunition used by special operations. Consistent accuracy at distance.", reviewer: "Precision Rifle Team", date: "2024-03-27", type: "Ammunition", price: 32 },
-  { id: 3, productName: "Team Wendy EXFIL Helmet", rating: 5, summary: "Combat-proven ballistic helmet. Lightweight with excellent padding and accessory compatibility.", reviewer: "Infantry Squad Leader", date: "2024-03-25", type: "Accessories", price: 549 },
-  { id: 4, productName: "Benelli M4 Tactical", rating: 5, summary: "USMC-selected combat shotgun. Auto-regulating gas system provides unmatched reliability.", reviewer: "Military Armorer", date: "2024-03-23", type: "Firearms", price: 1999 },
-  { id: 5, productName: "IMI Systems 77gr OTM", rating: 5, summary: "Israeli Defense Forces ammunition. Match-grade accuracy with military reliability.", reviewer: "International Competitor", date: "2024-03-21", type: "Ammunition", price: 30 },
-  { id: 6, productName: "OPS-CORE AMP Headset", rating: 5, summary: "Superior hearing protection and communication. Standard issue for many SOF units.", reviewer: "Communications Specialist", date: "2024-03-19", type: "Accessories", price: 999 },
-  { id: 7, productName: "Accuracy International AXMC", rating: 5, summary: "Multi-caliber sniper system. Precision engineering for military and LE snipers.", reviewer: "Police Sniper", date: "2024-03-17", type: "Firearms", price: 7200 },
-  { id: 8, productName: "Hornady TAP Barrier", rating: 5, summary: "Barrier-blind law enforcement ammunition. Consistent performance through intermediate barriers.", reviewer: "SWAT Commander", date: "2024-03-15", type: "Ammunition", price: 40 },
-  { id: 9, productName: "Crye Precision G4 Combat Pants", rating: 5, summary: "The gold standard in tactical pants. Built-in knee pads and exceptional durability.", reviewer: "Special Forces", date: "2024-03-13", type: "Accessories", price: 289 },
-];
 
 export default function Reviews9() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
@@ -133,16 +123,15 @@ export default function Reviews9() {
                       {review.productName}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed font-semibold">
-                      {review.summary}
+                      {review.reviewSummary}
                     </p>
                     <div className="border-t-4 border-border pt-4">
                       <div className="flex justify-between items-center mb-2">
-                        <p className="text-xs font-black text-foreground uppercase tracking-wide">{review.reviewer}</p>
-                        <span className="text-xs font-black text-tactical uppercase bg-tactical/10 px-2 py-1">{review.type}</span>
+                        <p className="text-xs font-black text-foreground uppercase tracking-wide">{review.reviewerName}</p>
+                        <span className="text-xs font-black text-tactical uppercase bg-tactical/10 px-2 py-1">{review.productType}</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <p className="text-xs text-muted-foreground font-bold">{review.date}</p>
-                        <p className="text-xl font-black text-tactical">${review.price}</p>
+                        <p className="text-xs text-muted-foreground font-bold">{new Date(review.reviewDate).toLocaleDateString()}</p>
                       </div>
                     </div>
                   </div>

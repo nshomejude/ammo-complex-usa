@@ -4,16 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { reviews } from "@/data/reviews";
-  { id: 1, productName: "IWI Tavor X95", rating: 5, summary: "Bullpup excellence. Compact, reliable, and accurate. Perfect for close-quarters and vehicle operations.", reviewer: "Military Contractor", date: "2024-03-27", type: "Firearms", price: 1899 },
-  { id: 2, productName: "Underwood Ammo .357 Magnum", rating: 5, summary: "Maximum performance loads. Hot and accurate with excellent quality control.", reviewer: "Revolver Specialist", date: "2024-03-26", type: "Ammunition", price: 39 },
-  { id: 3, productName: "Ferro Concepts Slickster", rating: 5, summary: "Minimalist plate carrier perfection. Lightweight, low-profile, mission-adaptable.", reviewer: "SOF Operator", date: "2024-03-24", type: "Accessories", price: 159 },
-  { id: 4, productName: "CZ Shadow 2", rating: 5, summary: "Competition handgun royalty. Phenomenal trigger, excellent ergonomics, tack-driver accuracy.", reviewer: "IPSC Champion", date: "2024-03-22", type: "Firearms", price: 1299 },
-  { id: 5, productName: "SIG Sauer Elite V-Crown", rating: 5, summary: "Premium defensive ammunition. Consistent expansion and deep penetration in all tests.", reviewer: "Ballistics Lab", date: "2024-03-20", type: "Ammunition", price: 36 },
-  { id: 6, productName: "VTAC Padded Sling", rating: 4, summary: "Comfortable two-point sling with quick adjustments. Durable construction for hard use.", reviewer: "Tactical Instructor", date: "2024-03-18", type: "Accessories", price: 52 },
-  { id: 7, productName: "Knights Armament SR-15", rating: 5, summary: "Top-tier AR-15 platform. Exceptional reliability and accuracy justify the premium price.", reviewer: "Serious Rifle Guy", date: "2024-03-16", type: "Firearms", price: 2399 },
-  { id: 8, productName: "Corbon DPX", rating: 5, summary: "All-copper defensive loads with outstanding terminal performance. Barrier-blind penetration.", reviewer: "LE Armorer", date: "2024-03-14", type: "Ammunition", price: 44 },
-  { id: 9, productName: "Spiritus Systems Micro Fight", rating: 5, summary: "Modular chest rig done right. Lightweight, configurable, and bombproof.", reviewer: "Gear Reviewer", date: "2024-03-12", type: "Accessories", price: 89 },
-];
 
 export default function Reviews8() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
@@ -131,16 +121,13 @@ export default function Reviews8() {
                       {review.productName}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {review.summary}
+                      {review.reviewSummary}
                     </p>
                     <div className="border-t border-[hsl(45,93%,47%)]/20 pt-4">
                       <div className="flex justify-between items-end">
                         <div>
-                          <p className="text-sm font-bold text-foreground">{review.reviewer}</p>
-                          <p className="text-xs text-muted-foreground mt-1">{review.date}</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-2xl font-bold text-[hsl(45,93%,47%)]">${review.price}</p>
+                          <p className="text-sm font-bold text-foreground">{review.reviewerName}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{new Date(review.reviewDate).toLocaleDateString()}</p>
                         </div>
                       </div>
                     </div>

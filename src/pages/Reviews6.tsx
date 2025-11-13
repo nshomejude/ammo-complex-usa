@@ -6,18 +6,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { reviews } from "@/data/reviews";
 
-const mockReviews = reviews.map(r => ({...r, verified: true}));
-  { id: 1, productName: "HK VP9", rating: 5, summary: "German engineering excellence. Ergonomics are phenomenal and reliability is unquestionable.", reviewer: "Security Professional", date: "2024-03-25", type: "Firearms", price: 749, verified: true },
-  { id: 2, productName: "Speer Lawman 9mm", rating: 4, summary: "Clean-burning practice ammunition. Total metal jacket design reduces lead exposure at indoor ranges.", reviewer: "Range Safety Officer", date: "2024-03-24", type: "Ammunition", price: 21, verified: true },
-  { id: 3, productName: "Scalarworks LEAP Mount", rating: 5, summary: "Precision-machined perfection. Rock-solid optic mounting with return-to-zero capability.", reviewer: "Precision Rifle Specialist", date: "2024-03-22", type: "Accessories", price: 139, verified: true },
-  { id: 4, productName: "Sig Sauer P365XL", rating: 5, summary: "Revolutionary micro-compact. High capacity in a slim, shootable package.", reviewer: "CCW Instructor", date: "2024-03-20", type: "Firearms", price: 649, verified: true },
-  { id: 5, productName: "Barnes TAC-XPD", rating: 5, summary: "All-copper defensive ammunition. Deep penetration with consistent expansion.", reviewer: "Ballistic Expert", date: "2024-03-18", type: "Ammunition", price: 42, verified: true },
-  { id: 6, productName: "Wiley X Valor Glasses", rating: 4, summary: "Ballistic-rated eye protection with excellent clarity. Comfortable for all-day wear.", reviewer: "Tactical Training Center", date: "2024-03-16", type: "Accessories", price: 89, verified: true },
-  { id: 7, productName: "Wilson Combat EDC X9", rating: 5, summary: "Custom-grade 1911 perfection. Worth every penny for discerning shooters.", reviewer: "1911 Enthusiast", date: "2024-03-14", type: "Firearms", price: 2995, verified: true },
-  { id: 8, productName: "Fiocchi Shooting Dynamics", rating: 4, summary: "Italian quality at a reasonable price. Consistent performance for training sessions.", reviewer: "Competitive Shooter", date: "2024-03-12", type: "Ammunition", price: 23, verified: true },
-  { id: 9, productName: "Modlite OKW Light", rating: 5, summary: "Incredible throw for positive target identification. Industry-leading candela output.", reviewer: "Low-Light Instructor", date: "2024-03-10", type: "Accessories", price: 329, verified: true },
-];
-
 export default function Reviews6() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
@@ -132,25 +120,18 @@ export default function Reviews6() {
                       <div className="flex items-center gap-1">
                         {renderStars(review.rating)}
                       </div>
-                      {review.verified && (
-                        <Badge className="bg-tactical text-tactical-foreground">VERIFIED</Badge>
-                      )}
                     </div>
                     <h3 className="text-lg font-black text-foreground uppercase tracking-tight group-hover:text-tactical transition-colors">
                       {review.productName}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {review.summary}
+                      {review.reviewSummary}
                     </p>
                     <div className="border-t-2 border-border pt-4">
                       <div className="flex justify-between items-center">
                         <div>
-                          <p className="text-xs font-bold text-foreground uppercase">{review.reviewer}</p>
-                          <p className="text-xs text-muted-foreground mt-1">{review.date}</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="text-xs text-muted-foreground">PRICE</p>
-                          <p className="text-lg font-black text-tactical">${review.price}</p>
+                          <p className="text-xs font-bold text-foreground uppercase">{review.reviewerName}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{new Date(review.reviewDate).toLocaleDateString()}</p>
                         </div>
                       </div>
                     </div>
