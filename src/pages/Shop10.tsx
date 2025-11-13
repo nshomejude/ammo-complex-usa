@@ -4,13 +4,14 @@ import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { ShopSidebar } from "@/components/ShopSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { products as rawProducts } from "@/data/products";
+import { products as rawProducts, Product } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Award, GitCompare } from "lucide-react";
+import { Search, Award, GitCompare, Eye } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { QuickViewModal } from "@/components/QuickViewModal";
 
 const products = rawProducts.map(addProductVariations);
 
@@ -18,11 +19,18 @@ export default function Shop10() {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("popularity");
   const [compareMode, setCompareMode] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
   const [filters, setFilters] = useState({
     priceRange: [0, 1000] as [number, number],
     selectedBrands: [] as string[],
     stockStatus: "all" as "all" | "inStock" | "outOfStock",
   });
+
+  const handleQuickView = (product: Product) => {
+    setSelectedProduct(product);
+    setIsQuickViewOpen(true);
+  };
 
   const availableBrands = useMemo(() => {
     const brands = new Set(products.map(p => p.manufacturer).filter(Boolean));
@@ -145,8 +153,17 @@ export default function Shop10() {
                     className={`group relative ${compareMode ? 'ring-2 ring-accent/50 rounded-lg' : ''}`}
                   >
                     <ProductCard {...product} />
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg border-accent/30"
+                      onClick={() => handleQuickView(product)}
+                    >
+                      <Eye className="h-4 w-4 mr-1" />
+                      Quick View
+                    </Button>
                     {product.inStock && (
-                      <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">
+                      <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
                         In Stock
                       </Badge>
                     )}
@@ -166,6 +183,12 @@ export default function Shop10() {
 
         <Footer />
       </div>
+
+      <QuickViewModal
+        product={selectedProduct}
+        isOpen={isQuickViewOpen}
+        onClose={() => setIsQuickViewOpen(false)}
+      />
     </SidebarProvider>
   );
 }
