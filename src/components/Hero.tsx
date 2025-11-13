@@ -15,22 +15,22 @@ const defaultSlides: HeroSlide[] = [
   {
     id: 1,
     title: "Premium Ammunition for Licensed Buyers",
-    description: "Shop quality ammo with FFL verification and compliance"
+    description: "Shop our extensive selection of premium ammunition from trusted manufacturers including Federal, Hornady, Winchester, and Speer. Every purchase requires FFL verification and full compliance with federal and state regulations. We stock pistol, rifle, and shotgun ammunition for training, competition, and personal defense. Fast shipping, competitive pricing, and expert customer support ensure you get exactly what you need. All products are authentic and backed by manufacturer warranties."
   },
   {
     id: 2,
-    title: "Trusted by Law-Abiding Gun Owners",
-    description: "Secure purchases with verified firearms licenses"
+    title: "Trusted by Law-Abiding Gun Owners Nationwide",
+    description: "Join thousands of satisfied customers who rely on ARMS COMPLEX for their ammunition needs. We verify all firearms licenses to ensure legal compliance and secure transactions. Our commitment to responsible gun ownership means we only sell to eligible buyers. Browse our real-time inventory with instant availability updates. Orders ship within 24 hours with full tracking and secure packaging. Experience the difference of working with a licensed FFL dealer who understands your requirements and prioritizes safety."
   },
   {
     id: 3,
-    title: "Top Brands - Federal, Hornady & More",
-    description: "Authorized dealer offering competitive pricing"
+    title: "Top Brands - Federal, Hornady, Winchester & More",
+    description: "As an authorized dealer for America's leading ammunition manufacturers, we guarantee authentic products at competitive prices. Stock includes Federal Premium HST, Hornady Critical Duty, Winchester Ranger, Speer Gold Dot, and more professional-grade loads. Whether you need defensive carry ammunition, competition rounds, or training supplies, our curated selection meets the highest standards. Bulk discounts available. Regular sales and promotions help you save on premium ammunition. Expert staff available to help you choose the right load for your specific needs."
   },
   {
     id: 4,
-    title: "Fast & Legal Ammunition Shipping",
-    description: "Compliant delivery to all eligible states"
+    title: "Fast & Legal Ammunition Shipping to Your Door",
+    description: "We ship ammunition to all states where legally permitted with full compliance documentation. Orders placed before 2 PM ship the same business day with tracking. Secure packaging ensures your ammunition arrives safely and discreetly. We handle all compliance requirements so you can shop with confidence. Free shipping available on qualifying orders. Our streamlined checkout process makes ordering quick and easy. Licensed, insured, and committed to providing the best service in the industry for law-abiding gun owners."
   }
 ];
 
@@ -88,7 +88,7 @@ export const Hero = () => {
                       <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl transform transition-transform duration-700">
                         {slide.title}
                       </h1>
-                      <p className="mb-8 text-lg text-muted-foreground md:text-xl transform transition-all duration-700 delay-100">
+                      <p className="mb-8 text-base text-muted-foreground md:text-lg max-w-3xl mx-auto leading-relaxed transform transition-all duration-700 delay-100">
                         {slide.description}
                       </p>
                     </div>

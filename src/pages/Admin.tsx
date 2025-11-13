@@ -19,22 +19,22 @@ const defaultHeroSlides: HeroSlide[] = [
   {
     id: 1,
     title: "Premium Ammunition for Licensed Buyers",
-    description: "Shop quality ammo with FFL verification and compliance"
+    description: "Shop our extensive selection of premium ammunition from trusted manufacturers including Federal, Hornady, Winchester, and Speer. Every purchase requires FFL verification and full compliance with federal and state regulations. We stock pistol, rifle, and shotgun ammunition for training, competition, and personal defense. Fast shipping, competitive pricing, and expert customer support ensure you get exactly what you need. All products are authentic and backed by manufacturer warranties."
   },
   {
     id: 2,
-    title: "Trusted by Law-Abiding Gun Owners",
-    description: "Secure purchases with verified firearms licenses"
+    title: "Trusted by Law-Abiding Gun Owners Nationwide",
+    description: "Join thousands of satisfied customers who rely on ARMS COMPLEX for their ammunition needs. We verify all firearms licenses to ensure legal compliance and secure transactions. Our commitment to responsible gun ownership means we only sell to eligible buyers. Browse our real-time inventory with instant availability updates. Orders ship within 24 hours with full tracking and secure packaging. Experience the difference of working with a licensed FFL dealer who understands your requirements and prioritizes safety."
   },
   {
     id: 3,
-    title: "Top Brands - Federal, Hornady & More",
-    description: "Authorized dealer offering competitive pricing"
+    title: "Top Brands - Federal, Hornady, Winchester & More",
+    description: "As an authorized dealer for America's leading ammunition manufacturers, we guarantee authentic products at competitive prices. Stock includes Federal Premium HST, Hornady Critical Duty, Winchester Ranger, Speer Gold Dot, and more professional-grade loads. Whether you need defensive carry ammunition, competition rounds, or training supplies, our curated selection meets the highest standards. Bulk discounts available. Regular sales and promotions help you save on premium ammunition. Expert staff available to help you choose the right load for your specific needs."
   },
   {
     id: 4,
-    title: "Fast & Legal Ammunition Shipping",
-    description: "Compliant delivery to all eligible states"
+    title: "Fast & Legal Ammunition Shipping to Your Door",
+    description: "We ship ammunition to all states where legally permitted with full compliance documentation. Orders placed before 2 PM ship the same business day with tracking. Secure packaging ensures your ammunition arrives safely and discreetly. We handle all compliance requirements so you can shop with confidence. Free shipping available on qualifying orders. Our streamlined checkout process makes ordering quick and easy. Licensed, insured, and committed to providing the best service in the industry for law-abiding gun owners."
   }
 ];
 
@@ -85,7 +85,7 @@ const Admin = () => {
   };
 
   const saveSlide = () => {
-    if (editTitle.trim() && editDescription.trim() && editDescription.length <= 50) {
+    if (editTitle.trim() && editDescription.trim() && editDescription.length >= 400 && editDescription.length <= 600) {
       const updatedSlides = heroSlides.map(slide =>
         slide.id === editingSlide
           ? { ...slide, title: editTitle, description: editDescription }
@@ -96,7 +96,7 @@ const Admin = () => {
       setEditingSlide(null);
       toast.success("Hero slide updated successfully");
     } else {
-      toast.error("Title required and description must be ≤50 characters");
+      toast.error("Title required and description must be 400-600 characters");
     }
   };
 
@@ -104,7 +104,7 @@ const Admin = () => {
     const newSlide: HeroSlide = {
       id: Math.max(...heroSlides.map(s => s.id)) + 1,
       title: "New Slide Title",
-      description: "New description (max 50 characters)"
+      description: "Add your SEO-optimized description here. Make sure it's between 400-600 characters to provide comprehensive information about your products and services. Include relevant keywords, compelling benefits, and clear calls to action. Describe your unique value proposition and what sets you apart from competitors. Focus on customer benefits and legal compliance. Mention shipping, pricing, quality guarantees, and customer support. Make every word count towards converting visitors into customers."
     };
     const updatedSlides = [...heroSlides, newSlide];
     setHeroSlides(updatedSlides);
@@ -144,7 +144,7 @@ const Admin = () => {
                 Hero Slides Manager
               </CardTitle>
               <CardDescription>
-                Edit hero section slides. Descriptions must be ≤50 characters for optimal display.
+                Edit hero section slides. Descriptions must be 400-600 characters for SEO optimization and sales intent.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -170,15 +170,21 @@ const Admin = () => {
                         </div>
                         <div>
                           <label className="text-sm font-medium mb-2 block">
-                            Description ({editDescription.length}/50 characters)
+                            Description ({editDescription.length}/600 characters, min 400 required)
                           </label>
                           <Textarea
                             value={editDescription}
                             onChange={(e) => setEditDescription(e.target.value)}
-                            placeholder="Enter slide description (max 50 characters)"
-                            maxLength={50}
-                            rows={2}
+                            placeholder="Enter SEO-optimized description (400-600 characters). Include keywords, benefits, and sales intent."
+                            maxLength={600}
+                            rows={6}
+                            className={editDescription.length < 400 ? 'border-destructive' : ''}
                           />
+                          <p className="text-xs text-muted-foreground mt-1">
+                            {editDescription.length < 400 
+                              ? `${400 - editDescription.length} more characters needed` 
+                              : `${600 - editDescription.length} characters remaining`}
+                          </p>
                         </div>
                         <div className="flex gap-2">
                           <Button onClick={saveSlide} size="sm" className="bg-tactical hover:bg-tactical/90">
