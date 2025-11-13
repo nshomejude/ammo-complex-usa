@@ -6373,7 +6373,56 @@ export const products: Product[] = [
     categorySlug: "40-sw",
     description: "Italian-made quality training ammunition",
     manufacturer: "Fiocchi",
-    grainWeight: "180gr"
+    grainWeight: "180gr",
+    shortDescription: "Fiocchi 180gr FMJ brings over 145 years of Italian ammunition craftsmanship to .40 S&W training. European quality standards with consistent performance trusted worldwide.",
+    longDescription: "Fiocchi 180-grain Full Metal Jacket ammunition represents Italian ammunition manufacturing excellence applied to the American .40 S&W cartridge, combining Old World craftsmanship with modern production technology. Founded in 1876 in Lecco, Italy, Fiocchi has built a reputation for quality ammunition that's earned contracts with military and law enforcement agencies across Europe and beyond. The company's commitment to precision manufacturing and quality components translates to training ammunition that performs reliably and consistently. The .40 S&W cartridge, while an American development, has gained international acceptance, and Fiocchi's approach brings European manufacturing standards to this capable defensive caliber. The 180-grain bullet weight is the universally recognized standard for .40 S&W, providing optimal balance between velocity and momentum that made this caliber popular with law enforcement agencies globally. Fiocchi's full metal jacket bullet features a precision-formed copper jacket fully encasing the lead core except at the base, creating a rounded nose profile optimized for feeding reliability through diverse semi-automatic pistol designs. This complete jacket coverage eliminates lead exposure concerns at indoor ranges while preventing the barrel leading that can accumulate during extended shooting sessions. The rounded ogive is carefully formed to feed smoothly even through the sometimes-tight feed ramps of compact carry pistols. Fiocchi ammunition is loaded to standard .40 S&W pressure specifications using components manufactured to European quality standards, which often exceed minimum American specifications. The brass cases are manufactured at Fiocchi facilities using precision drawing and forming processes that create uniform wall thickness and consistent internal capacity - critical characteristics for uniform ballistics. Each case features centered flash holes, precisely formed primer pockets, and properly dimensioned extractor grooves ensuring reliable function across diverse firearms. The boxer primers use non-corrosive compounds formulated for reliable ignition across temperature extremes while preventing corrosion in stored ammunition. Fiocchi's powder formulations burn cleanly, reducing carbon buildup in pistol actions and barrels compared to many budget alternatives. For shooters who appreciate European quality standards and consistent performance, Fiocchi provides excellent training ammunition at mid-range pricing.",
+    features: [
+      "180-grain full metal jacket at optimal .40 S&W weight",
+      "Italian craftsmanship with 145+ years manufacturing heritage",
+      "Precision-formed copper jacket for reliable feeding",
+      "Boxer-primed reloadable brass cases",
+      "European quality standards exceed SAAMI minimums",
+      "Clean-burning powder reduces fouling accumulation",
+      "Non-corrosive primers for reliable ignition",
+      "Uniform brass cases with consistent wall thickness",
+      "Standard pressure suitable for all .40 S&W firearms",
+      "Trusted internationally by military and law enforcement"
+    ],
+    benefits: [
+      "European manufacturing quality standards",
+      "Clean-burning powder extends shooting sessions",
+      "Consistent performance for effective skill development",
+      "Reloadable premium brass cases",
+      "International quality at competitive pricing",
+      "Reliable feeding across diverse platforms"
+    ],
+    useCases: [
+      "Range training and practice sessions",
+      "Competitive shooting practice (USPSA, IDPA)",
+      "Defensive shooting skills development",
+      "Law enforcement qualification and training",
+      "Concealed carry proficiency maintenance",
+      "Recreational target shooting"
+    ],
+    technicalDetails: "Fiocchi 180gr FMJ achieves approximately 1,000-1,010 fps muzzle velocity from 4-inch barrels, delivering 400-408 foot-pounds of energy. These ballistics place it within standard .40 S&W specifications, ensuring reliable function across all firearms chambered in this caliber. The full metal jacket bullet features a lead core with precision-drawn copper jacket extending from the rounded tip to just above the base. Bullet diameter is precisely controlled at .400 inches with tight tolerances ensuring consistent chambering and bore engagement. The jacket is formed to uniform thickness, providing structural integrity during feeding and firing. Fiocchi's brass cases are manufactured using European precision drawing processes that create uniform wall thickness critical for consistent internal ballistics. Flash holes are centered and deburred to consistent diameter, primer pockets are formed to precise depth specifications, and extractor grooves are dimensioned to European firearms standards which are compatible with American specifications. The boxer primers utilize non-corrosive, non-mercuric compounds formulated for reliable ignition from sub-zero to extreme heat conditions. Powder selection emphasizes clean combustion with reduced carbon residue compared to budget imports, using propellants with consistent burn rates across temperature variations. Quality control includes dimensional inspection of components and loaded ammunition, function testing in proof barrels, and chronograph verification of velocity specifications. Fiocchi ammunition meets both European CIP standards and American SAAMI specifications, ensuring compatibility with firearms manufactured to international standards.",
+    whyChoose: "Choose Fiocchi when you want European quality standards in your training ammunition. Fiocchi's 145+ years of ammunition manufacturing experience brings Old World craftsmanship to modern ammunition production, with quality control standards that often exceed American minimums. The company supplies military and law enforcement contracts internationally, validation of their manufacturing quality and reliability. The 180-grain bullet weight is the proven standard for .40 S&W, offering ballistics that closely match defensive hollow point ammunition for realistic training that translates to defensive applications. Fiocchi's clean-burning powder formulation produces noticeably less fouling than many budget alternatives, meaning extended shooting sessions between cleanings and less time spent on maintenance. The premium brass cases are manufactured to tight European specifications and are highly suitable for reloading, offering long case life when properly processed. For shooters who appreciate the precision and consistency of European manufacturing applied to American calibers, Fiocchi delivers that combination at competitive pricing. The reliable feeding and function across diverse firearms eliminates ammunition-induced malfunctions during practice sessions. Competitive shooters appreciate Fiocchi for consistent performance that enables skill development without ammunition variables. Whether training for defensive applications, competing in action pistol sports, or maintaining proficiency with your carry gun, Fiocchi provides the European quality and American compatibility that serious shooters value.",
+    seoKeywords: [
+      "fiocchi 40 sw",
+      "180 grain 40 s&w italian",
+      "fiocchi 40 smith wesson",
+      "buy fiocchi 40 sw",
+      "italian 40 caliber ammo",
+      "quality 40 sw training",
+      "fiocchi 40 cal fmj",
+      "european 40 sw ammunition",
+      "fiocchi pistol ammo",
+      "premium 40 sw range ammo",
+      "fiocchi 180gr target",
+      "40 sw practice rounds",
+      "clean burning 40 caliber",
+      "fiocchi brass 40 sw",
+      "imported 40 sw quality"
+    ]
   },
   {
     id: "40sw-pmc-bronze-180",
@@ -6386,7 +6435,56 @@ export const products: Product[] = [
     categorySlug: "40-sw",
     description: "Value-priced range ammunition",
     manufacturer: "PMC",
-    grainWeight: "180gr"
+    grainWeight: "180gr",
+    shortDescription: "PMC Bronze 180gr FMJ delivers Korean manufacturing quality at exceptional value. Precision Cartridge from a major international supplier trusted by militaries worldwide.",
+    longDescription: "PMC Bronze 180-grain Full Metal Jacket ammunition represents value-oriented training ammunition from Precision Made Cartridges, a division of South Korea's Poongsan Corporation - one of the world's largest ammunition manufacturers supplying military contracts to allied nations including the United States. PMC's Bronze line provides civilian shooters with ammunition manufactured on the same production lines that produce military contract ammunition, ensuring quality standards significantly higher than typical budget imports. The .40 S&W cartridge delivers substantial defensive capability, and PMC Bronze enables affordable mastery of this capable caliber through high-volume practice. The 180-grain bullet weight is the industry standard for .40 S&W, providing optimal sectional density for penetration while generating manageable recoil for accurate rapid fire strings. PMC's full metal jacket bullet features a copper-alloy jacket completely encasing the lead core except at the base, forming a rounded nose profile that feeds reliably through all .40 S&W semi-automatic pistols from full-size duty guns to compact carry pistols. This full jacket coverage prevents lead exposure at indoor ranges while eliminating barrel leading during extended shooting sessions. The rounded ogive profile is specifically designed for feeding reliability even through tight feed ramps common in compact pistol designs. PMC Bronze is loaded to standard .40 S&W pressure specifications, ensuring reliable cycling across all firearms chambered in this caliber including subcompact pistols with lighter recoil springs. The brass cases are manufactured at Poongsan facilities using modern automated equipment ensuring dimensional consistency. Each case is boxer-primed making them fully reloadable, and PMC brass has earned a solid reputation among reloaders for consistent quality and reasonable case life. The primers use non-corrosive compounds ensuring reliable ignition across diverse temperature conditions. PMC's powder formulations burn relatively cleanly compared to budget alternatives, reducing fouling accumulation in pistol actions. For budget-conscious shooters who won't compromise on reliability, PMC Bronze delivers consistent performance that enables high-volume training.",
+    features: [
+      "180-grain full metal jacket at standard .40 S&W weight",
+      "Manufactured by Poongsan, major international military supplier",
+      "Copper-alloy jacket prevents lead exposure and fouling",
+      "Rounded nose profile ensures reliable feeding",
+      "Boxer-primed reloadable brass cases",
+      "Standard pressure suitable for all .40 S&W firearms",
+      "Non-corrosive primers for reliable ignition",
+      "Relatively clean-burning powder formulation",
+      "Quality control from military contract manufacturer",
+      "Exceptional value for high-volume training"
+    ],
+    benefits: [
+      "Military contract manufacturer quality at budget pricing",
+      "Reliable performance enables consistent skill development",
+      "Clean-burning compared to typical budget imports",
+      "Reloadable brass extends ammunition budget",
+      "Consistent feeding across diverse .40 S&W platforms",
+      "International quality standards at accessible prices"
+    ],
+    useCases: [
+      "High-volume range training and practice",
+      "Budget-conscious defensive skills development",
+      "Competition practice for USPSA and IDPA",
+      "New shooter training with .40 S&W",
+      "Recreational target shooting and plinking",
+      "Maintaining concealed carry proficiency affordably"
+    ],
+    technicalDetails: "PMC Bronze 180gr FMJ achieves approximately 985-1,000 fps muzzle velocity from 4-inch barrels, delivering 388-400 foot-pounds of energy. These velocities place it within standard .40 S&W pressure specifications, ensuring reliable function in all firearms chambered in this caliber. The full metal jacket bullet features a lead core with copper-alloy jacket extending from the rounded tip to just above the base, fully encasing the lead during barrel passage. Bullet diameter is maintained at .400 inches with consistent tolerances ensuring reliable chambering and bore engagement. The jacket is drawn to controlled thickness providing structural integrity. Poongsan's brass cases are manufactured using modern automated equipment ensuring dimensional consistency competitive with major American manufacturers. Case wall thickness is controlled for uniform internal capacity, flash holes are centered and deburred, primer pockets are formed to consistent depth, and extractor grooves are properly dimensioned for reliable extraction. The boxer primers utilize non-corrosive, non-mercuric compounds formulated for reliable ignition across temperature ranges. Powder formulation emphasizes consistent burn rates and relatively clean combustion compared to budget imports, though fouling may be moderately higher than premium American brands. Quality control includes component inspection, dimensional verification, function testing in proof barrels, and periodic chronograph validation. PMC ammunition is manufactured to both South Korean military specifications and American SAAMI standards, ensuring compatibility with all properly manufactured firearms.",
+    whyChoose: "Choose PMC Bronze when you need to maximize training volume within a tight budget without sacrificing reliability. PMC isn't bargain-basement ammunition - it's manufactured by Poongsan Corporation, one of the world's largest ammunition manufacturers supplying military contracts to allied nations including U.S. military purchases. The same production facilities and quality control processes that produce military contract ammunition manufacture PMC Bronze, ensuring reliability far exceeding typical budget imports. The 180-grain bullet weight is the proven standard for .40 S&W, offering ballistics that match defensive hollow point ammunition for realistic training. For shooters who train regularly, PMC Bronze's aggressive pricing enables 30-40% more practice ammunition compared to premium American brands for the same budget - and more trigger time translates directly to improved skills. The reloadable brass cases provide additional value for handloaders, with PMC brass offering reasonable case life and consistent performance through multiple reloadings. The relatively clean-burning powder allows extended shooting sessions before detailed cleaning becomes necessary. Reliable feeding and function across diverse firearms means training sessions proceed smoothly without ammunition-induced malfunctions. For competitive shooters practicing for matches, PMC Bronze provides affordable practice ammunition that functions reliably for skill development. Budget-conscious carriers maintaining proficiency with .40 S&W pistols appreciate PMC Bronze for enabling regular practice that builds and maintains defensive skills. When your goal is maximizing practice volume to develop fundamental shooting abilities, choose PMC Bronze for reliable ammunition from a proven international manufacturer at pricing that makes regular training affordable.",
+    seoKeywords: [
+      "pmc bronze 40 sw",
+      "180 grain 40 s&w budget",
+      "cheap 40 sw training ammo",
+      "pmc 40 smith wesson",
+      "affordable 40 caliber bulk",
+      "value 40 sw range ammo",
+      "pmc 40 cal fmj",
+      "budget 40 sw practice",
+      "buy pmc bronze 40",
+      "inexpensive 40 caliber",
+      "pmc pistol ammunition",
+      "bulk 40 sw training",
+      "economic 40 sw ammo",
+      "pmc 180gr target",
+      "best value 40 sw"
+    ]
   },
   {
     id: "40sw-sellier-bellot-180",
@@ -6399,7 +6497,56 @@ export const products: Product[] = [
     categorySlug: "40-sw",
     description: "Czech-made brass-cased ammunition",
     manufacturer: "Sellier & Bellot",
-    grainWeight: "180gr"
+    grainWeight: "180gr",
+    shortDescription: "Sellier & Bellot 180gr FMJ brings nearly 200 years of Czech ammunition expertise to .40 S&W training. European precision manufacturing at competitive American pricing.",
+    longDescription: "Sellier & Bellot 180-grain Full Metal Jacket ammunition represents nearly two centuries of Central European ammunition manufacturing excellence applied to the American .40 S&W cartridge. Established in Prague in 1825, Sellier & Bellot is one of the oldest continuously operating ammunition manufacturers in the world, with a heritage of supplying military forces and civilian shooters across Europe and globally. The company's longevity testifies to their commitment to quality manufacturing and consistent performance. The .40 S&W cartridge, developed in America for law enforcement, has gained international acceptance, and Sellier & Bellot brings their European precision manufacturing standards to this capable defensive caliber. The 180-grain bullet weight is universally recognized as optimal for .40 S&W, providing ideal sectional density for penetration while generating manageable recoil for accurate rapid fire. Sellier & Bellot's full metal jacket bullet features a precision-formed copper jacket fully encasing the lead core except at the base, creating a rounded nose profile specifically designed for feeding reliability through diverse semi-automatic pistol designs. This complete jacket coverage eliminates lead exposure concerns at indoor ranges while preventing the barrel leading that can accumulate during high-volume shooting. The rounded ogive is carefully formed using precision tooling to ensure smooth feeding even through the sometimes-challenging feed ramps of compact carry pistols. Sellier & Bellot ammunition is loaded to standard .40 S&W pressure specifications using components manufactured to strict European quality standards. The brass cases are manufactured at Sellier & Bellot facilities in the Czech Republic using precision manufacturing processes that create uniform wall thickness and consistent internal capacity - characteristics critical for uniform ballistics shot to shot. Each case features centered flash holes, precisely formed primer pockets at controlled depths, and properly dimensioned extractor grooves ensuring reliable function across all .40 S&W firearms. The boxer primers use non-corrosive compounds formulated for reliable ignition across extreme temperature ranges while preventing corrosion in stored ammunition. Sellier & Bellot's powder formulations burn cleanly, minimizing carbon buildup in pistol actions and barrels. For shooters who appreciate Old World manufacturing quality applied to modern ammunition at competitive pricing, Sellier & Bellot delivers consistent performance and reliability.",
+    features: [
+      "180-grain full metal jacket at optimal .40 S&W weight",
+      "Nearly 200 years Czech ammunition manufacturing heritage",
+      "Precision-formed copper jacket for reliable feeding",
+      "Boxer-primed reloadable brass cases",
+      "European quality standards and manufacturing precision",
+      "Clean-burning powder reduces fouling accumulation",
+      "Non-corrosive primers for reliable ignition",
+      "Uniform brass with consistent wall thickness",
+      "Standard pressure suitable for all .40 S&W firearms",
+      "Trusted internationally for quality and consistency"
+    ],
+    benefits: [
+      "Nearly two centuries of manufacturing expertise",
+      "European precision at competitive American pricing",
+      "Clean-burning powder extends shooting sessions",
+      "Consistent performance for skill development",
+      "Reloadable premium brass cases",
+      "Reliable feeding across diverse platforms"
+    ],
+    useCases: [
+      "Range training and practice sessions",
+      "Competitive shooting practice (USPSA, IDPA)",
+      "Defensive shooting skills development",
+      "Law enforcement qualification and training",
+      "Concealed carry proficiency maintenance",
+      "Recreational target shooting and plinking"
+    ],
+    technicalDetails: "Sellier & Bellot 180gr FMJ achieves approximately 990-1,005 fps muzzle velocity from 4-inch barrels, delivering 392-404 foot-pounds of energy. These ballistics place it solidly within standard .40 S&W specifications, ensuring reliable function across all firearms chambered in this caliber including compact pistols with lighter recoil springs. The full metal jacket bullet features a lead core with precision-drawn copper jacket extending from the rounded tip to just above the base, fully encasing the lead core during barrel passage. Bullet diameter is precisely controlled at .400 inches with tight tolerances ensuring consistent chambering and bore engagement. The jacket is formed to uniform thickness using European precision tooling, providing structural integrity during feeding and firing. Sellier & Bellot's brass cases are manufactured in the Czech Republic using precision drawing and forming processes refined over nearly 200 years of production. Case wall thickness is carefully controlled for uniform internal capacity, flash holes are centered and deburred to consistent diameter, primer pockets are formed to precise depth specifications meeting European standards, and extractor grooves are dimensioned to work with both European and American firearms. The boxer primers utilize non-corrosive, non-mercuric compounds formulated for reliable ignition from sub-zero European winters to extreme summer heat. Powder selection emphasizes clean combustion with reduced carbon residue, using propellants with consistent burn rates across temperature variations. Quality control includes dimensional inspection of components and loaded ammunition, function testing in proof barrels, and chronograph verification. Sellier & Bellot ammunition meets both European CIP standards and American SAAMI specifications, ensuring compatibility with firearms manufactured to international standards.",
+    whyChoose: "Choose Sellier & Bellot when you want nearly 200 years of European ammunition manufacturing expertise in your training ammunition. Sellier & Bellot's longevity in the competitive ammunition industry testifies to their commitment to quality and consistency - companies don't survive two centuries without delivering reliable products. The European manufacturing precision applied to American calibers provides shooters with ammunition that often exceeds basic SAAMI specifications for dimensional consistency and quality. The 180-grain bullet weight is the proven standard for .40 S&W, offering ballistics that closely match defensive hollow point ammunition for realistic training that translates to defensive applications. Sellier & Bellot's clean-burning powder formulation produces noticeably less fouling than many budget alternatives, meaning extended shooting sessions between cleanings and reduced maintenance time. The premium brass cases are manufactured to tight European specifications and provide excellent reloading characteristics with long case life when properly processed. For competitive shooters, Sellier & Bellot delivers the consistency needed for skill development without ammunition variables affecting performance. The reliable feeding and function across diverse firearms eliminates ammunition-induced malfunctions that can disrupt training. Whether training for defensive applications, competing in action pistol sports, or maintaining proficiency with your .40 S&W carry gun, Sellier & Bellot provides Old World quality at New World competitive pricing. The company's international reputation and nearly two centuries of continuous operation validate their commitment to manufacturing excellence - choose Sellier & Bellot for training ammunition backed by unmatched heritage.",
+    seoKeywords: [
+      "sellier bellot 40 sw",
+      "180 grain 40 s&w czech",
+      "sellier bellot 40 smith wesson",
+      "buy sellier bellot 40",
+      "czech 40 caliber ammo",
+      "sb 40 sw training",
+      "european 40 sw ammunition",
+      "sellier bellot pistol",
+      "quality 40 sw range ammo",
+      "sb 180gr fmj",
+      "40 sw practice rounds",
+      "sellier bellot brass",
+      "imported 40 caliber quality",
+      "czech ammunition 40 sw",
+      "precision 40 sw training"
+    ]
   },
   {
     id: "40sw-corbon-dpx-140",
@@ -6412,7 +6559,56 @@ export const products: Product[] = [
     categorySlug: "40-sw",
     description: "All-copper defensive ammunition",
     manufacturer: "Cor-Bon",
-    grainWeight: "140gr"
+    grainWeight: "140gr",
+    shortDescription: "Cor-Bon DPX 140gr delivers revolutionary all-copper bullet technology to .40 S&W defensive applications. Barnes X-Bullet engineering for lead-free, barrier-blind performance.",
+    longDescription: "Cor-Bon DPX (Deep Penetrating X-Bullet) 140-grain ammunition represents a revolutionary approach to defensive handgun ammunition, featuring Barnes' legendary all-copper X-Bullet technology optimized for .40 S&W defensive applications. Unlike conventional lead-core hollow points, DPX bullets are machined from solid copper bars, creating a monolithic projectile that cannot separate or fragment regardless of barriers encountered. This all-copper construction provides several critical advantages for defensive applications while meeting increasingly common lead-free ammunition requirements at indoor ranges and in certain jurisdictions. The .40 S&W cartridge delivers substantial stopping power, and DPX ammunition maximizes this caliber's defensive potential through innovative bullet design that solves problems inherent in conventional hollow point construction. The 140-grain weight is significantly lighter than the traditional 180-grain standard, a deliberate optimization that increases velocity substantially while the all-copper construction maintains sectional density adequate for deep penetration. This velocity increase is critical for the DPX bullet's performance - the higher impact velocities ensure reliable expansion of the precision-machined petals. The Barnes X-Bullet features four precision-cut petals that peel back upon impact, creating a distinctive four-pointed star expansion pattern while the solid copper shank maintains structural integrity for deep, straight-line penetration. Because the bullet is machined from solid copper rather than formed around a lead core, there's no core to separate - the bullet maintains nearly 100% weight retention regardless of barriers encountered. This characteristic is revolutionary - conventional bonded bullets claim 95% weight retention, but DPX maintains virtually the entire bullet mass because there's nothing to separate or shed. The all-copper construction also means DPX bullets are longer than equivalent-weight lead-core bullets due to copper's lower density, providing enhanced sectional density that aids penetration. Cor-Bon loads DPX with powder formulations specifically optimized for the lighter bullet weight, achieving velocities approximately 150-200 fps higher than 180-grain loads while maintaining manageable recoil and ensuring reliable expansion. For defensive carriers in lead-restricted areas, or those seeking the ultimate in barrier-blind performance with maximum weight retention, DPX represents cutting-edge defensive ammunition technology.",
+    features: [
+      "140-grain Barnes all-copper X-Bullet for lead-free performance",
+      "Monolithic construction prevents core-jacket separation",
+      "Four precision-machined petals for controlled expansion",
+      "Near 100% weight retention through barriers and tissue",
+      "Higher velocity than 180gr loads increases expansion reliability",
+      "Solid copper construction for straight-line penetration",
+      "Lead-free for restricted ranges and jurisdictions",
+      "Nickel-plated cases resist corrosion during carry",
+      "Optimized powder for lighter bullet weight",
+      "Barnes X-Bullet technology proven in hunting and defense"
+    ],
+    benefits: [
+      "All-copper construction eliminates core-jacket separation",
+      "Near-perfect weight retention ensures deep penetration",
+      "Higher velocity ensures reliable expansion from compact pistols",
+      "Lead-free meets increasingly common range restrictions",
+      "Barrier-blind performance through obstacles",
+      "Proven Barnes bullet technology in defensive application"
+    ],
+    useCases: [
+      "Concealed carry defensive ammunition",
+      "Home defense in lead-restricted jurisdictions",
+      "Indoor range practice where lead-free is required",
+      "Personal protection requiring maximum weight retention",
+      "Defensive carry where barrier penetration is likely",
+      "Environmentally-conscious defensive preparedness"
+    ],
+    technicalDetails: "Cor-Bon DPX 140gr achieves approximately 1,200-1,225 fps muzzle velocity from 4-inch barrels, generating 448-467 foot-pounds of energy - substantially more than 180-grain loads. From 3.5-inch compact barrels, velocity remains approximately 1,150-1,175 fps with 412-430 foot-pounds, significantly faster than heavier bullets ensuring reliable expansion from compact carry guns. The Barnes X-Bullet is machined from solid copper bars using precision cutting tools that create four symmetrical petals separated by precision-cut slots extending from the hollow point cavity. The cavity depth and petal thickness are specifically engineered for .40 S&W velocities in the 1,100-1,250 fps range. Upon impact, hydraulic pressure in the cavity drives the petals backward, peeling them back nearly 90 degrees to create a four-pointed star pattern. The expanded bullet typically measures 0.65-0.75 caliber with sharp petal edges, creating substantial wound channels while the solid copper shank maintains straight-line penetration. Because the bullet is monolithic copper rather than copper jacket around lead core, weight retention approaches 100% - the bullet simply cannot separate into components. Ballistic gelatin testing demonstrates 12-18 inches penetration through FBI protocol barriers including heavy denim, wallboard, and automotive glass, with consistent expansion after barrier penetration. The all-copper construction means the bullet is longer than lead-core bullets of equivalent weight due to copper's lower density (copper's specific gravity is 8.9 versus lead's 11.3). This increased length provides enhanced sectional density beneficial for penetration. The nickel-plated cases resist corrosion during extended carry. Powder formulation is specifically optimized for the 140-grain bullet weight, achieving higher velocities than possible with 180-grain bullets while maintaining pressure within .40 S&W specifications.",
+    whyChoose: "Choose Cor-Bon DPX when you want the most advanced defensive bullet technology available in .40 S&W. The Barnes X-Bullet represents a fundamental revolution in bullet design - rather than trying to keep a jacket bonded to a core, Barnes eliminated the core entirely, creating a monolithic copper projectile that cannot separate by definition. This design ensures near-perfect weight retention that bonded bullets cannot match - when conventional bonded bullets claim 95% retention, DPX maintains virtually the entire bullet because there's nothing to separate. The all-copper construction also solves the lead exposure and environmental concerns increasingly important to conscientious shooters, while meeting lead-free requirements at many indoor ranges and in certain jurisdictions. The 140-grain weight optimization increases velocity substantially compared to 180-grain loads, ensuring the bullet impacts at velocities that guarantee reliable expansion even from compact carry pistols with short barrels. The precision-machined petal design creates consistent, controlled expansion that performs predictably regardless of barriers encountered first. For defensive scenarios involving vehicle glass, interior walls, or heavy barriers, DPX's monolithic construction ensures the bullet maintains integrity and continues penetrating toward vital zones when conventional bullets would fragment or separate. The Barnes X-Bullet has decades of proven performance in hunting applications where deep penetration through heavy bone is required - that same engineering excellence applied to defensive handgun ammunition creates ultimate barrier-blind performance. When you need defensive ammunition that combines cutting-edge technology with proven performance, when lead-free is required or preferred, choose Cor-Bon DPX for the most advanced defensive bullet design available.",
+    seoKeywords: [
+      "corbon dpx 40 sw",
+      "140 grain 40 s&w copper",
+      "all copper 40 caliber",
+      "barnes bullet 40 sw",
+      "lead free 40 sw defense",
+      "buy corbon dpx 40",
+      "monolithic bullet 40 caliber",
+      "corbon 40 smith wesson",
+      "barrier blind 40 sw",
+      "premium 40 sw defense",
+      "copper hollow point 40",
+      "dpx ammunition 40 cal",
+      "environmental 40 sw ammo",
+      "solid copper 40 caliber",
+      "advanced 40 sw defense"
+    ]
   },
   {
     id: "40sw-aguila-180",
@@ -6425,7 +6621,56 @@ export const products: Product[] = [
     categorySlug: "40-sw",
     description: "Mexican-made value training ammunition",
     manufacturer: "Aguila",
-    grainWeight: "180gr"
+    grainWeight: "180gr",
+    shortDescription: "Aguila 180gr FMJ provides reliable .40 S&W training ammunition at exceptional value. Mexican manufacturing expertise from a major international ammunition producer.",
+    longDescription: "Aguila 180-grain Full Metal Jacket ammunition delivers affordable, reliable .40 S&W training performance from Tecnos Estudios y Controles, one of Mexico's largest and most respected ammunition manufacturers. Established in 1961, Aguila has built a reputation for producing quality ammunition that's earned military and law enforcement contracts throughout Latin America while providing civilian shooters worldwide with value-priced training ammunition. The company operates modern manufacturing facilities in Cuernavaca, Mexico, using equipment and processes that meet international ammunition standards. The .40 S&W cartridge delivers substantial defensive capability, and Aguila ammunition enables affordable mastery through high-volume practice that builds the skills necessary for effective defensive shooting. The 180-grain bullet weight is the universally recognized standard for .40 S&W, providing optimal balance between velocity and momentum while generating manageable recoil for extended practice sessions. Aguila's full metal jacket bullet features a copper-alloy jacket fully encasing the lead core except at the base, creating a rounded nose profile designed for reliable feeding through all .40 S&W semi-automatic pistols from full-size duty guns to compact carry pistols. This complete jacket coverage eliminates lead exposure concerns at indoor ranges while preventing the barrel leading that can accumulate during high-volume shooting. The rounded ogive is formed to feed smoothly through diverse pistol feed ramps, ensuring reliability across various firearm designs. Aguila ammunition is loaded to standard .40 S&W pressure specifications, ensuring reliable function in all firearms chambered in this caliber including subcompact pistols with lighter recoil springs and shorter barrels. The brass cases are manufactured at Aguila facilities using modern production equipment, and each case is boxer-primed making them reloadable for handloaders seeking to extend their ammunition budget. The primers use non-corrosive compounds ensuring reliable ignition across temperature ranges. For budget-conscious shooters who need affordable ammunition that functions reliably, Aguila provides the training ammunition necessary for skill development without breaking the bank.",
+    features: [
+      "180-grain full metal jacket at standard .40 S&W weight",
+      "Manufactured by Tecnos, major Mexican ammunition producer",
+      "Copper-alloy jacket prevents lead exposure and fouling",
+      "Rounded nose profile for reliable feeding in semi-autos",
+      "Boxer-primed reloadable brass cases",
+      "Standard pressure suitable for all .40 S&W firearms",
+      "Non-corrosive primers for reliable ignition",
+      "Modern manufacturing facilities meet international standards",
+      "Aguila's 60+ years manufacturing experience",
+      "Maximum value for high-volume training budgets"
+    ],
+    benefits: [
+      "Exceptional pricing enables maximum training volume",
+      "Reliable performance for effective skill development",
+      "Reloadable brass cases extend ammunition budget",
+      "International quality standards at budget pricing",
+      "Consistent feeding across diverse .40 S&W platforms",
+      "Affordable practice maintains defensive proficiency"
+    ],
+    useCases: [
+      "High-volume range training on tight budgets",
+      "Budget-conscious defensive skills development",
+      "New shooter training with .40 S&W",
+      "Recreational target shooting and plinking",
+      "Competitive practice for USPSA and IDPA",
+      "Maintaining concealed carry proficiency affordably"
+    ],
+    technicalDetails: "Aguila 180gr FMJ achieves approximately 980-995 fps muzzle velocity from 4-inch barrels, delivering 384-396 foot-pounds of energy. These velocities place it within standard .40 S&W pressure specifications, ensuring reliable function across all firearms chambered in this caliber. The full metal jacket bullet features a lead core with copper-alloy jacket extending from the rounded tip to just above the base, fully encasing the lead during barrel passage. Bullet diameter is maintained at .400 inches with tolerances ensuring consistent chambering and bore engagement. The jacket provides structural integrity during feeding and firing. Aguila's brass cases are manufactured at their Cuernavaca facilities using automated equipment. Case wall thickness is controlled for reasonably uniform internal capacity, flash holes are centered, primer pockets are formed to consistent depth, and extractor grooves are dimensioned for compatibility with .40 S&W firearms. The boxer primers utilize non-corrosive, non-mercuric compounds formulated for ignition across temperature ranges. Powder formulation provides consistent burn rates, though carbon fouling may be moderately higher than premium American brands. Quality control includes component inspection, dimensional verification, function testing, and periodic chronograph validation. Aguila ammunition is manufactured to international standards and SAAMI specifications, ensuring compatibility with properly manufactured firearms.",
+    whyChoose: "Choose Aguila when maximum training volume within a strict budget is your priority. Aguila provides functional, reliable .40 S&W training ammunition at pricing that enables shooters to practice more frequently - and increased practice time translates directly to improved skills and confidence. While positioned as budget ammunition, Aguila is manufactured by Tecnos, a major international ammunition producer with over 60 years of experience and military contracts throughout Latin America. The 180-grain bullet weight is the proven standard for .40 S&W, offering ballistics that approximate defensive hollow point ammunition for realistic training. For shooters committed to regular practice but constrained by budget, Aguila's aggressive pricing can enable 40-50% more practice ammunition compared to premium brands - that additional training volume builds fundamental skills that matter when accuracy counts. The reloadable brass cases provide extra value for handloaders who process and reload cases, further reducing per-round training costs. The reliable feeding and function across properly maintained firearms means training sessions proceed without ammunition-induced malfunctions. For budget-conscious competitive shooters practicing for matches, Aguila provides affordable practice ammunition for skill development. New shooters learning .40 S&W fundamentals benefit from Aguila's affordable pricing that makes regular range sessions financially sustainable. When your goal is maximizing trigger time to build shooting skills, choose Aguila for budget-friendly ammunition that delivers reliable performance where it matters most - getting rounds downrange affordably.",
+    seoKeywords: [
+      "aguila 40 sw",
+      "180 grain 40 s&w budget",
+      "cheap 40 sw training ammo",
+      "aguila 40 smith wesson",
+      "affordable 40 caliber bulk",
+      "value 40 sw ammunition",
+      "aguila 40 cal fmj",
+      "budget 40 sw practice",
+      "buy aguila 40 sw",
+      "inexpensive 40 caliber",
+      "mexican 40 sw ammo",
+      "bulk 40 sw training",
+      "economic 40 sw rounds",
+      "aguila pistol ammunition",
+      "best value 40 sw training"
+    ]
   },
   {
     id: "40sw-cci-blazer-180",
@@ -6438,7 +6683,56 @@ export const products: Product[] = [
     categorySlug: "40-sw",
     description: "Reliable brass-cased training load",
     manufacturer: "CCI",
-    grainWeight: "180gr"
+    grainWeight: "180gr",
+    shortDescription: "CCI Blazer Brass 180gr FMJ delivers CCI precision at training-friendly pricing. American quality from the primer experts trusted by shooters for over 50 years.",
+    longDescription: "CCI Blazer Brass 180-grain Full Metal Jacket ammunition represents CCI's commitment to providing reliable, accurate training ammunition at accessible pricing, manufactured by the company that revolutionized rimfire and primer manufacturing. CCI (Cascade Cartridge Inc.) was founded in 1951 in Lewiston, Idaho, and quickly became the premier manufacturer of primers - the critical component that initiates ammunition firing. This primer expertise extends throughout CCI's ammunition lines, ensuring reliable ignition that shooters depend on. The Blazer Brass line provides training ammunition with CCI quality standards at pricing that enables high-volume practice. The .40 S&W cartridge delivers substantial stopping power with manageable recoil, and CCI Blazer Brass helps shooters master this capable defensive caliber through affordable, reliable practice. The 180-grain bullet weight is the industry standard for .40 S&W, providing optimal sectional density for penetration while generating recoil manageable enough for extended practice sessions and accurate rapid fire strings. CCI's full metal jacket bullet features a copper jacket fully encasing the lead core except at the base, creating a rounded nose profile specifically designed for feeding reliability through all .40 S&W semi-automatic pistols. This complete jacket coverage eliminates lead exposure at indoor ranges while preventing the barrel leading that accumulates with exposed lead bullets during high-volume shooting. The rounded ogive feeds smoothly through diverse pistol designs from full-size duty guns to compact carry pistols with tight feed ramps. Blazer Brass is loaded to standard .40 S&W pressure specifications, ensuring reliable function across all firearms chambered in this caliber including subcompact pistols with lighter recoil springs. The brass cases carry the CCI headstamp and are manufactured to quality standards that make them suitable for reloading - CCI brass is respected among reloaders for consistent quality and reasonable case life. Each primer is manufactured by CCI using their proprietary processes refined over 70 years, ensuring the reliable ignition that made CCI the primer supplier to major ammunition manufacturers. For shooters who want American-made training ammunition with CCI's reputation for reliability, Blazer Brass delivers consistent performance at training-friendly pricing.",
+    features: [
+      "180-grain full metal jacket at optimal .40 S&W weight",
+      "CCI primers - the industry standard for reliability",
+      "Copper jacket prevents lead exposure and fouling",
+      "Rounded nose profile ensures reliable feeding",
+      "Quality brass cases suitable for reloading",
+      "Standard pressure for all .40 S&W firearms",
+      "American-made with CCI quality control",
+      "70+ years CCI manufacturing expertise",
+      "Non-corrosive primers for consistent ignition",
+      "Training-friendly pricing from premier manufacturer"
+    ],
+    benefits: [
+      "CCI primer reliability ensures consistent ignition",
+      "American manufacturing quality at competitive pricing",
+      "Reliable feeding across diverse .40 S&W platforms",
+      "Quality brass suitable for reloading extends value",
+      "CCI reputation backs every cartridge",
+      "Ballistics match defensive loads for realistic training"
+    ],
+    useCases: [
+      "Range training and skills development",
+      "Concealed carry practice and proficiency maintenance",
+      "Competition practice for USPSA and IDPA",
+      "Defensive shooting drills and courses",
+      "Law enforcement qualification and training",
+      "Recreational target shooting"
+    ],
+    technicalDetails: "CCI Blazer Brass 180gr FMJ achieves approximately 1,000-1,010 fps muzzle velocity from 4-inch barrels, delivering 400-408 foot-pounds of energy. These ballistics place it squarely within standard .40 S&W specifications, ensuring reliable cycling in all firearms chambered in this caliber. The full metal jacket bullet features a lead core with copper jacket extending from the rounded tip to just above the base, fully encasing the lead during barrel passage. Bullet diameter is precisely controlled at .400 inches with tight tolerances ensuring consistent chambering and bore engagement. The jacket is formed to uniform thickness providing structural integrity during feeding and firing. CCI's brass cases are manufactured in their Idaho facilities using modern equipment ensuring dimensional consistency. Case wall thickness is controlled for uniform internal capacity, flash holes are centered and deburred, primer pockets are formed to precise depth specifications, and extractor grooves are properly dimensioned for reliable extraction across various pistol designs. The CCI primers represent the company's core expertise - CCI manufactures primers for major ammunition companies and their own ammunition benefits from this specialized knowledge. The primers use non-corrosive, non-mercuric compounds formulated for reliable ignition across temperature extremes from sub-zero to extreme heat. Powder selection emphasizes consistent burn rates and relatively clean combustion, minimizing carbon buildup in pistol actions. Quality control includes multiple inspection stages from component manufacture through loaded ammunition verification, with statistical process monitoring ensuring consistency. CCI's Idaho manufacturing facilities maintain standards that have made CCI products trusted by shooters for over 70 years.",
+    whyChoose: "Choose CCI Blazer Brass when you want American-made training ammunition from the company that set the standard for primer reliability. CCI's expertise in primer manufacturing - the critical component that initiates every shot - extends throughout their ammunition lines, ensuring the reliable ignition that eliminates one of the primary causes of ammunition malfunctions. The 180-grain bullet weight is the proven standard for .40 S&W, offering ballistics that closely match defensive hollow point ammunition so your training translates directly to defensive applications. CCI's manufacturing in their Idaho facilities ensures quality control standards and American manufacturing excellence that imported ammunition often cannot match. The brass cases are manufactured to quality standards that make them suitable for reloading, with CCI brass offering reasonable case life and consistent performance through multiple reloading cycles when properly processed. For competitive shooters, Blazer Brass provides the reliability needed for match preparation, with feeding and ignition reliability that eliminates ammunition-induced malfunctions during practice. The relatively clean-burning powder reduces barrel and action fouling compared to budget imports, meaning extended shooting sessions between detailed cleanings. Law enforcement officers appreciate Blazer Brass for training that mirrors duty ammunition ballistics at sustainable costs for department budgets. CCI's reputation has been built over 70+ years of manufacturing excellence - when you choose Blazer Brass, you're choosing ammunition backed by a company whose name is synonymous with reliability in the shooting industry. Trust CCI Blazer Brass for American-made training ammunition that delivers CCI quality at prices that make regular practice affordable.",
+    seoKeywords: [
+      "cci blazer brass 40 sw",
+      "180 grain 40 s&w training",
+      "cci 40 smith wesson",
+      "buy blazer brass 40",
+      "american made 40 sw",
+      "cci 40 caliber fmj",
+      "blazer brass 40 cal",
+      "quality 40 sw training",
+      "cci pistol ammunition",
+      "reliable 40 sw range ammo",
+      "blazer brass 180gr",
+      "cci 40 sw practice",
+      "usa made 40 caliber",
+      "best 40 sw training ammo",
+      "cci quality 40 sw"
+    ]
   },
   // Pistol Ammunition - .357 Magnum / .38 Special Category
   {
