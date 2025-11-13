@@ -65,13 +65,13 @@ export const Hero = () => {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <section className="relative overflow-hidden border-b border-border">
+    <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-[hsl(0,75%,96%)] via-background to-background">
       <div className="container relative mx-auto px-4 py-14 md:py-20">
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 flex justify-center">
-            <div className="inline-flex items-center gap-2 rounded-full border-2 border-tactical/30 bg-tactical/10 px-4 py-2">
-              <Shield className="h-4 w-4 text-tactical" />
-              <span className="text-sm font-medium text-tactical">Licensed FFL Dealer</span>
+            <div className="inline-flex items-center gap-2 rounded-full border-2 border-[hsl(var(--home2-accent))] bg-[hsl(var(--home2-accent-light))] px-4 py-2">
+              <Shield className="h-4 w-4" style={{ color: 'hsl(var(--home2-accent))' }} />
+              <span className="text-sm font-medium" style={{ color: 'hsl(var(--home2-accent))' }}>Licensed FFL Dealer</span>
             </div>
           </div>
 
@@ -99,18 +99,36 @@ export const Hero = () => {
 
             <button
               onClick={scrollPrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-all duration-300 hover:bg-accent hover:scale-110 hover:border-tactical active:scale-95"
+              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-all duration-300 hover:scale-110 active:scale-95"
+              style={{ 
+                borderColor: 'hsl(var(--home2-primary))',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'hsl(var(--home2-accent-light))';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'hsl(var(--background))';
+              }}
               aria-label="Previous slide"
             >
-              <ChevronLeft className="h-6 w-6 transition-transform duration-300" />
+              <ChevronLeft className="h-6 w-6 transition-transform duration-300" style={{ color: 'hsl(var(--home2-accent))' }} />
             </button>
 
             <button
               onClick={scrollNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-all duration-300 hover:bg-accent hover:scale-110 hover:border-tactical active:scale-95"
+              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-all duration-300 hover:scale-110 active:scale-95"
+              style={{ 
+                borderColor: 'hsl(var(--home2-primary))',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'hsl(var(--home2-accent-light))';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'hsl(var(--background))';
+              }}
               aria-label="Next slide"
             >
-              <ChevronRight className="h-6 w-6 transition-transform duration-300" />
+              <ChevronRight className="h-6 w-6 transition-transform duration-300" style={{ color: 'hsl(var(--home2-accent))' }} />
             </button>
           </div>
 
@@ -119,11 +137,23 @@ export const Hero = () => {
               <button
                 key={index}
                 onClick={() => emblaApi?.scrollTo(index)}
-                className={`h-2 rounded-full transition-all duration-500 hover:scale-125 ${
-                  index === selectedIndex 
-                    ? 'w-8 bg-tactical shadow-lg shadow-tactical/50 scale-110' 
-                    : 'w-2 bg-border hover:bg-tactical/50'
-                }`}
+                className="h-2 rounded-full transition-all duration-500 hover:scale-125"
+                style={{
+                  width: index === selectedIndex ? '32px' : '8px',
+                  backgroundColor: index === selectedIndex ? 'hsl(var(--home2-primary))' : 'hsl(var(--border))',
+                  boxShadow: index === selectedIndex ? '0 10px 25px -5px hsl(var(--home2-primary) / 0.5)' : 'none',
+                  transform: index === selectedIndex ? 'scale(1.1)' : 'scale(1)',
+                }}
+                onMouseEnter={(e) => {
+                  if (index !== selectedIndex) {
+                    e.currentTarget.style.backgroundColor = 'hsl(var(--home2-primary) / 0.5)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (index !== selectedIndex) {
+                    e.currentTarget.style.backgroundColor = 'hsl(var(--border))';
+                  }
+                }}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
@@ -131,12 +161,42 @@ export const Hero = () => {
 
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <Link to="/products">
-              <Button size="lg" className="w-full sm:w-auto bg-tactical hover:bg-tactical/90 px-8 py-6">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto px-8 py-6 text-white transition-all duration-300"
+                style={{ 
+                  backgroundColor: 'hsl(var(--home2-primary))',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'hsl(var(--home2-primary-hover))';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 10px 25px -5px hsl(var(--home2-primary) / 0.3)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'hsl(var(--home2-primary))';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}
+              >
                 Browse Products
               </Button>
             </Link>
             <Link to="/about">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 px-8 py-6">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="w-full sm:w-auto border-2 px-8 py-6 transition-all duration-300"
+                style={{ 
+                  borderColor: 'hsl(var(--home2-primary))',
+                  color: 'hsl(var(--home2-accent))',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'hsl(var(--home2-accent-light))';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
+              >
                 Legal Requirements
               </Button>
             </Link>
