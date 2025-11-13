@@ -9,6 +9,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { useShippingConfig } from "@/hooks/useShippingConfig";
 import { Label } from "@/components/ui/label";
+import { ProductManagement } from "@/components/admin/ProductManagement";
 
 const Admin = () => {
   const [blockedCountries, setBlockedCountries] = useState<string[]>([
@@ -54,6 +55,8 @@ const Admin = () => {
         </div>
 
         <div className="grid gap-6">
+          <ProductManagement />
+          
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
