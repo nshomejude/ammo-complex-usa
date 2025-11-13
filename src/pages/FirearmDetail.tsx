@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import WhyBuyFromUs from "@/components/WhyBuyFromUs";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -473,6 +474,9 @@ const FirearmDetail = () => {
             </AccordionItem>
           </Accordion>
         </section>
+
+        {/* Why Buy From Us Section */}
+        <WhyBuyFromUs />
 
         {compatibleAmmo.length > 0 && (
           <div className="mb-12">

@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import WhyBuyFromUs from "@/components/WhyBuyFromUs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -309,9 +310,63 @@ const ProductDetail = () => {
                 <CardContent className="prose prose-slate max-w-none">
                   <div className="text-base leading-relaxed space-y-4">
                     {product.longDescription ? (
-                      product.longDescription.split('\n\n').map((paragraph, idx) => (
-                        <p key={idx}>{paragraph}</p>
-                      ))
+                      <div className="space-y-6">
+                        {product.longDescription.split('\n\n').map((paragraph, idx) => {
+                          // Check if it's a section header (starts with ##)
+                          if (paragraph.startsWith('## ')) {
+                            const headerText = paragraph.replace('## ', '');
+                            return (
+                              <div key={idx} className="mt-8 mb-4">
+                                <div className="flex items-center gap-3 mb-4">
+                                  <div className="h-1 w-12 bg-tactical rounded"></div>
+                                  <h3 className="text-2xl font-bold text-foreground">{headerText}</h3>
+                                </div>
+                              </div>
+                            );
+                          }
+                          
+                          // Check if it's a bulleted list item
+                          if (paragraph.startsWith('• ') || paragraph.startsWith('- ')) {
+                            const items = paragraph.split('\n').filter(line => line.trim());
+                            return (
+                              <ul key={idx} className="space-y-2 ml-6">
+                                {items.map((item, itemIdx) => (
+                                  <li key={itemIdx} className="text-base leading-relaxed text-foreground list-disc">
+                                    {item.replace(/^[•-]\s*/, '')}
+                                  </li>
+                                ))}
+                              </ul>
+                            );
+                          }
+                          
+                          // Check if it's a numbered list
+                          if (/^\d+\.\s/.test(paragraph)) {
+                            const items = paragraph.split('\n').filter(line => line.trim());
+                            return (
+                              <ol key={idx} className="space-y-2 ml-6 list-decimal">
+                                {items.map((item, itemIdx) => (
+                                  <li key={itemIdx} className="text-base leading-relaxed text-foreground">
+                                    {item.replace(/^\d+\.\s*/, '')}
+                                  </li>
+                                ))}
+                              </ol>
+                            );
+                          }
+                          
+                          // Regular paragraph with bold text support
+                          const formattedParagraph = paragraph
+                            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-foreground">$1</strong>')
+                            .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>');
+                          
+                          return (
+                            <p 
+                              key={idx} 
+                              className="text-base leading-relaxed text-foreground"
+                              dangerouslySetInnerHTML={{ __html: formattedParagraph }}
+                            />
+                          );
+                        })}
+                      </div>
                     ) : (
                       <p>{product.description}</p>
                     )}
@@ -651,6 +706,9 @@ const ProductDetail = () => {
             </Card>
           </div>
         </div>
+
+        {/* Why Buy From Us Section */}
+        <WhyBuyFromUs />
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
