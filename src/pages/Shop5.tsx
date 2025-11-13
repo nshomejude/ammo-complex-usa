@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
@@ -15,15 +16,34 @@ import { QuickViewModal } from "@/components/QuickViewModal";
 const products = rawProducts.map(addProductVariations);
 
 export default function Shop5() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [sortBy, setSortBy] = useState("popularity");
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
+
+  const maxPrice = useMemo(() => Math.max(...products.map(p => p.price)), []);
+
+  const [searchTerm, setSearchTerm] = useState(searchParams.get("search") || "");
+  const [sortBy, setSortBy] = useState(searchParams.get("sort") || "popularity");
   const [filters, setFilters] = useState({
-    priceRange: [0, 1000] as [number, number],
-    selectedBrands: [] as string[],
-    stockStatus: "all" as "all" | "inStock" | "outOfStock",
+    priceRange: [
+      Number(searchParams.get("minPrice")) || 0,
+      Number(searchParams.get("maxPrice")) || maxPrice
+    ] as [number, number],
+    selectedBrands: searchParams.get("brands")?.split(",").filter(Boolean) || [],
+    stockStatus: (searchParams.get("stock") as "all" | "inStock" | "outOfStock") || "all",
   });
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (searchTerm) params.set("search", searchTerm);
+    if (sortBy !== "popularity") params.set("sort", sortBy);
+    if (filters.priceRange[0] > 0) params.set("minPrice", filters.priceRange[0].toString());
+    if (filters.priceRange[1] < maxPrice) params.set("maxPrice", filters.priceRange[1].toString());
+    if (filters.selectedBrands.length > 0) params.set("brands", filters.selectedBrands.join(","));
+    if (filters.stockStatus !== "all") params.set("stock", filters.stockStatus);
+    
+    setSearchParams(params, { replace: true });
+  }, [searchTerm, sortBy, filters, maxPrice, setSearchParams]);
 
   const handleQuickView = (product: Product) => {
     setSelectedProduct(product);
@@ -33,10 +53,6 @@ export default function Shop5() {
   const availableBrands = useMemo(() => {
     const brands = new Set(products.map(p => p.manufacturer).filter(Boolean));
     return Array.from(brands) as string[];
-  }, []);
-
-  const maxPrice = useMemo(() => {
-    return Math.max(...products.map(p => p.price));
   }, []);
 
   const filteredProducts = useMemo(() => {
