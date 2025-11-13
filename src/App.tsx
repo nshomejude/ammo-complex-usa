@@ -49,6 +49,16 @@ import Contact8 from "./pages/Contact8";
 import Contact9 from "./pages/Contact9";
 import Contact10 from "./pages/Contact10";
 import Contact11 from "./pages/Contact11";
+import Reviews1 from "./pages/Reviews1";
+import Reviews2 from "./pages/Reviews2";
+import Reviews3 from "./pages/Reviews3";
+import Reviews4 from "./pages/Reviews4";
+import Reviews5 from "./pages/Reviews5";
+import Reviews6 from "./pages/Reviews6";
+import Reviews7 from "./pages/Reviews7";
+import Reviews8 from "./pages/Reviews8";
+import Reviews9 from "./pages/Reviews9";
+import Reviews10 from "./pages/Reviews10";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
