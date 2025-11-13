@@ -13,9 +13,14 @@ interface ProductCardProps {
   price: number;
   inStock: boolean;
   image?: string;
+  variations?: {
+    rounds: number;
+    price: number;
+    inStock: boolean;
+  }[];
 }
 
-export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image }: ProductCardProps) => {
+export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, variations }: ProductCardProps) => {
   return (
     <Link to={`/product/${id}`}>
       <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full">
@@ -32,6 +37,30 @@ export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image }
       
       <CardContent className="p-4">
         <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
+        
+        {variations && variations.length > 0 && (
+          <div className="mb-3">
+            <p className="text-xs text-muted-foreground mb-1.5">Round Count:</p>
+            <div className="flex flex-wrap gap-1.5">
+              {variations.map((variant, idx) => (
+                <button
+                  key={idx}
+                  onClick={(e) => e.preventDefault()}
+                  className={`px-2.5 py-1 text-xs font-medium rounded border transition-all ${
+                    variant.rounds === rounds
+                      ? 'bg-tactical text-tactical-foreground border-tactical'
+                      : variant.inStock
+                      ? 'bg-secondary border-border hover:border-tactical/50'
+                      : 'bg-muted border-border text-muted-foreground line-through opacity-60'
+                  }`}
+                >
+                  {variant.rounds}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+        
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-tactical">${price.toFixed(2)}</span>
           {inStock ? (

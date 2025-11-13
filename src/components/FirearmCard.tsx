@@ -33,18 +33,28 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price, inStock, a
         
         <CardContent className="p-4">
           <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
-          <div className="flex flex-wrap gap-1 mb-2">
-            {caliber.slice(0, 2).map((cal, idx) => (
-              <Badge key={idx} variant="outline" className="text-xs border-tactical/50">
-                {cal}
-              </Badge>
-            ))}
-            {caliber.length > 2 && (
-              <Badge variant="outline" className="text-xs border-tactical/50">
-                +{caliber.length - 2}
-              </Badge>
-            )}
-          </div>
+          
+          {caliber.length > 0 && (
+            <div className="mb-3">
+              <p className="text-xs text-muted-foreground mb-1.5">Available Calibers:</p>
+              <div className="flex flex-wrap gap-1.5">
+                {caliber.map((cal, idx) => (
+                  <button
+                    key={idx}
+                    onClick={(e) => e.preventDefault()}
+                    className={`px-2.5 py-1 text-xs font-medium rounded border transition-all ${
+                      idx === 0
+                        ? 'bg-tactical text-tactical-foreground border-tactical'
+                        : 'bg-secondary border-border hover:border-tactical/50'
+                    }`}
+                  >
+                    {cal}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          
           <div className="flex items-center justify-between">
             <span className="text-2xl font-bold text-tactical">${price.toFixed(2)}</span>
             {inStock ? (
