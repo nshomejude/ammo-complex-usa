@@ -3,8 +3,7 @@ import { Star, Target } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
-
-const mockReviews = [
+import { reviews } from "@/data/reviews";
   { id: 1, productName: "Barrett M82A1", rating: 5, summary: "The legendary .50 BMG platform. Devastating long-range capability with unmatched power.", reviewer: "Sniper Course Instructor", date: "2024-03-28", type: "Firearms", price: 8900 },
   { id: 2, productName: "Black Hills MK 262", rating: 5, summary: "Match-grade 5.56 ammunition used by special operations. Consistent accuracy at distance.", reviewer: "Precision Rifle Team", date: "2024-03-27", type: "Ammunition", price: 32 },
   { id: 3, productName: "Team Wendy EXFIL Helmet", rating: 5, summary: "Combat-proven ballistic helmet. Lightweight with excellent padding and accessory compatibility.", reviewer: "Infantry Squad Leader", date: "2024-03-25", type: "Accessories", price: 549 },
@@ -20,9 +19,9 @@ export default function Reviews9() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 

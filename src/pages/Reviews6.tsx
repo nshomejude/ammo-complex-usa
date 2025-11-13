@@ -4,8 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
+import { reviews } from "@/data/reviews";
 
-const mockReviews = [
+const mockReviews = reviews.map(r => ({...r, verified: true}));
   { id: 1, productName: "HK VP9", rating: 5, summary: "German engineering excellence. Ergonomics are phenomenal and reliability is unquestionable.", reviewer: "Security Professional", date: "2024-03-25", type: "Firearms", price: 749, verified: true },
   { id: 2, productName: "Speer Lawman 9mm", rating: 4, summary: "Clean-burning practice ammunition. Total metal jacket design reduces lead exposure at indoor ranges.", reviewer: "Range Safety Officer", date: "2024-03-24", type: "Ammunition", price: 21, verified: true },
   { id: 3, productName: "Scalarworks LEAP Mount", rating: 5, summary: "Precision-machined perfection. Rock-solid optic mounting with return-to-zero capability.", reviewer: "Precision Rifle Specialist", date: "2024-03-22", type: "Accessories", price: 139, verified: true },
@@ -21,9 +22,9 @@ export default function Reviews6() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 

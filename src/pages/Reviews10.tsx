@@ -4,8 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
-
-const mockReviews = [
+import { reviews } from "@/data/reviews";
   { id: 1, productName: "LWRC IC-DI", rating: 5, summary: "Piston-driven AR excellence. Cold-hammer-forged barrel delivers sub-MOA accuracy consistently.", reviewer: "3-Gun Pro", date: "2024-03-29", type: "Firearms", price: 1899, reliability: 98, accuracy: 95, value: 85 },
   { id: 2, productName: "Prvi Partizan Match", rating: 4, summary: "Serbian match ammunition offering exceptional quality at competitive prices. Great for precision work.", reviewer: "F-Class Shooter", date: "2024-03-28", type: "Ammunition", price: 28, reliability: 92, accuracy: 90, value: 95 },
   { id: 3, productName: "Safariland Protech Helmet", rating: 5, summary: "NIJ Level IIIA ballistic protection with excellent comfort for extended wear.", reviewer: "Tactical Team Member", date: "2024-03-26", type: "Accessories", price: 425, reliability: 99, accuracy: 88, value: 80 },
@@ -21,9 +20,9 @@ export default function Reviews10() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 

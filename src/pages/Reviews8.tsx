@@ -3,8 +3,7 @@ import { Star, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
-
-const mockReviews = [
+import { reviews } from "@/data/reviews";
   { id: 1, productName: "IWI Tavor X95", rating: 5, summary: "Bullpup excellence. Compact, reliable, and accurate. Perfect for close-quarters and vehicle operations.", reviewer: "Military Contractor", date: "2024-03-27", type: "Firearms", price: 1899 },
   { id: 2, productName: "Underwood Ammo .357 Magnum", rating: 5, summary: "Maximum performance loads. Hot and accurate with excellent quality control.", reviewer: "Revolver Specialist", date: "2024-03-26", type: "Ammunition", price: 39 },
   { id: 3, productName: "Ferro Concepts Slickster", rating: 5, summary: "Minimalist plate carrier perfection. Lightweight, low-profile, mission-adaptable.", reviewer: "SOF Operator", date: "2024-03-24", type: "Accessories", price: 159 },
@@ -20,9 +19,9 @@ export default function Reviews8() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 

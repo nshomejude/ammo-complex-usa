@@ -3,8 +3,7 @@ import { Star, ThumbsUp } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-
-const mockReviews = [
+import { reviews } from "@/data/reviews";
   { id: 1, productName: "Colt 1911 Government", rating: 5, summary: "Timeless classic with over a century of proven performance. Beautifully crafted and incredibly accurate.", reviewer: "John Browning Fan", date: "2024-03-26", type: "Firearms", price: 899 },
   { id: 2, productName: "Remington UMC 9mm", rating: 4, summary: "Dependable bulk ammunition for high-volume training. Consistent performance at a budget-friendly price.", reviewer: "Training Coordinator", date: "2024-03-25", type: "Ammunition", price: 17 },
   { id: 3, productName: "Harris Bipod", rating: 5, summary: "Rock-solid stability for precision shooting. Spring-loaded legs and smooth panning.", reviewer: "Long Range Shooter", date: "2024-03-23", type: "Accessories", price: 99 },
@@ -20,9 +19,9 @@ export default function Reviews7() {
   const [ratingFilter, setRatingFilter] = useState<string>("all");
   const [typeFilter, setTypeFilter] = useState<string>("all");
 
-  const filteredReviews = mockReviews.filter(review => {
-    if (ratingFilter !== "all" && review.rating !== parseInt(ratingFilter)) return false;
-    if (typeFilter !== "all" && review.type !== typeFilter) return false;
+  const filteredReviews = reviews.filter(review => {
+    if (ratingFilter !== "all" && review.rating < parseInt(ratingFilter)) return false;
+    if (typeFilter !== "all" && review.productType !== typeFilter) return false;
     return true;
   });
 
