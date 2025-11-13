@@ -18,6 +18,9 @@ export const Navigation = () => {
           </div>
           
           <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
+            <Link to="/home2" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Home 2
+            </Link>
             <Link to="/products" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Products
             </Link>
