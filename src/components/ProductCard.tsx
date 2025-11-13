@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
+import placeholderImage from "@/assets/placeholder-product.jpg";
 
 interface ProductCardProps {
   id: string;
@@ -14,15 +15,19 @@ interface ProductCardProps {
   image?: string;
 }
 
-export const ProductCard = ({ id, name, caliber, rounds, price, inStock }: ProductCardProps) => {
+export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image }: ProductCardProps) => {
   return (
     <Link to={`/product/${id}`}>
       <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full">
-      <div className="aspect-square bg-secondary flex items-center justify-center">
-        <div className="text-center p-6">
-          <div className="text-4xl font-bold text-tactical mb-2">{caliber}</div>
-          <div className="text-sm text-muted-foreground">{rounds} Rounds</div>
-        </div>
+      <div className="aspect-square bg-secondary overflow-hidden">
+        <img 
+          src={image || placeholderImage} 
+          alt={name}
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            e.currentTarget.src = placeholderImage;
+          }}
+        />
       </div>
       
       <CardContent className="p-4">

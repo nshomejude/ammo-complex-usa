@@ -1,8 +1,9 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ShoppingCart, Shield } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
+import placeholderImage from "@/assets/placeholder-product.jpg";
 
 interface FirearmCardProps {
   id: string;
@@ -12,18 +13,22 @@ interface FirearmCardProps {
   price: number;
   inStock: boolean;
   actionType: string;
+  image?: string;
 }
 
-export const FirearmCard = ({ id, name, manufacturer, caliber, price, inStock, actionType }: FirearmCardProps) => {
+export const FirearmCard = ({ id, name, manufacturer, caliber, price, inStock, actionType, image }: FirearmCardProps) => {
   return (
     <Link to={`/firearm/${id}`}>
       <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full">
-        <div className="aspect-square bg-secondary flex items-center justify-center">
-          <div className="text-center p-6">
-            <Shield className="h-16 w-16 mx-auto text-tactical mb-3" />
-            <div className="text-sm font-semibold text-muted-foreground">{manufacturer}</div>
-            <Badge variant="secondary" className="mt-2">{actionType}</Badge>
-          </div>
+        <div className="aspect-square bg-secondary overflow-hidden">
+          <img 
+            src={image || placeholderImage} 
+            alt={name}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.src = placeholderImage;
+            }}
+          />
         </div>
         
         <CardContent className="p-4">
