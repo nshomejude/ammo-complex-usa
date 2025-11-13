@@ -5,6 +5,7 @@ import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import placeholderImage from "@/assets/placeholder-product.jpg";
 import { useState } from "react";
+import { ShippingCalculator } from "@/components/ShippingCalculator";
 
 interface FirearmCardProps {
   id: string;
@@ -157,6 +158,8 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPri
               Base: ${initialPrice.toFixed(2)}
             </div>
           )}
+
+          <ShippingCalculator quantity={selectedVariation.quantity} />
         </CardContent>
         
         <CardFooter className="p-4 pt-0">
