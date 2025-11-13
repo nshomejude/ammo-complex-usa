@@ -42,6 +42,20 @@ const Home2 = () => {
     if (metaKeywords) {
       metaKeywords.setAttribute('content', 'firearms, ammunition, guns, ammo, shooting supplies, tactical gear, gun shop, ammunition store, buy ammo online, firearm dealer');
     }
+
+    // Apply custom color scheme for Home 2
+    document.documentElement.style.setProperty('--home2-primary', '220 90% 45%');
+    document.documentElement.style.setProperty('--home2-primary-hover', '220 90% 40%');
+    document.documentElement.style.setProperty('--home2-accent', '280 70% 55%');
+    document.documentElement.style.setProperty('--home2-accent-light', '280 70% 97%');
+    
+    return () => {
+      // Clean up on unmount
+      document.documentElement.style.removeProperty('--home2-primary');
+      document.documentElement.style.removeProperty('--home2-primary-hover');
+      document.documentElement.style.removeProperty('--home2-accent');
+      document.documentElement.style.removeProperty('--home2-accent-light');
+    };
   }, []);
 
   const trustIndicators = [
@@ -99,20 +113,45 @@ const Home2 = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <style>{`
+        .home2-theme {
+          --primary: var(--home2-primary);
+          --primary-foreground: 0 0% 100%;
+        }
+        .home2-primary {
+          background-color: hsl(var(--home2-primary));
+          color: hsl(0 0% 100%);
+        }
+        .home2-primary:hover {
+          background-color: hsl(var(--home2-primary-hover));
+        }
+        .home2-accent {
+          color: hsl(var(--home2-accent));
+        }
+        .home2-accent-bg {
+          background-color: hsl(var(--home2-accent-light));
+        }
+        .home2-border {
+          border-color: hsl(var(--home2-primary));
+        }
+        .home2-gradient {
+          background: linear-gradient(135deg, hsl(var(--home2-primary)), hsl(var(--home2-accent)));
+        }
+      `}</style>
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-tactical/10 via-background to-background border-b">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[hsl(220,90%,95%)] via-background to-background border-b">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
         <div className="container relative mx-auto px-4 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-tactical/20 text-tactical border-tactical">
+              <Badge className="home2-accent-bg home2-accent border-[hsl(var(--home2-accent))]">
                 Trusted Since 2020
               </Badge>
               <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
                 Premium Firearms & Ammunition
-                <span className="block text-tactical mt-2">Delivered to Your Door</span>
+                <span className="block home2-accent mt-2">Delivered to Your Door</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl">
                 Your trusted source for quality firearms, ammunition, and shooting supplies. 
@@ -120,12 +159,12 @@ const Home2 = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/products">
-                  <Button size="lg" className="bg-tactical hover:bg-tactical/90">
+                  <Button size="lg" className="home2-primary">
                     Shop Ammunition
                   </Button>
                 </Link>
                 <Link to="/firearms">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" variant="outline" className="border-[hsl(var(--home2-primary))] home2-accent hover:bg-[hsl(var(--home2-accent-light))]">
                     Browse Firearms
                   </Button>
                 </Link>
@@ -144,7 +183,7 @@ const Home2 = () => {
                       />
                     )}
                     <p className="font-semibold text-sm line-clamp-1">{firearm.name}</p>
-                    <p className="text-tactical font-bold">${firearm.price.toLocaleString()}</p>
+                    <p className="home2-accent font-bold">${firearm.price.toLocaleString()}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -159,8 +198,8 @@ const Home2 = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {trustIndicators.map((indicator, index) => (
               <div key={index} className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-tactical/10">
-                  <indicator.icon className="h-6 w-6 text-tactical" />
+                <div className="p-3 rounded-lg home2-accent-bg">
+                  <indicator.icon className="h-6 w-6 home2-accent" />
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">{indicator.title}</h3>
@@ -178,7 +217,7 @@ const Home2 = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-tactical mb-2">
+                <div className="text-4xl lg:text-5xl font-bold home2-accent mb-2">
                   {stat.number}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>
@@ -205,7 +244,7 @@ const Home2 = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {categories.slice(0, 6).map((category) => (
               <Link key={category.slug} to={`/category/${category.slug}`}>
-                <Card className="hover:shadow-lg transition-all hover:border-tactical cursor-pointer h-full">
+                <Card className="hover:shadow-lg transition-all hover:home2-border cursor-pointer h-full">
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
                       <CardTitle className="text-xl">{category.name}</CardTitle>
@@ -216,7 +255,7 @@ const Home2 = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="flex items-center gap-2 text-tactical hover:text-tactical/80">
+                    <div className="flex items-center gap-2 home2-accent hover:opacity-80">
                       <span className="font-semibold">Shop Now</span>
                       <TrendingUp className="h-4 w-4" />
                     </div>
@@ -257,7 +296,7 @@ const Home2 = () => {
 
           <div className="text-center">
             <Link to="/products">
-              <Button size="lg" className="bg-tactical hover:bg-tactical/90">
+              <Button size="lg" className="home2-primary">
                 Browse All Products
               </Button>
             </Link>
@@ -282,8 +321,8 @@ const Home2 = () => {
               <Card key={index} className="border-2">
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-tactical/10">
-                      <benefit.icon className="h-6 w-6 text-tactical" />
+                    <div className="p-3 rounded-lg home2-accent-bg">
+                      <benefit.icon className="h-6 w-6 home2-accent" />
                     </div>
                     <div>
                       <CardTitle className="mb-2">{benefit.title}</CardTitle>
@@ -300,7 +339,7 @@ const Home2 = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-tactical to-tactical/80 text-white">
+      <section className="py-20 home2-gradient text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Clock className="h-12 w-12 mx-auto mb-6 opacity-90" />
@@ -318,7 +357,7 @@ const Home2 = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="text-lg border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="text-lg border-white text-white hover:bg-white/20">
                   Contact Us
                 </Button>
               </Link>
