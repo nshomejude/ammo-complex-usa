@@ -4,15 +4,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Shield, Globe, Trash2, Plus } from "lucide-react";
+import { Shield, Globe, Trash2, Plus, Package, RotateCcw } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useShippingConfig } from "@/hooks/useShippingConfig";
+import { Label } from "@/components/ui/label";
 
 const Admin = () => {
   const [blockedCountries, setBlockedCountries] = useState<string[]>([
     "CN", "RU", "KP", "IR", "SY"
   ]);
   const [newCountry, setNewCountry] = useState("");
+  const { config, updateRegion, resetToDefaults } = useShippingConfig();
 
   const countryNames: { [key: string]: string } = {
     CN: "China",
@@ -125,6 +128,173 @@ const Admin = () => {
                 <div className="rounded-lg border border-border bg-card p-4">
                   <div className="text-2xl font-bold text-tactical">5</div>
                   <div className="text-sm text-muted-foreground">Active Blocks</div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Package className="h-5 w-5 text-tactical" />
+                Shipping Configuration
+              </CardTitle>
+              <CardDescription>
+                Manage shipping rates and delivery times for different regions
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                {/* US & EU Shipping */}
+                <div className="space-y-4">
+                  <h3 className="text-lg font-semibold flex items-center gap-2">
+                    <Globe className="h-4 w-4" />
+                    {config.regions.usEu.name}
+                  </h3>
+                  
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div className="space-y-3 rounded-lg border border-border bg-card p-4">
+                      <Label className="text-sm font-semibold">Standard Shipping</Label>
+                      <div className="space-y-2">
+                        <div>
+                          <Label htmlFor="useu-standard-cost" className="text-xs text-muted-foreground">Cost ($)</Label>
+                          <Input
+                            id="useu-standard-cost"
+                            type="number"
+                            value={config.regions.usEu.standard.cost}
+                            onChange={(e) => updateRegion('usEu', 'standard', { cost: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="useu-standard-days" className="text-xs text-muted-foreground">Delivery Days</Label>
+                          <Input
+                            id="useu-standard-days"
+                            type="number"
+                            value={config.regions.usEu.standard.days}
+                            onChange={(e) => updateRegion('usEu', 'standard', { days: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3 rounded-lg border border-border bg-card p-4">
+                      <Label className="text-sm font-semibold">Express Shipping</Label>
+                      <div className="space-y-2">
+                        <div>
+                          <Label htmlFor="useu-express-cost" className="text-xs text-muted-foreground">Cost ($)</Label>
+                          <Input
+                            id="useu-express-cost"
+                            type="number"
+                            value={config.regions.usEu.express.cost}
+                            onChange={(e) => updateRegion('usEu', 'express', { cost: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="useu-express-days" className="text-xs text-muted-foreground">Delivery Days</Label>
+                          <Input
+                            id="useu-express-days"
+                            type="number"
+                            value={config.regions.usEu.express.days}
+                            onChange={(e) => updateRegion('usEu', 'express', { days: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* International Shipping */}
+                <div className="space-y-4">
+                  <h3 className="text-lg font-semibold flex items-center gap-2">
+                    <Globe className="h-4 w-4" />
+                    {config.regions.international.name}
+                  </h3>
+                  
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div className="space-y-3 rounded-lg border border-border bg-card p-4">
+                      <Label className="text-sm font-semibold">Standard Shipping</Label>
+                      <div className="space-y-2">
+                        <div>
+                          <Label htmlFor="intl-standard-cost" className="text-xs text-muted-foreground">Cost ($)</Label>
+                          <Input
+                            id="intl-standard-cost"
+                            type="number"
+                            value={config.regions.international.standard.cost}
+                            onChange={(e) => updateRegion('international', 'standard', { cost: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="intl-standard-days" className="text-xs text-muted-foreground">Delivery Days</Label>
+                          <Input
+                            id="intl-standard-days"
+                            type="number"
+                            value={config.regions.international.standard.days}
+                            onChange={(e) => updateRegion('international', 'standard', { days: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3 rounded-lg border border-border bg-card p-4">
+                      <Label className="text-sm font-semibold">Express Shipping</Label>
+                      <div className="space-y-2">
+                        <div>
+                          <Label htmlFor="intl-express-cost" className="text-xs text-muted-foreground">Cost ($)</Label>
+                          <Input
+                            id="intl-express-cost"
+                            type="number"
+                            value={config.regions.international.express.cost}
+                            onChange={(e) => updateRegion('international', 'express', { cost: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                        <div>
+                          <Label htmlFor="intl-express-days" className="text-xs text-muted-foreground">Delivery Days</Label>
+                          <Input
+                            id="intl-express-days"
+                            type="number"
+                            value={config.regions.international.express.days}
+                            onChange={(e) => updateRegion('international', 'express', { days: Number(e.target.value) })}
+                            className="mt-1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 pt-4">
+                  <Button 
+                    onClick={() => {
+                      toast.success("Shipping configuration updated successfully");
+                    }}
+                    className="bg-tactical hover:bg-tactical/90"
+                  >
+                    Save Changes
+                  </Button>
+                  <Button 
+                    variant="outline"
+                    onClick={() => {
+                      resetToDefaults();
+                      toast.success("Shipping configuration reset to defaults");
+                    }}
+                  >
+                    <RotateCcw className="mr-2 h-4 w-4" />
+                    Reset to Defaults
+                  </Button>
+                </div>
+
+                <div className="rounded-lg bg-muted/50 border border-border p-4">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Note:</strong> Changes are saved automatically to your browser's local storage. 
+                    The shipping calculator on product cards will update in real-time to reflect these rates.
+                  </p>
                 </div>
               </div>
             </CardContent>

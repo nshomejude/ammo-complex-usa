@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Package, Clock } from "lucide-react";
-import { shippingConfig, ShippingRegion } from "@/config/shipping";
+import { ShippingRegion } from "@/config/shipping";
+import { getStoredShippingConfig } from "@/hooks/useShippingConfig";
 import { Badge } from "@/components/ui/badge";
 
 interface ShippingCalculatorProps {
@@ -10,6 +11,16 @@ interface ShippingCalculatorProps {
 export const ShippingCalculator = ({ quantity }: ShippingCalculatorProps) => {
   const [selectedRegion, setSelectedRegion] = useState<ShippingRegion>('usEu');
   const [selectedMethod, setSelectedMethod] = useState<'standard' | 'express'>('standard');
+  const [shippingConfig, setShippingConfig] = useState(getStoredShippingConfig());
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setShippingConfig(getStoredShippingConfig());
+    };
+    
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
 
   const region = shippingConfig.regions[selectedRegion];
   const method = region[selectedMethod];
