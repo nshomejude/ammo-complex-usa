@@ -1,18 +1,27 @@
 import { useState } from "react";
-import { Star } from "lucide-react";
+import { Star, Plus } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
-import { reviews, filterReviews } from "@/data/reviews";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Review } from "@/data/reviews";
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { useReviews } from "@/contexts/ReviewContext";
+import { ReviewDetailModal } from "@/components/ReviewDetailModal";
+import { ReviewSubmissionForm } from "@/components/ReviewSubmissionForm";
 
 export default function Reviews1() {
+  const { reviews } = useReviews();
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
   const [priceRange, setPriceRange] = useState([0, 1000]);
+  const [selectedReview, setSelectedReview] = useState<Review | null>(null);
+  const [showReviewModal, setShowReviewModal] = useState(false);
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
 
   const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
@@ -57,6 +66,24 @@ export default function Reviews1() {
       </div>
 
       <div className="container mx-auto px-4 py-12">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold">All Reviews ({filteredReviews.length})</h2>
+          <Dialog open={showSubmitForm} onOpenChange={setShowSubmitForm}>
+            <DialogTrigger asChild>
+              <Button className="gap-2">
+                <Plus className="h-4 w-4" />
+                Write a Review
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle>Submit Your Review</DialogTitle>
+              </DialogHeader>
+              <ReviewSubmissionForm onSuccess={() => setShowSubmitForm(false)} />
+            </DialogContent>
+          </Dialog>
+        </div>
+        
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="w-full lg:w-64 space-y-6">
@@ -128,7 +155,14 @@ export default function Reviews1() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {paginatedReviews.map(review => (
-                <Card key={review.id} className="bg-card border-border hover:shadow-lg transition-shadow duration-300">
+                <Card 
+                  key={review.id} 
+                  className="bg-card border-border hover:shadow-lg transition-shadow duration-300 cursor-pointer hover:border-primary/50"
+                  onClick={() => {
+                    setSelectedReview(review);
+                    setShowReviewModal(true);
+                  }}
+                >
                   <CardContent className="p-6">
                     <h3 className="text-lg font-bold text-foreground mb-2">{review.productName}</h3>
                     <div className="flex items-center gap-1 mb-3">
@@ -178,6 +212,12 @@ export default function Reviews1() {
           </div>
         </div>
       </div>
+      
+      <ReviewDetailModal 
+        review={selectedReview}
+        open={showReviewModal}
+        onOpenChange={setShowReviewModal}
+      />
     </div>
   );
 }
