@@ -30,10 +30,16 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
     inStock: initialInStock,
     image: initialImage
   });
+  
+  const [showPriceChange, setShowPriceChange] = useState(false);
 
   const handleVariationClick = (e: React.MouseEvent, variant: { grainWeight: string; price: number; inStock: boolean; image?: string }) => {
     e.preventDefault();
     e.stopPropagation();
+    
+    setShowPriceChange(true);
+    setTimeout(() => setShowPriceChange(false), 2000);
+    
     setSelectedVariation({
       grainWeight: variant.grainWeight,
       price: variant.price,
@@ -41,6 +47,10 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
       image: variant.image || initialImage
     });
   };
+
+  const priceDifference = selectedVariation.price - initialPrice;
+  const hasPriceChange = Math.abs(priceDifference) > 0.01;
+  const isCheaper = priceDifference < 0;
 
   return (
     <Link to={`/product/${id}`}>
@@ -58,6 +68,16 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
           <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
             {selectedVariation.grainWeight}
           </Badge>
+        )}
+        
+        {hasPriceChange && showPriceChange && (
+          <div className={`absolute top-2 left-2 px-3 py-1.5 rounded-full backdrop-blur-sm font-semibold text-sm animate-scale-in ${
+            isCheaper 
+              ? 'bg-green-500/90 text-white' 
+              : 'bg-orange-500/90 text-white'
+          }`}>
+            {isCheaper ? '↓' : '↑'} ${Math.abs(priceDifference).toFixed(2)}
+          </div>
         )}
       </div>
       
@@ -89,16 +109,37 @@ export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, in
           </div>
         )}
         
-        <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-tactical transition-all duration-300">
-            ${selectedVariation.price.toFixed(2)}
-          </span>
+        <div className="flex items-center justify-between mb-1">
+          <div className="flex items-baseline gap-2">
+            <span className={`text-2xl font-bold transition-all duration-300 ${
+              hasPriceChange && showPriceChange 
+                ? isCheaper 
+                  ? 'text-green-500 animate-pulse' 
+                  : 'text-orange-500 animate-pulse'
+                : 'text-tactical'
+            }`}>
+              ${selectedVariation.price.toFixed(2)}
+            </span>
+            {hasPriceChange && (
+              <span className={`text-xs font-medium transition-all duration-300 ${
+                isCheaper ? 'text-green-500' : 'text-orange-500'
+              }`}>
+                {isCheaper ? `Save $${Math.abs(priceDifference).toFixed(2)}` : `+$${priceDifference.toFixed(2)}`}
+              </span>
+            )}
+          </div>
           {selectedVariation.inStock ? (
             <Badge variant="outline" className="border-tactical text-tactical transition-all duration-300">In Stock</Badge>
           ) : (
             <Badge variant="outline" className="border-destructive text-destructive transition-all duration-300">Out of Stock</Badge>
           )}
         </div>
+        
+        {hasPriceChange && (
+          <div className="text-xs text-muted-foreground line-through">
+            Base: ${initialPrice.toFixed(2)}
+          </div>
+        )}
       </CardContent>
       
       <CardFooter className="p-4 pt-0">
