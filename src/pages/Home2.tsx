@@ -25,7 +25,8 @@ import {
   MapPin,
   ArrowRight,
   CircleDot,
-  Sparkles
+  Sparkles,
+  Quote
 } from "lucide-react";
 import { ProductCard } from "@/components/ProductCard";
 import { FirearmCard } from "@/components/FirearmCard";
@@ -139,6 +140,63 @@ const Home2 = () => {
       icon: Package,
       title: "In-Stock Guarantee",
       description: "Real-time inventory updates ensure what you see is ready to ship immediately"
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "James Mitchell",
+      location: "Texas",
+      role: "Competition Shooter",
+      rating: 5,
+      text: "Outstanding selection and lightning-fast shipping. I've been ordering my competition ammo from ARMS COMPLEX for over two years. The Federal HST and Hornady Critical Duty loads are always in stock and competitively priced. Customer service knows their products inside and out.",
+      date: "2 weeks ago",
+      verified: true
+    },
+    {
+      name: "Sarah Anderson",
+      location: "Arizona",
+      role: "Law Enforcement",
+      rating: 5,
+      text: "As a law enforcement officer, I need reliable ammunition I can trust. ARMS COMPLEX consistently delivers authentic products with proper documentation. Their knowledge of ballistics and terminal performance is impressive. Highly recommend for duty carry.",
+      date: "1 month ago",
+      verified: true
+    },
+    {
+      name: "Michael Rodriguez",
+      location: "Florida",
+      role: "Firearms Instructor",
+      rating: 5,
+      text: "I order bulk ammunition for my training courses regularly. ARMS COMPLEX offers the best combination of quality, price, and service. They understand the needs of instructors and always have bulk inventory available. The Winchester White Box and Federal American Eagle are perfect for student training.",
+      date: "3 weeks ago",
+      verified: true
+    },
+    {
+      name: "David Chen",
+      location: "California",
+      role: "Defensive Carry",
+      rating: 5,
+      text: "Switching to ARMS COMPLEX was the best decision for my defensive carry needs. They helped me select the right Speer Gold Dot load for my compact 9mm. Fast shipping to California with all proper compliance. Professional operation from start to finish.",
+      date: "2 months ago",
+      verified: true
+    },
+    {
+      name: "Robert Williams",
+      location: "Virginia",
+      role: "Veteran & Collector",
+      rating: 5,
+      text: "Impressed with the inventory depth and authentic products. I've purchased both firearms and ammunition multiple times. The staff understands military specifications and can discuss ballistic performance in detail. This is a serious operation run by people who know the industry.",
+      date: "1 week ago",
+      verified: true
+    },
+    {
+      name: "Lisa Thompson",
+      location: "Georgia",
+      role: "New Gun Owner",
+      rating: 5,
+      text: "As a new gun owner, I was nervous about making the right choices. The team at ARMS COMPLEX patiently answered all my questions and helped me select appropriate ammunition for home defense and range practice. Educational resources on their site are excellent too.",
+      date: "3 weeks ago",
+      verified: true
     }
   ];
 
@@ -448,6 +506,94 @@ const Home2 = () => {
                 </CardHeader>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Star className="h-5 w-5 home2-accent fill-current" />
+              <Badge variant="outline" className="text-base border-[hsl(var(--home2-primary))] home2-accent">Customer Reviews</Badge>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Trusted by Thousands of Shooters
+            </h2>
+            <p className="text-muted-foreground text-xl max-w-2xl mx-auto leading-relaxed">
+              Don't just take our word for it. See what our customers have to say about their experience.
+            </p>
+            <div className="flex items-center justify-center gap-3 mt-6">
+              <div className="flex items-center gap-1">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-6 w-6 home2-accent fill-current" />
+                ))}
+              </div>
+              <span className="text-2xl font-bold home2-accent">4.9</span>
+              <span className="text-muted-foreground">out of 5 based on 2,847 reviews</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {testimonials.map((testimonial, index) => (
+              <Card 
+                key={index} 
+                className="home2-card-hover border-2 relative overflow-hidden animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="absolute top-4 right-4 opacity-10">
+                  <Quote className="h-16 w-16 home2-accent" />
+                </div>
+                <CardHeader className="pb-3">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <CardTitle className="text-lg mb-1">{testimonial.name}</CardTitle>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      <Badge variant="secondary" className="mt-2 text-xs">{testimonial.role}</Badge>
+                    </div>
+                    {testimonial.verified && (
+                      <div className="flex items-center gap-1 text-xs home2-accent bg-[hsl(var(--home2-accent-light))] px-2 py-1 rounded-full">
+                        <CheckCircle className="h-3 w-3" />
+                        <span className="font-semibold">Verified</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i} 
+                        className={`h-4 w-4 ${i < testimonial.rating ? 'home2-accent fill-current' : 'text-gray-300'}`}
+                      />
+                    ))}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm leading-relaxed text-foreground mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="text-xs text-muted-foreground">{testimonial.date}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <div className="inline-flex flex-col items-center gap-4 p-8 rounded-2xl bg-[hsl(var(--home2-accent-light))] border-2 border-[hsl(var(--home2-primary))]">
+              <div className="flex items-center gap-2">
+                <Star className="h-6 w-6 home2-accent fill-current" />
+                <span className="text-2xl font-bold home2-accent">Excellent</span>
+              </div>
+              <p className="text-muted-foreground text-lg">
+                Join thousands of satisfied customers who trust ARMS COMPLEX
+              </p>
+              <Link to="/contact">
+                <Button size="lg" className="home2-primary text-lg px-8">
+                  Share Your Experience
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
