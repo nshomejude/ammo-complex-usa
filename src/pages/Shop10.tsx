@@ -145,8 +145,8 @@ export default function Shop10() {
                 </div>
               )}
 
-              {/* Products Grid - 3 columns premium spacing */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Products Grid - Responsive premium spacing */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                 {filteredProducts.map((product) => (
                   <div 
                     key={product.id} 
@@ -156,14 +156,14 @@ export default function Shop10() {
                     <Button
                       size="sm"
                       variant="secondary"
-                      className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg border-accent/30"
+                      className="absolute top-2 right-2 md:top-4 md:right-4 opacity-0 md:group-hover:opacity-100 md:transition-opacity shadow-lg border-accent/30 text-xs md:text-sm h-8 md:h-9 px-2 md:px-3"
                       onClick={() => handleQuickView(product)}
                     >
-                      <Eye className="h-4 w-4 mr-1" />
-                      Quick View
+                      <Eye className="h-3 w-3 md:h-4 md:w-4 md:mr-1" />
+                      <span className="hidden md:inline">Quick View</span>
                     </Button>
                     {product.inStock && (
-                      <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
+                      <Badge className="absolute top-2 left-2 md:top-4 md:left-4 bg-accent text-accent-foreground text-xs md:text-sm">
                         In Stock
                       </Badge>
                     )}
@@ -172,9 +172,9 @@ export default function Shop10() {
               </div>
 
               {filteredProducts.length === 0 && (
-                <div className="text-center py-16 border-2 border-accent/30 rounded-lg bg-accent/5">
-                  <Award className="h-16 w-16 mx-auto mb-4 text-accent" />
-                  <p className="text-muted-foreground text-lg">No premium products match your criteria.</p>
+                <div className="text-center py-12 md:py-16 border-2 border-accent/30 rounded-lg bg-accent/5 col-span-2 md:col-span-3 lg:col-span-4">
+                  <Award className="h-12 md:h-16 w-12 md:w-16 mx-auto mb-4 text-accent" />
+                  <p className="text-muted-foreground text-base md:text-lg">No premium products match your criteria.</p>
                 </div>
               )}
             </div>

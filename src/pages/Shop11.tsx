@@ -204,28 +204,29 @@ export default function Shop11() {
                 </div>
               )}
 
-              {/* Products Grid - 4 columns ultimate layout */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {/* Products Grid - Responsive ultimate layout */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
                     <Button
                       size="sm"
-                      variant="secondary"
-                      className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                      variant="outline"
+                      className="absolute top-2 right-2 md:top-4 md:right-4 opacity-0 md:group-hover:opacity-100 md:transition-opacity shadow-lg border-accent/30 text-xs md:text-sm h-8 md:h-9 px-2 md:px-3"
                       onClick={() => handleQuickView(product)}
                     >
-                      <Eye className="h-4 w-4 mr-1" />
-                      Quick View
+                      <Eye className="h-3 w-3 md:h-4 md:w-4 md:mr-1" />
+                      <span className="hidden md:inline">Quick View</span>
                     </Button>
                   </div>
                 ))}
               </div>
 
               {filteredProducts.length === 0 && (
-                <div className="text-center py-20">
+                <div className="text-center py-12 md:py-20 col-span-2 md:col-span-3 lg:col-span-4">
                   <div className="max-w-md mx-auto">
-                    <p className="text-muted-foreground text-xl mb-4">
+                    <Star className="mx-auto h-12 md:h-16 w-12 md:w-16 text-accent/20 mb-4 animate-pulse" />
+                    <p className="text-muted-foreground text-base md:text-xl mb-4">
                       No products found matching your criteria.
                     </p>
                     <Button onClick={() => {
@@ -235,7 +236,7 @@ export default function Shop11() {
                         selectedBrands: [],
                         stockStatus: "all",
                       });
-                    }}>
+                    }} className="text-xs md:text-sm">
                       Clear All Filters
                     </Button>
                   </div>

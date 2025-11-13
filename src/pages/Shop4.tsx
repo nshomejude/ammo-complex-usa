@@ -85,14 +85,14 @@ export default function Shop4() {
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
+          <main className="flex-1 p-4 md:p-6 lg:p-8">
             <div className="max-w-6xl mx-auto">
-              <div className="mb-8">
-                <h1 className="text-4xl font-bold mb-2 text-foreground">Dual Filter Shop</h1>
-                <p className="text-muted-foreground">Advanced filtering with category navigation</p>
+              <div className="mb-6 md:mb-8">
+                <h1 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">Dual Filter Shop</h1>
+                <p className="text-sm md:text-base text-muted-foreground">Advanced filtering with category navigation</p>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
                 <div className="relative flex-1">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
                   <Input
@@ -100,11 +100,11 @@ export default function Shop4() {
                     placeholder="Search products..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="pl-10"
+                    className="pl-10 h-10 md:h-11"
                   />
                 </div>
                 <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="w-full md:w-[200px]">
+                  <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] h-10 md:h-11">
                     <SelectValue placeholder="Sort by" />
                   </SelectTrigger>
                   <SelectContent>
@@ -116,27 +116,26 @@ export default function Shop4() {
                 </Select>
               </div>
 
-              {/* Products Grid - 3 columns */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
                     <Button
                       size="sm"
                       variant="secondary"
-                      className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                      className="absolute top-2 right-2 md:top-4 md:right-4 opacity-0 md:group-hover:opacity-100 md:transition-opacity shadow-lg text-xs md:text-sm h-8 md:h-9 px-2 md:px-3"
                       onClick={() => handleQuickView(product)}
                     >
-                      <Eye className="h-4 w-4 mr-1" />
-                      Quick View
+                      <Eye className="h-3 w-3 md:h-4 md:w-4 md:mr-1" />
+                      <span className="hidden md:inline">Quick View</span>
                     </Button>
                   </div>
                 ))}
               </div>
 
               {filteredProducts.length === 0 && (
-                <div className="text-center py-16">
-                  <p className="text-muted-foreground text-lg">No products found.</p>
+                <div className="text-center py-12 md:py-16 col-span-2 md:col-span-3 lg:col-span-4">
+                  <p className="text-muted-foreground text-base md:text-lg">No products found.</p>
                 </div>
               )}
             </div>

@@ -178,9 +178,9 @@ export default function Shop9() {
                 </div>
               )}
 
-              {filteredProducts.length === 0 && (
-                <div className="text-center py-16 border-4 border-border">
-                  <p className="text-muted-foreground text-lg font-bold uppercase">
+              {paginatedProducts.length === 0 && (
+                <div className="text-center py-12 md:py-16 border-4 border-border">
+                  <p className="text-muted-foreground text-base md:text-lg font-bold uppercase">
                     No Products Found
                   </p>
                 </div>
