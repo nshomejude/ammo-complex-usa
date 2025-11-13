@@ -142,28 +142,28 @@ const Products = () => {
         <div className="flex-1 flex flex-col">
           <Navigation />
           
-          <main className="container mx-auto px-4 py-12">
-            <div className="mb-4">
-              <SidebarTrigger className="mb-4" />
+          <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
+            <div className="mb-3 sm:mb-4">
+              <SidebarTrigger className="mb-3 sm:mb-4" />
             </div>
             
-            <header className="mb-8">
-              <div className="flex items-center gap-3 mb-4">
-                <Package className="h-10 w-10 text-primary" />
-                <h1 className="text-4xl font-bold">All Ammunition Products</h1>
+            <header className="mb-6 sm:mb-8">
+              <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <Package className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">All Ammunition Products</h1>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">
                 Browse our complete selection of {products.length} ammunition products for rifles, pistols, 
                 shotguns, and specialty applications
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">{inStockCount} In Stock</Badge>
-                <Badge variant="outline">FFL Verified</Badge>
+                <Badge variant="secondary" className="text-xs sm:text-sm">{inStockCount} In Stock</Badge>
+                <Badge variant="outline" className="text-xs sm:text-sm">FFL Verified</Badge>
                 {(filters.selectedBrands.length > 0 || 
                   filters.priceRange[0] > 0 || 
                   filters.priceRange[1] < maxPrice ||
                   filters.stockStatus !== "all") && (
-                  <Badge variant="destructive" className="cursor-pointer">
+                  <Badge variant="destructive" className="cursor-pointer text-xs sm:text-sm">
                     {filters.selectedBrands.length + 
                      (filters.priceRange[0] > 0 || filters.priceRange[1] < maxPrice ? 1 : 0) +
                      (filters.stockStatus !== "all" ? 1 : 0)} Active Filters
@@ -172,12 +172,12 @@ const Products = () => {
               </div>
             </header>
 
-        <div className="mb-8 flex flex-col gap-4 md:flex-row">
+        <div className="mb-6 sm:mb-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               placeholder="Search by name or caliber..."
-              className="pl-10"
+              className="pl-10 h-10 sm:h-11"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               aria-label="Search products"
@@ -185,7 +185,7 @@ const Products = () => {
           </div>
           
           <Select value={categoryFilter} onValueChange={setCategoryFilter}>
-            <SelectTrigger className="w-full md:w-[200px]">
+            <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] h-10 sm:h-11">
               <SelectValue placeholder="All Categories" />
             </SelectTrigger>
             <SelectContent>
@@ -200,7 +200,7 @@ const Products = () => {
         </div>
 
         <section aria-label="Product listing">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6">
             {filteredProducts.map((product) => (
               <ProductCard 
                 key={product.id} 

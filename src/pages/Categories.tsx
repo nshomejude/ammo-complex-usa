@@ -165,29 +165,29 @@ const Categories = () => {
         <div className="flex-1 flex flex-col">
           <Navigation />
           
-          <main className="container mx-auto px-4 py-12">
-            <div className="mb-4">
-              <SidebarTrigger className="mb-4" />
+          <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
+            <div className="mb-3 sm:mb-4">
+              <SidebarTrigger className="mb-3 sm:mb-4" />
             </div>
             
             {/* Header Section with SEO-optimized content */}
-            <header className="mb-12">
-          <div className="flex items-center gap-3 mb-4">
-            <Package className="h-10 w-10 text-primary" />
-            <h1 className="text-4xl font-bold">Ammunition Catalog</h1>
+            <header className="mb-8 sm:mb-12">
+          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <Package className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Ammunition Catalog</h1>
           </div>
-          <p className="text-muted-foreground mb-2">
+          <p className="text-sm sm:text-base text-muted-foreground mb-2">
             Browse our complete collection of ammunition across {totalCategories} categories including 
             9mm Luger, .223 Remington, 12 Gauge, .308 Winchester, .45 ACP, and specialty cartridges
           </p>
-          <div className="flex gap-2 mb-6">
-            <Badge variant="secondary" className="text-sm">
+          <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
+            <Badge variant="secondary" className="text-xs sm:text-sm">
               {totalProducts} Products Available
             </Badge>
-            <Badge variant="outline" className="text-sm">
+            <Badge variant="outline" className="text-xs sm:text-sm">
               {trendingAmmunition.length} Trending Categories
             </Badge>
-            <Badge variant="outline" className="text-sm">
+            <Badge variant="outline" className="text-xs sm:text-sm">
               FFL Verified Dealer
             </Badge>
           </div>
@@ -197,21 +197,21 @@ const Categories = () => {
             placeholder="Search by caliber, name, or description..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="max-w-md"
+            className="max-w-full sm:max-w-md h-10 sm:h-11"
             aria-label="Search ammunition categories"
           />
         </header>
 
         {/* Trending Section */}
         {trendingAmmunition.length > 0 && (
-          <section className="mb-12" aria-labelledby="trending-heading">
-            <div className="flex items-center gap-2 mb-6">
-              <h2 id="trending-heading" className="text-2xl font-bold text-tactical">
+          <section className="mb-8 sm:mb-12" aria-labelledby="trending-heading">
+            <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6">
+              <h2 id="trending-heading" className="text-xl sm:text-2xl font-bold text-tactical">
                 🔥 Trending Ammunition Categories
               </h2>
-              <Badge variant="destructive" className="animate-pulse">Hot</Badge>
+              <Badge variant="destructive" className="animate-pulse text-xs sm:text-sm">Hot</Badge>
             </div>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-6">
               {trendingAmmunition.map((ammo) => (
                 <article key={ammo.id} className="relative">
                   <TopSellingCard
@@ -237,10 +237,10 @@ const Categories = () => {
         {/* All Categories Section */}
         {otherAmmunition.length > 0 && (
           <section aria-labelledby="all-categories-heading">
-            <h2 id="all-categories-heading" className="text-2xl font-bold mb-6">
+            <h2 id="all-categories-heading" className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
               All Ammunition Categories
             </h2>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-6">
               {otherAmmunition.map((ammo) => (
                 <article key={ammo.id} className="relative">
                   <TopSellingCard
@@ -265,12 +265,12 @@ const Categories = () => {
 
         {/* No Results */}
         {filteredAmmunition.length === 0 && (
-          <div className="text-center py-12" role="status">
-            <Package className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-            <p className="text-muted-foreground text-lg">
+          <div className="text-center py-8 sm:py-12" role="status">
+            <Package className="h-12 w-12 sm:h-16 sm:w-16 text-muted-foreground mx-auto mb-4" />
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
               No ammunition categories found matching your search.
             </p>
-            <p className="text-sm text-muted-foreground mt-2">
+            <p className="text-xs sm:text-sm text-muted-foreground mt-2">
               Try adjusting your search terms or browse all categories
             </p>
           </div>
