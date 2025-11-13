@@ -11,6 +11,12 @@ interface HeroSlide {
   description: string;
 }
 
+interface HeroBackground {
+  fromColor: string;
+  viaColor: string;
+  toColor: string;
+}
+
 const defaultSlides: HeroSlide[] = [
   {
     id: 1,
@@ -38,11 +44,21 @@ export const Hero = () => {
   const [slides, setSlides] = useState<HeroSlide[]>(defaultSlides);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [background, setBackground] = useState<HeroBackground>({
+    fromColor: "0, 75%, 96%",
+    viaColor: "0, 0%, 100%",
+    toColor: "0, 0%, 100%"
+  });
 
   useEffect(() => {
     const savedSlides = localStorage.getItem('heroSlides');
     if (savedSlides) {
       setSlides(JSON.parse(savedSlides));
+    }
+    
+    const savedBackground = localStorage.getItem('heroBackground');
+    if (savedBackground) {
+      setBackground(JSON.parse(savedBackground));
     }
   }, []);
 
@@ -65,7 +81,12 @@ export const Hero = () => {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-[hsl(0,75%,96%)] via-background to-background">
+    <section 
+      className="relative overflow-hidden border-b border-border"
+      style={{
+        background: `linear-gradient(to bottom right, hsl(${background.fromColor}), hsl(${background.viaColor}), hsl(${background.toColor}))`
+      }}
+    >
       <div className="container relative mx-auto px-4 py-11 md:py-16">
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 flex justify-center">

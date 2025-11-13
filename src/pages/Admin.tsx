@@ -15,6 +15,12 @@ interface HeroSlide {
   description: string;
 }
 
+interface HeroBackground {
+  fromColor: string;
+  viaColor: string;
+  toColor: string;
+}
+
 const defaultHeroSlides: HeroSlide[] = [
   {
     id: 1,
@@ -47,11 +53,21 @@ const Admin = () => {
   const [editingSlide, setEditingSlide] = useState<number | null>(null);
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
+  const [heroBackground, setHeroBackground] = useState<HeroBackground>({
+    fromColor: "0, 75%, 96%",
+    viaColor: "0, 0%, 100%",
+    toColor: "0, 0%, 100%"
+  });
 
   useEffect(() => {
     const savedSlides = localStorage.getItem('heroSlides');
     if (savedSlides) {
       setHeroSlides(JSON.parse(savedSlides));
+    }
+    
+    const savedBackground = localStorage.getItem('heroBackground');
+    if (savedBackground) {
+      setHeroBackground(JSON.parse(savedBackground));
     }
   }, []);
 
@@ -123,6 +139,11 @@ const Admin = () => {
     toast.success("Slide deleted");
   };
 
+  const saveHeroBackground = () => {
+    localStorage.setItem('heroBackground', JSON.stringify(heroBackground));
+    toast.success("Hero background updated successfully");
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -137,6 +158,67 @@ const Admin = () => {
         </div>
 
         <div className="grid gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Presentation className="h-5 w-5 text-tactical" />
+                Hero Background
+              </CardTitle>
+              <CardDescription>
+                Customize the hero section background gradient using HSL color values (e.g., "0, 75%, 96%")
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div>
+                  <label className="text-sm font-medium mb-2 block">From Color (HSL)</label>
+                  <Input
+                    value={heroBackground.fromColor}
+                    onChange={(e) => setHeroBackground({...heroBackground, fromColor: e.target.value})}
+                    placeholder="0, 75%, 96%"
+                  />
+                  <div 
+                    className="mt-2 h-10 rounded border-2 border-border"
+                    style={{backgroundColor: `hsl(${heroBackground.fromColor})`}}
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Via Color (HSL)</label>
+                  <Input
+                    value={heroBackground.viaColor}
+                    onChange={(e) => setHeroBackground({...heroBackground, viaColor: e.target.value})}
+                    placeholder="0, 0%, 100%"
+                  />
+                  <div 
+                    className="mt-2 h-10 rounded border-2 border-border"
+                    style={{backgroundColor: `hsl(${heroBackground.viaColor})`}}
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-medium mb-2 block">To Color (HSL)</label>
+                  <Input
+                    value={heroBackground.toColor}
+                    onChange={(e) => setHeroBackground({...heroBackground, toColor: e.target.value})}
+                    placeholder="0, 0%, 100%"
+                  />
+                  <div 
+                    className="mt-2 h-10 rounded border-2 border-border"
+                    style={{backgroundColor: `hsl(${heroBackground.toColor})`}}
+                  />
+                </div>
+                <div className="p-4 rounded border-2 border-border" style={{
+                  background: `linear-gradient(to bottom right, hsl(${heroBackground.fromColor}), hsl(${heroBackground.viaColor}), hsl(${heroBackground.toColor}))`
+                }}>
+                  <p className="text-sm font-medium text-center">Preview</p>
+                </div>
+                <Button onClick={saveHeroBackground} className="bg-tactical hover:bg-tactical/90">
+                  <Save className="mr-2 h-4 w-4" />
+                  Save Background
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
