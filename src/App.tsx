@@ -60,6 +60,16 @@ import Reviews7 from "./pages/Reviews7";
 import Reviews8 from "./pages/Reviews8";
 import Reviews9 from "./pages/Reviews9";
 import Reviews10 from "./pages/Reviews10";
+import Shop2 from "./pages/Shop2";
+import Shop3 from "./pages/Shop3";
+import Shop4 from "./pages/Shop4";
+import Shop5 from "./pages/Shop5";
+import Shop6 from "./pages/Shop6";
+import Shop7 from "./pages/Shop7";
+import Shop8 from "./pages/Shop8";
+import Shop9 from "./pages/Shop9";
+import Shop10 from "./pages/Shop10";
+import Shop11 from "./pages/Shop11";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -128,6 +138,16 @@ const App = () => (
           <Route path="/reviews8" element={<Reviews8 />} />
           <Route path="/reviews9" element={<Reviews9 />} />
           <Route path="/reviews10" element={<Reviews10 />} />
+          <Route path="/shop2" element={<Shop2 />} />
+          <Route path="/shop3" element={<Shop3 />} />
+          <Route path="/shop4" element={<Shop4 />} />
+          <Route path="/shop5" element={<Shop5 />} />
+          <Route path="/shop6" element={<Shop6 />} />
+          <Route path="/shop7" element={<Shop7 />} />
+          <Route path="/shop8" element={<Shop8 />} />
+          <Route path="/shop9" element={<Shop9 />} />
+          <Route path="/shop10" element={<Shop10 />} />
+          <Route path="/shop11" element={<Shop11 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
