@@ -1,5 +1,5 @@
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
+import { Header11 } from "@/components/Header11";
+import { Footer11 } from "@/components/Footer11";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -29,7 +29,7 @@ const Home11 = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Header11 />
       <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-br from-[#2E2E2E] to-[#556B2F]">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
@@ -52,7 +52,7 @@ const Home11 = () => {
         </div>
       </section>
       <section className="bg-[#2E2E2E] py-20"><div className="container mx-auto px-4 text-center"><Store className="h-16 w-16 mx-auto mb-6 text-[#CBB994]" /><h2 className="text-4xl font-bold mb-6 uppercase text-white">Start Selling Arms Complex</h2><Link to="/contact"><Button size="lg" className="bg-[#556B2F] hover:bg-[#556B2F]/90 text-white text-lg px-8 py-6">Apply for Dealer Account<ArrowRight className="ml-2 h-5 w-5" /></Button></Link></div></section>
-      <Footer />
+      <Footer11 />
     </div>
   );
 };

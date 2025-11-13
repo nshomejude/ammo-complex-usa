@@ -1,5 +1,5 @@
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
+import { Header8 } from "@/components/Header8";
+import { Footer8 } from "@/components/Footer8";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -109,7 +109,7 @@ const Home8 = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Header8 />
       
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#2E2E2E] via-[#556B2F] to-[#000000]">
@@ -282,7 +282,7 @@ const Home8 = () => {
         </div>
       </section>
 
-      <Footer />
+      <Footer8 />
     </div>
   );
 };

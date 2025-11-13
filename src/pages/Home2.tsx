@@ -1,5 +1,5 @@
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
+import { Header2 } from "@/components/Header2";
+import { Footer2 } from "@/components/Footer2";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -105,7 +105,7 @@ const Home2 = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Header2 />
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-tactical/10 via-background to-background border-b">
@@ -356,7 +356,7 @@ const Home2 = () => {
         </div>
       </section>
 
-      <Footer />
+      <Footer2 />
     </div>
   );
 };
