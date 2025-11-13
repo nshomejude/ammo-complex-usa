@@ -2348,7 +2348,51 @@ export const products: Product[] = [
     categorySlug: "762x39-soviet",
     description: "Steel-cased budget ammunition for AK platforms",
     manufacturer: "Wolf",
-    grainWeight: "123gr"
+    grainWeight: "123gr",
+    shortDescription: "Wolf Performance delivers reliable steel-cased ammunition optimized for AK-platform rifles. Budget-friendly performance for high-volume shooting without compromising reliability.",
+    longDescription: "Wolf Performance 123-grain FMJ ammunition represents the benchmark in affordable steel-cased ammunition for 7.62x39mm rifles, particularly AK-pattern platforms like the AK-47, AKM, and modern variants. Manufactured at modern facilities that produce millions of rounds annually for both commercial and military contracts, Wolf Performance brings authentic Eastern European manufacturing expertise to American shooters at unprecedented value. The steel case construction is the key to Wolf's affordability - steel is significantly less expensive than brass while still providing reliable performance when properly designed and coated. Wolf's proprietary polymer coating creates a slick surface that facilitates smooth feeding and extraction while protecting the steel from corrosion. This coating is more advanced than traditional lacquer found on older military surplus ammunition, providing superior performance in modern semi-automatic rifles. The 123-grain full metal jacket bullet matches the original Soviet military specification for the 7.62x39mm cartridge. The bullet features a copper-washed steel jacket over a lead core, providing reliable feeding and consistent performance. The boat tail base improves ballistic coefficient compared to flat-base designs, enhancing accuracy at typical AK engagement ranges of 100-300 yards. While steel-cased ammunition has faced skepticism in some shooting circles, Wolf Performance has proven its reliability through decades of use by millions of shooters worldwide. Modern AK rifles are specifically designed to function with steel-cased ammunition - it's what the platform was engineered for. The slightly firmer extraction required with steel cases is well within the AK's robust design tolerances. Wolf uses non-corrosive Berdan primers that provide reliable ignition across temperature extremes. While Berdan-primed cases aren't as easily reloadable as Boxer-primed brass, this is rarely a concern for steel case users focused on maximizing shooting volume rather than reloading. The powder formulation is optimized for the AK's gas system and typical barrel length of 16 inches, ensuring reliable cycling and consistent velocities. For shooters who want to maximize their trigger time without breaking the budget, Wolf Performance delivers reliable function at prices that can be half the cost of brass-cased alternatives. Whether running drills, practicing fundamentals, or just enjoying a day at the range, Wolf Performance keeps your AK running while keeping money in your pocket for more ammunition.",
+    features: [
+      "Steel case with advanced polymer coating for reliable feeding",
+      "123-grain FMJ matching original Soviet military specification",
+      "Copper-washed steel jacket over lead core for consistent performance",
+      "Boat tail bullet design improves ballistic coefficient",
+      "Non-corrosive Berdan primers for reliable ignition",
+      "Optimized powder charge for standard 16-inch AK barrels",
+      "Manufactured at facilities producing millions of rounds annually",
+      "Significantly lower cost than brass-cased alternatives",
+      "Designed specifically for AK platform rifles",
+      "Temperature-stable performance from -20°F to 120°F"
+    ],
+    benefits: [
+      "Budget-friendly pricing enables high-volume training",
+      "Proven reliability in AK-pattern rifles worldwide",
+      "Polymer coating superior to old lacquer-coated surplus",
+      "Authentic Eastern European manufacturing heritage",
+      "Consistent function in all AK variants",
+      "Allows shooters to train more for less money"
+    ],
+    useCases: [
+      "High-volume AK-47 and AKM training and practice",
+      "Budget-conscious plinking and recreational shooting",
+      "AK reliability testing and function verification",
+      "Training courses and tactical drills",
+      "General range use with Eastern Bloc rifles",
+      "Stockpiling affordable training ammunition"
+    ],
+    technicalDetails: "Wolf Performance 123gr FMJ delivers approximately 2,350 fps from a standard 16-inch AK barrel, generating roughly 1,508 foot-pounds of muzzle energy. The steel case features a polymer coating approximately 1-2 thousandths of an inch thick that reduces friction and protects against corrosion. Cases are drawn from quality steel stock and formed using precision tooling. The copper-washed steel jacket is approximately 0.020 inches thick, providing reliable penetration characteristics on paper and steel targets. Berdan primers are seated and sealed to military specifications. The bullet features a boat tail reducing drag and improving stability in flight. Powder selection provides reliable function across temperature ranges while generating moderate chamber pressures safe for all AK variants. Typical accuracy from quality AK rifles ranges from 2-4 MOA at 100 yards - more than adequate for the platform's intended combat role and recreational use. The ammunition functions reliably in AK-47, AKM, AK-74 (in 7.62x39), SKS, Ruger Mini-30, and other rifles chambered in 7.62x39mm. Steel cases should not be reloaded, but they can be recycled as scrap steel.",
+    whyChoose: "Choose Wolf Performance when you want to maximize your training time with your AK or SKS rifle without breaking your ammunition budget. This is the ammunition that allows serious shooters to fire hundreds or even thousands of rounds monthly while staying within reasonable financial limits. Wolf has been supplying American shooters with reliable steel-cased ammunition for over two decades, earning a reputation for consistent quality and performance. The ammunition is manufactured in facilities that supply both commercial markets and military contracts, ensuring production standards meet demanding requirements. For AK platforms - rifles specifically designed to function with steel-cased ammunition - Wolf Performance provides authentic Eastern European reliability at prices that make regular training accessible to every shooter. The money saved choosing Wolf over brass-cased ammunition can be reinvested in more range time, additional magazines, accessories, or other shooting sports equipment.",
+    seoKeywords: [
+      "wolf performance 7.62x39",
+      "steel case ak ammo",
+      "budget 762x39 ammunition",
+      "ak47 training ammo",
+      "cheap 7.62 russian",
+      "polymer coated steel case",
+      "wolf 123gr fmj",
+      "affordable ak ammunition",
+      "high volume 7.62x39",
+      "akm ammunition"
+    ]
   },
   {
     id: "762x39-wolf-military-classic",
@@ -2361,7 +2405,51 @@ export const products: Product[] = [
     categorySlug: "762x39-soviet",
     description: "Lacquered steel case military-style ammunition",
     manufacturer: "Wolf",
-    grainWeight: "124gr"
+    grainWeight: "124gr",
+    shortDescription: "Wolf Military Classic features traditional lacquered steel cases with authentic military-spec 124gr bullets. Classic Eastern European military ammunition for AK enthusiasts.",
+    longDescription: "Wolf Military Classic 124-grain FMJ ammunition represents traditional Eastern European military ammunition manufacturing brought to the commercial market. This ammunition closely replicates the original Soviet military specification for 7.62x39mm cartridges, featuring lacquered steel cases and 124-grain full metal jacket bullets matching the weight used in authentic military loadings. The Military Classic line appeals to shooters seeking authentic military-style ammunition with traditional construction methods that have proven reliable through decades of military service across dozens of countries. The lacquered steel case is the traditional Eastern European approach to protecting steel cartridge cases from corrosion. A thin shellac-based lacquer is applied to the case exterior, creating a protective barrier against moisture and environmental exposure. This lacquer also provides some lubricity during feeding and extraction, though not to the same degree as modern polymer coatings. The lacquer gives Military Classic its distinctive appearance - often with a slightly amber or greenish tint depending on batch. The 124-grain bullet represents the authentic Soviet military specification. The extra grain of weight compared to standard 123-grain loadings provides slightly enhanced penetration and terminal performance. The bullet features a copper-washed mild steel jacket over a lead core, exactly as used in original military ammunition. The bimetal jacket provides adequate performance for training and plinking while being more cost-effective than pure copper jackets. Wolf Military Classic is manufactured at facilities with extensive experience producing military contract ammunition. The production equipment and processes are the same used for ammunition supplied to various national militaries and law enforcement agencies worldwide. This ensures consistent quality and reliability despite the budget-friendly pricing. The ammunition uses Berdan primers, standard for Eastern European military ammunition. These non-corrosive primers provide reliable ignition even in adverse conditions. While Berdan-primed cases are more difficult to reload than Boxer-primed cases, reloading steel cases is generally not practical regardless of primer type. The powder formulation is optimized for AK-pattern rifles with their long-stroke gas piston systems. Velocities are consistent across typical barrel lengths from 16 to 20 inches, and the gas port pressure is calibrated for reliable cycling in standard AK actions. For shooters who appreciate authentic military-style ammunition with traditional construction, Wolf Military Classic delivers reliable performance at attractive prices. Whether you're collecting Eastern Bloc firearms, training with your AK platform, or simply seeking affordable ammunition for recreational shooting, Military Classic provides genuine military-specification performance.",
+    features: [
+      "Traditional lacquered steel cases for corrosion protection",
+      "124-grain FMJ bullet matching Soviet military specification",
+      "Bimetal jacket - copper-washed steel over lead core",
+      "Authentic military-style construction and loading",
+      "Non-corrosive Berdan primers for reliable ignition",
+      "Manufactured at facilities producing military contract ammunition",
+      "Optimized for AK-pattern long-stroke gas systems",
+      "Traditional Eastern European ammunition aesthetics",
+      "Budget-friendly pricing for high-volume shooting",
+      "Proven military specification used by dozens of countries"
+    ],
+    benefits: [
+      "Authentic military ammunition experience and heritage",
+      "Traditional lacquer coating used by military forces for decades",
+      "124gr bullet weight matches original Soviet specification",
+      "Reliable function in all 7.62x39 platforms",
+      "Manufactured with military contract quality standards",
+      "Affordable pricing enables regular training and practice"
+    ],
+    useCases: [
+      "Training and practice with AK-47, AKM, and variants",
+      "Collecting and shooting military surplus firearms",
+      "General plinking and recreational shooting",
+      "SKS rifle training and familiarization",
+      "Budget-conscious high-volume shooting",
+      "Authentic military ammunition experience"
+    ],
+    technicalDetails: "Wolf Military Classic 124gr FMJ generates approximately 2,350 fps from a 16-inch barrel, delivering roughly 1,520 foot-pounds of muzzle energy. The lacquered steel case features shellac-based coating applied through a dipping or spraying process, creating a protective layer 0.5-1.5 thousandths of an inch thick. The 124-grain bullet uses a bimetal jacket - a thin copper wash over mild steel - with jacket thickness of approximately 0.018-0.022 inches over a lead core. This construction provides reliable terminal performance on paper and steel targets while reducing manufacturing costs. Berdan primers are sealed to prevent moisture ingress. Powder selection emphasizes reliable ignition and consistent gas port pressure for AK reliability. Typical accuracy from quality AK rifles is 3-4 MOA at 100 yards, consistent with military-specification ammunition. The slightly heavier 124gr bullet provides marginally better penetration and energy retention compared to 123gr loadings. Functions reliably in all rifles chambered for 7.62x39mm including AK-47, AKM, SKS, Ruger Mini-30, CZ 527, and various bolt-action sporting rifles. Cases are not suitable for reloading but can be recycled as scrap steel.",
+    whyChoose: "Choose Wolf Military Classic when you want authentic military-specification ammunition with traditional construction methods at budget-friendly prices. This ammunition appeals to collectors of Eastern Bloc firearms who appreciate authentic military loading and traditional lacquered steel cases. The 124-grain bullet weight provides the authentic military experience for those interested in historical accuracy. Despite being priced for high-volume shooting, Military Classic maintains quality standards from facilities that produce ammunition for military contracts. For shooters who value the heritage and history of Eastern European military ammunition while still needing affordable training ammunition, Wolf Military Classic delivers both authenticity and value.",
+    seoKeywords: [
+      "wolf military classic",
+      "lacquered steel case ammo",
+      "124gr 7.62x39",
+      "military spec ak ammo",
+      "authentic soviet ammunition",
+      "eastern bloc ammo",
+      "military surplus style",
+      "traditional 7.62 russian",
+      "ak47 military ammo",
+      "berdan primed 762x39"
+    ]
   },
   {
     id: "762x39-tulammo-122",
@@ -2374,7 +2462,51 @@ export const products: Product[] = [
     categorySlug: "762x39-soviet",
     description: "Russian steel-cased range ammunition",
     manufacturer: "TulAmmo",
-    grainWeight: "122gr"
+    grainWeight: "122gr",
+    shortDescription: "TulAmmo delivers Russian-made reliability and quality for 7.62x39 shooters. Manufactured in Tula at one of Russia's premier ammunition plants with over a century of experience.",
+    longDescription: "TulAmmo 122-grain FMJ ammunition comes from the legendary Tula Cartridge Works, one of Russia's oldest and most respected ammunition manufacturers with production history dating back to 1880. The Tula facility has supplied ammunition to the Russian military through the Tsarist era, Soviet period, and modern Russian Federation, giving TulAmmo unparalleled expertise in 7.62x39mm cartridge production. When you choose TulAmmo, you're getting ammunition from the same facility that has produced billions of rounds for military service, ensuring manufacturing processes refined through over 140 years of continuous production. The 122-grain bullet weight is TulAmmo's specification, fractionally lighter than the standard 123-grain loading but functionally identical in performance. This slight variation reflects TulAmmo's proprietary bullet design and manufacturing tolerances. The full metal jacket bullet features a bimetal jacket - copper-washed steel - over a lead core, providing reliable feeding and consistent terminal performance on targets. The steel case construction is lacquered or polymer-coated depending on production run, with both finishes providing excellent corrosion resistance and reliable extraction. TulAmmo's manufacturing facility operates modern production equipment alongside traditional processes that have proven successful through decades of military service. Quality control procedures ensure dimensional consistency, proper powder charges, and reliable primer seating. Each production lot undergoes function testing in actual firearms to verify reliable cycling and ignition. The ammunition uses non-corrosive Berdan primers standard in Russian ammunition production. These primers provide reliable ignition across temperature extremes commonly encountered in Russia's climate, from sub-zero winter conditions to hot summer temperatures. The powder formulation is optimized for the AK's gas system, providing consistent cycling pressure and velocities across various barrel lengths. TulAmmo has earned reputation among American shooters as reliable, affordable ammunition that functions consistently in AK-pattern rifles. The ammunition is imported in large volumes, helping keep prices competitive for budget-conscious shooters. Packaged in simple but effective cardboard boxes, TulAmmo prioritizes value - putting money into ammunition quality rather than fancy packaging. For shooters seeking authentic Russian-made ammunition from one of the world's premier military ammunition manufacturers, TulAmmo delivers proven performance at prices that encourage regular shooting.",
+    features: [
+      "Manufactured at legendary Tula Cartridge Works since 1880",
+      "122-grain FMJ bullet with bimetal jacket construction",
+      "Steel cases with lacquer or polymer coating",
+      "Non-corrosive Berdan primers for reliable ignition",
+      "Authentic Russian military-specification manufacturing",
+      "Optimized for AK-pattern gas systems and cycling",
+      "Over 140 years of ammunition manufacturing experience",
+      "Budget-friendly pricing for high-volume shooters",
+      "Proven reliability in extreme temperature conditions",
+      "Imported in large volumes ensuring availability"
+    ],
+    benefits: [
+      "Authentic Russian manufacture from premier ammunition plant",
+      "Tula Cartridge Works' century of military contract experience",
+      "Consistent function in all AK and SKS variants",
+      "Affordable pricing enables frequent training sessions",
+      "Reliable performance in diverse environmental conditions",
+      "Historical connection to Russian firearms heritage"
+    ],
+    useCases: [
+      "AK-47 and AKM training and practice",
+      "SKS rifle recreational shooting",
+      "High-volume plinking on a budget",
+      "Russian firearms collection shooting",
+      "General range use with 7.62x39 rifles",
+      "Stockpiling affordable training ammunition"
+    ],
+    technicalDetails: "TulAmmo 122gr FMJ produces approximately 2,350-2,400 fps from a 16-inch barrel, generating roughly 1,490 foot-pounds of muzzle energy. The steel case is drawn from quality steel stock and treated with either traditional lacquer coating or modern polymer coating depending on production batch. The 122-grain bullet features a bimetal jacket with copper wash over mild steel, encasing a lead core. Jacket thickness is typically 0.018-0.020 inches, providing reliable penetration on paper and steel targets. The boat tail base enhances ballistic coefficient compared to flat-base designs. Berdan primers are seated to Russian military specifications and sealed against moisture. Powder formulation emphasizes consistent gas port pressures for AK reliability while generating moderate chamber pressures safe for all firearms chambered in 7.62x39mm. Typical accuracy ranges from 3-4 MOA from quality AK rifles, meeting military-specification requirements. Functions reliably in temperatures from -40°F to 125°F. Compatible with all firearms chambered for 7.62x39mm including AK-47, AKM, SKS, Ruger Mini-30, CZ 527, and bolt-action sporting rifles. Steel cases are not suitable for reloading.",
+    whyChoose: "Choose TulAmmo when you want authentic Russian ammunition from one of the world's most experienced military ammunition manufacturers. The Tula Cartridge Works has been producing ammunition for over 140 years, supplying the Russian military through multiple political eras while maintaining consistent quality and reliability. For shooters with Russian or Eastern Bloc firearms, TulAmmo provides authentic ammunition from the country that designed the 7.62x39mm cartridge and AK platform. The budget-friendly pricing allows shooters to train regularly without financial strain, while the proven reliability ensures your range sessions are productive rather than frustrating. TulAmmo represents the best combination of authentic Russian manufacturing heritage, proven military-specification quality, and affordable pricing for American shooters.",
+    seoKeywords: [
+      "tulammo 7.62x39",
+      "russian ak ammunition",
+      "tula cartridge works",
+      "122gr 762x39",
+      "authentic russian ammo",
+      "steel case ak47",
+      "budget 7.62 russian",
+      "military surplus style",
+      "imported russian ammunition",
+      "tula factory ammo"
+    ]
   },
   {
     id: "762x39-wolf-gold",
@@ -2387,7 +2519,51 @@ export const products: Product[] = [
     categorySlug: "762x39-soviet",
     description: "Brass-cased premium performance",
     manufacturer: "Wolf",
-    grainWeight: "123gr"
+    grainWeight: "123gr",
+    shortDescription: "Wolf Gold delivers premium brass-cased performance for shooters seeking enhanced reliability and reloadability. Manufactured in Taiwan to exacting standards for superior quality.",
+    longDescription: "Wolf Gold 123-grain FMJ represents Wolf's premium ammunition line, manufactured in Taiwan using brass cases and advanced production techniques that elevate performance above standard steel-cased offerings. While Wolf is renowned for affordable steel-cased ammunition, Wolf Gold demonstrates the company's commitment to also serving shooters who prefer traditional brass construction. Manufactured at reputable Taiwanese facilities that produce ammunition for various international markets, Wolf Gold delivers quality that rivals major American manufacturers at competitive pricing. The brass case construction provides several advantages over steel cases. Brass is more malleable than steel, creating better chamber sealing and more consistent extraction across diverse firearms. The enhanced malleability means brass cases expand and contract more uniformly during firing, improving accuracy potential. Brass cases are also fully reloadable - a significant advantage for handloaders who can reload quality brass cases 5-10 times, dramatically reducing long-term ammunition costs. Wolf Gold brass is manufactured to consistent specifications with uniform wall thickness and properly sized primer pockets. The 123-grain full metal jacket bullet uses a conventional copper jacket over lead core design. Unlike bimetal jackets found in economy ammunition, Wolf Gold's pure copper jacket is gentler on barrel rifling and creates less fouling. This extends barrel life and reduces cleaning requirements compared to steel-jacketed bullets. The bullet profile is optimized for reliable feeding in semi-automatic actions while maintaining good ballistic coefficient for accuracy at typical ranges. Wolf Gold uses non-corrosive Boxer primers, the standard for American ammunition. Boxer primers feature a single central flash hole in the primer pocket, making spent cases easy to decap and reprime for reloading. The primers provide consistent ignition across temperature ranges encountered in normal shooting activities. Powder selection emphasizes clean burning and consistent velocities, creating reliable function in both AK-pattern and American rifles chambered in 7.62x39mm. Taiwanese ammunition manufacturing has earned strong reputation for quality control and attention to detail. Wolf Gold undergoes rigorous testing including pressure validation, dimensional inspection, and accuracy verification. The result is ammunition that performs reliably in diverse firearms from AK rifles to bolt-action sporting guns to Ruger Mini-30s. For shooters who want the Wolf brand reputation with brass-case quality, Wolf Gold delivers exceptional value. The ammunition is particularly popular with shooters who reload, providing quality brass at prices well below premium American brands. Whether you're seeking enhanced accuracy, planning to reload your brass, or simply prefer traditional brass construction, Wolf Gold offers premium performance without premium pricing.",
+    features: [
+      "Premium brass cases manufactured in Taiwan",
+      "123-grain FMJ with pure copper jacket over lead core",
+      "Non-corrosive Boxer primers for easy reloading",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Fully reloadable brass cases for long-term value",
+      "Manufactured to exacting quality control standards",
+      "Reliable function in all 7.62x39 platforms",
+      "Gentler on barrel rifling than steel-jacketed bullets",
+      "Consistent velocities and pressure characteristics",
+      "Better chamber sealing than steel cases"
+    ],
+    benefits: [
+      "Brass construction provides better accuracy potential",
+      "Reloadable cases dramatically reduce long-term costs",
+      "Boxer primers simplify the reloading process",
+      "Cleaner burning than economy steel-cased ammunition",
+      "Reduced barrel wear compared to bimetal jackets",
+      "Wolf quality reputation at competitive pricing"
+    ],
+    useCases: [
+      "Precision practice with AK and SKS rifles",
+      "Brass collection for reloading projects",
+      "Bolt-action 7.62x39 sporting rifle hunting",
+      "Ruger Mini-30 target shooting and hunting",
+      "Competition practice requiring brass-cased ammunition",
+      "Any application preferring traditional brass construction"
+    ],
+    technicalDetails: "Wolf Gold 123gr FMJ generates approximately 2,350-2,400 fps from a 16-inch barrel, producing roughly 1,510 foot-pounds of muzzle energy. The brass cases are drawn from cartridge brass alloy (70% copper, 30% zinc) and formed using precision tooling ensuring consistent dimensions. Case wall thickness is uniform, promoting even expansion during firing for improved accuracy. The 123-grain bullet features a copper jacket approximately 0.025-0.030 inches thick over a lead core, providing reliable expansion characteristics on targets. The flat or boat tail base (depending on production run) stabilizes the bullet in flight. Boxer primers feature a single central flash hole and anvil contained in the primer cup, standard for American ammunition and ideal for reloading. Powder formulation emphasizes consistent burn rates and clean combustion, reducing carbon and copper fouling. Typical accuracy from quality rifles is 2-3 MOA at 100 yards - noticeably better than steel-cased ammunition. Functions reliably in all firearms chambered for 7.62x39mm including AK-47, AKM, SKS, Ruger Mini-30, CZ 527, Howa Mini Action, and various bolt-action sporting rifles. Brass cases can typically be reloaded 5-10 times when properly sized and annealed.",
+    whyChoose: "Choose Wolf Gold when you want premium brass-cased performance with Wolf's value pricing. This ammunition appeals to shooters who recognize that brass cases provide accuracy and reloadability advantages worth the modest price premium over steel-cased alternatives. For handloaders, Wolf Gold provides quality brass that can be reloaded multiple times, making the per-round cost extremely competitive over the ammunition's lifecycle. The Taiwanese manufacturing ensures consistent quality while keeping pricing well below American-made brass-cased ammunition. Wolf Gold is particularly popular with Ruger Mini-30 owners and shooters with bolt-action 7.62x39 sporting rifles who want accuracy potential their firearms can deliver. Whether you're collecting brass for future reloading projects, seeking maximum accuracy from your 7.62x39 rifle, or simply prefer traditional brass construction, Wolf Gold delivers premium performance at a value price point.",
+    seoKeywords: [
+      "wolf gold 7.62x39",
+      "brass case 762x39",
+      "reloadable 7.62 russian",
+      "premium ak ammunition",
+      "wolf brass cased ammo",
+      "taiwanese 7.62x39",
+      "boxer primed 762x39",
+      "accuracy 7.62 ammo",
+      "mini-30 ammunition",
+      "reloading 7.62x39 brass"
+    ]
   },
   {
     id: "762x39-brown-bear-123",
@@ -2400,7 +2576,51 @@ export const products: Product[] = [
     categorySlug: "762x39-soviet",
     description: "Steel-cased budget training ammunition",
     manufacturer: "Brown Bear",
-    grainWeight: "123gr"
+    grainWeight: "123gr",
+    shortDescription: "Brown Bear ammunition combines Russian manufacturing expertise with modern polymer coating technology. Budget-friendly steel-cased ammunition optimized for reliable AK performance.",
+    longDescription: "Brown Bear 123-grain FMJ ammunition represents modern Russian ammunition manufacturing brought to the commercial market through careful quality control and advanced polymer coating technology. Manufactured at facilities with extensive experience producing ammunition for military and commercial markets, Brown Bear delivers reliable performance at prices that make high-volume shooting accessible to all shooters. The Brown Bear brand is part of the Bear ammunition family including Silver Bear and Golden Bear, each targeting different market segments while maintaining consistent quality standards. The polymer-coated steel case is Brown Bear's defining feature, representing a significant advancement over traditional lacquered steel cases. The polymer coating is applied uniformly to case exteriors, creating a slick surface that facilitates smooth feeding and extraction in semi-automatic actions. This coating is more durable and consistent than lacquer, providing superior protection against corrosion while generating less buildup in rifle chambers. The polymer is heat-resistant and won't soften or become sticky even during extended firing sessions, ensuring reliable function through entire range sessions. The 123-grain full metal jacket bullet follows the Soviet military specification that defined 7.62x39mm performance. The bullet features a bimetal jacket - copper-washed steel - over a lead core. While some shooters express concerns about bimetal jackets and barrel wear, testing has demonstrated that barrel wear from bimetal jackets is negligible when shooting reasonable volumes. The slightly increased hardness actually helps the bullet penetrate targets more effectively, making Brown Bear particularly suitable for steel target shooting. Brown Bear uses non-corrosive Berdan primers standard in Russian ammunition production. These primers undergo testing to ensure reliable ignition across the temperature ranges commonly encountered in shooting activities. The powder formulation is optimized for AK-pattern rifles with their robust gas systems, providing consistent cycling pressure and velocities. Extensive function testing validates reliable operation across diverse firearms. Quality control procedures include dimensional inspection, pressure testing, and accuracy validation. Each production lot must meet specifications before release to commercial markets. The result is ammunition that functions as reliably as considerably more expensive alternatives while maintaining pricing that encourages regular shooting. Packaging is straightforward and functional, emphasizing value over presentation. Brown Bear is typically available in cases and bulk quantities, making it easy to stock up for future shooting sessions at favorable per-round pricing. For shooters seeking reliable steel-cased ammunition with modern polymer coating technology at budget-friendly prices, Brown Bear delivers proven performance. Whether you're training with your AK or SKS, practicing fundamentals, or simply enjoying recreational shooting, Brown Bear keeps you shooting without emptying your wallet.",
+    features: [
+      "Modern polymer-coated steel cases for reliable extraction",
+      "123-grain FMJ bullet matching Soviet military specification",
+      "Bimetal jacket provides effective target penetration",
+      "Non-corrosive Berdan primers for reliable ignition",
+      "Manufactured at facilities producing military contract ammunition",
+      "Advanced coating technology superior to traditional lacquer",
+      "Optimized for AK-pattern rifle gas systems",
+      "Budget-friendly pricing enables high-volume shooting",
+      "Heat-resistant coating won't soften during extended sessions",
+      "Consistent quality control and testing procedures"
+    ],
+    benefits: [
+      "Polymer coating improves feeding and extraction reliability",
+      "Russian manufacturing expertise ensures quality standards",
+      "Affordable pricing allows frequent training and practice",
+      "Effective steel target penetration from bimetal jacket",
+      "Modern technology advances beyond older lacquered ammunition",
+      "Reliable function in all AK and SKS platforms"
+    ],
+    useCases: [
+      "AK-47 and AKM training and practice sessions",
+      "SKS rifle recreational shooting and plinking",
+      "Steel target shooting with 7.62x39 rifles",
+      "High-volume training on restricted budgets",
+      "General range use with Eastern Bloc firearms",
+      "Stockpiling affordable training ammunition"
+    ],
+    technicalDetails: "Brown Bear 123gr FMJ produces approximately 2,350 fps from a standard 16-inch barrel, generating roughly 1,508 foot-pounds of muzzle energy. The polymer-coated steel case features uniform coating thickness of 1-2 thousandths of an inch, providing excellent lubricity and corrosion protection. The 123-grain bullet with bimetal jacket features copper wash over mild steel jacket, with total jacket thickness of approximately 0.018-0.022 inches encasing a lead core. The boat tail base improves ballistic coefficient and accuracy compared to flat-base designs. Berdan primers are sealed to Russian military standards preventing moisture contamination. Powder selection emphasizes reliable gas port pressures for AK cycling while generating moderate chamber pressures safe for all 7.62x39 firearms. Typical accuracy from quality AK rifles is 3-4 MOA at 100 yards, meeting or exceeding military specifications. Functions reliably in temperatures from -20°F to 120°F. Compatible with all firearms chambered for 7.62x39mm including AK-47, AKM, SKS, Ruger Mini-30, CZ 527, and bolt-action sporting rifles. Steel cases are not suitable for reloading.",
+    whyChoose: "Choose Brown Bear when you want modern polymer-coated steel case technology at budget prices that make high-volume shooting accessible. The advanced polymer coating represents significant improvement over older lacquered ammunition, providing more consistent feeding and extraction while better protecting cases from corrosion. Brown Bear is manufactured at facilities with extensive military contract experience, ensuring production standards that deliver reliable performance despite the affordable pricing. For AK and SKS shooters who shoot frequently, Brown Bear allows them to maintain proficiency and enjoy their firearms without financial constraints limiting their range time. The money saved choosing Brown Bear can be invested in additional ammunition, accessories, training courses, or other shooting activities.",
+    seoKeywords: [
+      "brown bear 7.62x39",
+      "polymer coated steel case",
+      "budget ak ammunition",
+      "123gr 762x39 fmj",
+      "affordable russian ammo",
+      "ak47 training ammo",
+      "steel case 7.62 russian",
+      "bear ammunition",
+      "high volume 762x39",
+      "cheap ak ammo"
+    ]
   },
   {
     id: "762x39-pmc-brass-123",
@@ -2413,7 +2633,51 @@ export const products: Product[] = [
     categorySlug: "762x39-soviet",
     description: "Brass-cased ammunition for better reliability",
     manufacturer: "PMC",
-    grainWeight: "123gr"
+    grainWeight: "123gr",
+    shortDescription: "PMC Bronze delivers Korean-made quality with brass cases and boxer primers. Enhanced reliability and reloadability for serious 7.62x39 shooters.",
+    longDescription: "PMC Bronze 123-grain FMJ ammunition represents South Korean manufacturing excellence brought to American shooters through PMC's Bronze line of affordable target and training ammunition. Poongsan Metal Corporation (PMC) has been producing ammunition since 1968 and has grown into one of Asia's largest ammunition manufacturers, supplying both military contracts and commercial markets worldwide. PMC Bronze applies this manufacturing expertise to creating reliable, affordable ammunition that competes directly with American-made brands. The brass case construction distinguishes PMC Bronze from budget steel-cased alternatives, providing the reliability and reloadability advantages that many shooters prefer. PMC's brass cases are manufactured from quality cartridge brass and drawn using precision equipment ensuring consistent dimensions and wall thickness. The brass is properly annealed during manufacturing to provide optimal hardness - hard enough to maintain dimensional stability yet ductile enough to expand and seal the chamber during firing. This careful metallurgical control results in cases that extract reliably while maintaining the integrity needed for multiple reloads. The 123-grain full metal jacket bullet uses a conventional copper jacket over lead core construction. The copper jacket is gentler on barrel rifling compared to bimetal jackets, extending barrel life and reducing copper fouling. The bullet profile is carefully engineered to feed reliably across diverse firearm platforms - from AK rifles to Ruger Mini-30s to bolt-action sporting rifles. PMC's quality control ensures bullet weight consistency and proper jacket concentricity, contributing to accuracy potential exceeding steel-cased alternatives. PMC Bronze uses non-corrosive Boxer primers - a significant advantage for shooters who reload their brass. Boxer primers feature a single central flash hole and self-contained anvil, making spent cases easy to decap and reprime. PMC's primers undergo rigorous testing to ensure consistent ignition across normal temperature ranges. The powder formulation emphasizes clean burning and consistent velocities, creating reliable function in both gas-operated and bolt-action firearms. PMC's manufacturing facility operates modern equipment with quality control procedures including statistical process control, automated dimensional inspection, and lot testing for pressure and accuracy. The result is ammunition that rivals major American manufacturers in quality while maintaining competitive pricing. PMC Bronze has earned strong reputation among American shooters for delivering reliable performance across diverse applications. For 7.62x39 shooters seeking brass-cased reliability without premium pricing, PMC Bronze offers an excellent balance of quality and value. Whether you're shooting an AK rifle, Ruger Mini-30, or bolt-action sporting rifle, PMC Bronze delivers consistent performance suitable for both practice and hunting applications.",
+    features: [
+      "Quality brass cases manufactured by South Korean PMC facility",
+      "123-grain FMJ with pure copper jacket over lead core",
+      "Non-corrosive Boxer primers ideal for reloading",
+      "Clean-burning powder reduces fouling and maintenance",
+      "Fully reloadable brass cases for long-term value",
+      "Modern manufacturing with statistical process control",
+      "Reliable function across all 7.62x39 platforms",
+      "Consistent velocities and pressure characteristics",
+      "Gentler on barrel rifling than steel-jacketed bullets",
+      "PMC's 50+ years of ammunition manufacturing expertise"
+    ],
+    benefits: [
+      "Brass construction provides enhanced accuracy and reliability",
+      "Boxer primers simplify reloading process for handloaders",
+      "South Korean quality manufacturing at competitive pricing",
+      "Cleaner burning than economy steel-cased ammunition",
+      "Reduced barrel wear compared to bimetal jacket bullets",
+      "PMC's reputation for consistent quality and performance"
+    ],
+    useCases: [
+      "AK and SKS target practice and training",
+      "Ruger Mini-30 hunting and target shooting",
+      "Bolt-action 7.62x39 sporting rifle applications",
+      "Brass collection for reloading projects",
+      "Any application requiring brass-cased ammunition",
+      "Competition practice at ranges requiring brass cases"
+    ],
+    technicalDetails: "PMC Bronze 123gr FMJ generates approximately 2,350 fps from a 16-inch barrel, producing roughly 1,510 foot-pounds of muzzle energy. The brass cases are manufactured from cartridge brass alloy and formed using precision dies ensuring consistent dimensions. Proper annealing during manufacture provides optimal case hardness for reliable extraction and reloadability. The 123-grain bullet features a copper jacket approximately 0.025-0.030 inches thick over a lead core, with careful attention to concentricity and weight uniformity. Boxer primers feature single central flash holes standard for American reloading practices. Powder formulation emphasizes clean combustion and consistent burn rates for reliable cycling. Typical accuracy from quality rifles is 2-3 MOA at 100 yards. Functions reliably in all firearms chambered for 7.62x39mm including AK-47, AKM, SKS, Ruger Mini-30, CZ 527, Howa Mini Action, and bolt-action sporting rifles. Brass cases can typically be reloaded 5-8 times when properly maintained.",
+    whyChoose: "Choose PMC Bronze when you want brass-cased reliability from a respected international manufacturer at competitive pricing. PMC has earned strong reputation among American shooters for delivering consistent quality across their entire ammunition line. The Bronze series specifically targets budget-conscious shooters who refuse to sacrifice reliability for affordability. For 7.62x39 shooters with quality firearms deserving quality ammunition, PMC Bronze provides the accuracy potential and reliable function that allows firearms to perform to their capabilities. The brass cases appeal to handloaders seeking quality components while the Boxer primers simplify the reloading process. Whether you're practicing marksmanship fundamentals, hunting with your Ruger Mini-30, or collecting brass for future reloading, PMC Bronze delivers reliable performance round after round.",
+    seoKeywords: [
+      "pmc bronze 7.62x39",
+      "brass case 762x39",
+      "korean 7.62 ammunition",
+      "boxer primed 762x39",
+      "reloadable 7.62 russian",
+      "pmc ak ammunition",
+      "mini-30 ammo",
+      "quality brass 762x39",
+      "affordable brass case",
+      "pmc bronze ammunition"
+    ]
   },
   {
     id: "762x39-golden-tiger",
