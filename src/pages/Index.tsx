@@ -98,7 +98,16 @@ const Index = () => {
           
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {featuredProducts.map((product) => (
-              <ProductCard key={product.id} {...product} />
+              <ProductCard 
+                key={product.id} 
+                {...product}
+                grainWeight={product.grainWeight}
+                grainWeightVariations={[
+                  { grainWeight: '55gr', price: product.price - 2, inStock: true },
+                  { grainWeight: '62gr', price: product.price, inStock: true },
+                  { grainWeight: '77gr', price: product.price + 3, inStock: false },
+                ]}
+              />
             ))}
           </div>
         </div>

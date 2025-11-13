@@ -13,18 +13,19 @@ interface ProductCardProps {
   price: number;
   inStock: boolean;
   image?: string;
-  variations?: {
-    rounds: number;
+  grainWeight?: string;
+  grainWeightVariations?: {
+    grainWeight: string;
     price: number;
     inStock: boolean;
   }[];
 }
 
-export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, variations }: ProductCardProps) => {
+export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, grainWeight, grainWeightVariations }: ProductCardProps) => {
   return (
     <Link to={`/product/${id}`}>
       <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full">
-      <div className="aspect-square bg-secondary overflow-hidden">
+      <div className="aspect-square bg-secondary overflow-hidden relative">
         <img 
           src={image || placeholderImage} 
           alt={name}
@@ -33,28 +34,35 @@ export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, 
             e.currentTarget.src = placeholderImage;
           }}
         />
+        {grainWeight && (
+          <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground">
+            {grainWeight}
+          </Badge>
+        )}
       </div>
       
       <CardContent className="p-4">
         <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
+        <p className="text-xs text-muted-foreground mb-2">{caliber} • {rounds} Rounds</p>
         
-        {variations && variations.length > 0 && (
+        {grainWeightVariations && grainWeightVariations.length > 0 && (
           <div className="mb-3">
-            <p className="text-xs text-muted-foreground mb-1.5">Round Count:</p>
+            <p className="text-xs text-muted-foreground mb-1.5">Grain Weight:</p>
             <div className="flex flex-wrap gap-1.5">
-              {variations.map((variant, idx) => (
+              {grainWeightVariations.map((variant, idx) => (
                 <button
                   key={idx}
                   onClick={(e) => e.preventDefault()}
-                  className={`px-2.5 py-1 text-xs font-medium rounded border transition-all ${
-                    variant.rounds === rounds
-                      ? 'bg-tactical text-tactical-foreground border-tactical'
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md border transition-all ${
+                    variant.grainWeight === grainWeight
+                      ? 'bg-tactical text-tactical-foreground border-tactical shadow-sm'
                       : variant.inStock
-                      ? 'bg-secondary border-border hover:border-tactical/50'
-                      : 'bg-muted border-border text-muted-foreground line-through opacity-60'
+                      ? 'bg-secondary border-border hover:border-tactical/50 hover:bg-tactical/10'
+                      : 'bg-muted border-border text-muted-foreground line-through opacity-50 cursor-not-allowed'
                   }`}
+                  disabled={!variant.inStock}
                 >
-                  {variant.rounds}
+                  {variant.grainWeight}
                 </button>
               ))}
             </div>
