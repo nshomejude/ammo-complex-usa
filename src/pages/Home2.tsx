@@ -598,6 +598,110 @@ const Home2 = () => {
         </div>
       </section>
 
+      {/* Brand Showcase Section */}
+      <section className="py-20 border-b bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Award className="h-5 w-5 home2-accent" />
+              <Badge variant="outline" className="text-base border-[hsl(var(--home2-primary))] home2-accent">Authorized Dealer</Badge>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Trusted Brand Partners
+            </h2>
+            <p className="text-muted-foreground text-xl max-w-2xl mx-auto leading-relaxed">
+              Official authorized dealer for the world's leading ammunition and firearms manufacturers
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-16">
+            {[
+              { name: "FEDERAL", tagline: "Premium" },
+              { name: "HORNADY", tagline: "Precision" },
+              { name: "WINCHESTER", tagline: "Legendary" },
+              { name: "SPEER", tagline: "Gold Dot" },
+              { name: "REMINGTON", tagline: "Since 1816" },
+              { name: "CCI", tagline: "Blazer" },
+              { name: "BLACK HILLS", tagline: "Match" },
+              { name: "SIG SAUER", tagline: "Elite" },
+              { name: "MAGTECH", tagline: "Sport" },
+              { name: "PMC", tagline: "Bronze" }
+            ].map((brand, index) => (
+              <Card
+                key={index}
+                className="home2-card-hover border-2 group cursor-pointer animate-fade-in"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                <CardContent className="p-8 flex flex-col items-center justify-center text-center min-h-[140px]">
+                  <div className="mb-2 transition-all group-hover:scale-110">
+                    <div className="text-2xl font-black tracking-tight home2-accent group-hover:home2-primary transition-colors">
+                      {brand.name}
+                    </div>
+                    <div className="text-xs font-semibold text-muted-foreground mt-1 uppercase tracking-wider">
+                      {brand.tagline}
+                    </div>
+                  </div>
+                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-[hsl(var(--home2-primary))] to-transparent opacity-0 group-hover:opacity-100 transition-opacity mt-3" />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="border-2">
+              <CardContent className="p-6 flex items-start gap-4">
+                <div className="p-3 rounded-lg home2-accent-bg">
+                  <Shield className="h-6 w-6 home2-accent" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Authorized Dealer</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Direct partnerships with manufacturers guarantee authentic products and factory warranties
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2">
+              <CardContent className="p-6 flex items-start gap-4">
+                <div className="p-3 rounded-lg home2-accent-bg">
+                  <Award className="h-6 w-6 home2-accent" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Quality Guaranteed</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Every product comes directly from the manufacturer with full documentation and support
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2">
+              <CardContent className="p-6 flex items-start gap-4">
+                <div className="p-3 rounded-lg home2-accent-bg">
+                  <Package className="h-6 w-6 home2-accent" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Latest Inventory</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Regular shipments ensure you get the newest production runs and latest innovations
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 text-muted-foreground">
+              <CheckCircle className="h-5 w-5 home2-accent" />
+              <span className="text-lg">
+                <span className="font-bold home2-accent">Official authorized dealer</span> for all brands shown above
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 home2-gradient text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
