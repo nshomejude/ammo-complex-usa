@@ -43,6 +43,17 @@ All colors MUST be HSL.
     
     --warning: 45 93% 47%;
     --warning-foreground: 0 0% 10%;
+
+    /* Home 3 - Electric Blue Theme */
+    --home3-primary: 199 89% 48%;
+    --home3-primary-hover: 199 89% 42%;
+    --home3-secondary: 217 91% 60%;
+    --home3-accent: 189 94% 43%;
+    --home3-accent-light: 199 100% 96%;
+    --home3-dark: 217 33% 17%;
+    --home3-gradient-start: 199 89% 48%;
+    --home3-gradient-mid: 189 94% 43%;
+    --home3-gradient-end: 217 91% 60%;
   }
 }
 
