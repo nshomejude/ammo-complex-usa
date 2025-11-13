@@ -78,13 +78,17 @@ export const Hero = () => {
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
-                {slides.map((slide) => (
+                {slides.map((slide, index) => (
                   <div key={slide.id} className="min-w-0 flex-[0_0_100%]">
-                    <div className="text-center">
-                      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+                    <div className={`text-center transition-all duration-700 ${
+                      index === selectedIndex 
+                        ? 'animate-fade-in opacity-100 scale-100' 
+                        : 'opacity-0 scale-95'
+                    }`}>
+                      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl transform transition-transform duration-700">
                         {slide.title}
                       </h1>
-                      <p className="mb-8 text-lg text-muted-foreground md:text-xl">
+                      <p className="mb-8 text-lg text-muted-foreground md:text-xl transform transition-all duration-700 delay-100">
                         {slide.description}
                       </p>
                     </div>
@@ -95,18 +99,18 @@ export const Hero = () => {
 
             <button
               onClick={scrollPrev}
-              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-colors hover:bg-accent"
+              className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-all duration-300 hover:bg-accent hover:scale-110 hover:border-tactical active:scale-95"
               aria-label="Previous slide"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="h-6 w-6 transition-transform duration-300" />
             </button>
 
             <button
               onClick={scrollNext}
-              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-colors hover:bg-accent"
+              className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full border-2 border-border bg-background p-2 transition-all duration-300 hover:bg-accent hover:scale-110 hover:border-tactical active:scale-95"
               aria-label="Next slide"
             >
-              <ChevronRight className="h-6 w-6" />
+              <ChevronRight className="h-6 w-6 transition-transform duration-300" />
             </button>
           </div>
 
@@ -115,8 +119,10 @@ export const Hero = () => {
               <button
                 key={index}
                 onClick={() => emblaApi?.scrollTo(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  index === selectedIndex ? 'w-8 bg-tactical' : 'w-2 bg-border'
+                className={`h-2 rounded-full transition-all duration-500 hover:scale-125 ${
+                  index === selectedIndex 
+                    ? 'w-8 bg-tactical shadow-lg shadow-tactical/50 scale-110' 
+                    : 'w-2 bg-border hover:bg-tactical/50'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
