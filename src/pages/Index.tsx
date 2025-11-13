@@ -29,10 +29,10 @@ const Index = () => {
       <Hero />
       
       <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-12 border-warning bg-warning/10">
-          <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">Legal Notice</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+        <Alert className="mb-12 border-destructive bg-destructive/10">
+          <AlertCircle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-destructive-foreground">Legal Notice</AlertTitle>
+          <AlertDescription className="text-destructive-foreground">
             All purchases require valid firearms license verification. By using this site, you certify 
             you are legally permitted to purchase ammunition in your jurisdiction.
           </AlertDescription>
