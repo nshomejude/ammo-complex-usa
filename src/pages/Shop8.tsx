@@ -132,8 +132,8 @@ export default function Shop8() {
                 </span>
               </div>
 
-              {/* Products Grid - 4 columns */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {/* Products Grid - Responsive */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product, index) => (
                   <div 
                     key={product.id} 
@@ -143,21 +143,21 @@ export default function Shop8() {
                     <ProductCard {...product} />
                     <Button
                       size="sm"
-                      variant="secondary"
-                      className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg border-cyan-500/30"
+                      variant="outline"
+                      className="absolute top-2 right-2 md:top-4 md:right-4 opacity-0 md:group-hover:opacity-100 md:transition-opacity shadow-lg border-cyan-500/30 text-xs md:text-sm h-8 md:h-9 px-2 md:px-3"
                       onClick={() => handleQuickView(product)}
                     >
-                      <Eye className="h-4 w-4 mr-1" />
-                      Quick View
+                      <Eye className="h-3 w-3 md:h-4 md:w-4 md:mr-1" />
+                      <span className="hidden md:inline">Quick View</span>
                     </Button>
                   </div>
                 ))}
               </div>
 
               {filteredProducts.length === 0 && (
-                <div className="text-center py-16 border border-cyan-500/30 rounded-lg bg-cyan-500/5">
-                  <Zap className="h-16 w-16 mx-auto mb-4 text-cyan-500" />
-                  <p className="text-muted-foreground text-lg">No results found. Try adjusting your filters.</p>
+                <div className="text-center py-12 md:py-16 border border-cyan-500/30 rounded-lg bg-cyan-500/5 col-span-2 md:col-span-3 lg:col-span-4">
+                  <Zap className="h-12 md:h-16 w-12 md:w-16 mx-auto mb-4 text-cyan-500" />
+                  <p className="text-muted-foreground text-base md:text-lg">No results found. Try adjusting your filters.</p>
                 </div>
               )}
             </div>
