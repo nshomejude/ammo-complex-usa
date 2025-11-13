@@ -66,7 +66,7 @@ export const Hero = () => {
 
   return (
     <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-[hsl(0,75%,96%)] via-background to-background">
-      <div className="container relative mx-auto px-4 py-14 md:py-20">
+      <div className="container relative mx-auto px-4 py-11 md:py-16">
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 flex justify-center">
             <div className="inline-flex items-center gap-2 rounded-full border-2 border-[hsl(var(--home2-accent))] bg-[hsl(var(--home2-accent-light))] px-4 py-2">
