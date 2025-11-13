@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
-import { Shield, ShoppingCart, User, ChevronDown } from "lucide-react";
+import { Shield, ShoppingCart, User, ChevronDown, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Search } from "@/components/Search";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +13,22 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export const Navigation = () => {
+  const [open, setOpen] = useState(false);
+
+  const landingPages = [
+    { path: "/", label: "Home (Original)" },
+    { path: "/home2", label: "Home 2 - Tactical Precision" },
+    { path: "/home3", label: "Home 3 - Defense & Security" },
+    { path: "/home4", label: "Home 4 - Hunter's Edge" },
+    { path: "/home5", label: "Home 5 - Engineering" },
+    { path: "/home6", label: "Home 6 - Global Distribution" },
+    { path: "/home7", label: "Home 7 - Custom Manufacturing" },
+    { path: "/home8", label: "Home 8 - Safety & Training" },
+    { path: "/home9", label: "Home 9 - About Us" },
+    { path: "/home10", label: "Home 10 - Technology" },
+    { path: "/home11", label: "Home 11 - Wholesale" },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
@@ -19,7 +38,7 @@ export const Navigation = () => {
             <span className="text-xl font-bold tracking-tight">ARMS COMPLEX</span>
           </Link>
           
-          <div className="flex-1 max-w-xl mx-4">
+          <div className="hidden md:flex flex-1 max-w-xl mx-4">
             <Search />
           </div>
           
@@ -95,6 +114,124 @@ export const Navigation = () => {
               Admin
             </Link>
           </div>
+
+          {/* Mobile Menu */}
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild className="lg:hidden">
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-80 overflow-y-auto">
+              <div className="flex flex-col gap-6 mt-8">
+                <div className="mb-4">
+                  <Search />
+                </div>
+
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="landing-pages">
+                    <AccordionTrigger className="text-base font-semibold">
+                      Landing Pages
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-2 pl-4">
+                        {landingPages.map((page) => (
+                          <Link
+                            key={page.path}
+                            to={page.path}
+                            onClick={() => setOpen(false)}
+                            className="py-2 text-sm hover:text-tactical transition-colors"
+                          >
+                            {page.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                <Link
+                  to="/products"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Products
+                </Link>
+                
+                <Link
+                  to="/categories"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Ammo Categories
+                </Link>
+                
+                <Link
+                  to="/firearms"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Firearms
+                </Link>
+                
+                <Link
+                  to="/firearm-categories"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Firearm Types
+                </Link>
+                
+                <Link
+                  to="/how-to-buy"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  How to Buy
+                </Link>
+                
+                <Link
+                  to="/shipping"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Shipping
+                </Link>
+                
+                <Link
+                  to="/firearms-license"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  License Info
+                </Link>
+                
+                <Link
+                  to="/about"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  About
+                </Link>
+                
+                <Link
+                  to="/contact"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Contact
+                </Link>
+                
+                <Link
+                  to="/admin"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Admin
+                </Link>
+              </div>
+            </SheetContent>
+          </Sheet>
 
           <div className="flex items-center gap-3 flex-shrink-0">
             <Button variant="ghost" size="icon">
