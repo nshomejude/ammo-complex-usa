@@ -494,7 +494,17 @@ const FirearmDetail = () => {
             <h2 className="text-3xl font-bold mb-6">Related Firearms</h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {relatedFirearms.map((related) => (
-                <FirearmCard key={related.id} {...related} />
+                <FirearmCard 
+                  key={related.id} 
+                  {...related}
+                  finish={related.finish}
+                  finishVariations={[
+                    { finish: 'Matte Black', price: related.price, inStock: true, colorCode: '#1a1a1a' },
+                    { finish: 'FDE', price: related.price + 25, inStock: true, colorCode: '#8b7355' },
+                    { finish: 'OD Green', price: related.price + 30, inStock: true, colorCode: '#4a5d3f' },
+                    { finish: 'Stainless', price: related.price + 40, inStock: related.inStock, colorCode: '#c0c0c0' },
+                  ]}
+                />
               ))}
             </div>
           </div>

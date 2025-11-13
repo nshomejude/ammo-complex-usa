@@ -412,7 +412,17 @@ const FirearmCategoryPage = () => {
                 </p>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {filteredFirearms.map((firearm) => (
-                    <FirearmCard key={firearm.id} {...firearm} />
+                    <FirearmCard 
+                      key={firearm.id} 
+                      {...firearm}
+                      finish={firearm.finish}
+                      finishVariations={[
+                        { finish: 'Matte Black', price: firearm.price, inStock: true, colorCode: '#1a1a1a' },
+                        { finish: 'FDE', price: firearm.price + 25, inStock: true, colorCode: '#8b7355' },
+                        { finish: 'OD Green', price: firearm.price + 30, inStock: true, colorCode: '#4a5d3f' },
+                        { finish: 'Stainless', price: firearm.price + 40, inStock: firearm.inStock, colorCode: '#c0c0c0' },
+                      ]}
+                    />
                   ))}
                 </div>
               </>
