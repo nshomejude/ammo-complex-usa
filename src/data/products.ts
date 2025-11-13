@@ -3545,7 +3545,56 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "20-gauge",
     description: "Competition-grade target load",
     manufacturer: "Federal",
-    grainWeight: "7/8 oz"
+    grainWeight: "7/8 oz",
+    shortDescription: "Federal Gold Medal 20 Gauge delivers championship-winning performance for competitive shooters. The choice of Olympic medalists and national champions who demand consistent patterns and minimal recoil.",
+    longDescription: "Federal Premium Gold Medal 20 Gauge target loads represent the pinnacle of sporting clays and skeet ammunition engineering, delivering the consistency and performance that competitive shooters demand for championship-level competition. Gold Medal shells have earned legendary status in the competitive shooting community through decades of victories at Olympic Games, World Championships, and national competitions across all clay target disciplines. The 20 gauge Gold Medal load offers distinct advantages for competitive shooters, particularly in disciplines requiring high round counts like sporting clays tournaments that can exceed 200 targets per day. The reduced recoil compared to 12 gauge allows shooters to maintain proper form and follow-through throughout extended shooting sessions, reducing fatigue that degrades performance as competitions progress. Despite the lighter payload, Gold Medal 20 gauge shells deliver pattern density and consistency rivaling heavier 12 gauge target loads, making them fully competitive in registered tournaments. The 7/8-ounce shot payload is carefully selected from premium extra-hard lead shot that resists deformation during firing, ensuring more pellets remain spherical for optimal pattern performance. Federal uses proprietary shot buffering and advanced wad design to protect shot during acceleration in the barrel, further enhancing pattern consistency. The one-piece wad design provides consistent shot cup opening and pellet release, creating uniform patterns from shot to shot - the critical factor in competitive success where consistency trumps maximum pattern density. Federal's Gold Medal Plastic hulls are engineered specifically for clay target shooting, featuring reinforced base wads and optimized case capacity. These hulls provide consistent internal ballistics contributing to the shell's legendary pattern uniformity. The bright gold color makes spent hulls easy to locate for reloading, and the hulls are designed to withstand multiple reload cycles, appealing to competitive shooters who reload their ammunition for practice and competition. Federal's powder selection for Gold Medal emphasizes clean burning, consistent pressures, and minimal temperature sensitivity. The powder burns completely, leaving minimal residue that could accumulate and affect gun function during long competition strings. The consistent burn rate ensures velocities remain within tight tolerances from shell to shell, typically varying less than 25 fps across entire production lots. This velocity consistency translates directly to consistent point of impact and predictable lead requirements. Federal's 209A primers provide reliable ignition across temperature extremes encountered in outdoor competitions, from summer heat exceeding 100°F to early morning chill below 40°F. The primers are precisely seated to consistent depths, ensuring uniform ignition characteristics that contribute to pattern consistency. Gold Medal loads undergo extensive pattern testing during development and periodic validation testing during production. Federal's quality control includes pattern board analysis at multiple distances and statistical analysis of pattern density and uniformity. This testing ensures every box of Gold Medal ammunition meets the exacting standards competitive shooters require. When you need ammunition that performs as precisely as your shooting technique, Federal Premium Gold Medal 20 Gauge delivers the consistency and reliability that separates champions from competitors.",
+    features: [
+      "7/8-ounce shot payload optimized for sporting clays and skeet",
+      "Premium extra-hard lead shot resists deformation",
+      "Proprietary shot buffering protects pellets during firing",
+      "One-piece wad design ensures consistent pattern release",
+      "Gold Medal Plastic hulls designed for competition use",
+      "Clean-burning powder minimizes fouling",
+      "Federal 209A primers for consistent ignition",
+      "Velocity consistency typically under 25 fps variation",
+      "Reinforced base wads for structural integrity",
+      "Reloadable hulls for economical practice"
+    ],
+    benefits: [
+      "Reduced recoil enables better form during long competition days",
+      "Pattern consistency shot-to-shot critical for competitive success",
+      "Used by Olympic and World Championship medalists",
+      "Minimal fouling maintains gun function through long strings",
+      "Temperature-stable performance across competition conditions",
+      "Federal's legendary quality control ensures reliability"
+    ],
+    useCases: [
+      "Sporting clays tournaments and registered competitions",
+      "Skeet shooting including doubles and high-volume practice",
+      "International skeet events requiring consistent patterns",
+      "FITASC and other European clay target disciplines",
+      "Practice sessions preparing for major competitions",
+      "Any application where pattern consistency is paramount"
+    ],
+    technicalDetails: "Federal Gold Medal 20 Gauge loads propel 7/8-ounce (382.5 grain) shot charges at approximately 1,200 fps, generating optimal pattern performance with manageable recoil. The load produces approximately 10.5 foot-pounds of recoil energy from a 7-pound shotgun, roughly 30% less than comparable 12 gauge 1-ounce target loads. This recoil reduction accumulates significantly over 100+ shot competition days, reducing shooter fatigue and maintaining proper technique. The premium extra-hard shot rates approximately 6% antimony content, providing sufficient hardness to resist setback deformation while remaining properly spherical. Shot sizes typically available include #7.5, #8, and #9, with #7.5 being most popular for sporting clays providing optimal balance of pattern density and individual pellet energy. At 40 yards, #7.5 shot produces approximately 80% patterns in a 30-inch circle, with core pattern density exceeding minimum requirements for consistent target breaks. The one-piece wad design features eight petals that open uniformly after muzzle exit, releasing the shot column gradually for optimal pattern formation. Internal ballistics are optimized for 2.75-inch chambers with chamber pressure approximately 11,000 psi, well below SAAMI maximum allowing reliable function in all gauges. The Gold Medal Plastic hull features compression-formed base wad with six-point crimp, providing structural integrity through multiple firing and reload cycles. Clean-burning powder leaves minimal residue, with fouling typically requiring cleaning only after 250+ rounds. Federal's statistical process controls maintain lot-to-lot consistency, with pattern testing validating performance before release to market.",
+    whyChoose: "Choose Federal Premium Gold Medal 20 Gauge when you're competing at the highest levels and need ammunition that performs as precisely as your technique. Gold Medal isn't called the 'Champion's Choice' through marketing - it's earned that title through documented victories at every significant clay target competition in the world. Olympic medalists, World Champions, and national champions across multiple disciplines trust Gold Medal because they need ammunition where shot-to-shot consistency is guaranteed, not hoped for. The 20 gauge Gold Medal load offers particular advantages for shooters who value reduced recoil without sacrificing competitive performance. In long tournaments where 200+ targets are common, the reduced recoil accumulates into significantly less fatigue compared to 12 gauge, helping you maintain form and focus through the final stations when championships are decided. The pattern consistency Gold Medal delivers means your break point remains constant - when you're on target, you break targets. This predictability builds confidence that translates directly into competitive performance. Federal's commitment to quality means you can purchase Gold Medal shells months apart and expect identical performance, critical when you practice with one lot and compete with another. While Gold Medal commands premium pricing, the performance advantage justifies the investment when your goal is winning rather than just participating. Champions choose equipment that provides competitive advantages, and Gold Medal ammunition is exactly that kind of equipment.",
+    seoKeywords: [
+      "federal gold medal 20 gauge",
+      "competition shotgun shells",
+      "sporting clays ammunition",
+      "20 gauge target loads",
+      "buy federal gold medal",
+      "skeet shooting ammo",
+      "championship clay ammo",
+      "premium target shells",
+      "20ga competition loads",
+      "federal premium shotshells",
+      "tournament clay ammo",
+      "gold medal plastic",
+      "competitive shooting shells",
+      "reduced recoil target loads",
+      "professional clay ammo"
+    ]
   },
   {
     id: "20ga-federal-top-gun",
@@ -3571,7 +3620,56 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "20-gauge",
     description: "Premium clay target ammunition",
     manufacturer: "Winchester",
-    grainWeight: "7/8 oz"
+    grainWeight: "7/8 oz",
+    shortDescription: "Winchester AA has been the gold standard in American target shooting for over 50 years. Legendary reliability and pattern consistency trusted by competitors and recreational shooters alike.",
+    longDescription: "Winchester AA 20 Gauge ammunition represents over five decades of continuous refinement in shotshell design, delivering the pattern consistency and reliability that have made it one of America's most trusted target loads. Introduced in 1965, the AA line quickly established itself as the benchmark against which all other target ammunition is measured, earning its reputation through countless competition victories and millions of satisfied recreational shooters. The AA hull design revolutionized target ammunition when introduced, featuring a compression-formed base wad that enhanced structural integrity and internal ballistic consistency. This innovation allowed Winchester to deliver match-grade performance in a production shotshell, democratizing competitive shooting by making championship-quality ammunition accessible to all shooters. Today's AA hulls continue that tradition, manufactured with modern materials and processes that enhance the original design's proven benefits. The 7/8-ounce shot charge in 20 gauge AA loads strikes the optimal balance between pattern density and recoil management. Winchester uses premium-grade hard shot with controlled antimony content, ensuring pellets resist deformation during firing. This shot hardness translates directly to pattern performance - harder shot remains spherical through barrel acceleration, traveling truer to the point of aim and creating denser, more consistent patterns at sporting clays distances. Winchester's shot buffering system further protects pellets during firing, minimizing deformation and maximizing the percentage of pellets that remain perfectly round for optimal flight characteristics. The AA wad design features precision-molded components that provide consistent gas sealing and shot protection. The wad's petals are engineered to open uniformly after muzzle exit, releasing the shot column gradually for optimal pattern formation. This controlled release creates patterns with dense centers and gradual falloff toward the edges, the ideal characteristic for breaking clay targets where center-pattern hits guarantee breaks while edge pattern strikes still deliver sufficient pellet count for consistent target destruction. Winchester's powder selection for AA loads emphasizes clean burning, minimal flash, and consistent velocities. The powder burns completely in the barrel, leaving minimal residue that could accumulate and affect gun function during long shooting sessions. Shooters regularly fire 200+ AA shells during tournament days without experiencing malfunctions or needing mid-day cleaning, testament to the powder's clean-burning characteristics. Velocity consistency is tightly controlled, with standard deviations typically under 20 fps, ensuring consistent point of impact from the first shot of the day through the last. AA primers provide reliable ignition across the temperature and atmospheric pressure variations encountered in outdoor shooting. Whether competing in summer heat, spring rain, or fall chill, AA loads ignite consistently and deliver identical pattern performance. This reliability has made Winchester AA the official ammunition for numerous shooting organizations and clubs, specified for events where all competitors must use identical ammunition to ensure fair competition. The distinctive red hull color has become synonymous with quality in the shooting sports community. Serious competitive shooters and recreational shooters alike recognize the red AA hull as representing reliable performance and proven consistency. That reputation has been earned through decades of documented success in every clay target discipline and millions of rounds fired in practice and competition. When you choose Winchester AA, you're selecting ammunition that has proven its worth across generations of shooters and continues setting the standard for target load performance.",
+    features: [
+      "Legendary AA hull design with compression-formed base wad",
+      "7/8-ounce premium hard shot for optimal pattern density",
+      "Shot buffering system minimizes pellet deformation",
+      "Precision-molded wad for consistent pattern release",
+      "Clean-burning powder reduces fouling and flash",
+      "Velocity standard deviation under 20 fps",
+      "Reliable ignition across temperature extremes",
+      "Proven in competition for over 50 years",
+      "Distinctive red hull color for easy identification",
+      "Reloadable hulls valued by handloaders"
+    ],
+    benefits: [
+      "Pattern consistency ensures predictable breaks on clays",
+      "Clean-burning formula maintains gun function through long sessions",
+      "Over 50 years of proven competition success",
+      "Affordable premium performance encourages regular practice",
+      "Winchester's legendary quality control and manufacturing excellence",
+      "Wide availability through dealers and clubs nationwide"
+    ],
+    useCases: [
+      "Trap shooting including singles, doubles, and handicap",
+      "Sporting clays competitions and recreational shooting",
+      "Skeet shooting in all gauges and disciplines",
+      "Practice sessions for all clay target sports",
+      "Club-level competitions and league shooting",
+      "Registered ATA and NSSA tournaments"
+    ],
+    technicalDetails: "Winchester AA 20 Gauge launches 7/8-ounce shot charges at approximately 1,200 fps, optimized for clay target breaking performance with manageable recoil. The premium hard shot contains controlled antimony percentages (typically 5-6%) providing sufficient hardness to resist setback deformation while maintaining proper sphericity. Available shot sizes include #7.5, #8, #8.5, and #9, with #8 being most popular for general sporting clays use and #9 favored for skeet where close-range pattern density is paramount. The compression-formed AA hull features Winchester's proprietary base wad design that distributes firing forces evenly, preventing base deformation that could affect pattern consistency. Internal capacity is optimized for consistent powder positioning and gas pressure development. The hull's sidewall thickness is precisely controlled to provide proper obduration (swelling) during firing for gas sealing while allowing smooth extraction after firing. Chamber pressure develops to approximately 10,500 psi, well below SAAMI maximums of 12,000 psi, ensuring safe operation in all properly maintained shotguns. The wad column includes separate gas seal and shot cup components, allowing optimization of each function. Pattern testing at 30 yards with #8 shot typically produces 70-75% patterns in 30-inch circles, ideal for sporting clays where targets are engaged from 15 to 40 yards. Winchester's quality control includes statistical process monitoring with ongoing pattern validation, velocity testing, and pressure verification throughout production runs.",
+    whyChoose: "Choose Winchester AA 20 Gauge when you want proven performance backed by over 50 years of competitive success and innovation in target ammunition. AA isn't simply another target load - it's the ammunition that defined what premium target loads should deliver, setting standards that competitors still strive to match. The distinctive red hull has become iconic in American shooting sports, instantly recognizable on shooting lines from local clubs to national championships. This recognition reflects earned respect through consistent performance rather than marketing claims. AA's affordability relative to its premium performance makes it an exceptional value for shooters who fire thousands of rounds annually. The ability to practice with the same ammunition you compete with builds familiarity and confidence impossible to achieve when switching between practice and competition loads. Pattern consistency means your break points remain constant - when you're on target, you break clays. This predictability reduces the variables you must manage during competition, allowing focus on technique and target reading rather than wondering about ammunition performance. Winchester's manufacturing consistency ensures shells purchased months apart deliver identical performance, critical for shooters who buy in bulk for price savings. The clean-burning formula means you spend more time shooting and less time cleaning, while the reloadable hulls appeal to handloaders seeking premium components. When you choose Winchester AA, you're selecting ammunition that has proven its worth across generations and continues earning new shooters' trust through consistent, reliable performance.",
+    seoKeywords: [
+      "winchester aa 20 gauge",
+      "premium target loads",
+      "sporting clays shells",
+      "20 gauge trap ammo",
+      "buy winchester aa",
+      "competition shotshells",
+      "red hull target loads",
+      "skeet shooting ammunition",
+      "20ga clay target",
+      "winchester target shells",
+      "trap shooting ammo",
+      "premium shotgun shells",
+      "aa target loads",
+      "reloadable shotshells",
+      "consistent pattern ammo"
+    ]
   },
   {
     id: "20ga-winchester-super-x",
