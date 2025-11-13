@@ -352,16 +352,16 @@ const Home2 = () => {
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-16 border-b">
+      <section className="py-20 border-b">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {trustIndicators.map((indicator, index) => (
               <div key={index} className="flex items-start gap-4 group">
-                <div className="p-4 rounded-xl home2-accent-bg group-hover:scale-110 transition-transform">
-                  <indicator.icon className="h-7 w-7 home2-accent" />
+                <div className="p-4 rounded-xl home2-accent-bg group-hover:scale-110 transition-transform duration-300">
+                  <indicator.icon className="h-6 w-6 home2-accent" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">{indicator.title}</h3>
+                  <h3 className="font-bold text-lg mb-2">{indicator.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{indicator.description}</p>
                 </div>
               </div>
@@ -403,7 +403,7 @@ const Home2 = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {categories.slice(0, 6).map((category) => (
               <Link key={category.slug} to={`/category/${category.slug}`}>
                 <Card className="home2-card-hover hover:home2-border cursor-pointer h-full border-2">
@@ -414,13 +414,13 @@ const Home2 = () => {
                       </div>
                       <Badge variant="secondary" className="text-sm">{category.count} Products</Badge>
                     </div>
-                    <CardTitle className="text-2xl mb-2">{category.name}</CardTitle>
+                    <CardTitle className="text-xl mb-2">{category.name}</CardTitle>
                     <CardDescription className="text-base leading-relaxed">
                       {category.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center gap-2 home2-accent hover:opacity-80 font-semibold">
+                  <CardContent className="pt-0">
+                    <div className="flex items-center gap-2 home2-accent hover:opacity-80 font-semibold transition-opacity">
                       <span>Shop Now</span>
                       <ArrowRight className="h-5 w-5" />
                     </div>
@@ -432,7 +432,7 @@ const Home2 = () => {
 
           <div className="text-center">
             <Link to="/categories">
-              <Button variant="outline" size="lg" className="border-2 border-[hsl(var(--home2-primary))] home2-accent hover:bg-[hsl(var(--home2-accent-light))] text-lg px-8">
+              <Button variant="outline" size="lg" className="border-2 border-[hsl(var(--home2-primary))] home2-accent hover:bg-[hsl(var(--home2-accent-light))] text-lg px-8 py-6 transition-all">
                 View All Categories
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -494,7 +494,7 @@ const Home2 = () => {
                 <CardHeader>
                   <div className="flex items-start gap-4">
                     <div className="p-4 rounded-xl home2-accent-bg">
-                      <benefit.icon className="h-7 w-7 home2-accent" />
+                      <benefit.icon className="h-6 w-6 home2-accent" />
                     </div>
                     <div>
                       <CardTitle className="text-xl mb-3">{benefit.title}</CardTitle>
@@ -540,7 +540,7 @@ const Home2 = () => {
               <Card 
                 key={index} 
                 className="home2-card-hover border-2 relative overflow-hidden animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
               >
                 <div className="absolute top-4 right-4 opacity-10">
                   <Quote className="h-16 w-16 home2-accent" />
@@ -548,12 +548,12 @@ const Home2 = () => {
                 <CardHeader className="pb-3">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
-                      <CardTitle className="text-lg mb-1">{testimonial.name}</CardTitle>
+                      <CardTitle className="text-lg font-bold mb-1">{testimonial.name}</CardTitle>
                       <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                       <Badge variant="secondary" className="mt-2 text-xs">{testimonial.role}</Badge>
                     </div>
                     {testimonial.verified && (
-                      <div className="flex items-center gap-1 text-xs home2-accent bg-[hsl(var(--home2-accent-light))] px-2 py-1 rounded-full">
+                      <div className="flex items-center gap-1 text-xs home2-accent bg-[hsl(var(--home2-accent-light))] px-2 py-1 rounded-full flex-shrink-0">
                         <CheckCircle className="h-3 w-3" />
                         <span className="font-semibold">Verified</span>
                       </div>
@@ -563,7 +563,7 @@ const Home2 = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star 
                         key={i} 
-                        className={`h-4 w-4 ${i < testimonial.rating ? 'home2-accent fill-current' : 'text-gray-300'}`}
+                        className={`h-4 w-4 ${i < testimonial.rating ? 'home2-accent fill-current' : 'text-muted-foreground/30'}`}
                       />
                     ))}
                   </div>
@@ -588,7 +588,7 @@ const Home2 = () => {
                 Join thousands of satisfied customers who trust ARMS COMPLEX
               </p>
               <Link to="/contact">
-                <Button size="lg" className="home2-primary text-lg px-8">
+                <Button size="lg" className="home2-primary text-lg px-8 py-6 transition-all">
                   Share Your Experience
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -630,24 +630,24 @@ const Home2 = () => {
               <Card
                 key={index}
                 className="home2-card-hover border-2 group cursor-pointer animate-fade-in"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                style={{ animationDelay: `${index * 0.05}s`, animationFillMode: 'both' }}
               >
                 <CardContent className="p-8 flex flex-col items-center justify-center text-center min-h-[140px]">
-                  <div className="mb-2 transition-all group-hover:scale-110">
-                    <div className="text-2xl font-black tracking-tight home2-accent group-hover:home2-primary transition-colors">
+                  <div className="mb-2 transition-all duration-300 group-hover:scale-110">
+                    <div className="text-2xl font-black tracking-tight home2-accent transition-colors duration-300">
                       {brand.name}
                     </div>
                     <div className="text-xs font-semibold text-muted-foreground mt-1 uppercase tracking-wider">
                       {brand.tagline}
                     </div>
                   </div>
-                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-[hsl(var(--home2-primary))] to-transparent opacity-0 group-hover:opacity-100 transition-opacity mt-3" />
+                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-[hsl(var(--home2-primary))] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3" />
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-2">
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="p-3 rounded-lg home2-accent-bg">
@@ -655,7 +655,7 @@ const Home2 = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">Authorized Dealer</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     Direct partnerships with manufacturers guarantee authentic products and factory warranties
                   </p>
                 </div>
@@ -669,7 +669,7 @@ const Home2 = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">Quality Guaranteed</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     Every product comes directly from the manufacturer with full documentation and support
                   </p>
                 </div>
@@ -683,7 +683,7 @@ const Home2 = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">Latest Inventory</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     Regular shipments ensure you get the newest production runs and latest innovations
                   </p>
                 </div>
