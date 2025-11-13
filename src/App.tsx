@@ -25,10 +25,30 @@ import FirearmDetail from "./pages/FirearmDetail";
 import SearchResults from "./pages/SearchResults";
 import Admin from "./pages/Admin";
 import About from "./pages/About";
+import About2 from "./pages/About2";
+import About3 from "./pages/About3";
+import About4 from "./pages/About4";
+import About5 from "./pages/About5";
+import About6 from "./pages/About6";
+import About7 from "./pages/About7";
+import About8 from "./pages/About8";
+import About9 from "./pages/About9";
+import About10 from "./pages/About10";
+import About11 from "./pages/About11";
 import Shipping from "./pages/Shipping";
 import FirearmsLicense from "./pages/FirearmsLicense";
 import HowToBuy from "./pages/HowToBuy";
 import Contact from "./pages/Contact";
+import Contact2 from "./pages/Contact2";
+import Contact3 from "./pages/Contact3";
+import Contact4 from "./pages/Contact4";
+import Contact5 from "./pages/Contact5";
+import Contact6 from "./pages/Contact6";
+import Contact7 from "./pages/Contact7";
+import Contact8 from "./pages/Contact8";
+import Contact9 from "./pages/Contact9";
+import Contact10 from "./pages/Contact10";
+import Contact11 from "./pages/Contact11";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -62,10 +82,30 @@ const App = () => (
           <Route path="/search" element={<SearchResults />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about2" element={<About2 />} />
+          <Route path="/about3" element={<About3 />} />
+          <Route path="/about4" element={<About4 />} />
+          <Route path="/about5" element={<About5 />} />
+          <Route path="/about6" element={<About6 />} />
+          <Route path="/about7" element={<About7 />} />
+          <Route path="/about8" element={<About8 />} />
+          <Route path="/about9" element={<About9 />} />
+          <Route path="/about10" element={<About10 />} />
+          <Route path="/about11" element={<About11 />} />
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/firearms-license" element={<FirearmsLicense />} />
           <Route path="/how-to-buy" element={<HowToBuy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact2" element={<Contact2 />} />
+          <Route path="/contact3" element={<Contact3 />} />
+          <Route path="/contact4" element={<Contact4 />} />
+          <Route path="/contact5" element={<Contact5 />} />
+          <Route path="/contact6" element={<Contact6 />} />
+          <Route path="/contact7" element={<Contact7 />} />
+          <Route path="/contact8" element={<Contact8 />} />
+          <Route path="/contact9" element={<Contact9 />} />
+          <Route path="/contact10" element={<Contact10 />} />
+          <Route path="/contact11" element={<Contact11 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
