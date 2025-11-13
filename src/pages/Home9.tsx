@@ -15,8 +15,13 @@ import {
   Leaf
 } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home9 = () => {
+  const scrollY = useParallax();
+  const s1 = useScrollAnimation();
+  const s2 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "About Arms Complex | Trusted Firearms Manufacturer";
     

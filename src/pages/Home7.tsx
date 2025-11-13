@@ -23,8 +23,13 @@ import {
   Star
 } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home7 = () => {
+  const scrollY = useParallax();
+  const s1 = useScrollAnimation();
+  const s2 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "Custom Firearms Manufacturing | Arms Complex";
     

@@ -17,8 +17,15 @@ import {
   FileCheck
 } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home3 = () => {
+  const scrollY = useParallax();
+  const section1 = useScrollAnimation();
+  const section2 = useScrollAnimation();
+  const section3 = useScrollAnimation();
+  const section4 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "Defense Ammunition & Security Supplies | Arms Complex";
     
@@ -65,7 +72,10 @@ const Home3 = () => {
       
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#000000] to-[#2E2E2E]">
-        <div className="absolute inset-0 bg-black/30 z-10"></div>
+        <div 
+          className="absolute inset-0 bg-black/30 z-10 parallax-slow"
+          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        ></div>
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto animate-fade-in">
           <Badge className="mb-4 bg-[#CBB994] text-black">DEFENSE & SECURITY</Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tight">
@@ -84,7 +94,10 @@ const Home3 = () => {
       </section>
 
       {/* Partner Logos Grid */}
-      <section className="bg-white dark:bg-[#1a1a1a] py-16 border-y">
+      <section 
+        ref={section1.ref}
+        className={`bg-white dark:bg-[#1a1a1a] py-16 border-y ${section1.isVisible ? 'scroll-fade-up' : 'scroll-hidden'}`}
+      >
         <div className="container mx-auto px-4">
           <p className="text-center text-muted-foreground mb-8 uppercase tracking-wide">Trusted By</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -99,7 +112,10 @@ const Home3 = () => {
       </section>
 
       {/* Ammunition Supply Chain Info */}
-      <section className="container mx-auto px-4 py-20">
+      <section 
+        ref={section2.ref}
+        className={`container mx-auto px-4 py-20 ${section2.isVisible ? 'scroll-scale-in' : 'scroll-hidden'}`}
+      >
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 uppercase">Our Supply Chain</h2>
           <p className="text-muted-foreground text-lg">From manufacturing to deployment</p>
@@ -124,7 +140,10 @@ const Home3 = () => {
       </section>
 
       {/* Bulk Order Form */}
-      <section className="bg-gradient-to-br from-[#2E2E2E] to-[#556B2F] py-20">
+      <section 
+        ref={section3.ref}
+        className={`bg-gradient-to-br from-[#2E2E2E] to-[#556B2F] py-20 ${section3.isVisible ? 'scroll-fade-left' : 'scroll-hidden'}`}
+      >
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 uppercase text-white">Request Bulk Pricing</h2>
@@ -175,7 +194,10 @@ const Home3 = () => {
       </section>
 
       {/* Defense Case Studies */}
-      <section className="container mx-auto px-4 py-20">
+      <section 
+        ref={section4.ref}
+        className={`container mx-auto px-4 py-20 ${section4.isVisible ? 'scroll-fade-right' : 'scroll-hidden'}`}
+      >
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 uppercase">Success Stories</h2>
           <p className="text-muted-foreground text-lg">Real-world defense partnerships</p>

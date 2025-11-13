@@ -6,8 +6,12 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Store, TrendingUp, Award, ArrowRight, Users } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home11 = () => {
+  const scrollY = useParallax();
+  const s1 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "Wholesale Firearms & Dealer Network | Arms Complex";
     const updateMeta = (name: string, content: string) => {

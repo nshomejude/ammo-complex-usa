@@ -6,8 +6,12 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { Cpu, Zap, Microscope, ArrowRight, Atom, Shield } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home10 = () => {
+  const scrollY = useParallax();
+  const s1 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "Smart Firearms & Ballistic Technology | Arms Complex";
     const updateMeta = (name: string, content: string) => {

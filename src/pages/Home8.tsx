@@ -21,8 +21,14 @@ import {
   BookOpen
 } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home8 = () => {
+  const scrollY = useParallax();
+  const s1 = useScrollAnimation();
+  const s2 = useScrollAnimation();
+  const s3 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "Firearm Safety & Certified Training | Arms Complex";
     

@@ -25,6 +25,7 @@ import { firearms as rawFirearms } from "@/data/firearms";
 import { addProductVariations, addFirearmVariations } from "@/utils/addDefaultVariations";
 import { categories } from "@/data/categories";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home2 = () => {
   // Add variations to all products and firearms

@@ -15,8 +15,14 @@ import {
   Users
 } from "lucide-react";
 import { useEffect } from "react";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
 
 const Home4 = () => {
+  const scrollY = useParallax();
+  const s1 = useScrollAnimation();
+  const s2 = useScrollAnimation();
+  const s3 = useScrollAnimation();
+  
   useEffect(() => {
     document.title = "Hunting Rifles & Outdoor Ammo | Arms Complex";
     
