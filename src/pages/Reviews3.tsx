@@ -4,27 +4,15 @@ import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
-
-const mockReviews = [
-  { id: 1, productName: "Beretta 92FS", rating: 5, summary: "Classic military pistol with proven track record. Smooth trigger and excellent accuracy.", reviewer: "Tony Russo", date: "2024-03-22", type: "Firearms", price: 649 },
-  { id: 2, productName: "Black Hills 5.56 NATO", rating: 5, summary: "Premium match-grade ammunition. Consistent accuracy and reliable feeding.", reviewer: "Eric Stone", date: "2024-03-21", type: "Ammunition", price: 28 },
-  { id: 3, productName: "EOTech EXPS3", rating: 5, summary: "Battle-tested holographic sight. Fast target acquisition in any conditions.", reviewer: "Maya Johnson", date: "2024-03-19", type: "Accessories", price: 679 },
-  { id: 4, productName: "Remington Golden Saber", rating: 4, summary: "Reliable bonded hollow point. Good expansion characteristics.", reviewer: "Bill Harper", date: "2024-03-17", type: "Ammunition", price: 35 },
-  { id: 5, productName: "FN SCAR 17S", rating: 5, summary: "Premium battle rifle. Extremely reliable and accurate at distance.", reviewer: "Nathan Cross", date: "2024-03-15", type: "Firearms", price: 3499 },
-  { id: 6, productName: "Magpul MS4 Sling", rating: 4, summary: "Versatile two-point sling. Quick adjustment and durable construction.", reviewer: "Lisa Chang", date: "2024-03-13", type: "Accessories", price: 65 },
-  { id: 7, productName: "Aguila Super Extra .22LR", rating: 3, summary: "Budget-friendly rimfire ammo. Some occasional duds but good for plinking.", reviewer: "John Davis", date: "2024-03-11", type: "Ammunition", price: 8 },
-  { id: 8, productName: "Springfield Armory Hellcat", rating: 5, summary: "Micro-compact perfection. High capacity in an ultra-concealable package.", reviewer: "Karen Mitchell", date: "2024-03-09", type: "Firearms", price: 569 },
-  { id: 9, productName: "SureFire X300U-A", rating: 5, summary: "Industry standard weapon light. Bright, durable, reliable activation.", reviewer: "Derek Walsh", date: "2024-03-07", type: "Accessories", price: 279 },
-  { id: 10, productName: "Norma Tactical .308", rating: 4, summary: "Quality European ammunition. Consistent performance for precision rifles.", reviewer: "Greg Anderson", date: "2024-03-05", type: "Ammunition", price: 32 },
-];
+import { reviews } from "@/data/reviews";
 
 export default function Reviews3() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 
@@ -127,13 +115,13 @@ export default function Reviews3() {
                       <div className="flex items-center gap-1">
                         {renderStars(review.rating)}
                       </div>
-                      <Badge variant="outline" className="text-xs">{review.type}</Badge>
+                      <Badge variant="outline" className="text-xs">{review.productType}</Badge>
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-3">{review.productName}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{review.summary}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{review.reviewSummary}</p>
                     <div className="border-t border-border pt-4">
-                      <p className="text-sm font-semibold text-foreground">{review.reviewer}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{new Date(review.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
+                      <p className="text-sm font-semibold text-foreground">{review.reviewerName}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{new Date(review.reviewDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
                     </div>
                   </div>
                 </Card>

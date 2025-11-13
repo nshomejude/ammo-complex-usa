@@ -5,27 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
-
-const mockReviews = [
-  { id: 1, productName: "Winchester Ranger T-Series", rating: 5, summary: "Law enforcement standard for good reason. Exceptional terminal performance and reliability.", reviewer: "Officer Mike Stevens", date: "2024-03-23", type: "Ammunition", price: 45 },
-  { id: 2, productName: "Daniel Defense DDM4 V7", rating: 5, summary: "Premium AR-15 with exceptional build quality. Smooth operation and incredible accuracy.", reviewer: "Adam Wright", date: "2024-03-22", type: "Firearms", price: 1899 },
-  { id: 3, productName: "Leupold Mark 5HD", rating: 5, summary: "Professional-grade precision optic. Crystal clear glass and reliable tracking.", reviewer: "Precision Shooter Pro", date: "2024-03-20", type: "Accessories", price: 2199 },
-  { id: 4, productName: "CZ Scorpion EVO 3", rating: 4, summary: "Fun and reliable pistol-caliber carbine. Great ergonomics and surprisingly accurate.", reviewer: "Tyler Brooks", date: "2024-03-18", type: "Firearms", price: 849 },
-  { id: 5, productName: "Federal Syntech 9mm", rating: 4, summary: "Clean-burning training ammo. Reduced fouling and consistent performance.", reviewer: "Range Officer Sam", date: "2024-03-16", type: "Ammunition", price: 24 },
-  { id: 6, productName: "Safariland ALS Holster", rating: 5, summary: "Industry-leading retention holster. Secure carry with fast draw capability.", reviewer: "Officer Linda Cruz", date: "2024-03-14", type: "Accessories", price: 125 },
-  { id: 7, productName: "Walther PDP", rating: 5, summary: "Modern polymer pistol perfection. Incredible ergonomics and trigger.", reviewer: "Jake Morrison", date: "2024-03-12", type: "Firearms", price: 649 },
-  { id: 8, productName: "Hornady American Gunner", rating: 4, summary: "Solid performance ammunition at a fair price. Reliable for range and training.", reviewer: "Marcus Bell", date: "2024-03-10", type: "Ammunition", price: 26 },
-  { id: 9, productName: "Peltor ComTac VI", rating: 5, summary: "Top-tier electronic hearing protection. Clear communication and excellent noise reduction.", reviewer: "Tactical Team Lead", date: "2024-03-08", type: "Accessories", price: 485 },
-];
+import { reviews } from "@/data/reviews";
 
 export default function Reviews4() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 
@@ -131,13 +120,12 @@ export default function Reviews4() {
                       {renderStars(review.rating)}
                     </div>
                     <h3 className="text-lg font-bold text-foreground">{review.productName}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{review.summary}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{review.reviewSummary}</p>
                     <div className="border-t border-border pt-4 flex justify-between items-center">
                       <div>
-                        <p className="text-xs font-bold text-foreground">{review.reviewer}</p>
-                        <p className="text-xs text-muted-foreground">{review.date}</p>
+                        <p className="text-xs font-bold text-foreground">{review.reviewerName}</p>
+                        <p className="text-xs text-muted-foreground">{new Date(review.reviewDate).toLocaleDateString()}</p>
                       </div>
-                      <span className="text-xs font-semibold text-primary">${review.price}</span>
                     </div>
                   </div>
                 </Card>

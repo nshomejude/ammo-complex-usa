@@ -3,26 +3,15 @@ import { Star, TrendingUp } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
-
-const mockReviews = [
-  { id: 1, productName: "Glock 17 Gen5 MOS", rating: 5, summary: "The gold standard for duty pistols. Unmatched reliability and aftermarket support.", reviewer: "Deputy Chief Roberts", date: "2024-03-24", type: "Firearms", price: 599 },
-  { id: 2, productName: "Federal Premium Guard Dog", rating: 5, summary: "Innovative expanding full metal jacket design. Perfect for home defense with reduced over-penetration.", reviewer: "Home Defense Expert", date: "2024-03-23", type: "Ammunition", price: 29 },
-  { id: 3, productName: "Nightforce ATACR", rating: 5, summary: "Absolute best-in-class long-range optic. Worth every penny for serious precision work.", reviewer: "Competition Shooter", date: "2024-03-21", type: "Accessories", price: 3299 },
-  { id: 4, productName: "BCM MCMR AR-15", rating: 5, summary: "Battle-proven reliability with lightweight design. My go-to defensive carbine.", reviewer: "Instructor Mike Reynolds", date: "2024-03-19", type: "Firearms", price: 1499 },
-  { id: 5, productName: "PMC Bronze .223", rating: 4, summary: "Consistent bulk ammunition for training. Great value and reliability.", reviewer: "Range Master Tom", date: "2024-03-17", type: "Ammunition", price: 19 },
-  { id: 6, productName: "Blue Force Gear Vickers Sling", rating: 5, summary: "Bombproof tactical sling. Smooth adjustments and incredible durability.", reviewer: "Tactical Trainer", date: "2024-03-15", type: "Accessories", price: 58 },
-  { id: 7, productName: "Canik TP9 Elite Combat", rating: 4, summary: "Outstanding value for a competition-ready pistol. Great trigger and optics-ready.", reviewer: "USPSA Competitor", date: "2024-03-13", type: "Firearms", price: 749 },
-  { id: 8, productName: "Barnes VOR-TX", rating: 5, summary: "Premium hunting ammunition with devastating terminal performance. All-copper bullets.", reviewer: "Hunter Jake Wilson", date: "2024-03-11", type: "Ammunition", price: 48 },
-  { id: 9, productName: "Crye Precision JPC 2.0", rating: 5, summary: "Best plate carrier on the market. Lightweight, low-profile, incredibly comfortable.", reviewer: "Special Operations", date: "2024-03-09", type: "Accessories", price: 249 },
-];
+import { reviews } from "@/data/reviews";
 
 export default function Reviews5() {
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
-  const filteredReviews = mockReviews.filter(review => {
+  const filteredReviews = reviews.filter(review => {
     if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.type)) return false;
+    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
     return true;
   });
 
@@ -134,14 +123,14 @@ export default function Reviews5() {
                       {review.productName}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {review.summary}
+                      {review.reviewSummary}
                     </p>
                     <div className="border-t border-primary/20 pt-4">
-                      <p className="text-sm font-semibold text-foreground">{review.reviewer}</p>
+                      <p className="text-sm font-semibold text-foreground">{review.reviewerName}</p>
                       <div className="flex justify-between items-center mt-2">
-                        <p className="text-xs text-muted-foreground">{review.date}</p>
+                        <p className="text-xs text-muted-foreground">{new Date(review.reviewDate).toLocaleDateString()}</p>
                         <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">
-                          {review.type}
+                          {review.productType}
                         </span>
                       </div>
                     </div>
