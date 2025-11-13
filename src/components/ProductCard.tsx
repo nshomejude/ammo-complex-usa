@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import placeholderImage from "@/assets/placeholder-product.jpg";
+import { useState } from "react";
 
 interface ProductCardProps {
   id: string;
@@ -18,25 +19,44 @@ interface ProductCardProps {
     grainWeight: string;
     price: number;
     inStock: boolean;
+    image?: string;
   }[];
 }
 
-export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, grainWeight, grainWeightVariations }: ProductCardProps) => {
+export const ProductCard = ({ id, name, caliber, rounds, price: initialPrice, inStock: initialInStock, image: initialImage, grainWeight: initialGrainWeight, grainWeightVariations }: ProductCardProps) => {
+  const [selectedVariation, setSelectedVariation] = useState({
+    grainWeight: initialGrainWeight || '',
+    price: initialPrice,
+    inStock: initialInStock,
+    image: initialImage
+  });
+
+  const handleVariationClick = (e: React.MouseEvent, variant: { grainWeight: string; price: number; inStock: boolean; image?: string }) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setSelectedVariation({
+      grainWeight: variant.grainWeight,
+      price: variant.price,
+      inStock: variant.inStock,
+      image: variant.image || initialImage
+    });
+  };
+
   return (
     <Link to={`/product/${id}`}>
-      <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full">
+      <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer h-full group">
       <div className="aspect-square bg-secondary overflow-hidden relative">
         <img 
-          src={image || placeholderImage} 
+          src={selectedVariation.image || placeholderImage} 
           alt={name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
           onError={(e) => {
             e.currentTarget.src = placeholderImage;
           }}
         />
-        {grainWeight && (
-          <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground">
-            {grainWeight}
+        {selectedVariation.grainWeight && (
+          <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
+            {selectedVariation.grainWeight}
           </Badge>
         )}
       </div>
@@ -52,12 +72,12 @@ export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, 
               {grainWeightVariations.map((variant, idx) => (
                 <button
                   key={idx}
-                  onClick={(e) => e.preventDefault()}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md border transition-all ${
-                    variant.grainWeight === grainWeight
-                      ? 'bg-tactical text-tactical-foreground border-tactical shadow-sm'
+                  onClick={(e) => handleVariationClick(e, variant)}
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md border transition-all duration-200 ${
+                    variant.grainWeight === selectedVariation.grainWeight
+                      ? 'bg-tactical text-tactical-foreground border-tactical shadow-sm scale-105'
                       : variant.inStock
-                      ? 'bg-secondary border-border hover:border-tactical/50 hover:bg-tactical/10'
+                      ? 'bg-secondary border-border hover:border-tactical/50 hover:bg-tactical/10 hover:scale-105'
                       : 'bg-muted border-border text-muted-foreground line-through opacity-50 cursor-not-allowed'
                   }`}
                   disabled={!variant.inStock}
@@ -70,22 +90,24 @@ export const ProductCard = ({ id, name, caliber, rounds, price, inStock, image, 
         )}
         
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-tactical">${price.toFixed(2)}</span>
-          {inStock ? (
-            <Badge variant="outline" className="border-tactical text-tactical">In Stock</Badge>
+          <span className="text-2xl font-bold text-tactical transition-all duration-300">
+            ${selectedVariation.price.toFixed(2)}
+          </span>
+          {selectedVariation.inStock ? (
+            <Badge variant="outline" className="border-tactical text-tactical transition-all duration-300">In Stock</Badge>
           ) : (
-            <Badge variant="outline" className="border-destructive text-destructive">Out of Stock</Badge>
+            <Badge variant="outline" className="border-destructive text-destructive transition-all duration-300">Out of Stock</Badge>
           )}
         </div>
       </CardContent>
       
       <CardFooter className="p-4 pt-0">
         <Button 
-          className="w-full bg-tactical hover:bg-tactical/90" 
-          disabled={!inStock}
+          className="w-full bg-tactical hover:bg-tactical/90 transition-all duration-300" 
+          disabled={!selectedVariation.inStock}
         >
           <ShoppingCart className="mr-2 h-4 w-4" />
-          {inStock ? 'View Details' : 'Out of Stock'}
+          {selectedVariation.inStock ? 'View Details' : 'Out of Stock'}
         </Button>
       </CardFooter>
       </Card>
