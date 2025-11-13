@@ -17,6 +17,11 @@ interface HeroBackground {
   toColor: string;
 }
 
+interface HeroTextColors {
+  titleColor: string;
+  descriptionColor: string;
+}
+
 const defaultSlides: HeroSlide[] = [
   {
     id: 1,
@@ -49,6 +54,10 @@ export const Hero = () => {
     viaColor: "0, 0%, 100%",
     toColor: "0, 0%, 100%"
   });
+  const [textColors, setTextColors] = useState<HeroTextColors>({
+    titleColor: "var(--home2-primary)",
+    descriptionColor: "var(--home2-accent)"
+  });
 
   useEffect(() => {
     const savedSlides = localStorage.getItem('heroSlides');
@@ -59,6 +68,11 @@ export const Hero = () => {
     const savedBackground = localStorage.getItem('heroBackground');
     if (savedBackground) {
       setBackground(JSON.parse(savedBackground));
+    }
+    
+    const savedTextColors = localStorage.getItem('heroTextColors');
+    if (savedTextColors) {
+      setTextColors(JSON.parse(savedTextColors));
     }
   }, []);
 
@@ -106,10 +120,16 @@ export const Hero = () => {
                         ? 'animate-fade-in opacity-100 scale-100' 
                         : 'opacity-0 scale-95'
                     }`}>
-                      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl transform transition-transform duration-700" style={{ color: 'hsl(var(--home2-primary))' }}>
+                      <h1 
+                        className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl transform transition-transform duration-700" 
+                        style={{ color: textColors.titleColor.startsWith('var') ? `hsl(${textColors.titleColor})` : `hsl(${textColors.titleColor})` }}
+                      >
                         {slide.title}
                       </h1>
-                      <p className="mb-8 text-base md:text-lg max-w-3xl mx-auto leading-relaxed transform transition-all duration-700 delay-100" style={{ color: 'hsl(var(--home2-accent))' }}>
+                      <p 
+                        className="mb-8 text-base md:text-lg max-w-3xl mx-auto leading-relaxed transform transition-all duration-700 delay-100" 
+                        style={{ color: textColors.descriptionColor.startsWith('var') ? `hsl(${textColors.descriptionColor})` : `hsl(${textColors.descriptionColor})` }}
+                      >
                         {slide.description}
                       </p>
                     </div>

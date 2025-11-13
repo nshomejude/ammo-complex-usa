@@ -21,6 +21,11 @@ interface HeroBackground {
   toColor: string;
 }
 
+interface HeroTextColors {
+  titleColor: string;
+  descriptionColor: string;
+}
+
 const defaultHeroSlides: HeroSlide[] = [
   {
     id: 1,
@@ -58,6 +63,10 @@ const Admin = () => {
     viaColor: "0, 0%, 100%",
     toColor: "0, 0%, 100%"
   });
+  const [heroTextColors, setHeroTextColors] = useState<HeroTextColors>({
+    titleColor: "var(--home2-primary)",
+    descriptionColor: "var(--home2-accent)"
+  });
 
   useEffect(() => {
     const savedSlides = localStorage.getItem('heroSlides');
@@ -68,6 +77,11 @@ const Admin = () => {
     const savedBackground = localStorage.getItem('heroBackground');
     if (savedBackground) {
       setHeroBackground(JSON.parse(savedBackground));
+    }
+    
+    const savedTextColors = localStorage.getItem('heroTextColors');
+    if (savedTextColors) {
+      setHeroTextColors(JSON.parse(savedTextColors));
     }
   }, []);
 
@@ -144,6 +158,23 @@ const Admin = () => {
     toast.success("Hero background updated successfully");
   };
 
+  const saveHeroTextColors = () => {
+    localStorage.setItem('heroTextColors', JSON.stringify(heroTextColors));
+    toast.success("Hero text colors updated successfully");
+  };
+
+  const applyColorPreset = (preset: string) => {
+    const presets: { [key: string]: HeroTextColors } = {
+      default: { titleColor: "var(--home2-primary)", descriptionColor: "var(--home2-accent)" },
+      dark: { titleColor: "0, 0%, 20%", descriptionColor: "0, 0%, 40%" },
+      light: { titleColor: "0, 0%, 100%", descriptionColor: "0, 0%, 95%" },
+      vibrant: { titleColor: "350, 90%, 50%", descriptionColor: "350, 80%, 35%" },
+      elegant: { titleColor: "240, 30%, 30%", descriptionColor: "240, 20%, 50%" }
+    };
+    setHeroTextColors(presets[preset]);
+    toast.success(`Applied ${preset} preset`);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -158,6 +189,67 @@ const Admin = () => {
         </div>
 
         <div className="grid gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Presentation className="h-5 w-5 text-tactical" />
+                Hero Text Colors
+              </CardTitle>
+              <CardDescription>
+                Customize hero title and description colors with presets or custom HSL values
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Color Presets</label>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <Button onClick={() => applyColorPreset('default')} size="sm" variant="outline">Default Red</Button>
+                    <Button onClick={() => applyColorPreset('dark')} size="sm" variant="outline">Dark</Button>
+                    <Button onClick={() => applyColorPreset('light')} size="sm" variant="outline">Light</Button>
+                    <Button onClick={() => applyColorPreset('vibrant')} size="sm" variant="outline">Vibrant</Button>
+                    <Button onClick={() => applyColorPreset('elegant')} size="sm" variant="outline">Elegant</Button>
+                  </div>
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Title Color</label>
+                  <Input
+                    value={heroTextColors.titleColor}
+                    onChange={(e) => setHeroTextColors({...heroTextColors, titleColor: e.target.value})}
+                    placeholder="var(--home2-primary) or 0, 75%, 50%"
+                  />
+                  <div 
+                    className="mt-2 h-10 rounded border-2 border-border flex items-center justify-center font-bold"
+                    style={{color: heroTextColors.titleColor.startsWith('var') ? `hsl(${heroTextColors.titleColor})` : `hsl(${heroTextColors.titleColor})`}}
+                  >
+                    Sample Title
+                  </div>
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Description Color</label>
+                  <Input
+                    value={heroTextColors.descriptionColor}
+                    onChange={(e) => setHeroTextColors({...heroTextColors, descriptionColor: e.target.value})}
+                    placeholder="var(--home2-accent) or 0, 60%, 40%"
+                  />
+                  <div 
+                    className="mt-2 h-10 rounded border-2 border-border flex items-center justify-center"
+                    style={{color: heroTextColors.descriptionColor.startsWith('var') ? `hsl(${heroTextColors.descriptionColor})` : `hsl(${heroTextColors.descriptionColor})`}}
+                  >
+                    Sample Description Text
+                  </div>
+                </div>
+                
+                <Button onClick={saveHeroTextColors} className="bg-tactical hover:bg-tactical/90">
+                  <Save className="mr-2 h-4 w-4" />
+                  Save Text Colors
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
