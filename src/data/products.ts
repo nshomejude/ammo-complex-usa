@@ -4016,23 +4016,127 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
 
   {
     id: "3",
-    name: "Hornady 6.5 Creedmoor",
+    name: "Hornady 6.5 Creedmoor ELD Match 140gr",
     caliber: "6.5 CM",
     rounds: 20,
     price: 38.99,
     inStock: true,
     category: "rifle",
-    description: "Match-grade precision ammunition"
+    categorySlug: "65-creedmoor",
+    description: "Match-grade precision ammunition with ELD Match bullet technology",
+    manufacturer: "Hornady",
+    grainWeight: "140gr",
+    shortDescription: "Hornady 6.5 Creedmoor ELD Match represents the pinnacle of factory precision ammunition. Engineered specifically for extreme long-range accuracy with revolutionary heat-shield tip technology.",
+    longDescription: "Hornady 6.5 Creedmoor 140-grain ELD Match ammunition represents a revolutionary advancement in precision shooting technology, combining Hornady's decades of ballistic expertise with cutting-edge aerodynamic design. The Extremely Low Drag (ELD) Match bullet was developed through exhaustive Doppler radar testing, revealing that conventional polymer tips deformed in flight from aerodynamic heating, degrading accuracy at extended ranges. Hornady's Heat Shield tip technology solves this problem through a proprietary polymer compound that resists deformation even during extended supersonic flight, maintaining perfect aerodynamic shape from muzzle to target. The result is unprecedented accuracy and consistency at ranges exceeding 1,000 yards. The 140-grain bullet weight in 6.5 Creedmoor provides exceptional ballistic coefficient - the ELD Match achieves a G1 BC of 0.610 and G7 BC of 0.311, among the highest in any 6.5mm hunting or target bullet. This extraordinary BC translates to extremely flat trajectories and minimal wind drift, critical advantages in long-range competitive shooting and precision hunting. Hornady loads this ammunition with carefully selected propellants optimized for temperature stability and consistent velocities. Each lot undergoes rigorous testing including Doppler radar verification of ballistic coefficient, pressure testing to ensure SAAMI compliance, and accuracy validation from precision test rifles. The brass cases are manufactured to Hornady's exacting specifications with uniform wall thickness and precise flash hole dimensions. AMP (Advanced Manufacturing Process) bullet jacket technology ensures perfect concentricity and consistent jacket thickness, eliminating variables that degrade accuracy in lesser bullets. Whether competing in F-Class, PRS matches, or pursuing long-range hunting scenarios, Hornady 6.5 Creedmoor ELD Match delivers championship-grade accuracy in factory-loaded convenience.",
+    features: [
+      "Revolutionary ELD Match bullet with Heat Shield tip technology",
+      "Industry-leading ballistic coefficient: G1 0.610, G7 0.311",
+      "140-grain optimal weight for 6.5 Creedmoor ballistics",
+      "Doppler radar verified BC - not calculated estimates",
+      "AMP bullet jacket technology for perfect concentricity",
+      "Secant ogive design maximizes aerodynamic efficiency",
+      "Temperature-stable propellants for consistent velocities",
+      "Match-grade brass cases with uniform wall thickness",
+      "Carefully controlled powder charges for minimal ES/SD",
+      "Proven accuracy: sub-MOA from quality rifles"
+    ],
+    benefits: [
+      "Factory ammunition delivering handload-level accuracy",
+      "Extended effective range through superior BC",
+      "Minimal wind drift for increased hit probability",
+      "Consistent lot-to-lot performance for competition confidence",
+      "Hornady's quality control ensures reliability",
+      "Temperature stability maintains zero across conditions"
+    ],
+    useCases: [
+      "F-Class and benchrest competition shooting",
+      "Precision Rifle Series (PRS) matches",
+      "Long-range target practice from 600 to 1,200+ yards",
+      "Precision hunting for deer, antelope, and similar game",
+      "Load development baseline and comparison standard",
+      "Tactical precision rifle training and skill development"
+    ],
+    technicalDetails: "Hornady 6.5 Creedmoor 140gr ELD Match achieves approximately 2,710 fps muzzle velocity from 24-inch barrels, delivering 2,283 foot-pounds of muzzle energy. The ELD Match bullet maintains supersonic velocities beyond 1,300 yards at sea level, ensuring stable flight and predictable performance at extreme distances. At 1,000 yards, the bullet retains approximately 1,400 fps velocity with 610 foot-pounds of energy - more than adequate for target applications and many hunting scenarios. The Heat Shield tip maintains its original shape throughout flight, preserving the intended ballistic coefficient from muzzle to target. Doppler radar testing confirms actual ballistic coefficient matches advertised values, unlike many competing bullets where real-world BC falls short of manufacturer claims. The secant ogive design provides exceptional aerodynamic efficiency while the optimized boat tail reduces base drag. Jacket concentricity measures within 0.0003 inches total indicated runout. Velocity standard deviation typically measures 12-18 fps across production lots - consistency rivaling careful handloads. Accuracy from quality bolt-action rifles consistently achieves 0.5-0.75 MOA groups at 100 yards, with many rifles producing sub-0.5 MOA performance. The ammunition performs optimally in standard SAAMI 6.5 Creedmoor chambers with throat dimensions accommodating the longer overall cartridge length required for optimal seating depth of high-BC bullets.",
+    whyChoose: "Choose Hornady 6.5 Creedmoor ELD Match when you demand absolute precision and need ammunition performing at championship levels. Hornady didn't just develop another match bullet - they revolutionized precision ammunition through scientific inquiry and technological innovation. The Heat Shield tip represents genuine advancement, solving a problem many shooters didn't realize existed: polymer tip deformation during supersonic flight degrading accuracy at extended ranges. Doppler radar testing proves ELD Match bullets maintain consistent BC from muzzle to target, while competing bullets often show degraded performance as tips deform. This isn't marketing hyperbole - it's measurable physics validated through extensive testing. For competitive shooters, the consistency between lots eliminates the re-zeroing and trajectory verification required when switching ammunition batches. The exceptional BC means less wind drift, extending the range where you can confidently engage targets even in variable conditions. For precision hunters, ELD Match provides match-grade accuracy with terminal ballistics suitable for medium game at extended ranges. The ammunition's temperature stability ensures your carefully-developed data remains valid whether hunting in September heat or November cold. Hornady's quality control processes ensure every box meets their stringent accuracy standards - you won't experience the lot-to-lot variations plaguing lesser ammunition. When you need factory ammunition performing like carefully-developed handloads, when competition demands absolute precision, when hunting scenarios require confidence at extended ranges, choose Hornady 6.5 Creedmoor ELD Match - ammunition representing the current pinnacle of precision ammunition technology.",
+    seoKeywords: [
+      "hornady 6.5 creedmoor",
+      "eld match ammunition",
+      "140 grain 6.5",
+      "precision 6.5 creedmoor",
+      "long range 6.5",
+      "buy hornady eld match",
+      "6.5 creedmoor match ammo",
+      "f-class ammunition",
+      "prs ammo",
+      "hornady match grade",
+      "6.5 creedmoor target",
+      "heat shield bullet",
+      "high bc 6.5",
+      "competition 6.5 creedmoor",
+      "accurate 6.5 ammo"
+    ]
   },
   {
     id: "4",
-    name: "Remington .30-06 Springfield",
+    name: "Remington Core-Lokt .30-06 Springfield 180gr",
     caliber: ".30-06",
     rounds: 20,
     price: 34.99,
     inStock: false,
     category: "rifle",
-    description: "Classic hunting cartridge"
+    categorySlug: "30-06-springfield",
+    description: "Classic hunting cartridge with proven Core-Lokt bullet technology",
+    manufacturer: "Remington",
+    grainWeight: "180gr",
+    shortDescription: "Remington Core-Lokt in .30-06 Springfield represents America's legendary hunting ammunition combination. More big game has been taken with this load than perhaps any other ammunition in history.",
+    longDescription: "Remington Core-Lokt .30-06 Springfield 180-grain ammunition represents the convergence of America's most versatile hunting cartridge with the most successful big-game bullet design in history. Since its introduction in 1939, Core-Lokt technology has proven its effectiveness on virtually every game animal across North America and beyond, earning its reputation as 'the deadliest mushroom in the woods.' The .30-06 Springfield cartridge, adopted by the U.S. military in 1906 and serving through two World Wars and Korea, provides exceptional versatility - capable of humanely taking game from 100-pound whitetail deer to 1,000-pound elk and moose. The 180-grain bullet weight represents the optimal balance for .30-06 Springfield: heavy enough to deliver deep penetration and high energy retention on large game, yet not so heavy as to sacrifice trajectory or generate excessive recoil. Core-Lokt's mechanical locking mechanism - the lead core is literally locked to the copper jacket through a precision internal ring - prevents core-jacket separation during expansion and impact with heavy bone. This ensures the bullet retains sufficient weight for deep penetration while expanding reliably for rapid energy transfer. The pointed soft point design provides good ballistic coefficient for flat trajectories while the exposed lead tip ensures reliable expansion even at reduced velocities encountered at longer ranges or when shooting through intermediate barriers. Remington manufactures Core-Lokt ammunition at their facilities, maintaining quality control standards developed through over 200 years of American ammunition production. Each cartridge receives multiple inspections during assembly, ensuring dimensional consistency and component quality. For hunters seeking proven performance, abundant success stories, and ammunition that has literally taken millions of big-game animals worldwide, Remington Core-Lokt .30-06 Springfield delivers time-tested reliability.",
+    features: [
+      "Proven Core-Lokt bullet technology since 1939",
+      "180-grain pointed soft point for optimal .30-06 performance",
+      "Mechanical core-locking prevents jacket separation",
+      "Exposed lead tip ensures reliable expansion",
+      "Tapered copper jacket controls expansion rate",
+      "Deep penetration capability for large game",
+      "Consistent weight retention through heavy bone",
+      "Premium brass cases for reliable extraction",
+      "Non-corrosive primers for long-term storage",
+      "Remington's 200+ years of manufacturing expertise"
+    ],
+    benefits: [
+      "Proven track record on millions of big-game animals",
+      "Reliable expansion across wide velocity range",
+      "Deep penetration ensures clean, ethical kills",
+      "Versatile performance from deer to elk",
+      "Affordable pricing for premium hunting performance",
+      "Widely available and time-tested reliability"
+    ],
+    useCases: [
+      "Whitetail deer hunting in varied terrain and conditions",
+      "Elk and moose hunting requiring deep penetration",
+      "Black bear hunting where reliable performance matters",
+      "Mule deer and pronghorn antelope in open country",
+      "Caribou hunting in challenging wilderness conditions",
+      "General North American big-game hunting applications"
+    ],
+    technicalDetails: "Remington Core-Lokt .30-06 Springfield 180gr achieves approximately 2,700 fps muzzle velocity from 24-inch barrels, delivering 2,913 foot-pounds of muzzle energy - more than adequate for any North American game animal. At 300 yards, the bullet maintains approximately 2,200 fps with 1,935 foot-pounds of energy, providing confident performance at typical hunting ranges. The 180-grain bullet weight offers sectional density of 0.271, ensuring deep penetration through heavy muscle and bone. Core-Lokt bullets typically expand to 1.7-2.0x original caliber while retaining 65-85% of original weight - optimal balance between expansion and penetration. The mechanical locking ring prevents core-jacket separation even when striking heavy shoulder bones or passing through multiple body cavities. Terminal ballistics testing demonstrates reliable expansion down to approximately 1,800 fps impact velocity, ensuring performance even at extended ranges or from shorter-barreled rifles. The pointed soft point design provides a ballistic coefficient around 0.350, adequate for hunting applications to 400 yards. Velocity standard deviation typically measures 25-35 fps - consistent enough for hunting accuracy requirements. Accuracy from quality .30-06 rifles averages 1.5-2.5 MOA, more than sufficient for ethical shot placement on big game.",
+    whyChoose: "Choose Remington Core-Lokt .30-06 Springfield when you want proven, time-tested hunting performance backed by literally millions of successful hunts over eight decades. Core-Lokt isn't the newest bullet design or the most technologically advanced - it's something more valuable: proven reliability across every conceivable hunting scenario. The mechanical core-locking feature ensures the bullet performs as designed regardless of impact angle, striking velocity, or intermediate barriers encountered. Unlike bonded bullets that can sometimes fail to expand adequately, or monolithic bullets that may not penetrate sufficiently in certain scenarios, Core-Lokt's design delivers reliable expansion and penetration across the widest range of conditions. The .30-06 Springfield cartridge provides exceptional versatility - this single rifle and load combination can ethically take virtually any North American game animal given proper shot placement. The 180-grain weight represents the sweet spot for .30-06 performance: sufficient mass and sectional density for elk and moose, yet not so heavy as to generate excessive recoil or drop for deer-sized game. Remington's manufacturing consistency ensures the ammunition you purchase today will perform identically to ammunition purchased next year - critical reliability for hunters who verify zero before season and trust their ammunition through hunting season. Core-Lokt's affordability means you can practice with the same ammunition you hunt with, eliminating point-of-impact shifts that occur when zeroing with cheaper ammunition but hunting with premium loads. When you choose Remington Core-Lokt .30-06 Springfield, you're choosing ammunition with more successful big-game hunts than any competing design - that's not marketing, it's documented hunting history. For hunters valuing proven performance over marketing claims, seeking ammunition that delivers reliable results season after season, Remington Core-Lokt represents the gold standard in traditional hunting ammunition.",
+    seoKeywords: [
+      "remington core-lokt",
+      "30-06 hunting ammo",
+      "180 grain 30-06",
+      "buy core-lokt",
+      "remington 30-06",
+      "deer hunting ammunition",
+      "elk hunting ammo",
+      "best 30-06 ammo",
+      "core lokt 180gr",
+      "30-06 springfield ammo",
+      "big game ammunition",
+      "remington hunting ammo",
+      "reliable 30-06",
+      "whitetail deer ammo",
+      "proven hunting bullet"
+    ]
   },
 
   // Pistol Ammunition - 9×19mm Luger Category
