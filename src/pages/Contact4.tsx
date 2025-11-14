@@ -1,5 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ContactWidget1 } from "@/components/ContactWidget1";
+import { ContactWidget2 } from "@/components/ContactWidget2";
+import { ContactWidget3 } from "@/components/ContactWidget3";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageSquare } from "lucide-react";
@@ -27,8 +30,15 @@ const Contact4 = () => {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto">
+      <section className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto">
+          {/* Contact Widgets */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <ContactWidget1 />
+            <ContactWidget2 />
+            <ContactWidget3 />
+          </div>
+
           <div className="text-center mb-16">
             <MessageSquare className="h-16 w-16 mx-auto mb-6 text-[#556B2F]" />
             <h2 className="text-4xl font-bold mb-6 uppercase font-['Oswald']">Contact Information</h2>

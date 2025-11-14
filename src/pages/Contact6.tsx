@@ -1,5 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ContactWidget1 } from "@/components/ContactWidget1";
+import { ContactWidget2 } from "@/components/ContactWidget2";
+import { ContactWidget3 } from "@/components/ContactWidget3";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Mail, Phone, Users } from "lucide-react";
@@ -27,7 +30,18 @@ const Contact6 = () => {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-20">
+      {/* Contact Widgets */}
+      <section className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <ContactWidget1 />
+            <ContactWidget2 />
+            <ContactWidget3 />
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <Card className="border-l-4 border-l-[#556B2F]">

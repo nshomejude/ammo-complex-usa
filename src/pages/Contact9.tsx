@@ -1,5 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ContactWidget1 } from "@/components/ContactWidget1";
+import { ContactWidget2 } from "@/components/ContactWidget2";
+import { ContactWidget3 } from "@/components/ContactWidget3";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -26,7 +29,17 @@ const Contact9 = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase font-['Oswald']">Regional Hubs</h1>
         </div>
       </section>
-      <section className="container mx-auto px-4 py-20">
+
+      {/* Contact Widgets */}
+      <section className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <ContactWidget1 />
+          <ContactWidget2 />
+          <ContactWidget3 />
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {hubs.map((hub, idx) => (
             <Card key={idx} className="border-l-4 border-l-[#556B2F]">

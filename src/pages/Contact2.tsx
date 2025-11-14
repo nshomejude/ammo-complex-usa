@@ -1,5 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ContactWidget1 } from "@/components/ContactWidget1";
+import { ContactWidget2 } from "@/components/ContactWidget2";
+import { ContactWidget3 } from "@/components/ContactWidget3";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,8 +32,17 @@ const Contact2 = () => {
         </div>
       </section>
 
+      {/* Contact Widgets */}
+      <section className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <ContactWidget1 />
+          <ContactWidget2 />
+          <ContactWidget3 />
+        </div>
+      </section>
+
       {/* Contact Info */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Details */}
           <div>
