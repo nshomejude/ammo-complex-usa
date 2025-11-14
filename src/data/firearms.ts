@@ -9485,7 +9485,45 @@ export const firearms: Firearm[] = [
     capacity: "18+1",
     barrelLength: "4.5 inches",
     weight: "25.6 oz",
-    finish: "Tenifer Black"
+    finish: "Tenifer Black",
+    shortDescription: "The Walther PDP Full Size represents the culmination of Walther's 130+ years of pistol innovation. Designed specifically for competitive and duty use with unprecedented ergonomics and the best striker-fired trigger on the market.",
+    longDescription: "The Walther PDP (Performance Duty Pistol) Full Size is the result of Walther's relentless pursuit of perfection in modern striker-fired pistol design. Building upon the success of the PPQ series, the PDP incorporates feedback from competitive shooters, law enforcement officers, and military users to create what many experts consider the finest striker-fired pistol available today. The PDP's defining characteristic is its trigger - widely regarded as the best factory striker trigger ever produced. The break is clean and crisp with virtually no take-up, a positive wall, and a tactile reset that allows precision shooting at speed. Professional shooters consistently praise the trigger as feeling more like a tuned competition gun than a factory duty pistol. The SuperTerrain Slide Serrations provide unprecedented gripping surface with angular cuts front and rear that work equally well with wet, bloody, or gloved hands under any conditions. The ergonomics represent a quantum leap forward with Walther's Performance Duty Texture providing secure purchase without abrasiveness, and the grip angle and beavertail designed using extensive human factors research. The deep undercut trigger guard allows a higher grip for improved recoil control. The optics-ready slide features Walther's innovative mounting system that positions optics as low as possible while maintaining co-witness with suppressor-height iron sights. The 18+1 capacity gives a slight edge over competitors while maintaining manageable grip dimensions. The full-size 4.5-inch barrel delivers excellent velocity and sight radius while the overall length remains duty-appropriate. German manufacturing ensures exceptional quality control and precision. For competitive shooters, the PDP dominates Carry Optics divisions. For duty use, agencies are rapidly adopting the PDP after testing reveals its superior performance. For serious shooters who demand the absolute best, the PDP Full Size delivers uncompromising excellence.",
+    features: [
+      "Best-in-class striker-fired trigger with clean break and positive reset",
+      "SuperTerrain Slide Serrations for superior grip in all conditions",
+      "Performance Duty Texture ergonomics for secure comfortable grip",
+      "Optics-ready slide with low-mount system for red dot sights",
+      "18+1 capacity for maximum firepower",
+      "Deep undercut trigger guard enables high grip",
+      "Suppressor-height iron sights co-witness with optics",
+      "Ambidextrous slide stop and reversible magazine release",
+      "Tenifer coating provides exceptional wear and corrosion resistance",
+      "Four-inch Walther barrel for accuracy and velocity"
+    ],
+    benefits: [
+      "Professional-grade trigger quality enables precision shooting",
+      "130+ years of Walther pistol innovation and German manufacturing",
+      "Dominates competitive shooting divisions with factory configuration",
+      "Superior ergonomics reduce fatigue during extended use",
+      "Rapid adoption by law enforcement validates duty reliability",
+      "Outstanding accuracy from precision German barrel"
+    ],
+    useCases: [
+      "USPSA Carry Optics competition - winning major matches",
+      "Law enforcement duty pistol for progressive agencies",
+      "Professional training and instruction with premium equipment",
+      "Home defense with weapon light and red dot optic",
+      "Competitive 3-Gun pistol stages",
+      "Serious recreational shooting demanding top-tier performance"
+    ],
+    technicalDetails: "The Walther PDP Full Size features suppressor-height steel sights with optics-ready slide using Walther's low-mount system. Trigger pull weight is approximately 5.5 lbs with minimal take-up and short reset. Ships with three 18-round magazines. Accessory rail accommodates standard tactical lights. Tenifer coating provides hardness rating exceeding traditional finishes.",
+    whyChoose: "Choose the Walther PDP Full Size when you demand the absolute best striker-fired pistol available. The trigger alone justifies the investment - no other factory striker trigger approaches the PDP's crispness and precision. Combined with revolutionary ergonomics, German manufacturing quality, and competitive dominance, the PDP represents the pinnacle of modern pistol design. If you're serious about shooting performance, the PDP is the obvious choice.",
+    seoKeywords: ["Walther PDP", "best striker trigger", "competition duty pistol", "Carry Optics winner", "Walther PDP full size", "German duty pistol"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "1,200 fps (124gr)",
+      muzzleEnergy: "396 ft-lbs (124gr)"
+    }
   },
   {
     id: "hk-vp9",
@@ -9500,7 +9538,45 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4.09 inches",
     weight: "25.56 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The HK VP9 is Heckler & Koch's first striker-fired pistol for commercial market, combining legendary German engineering with exceptional ergonomics and HK's match-grade accuracy. Customizable grip panels fit any hand size perfectly.",
+    longDescription: "The Heckler & Koch VP9 represents HK's entry into the striker-fired pistol market, demonstrating that even established manufacturers known for hammer-fired designs can create outstanding striker guns when they apply their full engineering capabilities. The VP in VP9 stands for Volkspistole (People's Pistol), indicating HK's intent to create a striker pistol for wider markets beyond just military and law enforcement, though the VP9 has been rapidly adopted by agencies worldwide. What sets the VP9 apart is HK's refusal to compromise on any aspect of design or manufacturing. The trigger, while striker-fired, feels remarkably similar to a quality single-action trigger with a short, smooth take-up, clean break, and positive reset that exceeds most competitors. HK achieved this through extensive engineering of the trigger mechanism and spring weights. The most innovative feature is the fully customizable grip system with interchangeable backstraps and side panels, creating 27 different grip configurations. This ensures a perfect fit for virtually any hand size from small to extra large. The charging supports (slide wings) extend forward on both sides of the slide, providing unprecedented leverage for manipulating the slide - particularly beneficial for shooters with reduced hand strength or when wearing gloves. The cold-hammer-forged polygonal barrel delivers HK's renowned accuracy, consistently producing 2-inch or better groups at 25 yards. The corrosion-resistant coating and hostile environment testing ensure reliability in any conditions. Adopted by numerous law enforcement agencies and special units who value HK quality, the VP9 proves that German engineering excellence translates beautifully to striker-fired designs. For shooters who want striker-fired simplicity with HK legendary quality and customizable ergonomics, the VP9 delivers without compromise.",
+    features: [
+      "Fully customizable grip with interchangeable backstraps and side panels (27 configurations)",
+      "Extended charging supports for enhanced slide manipulation leverage",
+      "Cold-hammer-forged polygonal barrel for exceptional accuracy",
+      "HK's proprietary hostile environment finish for corrosion resistance",
+      "Ambidextrous slide releases and magazine release",
+      "Extended Picatinny rail for lights and lasers",
+      "Striker-fired trigger with single-action-like characteristics",
+      "Tool-less takedown for field maintenance",
+      "Luminous three-dot sights standard",
+      "HK military-grade quality control and manufacturing"
+    ],
+    benefits: [
+      "Legendary HK reliability and manufacturing precision",
+      "Perfect grip fit for any shooter through extensive customization",
+      "Match-grade accuracy from polygonal barrel",
+      "Enhanced slide manipulation compared to competitors",
+      "German engineering quality at competitive price point",
+      "Growing law enforcement adoption validates duty reliability"
+    ],
+    useCases: [
+      "Law enforcement duty pistol for agencies valuing quality",
+      "Competition shooting in Production and Carry Optics divisions",
+      "Home defense with weapon light capability",
+      "Professional training with premium equipment",
+      "Shooters with hand-fit requirements needing customization",
+      "Range and recreational shooting with duty-grade reliability"
+    ],
+    technicalDetails: "The HK VP9 features luminous three-dot sights with optional optics-ready OR variant. Striker-fired trigger pulls approximately 5.4 lbs. Ships with two 15-round magazines (17-round available). Extended Picatinny accessory rail. Hostile environment finish provides superior corrosion resistance.",
+    whyChoose: "Choose the HK VP9 when you want striker-fired simplicity backed by HK's legendary engineering and quality. The fully customizable grip ensures perfect fit regardless of hand size, while the charging supports make slide manipulation effortless. HK's reputation for accuracy and reliability means the VP9 will serve faithfully for decades. If German quality matters to you, the VP9 delivers HK excellence in a modern striker package.",
+    seoKeywords: ["HK VP9", "Heckler Koch striker", "customizable grip pistol", "German striker fired", "VP9 review", "HK duty pistol"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "springfield-hellcat",
@@ -9687,7 +9763,45 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4 inches",
     weight: "24.5 oz",
-    finish: "Tenifer"
+    finish: "Tenifer",
+    shortDescription: "The Walther PPQ M2 revolutionized striker-fired pistols with its exceptional trigger that set the standard all others are judged against. German precision engineering meets ergonomic excellence at an outstanding value.",
+    longDescription: "The Walther PPQ M2 (Polizei Pistole Quick-Defense, Model 2) represents the pistol that changed the striker-fired market forever. When Walther introduced the PPQ, reviewers and shooters immediately recognized its trigger as the best striker trigger available, setting a new benchmark that forced competitors to improve their designs. The M2 designation indicates the improved model featuring a button-style magazine release (versus paddle) preferred by American shooters. The PPQ's trigger breaks with remarkable crispness approaching single-action quality, with minimal take-up, a clean wall, predictable break at approximately 5.6 pounds, and a short, positive reset. This trigger quality comes from precision German manufacturing and careful engineering of the striker spring weights and engagement angles. Many competitive shooters run completely stock PPQ triggers in matches without any modifications, which speaks volumes about the out-of-box quality. The ergonomics are equally impressive with what Walther calls 'grip optimization' - the result of extensive testing with thousands of shooters to determine the ideal grip angle, texture pattern, and dimensions. The grip texture provides secure purchase without being abrasive or uncomfortable during extended shooting. The frame features front and rear cocking serrations for press checks and emergency manipulation. The cross-directional slide serrations ensure positive grip in any conditions. Walther's four-inch cold-hammer-forged barrel delivers match-grade accuracy that's won numerous accuracy tests against competitors. The PPQ has been adopted by law enforcement agencies worldwide including several U.S. departments who recognized the combination of German quality, outstanding ergonomics, and exceptional value. While the newer PDP represents Walther's latest evolution, the PPQ M2 continues as an outstanding choice delivering 90% of the PDP's performance at a lower price point. For shooters seeking German engineering excellence without breaking the budget, the PPQ M2 delivers unbeatable value.",
+    features: [
+      "Industry-leading striker trigger with crisp break and short reset",
+      "Ergonomic grip design from extensive human factors research",
+      "Cold-hammer-forged barrel for match-grade accuracy",
+      "Cross-directional slide serrations for positive manipulation",
+      "Front and rear slide serrations for versatility",
+      "Button-style magazine release (M2 model)",
+      "Tenifer coating for extreme hardness and corrosion resistance",
+      "Ambidextrous slide stop levers",
+      "Three-dot polymer sights (steel sights available)",
+      "Lightweight polymer frame at 24.5 oz"
+    ],
+    benefits: [
+      "Best-in-class trigger quality at mid-range price point",
+      "German manufacturing precision and quality control",
+      "Exceptional ergonomics reduce fatigue during extended use",
+      "Match-grade accuracy suitable for competition",
+      "Outstanding value compared to similar quality competitors",
+      "Proven law enforcement adoption validates reliability"
+    ],
+    useCases: [
+      "USPSA Production division competition shooting",
+      "Law enforcement duty pistol for budget-conscious agencies",
+      "Home defense with excellent shootability and capacity",
+      "Concealed carry by those prioritizing accuracy and trigger",
+      "Professional training and instruction",
+      "Range shooting and recreational use with duty-grade reliability"
+    ],
+    technicalDetails: "The Walther PPQ M2 features polymer three-dot sights with steel sight options available. Striker-fired trigger pulls approximately 5.6 lbs with minimal take-up. Ships with two 15-round magazines (17-round available). Standard accessory rail for lights and lasers. Tenifer coating provides exceptional hardness and corrosion resistance.",
+    whyChoose: "Choose the Walther PPQ M2 when you want German quality and the best trigger in the business without premium pricing. The PPQ delivers 90% of what more expensive pistols offer at a significantly lower cost. The trigger alone makes it worthwhile - you simply won't find better striker trigger quality at this price point. Combined with German manufacturing standards and proven law enforcement use, the PPQ M2 represents outstanding value for serious shooters.",
+    seoKeywords: ["Walther PPQ M2", "best striker trigger", "German duty pistol", "PPQ review", "Walther striker fired", "competition duty pistol"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "hk-vp9sk",
