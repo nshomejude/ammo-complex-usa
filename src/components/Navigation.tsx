@@ -178,6 +178,12 @@ export const Navigation = () => {
             <Link to="/ballistic-calculator" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Ballistic Calculator
             </Link>
+            <Link to="/load-recipes" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Load Recipes
+            </Link>
+            <Link to="/reloading-cost-calculator" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Cost Calculator
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
                 About <ChevronDown className="h-4 w-4" />
@@ -401,6 +407,22 @@ export const Navigation = () => {
                   className="text-base font-medium hover:text-tactical transition-colors"
                 >
                   Ballistic Calculator
+                </Link>
+                
+                <Link
+                  to="/load-recipes"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Load Recipes
+                </Link>
+                
+                <Link
+                  to="/reloading-cost-calculator"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Cost Calculator
                 </Link>
                 
                 <Link
