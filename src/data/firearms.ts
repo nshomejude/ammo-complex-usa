@@ -9432,7 +9432,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1 / 24+1",
     barrelLength: "4.5 inches",
     weight: "27.9 oz",
-    finish: "FDE/Black"
+    finish: "FDE/Black",
+    shortDescription: "The FN 509 Tactical is a suppressor-ready service pistol developed for tactical applications. Features threaded barrel, suppressor-height sights, and optics-ready slide from the factory.",
+    longDescription: "The FN 509 Tactical represents FN America's answer to the modern tactical handgun market, building upon the foundation of their successful 509 series with features specifically designed for suppressor use and tactical applications. Developed by FN Herstal, the same company that provides firearms to military and law enforcement worldwide, the 509 Tactical incorporates decades of combat-proven design experience. The most distinctive feature is the factory-threaded barrel with 1/2x28 threading, allowing direct attachment of suppressors without aftermarket modifications. The suppressor-height night sights ensure proper sight picture when using a suppressor or red dot optic. The slide is factory-milled to accept popular micro red dot optics, and includes a cover plate when running iron sights only. FN's low-profile optics mounting system provides one of the lowest deck heights available, keeping the optic as close to the bore axis as possible. The extended 24-round magazines provide substantial capacity for tactical applications while maintaining reliability. The ambidextrous controls include slide stop levers and magazine release, making the pistol fully usable for both right and left-handed shooters. The cold-hammer-forged barrel delivers exceptional accuracy and durability even under sustained suppressed fire. For tactical operators, serious competitive shooters, and suppressor enthusiasts who demand a factory-ready solution, the FN 509 Tactical delivers professional-grade performance without compromise.",
+    features: [
+      "Factory-threaded barrel (1/2x28) for suppressor attachment",
+      "Suppressor-height night sights for proper sight picture with cans",
+      "Optics-ready slide milled for micro red dot mounting",
+      "Low-profile optics mounting system for minimal height over bore",
+      "Extended 24-round magazines included for maximum capacity",
+      "Ambidextrous slide stop levers and magazine release",
+      "Cold-hammer-forged barrel for suppressed fire durability",
+      "Enhanced grip texture for secure hold in all conditions",
+      "Flat Dark Earth or black finish options",
+      "MIL-STD-1913 accessory rail for tactical light mounting"
+    ],
+    benefits: [
+      "Factory suppressor-ready eliminates expensive custom machining",
+      "Optics-ready from factory saves time and money",
+      "Professional-grade reliability from military contractor manufacturer",
+      "True ambidextrous operation for all shooters",
+      "Extended magazines provide tactical capacity advantage",
+      "Low bore axis design reduces muzzle flip and speeds follow-up shots"
+    ],
+    useCases: [
+      "Suppressed shooting for tactical applications or home defense",
+      "Competition shooting in Carry Optics or PCC divisions",
+      "Law enforcement duty use requiring suppressor capability",
+      "Professional tactical training with optics and suppressors",
+      "Home defense with attached weapon light and suppressor",
+      "Range training with modern red dot and suppressor setup"
+    ],
+    technicalDetails: "The FN 509 Tactical features suppressor-height night sights with optics-ready slide milled for micro red dot mounting. Trigger is smooth striker-fired with 5.5-7 lb pull weight. Multiple safety systems include trigger safety, striker safety, and out-of-battery safety. Ships with two 24-round and one 17-round magazine. MIL-STD-1913 accessory rail accommodates tactical lights and lasers.",
+    whyChoose: "Choose the FN 509 Tactical when you need a factory suppressor-ready pistol from a trusted military contractor. The combination of threaded barrel, suppressor-height sights, optics-ready slide, and extended magazines creates a complete tactical package that would cost significantly more if assembled piecemeal. FN's reputation for supplying military forces worldwide ensures professional-grade reliability and durability.",
+    seoKeywords: ["FN 509 Tactical", "suppressor ready pistol", "threaded barrel 9mm", "optics ready tactical", "FN tactical pistol", "suppressor host 9mm"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "1,200 fps (124gr)",
+      muzzleEnergy: "396 ft-lbs (124gr)"
+    }
   },
   {
     id: "walther-pdp-full",
@@ -9596,7 +9634,45 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4 inches",
     weight: "26.5 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The FN 509 Midsize bridges the gap between compact and full-size, offering optimal concealability with serious capacity. The Goldilocks pistol for those who want maximum versatility.",
+    longDescription: "The FN 509 Midsize represents the perfect compromise between concealability and capability, designed for shooters who refuse to sacrifice either attribute. FN America recognized that many users wanted the improved concealability of a compact slide length combined with a full-size grip capacity, creating what many consider the ideal defensive handgun configuration. The 4-inch barrel provides excellent ballistic performance and sight radius while remaining compact enough for comfortable all-day concealed carry. The full-length grip accommodates 15-round flush-fit magazines (with 17 and 24-round extended magazines as options), giving shooters serious defensive capacity without requiring magazine extensions. This grip length also ensures a full three-finger hold for even large-handed shooters, dramatically improving controllability compared to subcompact models. The FN 509 series was developed in response to the U.S. Army's Modular Handgun System competition, incorporating lessons learned from decades of military and law enforcement feedback. Features include truly ambidextrous controls with slide stop levers and magazine releases on both sides, interchangeable backstraps for grip customization, and enhanced texturing for secure purchase. The cold-hammer-forged barrel delivers match-grade accuracy while the low bore axis design reduces muzzle flip for faster follow-up shots. The trigger breaks cleanly with minimal take-up and positive reset. For concealed carriers who want a do-everything pistol that excels at both carry and home defense, the 509 Midsize delivers the versatility of multiple guns in one package.",
+    features: [
+      "Optimal 4-inch barrel balancing concealability and performance",
+      "Full-size grip accommodates 15+1 capacity flush-fit",
+      "Compatible with 17 and 24-round extended magazines",
+      "True ambidextrous controls for all shooters",
+      "Interchangeable backstraps for custom grip fit",
+      "Cold-hammer-forged barrel for accuracy and durability",
+      "Low bore axis design reduces muzzle rise",
+      "Enhanced grip texturing for secure hold",
+      "Optics-ready slide for red dot mounting",
+      "MIL-STD-1913 accessory rail for lights and lasers"
+    ],
+    benefits: [
+      "Versatile size suitable for both concealed carry and duty use",
+      "Full three-finger grip improves control over subcompacts",
+      "Professional capacity without bulky frame dimensions",
+      "True ambidextrous operation accommodates all shooters",
+      "Military contractor quality and reliability",
+      "One pistol handles carry, home defense, and range duties"
+    ],
+    useCases: [
+      "Concealed carry for those wanting serious capacity",
+      "All-day comfortable carry with full defensive capability",
+      "Home defense with manageable size and high capacity",
+      "Vehicle or backup duty pistol for law enforcement",
+      "USPSA Carry Optics competition shooting",
+      "Versatile training pistol suitable for multiple roles"
+    ],
+    technicalDetails: "The FN 509 Midsize features three-dot combat sights with optics-ready slide. Striker-fired trigger with 5.5-7 lb pull weight. Safety systems include trigger safety, striker safety, and disconnect safety. Ships with two 15-round magazines. MIL-STD-1913 accessory rail for lights and lasers.",
+    whyChoose: "Choose the FN 509 Midsize when you want one pistol that does everything well. The midsize configuration provides the concealability needed for daily carry with the capacity and controllability of larger service pistols. FN's military heritage ensures reliability under any conditions, while the ambidextrous controls and customizable grip make it suitable for any shooter.",
+    seoKeywords: ["FN 509 Midsize", "concealed carry 9mm", "15+1 capacity", "versatile carry pistol", "FN midsize", "compact duty pistol"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "walther-ppq-m2",
@@ -10001,7 +10077,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4 inches",
     weight: "25.2 oz",
-    finish: "Stainless"
+    finish: "Stainless",
+    shortDescription: "The FN FNS-9 is a full-size duty striker-fired pistol from the legendary FN Herstal. Features true ambidextrous controls, stainless steel slide, and the reliability expected from a military contractor.",
+    longDescription: "The FN FNS-9 represents FN America's entry into the modern polymer striker-fired duty pistol market, bringing the company's century of military firearms manufacturing experience to the civilian and law enforcement sectors. While FN Herstal is perhaps best known for their military contracts including the M249 SAW, M240 machine gun, and SCAR rifle system, the FNS-9 demonstrates their ability to create outstanding handguns as well. The FNS-9 was developed specifically for the demanding requirements of law enforcement and military users who needed a modern striker-fired alternative to traditional DA/SA pistols. The most distinctive feature is the truly ambidextrous control system - unlike competitors that offer reversible magazine releases, the FNS-9 includes magazine releases, slide stop levers, and takedown levers on both sides of the frame, making the pistol genuinely usable for left-handed shooters without modification. The stainless steel slide provides exceptional durability and corrosion resistance compared to traditional blued or Tenifer finishes. The deep slide serrations front and rear ensure positive manipulation even with wet or gloved hands. Three interchangeable backstraps allow customization for different hand sizes, ensuring proper fit for nearly any shooter. The trigger incorporates an external safety lever and breaks cleanly with positive reset. The cold-hammer-forged stainless barrel delivers both accuracy and longevity. Fixed three-dot night sights come standard, with the sights sitting in traditional dovetails for easy replacement or upgrade. For duty use, competitive shooting, or personal defense, the FNS-9 delivers professional-grade performance with FN's renowned reliability at an attractive price point.",
+    features: [
+      "True ambidextrous controls including dual magazine releases",
+      "Stainless steel slide for superior corrosion resistance",
+      "Cold-hammer-forged stainless barrel for accuracy and durability",
+      "Three interchangeable backstraps for custom grip fit",
+      "Deep front and rear slide serrations for positive manipulation",
+      "External trigger safety and internal firing pin block",
+      "Standard capacity 17+1 rounds",
+      "Fixed three-dot night sights from factory",
+      "MIL-STD-1913 accessory rail for tactical lights",
+      "Loaded chamber indicator and striker status indicator"
+    ],
+    benefits: [
+      "Genuine ambidextrous operation without compromises for left-handed shooters",
+      "Stainless construction provides longevity and corrosion resistance",
+      "Military contractor quality and reliability standards",
+      "Customizable grip ensures proper fit for all hand sizes",
+      "Outstanding value from established military manufacturer",
+      "Night sights included at no extra cost"
+    ],
+    useCases: [
+      "Law enforcement duty use requiring ambidextrous operation",
+      "Military and security force service sidearm",
+      "Home defense with weapon light capability",
+      "USPSA Production division competition",
+      "Training and instruction with diverse student populations",
+      "All-weather duty carry in harsh environments"
+    ],
+    technicalDetails: "The FN FNS-9 features fixed three-dot night sights in dovetail mounts. Striker-fired trigger with 5.5-7.5 lb pull weight. Multiple safeties include trigger safety, firing pin block, and loaded chamber indicator. Ships with three 17-round magazines. MIL-STD-1913 accessory rail for tactical accessories.",
+    whyChoose: "Choose the FN FNS-9 when you need true ambidextrous operation from a trusted military contractor. The stainless slide and barrel provide superior corrosion resistance for hard-use environments, while FN's manufacturing standards ensure reliability that meets military specifications. The included night sights and three magazines make it an exceptional value.",
+    seoKeywords: ["FN FNS-9", "ambidextrous duty pistol", "stainless slide 9mm", "FN striker fired", "military contractor pistol", "left handed 9mm"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "walther-creed",
@@ -11445,7 +11559,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.25 inches",
     weight: "28.2 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Beretta APX A1 Full Size is Beretta's modern striker-fired answer to the duty pistol market. Nearly 500 years of Italian firearms craftsmanship meets contemporary modular design.",
+    longDescription: "The Beretta APX A1 Full Size represents the Italian firearms icon's comprehensive entry into the modern striker-fired duty pistol market, combining nearly five centuries of Beretta manufacturing heritage with cutting-edge features and materials. While Beretta built their pistol reputation on the legendary 92FS/M9 double-action design, the APX series demonstrates their ability to create outstanding striker-fired pistols that compete head-to-head with established market leaders. The APX was originally developed for military and law enforcement trials worldwide, with the civilian APX A1 incorporating improvements based on professional user feedback. The most innovative feature is the truly modular design - the serialized chassis can be removed from the grip frame, allowing users to completely change the frame color, size, or configuration by swapping grip shells. This modularity also simplifies maintenance and allows replacement of worn or damaged grip frames without requiring a new serialized firearm. The low bore axis design reduces muzzle flip significantly, allowing faster follow-up shots and better control during rapid strings. The trigger breaks cleanly with a positive reset that's among the best in the striker-fired category. Aggressive grip texturing ensures secure purchase without being overly abrasive. The slide features both front and rear serrations for press-check capability and emergency manipulation. Three interchangeable backstraps ensure proper fit, while ambidextrous slide catch levers and reversible magazine release accommodate all shooters. The APX A1 comes from factory with an optics-ready slide designed to accept most popular micro red dot sights without adapter plates. For shooters seeking a modern duty pistol backed by one of the world's oldest firearms manufacturers, the APX A1 delivers innovation and reliability with Italian craftsmanship.",
+    features: [
+      "True modular design with removable serialized chassis",
+      "Interchangeable grip frame shells for customization",
+      "Low bore axis design reduces muzzle flip and recoil",
+      "Optics-ready slide for micro red dot mounting",
+      "Excellent trigger with clean break and positive reset",
+      "Front and rear slide serrations for manipulation",
+      "Three interchangeable backstraps for custom fit",
+      "Ambidextrous slide catch levers",
+      "Aggressive grip texturing for secure hold",
+      "Cold-hammer-forged barrel from Beretta's renowned manufacturing"
+    ],
+    benefits: [
+      "Nearly 500 years of Beretta firearms manufacturing expertise",
+      "True modularity allows frame changes without new serialized gun",
+      "Outstanding trigger quality rivals much more expensive pistols",
+      "Low bore axis improves control and follow-up shot speed",
+      "Optics-ready from factory saves modification costs",
+      "Exceptional value from established premium manufacturer"
+    ],
+    useCases: [
+      "Law enforcement duty pistol for modern striker-fired requirements",
+      "Home defense with weapon light and optional red dot optic",
+      "USPSA Carry Optics competition shooting",
+      "Professional training with modern duty pistol",
+      "Concealed carry by officers and civilians with compact frame swap",
+      "Range and recreational shooting with duty-grade reliability"
+    ],
+    technicalDetails: "The Beretta APX A1 features steel three-dot sights with optics-ready slide. Striker-fired trigger with 6 lb pull and short reset. Multiple safety systems include trigger safety, firing pin block, and drop safety. Ships with two 17-round magazines. Polymer accessory rail for lights and lasers.",
+    whyChoose: "Choose the Beretta APX A1 Full Size when you want Italian craftsmanship and innovation in a modern striker-fired package. The true modularity sets it apart from competitors, while the excellent trigger and low bore axis design deliver outstanding shooting characteristics. Beretta's legacy ensures quality that will serve for generations.",
+    seoKeywords: ["Beretta APX A1", "modular duty pistol", "Italian striker fired", "Beretta modern pistol", "optics ready APX", "full size striker 9mm"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "mossberg-590a1",
