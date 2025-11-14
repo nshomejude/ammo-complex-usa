@@ -175,6 +175,9 @@ export const Navigation = () => {
             <Link to="/reloading-guide" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Reloading Guide
             </Link>
+            <Link to="/ballistic-calculator" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Ballistic Calculator
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
                 About <ChevronDown className="h-4 w-4" />
@@ -390,6 +393,14 @@ export const Navigation = () => {
                   className="text-base font-medium hover:text-tactical transition-colors"
                 >
                   Reloading Guide
+                </Link>
+                
+                <Link
+                  to="/ballistic-calculator"
+                  onClick={() => setOpen(false)}
+                  className="text-base font-medium hover:text-tactical transition-colors"
+                >
+                  Ballistic Calculator
                 </Link>
                 
                 <Link

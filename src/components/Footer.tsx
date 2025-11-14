@@ -69,6 +69,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/ballistic-calculator" className="text-sm text-muted-foreground hover:text-tactical transition-colors">
+                  Ballistic Calculator
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-sm text-muted-foreground hover:text-tactical transition-colors">
                   Contact
                 </Link>
