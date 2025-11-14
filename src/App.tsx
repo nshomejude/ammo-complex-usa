@@ -42,6 +42,9 @@ import FirearmsLicense from "./pages/FirearmsLicense";
 import HowToBuy from "./pages/HowToBuy";
 import ReloadingGuide from "./pages/ReloadingGuide";
 import BallisticCalculator from "./pages/BallisticCalculator";
+import Auth from "./pages/Auth";
+import LoadRecipes from "./pages/LoadRecipes";
+import ReloadingCostCalculator from "./pages/ReloadingCostCalculator";
 import Contact from "./pages/Contact";
 import Contact2 from "./pages/Contact2";
 import Contact3 from "./pages/Contact3";
@@ -123,6 +126,9 @@ const App = () => (
           <Route path="/how-to-buy" element={<HowToBuy />} />
           <Route path="/reloading-guide" element={<ReloadingGuide />} />
           <Route path="/ballistic-calculator" element={<BallisticCalculator />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/load-recipes" element={<LoadRecipes />} />
+          <Route path="/reloading-cost-calculator" element={<ReloadingCostCalculator />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact2" element={<Contact2 />} />
           <Route path="/contact3" element={<Contact3 />} />
