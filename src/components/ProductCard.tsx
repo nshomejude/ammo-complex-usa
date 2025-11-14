@@ -5,7 +5,6 @@ import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import placeholderImage from "@/assets/placeholder-product.jpg";
 import { useState } from "react";
-import { ShippingCalculator } from "@/components/ShippingCalculator";
 import { WishlistButton } from "@/components/WishlistButton";
 import { ComparisonButton } from "@/components/ComparisonButton";
 
@@ -144,8 +143,6 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
             Base: ${initialPrice.toFixed(2)}
           </div>
         )}
-
-        <ShippingCalculator quantity={selectedVariation.rounds} />
       </CardContent>
       
       <CardFooter className="p-4 pt-0 flex flex-col gap-2">

@@ -14,6 +14,7 @@ import { addProductVariations } from "@/utils/addDefaultVariations";
 import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus, Target, Award, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
+import { ShippingCalculator } from "@/components/ShippingCalculator";
 
 const ProductDetail = () => {
   // Add variations to all products
@@ -276,6 +277,13 @@ const ProductDetail = () => {
               <ShoppingCart className="mr-2 h-5 w-5" />
               {product.inStock ? 'Add to Cart' : 'Out of Stock'}
             </Button>
+
+            {/* Shipping Calculator */}
+            <Card className="border-tactical/30 bg-tactical/5">
+              <CardContent className="p-4">
+                <ShippingCalculator quantity={quantity} />
+              </CardContent>
+            </Card>
 
             {/* Legal Notice */}
             <Alert className="border-warning bg-warning/10">
