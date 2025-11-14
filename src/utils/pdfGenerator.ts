@@ -1,4 +1,5 @@
 import { jsPDF } from 'jspdf';
+import logoImage from '@/assets/arms-complex-logo.png';
 
 // Branding colors (RGB tuples)
 const BRAND_COLORS = {
@@ -8,8 +9,30 @@ const BRAND_COLORS = {
   foreground: [250, 250, 250] as [number, number, number]
 };
 
-// Add branded header to PDF
-const addBrandedHeader = (doc: jsPDF, title: string, subtitle?: string) => {
+// Convert image to base64 for PDF embedding
+const getLogoDataUrl = async (): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.drawImage(img, 0, 0);
+        resolve(canvas.toDataURL('image/png'));
+      } else {
+        reject(new Error('Failed to get canvas context'));
+      }
+    };
+    img.onerror = reject;
+    img.src = logoImage;
+  });
+};
+
+// Add branded header to PDF (async to load logo)
+const addBrandedHeader = async (doc: jsPDF, title: string, subtitle?: string) => {
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
   
@@ -17,22 +40,31 @@ const addBrandedHeader = (doc: jsPDF, title: string, subtitle?: string) => {
   doc.setFillColor(106, 144, 95); // tactical color
   doc.rect(0, 0, pageWidth, 25, 'F');
   
-  // Shield logo placeholder (text-based)
-  doc.setFontSize(16);
-  doc.setFont('helvetica', 'bold');
-  doc.setTextColor(255, 255, 255);
-  doc.text('🛡', margin, 16);
+  // Add logo image
+  try {
+    const logoDataUrl = await getLogoDataUrl();
+    doc.addImage(logoDataUrl, 'PNG', margin, 6, 15, 15);
+  } catch (error) {
+    console.error('Failed to load logo:', error);
+    // Fallback to text if image fails
+    doc.setFontSize(16);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(255, 255, 255);
+    doc.text('🛡', margin, 16);
+  }
   
   // Company name
   doc.setFontSize(14);
-  doc.text('ARMS COMPLEX', margin + 8, 16);
+  doc.setFont('helvetica', 'bold');
+  doc.setTextColor(255, 255, 255);
+  doc.text('ARMS COMPLEX', margin + 18, 16);
   
   // PRO badge
   doc.setFontSize(8);
   doc.setFillColor(255, 255, 255);
-  doc.roundedRect(margin + 55, 10, 12, 6, 2, 2, 'F');
+  doc.roundedRect(margin + 68, 10, 12, 6, 2, 2, 'F');
   doc.setTextColor(106, 144, 95); // tactical color
-  doc.text('PRO', margin + 56.5, 14.5);
+  doc.text('PRO', margin + 69.5, 14.5);
   
   // Contact info (top right)
   doc.setFontSize(8);
@@ -96,11 +128,11 @@ const addBrandedFooter = (doc: jsPDF, pageNum?: number) => {
   doc.text(new Date().toLocaleDateString(), pageWidth - margin, footerY + 4, { align: 'right' });
 };
 
-export const generateSafetyChecklistPDF = () => {
+export const generateSafetyChecklistPDF = async () => {
   const doc = new jsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
-  let yPos = addBrandedHeader(doc, 'Reloading Safety Checklist', 'Professional Safety Guidelines for Reloaders');
+  let yPos = await addBrandedHeader(doc, 'Reloading Safety Checklist', 'Professional Safety Guidelines for Reloaders');
 
   // Critical Safety Rules
   doc.setFontSize(14);
