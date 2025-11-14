@@ -4,8 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { Shield, AlertTriangle, Wrench, Target, CheckCircle2, BookOpen, Gauge, Ruler, Scale, FlaskConical, Eye, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Shield, AlertTriangle, Wrench, Target, CheckCircle2, BookOpen, Gauge, Ruler, Scale, FlaskConical, Eye, Zap, Download } from "lucide-react";
 import { useEffect } from "react";
+import { generateSafetyChecklistPDF, generateProcessChecklistPDF, generateEquipmentChecklistPDF, generateLoadDataSheetPDF } from "@/utils/pdfGenerator";
 
 const ReloadingGuide = () => {
   useEffect(() => {
@@ -101,6 +103,77 @@ const ReloadingGuide = () => {
             serious injury or death. This guide is for educational purposes only.
           </AlertDescription>
         </Alert>
+
+        {/* Downloadable Checklists */}
+        <Card className="mb-8 bg-tactical/5 border-tactical/20">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center gap-2">
+              <Download className="h-6 w-6 text-tactical" />
+              Downloadable Checklists
+            </CardTitle>
+            <CardDescription>
+              Print these checklists and keep them at your reloading bench for reference
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <Button 
+                onClick={generateSafetyChecklistPDF}
+                className="h-auto py-6 flex flex-col items-center gap-2"
+                variant="outline"
+              >
+                <Download className="h-6 w-6 text-tactical" />
+                <div className="text-center">
+                  <div className="font-semibold">Safety Checklist</div>
+                  <div className="text-xs text-muted-foreground mt-1">Pre & post-session safety protocols</div>
+                </div>
+              </Button>
+
+              <Button 
+                onClick={generateProcessChecklistPDF}
+                className="h-auto py-6 flex flex-col items-center gap-2"
+                variant="outline"
+              >
+                <Download className="h-6 w-6 text-tactical" />
+                <div className="text-center">
+                  <div className="font-semibold">Process Checklist</div>
+                  <div className="text-xs text-muted-foreground mt-1">Step-by-step reloading workflow</div>
+                </div>
+              </Button>
+
+              <Button 
+                onClick={generateEquipmentChecklistPDF}
+                className="h-auto py-6 flex flex-col items-center gap-2"
+                variant="outline"
+              >
+                <Download className="h-6 w-6 text-tactical" />
+                <div className="text-center">
+                  <div className="font-semibold">Equipment List</div>
+                  <div className="text-xs text-muted-foreground mt-1">Essential & recommended tools</div>
+                </div>
+              </Button>
+
+              <Button 
+                onClick={generateLoadDataSheetPDF}
+                className="h-auto py-6 flex flex-col items-center gap-2"
+                variant="outline"
+              >
+                <Download className="h-6 w-6 text-tactical" />
+                <div className="text-center">
+                  <div className="font-semibold">Load Data Sheet</div>
+                  <div className="text-xs text-muted-foreground mt-1">Record test results & observations</div>
+                </div>
+              </Button>
+            </div>
+            <Alert className="mt-4">
+              <BookOpen className="h-4 w-4" />
+              <AlertDescription className="text-sm">
+                These PDF checklists are designed to be printed and laminated for use at your reloading bench. 
+                Keep them visible and reference them during every reloading session for maximum safety and consistency.
+              </AlertDescription>
+            </Alert>
+          </CardContent>
+        </Card>
 
         {/* Why Reload Section */}
         <Card className="mb-8">
