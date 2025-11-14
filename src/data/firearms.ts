@@ -9402,7 +9402,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.25 inches",
     weight: "24.7 oz",
-    finish: "Armornite"
+    finish: "Armornite",
+    shortDescription: "The Smith & Wesson M&P9 M2.0 represents 170+ years of American firearms innovation applied to modern striker-fired design. Enhanced trigger, aggressive texturing, and proven M&P reliability make it a dominant force in duty and competition use.",
+    longDescription: "The Smith & Wesson M&P9 M2.0 (Military & Police, 2nd generation) takes the proven M&P platform that captured significant law enforcement market share and elevates it with improvements addressing every aspect of performance. Smith & Wesson, America's oldest firearms manufacturer founded in 1852, applied their unmatched experience to create the definitive duty striker-fired pistol. The M2.0 generation focused on trigger improvement, with the new trigger delivering a crisp break at approximately 5.5 pounds, reduced pre-travel, and positive reset that dramatically improves shooting performance compared to first-generation M&Ps. The articulated trigger shoe provides comfortable contact while the tactile reset allows shooters to ride the trigger during rapid strings. The most visible improvement is the aggressive four-point grip texture that Smith & Wesson developed using feedback from thousands of professional users. The texture provides exceptional purchase even with wet, bloody, or gloved hands, yet remains comfortable against bare skin for concealed carry. The extended rigid frame-mounted stainless steel chassis increases accuracy and provides exceptional durability - the M2.0 is built to exceed 100,000 rounds of service life. The low bore axis design reduces muzzle flip while the 18-degree grip angle provides natural point-of-aim for most shooters. Ambidextrous controls include slide stop levers and reversible magazine catch. The 17+1 capacity matches competitors while maintaining manageable grip dimensions. The M2.0 has been rapidly adopted by law enforcement agencies nationwide, with several major departments transitioning entire forces to the platform. The pistol dominates USPSA Production division and performs excellently in Carry Optics. For shooters wanting American manufacturing, proven law enforcement reliability, and modern features that enable fast accurate shooting, the M&P9 M2.0 delivers Smith & Wesson excellence.",
+    features: [
+      "Enhanced M2.0 trigger with crisp break and positive reset",
+      "Aggressive four-point grip texturing for maximum control",
+      "Extended rigid stainless steel chassis for accuracy and durability",
+      "Low bore axis design reduces muzzle flip and speeds recovery",
+      "Ambidextrous slide stop levers for all shooters",
+      "17+1 capacity in manageable full-size grip",
+      "18-degree grip angle for natural pointing",
+      "Armornite corrosion-resistant finish exceeds salt spray testing",
+      "Four interchangeable palm swell grip inserts for custom fit",
+      "Forward slide serrations enable press checks and manipulation"
+    ],
+    benefits: [
+      "170+ years of Smith & Wesson American manufacturing excellence",
+      "Rapid law enforcement adoption validates duty reliability",
+      "Enhanced trigger dramatically improves shooting performance",
+      "Aggressive texturing ensures control in all conditions",
+      "Outstanding durability exceeds 100,000-round service life",
+      "Dominates USPSA Production division competition"
+    ],
+    useCases: [
+      "Law enforcement duty pistol - rapidly adopted by major departments",
+      "USPSA Production division competition shooting",
+      "Home defense with high capacity and proven reliability",
+      "Concealed carry for those preferring full-size capability",
+      "Professional training and instruction with modern equipment",
+      "Competition shooting in multiple disciplines"
+    ],
+    technicalDetails: "The Smith & Wesson M&P9 M2.0 features white three-dot sights with steel construction. Enhanced M2.0 trigger pulls approximately 5.5 lbs. Ships with two 17-round magazines. Accessory rail for lights and lasers. Armornite finish provides exceptional corrosion resistance. Four interchangeable palm swell inserts for custom grip fit.",
+    whyChoose: "Choose the Smith & Wesson M&P9 M2.0 when you want American manufacturing excellence and proven law enforcement performance. The M2.0's enhanced trigger and aggressive texturing address previous generation's weaknesses while maintaining legendary M&P reliability. Rapid adoption by major law enforcement agencies validates the M2.0's duty capabilities, while competition success proves its shooting performance. Smith & Wesson's 170+ year heritage ensures quality and service that will last generations.",
+    seoKeywords: ["Smith Wesson M&P9 M2.0", "M&P 2.0", "duty striker fired", "law enforcement pistol", "S&W M&P", "Production division pistol"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,190 fps (124gr)",
+      muzzleEnergy: "390 ft-lbs (124gr)"
+    }
   },
   {
     id: "cz-p10c",
@@ -10005,7 +10043,45 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4 inches",
     weight: "24.5 oz",
-    finish: "Armornite"
+    finish: "Armornite",
+    shortDescription: "The Smith & Wesson M&P 2.0 Compact delivers full M2.0 features in a more concealable package. Perfect balance between carry size and shootability with 15+1 capacity and enhanced M2.0 trigger.",
+    longDescription: "The Smith & Wesson M&P 2.0 Compact takes the enhanced features that made the full-size M2.0 a law enforcement favorite and packages them in dimensions optimized for concealed carry and plain-clothes duty use. Smith & Wesson recognized that many users wanted all the M2.0 improvements - enhanced trigger, aggressive texturing, rigid chassis - in a pistol more suitable for all-day concealed carry. The Compact delivers exactly that. The 4-inch barrel provides excellent ballistic performance and sufficient sight radius while reducing overall length for improved concealability. The reduced grip height accommodates 15-round flush-fitting magazines (with 17-round full-size magazines also compatible), giving shooters serious defensive capacity without bulk. Most importantly, the grip provides a full three-finger hold for average to large-handed shooters, dramatically improving controllability compared to subcompact models. The enhanced M2.0 trigger remains unchanged from the full-size, delivering the same crisp break and positive reset that enables fast accurate shooting. The aggressive four-point grip texture provides secure purchase regardless of conditions. The extended stainless steel chassis ensures accuracy and durability. Ambidextrous controls make the pistol suitable for all shooters. The low bore axis reduces muzzle flip. The M&P 2.0 Compact has found favor with detectives, plain-clothes officers, and armed civilians who need serious capability in a more concealable package. The pistol's size makes it comfortable for all-day carry while maintaining sufficient grip length for effective shooting. For those seeking the proven M&P 2.0 platform in compact dimensions, this pistol delivers Smith & Wesson quality and reliability in the perfect size compromise.",
+    features: [
+      "Compact 4-inch barrel balances concealability and performance",
+      "Full three-finger grip provides excellent control",
+      "Enhanced M2.0 trigger with crisp break and positive reset",
+      "Aggressive four-point grip texturing for secure hold",
+      "15+1 capacity with flush-fit magazines (17-round compatible)",
+      "Extended stainless steel chassis for accuracy and durability",
+      "Ambidextrous slide stop levers",
+      "Low bore axis design reduces muzzle rise",
+      "Four interchangeable palm swell inserts for custom fit",
+      "Armornite corrosion-resistant finish"
+    ],
+    benefits: [
+      "Perfect size balance between concealability and shootability",
+      "Full M2.0 enhancements in compact package",
+      "American manufacturing from Smith & Wesson's 170+ year heritage",
+      "Serious capacity without subcompact compromises",
+      "Enhanced trigger enables accurate shooting in compact size",
+      "Proven reliability from M&P platform"
+    ],
+    useCases: [
+      "Concealed carry with full defensive capability",
+      "Detective and plain-clothes law enforcement carry",
+      "Backup gun for uniformed officers with sufficient capability",
+      "Vehicle or off-duty carry for professionals",
+      "Home defense with manageable size and high capacity",
+      "All-day comfortable carry without subcompact limitations"
+    ],
+    technicalDetails: "The Smith & Wesson M&P 2.0 Compact features white three-dot steel sights. Enhanced M2.0 trigger pulls approximately 5.5 lbs. Ships with two 15-round magazines. Compatible with full-size 17-round magazines. Accessory rail for lights. Armornite finish. Four palm swell inserts for grip customization.",
+    whyChoose: "Choose the Smith & Wesson M&P 2.0 Compact when you want serious capability in a more concealable package. The Compact provides all the M2.0 enhancements - improved trigger, aggressive texture, rigid chassis - in dimensions perfect for concealed carry. The full three-finger grip makes it genuinely shootable unlike tiny subcompacts. With Smith & Wesson's proven reliability and American manufacturing quality, the M&P 2.0 Compact delivers the perfect carry size compromise.",
+    seoKeywords: ["Smith Wesson M&P 2.0 Compact", "compact M&P", "concealed carry duty pistol", "M&P Compact 2.0", "15+1 compact 9mm", "S&W carry pistol"],
+    ballisticData: {
+      effectiveRange: "45 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "365 ft-lbs (124gr)"
+    }
   },
   {
     id: "cz-p10s",
@@ -10095,7 +10171,45 @@ export const firearms: Firearm[] = [
     capacity: "18+1",
     barrelLength: "5 inches",
     weight: "31.6 oz",
-    finish: "Dark Side"
+    finish: "Dark Side",
+    shortDescription: "The Canik Rival is purpose-built to dominate USPSA Carry Optics competition. Aluminum frame, lightened slide, match trigger, and championship-winning features at a price that makes competition accessible to all shooters.",
+    longDescription: "The Canik Rival represents Turkish manufacturer Canik's most ambitious project - creating a competition pistol that rivals custom race guns costing thousands more. The result has been spectacularly successful, with Rival pistols winning major USPSA Carry Optics matches and earning praise from professional shooters worldwide. What makes the Rival remarkable is the combination of premium features at an accessible price point. The aluminum chassis combined with polymer frame provides the perfect balance of weight and rigidity - heavy enough for recoil management but light enough for all-day comfort during long match days. The weight distribution keeps the muzzle flat during rapid strings. The 5-inch barrel delivers maximum velocity and sight radius for precision at competition distances. The lightened slide features extensive cuts that reduce reciprocating mass, allowing faster cycling and recovery between shots. The match-grade trigger is extraordinary - breaking cleanly at approximately 3.5 pounds with minimal take-up, no overtravel, and a short positive reset. Professional reviewers consistently rate the Rival trigger among the best factory triggers available at any price. The integral compensator reduces muzzle rise dramatically, keeping the dot on target during rapid fire. Fiber optic front sight paired with blacked-out rear provides fast target acquisition, while the optics-ready slide accepts all popular micro red dots. The aggressive grip texturing ensures secure purchase during dynamic movement. Extended magazine well with massive flare accelerates reloads under match stress. Ambidextrous controls accommodate all shooters. The slide serrations are aggressive and strategically placed. What truly amazes competitors is discovering all these championship-grade features cost less than many basic duty pistols. The Rival proves that world-class competition performance doesn't require mortgage-level investment. For competitive shooters seeking to win without spending thousands, the Rival delivers podium performance.",
+    features: [
+      "Aluminum chassis with polymer frame for optimal weight and rigidity",
+      "Lightened slide with extensive cuts reduces reciprocating mass",
+      "Integral compensator dramatically reduces muzzle rise",
+      "Match-grade trigger approximately 3.5 lbs with minimal take-up",
+      "Fiber optic front sight with blacked-out rear for fast acquisition",
+      "Optics-ready slide accepts all popular micro red dot sights",
+      "Extended magazine well with massive flare for fast reloads",
+      "Aggressive grip texturing for secure purchase during movement",
+      "Ambidextrous controls for all shooters",
+      "18+1 capacity with competition-length grip"
+    ],
+    benefits: [
+      "Championship-winning performance proven in major USPSA matches",
+      "Match-grade trigger rivals custom competition guns",
+      "Integral compensator improves control dramatically",
+      "Aluminum frame provides competition weight at reduced cost",
+      "Outstanding value makes competition shooting accessible",
+      "Professional-grade features at fraction of custom gun cost"
+    ],
+    useCases: [
+      "USPSA Carry Optics competition - proven major match winner",
+      "Steel Challenge and other competition disciplines",
+      "3-Gun competition pistol stages",
+      "Competitive shooting training and practice",
+      "Advanced shooters seeking race-gun performance",
+      "Competition team shooters needing multiple identical guns"
+    ],
+    technicalDetails: "The Canik Rival features fiber optic front sight with blacked-out rear, optics-ready slide. Match trigger pulls approximately 3.5 lbs. Ships with three 18-round magazines, competition holster, magazine loader, and hard case. Integral compensator reduces muzzle rise. Aluminum chassis with polymer frame. Extended magazine well for competition reloads.",
+    whyChoose: "Choose the Canik Rival when you're serious about competition but smart about budget. The Rival has won major USPSA matches defeating guns costing three times more, proving performance matters more than price tags. The aluminum frame, integral compensator, and match trigger deliver race-gun capabilities. For competitive shooters who value winning over brand prestige, the Rival is the intelligent choice that dominates Carry Optics division.",
+    seoKeywords: ["Canik Rival", "USPSA Carry Optics", "competition 9mm", "match pistol budget", "Rival compensator", "aluminum frame striker"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,220 fps (124gr)",
+      muzzleEnergy: "410 ft-lbs (124gr)"
+    }
   },
   {
     id: "glock-34-gen5",
@@ -10230,7 +10344,45 @@ export const firearms: Firearm[] = [
     capacity: "18+1",
     barrelLength: "5 inches",
     weight: "40.21 oz",
-    finish: "Dark Side"
+    finish: "Dark Side",
+    shortDescription: "The Canik Rival-S takes competition features to the ultimate level with all-steel construction. The 'S' stands for Steel - providing maximum weight for recoil management and the shooting characteristics of traditional competition guns at unbelievable pricing.",
+    longDescription: "The Canik Rival-S represents the pinnacle of Canik's competition pistol development, taking the championship-winning Rival design and elevating it with all-steel construction that delivers shooting characteristics previously available only from custom gun builders charging $3,000+. Serious competitive shooters understand that weight is beneficial in competition - the additional mass dampens recoil, keeps the muzzle flatter, and provides stability during rapid transitions. The Rival-S's 40-ounce weight puts it in the same class as traditional steel-frame competition guns like CZ Shadow series or custom 1911/2011 builds, but at a fraction of their cost. The all-steel construction provides exceptional rigidity and durability - this pistol will handle hundreds of thousands of rounds without degradation. The steel frame's weight distribution is optimized for competition shooting, balancing front-to-back and keeping the dot stable during recoil. Combined with the lightened slide featuring extensive cuts, the reciprocating mass is minimized while overall gun weight remains substantial. The integral compensator becomes even more effective with the steel frame's mass working in concert to virtually eliminate muzzle rise. The match-grade trigger maintains Canik's excellent 3.5-pound pull with crisp break and minimal reset. The fiber optic front sight and optics-ready slide provide multiple sighting options. The extended magazine well accelerates reloads while the aggressive grip texturing ensures secure control. Professional competitive shooters testing the Rival-S consistently express amazement at the shooting characteristics - the steel-framed Rival-S shoots like pistols costing three to four times more. For Carry Optics shooters wanting maximum recoil management, Limited division competitors seeking steel-frame performance, or serious competitors who understand that weight helps winning, the Rival-S delivers championship capabilities at pricing that makes steel-frame competition accessible.",
+    features: [
+      "All-steel frame construction for maximum weight and rigidity",
+      "40+ ounce weight provides exceptional recoil management",
+      "Lightened slide with extensive cuts optimizes reciprocating mass",
+      "Integral compensator works with frame mass to eliminate muzzle rise",
+      "Match-grade trigger approximately 3.5 lbs with crisp break",
+      "Fiber optic front sight with optics-ready slide",
+      "Extended magazine well with massive flare for competition reloads",
+      "Aggressive grip texturing for secure control",
+      "Ambidextrous controls for all shooters",
+      "Steel construction provides longevity through hundreds of thousands of rounds"
+    ],
+    benefits: [
+      "Steel-frame shooting characteristics at polymer-frame pricing",
+      "Maximum recoil management enables faster accurate shooting",
+      "Exceptional rigidity improves accuracy and consistency",
+      "Outstanding durability for high-volume competition use",
+      "Weight advantage in competition where recoil management matters",
+      "Unbeatable value in steel-frame competition pistol category"
+    ],
+    useCases: [
+      "USPSA Carry Optics competition for maximum recoil control",
+      "USPSA Limited division steel-frame competition",
+      "Steel Challenge requiring flat-shooting characteristics",
+      "High-volume competitive training and practice",
+      "Serious competition shooting where weight helps performance",
+      "Competitive shooters wanting steel-frame advantages affordably"
+    ],
+    technicalDetails: "The Canik Rival-S features fiber optic front sight with optics-ready slide. All-steel frame construction weighing 40.21 oz unloaded. Match trigger pulls approximately 3.5 lbs. Ships with three 18-round magazines, competition holster, loader, and hard case. Integral compensator. Extended magazine well for fast reloads.",
+    whyChoose: "Choose the Canik Rival-S when you want steel-frame competition characteristics without custom gun pricing. The all-steel construction delivers recoil management and shooting feel that rivals pistols costing $3,000+. Competitive shooters understand that weight helps - the Rival-S provides that advantage at a price that doesn't require a second mortgage. For serious competitors wanting every advantage, the Rival-S is the smart choice delivering championship performance.",
+    seoKeywords: ["Canik Rival-S", "steel frame competition", "heavy 9mm pistol", "USPSA steel frame", "Rival steel", "competition steel pistol"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,220 fps (124gr)",
+      muzzleEnergy: "410 ft-lbs (124gr)"
+    }
   },
   {
     id: "glock-26-gen5",
