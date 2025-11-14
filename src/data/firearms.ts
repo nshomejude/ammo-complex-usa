@@ -9606,7 +9606,45 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "5.2 inches",
     weight: "29.92 oz",
-    finish: "Tungsten Cerakote"
+    finish: "Tungsten Cerakote",
+    shortDescription: "The Canik TP9SFx was purpose-built for competition shooting with championship-winning features. Long slide, fiber optic sights, lightened slide, and match trigger deliver race-gun performance at a fraction of the cost.",
+    longDescription: "The Canik TP9SFx represents a paradigm shift in competition pistol pricing - delivering features and performance previously requiring thousands of dollars of custom work or premium manufacturer prices. Canik designed the SFx specifically for competitive shooting after consulting with professional shooters to understand exactly what features matter most for match performance. The result has been so successful that TP9SFx pistols have won major USPSA matches, defeating custom race guns costing 3-5 times more. The 5.2-inch barrel provides maximum velocity and sight radius for precision at competition distances. The extended slide incorporates lightning cuts that reduce reciprocating mass by 10%, allowing faster cycling and reduced muzzle flip during rapid strings. The fiber optic front sight gathers light brilliantly while the fully adjustable rear sight allows precise zero adjustments. Warren Tactical-style sights are competition-proven. The trigger is exceptional - smooth, light at approximately 3.5-4 pounds, with virtually no overtravel and a crisp reset that enables precision double-taps. The extended magazine well with flared opening accelerates reloads under match stress. The 20-round capacity means fewer reloads per stage. The ambidextrous controls accommodate both right and left-handed shooters. The frame's aggressive texturing ensures secure grip during rapid transitions. Slide serrations front and rear enable press checks and manipulation. What's truly remarkable is what's included: the SFx comes with four magazines (most pistols include two), a competition holster, magazine extensions, cleaning kit, and hard case - accessories that would cost hundreds if purchased separately. For competitive shooters on budgets or anyone wanting competition capabilities without custom gun prices, the TP9SFx delivers championship-winning performance.",
+    features: [
+      "Competition-optimized 5.2-inch barrel for maximum accuracy and velocity",
+      "Lightened slide with lightning cuts reduces reciprocating mass 10%",
+      "Fiber optic front sight with fully adjustable rear sight",
+      "Match-grade trigger approximately 3.5-4 lbs with minimal overtravel",
+      "Extended magazine well with flared opening for fast reloads",
+      "20-round capacity reduces reload frequency in matches",
+      "Ambidextrous slide stop levers and magazine release",
+      "Aggressive frame texturing for secure grip during transitions",
+      "Warren Tactical-style competition sights",
+      "Includes four magazines, holster, extensions, cleaning kit, case"
+    ],
+    benefits: [
+      "Proven competition winner defeating custom guns costing thousands more",
+      "Match-grade trigger rivals custom trigger jobs",
+      "Lightning cuts improve cycling speed and reduce muzzle flip",
+      "Four magazines included saves $100+ compared to separate purchase",
+      "Competition-ready out of the box with no modifications needed",
+      "Outstanding value makes competition shooting accessible to all"
+    ],
+    useCases: [
+      "USPSA Limited and Carry Optics competition - proven match winner",
+      "Steel Challenge and other competition disciplines",
+      "3-Gun competition pistol stages",
+      "Precision shooting and training with competition equipment",
+      "Home defense with maximum capacity and accuracy",
+      "Range shooting with competition-grade performance"
+    ],
+    technicalDetails: "The Canik TP9SFx features fiber optic front sight with fully adjustable rear sight. Match trigger pulls approximately 3.5-4 lbs. Ships with four 20-round magazines, competition holster, magazine extensions, cleaning kit, and hard case. Extended magazine well for fast reloads. Tungsten Cerakote finish.",
+    whyChoose: "Choose the Canik TP9SFx when you want to compete seriously without spending thousands on custom guns. The SFx has won major USPSA matches, proving its capabilities against pistols costing far more. The match trigger, lightened slide, and competition sights deliver race-gun performance. With four magazines included plus competition accessories, the SFx provides everything needed to dominate matches. For competitive shooters who value performance over brand prestige, the TP9SFx is the smart choice that wins championships.",
+    seoKeywords: ["Canik TP9SFx", "competition 9mm pistol", "USPSA winner", "budget race gun", "TP9SFx review", "match pistol value"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,250 fps (124gr)",
+      muzzleEnergy: "430 ft-lbs (124gr)"
+    }
   },
   {
     id: "glock-43x-mos",
@@ -9831,7 +9869,45 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "4.5 inches",
     weight: "29 oz",
-    finish: "Melonite"
+    finish: "Melonite",
+    shortDescription: "The Springfield XD-M Elite combines competition-grade features with duty pistol reliability. Match-grade barrel, exceptional capacity, and refined trigger make it a dominant force in competition and serious defensive applications.",
+    longDescription: "The Springfield XD-M Elite represents the pinnacle of Springfield Armory's striker-fired pistol development, taking the proven XD-M platform and elevating it with features specifically designed for competitive shooting and demanding duty use. Springfield Armory, with Croatian manufacturing partner HS Produkt, has continuously refined the XD series since its introduction, with the Elite representing their most advanced iteration. The XD-M Elite's defining characteristic is its match-grade barrel with extended melt-style slide, providing increased sight radius for precision shooting. The 5.25-inch barrel delivers exceptional accuracy and maximum velocity from 9mm ammunition. The trigger system has been significantly refined with reduced pre-travel, crisp break at approximately 5.5 pounds, and short reset that competitive shooters demand. The META (Match Enhanced Trigger Assembly) trigger feels more like a tuned competition trigger than a factory striker. The 20-round flush-fit magazine capacity gives the Elite a significant ammunition advantage - matching or exceeding most competitors while maintaining manageable grip dimensions. The aggressive frame texture labeled 'Mega-Lock' provides incredibly secure purchase even with sweaty hands during competition stress. The ambidextrous magazine release sits perfectly positioned for rapid reloads. Front and rear slide serrations enable press checks and emergency manipulation. The fiber optic front sight paired with fully adjustable rear sight allows precise zero for competition distances. The Elite comes optics-ready with multiple mounting plates included for popular red dot sights. Weight distribution and the low bore axis design keep the muzzle flat during rapid fire. The XD-M Elite has dominated USPSA Limited division and performed excellently in Carry Optics, with numerous championship wins validating the design. For serious competitive shooters or those demanding maximum capacity and precision from a duty-capable pistol, the XD-M Elite delivers professional performance.",
+    features: [
+      "Match-grade 5.25-inch barrel for maximum accuracy and velocity",
+      "META trigger system with reduced pre-travel and crisp break",
+      "Exceptional 20-round capacity with flush-fit magazines",
+      "Fiber optic front sight with fully adjustable rear sight",
+      "Optics-ready slide with mounting plates for red dot sights",
+      "Mega-Lock aggressive frame texturing for maximum grip security",
+      "Ambidextrous magazine release for rapid reloads",
+      "Front and rear slide serrations for manipulation",
+      "Melonite finish provides superior wear and corrosion resistance",
+      "Includes five magazines, holster, magazine pouch, and case"
+    ],
+    benefits: [
+      "Proven competition winner in USPSA Limited and Carry Optics divisions",
+      "Maximum capacity provides significant ammunition advantage",
+      "Match-grade accuracy suitable for precision shooting",
+      "Refined trigger quality rivals custom competition guns",
+      "Outstanding value with extensive accessories included",
+      "Dual-purpose design excels in both competition and duty roles"
+    ],
+    useCases: [
+      "USPSA Limited and Carry Optics competition shooting",
+      "3-Gun competition pistol stages",
+      "Law enforcement duty pistol for capacity-focused agencies",
+      "Home defense with maximum capacity and accuracy",
+      "Professional training with competition-grade equipment",
+      "Serious recreational shooting demanding top performance"
+    ],
+    technicalDetails: "The Springfield XD-M Elite features fiber optic front sight with fully adjustable rear sight, plus optics-ready slide. META trigger assembly with approximately 5.5 lb pull. Ships with five 20-round magazines, holster, double magazine pouch, loader, and hard case. Melonite finish provides exceptional durability. Match-grade barrel for superior accuracy.",
+    whyChoose: "Choose the Springfield XD-M Elite when you need competition-winning capability in a duty-reliable package. The 20-round capacity is unmatched, the match-grade barrel delivers accuracy, and the META trigger enables precision shooting. With five magazines included plus holster and accessories, the Elite provides exceptional value. Proven through countless competition wins and law enforcement adoption, the XD-M Elite dominates when capacity and accuracy matter most.",
+    seoKeywords: ["Springfield XD-M Elite", "20 round 9mm", "competition duty pistol", "match grade striker", "USPSA Limited pistol", "high capacity striker"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,240 fps (124gr)",
+      muzzleEnergy: "422 ft-lbs (124gr)"
+    }
   },
   {
     id: "canik-mete-sft",
@@ -9846,7 +9922,45 @@ export const firearms: Firearm[] = [
     capacity: "18+1",
     barrelLength: "4.46 inches",
     weight: "27.33 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Canik METE SFT delivers premium features at budget-friendly pricing. Turkish precision engineering with optics-ready slide, exceptional trigger, and accessories that would cost extra from competitors. Unbeatable value proposition.",
+    longDescription: "The Canik METE SFT (METE standing for 'Modern, Ergonomic, Technical, Exceptional') represents the Turkish manufacturer's latest evolution in striker-fired pistol design, incorporating cutting-edge features at a price point that seems impossible. Canik has earned a reputation for delivering premium features and quality that rivals pistols costing twice as much, and the METE SFT exemplifies this value proposition perfectly. The most striking aspect is what's included: the METE SFT comes factory optics-ready with the mounting plate installed, suppressor-height sights allowing co-witness with red dots, ambidextrous controls, aggressive grip texturing, match-grade barrel, and even a quality hard case and accessories - features that competitors charge hundreds extra for or don't include at all. The trigger is genuinely exceptional, rivaling Walther's renowned triggers with smooth take-up, crisp break at approximately 5.5 pounds, and positive reset. Professional reviewers consistently express surprise at the trigger quality given the price point. The ergonomics benefit from Canik's extensive testing, with the grip angle and texture providing natural pointing and secure purchase. The slide features lightning cuts reducing reciprocating mass for faster cycling and reduced muzzle flip. Front and rear slide serrations enable manipulation. The 18+1 capacity matches premium competitors. The cold-hammer-forged barrel delivers accuracy that exceeds expectations. Canik pistols have gained significant market share in competitive shooting, with METE models winning matches in Carry Optics and Limited divisions. For shooters seeking maximum features and performance without premium pricing, or as a second/backup gun where value matters, the METE SFT delivers capabilities that shame pistols costing significantly more.",
+    features: [
+      "Factory optics-ready slide with mounting plate included",
+      "Suppressor-height sights for co-witness with red dot optics",
+      "Exceptional trigger with smooth take-up, crisp break, positive reset",
+      "18+1 capacity matches premium competitors",
+      "Ambidextrous slide stop levers and magazine release",
+      "Lightning cuts in slide reduce reciprocating mass",
+      "Aggressive frame texturing for secure grip without abrasiveness",
+      "Cold-hammer-forged match-grade barrel for accuracy",
+      "Front and rear slide serrations for manipulation",
+      "Includes hard case, holster, cleaning kit, and accessories"
+    ],
+    benefits: [
+      "Unbeatable value with premium features included from factory",
+      "Trigger quality rivals pistols costing twice as much",
+      "Optics-ready saves hundreds compared to aftermarket milling",
+      "Growing competitive shooting adoption validates performance",
+      "Turkish manufacturing provides NATO-spec quality standards",
+      "Complete package ready for duty, competition, or carry use"
+    ],
+    useCases: [
+      "Budget-conscious competition shooting in Carry Optics division",
+      "Home defense with red dot optic and weapon light",
+      "First handgun offering premium features at entry-level price",
+      "Backup or secondary gun where value is paramount",
+      "Range and training use without concern about expensive gun wear",
+      "Concealed carry by those wanting full-size capability"
+    ],
+    technicalDetails: "The Canik METE SFT features suppressor-height steel sights with optics-ready slide. Trigger pulls approximately 5.5 lbs with short reset. Ships with two 18-round magazines, holster, magazine loader, cleaning kit, hard case, and optics mounting plate. Accessory rail for lights and lasers.",
+    whyChoose: "Choose the Canik METE SFT when you want maximum features and performance for minimum investment. The optics-ready slide, suppressor-height sights, exceptional trigger, and included accessories would cost hundreds extra from established manufacturers. Canik's growing reputation and competitive shooting success prove the METE SFT punches far above its price point. For smart shooters who value performance over brand names, the METE SFT is the obvious choice.",
+    seoKeywords: ["Canik METE SFT", "budget optics ready", "affordable competition pistol", "Turkish striker fired", "best value 9mm", "Canik METE review"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "glock-45-mos",
