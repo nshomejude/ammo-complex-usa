@@ -9578,7 +9578,7 @@ export const firearms: Firearm[] = [
       effectiveRange: "75 yards",
       muzzleVelocity: "1,200 fps (124gr)",
       muzzleEnergy: "396 ft-lbs (124gr)"
-    }
+    },
     barrelLength: "4.5 inches",
     weight: "27.2 oz",
     finish: "Black Polycoat"
