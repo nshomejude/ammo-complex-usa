@@ -1,5 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ContactWidget1 } from "@/components/ContactWidget1";
+import { ContactWidget2 } from "@/components/ContactWidget2";
+import { ContactWidget3 } from "@/components/ContactWidget3";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Globe, MapPin, Phone, Mail } from "lucide-react";
@@ -70,8 +73,17 @@ const Contact3 = () => {
         </div>
       </section>
 
+      {/* Contact Widgets */}
+      <section className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <ContactWidget1 />
+          <ContactWidget2 />
+          <ContactWidget3 />
+        </div>
+      </section>
+
       {/* Office Locations */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-12">
         <div className="space-y-12">
           {offices.map((office, idx) => (
             <div key={idx}>
