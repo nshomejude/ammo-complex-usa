@@ -10429,7 +10429,157 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "3.6 inches",
     weight: "25.3 oz",
-    finish: "Black Nitron"
+    finish: "Black Nitron",
+    shortDescription: "The SIG P320 X-Compact represents the perfect balance of concealability and shootability in the modular P320 family. Featuring the enhanced X-Series grip module with aggressive texturing, this compact powerhouse delivers full-size performance in a package designed for everyday carry.",
+    longDescription: "The SIG P320 X-Compact represents the perfect balance of concealability and shootability in the modular P320 family. Featuring the enhanced X-Series grip module with aggressive texturing, this compact powerhouse delivers full-size performance in a package designed for everyday carry. The flat trigger provides a crisp, clean break that serious shooters demand, while the optics-ready slide accepts a wide range of red dot sights. SIG's innovative modular design allows you to easily change grip sizes, calibers, and barrel lengths, making this one of the most versatile pistols on the market. The X-Compact bridges the gap between subcompact concealment and compact capability, offering 15+1 capacity in a package that conceals like a smaller gun but shoots like a full-size. The X-Series grip module provides superior ergonomics and control, while the flat trigger breaks cleanly at 90 degrees for improved accuracy. Whether you're carrying concealed, competing in Carry Optics, or simply want a do-everything defensive pistol, the X-Compact delivers exceptional performance without compromise.",
+    features: [
+      "X-Series enhanced grip module with aggressive texturing",
+      "Optics-ready slide with removable plate system",
+      "Flat X-Series trigger with 90° break",
+      "SIGLITE night sights standard",
+      "Modular design allows caliber and size changes",
+      "Enhanced takedown lever for easy disassembly",
+      "Reversible magazine catch",
+      "Loaded chamber indicator",
+      "Striker safety and disconnect safety",
+      "Compatible with full-size P320 magazines",
+      "Accessory rail for lights and lasers",
+      "Safe Action trigger system"
+    ],
+    benefits: [
+      "Perfect balance of size and capacity for concealed carry",
+      "Modular system offers unmatched versatility and future adaptability",
+      "Excellent ergonomics and grip texture provide superior control",
+      "Optics-ready for modern red dot sights without custom machining",
+      "Proven reliability in law enforcement use worldwide",
+      "Easy to shoot accurately despite compact size and reduced sight radius"
+    ],
+    useCases: [
+      "Everyday concealed carry as primary defensive weapon",
+      "Personal protection for civilians with carry permits",
+      "Duty backup weapon for law enforcement officers",
+      "Competition shooting in USPSA Carry Optics division",
+      "Home defense with superior capacity and accuracy",
+      "Training platform for defensive shooting courses"
+    ],
+    technicalDetails: "The SIG P320 X-Compact features an enhanced X-Series polymer grip module with aggressive texturing and undercut trigger guard for optimal hand placement. The 3.6-inch barrel uses conventional rifling with 1:10 right-hand twist optimized for 9mm projectiles from 115-147 grains. The optics-ready slide accepts most popular micro red dot sights including Romeo Zero, RMSc, and Shield RMSc footprints via adapter plates. SIGLITE tritium night sights provide co-witness capability. The flat X-Series trigger features approximately 5.5-lb pull weight with crisp 90-degree break and short reset. Internal striker safety, disconnect safety, and trigger safety ensure drop-safe operation. Nitron-finished stainless steel slide provides corrosion resistance. Ships with two 15-round magazines and accepts all larger P320 magazines. M1913 Picatinny rail accommodates weapon lights and lasers. Modular FCU allows caliber conversions and grip size changes.",
+    whyChoose: "Choose the SIG P320 X-Compact when you want a compact carry pistol that doesn't compromise on performance. The X-Series enhancements provide competition-grade ergonomics and trigger in a concealable package, while the modular design ensures your investment adapts to future needs. With proven reliability, exceptional shootability, and the versatility to accept optics, larger magazines, and caliber conversions, the X-Compact represents the pinnacle of modern carry pistol design.",
+    seoKeywords: ["SIG P320 X-Compact", "compact carry pistol", "modular concealed carry", "P320 compact", "optics ready carry gun", "X-Series pistol"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs (124gr)"
+    }
+  },
+  {
+    id: "sig-p320-compact",
+    name: "P320 Compact",
+    manufacturer: "SIG Sauer",
+    categorySlug: "striker-fired-pistols",
+    caliber: ["9mm"],
+    price: 599,
+    inStock: true,
+    description: "Versatile modular compact pistol for concealed carry and duty use.",
+    actionType: "Striker-Fired",
+    capacity: "15+1",
+    barrelLength: "3.9 inches",
+    weight: "26 oz",
+    finish: "Black Nitron",
+    shortDescription: "The SIG P320 Compact is the workhorse of the P320 family, offering exceptional versatility in a package that works equally well for concealed carry, duty use, and home defense. This model has been adopted by numerous law enforcement agencies worldwide, including serving as the basis for the U.S. Army's M17 service pistol.",
+    longDescription: "The SIG P320 Compact is the workhorse of the P320 family, offering exceptional versatility in a package that works equally well for concealed carry, duty use, and home defense. This model has been adopted by numerous law enforcement agencies worldwide, including serving as the basis for the U.S. Army's M17 service pistol. The compact grip frame provides excellent concealability while still accommodating 15 rounds of 9mm ammunition in the standard magazine. SIG's revolutionary modular design means the serialized fire control unit can be easily swapped between different grip modules, calibers, and barrel lengths - making this truly a platform rather than just a pistol. The smooth, consistent trigger and inherent accuracy make this an excellent choice for both new shooters and seasoned professionals. Unlike many compact pistols that compromise on shootability, the P320 Compact maintains excellent handling characteristics while reducing overall size. The 3.9-inch barrel provides an ideal balance between concealability and practical accuracy, while the compact grip frame fits a wide range of hand sizes comfortably. The ability to accept full-size P320 magazines makes this an incredibly versatile platform - concealed carry with flush 15-round magazines, or home defense with extended 21-round magazines. This modularity has made the P320 Compact the foundation for countless custom builds and specialized configurations.",
+    features: [
+      "Revolutionary modular design with removable FCU",
+      "Smooth, consistent trigger pull approximately 5.5-6 lbs",
+      "SIGLITE night sights standard for low-light capability",
+      "Ambidextrous slide catch lever for both right and left-handed shooters",
+      "Reversible magazine release for customizable operation",
+      "Nitron-finished stainless steel slide for corrosion resistance",
+      "Enhanced grip texturing for secure purchase",
+      "Striker-fired with internal safety systems including striker, disconnect, and trigger safeties",
+      "Loaded chamber indicator for visual confirmation",
+      "M1913 accessory rail for lights and lasers",
+      "Compatible with full-size P320 magazines for increased capacity",
+      "Easy takedown for cleaning without tools"
+    ],
+    benefits: [
+      "Excellent balance of size and capacity suitable for multiple roles",
+      "Proven military and law enforcement reliability in demanding conditions",
+      "Modular system offers unmatched adaptability for future needs",
+      "Smooth trigger with short reset enhances accuracy",
+      "Accepts larger capacity magazines for versatility",
+      "Easy to shoot accurately for all skill levels from beginner to expert"
+    ],
+    useCases: [
+      "Concealed carry for permit holders seeking capacity and accuracy",
+      "Law enforcement duty weapon for uniformed and plainclothes officers",
+      "Home defense with excellent capacity and controllability",
+      "Backup duty weapon providing full-size capability in compact package",
+      "Personal protection for civilians and security professionals",
+      "General purpose handgun for training and recreational shooting"
+    ],
+    technicalDetails: "The SIG P320 Compact features a polymer grip module with textured surfaces and undercut trigger guard. The 3.9-inch barrel uses conventional rifling with 1:10 right-hand twist optimized for 9mm projectiles. Compact slide and frame dimensions balance concealability with shootability. SIGLITE tritium night sights provide three-dot sight picture in all lighting conditions. Standard trigger pull weight approximately 5.5-6 pounds with smooth take-up and crisp break. Internal striker safety prevents firing pin movement unless trigger is fully pressed. Disconnect safety prevents out-of-battery firing. Trigger safety prevents trigger movement unless properly engaged. Nitron-finished stainless steel slide resists corrosion and wear. Ships with two 15-round steel magazines with witness holes. Accepts all larger P320 magazines including 17-round and 21-round capacities. M1913 Picatinny rail accommodates tactical lights and laser sights. Serialized fire control unit can be removed and installed in different grip modules, calibers, and barrel lengths without paperwork.",
+    whyChoose: "Choose the SIG P320 Compact when you want a versatile platform that adapts to your needs rather than forcing you to adapt to it. The proven reliability demonstrated through military adoption and law enforcement service worldwide ensures dependable performance when it matters most. The modular design means your investment grows with you - change grip sizes, add optics, convert calibers, all without buying a new gun. For shooters who value versatility, proven reliability, and the ability to customize their platform, the P320 Compact represents the foundation of the modern modular pistol concept.",
+    seoKeywords: ["SIG P320 Compact", "modular compact pistol", "P320 compact carry", "versatile 9mm pistol", "modular handgun", "P320 grip modules"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,165 fps (124gr)",
+      muzzleEnergy: "373 ft-lbs (124gr)"
+    }
+  },
+  {
+    id: "sig-p320-m18",
+    name: "P320 M18",
+    manufacturer: "SIG Sauer",
+    categorySlug: "striker-fired-pistols",
+    caliber: ["9mm"],
+    price: 749,
+    inStock: true,
+    description: "Civilian version of the U.S. military M18 service pistol.",
+    actionType: "Striker-Fired",
+    capacity: "17+1",
+    barrelLength: "3.9 inches",
+    weight: "28 oz",
+    finish: "Coyote Tan",
+    shortDescription: "The SIG P320 M18 brings military pedigree to civilian hands, offering the exact configuration carried by U.S. military forces worldwide. This compact carry model features the distinctive Coyote Tan PVD finish that's become synonymous with modern military service pistols.",
+    longDescription: "The SIG P320 M18 brings military pedigree to civilian hands, offering the exact configuration carried by U.S. military forces worldwide. This compact carry model features the distinctive Coyote Tan PVD finish that's become synonymous with modern military service pistols. Selected after one of the most rigorous handgun evaluations in military history, the M18 combines a compact grip frame with a carry-length slide for optimal balance between concealability and performance. The optics-ready slide comes equipped with a ROMEO1PRO red dot sight, while SIGLITE night sights provide backup iron sights for redundancy. The M18 represents the culmination of decades of combat experience and represents the highest standard in reliability, durability, and performance. The military's extensive testing included drop tests, mud tests, sand tests, extreme temperature testing, and accuracy requirements that exceeded previous standards. The M18 configuration was specifically chosen for its versatility - compact enough for vehicle operations and concealed carry by investigators, yet capable enough for frontline combat use. The modular design allows individual units to customize the platform for specific missions while maintaining parts commonality across the service. The inclusion of the ROMEO1PRO optic from the factory represents the military's recognition that red dot sights enhance shooter performance across all skill levels. For civilian shooters, the M18 offers the confidence of carrying the same pistol trusted by the world's premier fighting forces.",
+    features: [
+      "Military-grade Coyote Tan PVD finish for durability and corrosion resistance",
+      "ROMEO1PRO red dot optic included from factory",
+      "SIGLITE night sight backup irons for co-witness capability",
+      "Optics-ready slide with mounting plate system",
+      "Carry-length slide on compact frame for balanced handling",
+      "Military-spec trigger system with consistent 5.5-6 lb pull",
+      "Enhanced grip texturing for positive purchase in all conditions",
+      "Ambidextrous controls for versatile operation",
+      "Removable magwell for mission adaptability",
+      "Military-style lanyard loop for weapon retention",
+      "M1913 accessory rail for tactical lights and lasers",
+      "Modular fire control unit for caliber and size conversions"
+    ],
+    benefits: [
+      "Proven military reliability and durability through extensive testing",
+      "Red dot optic included from factory eliminates expensive upgrades",
+      "Distinctive military appearance with functional Coyote finish",
+      "Excellent out-of-the-box accuracy with quality optic",
+      "Optimal carry-size ergonomics balancing concealability and capability",
+      "Battle-tested design trusted by military forces worldwide"
+    ],
+    useCases: [
+      "Military and law enforcement duty weapon",
+      "Concealed carry with military pedigree and proven reliability",
+      "Competition shooting in USPSA Carry Optics division",
+      "Personal protection with red dot enhanced accuracy",
+      "Home defense with military-grade reliability",
+      "Tactical training courses and defensive shooting instruction"
+    ],
+    technicalDetails: "The SIG P320 M18 features military-specification components including Coyote Tan PVD-finished stainless steel slide for enhanced corrosion resistance and reduced signature. Compact polymer grip module with aggressive texturing and removable magwell allows mission customization. The 3.9-inch barrel uses 1:10 right-hand twist rifling. Carry-length slide provides improved sight radius while maintaining compact dimensions. Optics-ready slide accepts ROMEO1PRO via direct mounting and other optics via adapter plates. SIGLITE tritium night sights co-witness with red dot optics. Military-spec trigger pull approximately 5.5-6 pounds with consistent break. Internal striker, disconnect, and trigger safeties ensure drop-safe operation meeting military standards. Ships with two 17-round magazines and one 21-round magazine for extended capacity. Military-style lanyard loop prevents weapon loss during operations. M1913 Picatinny rail for tactical accessories. Modular FCU allows grip, barrel, and caliber changes while maintaining serialization. ROMEO1PRO features 3 MOA dot, 20,000-hour battery life, and side-loading battery compartment.",
+    whyChoose: "Choose the SIG P320 M18 when you want to carry the same pistol trusted by the U.S. military after the most rigorous handgun testing ever conducted. The included ROMEO1PRO optic provides immediate capability without the expense and hassle of aftermarket modifications. The distinctive Coyote Tan finish offers both functional benefits and unmistakable military heritage. With proven reliability through millions of rounds in service, modular adaptability, and factory red dot integration, the M18 represents the pinnacle of modern military pistol development available to civilians.",
+    seoKeywords: ["SIG P320 M18", "military M18 pistol", "M18 carry optics", "Coyote Tan P320", "military service pistol", "P320 with optic"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "382 ft-lbs (124gr)"
+    }
   },
   {
     id: "smith-mp-subcompact",
@@ -11830,7 +11980,47 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "3.9 inches",
     weight: "26.6 oz",
-    finish: "Black Nitron"
+    finish: "Black Nitron",
+    shortDescription: "The SIG P320 X-Carry stands as the ultimate expression of the carry-optimized pistol, combining a compact grip frame with a slightly longer slide for enhanced accuracy and reduced muzzle flip. This configuration has become the gold standard for serious concealed carriers who refuse to compromise on performance.",
+    longDescription: "The SIG P320 X-Carry stands as the ultimate expression of the carry-optimized pistol, combining a compact grip frame with a slightly longer slide for enhanced accuracy and reduced muzzle flip. This configuration has become the gold standard for serious concealed carriers who refuse to compromise on performance. The X-Series grip module features aggressive texturing and an extended beavertail for superior control, while the flat trigger delivers a crisp 90-degree break that competitors love. Factory-equipped with an optics-ready slide, the X-Carry seamlessly integrates modern red dot technology for faster target acquisition and enhanced accuracy. SIG's legendary modularity means you can adapt this platform to any mission, from deep concealment to duty use, simply by swapping components. The carry-length slide provides improved sight radius and reduced felt recoil compared to subcompacts, while the compact grip frame maintains excellent concealability. This balanced approach has made the X-Carry a favorite among competitive shooters in USPSA Carry Optics division, law enforcement professionals, and serious concealed carriers. With 17+1 capacity, aggressive grip texturing, and the ability to mount micro red dots without custom machining, the X-Carry represents the evolution of the modern defensive pistol.",
+    features: [
+      "X-Series grip module with enhanced ergonomics",
+      "Optics-ready slide with removable cover plate",
+      "Flat X-Series trigger for consistent break",
+      "SIGLITE night sights for low-light targeting",
+      "Carry-length slide on compact grip frame",
+      "Aggressive grip texturing for maximum control",
+      "Extended beavertail for comfortable grip",
+      "Modular FCU (Fire Control Unit) system",
+      "Reversible magazine release",
+      "Enhanced slide serrations front and rear",
+      "M1913 accessory rail",
+      "Striker indicator for loaded chamber"
+    ],
+    benefits: [
+      "Optimal balance of concealability and shootability for daily carry",
+      "Enhanced accuracy from longer sight radius compared to subcompacts",
+      "Modular design for maximum versatility and adaptability",
+      "Excellent natural pointability and ergonomics",
+      "Optics-ready for modern red dot sights without gunsmithing",
+      "Proven reliability across millions of rounds in service worldwide"
+    ],
+    useCases: [
+      "Concealed carry primary weapon for permit holders",
+      "Competition shooting in USPSA Carry Optics division",
+      "Law enforcement duty weapon for plainclothes officers",
+      "Personal defense for civilians and professionals",
+      "Training and instruction for defensive shooting",
+      "Vehicle carry weapon with enhanced accuracy potential"
+    ],
+    technicalDetails: "The SIG P320 X-Carry features the X-Series polymer grip module with aggressive surface texturing, extended beavertail, and undercut trigger guard for optimal ergonomics. The 3.9-inch barrel uses conventional 1:10 right-hand twist rifling optimized for 115-147 grain 9mm projectiles. Carry-length slide provides improved sight radius while maintaining compact overall dimensions. Optics-ready slide accepts Romeo1Pro and other micro red dots via adapter plates. SIGLITE tritium night sights co-witness with optics. Flat X-Series trigger features approximately 5.5-lb pull with 90-degree break and short reset. Internal striker, disconnect, and trigger safeties ensure drop-safe operation. Nitron-finished stainless steel slide resists corrosion. Ships with two 17-round magazines and accepts all P320 magazines. M1913 rail for lights and lasers. Modular FCU allows grip, barrel, and caliber changes.",
+    whyChoose: "Choose the SIG P320 X-Carry when you want a carry pistol that excels in every role without compromise. The carry-length slide provides full-size accuracy and control while the compact grip ensures excellent concealability. X-Series enhancements deliver competition-grade performance in a defensive package, while the modular design adapts to your evolving needs. Whether competing, carrying, or training, the X-Carry represents the pinnacle of modern carry pistol development.",
+    seoKeywords: ["SIG P320 X-Carry", "carry optics pistol", "modular carry gun", "P320 carry", "optics ready carry", "X-Series carry"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,175 fps (124gr)",
+      muzzleEnergy: "380 ft-lbs (124gr)"
+    }
   },
   {
     id: "ithaca-37-defense",
