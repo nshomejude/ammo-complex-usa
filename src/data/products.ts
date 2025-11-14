@@ -8005,9 +8005,58 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     inStock: true,
     category: "rifle",
     categorySlug: "243-winchester",
-    description: "Premium match-grade target ammunition",
+    description: "Premium match-grade target ammunition with Sierra MatchKing bullet",
     manufacturer: "Federal",
-    grainWeight: "105gr"
+    grainWeight: "105gr",
+    shortDescription: "Federal Gold Medal 105gr Sierra MatchKing represents the pinnacle of .243 Winchester match ammunition. Championship-grade precision combining Federal's manufacturing excellence with the world's most proven match bullet.",
+    longDescription: "Federal Premium Gold Medal 105-grain Sierra MatchKing ammunition represents the ultimate in .243 Winchester precision shooting performance, combining Federal's century of manufacturing expertise with Sierra's legendary MatchKing bullet. Gold Medal match ammunition has dominated competitive shooting since its introduction, earning more championship titles and setting more records than any competing match ammunition brand. The Sierra MatchKing 105-grain bullet represents optimal weight selection for .243 Winchester long-range accuracy, providing exceptional ballistic coefficient while maintaining sufficient velocity for flat trajectories and energy retention. Sierra manufactures MatchKing bullets using J4 Precision jackets - the finest match bullet jackets produced globally - with controlled jacket thickness variation under 0.0003 inches ensuring perfect concentricity. The bullet core is swaged from carefully selected lead wire under controlled pressure, creating uniform density throughout. The boat tail design is optimized for drag reduction with an angle proven through decades of competitive success. The hollow point cavity shifts the bullet's center of gravity rearward, enhancing stability for superior accuracy at extended ranges. Federal's Gold Medal loading process represents the pinnacle of ammunition manufacturing, with tolerances and quality control measures far exceeding standard production ammunition. Each powder charge is weighed and measured with precision equipment ensuring minimal variation from round to round - velocity extreme spread typically measures under 20 fps across production lots. The brass cases are manufactured to Federal's exacting specifications with uniform wall thickness, precise flash hole diameter, and consistent primer pocket depth. Federal's proprietary primer formulation provides consistent ignition characteristics critical for match accuracy. The assembly process includes multiple dimensional inspections, ensuring overall cartridge length consistency for uniform chambering and optimal throat engagement. Gold Medal ammunition is periodically test-fired from precision benchrest rifles, validating lot accuracy before shipping. This ammunition is trusted by F-Class competitors, benchrest shooters, and varmint hunters demanding the absolute best performance from their .243 Winchester rifles. When championships are decided by fractions of an inch, when precision matters more than price, Federal Gold Medal 105gr delivers the accuracy serious competitors demand.",
+    features: [
+      "Sierra MatchKing 105gr bullet - proven match bullet design",
+      "Boat tail hollow point for optimal ballistic coefficient",
+      "J4 Precision jackets with controlled thickness variation",
+      "Precision-swaged lead core for uniform density",
+      "Gold Medal quality control with minimal ES/SD",
+      "Match-grade powder charges weighed individually",
+      "Federal Premium brass with uniform wall thickness",
+      "Proprietary match primer formulation",
+      "Multiple dimensional inspections during assembly",
+      "Lot-tested for accuracy from precision rifles"
+    ],
+    benefits: [
+      "Championship-grade accuracy from factory ammunition",
+      "Consistent velocities enable precise ballistic calculations",
+      "Federal's 100+ year manufacturing expertise",
+      "Sierra bullet proven by decades of competitive success",
+      "Eliminates handloading for match-level performance",
+      "Trusted by professional competitive shooters"
+    ],
+    useCases: [
+      "F-Class and benchrest competition shooting",
+      "Long-range precision target practice",
+      "Varmint hunting requiring extreme accuracy",
+      "Load development baseline and comparison",
+      "Precision rifle training and skill development",
+      "1,000-yard shooting where BC matters most"
+    ],
+    technicalDetails: "Federal Gold Medal .243 Winchester 105gr Sierra MatchKing achieves approximately 3,140 fps muzzle velocity from 24-inch barrels, delivering 2,302 foot-pounds of muzzle energy. The Sierra MatchKing 105gr bullet features a G1 ballistic coefficient of 0.525 and G7 BC of 0.269, providing exceptional trajectory flatness and minimal wind drift. At 500 yards, the bullet maintains approximately 2,350 fps with 1,291 foot-pounds of energy, remaining supersonic well beyond 1,000 yards at sea level. The boat tail design features an 11-degree angle optimized through wind tunnel testing and decades of competitive validation. Jacket thickness measures 0.020-0.025 inches with controlled variation ensuring concentricity within 0.0001 inches. The hollow point cavity depth is precisely controlled to shift the center of gravity rearward by approximately 15% compared to flat-base bullets, enhancing gyroscopic stability. Federal's match-grade powder is selected for temperature stability with velocity variation typically under 1.5 fps per degree Fahrenheit. Velocity standard deviation measures 8-15 fps across production lots - consistency rivaling careful handloads. Accuracy from quality bolt-action rifles consistently produces 0.3-0.6 MOA groups at 100 yards, with many precision rifles achieving sub-0.5 MOA performance. The ammunition performs optimally in SAAMI .243 Winchester chambers with standard 1:10 or faster twist rates.",
+    whyChoose: "Choose Federal Gold Medal when you demand absolute precision and need ammunition performing at championship levels. Gold Medal represents Federal's commitment to competitive shooters - this isn't just marketing, it's ammunition engineered specifically for winning matches and setting records. The combination of Sierra MatchKing bullets with Federal's manufacturing excellence creates synergy that delivers accuracy exceeding what either component could achieve alone. Sierra's decades of competitive bullet dominance prove the MatchKing design works when championships are on the line. Federal's Gold Medal loading process elevates that proven bullet with quality control and consistency that separate winners from participants. The low extreme spread and standard deviation mean your ballistic calculations remain accurate shot after shot, critical when engaging targets at extended ranges where velocity variations translate to vertical dispersion. For competitive shooters, the ammunition's lot-to-lot consistency eliminates re-zeroing and trajectory verification when purchasing new ammunition. The 105-grain weight provides the sweet spot for .243 Winchester long-range work - heavy enough for exceptional BC and wind resistance, yet not so heavy as to sacrifice velocity or generate excessive recoil. For varmint hunters, Gold Medal's accuracy enables confident shots on prairie dogs and rockchucks at ranges where lesser ammunition becomes unreliable. The ammunition's temperature stability ensures your carefully-developed data remains valid whether shooting in summer heat or cool morning conditions. When you choose Federal Gold Medal, you're choosing ammunition with more championship victories than any competing brand - that's not advertising, it's documented competitive history. For shooters who understand that equipment quality matters, who refuse to let ammunition limit their potential, Federal Gold Medal Sierra MatchKing delivers the accuracy serious competitors demand.",
+    seoKeywords: [
+      "federal gold medal 243",
+      "sierra matchking 243",
+      "105 grain 243 win",
+      "match grade 243",
+      "competition 243 ammo",
+      "buy gold medal 243",
+      "precision 243 winchester",
+      "f-class 243 ammunition",
+      "federal match 243",
+      "accurate 243 ammo",
+      "benchrest 243",
+      "long range 243",
+      "varmint 243 match",
+      "gold medal sierra",
+      "243 win match grade"
+    ]
   },
   {
     id: "243-remington-core-lokt-100",
@@ -8018,9 +8067,58 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     inStock: true,
     category: "rifle",
     categorySlug: "243-winchester",
-    description: "Proven hunting ammunition for deer",
+    description: "Proven hunting ammunition for deer-sized game with legendary Core-Lokt technology",
     manufacturer: "Remington",
-    grainWeight: "100gr"
+    grainWeight: "100gr",
+    shortDescription: "Remington Core-Lokt 100gr delivers proven .243 Winchester hunting performance for deer and antelope. The deadliest mushroom in the woods now optimized for flat-shooting .243.",
+    longDescription: "Remington Core-Lokt .243 Winchester 100-grain Pointed Soft Point ammunition represents the convergence of America's most popular deer cartridge with the most successful big-game bullet design in history. Since Core-Lokt's introduction in 1939, this mechanical core-locking technology has proven its effectiveness on millions of big-game animals worldwide, earning its reputation as 'the deadliest mushroom in the woods.' The .243 Winchester cartridge, introduced by Winchester in 1955, quickly became America's favorite dual-purpose cartridge - equally capable of precise varmint shooting and ethical deer hunting. The 100-grain bullet weight represents the optimal choice for big-game hunting with .243 Winchester: heavy enough to deliver adequate penetration and energy retention on deer-sized game, yet light enough to maintain the flat trajectories that made .243 famous. Core-Lokt's mechanical locking mechanism - the lead core is literally locked to the copper jacket through a precision internal ring - prevents core-jacket separation during expansion and impact with bone. This ensures the bullet retains sufficient weight for deep penetration while expanding reliably for rapid energy transfer. The pointed soft point design provides excellent ballistic coefficient for flat trajectories, critical when shooting across open country where antelope and mule deer are often encountered at extended ranges. The exposed lead tip ensures reliable expansion even at the reduced velocities encountered at longer ranges or when shooting through intermediate barriers. Remington manufactures Core-Lokt ammunition at their facilities, maintaining quality control standards developed through over 200 years of American ammunition production. Each cartridge receives multiple inspections during assembly, ensuring dimensional consistency and component quality. The ammunition achieves velocities around 2,960 fps from 24-inch barrels, generating over 1,940 foot-pounds of muzzle energy - more than adequate for any deer-sized game animal. For hunters seeking proven performance on whitetail deer, mule deer, pronghorn antelope, and similar-sized game, Remington Core-Lokt .243 Winchester 100gr delivers time-tested reliability that has filled more game tags than perhaps any other ammunition combination in this caliber.",
+    features: [
+      "Proven Core-Lokt bullet technology since 1939",
+      "100-grain pointed soft point optimized for .243 Win",
+      "Mechanical core-locking prevents jacket separation",
+      "Exposed lead tip ensures reliable expansion",
+      "Tapered copper jacket controls expansion rate",
+      "Excellent ballistic coefficient for flat trajectory",
+      "Deep penetration capability for ethical kills",
+      "Consistent weight retention through bone",
+      "Premium brass cases for reliable extraction",
+      "Non-corrosive primers for long-term storage"
+    ],
+    benefits: [
+      "Proven track record on millions of deer-sized animals",
+      "Reliable expansion across wide velocity range",
+      "Deep penetration ensures clean, ethical kills",
+      "Flat trajectory enables longer-range shots",
+      "Affordable pricing for premium hunting performance",
+      "Widely available and time-tested reliability"
+    ],
+    useCases: [
+      "Whitetail deer hunting in varied terrain",
+      "Pronghorn antelope hunting in open country",
+      "Mule deer hunting at moderate to long ranges",
+      "Feral hog control and management",
+      "Coyote hunting with adequate energy retention",
+      "General medium-game hunting across North America"
+    ],
+    technicalDetails: "Remington Core-Lokt .243 Winchester 100gr PSP achieves approximately 2,960 fps muzzle velocity from 24-inch barrels, delivering 1,945 foot-pounds of muzzle energy. From popular 22-inch hunting rifles, velocity is approximately 2,900 fps with 1,867 foot-pounds. At 300 yards, the bullet maintains approximately 2,280 fps with 1,154 foot-pounds of energy - more than adequate for deer-sized game. The 100-grain bullet weight offers sectional density of 0.242, ensuring adequate penetration through heavy muscle and bone on broadside and quartering shots. Core-Lokt bullets typically expand to 1.6-1.9x original caliber while retaining 70-85% of original weight - optimal balance between expansion and penetration for deer-sized game. The mechanical locking ring prevents core-jacket separation even when striking shoulder bones or passing through ribcage. Terminal ballistics testing demonstrates reliable expansion down to approximately 1,900 fps impact velocity, ensuring performance at extended ranges beyond 300 yards. The pointed soft point design provides a ballistic coefficient around 0.355, yielding trajectory drop of approximately 6.8 inches at 300 yards when zeroed at 200 yards. Velocity standard deviation typically measures 20-30 fps - consistent enough for hunting accuracy requirements. Accuracy from quality .243 Winchester rifles averages 1.0-2.0 MOA, more than sufficient for ethical shot placement on big game.",
+    whyChoose: "Choose Remington Core-Lokt when you want proven, time-tested .243 Winchester hunting performance backed by over eight decades of successful hunts on deer-sized game. Core-Lokt isn't the newest bullet design or the most technologically advanced - it's something more valuable: proven reliability across every conceivable hunting scenario with .243 Winchester. The mechanical core-locking feature ensures the bullet performs as designed regardless of impact angle, striking velocity, or intermediate barriers encountered. Unlike lighter varmint bullets that may fragment on heavy bone, or heavier bullets that sacrifice velocity and flat trajectory, the 100-grain Core-Lokt provides the sweet spot for .243 deer hunting. The pointed soft point design delivers ballistic efficiency for confident shots across open country where pronghorn and mule deer are often encountered, while the exposed lead tip ensures reliable expansion at impact velocities as low as 1,900 fps - critical when shots extend beyond 300 yards. Remington's manufacturing consistency ensures the ammunition you purchase today will perform identically to ammunition purchased next season - critical reliability for hunters who verify zero before season and trust their ammunition through hunting season. Core-Lokt's affordability means you can practice with the same ammunition you hunt with, eliminating point-of-impact shifts that occur when zeroing with cheaper ammunition but hunting with premium loads. The .243 Winchester with 100-grain Core-Lokt has cleanly taken countless whitetails, mule deer, and pronghorn across North America - that's not marketing, it's documented hunting success spanning seven decades. For hunters valuing proven performance over marketing claims, seeking ammunition that delivers reliable results season after season, Remington Core-Lokt represents the gold standard in traditional .243 Winchester hunting ammunition.",
+    seoKeywords: [
+      "remington core-lokt 243",
+      "243 winchester deer ammo",
+      "100 grain 243 hunting",
+      "buy core-lokt 243",
+      "remington 243 win",
+      "deer hunting 243",
+      "243 win hunting ammo",
+      "best 243 deer ammo",
+      "core lokt 100gr",
+      "243 winchester core-lokt",
+      "whitetail 243 ammunition",
+      "remington hunting 243",
+      "proven 243 ammo",
+      "243 win psp",
+      "reliable 243 hunting"
+    ]
   },
   {
     id: "243-remington-premier-90",
