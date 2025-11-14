@@ -1,5 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ContactWidget1 } from "@/components/ContactWidget1";
+import { ContactWidget2 } from "@/components/ContactWidget2";
+import { ContactWidget3 } from "@/components/ContactWidget3";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,49 +23,16 @@ const Contact = () => {
       
       <main className="container mx-auto px-4 py-12">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-muted-foreground text-lg">
+          <h1 className="text-4xl font-bold mb-4 text-center">Contact Us</h1>
+          <p className="text-muted-foreground text-lg text-center">
             Have questions? Our team is here to help with your ammunition needs.
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-3 mb-12">
-          <Card className="border-tactical/30">
-            <CardContent className="p-6 text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-tactical/10">
-                <Phone className="h-8 w-8 text-tactical" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Phone Support</h3>
-              <p className="text-muted-foreground mb-3">Call us for immediate assistance</p>
-              <p className="text-lg font-semibold text-tactical">1-800-ARMS-COMPLEX</p>
-              <p className="text-sm text-muted-foreground mt-1">(1-800-276-7266)</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-tactical/30">
-            <CardContent className="p-6 text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-tactical/10">
-                <Mail className="h-8 w-8 text-tactical" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Email Support</h3>
-              <p className="text-muted-foreground mb-3">Send us a detailed message</p>
-              <p className="text-sm font-semibold text-tactical break-all">support@armscomplex.com</p>
-              <p className="text-sm text-muted-foreground mt-1">Response within 24 hours</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-tactical/30">
-            <CardContent className="p-6 text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-tactical/10">
-                <Clock className="h-8 w-8 text-tactical" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Business Hours</h3>
-              <p className="text-muted-foreground mb-3">We're available to help</p>
-              <p className="text-sm font-semibold">Monday - Friday</p>
-              <p className="text-sm text-muted-foreground">9:00 AM - 6:00 PM EST</p>
-              <p className="text-sm text-muted-foreground mt-1">Closed Weekends & Holidays</p>
-            </CardContent>
-          </Card>
+        <div className="grid gap-6 lg:grid-cols-3 mb-12">
+          <ContactWidget1 />
+          <ContactWidget2 />
+          <ContactWidget3 />
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">

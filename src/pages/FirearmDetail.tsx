@@ -14,7 +14,7 @@ import { firearms as rawFirearms } from "@/data/firearms";
 import { firearmCategories } from "@/data/firearmCategories";
 import { products as rawProducts } from "@/data/products";
 import { addFirearmVariations, addProductVariations } from "@/utils/addDefaultVariations";
-import { Shield, Phone, Mail, MapPin, AlertTriangle, CheckCircle, Target, Award } from "lucide-react";
+import { Shield, Phone, Mail, MapPin, AlertTriangle, CheckCircle, Target, Award, AlertCircle, ShoppingCart } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
 import { useEffect } from "react";
@@ -154,9 +154,17 @@ const FirearmDetail = () => {
               </div>
             </div>
 
+            <Alert className="mb-6 border-red-500 bg-red-500/10">
+              <AlertCircle className="h-4 w-4 text-red-500" />
+              <AlertTitle className="text-red-500">FFL Transfer Required</AlertTitle>
+              <AlertDescription className="text-red-500/90">
+                This firearm must be transferred to a licensed FFL dealer. Background check and age verification (21+ for handguns, 18+ for long guns) required by federal law.
+              </AlertDescription>
+            </Alert>
+
             <div className="mb-6">
               <div className="flex items-baseline gap-4 mb-2">
-                <span className="text-4xl font-bold text-tactical">${firearm.price.toFixed(2)}</span>
+                <span className="text-4xl font-bold text-primary">${firearm.price.toFixed(2)}</span>
                 {firearm.inStock ? (
                   <Badge className="bg-tactical text-tactical-foreground">Available</Badge>
                 ) : (
@@ -165,6 +173,41 @@ const FirearmDetail = () => {
               </div>
               <p className="text-sm text-muted-foreground">Price may vary by location and FFL dealer fees apply</p>
             </div>
+
+            {firearm.quantityVariations && firearm.quantityVariations.length > 0 && (
+              <div className="mb-6">
+                <p className="text-sm font-medium mb-3">Select Quantity:</p>
+                <div className="flex flex-wrap gap-2">
+                  {firearm.quantityVariations.map((variant, idx) => (
+                    <button
+                      key={idx}
+                      className={`px-4 py-2.5 text-sm font-semibold rounded-lg border-2 transition-all duration-200 ${
+                        variant.quantity === 1
+                          ? 'bg-primary text-primary-foreground border-primary shadow-md scale-105'
+                          : variant.inStock
+                          ? 'bg-background border-border hover:border-primary hover:bg-primary/5 hover:scale-105'
+                          : 'bg-muted text-muted-foreground border-border opacity-50 cursor-not-allowed'
+                      }`}
+                      disabled={!variant.inStock}
+                    >
+                      Qty: {variant.quantity}
+                      <span className="block text-xs mt-0.5">
+                        ${variant.price.toFixed(2)}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <Button 
+              size="lg" 
+              className="w-full mb-6"
+              disabled={!firearm.inStock}
+            >
+              <ShoppingCart className="mr-2 h-5 w-5" />
+              Add to Cart
+            </Button>
 
             {/* Shipping Calculator */}
             <Card className="mb-6 border-tactical/30 bg-tactical/5">
