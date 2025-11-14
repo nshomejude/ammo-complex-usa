@@ -515,7 +515,56 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4.25 inches",
     weight: "27.2 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Heckler & Koch USP (Universal Self-loading Pistol) combines German engineering precision with combat-proven reliability. Trusted by special forces and law enforcement units worldwide including U.S. SOCOM.",
+    longDescription: "The Heckler & Koch USP represents German military engineering at its finest, designed to meet the most demanding requirements for reliability, accuracy, and durability. Developed in the early 1990s, the USP was HK's first polymer-framed pistol, incorporating lessons learned from decades of manufacturing military firearms. The design brief required a pistol capable of firing +P+ ammunition continuously, functioning reliably after saltwater immersion, and maintaining accuracy through tens of thousands of rounds - requirements that exceed what most pistols will ever face. HK exceeded these requirements spectacularly. The USP features a proprietary recoil reduction system that uses a unique spring-damper in the recoil assembly, reducing felt recoil by approximately 30% compared to similar pistols. This makes the USP exceptionally controllable, particularly in .40 S&W and .45 ACP chamberings. The modular design allows conversion between nine different trigger configurations including traditional double-action/single-action, double-action only, and HK's LEM (Law Enforcement Modification) system. The reinforced polymer frame is virtually indestructible while the slide machined from solid steel bar stock features HK's proprietary corrosion-resistant coating. The cold-hammer-forged polygonal barrel delivers match-grade accuracy and extended service life. Adopted by elite military units including U.S. Special Operations Command and German special forces, the USP has proven itself in the world's harshest combat environments from desert heat to arctic cold to maritime operations.",
+    features: [
+      "Patented recoil reduction system reduces felt recoil by 30%",
+      "Modular trigger system with nine different firing mode configurations",
+      "Reinforced polymer frame for exceptional durability",
+      "Cold-hammer-forged polygonal barrel for accuracy and longevity",
+      "Oversized controls for operation with gloves or under stress",
+      "Ambidextrous magazine release and safety/decocker",
+      "Mechanical recoil reduction system extends component life",
+      "Universal mounting grooves for accessory attachment",
+      "Corrosion-resistant hostile environment finish",
+      "Proven through SOCOM testing and military adoption"
+    ],
+    benefits: [
+      "Special operations proven reliability in extreme conditions",
+      "Exceptional recoil management for faster accurate follow-up shots",
+      "Legendary HK quality and precision manufacturing",
+      "Modular design allows customization for specific mission requirements",
+      "Outstanding durability with documented 100,000+ round service life",
+      "German engineering excellence backed by military heritage"
+    ],
+    useCases: [
+      "Special operations and military special forces missions",
+      "Law enforcement tactical teams and SWAT operations",
+      "Personal defense for those demanding ultimate reliability",
+      "Duty weapon for agencies specifying HK quality standards",
+      "Competition shooting in tactical and stock divisions",
+      "Maritime and hostile environment operations"
+    ],
+    technicalDetails: "The HK USP employs a modified Browning-type recoil operating system enhanced with HK's proprietary buffer system. The recoil assembly includes a captive recoil spring with a special spring damper element that absorbs recoil energy, reducing stress on the pistol and shooter. The barrel is cold-hammer-forged from high-grade steel with polygonal rifling that increases velocity, improves accuracy, and extends barrel life compared to conventional rifling. The reinforced polymer frame contains metal inserts at high-stress points and uses HK's hostile environment corrosion-resistant coating on metal components. The trigger system offers nine configurations: Variant 1 (DA/SA with manual safety), Variant 2 (DA/SA with decocker), Variant 3 (DA/SA with manual safety and decocker), Variant 4 (DA only with manual safety), Variant 5 (DA only with decocker), Variant 6 (DAO), Variant 7 (DAO with no control lever), Variant 9 (SA only), and Variant 10 (DA/SA with decocker and additional safety features). The LEM trigger provides consistent double-action-like pull for every shot with pre-cocked striker. Magazine capacity varies by caliber: 15 rounds (9mm), 13 rounds (.40 S&W), 12 rounds (.45 ACP). The USP passed extensive military trials including 91-meter drop tests, 6-meter underwater firing, and extreme temperature testing from -40°F to 140°F.",
+    whyChoose: "Choose the HK USP when absolute reliability and performance are non-negotiable requirements. This isn't a pistol for casual shooters - it's a tool designed for professionals who depend on their equipment in life-threatening situations. The USP's adoption by U.S. Special Operations Command came after the most rigorous testing program imaginable, including requirements that would destroy lesser pistols. The recoil reduction system isn't marketing hype - it's a genuine engineering advantage that makes the USP noticeably softer shooting than competitors, enabling faster accurate fire particularly with powerful calibers. The modular trigger system provides flexibility unmatched by other designs, allowing configuration for specific mission requirements or user preferences. HK's manufacturing standards are legendary in the industry - tolerances measured in fractions of millimeters, quality control that rejects parts other manufacturers would accept, and testing that ensures every pistol meets military specifications. The polygonal barrel delivers measurably better accuracy and velocity than conventional rifling while lasting significantly longer. While the USP costs more than many competitors, the investment buys German precision engineering, special operations-proven reliability, and a pistol that will likely outlast its owner. For military, law enforcement, or serious civilians who refuse to compromise on quality, the USP represents one of the finest service pistols ever manufactured.",
+    seoKeywords: [
+      "hk usp for sale",
+      "heckler koch usp",
+      "buy hk usp",
+      "usp pistol",
+      "hk usp 9mm",
+      "german service pistol",
+      "usp tactical",
+      "hk usp price",
+      "heckler koch pistol",
+      "military duty pistol",
+      "usp .45 acp",
+      "hk usp review",
+      "socom pistol",
+      "german police pistol",
+      "usp holster"
+    ]
   },
   {
     id: "springfield-xd",
@@ -722,7 +771,63 @@ export const firearms: Firearm[] = [
     capacity: "20+1",
     barrelLength: "4.8 inches",
     weight: "20.8 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The FN Five-SeveN is the revolutionary handgun chambered in high-velocity 5.7×28mm. Features 20-round capacity, armor-piercing capability with SS190 ammunition, and negligible recoil.",
+    longDescription: "The FN Five-SeveN represents a radical departure from conventional pistol design, chambered in the unique 5.7×28mm cartridge originally developed for the FN P90 submachine gun. This pistol-caliber round travels at rifle velocities (over 2,000 feet per second), delivering flat trajectory, minimal recoil, and barrier penetration capabilities that revolutionize handgun performance. FN Herstal, Belgium's legendary firearms manufacturer with over 130 years of military production experience, developed the Five-SeveN specifically for military and law enforcement personnel requiring superior penetration of body armor and barriers while maintaining pistol portability. The polymer construction keeps unloaded weight under 21 ounces - remarkably light for a full-size service pistol - while the delayed blowback operating system tames the high-velocity cartridge into an extraordinarily soft-shooting platform. The 20-round standard capacity provides substantial firepower in a package no larger than conventional 9mm pistols. The cartridge's small diameter allows this high capacity in a grip that accommodates most hand sizes comfortably. The ambidextrous controls and accessory rail make the Five-SeveN fully ambidextrous and tactical-ready. While civilian ammunition features lead-core projectiles rather than the armor-piercing SS190 reserved for military/law enforcement, the high velocity still delivers impressive performance including barrier penetration through auto glass, wallboard, and intermediate barriers that would stop conventional handgun rounds. Adopted by numerous military special operations units and counter-terrorism teams worldwide, the Five-SeveN offers capabilities simply impossible with traditional pistol cartridges.",
+    features: [
+      "Unique 5.7×28mm caliber with rifle-like velocity over 2,000 fps",
+      "Extraordinary 20-round standard capacity in pistol-size package",
+      "Extremely lightweight at 20.8 ounces unloaded",
+      "Minimal recoil despite high-velocity cartridge",
+      "Single-action trigger with safe, consistent pull",
+      "Ambidextrous magazine release and safety controls",
+      "MIL-STD-1913 accessory rail for lights and lasers",
+      "Adjustable three-dot combat sights",
+      "Cold-hammer-forged, chrome-lined barrel",
+      "Delayed blowback operation eliminates need for locked breech"
+    ],
+    benefits: [
+      "Superior barrier penetration through auto glass, barriers, and body armor",
+      "Flat trajectory simplifies long-range pistol shooting",
+      "Minimal recoil enables rapid accurate follow-up shots",
+      "High capacity provides substantial firepower advantage",
+      "Light weight reduces carry fatigue",
+      "FN military heritage ensures exceptional quality and reliability"
+    ],
+    useCases: [
+      "Military special operations requiring armor penetration",
+      "Counter-terrorism and hostage rescue operations",
+      "Executive protection and security details",
+      "Personal defense where barrier penetration is critical",
+      "Vehicle defense against threats behind cover",
+      "Specialized law enforcement tactical applications"
+    ],
+    technicalDetails: "The FN Five-SeveN operates via delayed blowback action rather than the locked breech typically required for high-pressure cartridges. This is possible because the 5.7×28mm case design and operating pressure allow safe delayed blowback operation. The barrel is cold-hammer-forged from chrome-plated steel for durability and accuracy. The polymer frame and slide cover assembly keep weight minimal while providing necessary structural support. The single-action trigger system provides approximately 4.5-pound pull weight with short reset. The magazine holds 20 rounds of 5.7×28mm ammunition with steel body construction and polymer follower. The SS197SR civilian sporting round fires a 40-grain V-Max bullet at approximately 2,034 fps from the pistol's 4.8-inch barrel, generating 367 foot-pounds of muzzle energy. The military/LE SS190 armor-piercing round fires a steel-core projectile capable of defeating IIIA body armor. Overall dimensions measure 8.2 inches length, 5.7 inches height, and 1.4 inches width. The pistol features fully ambidextrous controls including magazine release, manual safety, and slide stop. Accessory rail accepts standard MIL-STD-1913 compatible lights and lasers. FN's quality control ensures each Five-SeveN meets military specifications for reliability and accuracy.",
+    whyChoose: "Choose the FN Five-SeveN when you need capabilities that conventional pistol calibers simply cannot deliver. The 5.7×28mm cartridge offers performance characteristics closer to rifle rounds than pistol cartridges, including flat trajectory out to 100+ yards and exceptional barrier penetration. For scenarios involving vehicle defense, shooting through barriers, or potential threats wearing body armor, the Five-SeveN provides decisive advantages. The minimal recoil despite high velocity makes it exceptionally easy to shoot accurately and quickly - new shooters are consistently amazed at how soft-shooting the Five-SeveN feels despite launching projectiles at rifle velocities. The 20-round capacity provides firepower typically associated with full-size service pistols in a package that's actually lighter than most 9mm pistols thanks to polymer construction. The ambidextrous controls make it equally suitable for left or right-handed shooters without compromise. FN's military manufacturing pedigree ensures quality that meets genuine military specifications - this isn't marketing, it's pistols built to the same standards as FN's military contracts. While ammunition costs more than common calibers, the performance advantages justify the expense for those who need the Five-SeveN's unique capabilities. If you're looking for a conventional pistol, choose something else. But if you need barrier penetration, high capacity, minimal recoil, and performance that challenges rifle capabilities, the Five-SeveN is unmatched.",
+    seoKeywords: [
+      "fn five-seven for sale",
+      "5.7x28mm pistol",
+      "buy fn five seven",
+      "five seven price",
+      "armor piercing pistol",
+      "fn 5.7 pistol",
+      "high velocity handgun",
+      "20 round pistol",
+      "fn herstal five seven",
+      "5.7mm handgun",
+      "barrier penetration pistol",
+      "fn five seven review",
+      "tactical pistol 5.7",
+      "fn pistol high capacity",
+      "five seven holster"
+    ],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      maxRange: "1,800 yards",
+      muzzleVelocity: "2,034 fps (SS197SR)",
+      muzzleEnergy: "367 ft-lbs",
+      accuracy: "2-inch groups at 25 yards"
+    }
   },
   {
     id: "ruger-american",
@@ -865,7 +970,56 @@ export const firearms: Firearm[] = [
     capacity: "18+1",
     barrelLength: "4.46 inches",
     weight: "29 oz",
-    finish: "Black Cerakote"
+    finish: "Black Cerakote",
+    shortDescription: "The Canik TP9SF delivers premium features at an unbeatable price point. Turkish-made quality with 18+1 capacity, excellent trigger, and complete accessory package that includes holster and magazines.",
+    longDescription: "The Canik TP9SF (Trigger Positive 9mm Single-Action Fire Control) represents the modern era of global firearms manufacturing where traditional geographic boundaries no longer define quality. Manufactured by Samsun Yurt Savunma (Canik) in Turkey using CNC machinery and quality standards that rival European manufacturers, the TP9SF delivers features and performance that compete with pistols costing two to three times its price. Canik's parent company has produced firearms for military contracts since 1997, with their pistols now serving Turkish military and police forces. The TP9SF gained widespread attention in the American market for delivering genuinely excellent triggers, high capacity, and complete accessory packages at prices that seemed almost unbelievable. The single-action trigger breaks crisply at approximately 4.5 pounds with minimal take-up and short reset - trigger quality that matches or exceeds many $700+ competitors. The 18-round magazine capacity exceeds most full-size 9mm pistols, providing a firepower advantage. The Warren Tactical-style sights are drift-adjustable and offer excellent visibility. The pistol ships with a quality polymer holster, two magazines, interchangeable backstraps, cleaning kit, and magazine loader - accessories that would cost $100+ purchased separately. The cold-hammer-forged barrel delivers accuracy exceeding 3-inch groups at 25 yards. While budget-priced, the TP9SF doesn't feel cheap - controls operate positively, the Cerakote finish is durable, and the overall fit and finish rival much more expensive pistols. For shooters seeking maximum features and performance per dollar, the Canik TP9SF has disrupted the market by proving that quality pistols can be affordable.",
+    features: [
+      "Exceptional single-action trigger with 4.5-pound crisp break",
+      "High 18-round magazine capacity in standard package",
+      "Cold-hammer-forged barrel for accuracy and durability",
+      "Warren Tactical-style sights drift-adjustable for windage",
+      "Cerakote finish provides superior corrosion and wear resistance",
+      "MIL-STD-1913 accessory rail for tactical light mounting",
+      "Interchangeable backstraps for customized grip fit",
+      "Loaded chamber indicator and striker status indicator",
+      "Includes holster, two magazines, magazine loader, and cleaning kit",
+      "Decocker feature allows safe trigger release without dry-firing"
+    ],
+    benefits: [
+      "Outstanding value with premium features at budget price",
+      "Excellent trigger eliminates need for aftermarket upgrades",
+      "Complete accessory package saves $100+ in additional purchases",
+      "High capacity provides tactical advantage over competitors",
+      "Quality manufacturing from military contract manufacturer",
+      "Superior Cerakote finish versus basic coatings on budget pistols"
+    ],
+    useCases: [
+      "Home defense with high capacity and included accessories",
+      "Budget-conscious concealed carry for those preferring full-size",
+      "Range training without concern for wear on expensive pistol",
+      "Competition shooting in Production-style divisions",
+      "First handgun offering premium features at entry price",
+      "Backup or vehicle gun where value maximizes options"
+    ],
+    technicalDetails: "The Canik TP9SF operates via short-recoil, modified Browning-type locked breach action. The barrel is cold-hammer-forged from high-grade steel and chrome-lined for corrosion resistance and extended life. The slide is machined from ordnance-grade steel and receives Cerakote finish providing superior corrosion and wear resistance compared to basic nitride or oxide finishes. The polymer frame features steel inserts at slide rail contact points for durability. The trigger mechanism provides single-action operation with approximately 4.5-pound pull weight, short take-up, crisp break, and audible/tactile reset at 0.25 inches. Safety features include trigger safety blade, firing pin block, and loaded chamber indicator visible and tactile. The pistol includes decocker button that safely releases striker tension without requiring dry-fire. Magazine capacity is 18 rounds using steel body with polymer floorplate. Sights are Warren Tactical-style with white dot front and serrated rear, drift-adjustable for windage. Overall dimensions measure 7.7 inches length, 5.75 inches height, and 1.35 inches width. Weight is 29 ounces unloaded. MIL-STD-1913 accessory rail accommodates all standard lights and lasers. The pistol includes two magazines, paddle holster, interchangeable grip panels, magazine loader, cleaning rod, and instruction manual.",
+    whyChoose: "Choose the Canik TP9SF when you're seeking maximum pistol performance and features while respecting budget constraints. The TP9SF proves that modern CNC manufacturing and global competition enable previously impossible combinations of quality and affordability. The trigger quality alone sets the TP9SF apart - it's genuinely excellent, comparable to triggers on pistols costing $700-800. This isn't exaggeration - firearms reviewers and competitors consistently praise the TP9SF trigger as exceptional. The included accessories provide immediate shooting capability and value that competitors charging $200-300 more can't match. The 18-round capacity exceeds most competitors including Glock 17 (17 rounds) and M&P9 (17 rounds), providing real tactical advantage. Canik's military manufacturing background ensures quality control and durability standards proven through military service. The Cerakote finish is objectively superior to basic nitride coatings used on many budget pistols, providing better corrosion resistance and appearance. While the Canik name may lack the heritage of European manufacturers, the pistols' performance speaks for itself - thousands of satisfied users report excellent reliability and accuracy. Century Arms' importation provides U.S. warranty support and service. For new shooters wanting a quality first pistol, experienced shooters seeking a value backup gun, or anyone maximizing their firearms budget, the TP9SF delivers performance and features that challenge pistols costing substantially more. The TP9SF represents modern firearms manufacturing at its best - international cooperation producing quality products accessible to all shooters regardless of budget.",
+    seoKeywords: [
+      "canik tp9sf for sale",
+      "canik tp9",
+      "buy canik pistol",
+      "turkish 9mm pistol",
+      "budget 9mm pistol",
+      "canik tp9sf price",
+      "affordable service pistol",
+      "canik review",
+      "best value 9mm",
+      "tp9sf holster",
+      "cheap reliable pistol",
+      "canik tp9sf accessories",
+      "high capacity budget pistol",
+      "canik pistol quality",
+      "tp9 single action"
+    ]
   },
   {
     id: "springfield-1911",
