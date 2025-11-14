@@ -7,9 +7,11 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Calculator, TrendingDown, Zap, Target, Info } from "lucide-react";
+import { Calculator, TrendingDown, Zap, Target, Info, Shield, Award, Check, Phone, Mail, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useSearchParams, Link } from "react-router-dom";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { Badge } from "@/components/ui/badge";
 
 interface BallisticResult {
   range: number;
@@ -21,6 +23,7 @@ interface BallisticResult {
 }
 
 const BallisticCalculator = () => {
+  const [searchParams] = useSearchParams();
   const [caliber, setCaliber] = useState("");
   const [bulletWeight, setBulletWeight] = useState("168");
   const [muzzleVelocity, setMuzzleVelocity] = useState("2650");
@@ -31,6 +34,7 @@ const BallisticCalculator = () => {
   const [temperature, setTemperature] = useState("59");
   const [altitude, setAltitude] = useState("0");
   const [results, setResults] = useState<BallisticResult[]>([]);
+  const [isFromProduct, setIsFromProduct] = useState(false);
 
   useEffect(() => {
     document.title = "Ballistic Calculator | Trajectory, Energy & Velocity Calculator | Arms Complex";
@@ -39,7 +43,26 @@ const BallisticCalculator = () => {
     if (metaDescription) {
       metaDescription.setAttribute("content", "Advanced ballistic calculator for calculating bullet trajectory, energy, velocity, drop, and wind drift at various ranges. Input caliber, bullet weight, muzzle velocity, and ballistic coefficient for accurate results.");
     }
-  }, []);
+
+    // Auto-fill caliber from URL parameter
+    const urlCaliber = searchParams.get('caliber');
+    if (urlCaliber) {
+      setCaliber(urlCaliber);
+      setIsFromProduct(true);
+      
+      // Auto-select matching preset if available
+      const matchingPreset = commonLoads.find(load => 
+        load.caliber.toLowerCase().includes(urlCaliber.toLowerCase()) ||
+        urlCaliber.toLowerCase().includes(load.caliber.toLowerCase())
+      );
+      
+      if (matchingPreset) {
+        setBulletWeight(matchingPreset.weight);
+        setMuzzleVelocity(matchingPreset.mv);
+        setBc(matchingPreset.bc);
+      }
+    }
+  }, [searchParams]);
 
   const calculateBallistics = () => {
     const mv = parseFloat(muzzleVelocity);
@@ -149,6 +172,8 @@ const BallisticCalculator = () => {
 
   const commonLoads = [
     { name: ".223 Rem 55gr", caliber: ".223", weight: "55", mv: "3240", bc: "0.243" },
+    { name: "5.56 NATO 55gr", caliber: "5.56", weight: "55", mv: "3100", bc: "0.243" },
+    { name: "5.56 NATO 62gr", caliber: "5.56", weight: "62", mv: "3000", bc: "0.307" },
     { name: ".308 Win 168gr Match", caliber: ".308", weight: "168", mv: "2650", bc: "0.462" },
     { name: ".308 Win 150gr", caliber: ".308", weight: "150", mv: "2820", bc: "0.392" },
     { name: ".30-06 180gr", caliber: ".30-06", weight: "180", mv: "2700", bc: "0.507" },
@@ -178,18 +203,118 @@ const BallisticCalculator = () => {
       <Navigation />
       
       <main className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <div className="mb-12 text-center space-y-4">
-          <div className="flex justify-center mb-4">
-            <div className="rounded-full bg-tactical/10 p-4">
-              <Calculator className="h-12 w-12 text-tactical" />
-            </div>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Ballistic Calculator</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Calculate bullet trajectory, energy, velocity, and wind drift at various ranges with precision ballistic modeling
-          </p>
+        {/* Branded Hero Section */}
+        <div className="mb-12">
+          <Card className="border-tactical/30 bg-gradient-to-br from-tactical/5 via-background to-primary/5 overflow-hidden">
+            <CardContent className="p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <div className="rounded-full bg-tactical/10 p-6 border-2 border-tactical/20">
+                    <Shield className="h-16 w-16 text-tactical" />
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left space-y-4">
+                  <div className="flex items-center gap-2 justify-center md:justify-start">
+                    <h1 className="text-3xl md:text-5xl font-bold tracking-tight">ARMS COMPLEX</h1>
+                    <Badge variant="secondary" className="text-xs">PRO</Badge>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-semibold">Advanced Ballistic Calculator</h2>
+                  {isFromProduct && caliber && (
+                    <p className="text-lg text-tactical font-medium">
+                      Calculating for: {caliber}
+                    </p>
+                  )}
+                  <p className="text-muted-foreground max-w-2xl">
+                    Professional-grade trajectory analysis with precision ballistic modeling. 
+                    Calculate bullet drop, wind drift, velocity retention, and energy transfer at any range.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <Badge variant="outline" className="border-tactical text-tactical">
+                      <Calculator className="mr-1 h-3 w-3" />
+                      Precision Modeling
+                    </Badge>
+                    <Badge variant="outline" className="border-tactical text-tactical">
+                      <Target className="mr-1 h-3 w-3" />
+                      Long Range
+                    </Badge>
+                    <Badge variant="outline" className="border-tactical text-tactical">
+                      <Zap className="mr-1 h-3 w-3" />
+                      Instant Results
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
+
+        {/* Platform Features */}
+        <Card className="mb-8 border-primary/30 bg-primary/5">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Award className="h-5 w-5 text-primary" />
+              Why Choose Arms Complex Tools
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Integrated Load Library</h4>
+                    <p className="text-sm text-muted-foreground">Save and manage your custom reloading recipes with our exclusive load library</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Cost Calculator</h4>
+                    <p className="text-sm text-muted-foreground">Compare factory vs reloading costs with ROI analysis - unique to Arms Complex</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Direct Product Integration</h4>
+                    <p className="text-sm text-muted-foreground">Calculate ballistics directly from product pages with auto-filled data</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Reloading Guides</h4>
+                    <p className="text-sm text-muted-foreground">Comprehensive downloadable safety checklists and process guides</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Licensed FFL Dealer</h4>
+                    <p className="text-sm text-muted-foreground">Buy ammunition and firearms directly from us with full compliance</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold">Expert Support</h4>
+                    <p className="text-sm text-muted-foreground">Professional guidance for ammunition selection and ballistic questions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         <Alert className="mb-8">
           <Info className="h-4 w-4" />
@@ -603,6 +728,78 @@ const BallisticCalculator = () => {
             )}
           </div>
         </div>
+
+        {/* Contact & Support Section */}
+        <Card className="mt-12 border-tactical/30 bg-tactical/5">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Shield className="h-5 w-5 text-tactical" />
+              Arms Complex - Your Trusted Partner
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h3 className="font-semibold text-lg">Get Expert Assistance</h3>
+                <p className="text-muted-foreground">
+                  Need help selecting the right ammunition for your application? Our team of experts is here to assist 
+                  with ballistic questions, ammunition recommendations, and technical support.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Phone className="h-5 w-5 text-tactical" />
+                    <div>
+                      <p className="font-medium">Phone Support</p>
+                      <p className="text-sm text-muted-foreground">1-800-ARMS-123</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="h-5 w-5 text-tactical" />
+                    <div>
+                      <p className="font-medium">Email</p>
+                      <p className="text-sm text-muted-foreground">support@armscomplex.com</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-5 w-5 text-tactical" />
+                    <div>
+                      <p className="font-medium">Location</p>
+                      <p className="text-sm text-muted-foreground">Licensed FFL Dealer - Nationwide Shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h3 className="font-semibold text-lg">Explore More Tools</h3>
+                <p className="text-muted-foreground">
+                  Take advantage of our complete suite of professional tools designed for shooters and reloaders.
+                </p>
+                <div className="grid gap-2">
+                  <Link to="/load-recipes">
+                    <Button variant="outline" className="w-full justify-start">
+                      Save Your Custom Loads
+                    </Button>
+                  </Link>
+                  <Link to="/reloading-cost-calculator">
+                    <Button variant="outline" className="w-full justify-start">
+                      Calculate Reloading Savings
+                    </Button>
+                  </Link>
+                  <Link to="/reloading-guide">
+                    <Button variant="outline" className="w-full justify-start">
+                      Download Safety Checklists
+                    </Button>
+                  </Link>
+                  <Link to="/products">
+                    <Button variant="default" className="w-full bg-tactical hover:bg-tactical/90">
+                      Shop Ammunition
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </main>
 
       <Footer />
