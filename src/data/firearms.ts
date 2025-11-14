@@ -9788,7 +9788,45 @@ export const firearms: Firearm[] = [
     capacity: "12+1",
     barrelLength: "3.7 inches",
     weight: "20.7 oz",
-    finish: "Black Nitron"
+    finish: "Black Nitron",
+    shortDescription: "The SIG P365 XL takes the revolutionary P365 platform and extends it with a longer slide and barrel for improved accuracy and shootability. The Goldilocks pistol - bigger than micro, smaller than compact, perfect for carry and competition.",
+    longDescription: "The SIG Sauer P365 XL represents the evolution of the revolutionary P365 platform, taking SIG's capacity-breakthrough design and optimizing it for shooters who wanted slightly more barrel length and sight radius while maintaining exceptional concealability. The 'XL' designation indicates the extended slide and barrel compared to the standard P365, creating what many consider the perfect balance between micro-compact concealability and compact pistol shootability. The 3.7-inch barrel provides noticeable improvements in accuracy and velocity compared to the 3.1-inch standard P365, while the extended slide increases sight radius making precise shots easier. Despite these increases, the P365 XL remains remarkably concealable at just over 6.5 inches overall length and 1.1 inches wide. The grip frame is slightly extended to accommodate 12-round flush-fit magazines (with 15-round extended magazines available), providing a full firing grip for most shooters. The flat-faced trigger dramatically improves trigger feel and control compared to the standard P365's curved trigger, with many shooters describing the XL's trigger as feeling like it belongs on a $1,000+ pistol. The XRay3 day/night sights provide excellent visibility in all conditions, while the optics-ready slide (on Romeo Zero models) allows mounting micro red dot sights. The P365 XL has become immensely popular with both concealed carriers seeking maximum capability and competitive shooters using it in USPSA Carry Optics Single Stack division. Law enforcement officers have rapidly adopted the XL for both duty and off-duty carry, appreciating the balance of concealability and capability. Professional trainers consistently recommend the P365 XL as the ideal concealed carry pistol for most users - big enough to shoot well, small enough to carry comfortably. For shooters seeking the P365's revolutionary capacity in a slightly larger, more shootable package with competition potential, the XL delivers perfection.",
+    features: [
+      "Extended 3.7-inch barrel improves accuracy and velocity",
+      "Increased sight radius for more precise shooting",
+      "Flat-faced trigger for improved trigger control",
+      "12+1 capacity with flush-fit magazines (15-round available)",
+      "Full firing grip accommodates most hand sizes",
+      "XRay3 day/night sights standard",
+      "Optics-ready slide available with Romeo Zero mounting",
+      "Revolutionary P365 capacity in optimized package",
+      "Slim 1.1-inch width maintains concealability",
+      "Lightweight 20.7 oz for comfortable all-day carry"
+    ],
+    benefits: [
+      "Perfect balance between concealability and shootability",
+      "Proven P365 reliability and capacity in improved platform",
+      "Competition-capable with duty-carry concealability",
+      "Exceptional trigger quality for the price point",
+      "Rapid adoption by professionals validates design excellence",
+      "Huge aftermarket support from P365 platform popularity"
+    ],
+    useCases: [
+      "Primary concealed carry with maximum capability",
+      "USPSA Carry Optics Single Stack competition",
+      "Law enforcement off-duty and plain-clothes carry",
+      "All-day comfortable carry without subcompact limitations",
+      "Duty backup gun with serious defensive capability",
+      "Competition and carry dual-purpose pistol"
+    ],
+    technicalDetails: "The SIG P365 XL features XRay3 day/night sights with optics-ready variants available. Flat-faced trigger pulls approximately 5.5-6 lbs. Ships with two 12-round magazines (15-round magazines available). Optics-ready models include Romeo Zero mounting. Extended slide and barrel provide 3.7-inch barrel length. Slim 1.1-inch width. Weight 20.7 oz unloaded.",
+    whyChoose: "Choose the SIG P365 XL when you want the perfect compromise between concealed carry size and full-size shootability. The XL provides noticeably better accuracy and control than the standard P365 while remaining easily concealable. The flat trigger is outstanding, the capacity is exceptional, and the platform's proven reliability means you can trust it for carry or competition. Professional endorsements and rapid adoption validate the XL as perhaps the most versatile defensive pistol available today.",
+    seoKeywords: ["SIG P365 XL", "P365XL", "extended micro compact", "carry optics single stack", "concealed carry competition", "P365 XL review"],
+    ballisticData: {
+      effectiveRange: "35 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs (124gr)"
+    }
   },
   {
     id: "smith-mp-shield-plus",
@@ -10722,7 +10760,45 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "4.17 inches",
     weight: "20.74 oz",
-    finish: "Silver nPVD"
+    finish: "Silver nPVD",
+    shortDescription: "The Glock 48 MOS combines the 43X's slim concealability with a longer slide for improved accuracy. Compact Glock 19 barrel length in ultra-slim single-stack package with optics capability and Shield Arms 15-round magazine compatibility.",
+    longDescription: "The Glock 48 MOS represents Glock's solution for shooters wanting the slim concealability of the 43X combined with the improved sight radius and ballistic performance of a longer slide. The '48' designation places it between the subcompact 43 and compact 19, while 'MOS' provides factory optics mounting capability. What makes the 48 unique in Glock's lineup is the combination of slim 1.1-inch width from single-stack magazines with the 4.17-inch barrel matching the compact Glock 19. This creates a pistol that conceals significantly better than the 19 due to reduced width, while maintaining similar ballistic performance and providing superior sight radius compared to the shorter 43X. The silver nPVD slide finish creates an attractive two-tone appearance while providing excellent corrosion resistance - particularly valuable for carry pistols exposed to perspiration. The MOS optics system uses Glock's mounting plates to accept popular micro red dots without custom machining, bringing modern optics capability to the slim carry platform. Like the 43X, the 48 is compatible with Shield Arms 15-round steel magazines, transforming the 10+1 capacity into Glock 19-level firepower while maintaining the slim single-stack profile. The longer slide provides practical benefits beyond just sight radius - the additional weight forward helps balance the pistol and reduces perceived recoil, while the longer barrel extracts slightly more velocity from defensive ammunition. The Glock 48 has found particular favor with competitive shooters in USPSA Single Stack division, where the slim profile and optics capability provide advantages, and with law enforcement officers seeking a slim duty-capable pistol. For shooters who appreciate the 43X concept but want the additional sight radius and barrel length of a compact, the 48 MOS delivers the perfect combination.",
+    features: [
+      "Compact 4.17-inch barrel length matching Glock 19",
+      "Ultra-slim 1.1-inch width for exceptional concealability",
+      "Extended sight radius compared to 43X for improved accuracy",
+      "MOS optics mounting system for red dot sights",
+      "Silver nPVD slide finish for corrosion resistance and aesthetics",
+      "Compatible with Shield Arms 15-round steel magazines",
+      "Glock 19-length grip provides full firing grip",
+      "Lightweight 20.74 oz for comfortable carry",
+      "Glock Marksman Barrel for enhanced accuracy",
+      "Legendary Glock reliability in slim package"
+    ],
+    benefits: [
+      "Best of both worlds - 19 barrel length with 43X slim width",
+      "Shield Arms magazines provide Glock 19 capacity in slimmer package",
+      "Improved sight radius enhances accuracy over shorter compacts",
+      "Optics-ready enables modern red dot capability",
+      "Slim profile conceals dramatically better than double-stack compacts",
+      "Proven competition success validates performance"
+    ],
+    useCases: [
+      "Concealed carry requiring slim profile with compact performance",
+      "USPSA Single Stack division competition",
+      "Law enforcement slim duty or backup carry",
+      "Professional carry requiring both concealability and capability",
+      "Summer carry when minimal printing is critical",
+      "Competition and carry dual-purpose platform"
+    ],
+    technicalDetails: "The Glock 48 MOS features polymer fixed sights with MOS optics mounting system. Glock Safe Action trigger pulls approximately 5.5 lbs. Ships with two 10-round magazines. Compatible with Shield Arms 15-round steel magazines for increased capacity. Silver nPVD slide finish. Glock Marksman Barrel. Slim 1.1-inch width. 4.17-inch barrel length.",
+    whyChoose: "Choose the Glock 48 MOS when you want compact Glock 19 barrel length and sight radius in the ultra-slim profile of the 43X. The longer slide provides practical accuracy advantages while maintaining exceptional concealability. Add Shield Arms 15-round magazines for Glock 19 capacity in a slimmer package, plus modern optics capability. For shooters appreciating the slim carry advantages with compact pistol performance, the 48 MOS is the intelligent choice.",
+    seoKeywords: ["Glock 48 MOS", "slim compact Glock", "single stack optics ready", "Shield Arms 15", "Glock 48 vs 43X", "compact slimline"],
+    ballisticData: {
+      effectiveRange: "45 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "365 ft-lbs (124gr)"
+    }
   },
   {
     id: "sig-p320-axg",
@@ -10737,7 +10813,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "3.9 inches",
     weight: "31.8 oz",
-    finish: "Coyote Tan"
+    finish: "Coyote Tan",
+    shortDescription: "The SIG P320 AXG Scorpion combines the modular P320 system with an aluminum alloy frame for enhanced weight, balance, and shooting characteristics. Metal-frame feel with striker-fired simplicity at an incredible value.",
+    longDescription: "The SIG Sauer P320 AXG Scorpion represents SIG's innovative approach to providing metal-frame shooting characteristics in the modular P320 platform. The 'AXG' designation stands for Alloy XSeries Grip module, indicating the aluminum alloy metal frame that replaces the standard polymer grip module. This metal frame construction fundamentally changes the pistol's shooting characteristics, providing weight, balance, and feel similar to traditional metal-frame pistols like the SIG P226 or Beretta 92, but with the modularity and trigger quality of the P320 platform. The 31.8-ounce weight puts the AXG Scorpion squarely in metal-frame pistol territory, providing substantial mass that dampens recoil and keeps the muzzle flat during rapid fire. The aluminum alloy frame provides a different feel in hand compared to polymer - the weight distribution, temperature conductivity, and tactile feedback appeal to shooters who prefer traditional metal-frame guns but want modern striker-fired trigger systems. The Custom Works Scorpion treatment includes aggressive grip texturing machined into the aluminum frame, providing exceptional purchase without requiring replaceable grip panels. The flat-faced trigger from SIG's X-Series line delivers crisp break and short reset. The slide features front and rear serrations with SIG's excellent finish work. Most impressively, because the serialized fire control unit remains modular, the AXG frame can accept different slide assemblies for caliber or barrel length changes, or swap back to polymer frames when lightweight carry is needed. This modularity means investing in the AXG frame enhances your entire P320 platform. The Scorpion variant includes exclusive Coyote Tan Cerakote finish and Custom Works engraving. For shooters who appreciate metal-frame characteristics but want P320 versatility and trigger quality, the AXG Scorpion delivers both worlds.",
+    features: [
+      "Aluminum alloy metal frame for traditional shooting feel",
+      "31.8 oz weight provides substantial recoil management",
+      "Aggressive grip texturing machined directly into aluminum",
+      "Modular design allows slide and caliber changes",
+      "Flat-faced X-Series trigger with crisp break",
+      "Custom Works Scorpion exclusive finish and engraving",
+      "Metal frame compatible with all P320 FCU-based components",
+      "Front and rear slide serrations for manipulation",
+      "17+1 capacity with standard P320 magazines",
+      "Coyote Tan Cerakote finish"
+    ],
+    benefits: [
+      "Metal-frame shooting characteristics with striker-fired modularity",
+      "Substantial weight improves recoil management and control",
+      "P320 modularity maintained despite metal frame",
+      "Outstanding value in metal-frame pistol category",
+      "Proven P320 trigger system in premium package",
+      "Future-proof through modular component swapping"
+    ],
+    useCases: [
+      "Shooters preferring metal-frame feel with modern features",
+      "Competition use requiring weight for recoil management",
+      "Home defense with substantial capacity and weight",
+      "Range and training with traditional pistol characteristics",
+      "Carry by those preferring metal-frame confidence",
+      "Modular platform allowing multiple configurations"
+    ],
+    technicalDetails: "The SIG P320 AXG Scorpion features XRAY3 day/night sights. Flat-faced X-Series trigger pulls approximately 5-5.5 lbs. Ships with three 17-round magazines. Aluminum alloy metal frame weighing 31.8 oz. Modular fire control unit compatible with all P320 components. Aggressive grip texturing machined into frame. Coyote Tan Cerakote finish. 3.9-inch barrel.",
+    whyChoose: "Choose the SIG P320 AXG Scorpion when you want metal-frame shooting characteristics with P320 modularity and trigger quality. The aluminum frame provides traditional weight and balance while maintaining the revolutionary modularity that made the P320 famous. For shooters who appreciate metal frames but want modern striker-fired simplicity and future flexibility, the AXG Scorpion delivers the best of both worlds at remarkable value.",
+    seoKeywords: ["SIG P320 AXG", "metal frame P320", "aluminum P320", "AXG Scorpion", "alloy grip module", "metal frame striker"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "365 ft-lbs (124gr)"
+    }
   },
   {
     id: "smith-mp-performance",
