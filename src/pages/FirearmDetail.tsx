@@ -18,6 +18,7 @@ import { Shield, Phone, Mail, MapPin, AlertTriangle, CheckCircle, Target, Award 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
 import { useEffect } from "react";
+import { ShippingCalculator } from "@/components/ShippingCalculator";
 
 const FirearmDetail = () => {
   // Add variations to all firearms and products
@@ -164,6 +165,13 @@ const FirearmDetail = () => {
               </div>
               <p className="text-sm text-muted-foreground">Price may vary by location and FFL dealer fees apply</p>
             </div>
+
+            {/* Shipping Calculator */}
+            <Card className="mb-6 border-tactical/30 bg-tactical/5">
+              <CardContent className="p-4">
+                <ShippingCalculator quantity={1} />
+              </CardContent>
+            </Card>
 
             <p className="text-muted-foreground mb-6">
               {firearm.shortDescription || firearm.description}
