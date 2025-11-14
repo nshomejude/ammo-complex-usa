@@ -9387,7 +9387,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "4.7 inches",
     weight: "29.4 oz",
-    finish: "Nitron"
+    finish: "Nitron",
+    shortDescription: "The SIG P320 Full Size is the revolutionary modular pistol adopted by the U.S. military as the M17/M18. Serialized fire control unit enables complete customization and the most significant handgun innovation in decades.",
+    longDescription: "The SIG Sauer P320 Full Size represents the most significant handgun design innovation in decades, winning the U.S. military's Modular Handgun System competition against legendary competitors to become the M17 service pistol. This victory validates SIG's revolutionary approach to handgun design - the serialized fire control unit. Unlike traditional pistols where the frame is the serialized component, the P320's serialized chassis sits inside interchangeable grip modules. This modularity means a single P320 can transform from full-size to compact to subcompact by simply swapping grip modules, or change calibers by swapping slides and barrels. No gunsmith required, no new serial numbers, no additional paperwork - one pistol becomes many through simple user-level module changes. The military adoption process subjected the P320 to the most rigorous testing any handgun has ever faced, including extreme temperature cycling, saltwater immersion, drop testing from helicopter height, and firing schedules that would destroy lesser pistols. The P320 exceeded every requirement. The trigger system deserves special mention - the crisp break and short reset feel more like a tuned 1911 trigger than a typical striker system, enabling precision shooting. The low bore axis reduces muzzle flip while the grip angle provides natural pointing. SIG's cold-hammer-forged barrel delivers match-grade accuracy. The striker-fired system provides consistent trigger pull and administrative safety. Beyond military adoption, the P320 has rapidly gained law enforcement market share with major departments transitioning from traditional platforms. Competitive shooters have embraced the P320's modularity and accuracy, with custom-built P320s dominating Carry Optics division. For shooters seeking the pistol trusted by the U.S. military, revolutionary modularity for future-proof investment, and Swiss-designed precision, the P320 Full Size delivers innovation that redefined what handguns can be.",
+    features: [
+      "Revolutionary modular design with serialized fire control unit",
+      "Adopted as U.S. military M17/M18 service pistol after rigorous testing",
+      "Interchangeable grip modules enable size customization without gunsmith",
+      "Convertible between calibers and sizes through module changes",
+      "Exceptional striker trigger with crisp break and short reset",
+      "Low bore axis design reduces muzzle flip and speeds recovery",
+      "SIG cold-hammer-forged barrel for match-grade accuracy",
+      "Passed most rigorous military testing program in history",
+      "SIGLITE night sights standard on many variants",
+      "Extensive aftermarket support from custom builders"
+    ],
+    benefits: [
+      "U.S. military adoption validates extreme reliability and performance",
+      "Future-proof investment through modular customization capability",
+      "One serialized chassis becomes multiple pistol configurations",
+      "Swiss precision engineering from legendary SIG Sauer",
+      "Trigger quality rivals pistols costing significantly more",
+      "Rapid law enforcement adoption proves duty reliability"
+    ],
+    useCases: [
+      "Military and law enforcement duty pistol - proven M17/M18 platform",
+      "Home defense with proven combat reliability",
+      "Modular platform for users wanting multiple configurations",
+      "Competition shooting in Carry Optics and Production divisions",
+      "Professional training with military-grade equipment",
+      "Long-term investment through modular future customization"
+    ],
+    technicalDetails: "The SIG P320 Full Size features SIGLITE night sights. Striker-fired trigger with approximately 5.5-6 lb pull. Ships with two 17-round magazines. Modular grip frame system accepts size and caliber conversions. Nitron stainless steel slide for corrosion resistance. Accessory rail for lights and lasers.",
+    whyChoose: "Choose the SIG P320 Full Size when you want the pistol trusted by the U.S. military and proven through the most demanding testing ever conducted. The modular design provides unprecedented flexibility - one pistol becomes many through simple module swaps. SIG's Swiss precision engineering ensures accuracy and reliability that will serve for decades. Join the military, law enforcement, and competitive shooters who trust the revolutionary P320.",
+    seoKeywords: ["SIG P320", "military M17 pistol", "modular handgun", "U.S. Army pistol", "SIG modular", "P320 full size"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,180 fps (124gr)",
+      muzzleEnergy: "383 ft-lbs (124gr)"
+    }
   },
   {
     id: "smith-mp9-m2",
@@ -9697,7 +9735,45 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "3.41 inches",
     weight: "18.7 oz",
-    finish: "Silver nPVD"
+    finish: "Silver nPVD",
+    shortDescription: "The Glock 43X MOS delivers compact Glock 19 grip length in a ultra-slim single-stack package with optics-ready capability. Perfect balance of concealability and shootability with revolutionary Shield Arms 15-round magazine compatibility.",
+    longDescription: "The Glock 43X MOS represents Glock's answer to the concealed carry market's demand for slim, shootable pistols with modern optics capability. The 'X' designation indicates the crossover design combining compact slide length with full Glock 19-length grip, while 'MOS' provides factory optics mounting. This combination creates what many consider the perfect concealed carry pistol. The slim 1.1-inch width comes from the single-stack magazine design, making the 43X significantly more concealable than double-stack compact pistols. Despite the slim profile, the grip length matches the Glock 19, providing a full firing grip for even large-handed shooters - this makes the 43X genuinely shootable unlike tiny subcompacts that compromise control. The silver nPVD slide finish provides corrosion resistance while creating attractive two-tone appearance when paired with the black polymer frame. The MOS optics system uses Glock's mounting plates to accept popular micro red dot sights, bringing modern optics capability to concealed carry. What makes the 43X revolutionary is compatibility with Shield Arms steel magazines holding 15 rounds - transforming the 10+1 capacity into Glock 19-level firepower while maintaining the slim single-stack dimensions. This effectively gives users Glock 19 grip length, Glock 19 capacity, but in a significantly slimmer, more concealable package. The combination of slim profile, shootable grip length, optics capability, and high-capacity magazine compatibility has made the 43X MOS one of the fastest-selling Glocks ever. Armed professionals including federal agents and competitive shooters have rapidly adopted the platform for both carry and competition use. For concealed carriers wanting maximum capability in minimal dimensions with modern optics, the 43X MOS delivers the perfect package.",
+    features: [
+      "Ultra-slim 1.1-inch width for exceptional concealability",
+      "Glock 19-length grip provides full firing grip and control",
+      "MOS optics system for mounting micro red dot sights",
+      "Silver nPVD slide finish for corrosion resistance",
+      "Compatible with Shield Arms 15-round steel magazines",
+      "Compact 3.41-inch barrel maintains ballistic performance",
+      "Glock Safe Action reliability in slim package",
+      "Lightweight 18.7 oz for comfortable all-day carry",
+      "Gen5 features including Glock Marksman Barrel",
+      "Aggressive grip texture for secure purchase"
+    ],
+    benefits: [
+      "Perfect balance between concealability and shootability",
+      "Shield Arms magazines provide Glock 19-level capacity in slimmer package",
+      "Full-length grip makes it genuinely controlable unlike tiny subcompacts",
+      "Legendary Glock reliability in modern optics-ready package",
+      "Slim profile disappears under concealment garments",
+      "Rapid adoption by armed professionals validates design excellence"
+    ],
+    useCases: [
+      "Primary concealed carry for civilians and off-duty professionals",
+      "Backup gun for law enforcement with serious capability",
+      "Summer carry when clothing limits concealment options",
+      "USPSA Carry Optics Single Stack competition",
+      "Professional carry requiring both concealability and performance",
+      "Vehicle or ankle carry with sufficient capability"
+    ],
+    technicalDetails: "The Glock 43X MOS features polymer fixed sights with MOS optics mounting system. Glock Safe Action trigger pulls approximately 5.5 lbs. Ships with two 10-round magazines. Compatible with Shield Arms 15-round steel magazines. Silver nPVD slide finish. Glock Marksman Barrel for accuracy. Slim 1.1-inch width.",
+    whyChoose: "Choose the Glock 43X MOS when you need serious capability in a truly concealable package. The Glock 19-length grip makes it shootable while the slim profile ensures concealability. Add Shield Arms 15-round magazines for Glock 19-level firepower in slimmer dimensions. With legendary Glock reliability, modern optics capability, and rapid adoption by professionals, the 43X MOS represents the ideal concealed carry pistol.",
+    seoKeywords: ["Glock 43X MOS", "slim concealed carry", "slimline Glock", "Shield Arms 15 round", "optics ready carry", "single stack 9mm"],
+    ballisticData: {
+      effectiveRange: "25 yards",
+      muzzleVelocity: "1,100 fps (124gr)",
+      muzzleEnergy: "333 ft-lbs (124gr)"
+    }
   },
   {
     id: "sig-p365xl",
@@ -10028,7 +10104,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "5 inches",
     weight: "43.5 oz",
-    finish: "Legion Gray"
+    finish: "Legion Gray",
+    shortDescription: "The SIG P320 X-Five Legion combines the revolutionary P320 modularity with premium Legion series enhancements. Tungsten-infused grip, exceptional weight, and refined trigger make it a competition dominator at an incredible value.",
+    longDescription: "The SIG Sauer P320 X-Five Legion represents the pinnacle of the modular P320 platform, incorporating SIG's exclusive Legion series enhancements to create a competition pistol that rivals custom builds costing thousands more. The 'X' designation indicates SIG's performance-enhanced series, while 'Legion' denotes their premium hand-selected components and exclusive features. The revolutionary TXG (Tungsten X-Change Grip) module uses tungsten-infused polymer to achieve 43.5 ounces of weight - putting the X-Five Legion in the same weight class as all-steel competition guns like CZ Shadows and custom 2011s. This substantial weight provides exceptional recoil management, keeping the dot flat during rapid fire and enabling faster accurate follow-up shots. The weight distribution is optimized for competition shooting with perfect balance and minimal muzzle rise. The 5-inch bull barrel delivers maximum velocity and match-grade accuracy with tight tolerances and precision crown. The flat-faced Legion trigger is extraordinary - breaking cleanly at approximately 4.5 pounds with minimal take-up, no overtravel, and a crisp reset that enables precision double-taps. Professional reviewers consistently rate the trigger among the best striker triggers available. The extended beavertail and undercut trigger guard enable a high grip for improved control. Adjustable rear sight allows precise zero while the fiber optic front sight enables fast target acquisition. The aggressive Legion series grip texture ensures secure purchase during rapid transitions. The slide features aggressive serrations and is optics-ready for red dot mounting. What makes the X-Five Legion remarkable is delivering features and performance characteristics of custom competition guns costing $2,500-3,500 at less than $1,000. Competition shooters are rapidly adopting the platform, with X-Five Legions winning matches in Carry Optics and Limited divisions against far more expensive custom guns.",
+    features: [
+      "TXG tungsten-infused grip module for competition weight (43.5 oz)",
+      "5-inch bull barrel for maximum accuracy and velocity",
+      "Flat Legion trigger approximately 4.5 lbs with crisp break",
+      "Fiber optic front sight with adjustable rear for precision zero",
+      "Optics-ready slide for red dot sight mounting",
+      "Extended beavertail and undercut trigger guard for high grip",
+      "Aggressive Legion series grip texturing for secure control",
+      "Tungsten weight provides steel-frame shooting characteristics",
+      "Legion Gray Cerakote finish with exclusive Legion engraving",
+      "Three 17-round magazines included"
+    ],
+    benefits: [
+      "Competition-winning performance at fraction of custom gun cost",
+      "Tungsten weight delivers steel-frame recoil characteristics",
+      "Exceptional trigger quality rivals custom competition triggers",
+      "Proven competition success in major matches",
+      "SIG precision manufacturing ensures accuracy and reliability",
+      "Outstanding value in premium competition pistol category"
+    ],
+    useCases: [
+      "USPSA Carry Optics competition - proven match winner",
+      "USPSA Limited division with weight advantage",
+      "Steel Challenge and precision competition",
+      "Competitive shooting requiring maximum recoil control",
+      "High-volume training with competition-grade equipment",
+      "Serious recreational shooting with premium performance"
+    ],
+    technicalDetails: "The SIG P320 X-Five Legion features fiber optic front sight with adjustable rear, optics-ready slide. Flat Legion trigger pulls approximately 4.5 lbs. TXG tungsten-infused grip weighs 43.5 oz. Ships with three 17-round magazines. 5-inch bull barrel. Legion Gray Cerakote finish. Aggressive grip texturing.",
+    whyChoose: "Choose the SIG P320 X-Five Legion when you want competition-winning performance with tungsten weight at unbeatable pricing. The TXG grip delivers steel-frame shooting characteristics without steel-frame cost. The exceptional trigger and match-grade accuracy enable championship performance. Join competitive shooters winning matches with the X-Five Legion against custom guns costing three times more.",
+    seoKeywords: ["SIG P320 X-Five Legion", "tungsten grip pistol", "competition P320", "Legion series", "TXG grip", "Carry Optics winner"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,220 fps (124gr)",
+      muzzleEnergy: "410 ft-lbs (124gr)"
+    }
   },
   {
     id: "smith-mp-compact",
@@ -10224,7 +10338,45 @@ export const firearms: Firearm[] = [
     capacity: "17+1",
     barrelLength: "5.31 inches",
     weight: "25.95 oz",
-    finish: "Black nDLC"
+    finish: "Black nDLC",
+    shortDescription: "The Glock 34 Gen5 MOS is Glock's competition-focused long-slide pistol. Extended sight radius, flared magazine well, and optics-ready slide make it the choice of championship shooters in USPSA and IPSC worldwide.",
+    longDescription: "The Glock 34 Gen5 MOS represents Glock's purpose-built competition pistol, taking the proven Gen5 platform and optimizing it specifically for competitive shooting sports. The 'MOS' designation stands for Modular Optic System, indicating the slide's factory preparation for mounting red dot sights without expensive custom machining. The Glock 34 has dominated competitive shooting for decades, winning countless USPSA, IPSC, Steel Challenge, and 3-Gun championships in the hands of both professionals and serious amateurs. The defining characteristic is the extended 5.31-inch barrel and corresponding slide length, providing maximum sight radius for precision shooting at competition distances. This extended sight radius makes subtle aiming adjustments easier to perceive and execute, translating to tighter groups and faster target transitions. The longer barrel also delivers slightly higher velocities, though the real benefit is the improved balance and reduced muzzle flip from the additional forward weight. The Gen5 improvements include the Glock Marksman Barrel with enhanced polygonal rifling delivering match-grade accuracy, ambidextrous slide stop levers accommodating all shooters, removal of finger grooves for universal comfort, and the nDLC coating providing extreme wear resistance. The flared magazine well accelerates reloads under match stress - the funnel opening guides magazines home even when your technique isn't perfect. The MOS optics mounting system uses adapter plates to accept virtually all popular micro red dot sights, with the mounting screws accessible from above for easy installation. The cutout design maintains the lowest possible optic mounting height for minimal shift in point-of-impact. While many competition pistols require extensive customization, the Glock 34 Gen5 MOS dominates matches in completely stock configuration, proving Glock's engineering creates competition-winning capabilities from the factory.",
+    features: [
+      "Extended 5.31-inch barrel for maximum sight radius and accuracy",
+      "Glock Marksman Barrel with enhanced polygonal rifling for precision",
+      "MOS optics mounting system accepts all popular red dot sights",
+      "Flared magazine well for accelerated competition reloads",
+      "Ambidextrous slide stop levers for all shooters",
+      "Gen5 nDLC coating provides extreme wear and corrosion resistance",
+      "Universal grip without finger grooves fits all hand sizes",
+      "Extended slide provides optimal weight distribution",
+      "17+1 capacity with flush-fit magazines",
+      "Proven Glock reliability through millions of competition rounds"
+    ],
+    benefits: [
+      "Championship-winning design proven in major competitions worldwide",
+      "Factory optics-ready saves hundreds in custom machining costs",
+      "Extended sight radius improves precision at competition distances",
+      "Stock configuration competes successfully without customization",
+      "Legendary Glock reliability means no failures during critical matches",
+      "Massive aftermarket support for endless customization options"
+    ],
+    useCases: [
+      "USPSA Production and Carry Optics competition shooting",
+      "IPSC Standard division international competition",
+      "Steel Challenge speed shooting",
+      "3-Gun competition pistol stages",
+      "Competitive shooting training and practice",
+      "Range shooting with competition-grade equipment"
+    ],
+    technicalDetails: "The Glock 34 Gen5 MOS features polymer three-dot sights with MOS optics mounting system. Glock Safe Action trigger pulls approximately 5.5 lbs. Ships with three 17-round magazines. MOS system includes adapter plates for popular red dot optics. Extended magazine well for competition reloads. nDLC coating provides superior wear resistance.",
+    whyChoose: "Choose the Glock 34 Gen5 MOS when you want competition-proven performance with Glock legendary reliability. The 34 wins championships in stock configuration without expensive custom work, while the MOS system makes red dot mounting simple and affordable. With proven success at the highest levels of competition and Glock's unmatched reliability, the 34 Gen5 MOS delivers everything needed to compete and win.",
+    seoKeywords: ["Glock 34 Gen5 MOS", "competition Glock", "USPSA Production", "long slide Glock", "optics ready competition", "Glock 34 review"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,230 fps (124gr)",
+      muzzleEnergy: "416 ft-lbs (124gr)"
+    }
   },
   {
     id: "sig-p320-xcompact",
