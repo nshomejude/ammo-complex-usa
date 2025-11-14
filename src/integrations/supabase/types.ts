@@ -14,7 +14,93 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      load_recipes: {
+        Row: {
+          accuracy: string | null
+          brass: string
+          bullet_type: string
+          bullet_weight: string
+          caliber: string
+          coal: string
+          created_at: string | null
+          id: string
+          is_public: boolean | null
+          muzzle_energy: number | null
+          muzzle_velocity: number | null
+          name: string
+          notes: string | null
+          performance_notes: string | null
+          powder_charge: string
+          powder_type: string
+          primer: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          accuracy?: string | null
+          brass: string
+          bullet_type: string
+          bullet_weight: string
+          caliber: string
+          coal: string
+          created_at?: string | null
+          id?: string
+          is_public?: boolean | null
+          muzzle_energy?: number | null
+          muzzle_velocity?: number | null
+          name: string
+          notes?: string | null
+          performance_notes?: string | null
+          powder_charge: string
+          powder_type: string
+          primer: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          accuracy?: string | null
+          brass?: string
+          bullet_type?: string
+          bullet_weight?: string
+          caliber?: string
+          coal?: string
+          created_at?: string | null
+          id?: string
+          is_public?: boolean | null
+          muzzle_energy?: number | null
+          muzzle_velocity?: number | null
+          name?: string
+          notes?: string | null
+          performance_notes?: string | null
+          powder_charge?: string
+          powder_type?: string
+          primer?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string | null
+          id: string
+          updated_at: string | null
+          username: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          id: string
+          updated_at?: string | null
+          username?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          updated_at?: string | null
+          username?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
