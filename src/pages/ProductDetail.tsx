@@ -15,6 +15,7 @@ import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Min
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { ShippingCalculator } from "@/components/ShippingCalculator";
+import { useCart } from "@/hooks/useCart";
 
 const ProductDetail = () => {
   // Add variations to all products
@@ -22,6 +23,7 @@ const ProductDetail = () => {
   
   const { id } = useParams();
   const navigate = useNavigate();
+  const { addToCart } = useCart();
   const product = products.find(p => p.id === id);
   const [quantity, setQuantity] = useState(1);
 
@@ -51,6 +53,15 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
+    for (let i = 0; i < quantity; i++) {
+      addToCart({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: "/placeholder.svg",
+        type: 'product'
+      });
+    }
     toast.success(`Added ${quantity}x ${product.name} to cart`);
   };
 

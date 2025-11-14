@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Shield, ShoppingCart, User, ChevronDown, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Search } from "@/components/Search";
+import { CartButton } from "@/components/CartButton";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useState } from "react";
@@ -210,6 +211,7 @@ export const Navigation = () => {
             <Link to="/admin" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Admin
             </Link>
+            <CartButton />
           </div>
 
           {/* Mobile Menu */}

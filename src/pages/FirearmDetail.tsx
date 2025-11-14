@@ -19,11 +19,14 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
 import { useEffect } from "react";
 import { ShippingCalculator } from "@/components/ShippingCalculator";
+import { useCart } from "@/hooks/useCart";
+import { toast } from "sonner";
 
 const FirearmDetail = () => {
   // Add variations to all firearms and products
   const firearms = rawFirearms.map(addFirearmVariations);
   const products = rawProducts.map(addProductVariations);
+  const { addToCart } = useCart();
   
   const { id } = useParams();
   const firearm = firearms.find(f => f.id === id);
@@ -53,6 +56,17 @@ const FirearmDetail = () => {
   const compatibleAmmo = products.filter(product => 
     firearm.caliber.some(cal => product.caliber.includes(cal))
   ).slice(0, 4);
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: firearm.id,
+      name: `${firearm.manufacturer} ${firearm.name}`,
+      price: firearm.price,
+      image: "/placeholder.svg",
+      type: 'firearm'
+    });
+    toast.success(`Added ${firearm.name} to cart`);
+  };
 
   // SEO: Update document title and meta tags
   useEffect(() => {
@@ -204,6 +218,7 @@ const FirearmDetail = () => {
               size="lg" 
               className="w-full mb-6"
               disabled={!firearm.inStock}
+              onClick={handleAddToCart}
             >
               <ShoppingCart className="mr-2 h-5 w-5" />
               Add to Cart
