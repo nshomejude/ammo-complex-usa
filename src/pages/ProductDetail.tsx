@@ -11,11 +11,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { products as rawProducts } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
-import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus, Target, Award, Zap } from "lucide-react";
+import { ShoppingCart, AlertCircle, ArrowLeft, Package, Shield, CheckCircle, Minus, Plus, Target, Award, Zap, Download, Calculator, BookOpen, Crosshair } from "lucide-react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { ShippingCalculator } from "@/components/ShippingCalculator";
 import { useCart } from "@/hooks/useCart";
+import { generateProductLoadDataPDF } from "@/utils/pdfGenerator";
+import { firearms } from "@/data/firearms";
 
 const ProductDetail = () => {
   // Add variations to all products
@@ -74,6 +76,18 @@ const ProductDetail = () => {
   const relatedProducts = products
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 3);
+
+  // Find compatible firearms based on caliber
+  const compatibleFirearms = firearms.filter(firearm => 
+    firearm.caliber.some(cal => 
+      cal.toLowerCase().includes(product.caliber.toLowerCase().replace(/[^a-z0-9]/gi, ''))
+    )
+  ).slice(0, 6);
+
+  const handleDownloadLoadData = () => {
+    generateProductLoadDataPDF(product);
+    toast.success('Load data sheet downloaded successfully');
+  };
 
   // SEO: Update document title and meta tags
   useEffect(() => {
@@ -333,8 +347,106 @@ const ProductDetail = () => {
                 Valid ID and compliance with all federal, state, and local laws required.
               </AlertDescription>
             </Alert>
+
+            {/* Quick Actions */}
+            <Card className="border-primary/30 bg-primary/5">
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <Zap className="h-5 w-5 text-primary" />
+                  Professional Tools
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <Button
+                  variant="outline"
+                  className="w-full justify-start"
+                  onClick={handleDownloadLoadData}
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Load Data Sheet
+                </Button>
+                <Link to={`/ballistic-calculator?caliber=${encodeURIComponent(product.caliber)}`}>
+                  <Button
+                    variant="outline"
+                    className="w-full justify-start"
+                  >
+                    <Calculator className="mr-2 h-4 w-4" />
+                    Calculate Ballistics for {product.caliber}
+                  </Button>
+                </Link>
+                <Link to="/reloading-guide">
+                  <Button
+                    variant="outline"
+                    className="w-full justify-start"
+                  >
+                    <BookOpen className="mr-2 h-4 w-4" />
+                    View Reloading Guide
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </article>
+
+        {/* Reloading Information Section */}
+        <section className="mb-12">
+          <Card className="border-tactical/30">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Target className="h-6 w-6 text-tactical" />
+                Reloading Information for {product.caliber}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="space-y-2">
+                  <h3 className="font-semibold flex items-center gap-2">
+                    <Shield className="h-4 w-4 text-tactical" />
+                    Safety Considerations
+                  </h3>
+                  <ul className="text-sm space-y-1 text-muted-foreground">
+                    <li>• Always start 10% below maximum published loads</li>
+                    <li>• Use only components specified in reloading manuals</li>
+                    <li>• Inspect cases for cracks or defects before loading</li>
+                    <li>• Keep detailed records of all load data and results</li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold flex items-center gap-2">
+                    <Crosshair className="h-4 w-4 text-tactical" />
+                    Recommended Components
+                  </h3>
+                  <ul className="text-sm space-y-1 text-muted-foreground">
+                    <li>• Brass: Once-fired or new {product.caliber} cases</li>
+                    <li>• Primers: Match manufacturer specifications</li>
+                    <li>• Powder: Consult current reloading manual</li>
+                    <li>• Bullets: Various weights available for this caliber</li>
+                  </ul>
+                </div>
+              </div>
+              <Alert className="border-destructive/50 bg-destructive/10">
+                <AlertCircle className="h-4 w-4 text-destructive" />
+                <AlertTitle className="text-destructive-foreground">Critical Safety Warning</AlertTitle>
+                <AlertDescription className="text-destructive-foreground text-sm">
+                  Never exceed published maximum loads. Always consult multiple current reloading manuals 
+                  and start with reduced loads. Improper reloading can result in serious injury or death.
+                </AlertDescription>
+              </Alert>
+              <div className="flex gap-3">
+                <Link to="/reloading-guide" className="flex-1">
+                  <Button variant="outline" className="w-full">
+                    <BookOpen className="mr-2 h-4 w-4" />
+                    Complete Reloading Guide
+                  </Button>
+                </Link>
+                <Button variant="outline" className="flex-1" onClick={handleDownloadLoadData}>
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Checklists
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Detailed Information Tabs */}
         <section className="mb-12">
@@ -756,6 +868,70 @@ const ProductDetail = () => {
 
         {/* Why Buy From Us Section */}
         <WhyBuyFromUs />
+
+        {/* Compatible Firearms */}
+        {compatibleFirearms.length > 0 && (
+          <section className="mb-12">
+            <Card className="border-tactical/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Crosshair className="h-6 w-6 text-tactical" />
+                  Compatible Firearms for {product.caliber}
+                </CardTitle>
+                <p className="text-sm text-muted-foreground mt-2">
+                  These firearms are chambered for {product.caliber} and can safely use this ammunition
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {compatibleFirearms.map((firearm) => (
+                    <Link key={firearm.id} to={`/firearms/${firearm.id}`}>
+                      <Card className="h-full transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer">
+                        <CardContent className="p-4">
+                          <div className="flex items-start justify-between mb-2">
+                            <div className="flex-1">
+                              <h4 className="font-semibold text-sm line-clamp-1">{firearm.name}</h4>
+                              <p className="text-xs text-muted-foreground">{firearm.manufacturer}</p>
+                            </div>
+                            {firearm.inStock && (
+                              <Badge variant="outline" className="border-tactical text-tactical text-xs ml-2">
+                                Available
+                              </Badge>
+                            )}
+                          </div>
+                          <div className="flex items-center justify-between mt-3">
+                            <div className="flex flex-wrap gap-1">
+                              {firearm.caliber.slice(0, 2).map((cal, idx) => (
+                                <Badge key={idx} variant="secondary" className="text-xs">
+                                  {cal}
+                                </Badge>
+                              ))}
+                              {firearm.caliber.length > 2 && (
+                                <Badge variant="secondary" className="text-xs">
+                                  +{firearm.caliber.length - 2}
+                                </Badge>
+                              )}
+                            </div>
+                            <span className="text-sm font-bold text-tactical">
+                              ${firearm.price.toFixed(0)}
+                            </span>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  ))}
+                </div>
+                <div className="mt-4 text-center">
+                  <Link to="/firearms">
+                    <Button variant="outline">
+                      View All Firearms
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        )}
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
