@@ -40,6 +40,7 @@ import About11 from "./pages/About11";
 import Shipping from "./pages/Shipping";
 import FirearmsLicense from "./pages/FirearmsLicense";
 import HowToBuy from "./pages/HowToBuy";
+import ReloadingGuide from "./pages/ReloadingGuide";
 import Contact from "./pages/Contact";
 import Contact2 from "./pages/Contact2";
 import Contact3 from "./pages/Contact3";
@@ -119,6 +120,7 @@ const App = () => (
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/firearms-license" element={<FirearmsLicense />} />
           <Route path="/how-to-buy" element={<HowToBuy />} />
+          <Route path="/reloading-guide" element={<ReloadingGuide />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact2" element={<Contact2 />} />
           <Route path="/contact3" element={<Contact3 />} />

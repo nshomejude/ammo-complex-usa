@@ -64,6 +64,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/reloading-guide" className="text-sm text-muted-foreground hover:text-tactical transition-colors">
+                  Reloading Guide
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-sm text-muted-foreground hover:text-tactical transition-colors">
                   Contact
                 </Link>
