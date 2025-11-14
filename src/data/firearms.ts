@@ -880,7 +880,58 @@ export const firearms: Firearm[] = [
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "41 oz",
-    finish: "Black Parkerized"
+    finish: "Black Parkerized",
+    shortDescription: "The Springfield Armory 1911 brings John Browning's legendary design into the modern era with exceptional build quality and reliability. A perfect blend of classic aesthetics and contemporary manufacturing excellence.",
+    longDescription: "The Springfield Armory 1911 represents over a century of refinement of John Moses Browning's masterpiece design. First adopted by the U.S. military in 1911, this pistol served through two World Wars, Korea, and Vietnam, earning an unparalleled reputation for stopping power and reliability. Springfield Armory's modern interpretation maintains the soul of the original while incorporating precision CNC machining and modern quality control. Each pistol features a forged steel frame and slide, match-grade stainless steel barrel, and hand-fitted components for exceptional accuracy. The crisp single-action trigger breaks cleanly between 4-5 pounds, providing the precision that made the 1911 a favorite of competition shooters and military marksmen alike. Springfield's commitment to quality means every 1911 undergoes rigorous testing and inspection before leaving the factory. The .45 ACP chambering delivers legendary stopping power with manageable recoil in the all-steel full-size frame. Whether you're a collector seeking an authentic piece of American firearms history, a competition shooter demanding precision, or a defensive shooter wanting proven stopping power, the Springfield 1911 delivers timeless performance.",
+    features: [
+      "Forged steel frame and slide for maximum strength and durability",
+      "Match-grade stainless steel barrel with fully supported chamber",
+      "Crisp single-action trigger with 4-5 lb pull weight",
+      "Lowered and flared ejection port for reliable cycling",
+      "Enhanced beavertail grip safety for secure high grip",
+      "Checkered front strap and mainspring housing for positive control",
+      "Fixed combat sights with three-dot configuration",
+      "Dual recoil spring system for extended service life",
+      "Firing pin safety for drop-safe operation",
+      "Full-length guide rod for consistent cycling"
+    ],
+    benefits: [
+      "Legendary .45 ACP stopping power proven over 100+ years",
+      "Exceptional accuracy from match-grade components",
+      "Thin single-stack grip fits all hand sizes",
+      "Simple manual of arms - easy to learn and master",
+      "Vast aftermarket support for customization",
+      "Holds value exceptionally well as collectible firearm"
+    ],
+    useCases: [
+      "Personal defense with proven .45 ACP stopping power",
+      "USPSA Single Stack competition shooting",
+      "Bullseye competition and precision target shooting",
+      "Collecting classic American firearms",
+      "Home defense with manageable recoil and high capacity options",
+      "Concealed carry in compact variants"
+    ],
+    technicalDetails: "The Springfield 1911 features a Series 70 firing system with a lightweight aluminum trigger for a clean break. The forged steel construction provides superior strength compared to cast frames. The National Match barrel features a fully supported chamber and is hand-fitted to the slide for maximum accuracy. The dual recoil spring system reduces felt recoil and extends component life. Cocobolo grips provide classic aesthetics and excellent grip texture.",
+    whyChoose: "Choose the Springfield 1911 for an authentic American classic that doesn't compromise on modern quality. Springfield Armory has been producing 1911 pistols for decades and has refined the process to deliver exceptional value. You get match-grade components, hand-fitted parts, and rigorous quality control at a price point that makes the 1911 platform accessible. Whether you're drawn to the historical significance, the unmatched trigger, or the proven .45 ACP cartridge, Springfield delivers everything that made the 1911 legendary.",
+    seoKeywords: [
+      "springfield 1911",
+      "1911 45 acp",
+      "springfield armory pistol",
+      "classic 1911",
+      "45 acp pistol",
+      "john browning 1911",
+      "full size 1911",
+      "single stack 45",
+      "1911 for sale",
+      "best 1911 pistol"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "830 fps (230gr)",
+      muzzleEnergy: "356 ft-lbs",
+      accuracy: "2.5-3 inch groups at 25 yards"
+    }
   },
   {
     id: "kimber-1911",
@@ -895,7 +946,56 @@ export const firearms: Firearm[] = [
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "38 oz",
-    finish: "Satin Black"
+    finish: "Satin Black",
+    shortDescription: "The Kimber Custom II represents premium 1911 craftsmanship with match-grade components throughout. Hand-fitted for exceptional accuracy and featuring a crisp trigger that defines precision shooting.",
+    longDescription: "Kimber revolutionized the 1911 market in the 1990s by proving that a production pistol could deliver custom-shop accuracy at a reasonable price. The Custom II carries forward this tradition with meticulous attention to detail and premium components. Each pistol begins with a forged steel frame and slide that are precision-machined to tight tolerances. The match-grade barrel is hand-fitted and features Kimber's proprietary chamber design for reliable feeding and enhanced accuracy. The trigger is a work of art - a crisp, clean break between 4-5 pounds with minimal overtravel that would cost thousands in a true custom gun. Kimber's finishing process includes multiple steps of hand-polishing followed by a durable low-glare finish that resists wear and corrosion. The Custom II features enhanced safety features including Kimber's firing pin safety system, while maintaining the clean lines and classic aesthetics of the original 1911 design. From the checkered front strap to the high-cut beavertail grip safety, every detail serves both form and function.",
+    features: [
+      "Match-grade stainless steel barrel with match chamber",
+      "Aluminum trigger with adjustable overtravel stop",
+      "Full-length guide rod for consistent slide operation",
+      "High-ride beavertail grip safety for comfortable high grip",
+      "Checkered front strap with 30 LPI checkering",
+      "Lowered and flared ejection port for positive ejection",
+      "Dovetail-mounted fixed sights with white dots",
+      "Extended thumb safety for positive engagement",
+      "Premium Kimber finish with corrosion resistance",
+      "Match-grade components hand-fitted for accuracy"
+    ],
+    benefits: [
+      "Exceptional out-of-box accuracy rivals custom guns",
+      "Crisp match trigger perfect for precision shooting",
+      "Premium fit and finish at production gun pricing",
+      "Reliable feeding with wide variety of ammunition",
+      "Excellent resale value as premium brand",
+      "Lifetime warranty from manufacturer"
+    ],
+    useCases: [
+      "USPSA Single Stack competition",
+      "Bullseye precision shooting",
+      "Tactical pistol matches",
+      "Personal defense for experienced shooters",
+      "Collection as premium 1911 example",
+      "Gift for discerning firearms enthusiast"
+    ],
+    technicalDetails: "The Custom II features a Series II firing pin safety system for drop-safe operation. The match-grade barrel is precision-fitted to the slide and features a fully supported chamber. The aluminum trigger is precision-machined and features an adjustable overtravel stop. The hammer and sear are wire EDM cut for consistent engagement. The extractor is hand-tuned for positive extraction.",
+    whyChoose: "Choose the Kimber Custom II when you demand match-grade accuracy without commissioning a custom build. Kimber's reputation for precision manufacturing means you get a pistol that shoots better than guns costing twice as much. The Custom II bridges the gap between mass-produced 1911s and expensive custom guns, delivering premium performance that serious shooters appreciate.",
+    seoKeywords: [
+      "kimber custom ii",
+      "kimber 1911",
+      "premium 1911 pistol",
+      "match grade 1911",
+      "kimber 45 acp",
+      "best 1911 for competition",
+      "accurate 1911",
+      "custom 1911 pistol"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "830 fps (230gr)",
+      muzzleEnergy: "356 ft-lbs",
+      accuracy: "1.5-2 inch groups at 25 yards"
+    }
   },
   {
     id: "walther-pdp",
@@ -910,7 +1010,55 @@ export const firearms: Firearm[] = [
     capacity: "18+1",
     barrelLength: "4.5 inches",
     weight: "25.6 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Walther PDP (Performance Duty Pistol) represents German engineering excellence with revolutionary ergonomics and unmatched trigger quality. Purpose-built for serious shooters demanding precision.",
+    longDescription: "The Walther PDP is the culmination of decades of German engineering excellence and feedback from competitive shooters and law enforcement professionals. Walther designed the PDP from the ground up to address every shortcoming of modern striker-fired pistols while enhancing their strengths. The result is a pistol that feels like a natural extension of the shooter's hand. The Performance Duty Trigger breaks at a crisp 5.5 pounds with minimal take-up and a short, positive reset that enables rapid accurate fire. Walther's SuperTerrain Slide Serrations provide positive purchase in any condition - rain, blood, oil, or gloves. The Walther Adaptive Grip allows shooters to customize the grip texture and profile with three interchangeable backstraps and two side panels. The Dynamic Performance Trigger delivers the quality you'd expect from a match gun in a duty-ready package. Optics-ready from the factory, the PDP accepts all popular red dot footprints without adapter plates. The Performance Duty Barrel features a precision-machined chamber and crown for exceptional accuracy.",
+    features: [
+      "Dynamic Performance Trigger with clean 5.5 lb break",
+      "SuperTerrain slide serrations front and rear",
+      "Walther Adaptive Grip system with interchangeable panels",
+      "Optics-ready slide accepts popular red dot footprints",
+      "Performance Duty Barrel with polygonal rifling",
+      "Tenifer coating on slide and barrel for extreme durability",
+      "18+1 capacity in compact full-size package",
+      "Aggressive texturing in critical contact areas",
+      "Three-dot tritium night sights standard",
+      "Enlarged trigger guard for glove use"
+    ],
+    benefits: [
+      "Best-in-class trigger feel and quality",
+      "Ergonomics that accommodate all hand sizes",
+      "Exceptional accuracy from precision barrel",
+      "Ready for duty or competition out of the box",
+      "Easy manipulation in adverse conditions",
+      "German quality and precision engineering"
+    ],
+    useCases: [
+      "Law enforcement duty weapon",
+      "USPSA Carry Optics competition",
+      "Personal defense and concealed carry",
+      "Professional security applications",
+      "Home defense with optics-ready platform",
+      "Training and skill development"
+    ],
+    technicalDetails: "The PDP features Walther's proprietary trigger system with a lightweight striker spring and optimized sear geometry for a clean break. The barrel is cold-hammer forged with polygonal rifling for enhanced accuracy and longevity. The frame is manufactured from reinforced polymer with steel inserts in high-stress areas. The slide features internal lightening cuts to reduce reciprocating mass.",
+    whyChoose: "Choose the Walther PDP when trigger quality and ergonomics are your top priorities. No production striker-fired pistol offers a better trigger straight from the factory. Combined with revolutionary grip ergonomics and German precision, the PDP delivers performance that serious shooters immediately recognize. If you've been disappointed by gritty triggers and generic grips, the PDP is a revelation.",
+    seoKeywords: [
+      "walther pdp",
+      "performance duty pistol",
+      "best striker fired trigger",
+      "german 9mm pistol",
+      "walther performance",
+      "optics ready pistol",
+      "duty pistol 9mm"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      maxRange: "1,800 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "sw-5906",
@@ -925,7 +1073,52 @@ export const firearms: Firearm[] = [
     capacity: "15+1",
     barrelLength: "4 inches",
     weight: "38.5 oz",
-    finish: "Stainless Steel"
+    finish: "Stainless Steel",
+    shortDescription: "The Smith & Wesson 5906 is a classic third-generation stainless steel service pistol trusted by law enforcement throughout the 1990s. Known for exceptional durability and accuracy.",
+    longDescription: "The Smith & Wesson 5906 represents the pinnacle of the legendary third-generation auto pistol series. Introduced in 1989, the 5906 quickly became a favorite of law enforcement agencies across America, serving as a duty pistol for major departments including the FBI and countless state and local agencies. The all-stainless steel construction provides exceptional durability and corrosion resistance, while the traditional double-action/single-action trigger offers both safe carry with a heavy first-shot trigger pull and accurate follow-up shots with a lighter single-action pull. The 5906 features Smith & Wesson's renowned build quality with tight tolerances, smooth action, and excellent accuracy. The exposed hammer design allows for manual cocking and provides positive visual confirmation of the pistol's condition. The ambidextrous safety/decocker enables safe carry and operation for both right and left-handed shooters. While no longer in production, the 5906 remains highly sought after by collectors and shooters who appreciate traditional craftsmanship.",
+    features: [
+      "All stainless steel frame and slide construction",
+      "Traditional DA/SA trigger system",
+      "Ambidextrous safety/decocker",
+      "Fixed three-dot sights",
+      "Curved backstrap for natural pointability",
+      "Checkered front strap",
+      "Internal firing pin safety",
+      "15-round magazine capacity",
+      "Accessory rail on later models"
+    ],
+    benefits: [
+      "Exceptional durability and corrosion resistance",
+      "Proven law enforcement reliability",
+      "Heavy first-shot DA trigger enhances safety",
+      "Accurate single-action follow-up shots",
+      "Collectible as classic American service pistol",
+      "Ambidextrous controls for all shooters"
+    ],
+    useCases: [
+      "Collection as classic law enforcement pistol",
+      "Home defense with proven reliability",
+      "Range shooting and target practice",
+      "Training with traditional DA/SA systems",
+      "Backup duty weapon for those trained on S&W autos"
+    ],
+    technicalDetails: "The 5906 features an all-stainless steel construction with satin finish. The DA/SA trigger system provides approximately 12 lb double-action pull and 4 lb single-action pull. The barrel is precision-machined from stainless steel. The frame features an integral accessory rail on later production models. The ambidextrous safety functions as both a manual safety and a decocking lever.",
+    whyChoose: "Choose the S&W 5906 for a piece of American law enforcement history backed by exceptional build quality. These pistols were built to last generations and remain perfectly serviceable today. The all-steel construction provides substantial weight that reduces felt recoil, while the DA/SA trigger system offers enhanced safety for those who appreciate traditional semi-automatic designs.",
+    seoKeywords: [
+      "smith wesson 5906",
+      "sw 5906",
+      "third generation smith wesson",
+      "stainless 9mm pistol",
+      "classic police pistol",
+      "da/sa 9mm"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      maxRange: "1,800 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs",
+      accuracy: "2-3 inch groups at 25 yards"
+    }
   },
 
   // Category 2: Compact & Subcompact Pistols
@@ -942,7 +1135,56 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "3.1 inches",
     weight: "17.8 oz",
-    finish: "Nitron Black"
+    finish: "Nitron Black",
+    shortDescription: "The SIG P365 revolutionized concealed carry by packing 10+1 capacity into a true micro-compact package. America's #1 selling subcompact pistol redefined what's possible in a carry gun.",
+    longDescription: "The SIG Sauer P365 fundamentally changed the concealed carry landscape when it launched in 2018. Before the P365, shooters had to choose between capacity (double-stack guns that were thick and heavy) or concealability (single-stack guns with 6-8 round capacity). SIG's engineers broke this compromise by developing a revolutionary magazine design that fits 10 rounds of 9mm in a package barely larger than traditional 6-shot pistols. The P365 instantly became America's best-selling subcompact and has maintained that position for years. The secret is SIG's patented double-stack magazine with staggered rounds that maximizes capacity while minimizing width. At just 1 inch wide and 17.8 ounces unloaded, the P365 disappears under concealment while providing serious defensive capability. The XRay3 day/night sights are visible in all conditions. The trigger breaks cleanly around 6 pounds with a short reset. The textured grip provides secure purchase without being overly aggressive. Extended 12 and 15-round magazines are available for those wanting maximum capacity. The P365 has proven extremely reliable, with early teething issues long since resolved in current production.",
+    features: [
+      "Revolutionary 10+1 capacity in micro-compact size",
+      "XRay3 day/night sights standard",
+      "Patented double-stack magazine design",
+      "Just 1 inch wide for easy concealment",
+      "17.8 oz unloaded weight",
+      "Excellent trigger with short reset",
+      "Aggressive grip texturing",
+      "Striker-fired for consistent trigger pull",
+      "Available in standard and XL configurations",
+      "Optics-ready models available"
+    ],
+    benefits: [
+      "Best-in-class capacity for size",
+      "Extremely concealable and comfortable all-day carry",
+      "Proven reliability in millions of rounds fired",
+      "Excellent shootability despite small size",
+      "Huge aftermarket support",
+      "Available accessories and holsters everywhere"
+    ],
+    useCases: [
+      "Primary concealed carry pistol",
+      "Backup gun for law enforcement",
+      "Deep concealment applications",
+      "Ankle or pocket carry",
+      "Women's concealed carry",
+      "Off-duty officer carry"
+    ],
+    technicalDetails: "The P365 uses SIG's patented magazine design with a single-position feed geometry that allows 10 rounds to fit in a compact footprint. The striker-fired trigger system provides consistent 5.5-6 lb pulls. The barrel is stainless steel with a black Nitron finish. The frame is polymer with integrated serialized stainless steel chassis. Current production includes the X-Ray3 front and rear night sights. The slide is machined from stainless steel with front and rear cocking serrations.",
+    whyChoose: "Choose the SIG P365 when capacity and concealability are both non-negotiable. This is the pistol that forced every other manufacturer to redesign their micro-compacts. The P365 delivers more capacity in a smaller, lighter package than anything else on the market. With millions sold and countless rounds fired, the P365 has proven itself as the gold standard in concealed carry pistols. Whether you're an experienced carrier or new to concealed carry, the P365 makes it easy to carry a serious defensive tool every day.",
+    seoKeywords: [
+      "sig p365",
+      "sig sauer p365",
+      "micro compact 9mm",
+      "concealed carry pistol",
+      "p365 for sale",
+      "best subcompact 9mm",
+      "sig p365 review",
+      "micro 9mm pistol"
+    ],
+    ballisticData: {
+      effectiveRange: "25 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "1,050 fps (124gr)",
+      muzzleEnergy: "304 ft-lbs",
+      accuracy: "3 inch groups at 15 yards"
+    }
   },
   {
     id: "sig-p365xl",
@@ -972,7 +1214,55 @@ export const firearms: Firearm[] = [
     capacity: "10+1",
     barrelLength: "3.43 inches",
     weight: "21.71 oz",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Glock 26 'Baby Glock' pioneered the subcompact 9mm category and remains a favorite for concealed carry. accepts all Glock 9mm magazines from 10 to 33 rounds.",
+    longDescription: "Introduced in 1995, the Glock 26 established the template for subcompact 9mm pistols and earned the affectionate nickname 'Baby Glock.' This pistol brings the legendary Glock reliability to a package small enough for deep concealment while maintaining shootability that rivals larger pistols. The genius of the G26 lies in its complete magazine compatibility - while it ships with flush-fitting 10-round magazines, it accepts any Glock 9mm magazine, including 17, 19, and even 33-round magazines. This makes the G26 incredibly versatile: use 10-round magazines for maximum concealability, or insert a 17 or 33-round magazine for a makeshift carbine-length grip when more capacity is needed. The short sight radius requires practice to master, but once proficient, shooters find the G26 remarkably accurate. The reduced grip length makes it printless under clothing while the full-width grip provides adequate purchase for most hand sizes. The G26's reputation for absolute reliability mirrors its full-size siblings - it runs in any condition with any ammunition. Many law enforcement officers carry the G26 as an off-duty or backup gun, knowing they can share ammunition and magazines with their duty Glock. The Gen5 version adds refinements including the Glock Marksman Barrel for enhanced accuracy, ambidextrous slide stops, and removal of finger grooves.",
+    features: [
+      "Accepts all Glock 9mm magazines for ultimate versatility",
+      "Legendary Glock reliability in subcompact size",
+      "Gen5 Glock Marksman Barrel for enhanced accuracy",
+      "Ambidextrous slide stop levers",
+      "Safe Action trigger system",
+      "Universal grip without finger grooves",
+      "Compact dimensions ideal for concealment",
+      "21.71 oz unloaded weight",
+      "Front and rear slide serrations",
+      "Interchangeable backstraps"
+    ],
+    benefits: [
+      "Magazine compatibility with all Glock 9mm models",
+      "Proven Glock reliability in compact package",
+      "Easy to conceal for all-day carry",
+      "Excellent backup gun for Glock users",
+      "Minimal training required for Glock owners",
+      "Huge aftermarket support and accessories"
+    ],
+    useCases: [
+      "Concealed carry primary weapon",
+      "Backup gun for law enforcement",
+      "Off-duty officer carry",
+      "Deep concealment operations",
+      "Ankle or pocket carry with smaller holsters",
+      "Compatible with duty Glock magazines"
+    ],
+    technicalDetails: "The Glock 26 Gen5 features the Glock Marksman Barrel with enhanced polygonal rifling and improved crown for tighter groups. The Safe Action trigger system provides consistent 5.5 lb trigger pull with three independent safeties. The polymer frame includes an integrated accessory rail. The slide is machined from steel with nDLC coating for extreme wear and corrosion resistance. The magazine catch is reversible for left-handed operation.",
+    whyChoose: "Choose the Glock 26 when you need maximum concealability with the option for high capacity. The magazine compatibility makes it the most versatile subcompact available - carry it with 10 rounds for daily concealment, or grab a 33-round magazine for home defense. If you already own a Glock 17 or 19, the G26 uses the same magazines, holsters fit similarly, and manipulation is identical. The Glock 26 has earned its reputation through decades of reliable service in the most demanding roles.",
+    seoKeywords: [
+      "glock 26",
+      "baby glock",
+      "glock 26 gen 5",
+      "subcompact glock",
+      "concealed carry glock",
+      "glock 26 for sale",
+      "compact 9mm pistol"
+    ],
+    ballisticData: {
+      effectiveRange: "25 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "1,100 fps (124gr)",
+      muzzleEnergy: "333 ft-lbs",
+      accuracy: "3-4 inch groups at 15 yards"
+    }
   },
   {
     id: "sw-shield",
@@ -987,7 +1277,55 @@ export const firearms: Firearm[] = [
     capacity: "8+1",
     barrelLength: "3.1 inches",
     weight: "20.8 oz",
-    finish: "Armornite Black"
+    finish: "Armornite Black",
+    shortDescription: "The M&P Shield pioneered the slim single-stack 9mm category and became America's most popular concealed carry pistol. Millions sold prove its winning combination of concealability and shootability.",
+    longDescription: "When Smith & Wesson introduced the M&P Shield in 2012, they created what would become the best-selling pistol in America for several consecutive years. The Shield addressed a critical need: shooters wanted something slimmer and more concealable than compact double-stacks like the Glock 19, but more shootable than tiny pocket pistols. The Shield's slim 0.95-inch width makes it disappear under concealment clothing, while the longer barrel and grip provide better accuracy and control than micro-compacts. The Shield quickly earned a reputation for reliability and accuracy that surprised many reviewers - this wasn't just a backup gun, but a serious defensive tool that shot like a much larger pistol. The trigger has been praised as one of the best in its class, with a crisp break and short reset. Smith & Wesson offered the Shield with optional manual thumb safety for those preferring that additional layer of security. The Shield's success spawned an entire category of competitors, but the original remains extremely popular due to its proven track record, aggressive pricing, and widespread availability. Available in 9mm and .40 S&W, the Shield works equally well as a primary carry gun for those who prioritize concealment or as a backup for professionals.",
+    features: [
+      "Ultra-slim 0.95-inch width for easy concealment",
+      "Crisp striker-fired trigger with short reset",
+      "Aggressive grip texturing for secure control",
+      "White-dot sights with high-visibility front",
+      "Armornite corrosion-resistant finish",
+      "18-degree grip angle for natural pointing",
+      "Available with or without manual safety",
+      "Flush and extended magazine options",
+      "Lightweight 20.8 oz unloaded",
+      "Proven reliability through millions sold"
+    ],
+    benefits: [
+      "Exceptional concealability in any clothing",
+      "Surprisingly accurate for compact size",
+      "Proven reliability across millions of pistols",
+      "Affordable pricing makes it accessible",
+      "Huge selection of holsters and accessories",
+      "Easy to shoot well even for novices"
+    ],
+    useCases: [
+      "Primary concealed carry weapon",
+      "Backup gun for law enforcement and security",
+      "Ankle or pocket carry in small holster",
+      "Summer carry in minimal clothing",
+      "Women's concealed carry",
+      "Travelers needing easy-to-pack pistol"
+    ],
+    technicalDetails: "The M&P Shield features a polymer frame with stainless steel slide and barrel. The striker-fired trigger system provides approximately 6.5 lb trigger pull. The barrel is precision-machined with conventional rifling. Standard sights are white-dot with high-visibility front. The slide has front and rear cocking serrations. The frame includes an integrated accessory rail on M&P Shield 2.0 models. Available in 9mm with 7 or 8-round magazines, and .40 S&W with 6 or 7-round magazines.",
+    whyChoose: "Choose the M&P Shield for proven concealed carry performance at an outstanding price. This is the pistol that dominated sales charts for years because it delivers exactly what carriers need: ultimate concealability, surprising shootability, and proven reliability. The Shield has been tested through millions of carry cycles and countless rounds. It's slim enough to disappear, accurate enough for confident shooting, and reliable enough to trust your life to. With widespread availability of holsters, magazines, and accessories, plus competitive pricing, the Shield remains an outstanding value.",
+    seoKeywords: [
+      "m&p shield",
+      "smith wesson shield",
+      "shield 9mm",
+      "concealed carry pistol",
+      "single stack 9mm",
+      "best ccw pistol",
+      "shield for sale"
+    ],
+    ballisticData: {
+      effectiveRange: "25 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "1,050 fps (124gr)",
+      muzzleEnergy: "304 ft-lbs",
+      accuracy: "3 inch groups at 15 yards"
+    }
   },
   {
     id: "sw-shield-plus",
@@ -1017,7 +1355,55 @@ export const firearms: Firearm[] = [
     capacity: "11+1",
     barrelLength: "3 inches",
     weight: "18.3 oz",
-    finish: "Black Melonite"
+    finish: "Black Melonite",
+    shortDescription: "The Springfield Hellcat raised the bar for micro-compact capacity with 11+1 rounds in the smallest possible package. Won numerous awards as the ultimate concealed carry pistol.",
+    longDescription: "Springfield Armory entered the micro-compact wars with the Hellcat and immediately set new standards for capacity and features. The Hellcat packs 11+1 rounds of 9mm into dimensions barely larger than guns holding 6-7 rounds, directly challenging the SIG P365 and coming out ahead in several key areas. Springfield's Adaptive Grip Texture technology provides secure purchase without being uncomfortably aggressive - it grips when you need it but doesn't tear up your skin or clothing. The Hellcat's U-Dot tritium front sight paired with Tactical Rack U-notch rear sight provides one of the best sight pictures in the micro-compact class. The trigger is exceptional for the category, breaking cleanly with minimal takeup and a crisp wall. The Hellcat won the 2020 NRA Handgun of the Year and has earned numerous other accolades. The Hellcat OSP (Optical Sight Pistol) version includes a mount that accepts Shield RMSc footprint optics, making it one of the most versatile micro-compacts available. The flush-fitting 11-round magazine provides a nearly full grip, while optional 13-round extended magazines provide even more capacity. The Hellcat combines Springfield's 240+ years of firearms expertise with modern engineering to create a true breakthrough in defensive handguns.",
+    features: [
+      "Class-leading 11+1 capacity in micro-compact size",
+      "Adaptive Grip Texture for secure control",
+      "U-Dot tritium front sight",
+      "Tactical Rack U-notch rear sight",
+      "Crisp trigger with short reset",
+      "Optics-ready OSP models available",
+      "Melonite finish for extreme durability",
+      "18.3 oz unloaded weight",
+      "3-inch hammer-forged barrel",
+      "Extended 13-round magazines available"
+    ],
+    benefits: [
+      "Maximum capacity in minimal size",
+      "Exceptional trigger quality for class",
+      "Best-in-class sights included",
+      "Comfortable to carry all day",
+      "Optics-ready option for red dot sights",
+      "Proven Springfield quality and support"
+    ],
+    useCases: [
+      "Primary concealed carry weapon",
+      "Backup gun for professionals",
+      "Deep concealment applications",
+      "Competition in micro-compact classes",
+      "Off-duty officer carry",
+      "Travelers needing maximum firepower in minimum size"
+    ],
+    technicalDetails: "The Hellcat features a hammer-forged steel barrel with Melonite finish. The trigger system provides approximately 5-6 lb pull weight with short reset. The frame is glass-reinforced polymer with integral accessory rail. The OSP model includes a machined optic cut that accepts Shield RMSc, JPoint, and similar micro red dots. The magazines feature witness holes for round counting. The slide is machined from ordnance steel with serrations front and rear.",
+    whyChoose: "Choose the Hellcat when you want the most capacity possible in a true micro-compact. Springfield didn't just match the competition - they beat it with more rounds, better sights, superior trigger, and innovative features like Adaptive Grip Texture. The Hellcat proves that micro-compacts don't have to compromise on features or shootability. This is the pistol that won Handgun of the Year for good reason - it delivers professional-grade performance in a package you can carry anywhere. Whether you choose the standard model or OSP with optics capability, you're getting one of the most advanced micro-compacts ever designed.",
+    seoKeywords: [
+      "springfield hellcat",
+      "hellcat 9mm",
+      "micro compact pistol",
+      "hellcat osp",
+      "concealed carry gun",
+      "11 round micro compact",
+      "best micro 9mm"
+    ],
+    ballisticData: {
+      effectiveRange: "25 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "1,000 fps (124gr)",
+      muzzleEnergy: "276 ft-lbs",
+      accuracy: "3 inch groups at 15 yards"
+    }
   },
   {
     id: "springfield-hellcat-pro",
