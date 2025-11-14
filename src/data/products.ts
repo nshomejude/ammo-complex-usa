@@ -3504,7 +3504,56 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "30-06-springfield",
     description: "Italian-made pointed soft point",
     manufacturer: "Fiocchi",
-    grainWeight: "150gr"
+    grainWeight: "150gr",
+    shortDescription: "Fiocchi 150gr Pointed Soft Point delivers traditional European craftsmanship and proven terminal performance for .30-06 Springfield hunters. Over 145 years of Italian ammunition expertise in an affordable hunting cartridge.",
+    longDescription: "Fiocchi 150-grain Pointed Soft Point .30-06 Springfield ammunition represents Italian firearms manufacturing excellence adapted for American big game hunting. Since 1876, Fiocchi has built a reputation for precision manufacturing and innovation in ammunition technology. The 150-grain PSP bullet weight represents the lighter end of the .30-06 spectrum, optimized for flat trajectory and rapid expansion on medium-sized game including whitetail deer, pronghorn antelope, black bear, and feral hogs. The pointed soft point bullet design features exposed lead at the tip for reliable expansion initiation upon impact, combined with a tapered jacket that controls expansion while maintaining adequate weight retention for deep penetration through bone and vital organs. Fiocchi's manufacturing facility employs modern automated equipment combined with rigorous quality control processes ensuring dimensional consistency and performance reliability. The clean-burning powder formulation is temperature-stable across hunting season temperature ranges, maintaining consistent point of impact from early-season heat to late-season cold. Fiocchi brass cases are manufactured from high-quality cartridge brass with consistent wall thickness and proper annealing for reliable extraction and multiple reloading cycles. The boxer primers utilize non-corrosive, non-mercuric compounds providing consistent ignition in all weather conditions. Each cartridge undergoes multiple quality inspections during the manufacturing process, from component verification through final loaded cartridge inspection. Fiocchi's commitment to affordability without compromising essential quality makes this ammunition ideal for hunters who want proven performance at accessible prices. The 150-grain bullet achieves approximately 2,910 fps muzzle velocity from standard 24-inch sporting rifle barrels, generating 2,820 foot-pounds of muzzle energy - sufficient for ethical harvesting of deer-sized game at ranges extending beyond 300 yards when shooters do their part. The flatter trajectory compared to heavier bullets simplifies range estimation and holdover calculations in hunting field conditions. Fiocchi's availability through major distributors and commitment to consistent production means hunters can develop confidence with a load they can reliably obtain season after season. Whether you're hunting open plains where longer shots are common, pursuing running game where flat trajectory matters, or simply want affordable quality for your .30-06 Springfield rifle, Fiocchi 150gr PSP delivers time-tested performance backed by Italian manufacturing heritage.",
+    features: [
+      "150-grain pointed soft point bullet optimized for medium game",
+      "Italian precision manufacturing with over 145 years of experience",
+      "Exposed lead tip for rapid expansion initiation on impact",
+      "Tapered copper jacket controls expansion for deep penetration",
+      "Clean-burning temperature-stable powder for consistent accuracy",
+      "High-quality reloadable brass cases with boxer primers",
+      "Non-corrosive, non-mercuric primer compounds for reliable ignition",
+      "Approximately 2,910 fps muzzle velocity from 24-inch barrels",
+      "2,820 foot-pounds of muzzle energy for ethical medium game harvesting",
+      "Flat trajectory simplifies range estimation and holdover"
+    ],
+    benefits: [
+      "Affordable pricing enables practice and zero confirmation",
+      "Lighter bullet weight reduces felt recoil compared to heavy loads",
+      "Flat trajectory extends effective hunting range",
+      "Proven terminal performance on whitetail deer and similar game",
+      "Fiocchi's European craftsmanship ensures quality and consistency",
+      "Wide availability through major ammunition distributors"
+    ],
+    useCases: [
+      "Whitetail deer hunting in open country and agricultural fields",
+      "Pronghorn antelope hunting on western plains",
+      "Black bear hunting where quick expansion is desired",
+      "Feral hog control and management hunting",
+      "Mule deer hunting in open terrain",
+      "General medium game hunting at typical ranges"
+    ],
+    technicalDetails: "Fiocchi 150gr PSP .30-06 Springfield achieves approximately 2,910 feet per second muzzle velocity from 24-inch test barrels and 2,780 fps from 22-inch hunting rifles, generating 2,820 and 2,570 foot-pounds of muzzle energy respectively. The pointed soft point bullet features an exposed lead tip measuring approximately 0.060 inches in diameter, designed to deform immediately upon contact with soft tissue, initiating rapid expansion. The copper jacket thickness varies from approximately 0.025 inches at the tip to 0.035 inches at the base, providing controlled expansion that typically doubles bullet diameter to 0.60-0.65 inches while retaining 65-80% of original bullet weight through typical game animal vital zones. The tapered jacket design prevents premature fragmentation while ensuring sufficient expansion for rapid incapacitation. At 100 yards, velocity remains approximately 2,650 fps with 2,337 foot-pounds of energy. At 200 yards, velocity drops to approximately 2,400 fps with 1,917 foot-pounds of energy - still well above minimum energy recommendations for deer-sized game. At 300 yards, velocity is approximately 2,160 fps with 1,553 foot-pounds of energy. The flatter trajectory compared to 180-grain bullets means approximately 1.5 inches less drop at 200 yards and 4 inches less at 300 yards when zeroed at 200 yards. Wind drift at 300 yards in a 10 mph crosswind is approximately 5.2 inches. The pointed profile provides improved ballistic coefficient (approximately G1 BC of 0.360) compared to round-nose designs, enhancing long-range performance. Fiocchi's powder formulation maintains velocity variation within 2% across temperature ranges from 20°F to 100°F. Accuracy from quality hunting rifles typically produces 1.5-2.5 MOA groups at 100 yards, suitable for hunting applications. Fiocchi brass cases feature uniform wall thickness, centered flash holes, and proper head stamps for easy identification. Primer pockets are formed to standard dimensions for reloading compatibility.",
+    whyChoose: "Choose Fiocchi 150gr PSP when you want proven .30-06 Springfield hunting performance from a manufacturer with over 145 years of ammunition expertise. Fiocchi brings European precision manufacturing standards to American hunting, offering quality that rivals domestic premium brands at more accessible price points. The 150-grain bullet weight is ideal for hunters who prioritize flat trajectory and reduced recoil while maintaining adequate terminal performance for deer-sized game. The lighter bullet's higher velocity translates to less drop and drift, extending effective hunting range and simplifying the mental calculations required for ethical shot placement at varying distances. The pointed soft point bullet design has proven effective on North American game animals for over a century - it's not innovative, it's proven. The exposed lead tip ensures expansion even at reduced velocities encountered at extended ranges, while the tapered jacket controls expansion to maintain penetration through shoulder bones and vital organs. Fiocchi's commitment to affordability doesn't mean compromising reliability - their modern manufacturing facility and quality control processes ensure consistent performance. For hunters building shooting skills and confirming zero, Fiocchi's pricing enables purchasing adequate ammunition for practice without the financial burden of premium hunting loads. The clean-burning powder keeps your rifle's action and barrel cleaner, extending time between detailed cleaning sessions during hunting season. The reloadable brass quality appeals to handloaders who can develop custom loads tailored to specific rifles and applications while using proven Fiocchi brass as the foundation. Fiocchi ammunition is widely stocked by major distributors, meaning you can purchase this ammunition, develop confidence with it, and reliably obtain more when needed - avoiding the frustration of finding the perfect load only to discover it's perpetually unavailable. When your hunting situations involve shots primarily inside 250 yards, when you want to reduce recoil fatigue during extended range sessions, or when budget considerations matter without compromising ethical hunting capability, choose Fiocchi 150gr PSP for time-tested performance from a respected European manufacturer.",
+    seoKeywords: [
+      "fiocchi 30-06 ammo",
+      "150 grain 30-06",
+      "pointed soft point hunting",
+      "buy fiocchi 30-06",
+      "italian hunting ammunition",
+      "30-06 deer hunting",
+      "affordable 30-06 ammo",
+      "fiocchi psp 150gr",
+      "medium game 30-06",
+      "flat shooting 30-06",
+      "whitetail deer ammo",
+      "fiocchi springfield",
+      "budget hunting 30-06",
+      "150gr hunting load",
+      "european 30-06 ammo"
+    ]
   },
   {
     id: "3006-federal-vitalshok-165",
@@ -3517,7 +3566,56 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "30-06-springfield",
     description: "Lead-free copper hunting bullet",
     manufacturer: "Federal",
-    grainWeight: "165gr"
+    grainWeight: "165gr",
+    shortDescription: "Federal Trophy Copper delivers lead-free hunting performance that meets regulations in condor zones and lead-restricted areas. Premium all-copper construction ensures deep penetration and nearly 100% weight retention.",
+    longDescription: "Federal Premium VitalShok 165-grain Trophy Copper represents the evolution of lead-free hunting ammunition, combining environmental responsibility with exceptional terminal performance that often exceeds conventional lead-core bullets. As hunting regulations increasingly restrict lead ammunition use, particularly in California condor range and other environmentally sensitive areas, Trophy Copper provides hunters with a premium alternative that actually enhances performance rather than compromising it. The Trophy Copper bullet is machined from solid copper bar stock in a precision manufacturing process that ensures every bullet meets exacting dimensional specifications. Unlike conventional bullets that bond or mechanically lock lead cores to copper jackets, Trophy Copper's monolithic construction eliminates core-jacket separation entirely - the bullet you shoot is the bullet that penetrates, with virtually 100% weight retention even after traversing heavy bone and dense tissue. The hollow cavity at the bullet's tip features a polymer insert that drives rearward upon impact, initiating controlled expansion from the pre-scored nose petals. This expansion typically doubles bullet diameter to approximately 0.60-0.65 inches while the copper petals fold back uniformly, creating sharp cutting edges that maximize tissue damage and wound channel diameter. The longer bearing surface of copper bullets compared to shorter lead-core equivalents means manufacturers must optimize bullet length and ogive profile to maintain stability while minimizing bearing surface friction. Federal's engineering achieves this balance, producing a bullet that stabilizes in standard .30-06 twist rates while delivering excellent accuracy from quality hunting rifles. The grooved shank reduces bearing surface contact with the barrel, minimizing copper fouling while maintaining adequate engraving for stable flight. Federal's Catalyst primer provides consistent ignition of clean-burning propellants formulated for optimal performance with all-copper projectiles. The premium nickel-plated brass cases resist corrosion in harsh hunting environments and provide smooth chambering and extraction. Trophy Copper ammunition meets all requirements for hunting in California condor range, other lead-restricted zones, and aligns with wildlife conservation goals of preventing lead exposure in scavenging species. Beyond regulatory compliance, many hunters choose Trophy Copper for its superior penetration characteristics on large, heavily-muscled game animals where maintaining bullet integrity through thick hide, heavy bone, and dense tissue determines success. The consistent weight retention and controlled expansion produce reliable exit wounds on broadside shots, creating blood trails that facilitate recovery even when tracking conditions are challenging.",
+    features: [
+      "Solid copper monolithic bullet construction for 100% weight retention",
+      "Polymer-tipped hollow point initiates rapid controlled expansion",
+      "Pre-scored expansion cavity forms uniform sharp petals upon impact",
+      "Grooved bullet shank reduces copper fouling and bearing surface friction",
+      "Lead-free composition meets California and other restrictive regulations",
+      "Federal Catalyst primer for consistent ignition in all conditions",
+      "Premium nickel-plated brass cases for corrosion resistance",
+      "Approximately 2,800 fps muzzle velocity from 24-inch barrels",
+      "2,870 foot-pounds of muzzle energy for large game capability",
+      "Deep penetration characteristics ideal for quartering shots"
+    ],
+    benefits: [
+      "Legal for hunting in all California condor range and lead-restricted areas",
+      "Superior penetration on large game compared to lead-core bullets",
+      "Environmental responsibility without performance compromise",
+      "Consistent terminal performance regardless of impact angle or bone contact",
+      "Federal Premium's reputation for quality and innovation",
+      "Reliable exit wounds on broadside shots aid recovery and tracking"
+    ],
+    useCases: [
+      "California deer, elk, and pig hunting in condor zone areas",
+      "Large game hunting requiring deep penetration - elk, moose, bear",
+      "Quartering shots where maintaining bullet integrity is critical",
+      "Hunting in any lead-restricted or lead-free required areas",
+      "Conservation-minded hunters choosing lead-free alternatives voluntarily",
+      "Thick-skinned game where controlled expansion and penetration matter"
+    ],
+    technicalDetails: "Federal Trophy Copper 165gr .30-06 Springfield achieves approximately 2,800 feet per second muzzle velocity from 24-inch test barrels and 2,690 fps from 22-inch hunting rifles, generating 2,870 and 2,650 foot-pounds of muzzle energy respectively. The solid copper bullet measures approximately 1.285 inches in overall length - significantly longer than a 165-grain lead-core bullet due to copper's lower density (8.96 g/cm³) compared to lead (11.34 g/cm³). This length requires optimized ogive profile and boat tail design to maintain ballistic coefficient competitive with lead-core equivalents. The G1 ballistic coefficient measures approximately 0.450, providing excellent long-range ballistic performance. The polymer tip is precisely engineered to collapse rearward upon impact, driving into the hollow expansion cavity to initiate petal formation. The expansion cavity depth and diameter, combined with pre-scored nose section, control expansion dynamics to achieve reliable 1.8-2.0x diameter expansion across impact velocities from 1,800 to 3,000 fps. Terminal testing in ballistic gelatin consistently shows 18-24 inches of penetration with full expansion, meeting FBI protocol standards for controlled expansion and adequate penetration depth. On game animals, this translates to complete penetration of the vital zone on broadside shots with high probability of exit wounds, and sufficient penetration on quartering angles to reach vital organs through heavy muscle and bone barriers. The grooved shank features 3-4 circumferential grooves machined into the bearing surface, reducing contact area with barrel rifling by approximately 25-30% compared to smooth copper bullets. This design minimizes copper fouling accumulation while maintaining adequate engraving depth for stable flight. Accuracy from quality hunting rifles typically produces 1-1.5 MOA groups at 100 yards - match-grade performance from hunting ammunition. At 200 yards, velocity remains approximately 2,550 fps with 2,380 foot-pounds of energy. At 300 yards, expect approximately 2,310 fps and 1,955 foot-pounds - maintaining adequate energy for ethical harvesting of large game. The monolithic copper construction eliminates any possibility of core-jacket separation, ensuring the recovered bullet weight will be 95-100% of the original 165 grains regardless of bone contact or oblique impacts. Federal's quality control processes include X-ray inspection of bullet cavity dimensions, computerized visual inspection of finished ammunition, and live-fire accuracy and terminal performance verification.",
+    whyChoose: "Choose Federal Trophy Copper when you need premium lead-free hunting performance, whether mandated by regulation or personal choice. Federal didn't simply remove lead and hope for the best - they engineered Trophy Copper from the ground up to deliver terminal ballistics that often exceed conventional lead-core bullets. The monolithic copper construction provides reliability that lead-core bullets can't match: there's no jacket to separate, no core to fragment, no possibility of the bullet failing to perform as designed. When your shot angles aren't perfect, when bone contact is likely, when you need the bullet to drive deep and maintain its integrity through whatever it encounters, Trophy Copper delivers. The controlled expansion characteristics work across a broad velocity range, meaning the bullet performs consistently whether impacting at 150 yards or 350 yards. Federal's reputation for innovation and quality isn't marketing - it's backed by extensive terminal ballistics research and development. Trophy Copper represents years of engineering refinement, from polymer tip geometry to expansion cavity dimensions to groove shank design. For hunters pursuing large game animals like elk, moose, or large bears in non-lead areas, Trophy Copper provides confidence that your ammunition can handle the most challenging hunting scenarios. The nearly 100% weight retention means the energy calculated at the muzzle actually reaches the vitals rather than shedding mass as bullet fragments. The sharp expansion petals create maximum tissue damage while the retained bullet mass maintains penetration momentum. Beyond regulated areas, environmentally conscious hunters choose Trophy Copper to minimize lead exposure in ecosystems, particularly benefiting scavenging species that may consume unretrieved game or gut piles. Federal's customer support and extensive loading data help hunters optimize performance in their specific rifles. While premium-priced, Trophy Copper delivers premium performance where bullet failure isn't an option. When regulations require lead-free ammunition, when hunting situations demand maximum penetration and controlled expansion, when you want the confidence that comes from Federal Premium engineering, choose Trophy Copper for lead-free performance that sets the standard.",
+    seoKeywords: [
+      "federal trophy copper",
+      "lead free 30-06",
+      "copper hunting ammo",
+      "california condor zone ammo",
+      "165 grain copper bullet",
+      "non-lead hunting",
+      "federal premium copper",
+      "buy trophy copper 30-06",
+      "monolithic bullet 30-06",
+      "lead-free elk ammo",
+      "california legal hunting",
+      "all copper 30-06",
+      "deep penetration hunting",
+      "federal vitalshok copper",
+      "environmental hunting ammo"
+    ]
   },
   {
     id: "3006-hornady-superformance-165",
@@ -3530,7 +3628,56 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "30-06-springfield",
     description: "High-velocity hunting ammunition",
     manufacturer: "Hornady",
-    grainWeight: "165gr"
+    grainWeight: "165gr",
+    shortDescription: "Hornady Superformance delivers 100-200 fps more velocity than conventional .30-06 ammunition without increasing felt recoil or pressure. Revolutionary propellant technology extends effective hunting range and terminal performance.",
+    longDescription: "Hornady Superformance 165-grain SST .30-06 Springfield ammunition represents a genuine breakthrough in cartridge performance, delivering magnum-like velocities from standard cartridges without increasing chamber pressure or felt recoil. Through proprietary propellant technology, Superformance achieves 100-200 fps velocity increases over conventional ammunition - performance gains that translate to measurably flatter trajectories, reduced wind drift, and increased downrange energy delivery. The Super Shock Tip (SST) bullet combines polymer tip technology with Hornady's InterLock ring for controlled expansion and weight retention. The red polymer tip serves multiple ballistic functions: it increases ballistic coefficient by streamlining bullet profile, it initiates rapid expansion upon impact by driving rearward into the expansion cavity, and it prevents tip deformation during magazine feeding and recoil. The InterLock ring is mechanically formed during bullet manufacturing, creating a physical barrier between bullet core and jacket that prevents separation during expansion - ensuring the bullet retains sufficient mass for deep penetration while expanding to create decisive wound channels. The boattail design further enhances ballistic coefficient while reducing drag, maintaining velocity and energy at extended ranges. Hornady's Superformance propellants represent years of ballistic research, utilizing progressive burning characteristics that extract maximum velocity from existing case capacity while remaining within SAAMI pressure specifications. This is critical - Superformance isn't achieving velocity through dangerous pressure increases that could damage rifles or cause case head separations. The propellants are specifically formulated for temperature stability, maintaining consistent velocities across temperature ranges from Arctic cold to summer heat. Velocity variation measures less than 1.5 fps per degree Fahrenheit - ensuring your zero and trajectory calculations remain valid throughout hunting seasons. The clean-burning powder formulation minimizes fouling and copper deposits, extending time between detailed cleaning sessions. Hornady brass cases are drawn from high-quality cartridge brass with consistent wall thickness controlled to tight tolerances for uniform internal capacity. Primer pockets are properly formed and flash holes are centered and deburred. Hornady's quality control processes include statistical sampling for pressure verification, accuracy testing from multiple rifle platforms, and terminal ballistics validation. For .30-06 Springfield shooters, Superformance delivers performance previously requiring magnification to .300 Winchester Magnum or similar cartridges - but in a standard-pressure load suitable for any rifle in good condition. The 165-grain SST bullet weight provides optimal balance between sectional density for penetration and velocity for flat trajectory, making it versatile for game ranging from whitetail deer through elk.",
+    features: [
+      "100-200 fps velocity increase over conventional .30-06 ammunition",
+      "Proprietary Superformance propellants for increased performance",
+      "165-grain SST bullet with polymer tip and InterLock ring",
+      "Boattail design for superior ballistic coefficient and retained velocity",
+      "Remains within SAAMI pressure specifications for safe operation",
+      "Temperature-stable powder maintains velocity consistency",
+      "Clean-burning powder formulation for reduced fouling",
+      "Premium Hornady brass cases for consistent performance",
+      "Approximately 2,940 fps muzzle velocity from 24-inch barrels",
+      "3,165 foot-pounds of muzzle energy for versatile big game hunting"
+    ],
+    benefits: [
+      "Magnum-like performance without magnum recoil or barrel wear",
+      "Flatter trajectory extends maximum point-blank range significantly",
+      "Reduced wind drift increases hit probability in field conditions",
+      "Hornady's 75+ year reputation for innovation and quality",
+      "Works safely in all .30-06 rifles in good condition",
+      "Terminal ballistics proven on North American big game"
+    ],
+    useCases: [
+      "Open-country hunting where extended range shots are common",
+      "Elk and large deer hunting requiring increased energy delivery",
+      "Mountain hunting where flat trajectory simplifies ranging",
+      "Windy conditions where reduced time of flight matters",
+      "Hunters wanting maximum .30-06 performance without rebarreling",
+      "Situations requiring versatility from deer through elk-sized game"
+    ],
+    technicalDetails: "Hornady Superformance 165gr SST .30-06 Springfield achieves approximately 2,940 feet per second muzzle velocity from 24-inch test barrels - nearly 150-200 fps faster than conventional .30-06 loads with equivalent bullet weights. From 22-inch hunting rifles, expect approximately 2,825 fps. This generates 3,165 foot-pounds of muzzle energy from 24-inch barrels and 2,925 foot-pounds from 22-inch barrels - performance approaching .300 Winchester Magnum with lighter bullets. The SST bullet features a G1 ballistic coefficient of approximately 0.447, providing excellent aerodynamic efficiency for long-range performance. At 200 yards, velocity remains approximately 2,685 fps with 2,635 foot-pounds of energy - significantly more than conventional .30-06 loads. At 300 yards, expect approximately 2,445 fps and 2,190 foot-pounds of energy. At 400 yards, velocity is approximately 2,215 fps with 1,795 foot-pounds - still adequate for ethical harvesting of deer-sized game. When zeroed at 200 yards, Superformance drops approximately 7.2 inches at 300 yards compared to 9-10 inches for conventional loads - a meaningful 2-3 inch advantage that extends maximum point-blank range and simplifies holdover calculations. Wind drift at 300 yards in a 10 mph crosswind is approximately 5.8 inches compared to 6.5-7 inches for conventional loads - improved hit probability in windy field conditions. The SST bullet's polymer tip initiates expansion across impact velocities from 1,800 to 3,000 fps, ensuring reliable terminal performance at both close and extended ranges. Upon impact, the tip drives rearward into the hollow cavity beneath, initiating expansion from the front of the bullet. The InterLock ring prevents core-jacket separation, maintaining bullet integrity through bone and heavy tissue. Terminal expansion typically achieves 1.7-2.0x original diameter with 75-85% weight retention - creating decisive wound channels while maintaining penetration depth. Hornady's temperature stability testing demonstrates velocity variation under 1.5 fps per degree Fahrenheit across -40°F to 140°F - critical for maintaining zero and trajectory predictions across hunting season temperature changes. Accuracy from quality hunting rifles consistently produces sub-MOA groups, with many rifles achieving 0.75-1 MOA at 100 yards. Superformance propellants burn cleaner than many conventional powders, with reduced copper fouling and carbon deposits extending cleaning intervals.",
+    whyChoose: "Choose Hornady Superformance when you want maximum performance from your .30-06 Springfield rifle without stepping up to magnum cartridges. Superformance represents genuine innovation - not marketing hype, but measurable ballistic improvements that translate to real-world hunting advantages. The 100-200 fps velocity gain isn't just impressive on chronographs; it delivers flatter trajectories that extend your maximum point-blank range, reduced wind drift that increases hit probability in field conditions, and increased downrange energy that ensures decisive terminal performance at extended distances. For hunters considering magnum cartridges for their ballistic advantages, Superformance provides similar performance gains while retaining the moderate recoil, lower ammunition cost, and reduced barrel wear of the .30-06 Springfield. Your existing rifle doesn't need rebarreling or modification - Superformance works safely in any .30-06 rifle in good condition because it achieves increased performance through propellant technology rather than dangerous pressure increases. The temperature stability ensures your carefully developed zero and trajectory data remain valid whether hunting September pronghorn in prairie heat or November elk in mountain cold. The SST bullet's proven terminal performance means the increased velocity translates to genuine hunting advantages, not just impressive ballistics tables. The polymer tip and InterLock ring provide controlled expansion and weight retention that works reliably on game from whitetail deer through elk. Hornady's quality control ensures this cutting-edge performance doesn't compromise reliability - Superformance functions reliably, shoots accurately, and performs terminally exactly as designed. While premium-priced compared to budget ammunition, Superformance delivers premium performance that genuinely extends your effective hunting range and increases your probability of ethical one-shot harvests. When hunting situations demand every bit of performance your .30-06 can deliver, when you need the flattest trajectory and maximum energy at extended ranges, when you want proven terminal performance backed by Hornady's innovation and quality reputation, choose Superformance - ammunition that redefines what's possible from standard cartridges.",
+    seoKeywords: [
+      "hornady superformance 30-06",
+      "high velocity 30-06",
+      "165 grain sst 30-06",
+      "fast 30-06 ammo",
+      "superformance ammunition",
+      "buy superformance 30-06",
+      "flat shooting 30-06",
+      "extended range hunting ammo",
+      "30-06 superformance",
+      "magnum performance 30-06",
+      "long range hunting 30-06",
+      "hornady 165gr sst 30-06",
+      "high energy 30-06",
+      "elk hunting 30-06 ammo",
+      "premium velocity 30-06"
+    ]
   },
 
   // Shotgun Ammunition - 20 Gauge Category
