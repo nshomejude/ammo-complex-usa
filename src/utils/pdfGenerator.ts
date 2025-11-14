@@ -9,8 +9,15 @@ const BRAND_COLORS = {
   foreground: [250, 250, 250] as [number, number, number]
 };
 
-// Convert image to base64 for PDF embedding
-const getLogoDataUrl = async (): Promise<string> => {
+// Cache for logo data URL
+let cachedLogoDataUrl: string | null = null;
+
+// Preload logo image and convert to base64
+const preloadLogo = (): Promise<string> => {
+  if (cachedLogoDataUrl) {
+    return Promise.resolve(cachedLogoDataUrl);
+  }
+  
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
@@ -21,7 +28,8 @@ const getLogoDataUrl = async (): Promise<string> => {
       const ctx = canvas.getContext('2d');
       if (ctx) {
         ctx.drawImage(img, 0, 0);
-        resolve(canvas.toDataURL('image/png'));
+        cachedLogoDataUrl = canvas.toDataURL('image/png');
+        resolve(cachedLogoDataUrl);
       } else {
         reject(new Error('Failed to get canvas context'));
       }
@@ -31,8 +39,8 @@ const getLogoDataUrl = async (): Promise<string> => {
   });
 };
 
-// Add branded header to PDF (async to load logo)
-const addBrandedHeader = async (doc: jsPDF, title: string, subtitle?: string) => {
+// Add branded header to PDF (synchronous)
+const addBrandedHeader = (doc: jsPDF, title: string, subtitle?: string, logoDataUrl?: string) => {
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
   
@@ -40,31 +48,27 @@ const addBrandedHeader = async (doc: jsPDF, title: string, subtitle?: string) =>
   doc.setFillColor(106, 144, 95); // tactical color
   doc.rect(0, 0, pageWidth, 25, 'F');
   
-  // Add logo image
-  try {
-    const logoDataUrl = await getLogoDataUrl();
-    doc.addImage(logoDataUrl, 'PNG', margin, 6, 15, 15);
-  } catch (error) {
-    console.error('Failed to load logo:', error);
-    // Fallback to text if image fails
-    doc.setFontSize(16);
-    doc.setFont('helvetica', 'bold');
-    doc.setTextColor(255, 255, 255);
-    doc.text('🛡', margin, 16);
+  // Add logo image if available
+  if (logoDataUrl) {
+    try {
+      doc.addImage(logoDataUrl, 'PNG', margin, 6, 15, 15);
+    } catch (error) {
+      console.error('Failed to add logo:', error);
+    }
   }
   
   // Company name
   doc.setFontSize(14);
   doc.setFont('helvetica', 'bold');
   doc.setTextColor(255, 255, 255);
-  doc.text('ARMS COMPLEX', margin + 18, 16);
+  doc.text('ARMS COMPLEX', margin + (logoDataUrl ? 18 : 0), 16);
   
   // PRO badge
   doc.setFontSize(8);
   doc.setFillColor(255, 255, 255);
-  doc.roundedRect(margin + 68, 10, 12, 6, 2, 2, 'F');
+  doc.roundedRect(margin + (logoDataUrl ? 68 : 50), 10, 12, 6, 2, 2, 'F');
   doc.setTextColor(106, 144, 95); // tactical color
-  doc.text('PRO', margin + 69.5, 14.5);
+  doc.text('PRO', margin + (logoDataUrl ? 69.5 : 51.5), 14.5);
   
   // Contact info (top right)
   doc.setFontSize(8);
@@ -129,10 +133,11 @@ const addBrandedFooter = (doc: jsPDF, pageNum?: number) => {
 };
 
 export const generateSafetyChecklistPDF = async () => {
+  const logoDataUrl = await preloadLogo().catch(() => null);
   const doc = new jsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
-  let yPos = await addBrandedHeader(doc, 'Reloading Safety Checklist', 'Professional Safety Guidelines for Reloaders');
+  let yPos = addBrandedHeader(doc, 'Reloading Safety Checklist', 'Professional Safety Guidelines for Reloaders', logoDataUrl || undefined);
 
   // Critical Safety Rules
   doc.setFontSize(14);
@@ -254,11 +259,12 @@ export const generateSafetyChecklistPDF = async () => {
   doc.save('Arms-Complex-Safety-Checklist.pdf');
 };
 
-export const generateProcessChecklistPDF = () => {
+export const generateProcessChecklistPDF = async () => {
+  const logoDataUrl = await preloadLogo().catch(() => null);
   const doc = new jsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
-  let yPos = addBrandedHeader(doc, 'Step-by-Step Reloading Process', 'Complete Process Checklist for Each Batch');
+  let yPos = addBrandedHeader(doc, 'Step-by-Step Reloading Process', 'Complete Process Checklist for Each Batch', logoDataUrl || undefined);
 
   // Batch Information
   doc.setFontSize(12);
@@ -620,26 +626,12 @@ export const generateEquipmentChecklistPDF = () => {
   doc.save('Arms-Complex-Equipment-Checklist.pdf');
 };
 
-export const generateLoadDataSheetPDF = () => {
+export const generateLoadDataSheetPDF = async (loadData: any) => {
+  const logoDataUrl = await preloadLogo().catch(() => null);
   const doc = new jsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
-  let yPos = 20;
-
-  // Header
-  doc.setFontSize(20);
-  doc.setFont('helvetica', 'bold');
-  doc.text('Load Development Data Sheet', pageWidth / 2, yPos, { align: 'center' });
-  
-  yPos += 10;
-  doc.setFontSize(10);
-  doc.setFont('helvetica', 'normal');
-  doc.text('Record and track your load development results', pageWidth / 2, yPos, { align: 'center' });
-  
-  yPos += 15;
-  doc.setLineWidth(0.5);
-  doc.line(margin, yPos, pageWidth - margin, yPos);
-  yPos += 10;
+  let yPos = addBrandedHeader(doc, 'Load Development Data Sheet', 'Record and track your load development results', logoDataUrl || undefined);
 
   // Session Information
   doc.setFontSize(12);
@@ -814,11 +806,12 @@ export const generateLoadDataSheetPDF = () => {
   doc.save('Arms-Complex-Load-Development-Sheet.pdf');
 };
 
-export const generateProductLoadDataPDF = (product: any) => {
+export const generateProductLoadDataPDF = async (product: any) => {
+  const logoDataUrl = await preloadLogo().catch(() => null);
   const doc = new jsPDF();
   const pageWidth = doc.internal.pageSize.getWidth();
   const margin = 20;
-  let yPos = addBrandedHeader(doc, 'Load Data Sheet', product.name);
+  let yPos = addBrandedHeader(doc, 'Product Load Data Sheet', product.name, logoDataUrl || undefined);
 
   // Product Specifications
   doc.setFontSize(14);
