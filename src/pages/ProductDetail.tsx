@@ -239,6 +239,34 @@ const ProductDetail = () => {
               </p>
             </div>
 
+            {/* Quantity Variations */}
+            {product.quantityVariations && product.quantityVariations.length > 0 && (
+              <div>
+                <label className="text-sm font-semibold mb-3 block">Select Package:</label>
+                <div className="flex flex-wrap gap-2">
+                  {product.quantityVariations.map((variant, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setQuantity(Math.ceil(variant.rounds / product.rounds))}
+                      className={`px-4 py-3 text-sm font-semibold rounded-lg border-2 transition-all duration-200 ${
+                        variant.rounds === product.rounds
+                          ? 'bg-primary text-primary-foreground border-primary shadow-md scale-105'
+                          : variant.inStock
+                          ? 'bg-background border-border hover:border-primary hover:bg-primary/5 hover:scale-105'
+                          : 'bg-muted text-muted-foreground border-border opacity-50 cursor-not-allowed'
+                      }`}
+                      disabled={!variant.inStock}
+                    >
+                      {variant.rounds} Rounds
+                      <span className="block text-xs mt-1 font-normal">
+                        ${variant.price.toFixed(2)}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Quantity Selector */}
             <div>
               <label className="text-sm font-semibold mb-2 block">Quantity</label>
