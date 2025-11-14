@@ -742,3 +742,164 @@ export const generateLoadDataSheetPDF = () => {
 
   doc.save('Load-Development-Data-Sheet.pdf');
 };
+
+export const generateProductLoadDataPDF = (product: any) => {
+  const doc = new jsPDF();
+  const pageWidth = doc.internal.pageSize.getWidth();
+  const margin = 20;
+  let yPos = 20;
+
+  // Header
+  doc.setFontSize(20);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Load Data Sheet', pageWidth / 2, yPos, { align: 'center' });
+  
+  yPos += 8;
+  doc.setFontSize(12);
+  doc.text(product.name, pageWidth / 2, yPos, { align: 'center' });
+  
+  yPos += 10;
+  doc.setFontSize(10);
+  doc.setFont('helvetica', 'normal');
+  doc.text(`Generated: ${new Date().toLocaleDateString()}`, pageWidth / 2, yPos, { align: 'center' });
+  
+  yPos += 10;
+  doc.setLineWidth(0.5);
+  doc.line(margin, yPos, pageWidth - margin, yPos);
+  yPos += 15;
+
+  // Product Specifications
+  doc.setFontSize(14);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Product Specifications', margin, yPos);
+  yPos += 10;
+
+  const specs = [
+    ['Product Name:', product.name],
+    ['Caliber:', product.caliber],
+    ['Rounds per Box:', product.rounds.toString()],
+    ['Price per Box:', `$${product.price.toFixed(2)}`],
+    ['Price per Round:', `$${(product.price / product.rounds).toFixed(3)}`],
+    ['Category:', product.category],
+    ['SKU:', product.id],
+    ['Stock Status:', product.inStock ? 'In Stock' : 'Out of Stock']
+  ];
+
+  doc.setFontSize(10);
+  doc.setFont('helvetica', 'normal');
+  
+  specs.forEach(([label, value]) => {
+    doc.setFont('helvetica', 'bold');
+    doc.text(label, margin, yPos);
+    doc.setFont('helvetica', 'normal');
+    doc.text(value, margin + 50, yPos);
+    yPos += 7;
+  });
+
+  // Safety Warning
+  yPos += 10;
+  doc.setFontSize(14);
+  doc.setFont('helvetica', 'bold');
+  doc.setFillColor(220, 53, 69);
+  doc.rect(margin - 5, yPos - 5, pageWidth - 2 * margin + 10, 50, 'F');
+  doc.setTextColor(255, 255, 255);
+  doc.text('CRITICAL SAFETY WARNING', pageWidth / 2, yPos, { align: 'center' });
+  yPos += 8;
+  
+  doc.setFontSize(9);
+  doc.setFont('helvetica', 'normal');
+  const safetyText = [
+    'Always follow manufacturer\'s load data exactly. Never exceed published maximum loads.',
+    'Inspect all cases for cracks, splits, or defects before loading.',
+    'Use only components specified in reliable reloading manuals.',
+    'Start loads 10% below maximum and work up carefully while watching for pressure signs.',
+    'Keep detailed records of all components and results for every loading session.'
+  ];
+  
+  safetyText.forEach(text => {
+    const lines = doc.splitTextToSize(text, pageWidth - 2 * margin - 10);
+    doc.text(lines, pageWidth / 2, yPos, { align: 'center' });
+    yPos += lines.length * 4 + 2;
+  });
+
+  doc.setTextColor(0, 0, 0);
+  yPos += 15;
+
+  // Reloading Log Section
+  doc.setFontSize(14);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Reloading Log', margin, yPos);
+  yPos += 10;
+
+  // Create table for logging
+  const tableHeaders = ['Date', 'Powder Type', 'Powder Charge', 'Primer', 'Bullet Weight', 'OAL', 'Notes'];
+  const colWidth = (pageWidth - 2 * margin) / 7;
+  
+  doc.setFontSize(8);
+  doc.setFont('helvetica', 'bold');
+  tableHeaders.forEach((header, i) => {
+    doc.text(header, margin + (i * colWidth) + 2, yPos);
+  });
+  
+  yPos += 5;
+  doc.setLineWidth(0.3);
+  
+  // Draw 10 blank rows for logging
+  for (let i = 0; i < 10; i++) {
+    // Draw horizontal line
+    doc.line(margin, yPos, pageWidth - margin, yPos);
+    
+    // Draw vertical lines
+    for (let j = 0; j <= 7; j++) {
+      doc.line(margin + (j * colWidth), yPos, margin + (j * colWidth), yPos + 10);
+    }
+    
+    yPos += 10;
+  }
+  
+  // Bottom line of table
+  doc.line(margin, yPos, pageWidth - margin, yPos);
+
+  // Recommended Usage Notes
+  yPos += 15;
+  if (yPos > 250) {
+    doc.addPage();
+    yPos = 20;
+  }
+
+  doc.setFontSize(14);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Recommended Usage & Storage', margin, yPos);
+  yPos += 10;
+
+  doc.setFontSize(10);
+  doc.setFont('helvetica', 'normal');
+  const usageNotes = [
+    'Store in cool, dry location away from direct sunlight and heat sources',
+    'Keep ammunition in original packaging or clearly labeled containers',
+    'Rotate stock - use oldest ammunition first (FIFO method)',
+    'Inspect rounds before use for any signs of corrosion or damage',
+    'Test fire new loads at reduced velocity before full-power loads',
+    'Record all load data and results for future reference',
+    'Clean firearms regularly when using reloaded ammunition',
+    'Never exceed SAAMI pressure specifications for this caliber'
+  ];
+
+  usageNotes.forEach(note => {
+    if (yPos > 270) {
+      doc.addPage();
+      yPos = 20;
+    }
+    doc.text('\u2022 ' + note, margin + 5, yPos);
+    yPos += 7;
+  });
+
+  // Footer
+  yPos = doc.internal.pageSize.getHeight() - 20;
+  doc.setFontSize(8);
+  doc.setTextColor(128, 128, 128);
+  doc.text('This document is for reference only. Always consult current reloading manuals.', pageWidth / 2, yPos, { align: 'center' });
+  doc.text('Arms Complex - Licensed FFL Dealer', pageWidth / 2, yPos + 5, { align: 'center' });
+
+  doc.save(`${product.id}-load-data-sheet.pdf`);
+};
