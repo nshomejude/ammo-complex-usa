@@ -10713,7 +10713,42 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "410-bore",
     description: "Premium turkey hunting ammunition",
     manufacturer: "Kent",
-    grainWeight: "13/16 oz"
+    grainWeight: "13/16 oz",
+    shortDescription: "Premium tungsten-matrix turkey load engineered specifically for .410 bore, delivering dense patterns and extended effective range for challenging spring gobbler hunts.",
+    longDescription: "Kent .410 Bore Turkey Load represents specialized engineering that extends the traditionally limited range of .410 shotguns for serious turkey hunting applications. Turkey hunting with .410 bore was historically considered impractical due to insufficient pattern density and energy at typical turkey ranges of 25-40 yards. Kent's tungsten-matrix shot technology addresses these limitations through shot material approximately 30% denser than lead, allowing smaller pellets to carry more energy at longer ranges. The 13/16 ounce payload uses #9 tungsten-matrix pellets that deliver similar downrange energy to larger lead shot while providing significantly higher pellet counts for improved pattern density. A single 3-inch Kent .410 turkey shell contains approximately 230 pellets of #9 tungsten compared to roughly 85 pellets of #6 lead in standard loads. This dramatic pellet count increase transforms pattern performance, putting adequate pellet strikes on turkey vital zones at ethical distances. Kent's Flight Control wad system controls shot column during barrel travel and initial flight, ensuring tight patterns that maintain density at extended ranges. The wad's design specifically addresses the challenges of .410's smaller bore diameter, delivering pattern performance approaching that of 20 gauge lead loads from previous generations. Full choke constriction or specialized .410 turkey chokes produce pattern densities suitable for head/neck shots on turkeys to 35-40 yards—ranges previously considered impossible with .410 bore. The 3-inch magnum shells generate velocities around 1,200 fps, providing adequate shot energy for clean, ethical kills when proper shot placement occurs. Kent manufactures these shells with premium components including high-antimony buffer material that cushions pellets during firing, reducing deformation that degrades patterns. The recoil level, while significant for .410 bore, remains substantially less than 12 gauge turkey loads, making these shells manageable from lightweight single-shot or pump-action turkey guns. For youth hunters transitioning to turkey hunting, disabled hunters requiring lighter firearms, or experienced hunters seeking the challenge of .410 turkey hunting, Kent's engineering makes this traditional small-bore option genuinely viable.",
+    features: [
+      "Tungsten-matrix shot approximately 30% denser than lead",
+      "13/16 ounce shot payload in 3-inch shell",
+      "Typically #9 shot size for maximum pellet count",
+      "Flight Control wad system for tight patterns",
+      "High-antimony buffer material reduces pellet deformation",
+      "3-inch magnum shell length",
+      "~1,200 fps velocity",
+      "Optimized for full or extra-full chokes",
+      "Non-toxic and environmentally safe",
+      "Premium Kent manufacturing quality"
+    ],
+    benefits: [
+      "Extends effective .410 range for ethical turkey hunting",
+      "Dramatically higher pellet counts than lead loads",
+      "Dense patterns rival 20 gauge lead performance",
+      "Lighter recoil than 12 or 20 gauge turkey loads",
+      "Perfect for youth and smaller-framed hunters",
+      "Enables challenging and rewarding hunts",
+      "Non-toxic composition for lead-restricted areas",
+      "Proven performance on spring gobblers"
+    ],
+    useCases: [
+      "Spring turkey hunting in close to moderate range setups",
+      "Youth hunter turkey seasons",
+      "Hunters with recoil sensitivity or physical limitations",
+      "Challenge hunts seeking added difficulty",
+      "Lead-restricted hunting areas",
+      ".410 turkey specialists and enthusiasts"
+    ],
+    technicalDetails: "Kent .410 Bore Turkey Load uses 3-inch magnum shells with 13/16 ounce (356 grain) tungsten-matrix payload. Muzzle velocity approximately 1,200 fps generating around 1,140 ft-lbs energy. Tungsten-matrix shot density approximately 15 g/cc vs 11.3 g/cc for lead. #9 tungsten shot provides roughly 230 pellets per load compared to 85 pellets for #6 lead. Pattern performance through extra-full turkey choke at 40 yards typically 100-120 pellets in 10-inch circle (adequate turkey vital zone coverage). Effective range 25-40 yards depending on choke and firearm. Felt recoil in 6-pound single-shot approximately 20 pounds—significant for .410 but manageable compared to 35+ pounds for 12 gauge 3-inch turkey loads. Chamber pressure within SAAMI 3-inch .410 specifications. Flight Control wad separates cleanly after muzzle exit. High-antimony buffer cushions pellets. Non-corrosive primer.",
+    whyChoose: "Choose Kent .410 Turkey Load when you're serious about turkey hunting with .410 bore and refuse to compromise on ethical killing power. These loads represent the pinnacle of .410 ammunition engineering, transforming what was once considered an inadequate turkey gun into a genuinely capable tool at appropriate ranges. The tungsten-matrix technology provides pattern density and energy that simply wasn't possible with traditional lead loads, making ethical 35-40 yard shots achievable when conditions and shooter skill align. For youth hunters experiencing their first turkey seasons, the reduced recoil compared to larger gauges allows better shooting form and follow-through without developing flinch. Disabled hunters or those with shoulder injuries can pursue their passion for turkey hunting using lightweight .410 firearms without punishing recoil. Experienced hunters seeking the ultimate challenge find .410 turkey hunting immensely rewarding—requiring superior calling skills, woodsmanship, and shot placement discipline that makes success extraordinarily satisfying. Kent's reputation for waterfowl ammunition innovation translates to turkey loads that perform reliably when your season hangs on a single shot. While these loads represent premium pricing, the typical turkey hunter fires only a few shots per season, making the investment minimal compared to other hunting expenses.",
+    seoKeywords: ["kent 410 turkey", "410 bore turkey loads", "tungsten 410 shells", "410 turkey hunting ammo", "kent 410 turkey load", "youth turkey ammunition", "dense shot 410", "long range 410 shells", "premium 410 ammo", "410 gobbler loads"]
   },
   {
     id: "410-federal-game-shok",
@@ -10726,7 +10761,42 @@ Black Hills Ammunition serves as official ammunition supplier to multiple milita
     categorySlug: "410-bore",
     description: "All-purpose small game ammunition",
     manufacturer: "Federal",
-    grainWeight: "1/2 oz"
+    grainWeight: "1/2 oz",
+    shortDescription: "Versatile .410 bore hunting ammunition combining Federal's legendary reliability with effective small game performance at budget-friendly pricing for field and upland applications.",
+    longDescription: "Federal Game-Shok .410 Bore ammunition delivers Federal Premium's century of manufacturing excellence in an affordable small-bore hunting load suitable for diverse field applications. Game-Shok represents Federal's value-oriented hunting line, providing reliable performance for hunters who demand quality components without premium pricing. The .410 bore holds a special place in American hunting tradition—it's often the first shotgun caliber for young hunters, the preferred choice for challenging hunts requiring superior marksmanship, and the go-to option for small-framed hunters seeking lighter firearms with manageable recoil. Federal Game-Shok serves these diverse users with ammunition engineered specifically for .410's capabilities and limitations. The half-ounce shot payload is standard for 2.5-inch .410 shells, providing adequate pattern density for rabbits, squirrels, doves, quail, and similar small game at typical .410 ranges of 20-30 yards. Federal loads these shells with quality lead shot featuring proper hardness to resist deformation during barrel travel and maintain spherical shape for consistent patterns. Shot sizes typically include #6, #7.5, and #8, each optimized for specific game species—#6 for rabbits and larger birds, #7.5 for general upland game, #8 for close-range dove and quail. The one-piece wad system provides adequate shot cushioning while maintaining Federal's reliability standards for ignition and extraction. Federal's powder formulations generate velocities around 1,200 fps from full-length barrels, providing adequate energy for clean kills on appropriate game at ethical ranges. The brass head construction ensures reliable extraction even from well-used firearms with worn extractors. Federal manufactures Game-Shok at their Anoka, Minnesota facility using quality control processes refined over 100+ years of ammunition production. While Game-Shok doesn't feature the advanced components of Federal's premium Heavyweight TSS or Prairie Storm lines, it delivers the reliability and consistency necessary for successful small game hunting. For hunters introducing youth to the sport, small game enthusiasts, or anyone seeking affordable .410 hunting ammunition from a trusted manufacturer, Game-Shok represents proven value.",
+    features: [
+      "Half-ounce lead shot payload",
+      "2.5-inch shell length for universal compatibility",
+      "Federal manufacturing quality and reliability",
+      "~1,200 fps velocity from standard barrels",
+      "Quality one-piece wad design",
+      "Properly hardened lead shot",
+      "Brass head construction",
+      "Non-corrosive primers",
+      "Available in multiple shot sizes",
+      "Value-oriented pricing"
+    ],
+    benefits: [
+      "Trusted Federal quality at budget-friendly prices",
+      "Effective on rabbits, squirrels, and upland birds",
+      "Manageable recoil for youth and small-framed hunters",
+      "Reliable feeding and extraction",
+      "Consistent patterns for ethical harvests",
+      "Made in USA with century of expertise",
+      "Suitable for introducing new hunters",
+      "Available nationwide through major retailers"
+    ],
+    useCases: [
+      "Small game hunting (rabbits, squirrels)",
+      "Upland bird hunting (quail, dove, woodcock)",
+      "Youth hunter training and first hunts",
+      "Pest and varmint control",
+      "Recreational shooting and plinking",
+      "Farm and ranch utility applications"
+    ],
+    technicalDetails: "Federal Game-Shok .410 Bore features 2.5-inch shell length with half-ounce (218 grain) lead shot payload. Muzzle velocity approximately 1,200 fps generating around 698 ft-lbs energy. Available shot sizes typically #6 (approximately 170 pellets), #7.5 (approximately 230 pellets), or #8 (approximately 295 pellets). Effective range 20-30 yards depending on game size and shot size. Pattern performance through modified choke at 25 yards approximately 60-70% in 30-inch circle. Felt recoil in 6-pound single-shot approximately 12-14 pounds. Chamber pressure within SAAMI 2.5-inch .410 specifications. Brass base with 6-point star crimp. Works in all .410 firearms chambered for 2.5-inch or longer shells. Non-corrosive boxer-type primer for reliable ignition.",
+    whyChoose: "Choose Federal Game-Shok .410 Bore when you want proven Federal reliability for small game hunting without premium ammunition pricing. Federal's reputation for quality manufacturing ensures these shells will ignite reliably, pattern consistently, and function dependably in your .410 shotgun—whether it's a vintage single-shot youth gun or a modern pump-action. Game-Shok serves multiple purposes effectively: introducing young hunters to the shooting sports with manageable recoil and adequate performance, providing affordable ammunition for experienced hunters who appreciate .410's challenges and rewards, and offering farm/ranch owners economical pest control capability. The ammunition's Federal pedigree means you're getting quality components and manufacturing standards that budget brands can't match, while the value pricing makes regular shooting and practice affordable. For many hunters, their fondest memories involve a .410 shotgun and small game hunts in youth—Game-Shok helps create those memories for the next generation while serving experienced shooters who never outgrew their love for this classic small-bore gauge.",
+    seoKeywords: ["federal game shok 410", "410 bore hunting ammo", "small game 410 shells", "federal 410 ammunition", "youth hunter 410", "410 rabbit loads", "affordable 410 ammo", "upland bird shells", "federal 410 shot sizes", "game shok 410"]
   },
   {
     id: "410-hornady-slugs",
