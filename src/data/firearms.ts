@@ -10604,12 +10604,51 @@ export const firearms: Firearm[] = [
     caliber: ["9mm"],
     price: 549,
     inStock: true,
-    description: "Convertible DA/SA compact pistol.",
+    description: "Convertible DA/SA compact pistol with decocker or safety options.",
     actionType: "DA/SA",
     capacity: "15+1",
     barrelLength: "3.75 inches",
     weight: "27.2 oz",
-    finish: "Black Polycoat"
+    finish: "Black Polycoat",
+    shortDescription: "The CZ P-07 combines Czech precision engineering with unique convertibility between decocker and manual safety configurations. A versatile compact DA/SA pistol offering exceptional accuracy and value in a duty-ready package.",
+    longDescription: "The CZ P-07 represents Czech firearms manufacturer CZ's innovative approach to modern defensive handguns, offering a unique feature set that bridges traditional double-action/single-action operation with modern polymer frame construction. Descended from CZ's legendary CZ 75 lineage, the P-07 incorporates generations of refinement while adding contemporary materials and manufacturing techniques. The P-07's most distinctive characteristic is its Omega trigger system - a simplified DA/SA mechanism that's easily user-convertible between decocker and manual safety configurations without requiring a gunsmith. This allows individual shooters to configure the pistol according to their training, preferences, or duty requirements. The included conversion kit contains both safety and decocker components with straightforward instructions. This flexibility is unprecedented among production DA/SA pistols and provides exceptional value. The polymer frame reduces weight to a carry-friendly 27.2 ounces while maintaining the structural rigidity necessary for accuracy. The 3.75-inch cold-hammer-forged barrel delivers the match-grade accuracy CZ is renowned for, consistently producing 2-inch groups at 25 yards. The integral 1913 Picatinny rail allows mounting of lights and lasers for tactical applications. The trigger, while DA/SA which requires more training than striker-fired designs, offers the tactical advantage of a second-strike capability on hard primers and the safety of a heavy double-action first trigger pull for those preferring it. The single-action trigger pull is exceptionally crisp with minimal take-up and short reset, rivaling many single-action-only designs. The P-07 features ambidextrous magazine release and reversible slide release for left-handed shooters. High-capacity 15-round magazines provide serious defensive capability. Adopted by numerous European law enforcement agencies and growing in popularity among American concealed carriers, the P-07 delivers Czech engineering excellence at a price point that undercuts most competitors. For shooters seeking DA/SA versatility with modern ergonomics and convertible configurations, the P-07 is unmatched.",
+    features: [
+      "Omega trigger system convertible between decocker and manual safety",
+      "Includes conversion kit for user-configurable operation",
+      "Cold-hammer-forged 3.75-inch barrel for exceptional accuracy",
+      "Polymer frame with metal chassis for durability and light weight",
+      "15+1 capacity in compact package",
+      "Integral 1913 Picatinny accessory rail",
+      "Ambidextrous magazine release",
+      "Reversible slide release for left-handed shooters",
+      "High-visibility three-dot sight system",
+      "Loaded chamber indicator for tactile status confirmation"
+    ],
+    benefits: [
+      "Unique convertibility adapts to shooter preferences and missions",
+      "Czech precision manufacturing at exceptional value pricing",
+      "Second-strike capability of DA/SA provides tactical advantage",
+      "Match-grade accuracy from CZ's renowned barrel quality",
+      "European law enforcement adoption validates reliability",
+      "Lower price than comparable DA/SA pistols from major manufacturers"
+    ],
+    useCases: [
+      "Concealed carry for those preferring DA/SA operation",
+      "Law enforcement duty use with convertible safety systems",
+      "Home defense with weapon light capability and high capacity",
+      "Competitive shooting in Production division",
+      "Transitional pistol for shooters moving between DA/SA and striker-fired",
+      "Backup duty weapon for agencies using CZ 75 variants"
+    ],
+    technicalDetails: "The CZ P-07 features the Omega trigger system with simplified DA/SA mechanism providing approximately 9 lb DA pull and 4.5 lb SA pull in decocker mode, or 9 lb DA and 4.5 lb SA with manual safety in safety mode. The cold-hammer-forged barrel uses traditional CZ rifling for exceptional accuracy and longevity. Polymer frame with metal chassis insert provides structural rigidity while reducing weight. Magazine capacity of 15 rounds in flush-fit magazine. Three-dot sight system with white dots for quick acquisition. Integral Picatinny rail for lights/lasers. Ships with both decocker and manual safety components plus installation tools. Firing pin block safety prevents discharge if dropped. Ambidextrous magazine release and reversible slide release accommodate all shooters.",
+    whyChoose: "Choose the CZ P-07 when you want the tactical advantages of DA/SA operation with modern ergonomics and unprecedented configurability. The convertible Omega system allows you to run decocker mode for carry then switch to safety mode for competition, or vice versa, without buying multiple guns. CZ's legendary accuracy and reliability come at a price point significantly below German or American competitors. The 15+1 capacity in a compact, lightweight package makes it ideal for concealed carry or duty use. European law enforcement adoption by agencies including Czech police validates real-world reliability. For shooters who appreciate DA/SA triggers and want maximum flexibility, the P-07 delivers unbeatable versatility and value.",
+    seoKeywords: ["CZ P-07", "convertible DA/SA pistol", "Omega trigger CZ", "decocker safety pistol", "Czech compact pistol", "CZ 15+1 capacity"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs (124gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "fn-509-compact",
@@ -10619,12 +10658,51 @@ export const firearms: Firearm[] = [
     caliber: ["9mm"],
     price: 649,
     inStock: true,
-    description: "Carry-sized with full-size grip.",
+    description: "Carry-optimized with subcompact slide and compact grip for maximum versatility.",
     actionType: "Striker-Fired",
     capacity: "12+1 / 15+1",
     barrelLength: "3.7 inches",
     weight: "25.5 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The FN 509 Compact delivers true dual-purpose capability with subcompact slide length paired with compact grip. Includes both 12 and 15-round magazines, creating a single pistol that serves both deep concealment and home defense roles equally well.",
+    longDescription: "The FN 509 Compact represents FN America's solution for shooters demanding maximum versatility from a single carry pistol. Unlike many 'compact' pistols that simply reduce slide length, FN engineered the 509 Compact as a true dual-purpose design by pairing a subcompact 3.7-inch slide with a compact-length grip. This configuration provides the optimal compromise between concealability and capacity that many defensive shooters seek. The genius of the design becomes apparent when considering the included magazine options. FN ships the 509 Compact with both flush-fit 12-round magazines (creating a true subcompact profile) and 15-round extended magazines with grip sleeve (converting to compact configuration). This means a single pistol can serve deep concealment carry with the 12-rounders, then transform to a higher-capacity home defense or duty backup gun with the 15-rounders. The 509 Compact traces its lineage to FN's submission for the U.S. Army's Modular Handgun System competition, inheriting the military-grade features developed for that program. Truly ambidextrous controls include dual slide stop levers and reversible magazine release - not just swappable but genuinely usable from either side without hand position changes. The optics-ready slide comes from the factory milled to accept micro red dots, and the suppressor-height sights co-witness perfectly with optics. The texturing pattern provides aggressive grip without being uncomfortable against skin during concealed carry. The trigger breaks cleanly with minimal take-up and positive reset suitable for defensive accuracy. The cold-hammer-forged FN barrel delivers match-grade accuracy despite the compact dimensions. The extended dust cover incorporates an accessory rail for lights or lasers. For concealed carriers who want a gun that can transform from deep concealment to duty backup by simply swapping magazines, the FN 509 Compact delivers unmatched versatility in a single package.",
+    features: [
+      "Dual magazine option: 12-round flush or 15-round extended with sleeve",
+      "Subcompact 3.7-inch slide length for optimal concealability",
+      "Compact grip length provides full firing grip with extended mags",
+      "Truly ambidextrous slide stops and reversible magazine release",
+      "Optics-ready slide milled for micro red dot mounting",
+      "Suppressor-height night sights co-witness with optics",
+      "Cold-hammer-forged barrel for FN accuracy standards",
+      "Enhanced grip texturing for secure purchase",
+      "Extended accessory rail for weapon light mounting",
+      "Low bore axis design reduces muzzle flip"
+    ],
+    benefits: [
+      "Single pistol serves both concealment and duty backup roles",
+      "Military-grade reliability from Army MHS development program",
+      "True ambidextrous operation without compromises",
+      "Factory optics-ready eliminates expensive machining",
+      "FN manufacturing quality ensures longevity and precision",
+      "Magazine versatility provides mission adaptability"
+    ],
+    useCases: [
+      "Appendix carry with 12-round mags for maximum concealability",
+      "Home defense with 15-round mags and weapon light",
+      "Law enforcement backup gun with duty-grade features",
+      "Competitive shooting in Carry Optics division with optic",
+      "Vehicle gun with extended magazines for capacity",
+      "Travel carry gun that adapts to legal capacity restrictions"
+    ],
+    technicalDetails: "The FN 509 Compact features military-specification striker-fired trigger with approximately 5.5-7 lb pull weight, smooth take-up, and positive reset. Optics-ready slide accepts popular micro red dots including Trijicon RMRcc, Holosun 407K/507K, and Shield RMSc via adapter plates. Suppressor-height night sights provide lower third co-witness with mounted optics. Cold-hammer-forged 3.7-inch barrel with 1:10 right-hand twist rifling. Extended accessory rail accommodates compact weapon lights. True ambidextrous controls include dual slide stop levers and reversible magazine release button. Enhanced grip texturing provides secure purchase without abrasiveness. Ships with two 12-round flush magazines, one 15-round extended magazine with grip sleeve, and optic mounting plates. Internal striker, disconnect, trigger, and firing pin safeties provide drop-safe operation. Low bore axis design improves recoil management and follow-up shot speed.",
+    whyChoose: "Choose the FN 509 Compact when you refuse to compromise between concealability and capability. The dual magazine system transforms a single pistol from deep concealment configuration to home defense setup simply by changing magazines. FN's military-grade manufacturing and reliability testing ensure this gun will function when your life depends on it. The factory optics-ready slide with suppressor-height sights provides immediate red dot capability without custom machining. True ambidextrous controls accommodate left-handed shooters without adapters or compromises. With FN's cold-hammer-forged barrel accuracy and proven reliability, the 509 Compact delivers professional-grade performance in the most versatile carry package available.",
+    seoKeywords: ["FN 509 Compact", "dual magazine carry pistol", "12 round 15 round pistol", "optics ready compact", "ambidextrous carry gun", "versatile concealed carry"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs (124gr)",
+      accuracy: "2.5 inch groups at 25 yards"
+    }
   },
   {
     id: "walther-q5-match",
