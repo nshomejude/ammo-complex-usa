@@ -101,49 +101,12 @@ export const Navigation = () => {
           <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
-                Landing Pages <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-56">
-                <DropdownMenuItem asChild>
-                  <Link to="/" className="w-full cursor-pointer">Home (Original)</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home2" className="w-full cursor-pointer">Home 2 - Tactical Precision</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home3" className="w-full cursor-pointer">Home 3 - Defense & Security</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home4" className="w-full cursor-pointer">Home 4 - Hunter's Edge</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home5" className="w-full cursor-pointer">Home 5 - Engineering</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home6" className="w-full cursor-pointer">Home 6 - Global Distribution</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home7" className="w-full cursor-pointer">Home 7 - Custom Manufacturing</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home8" className="w-full cursor-pointer">Home 8 - Safety & Training</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home9" className="w-full cursor-pointer">Home 9 - About Us</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home10" className="w-full cursor-pointer">Home 10 - Technology</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/home11" className="w-full cursor-pointer">Home 11 - Wholesale</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
                 Shop <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-64">
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
+                <DropdownMenuItem asChild>
+                  <Link to="/products" className="w-full cursor-pointer">Shop - Main</Link>
+                </DropdownMenuItem>
                 {shopPages.map((page) => (
                   <DropdownMenuItem key={page.path} asChild>
                     <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
@@ -151,44 +114,69 @@ export const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link to="/products" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Products
-            </Link>
-            <Link to="/categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Ammo Categories
-            </Link>
-            <Link to="/firearms" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Firearms
-            </Link>
-            <Link to="/firearm-categories" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Firearm Types
-            </Link>
-            <Link to="/how-to-buy" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              How to Buy
-            </Link>
-            <Link to="/shipping" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Shipping
-            </Link>
-            <Link to="/firearms-license" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              License Info
-            </Link>
-            <Link to="/reloading-guide" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Reloading Guide
-            </Link>
-            <Link to="/ballistic-calculator" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Ballistic Calculator
-            </Link>
-            <Link to="/load-recipes" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Load Recipes
-            </Link>
-            <Link to="/reloading-cost-calculator" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
-              Cost Calculator
-            </Link>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Ammunition <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
+                <DropdownMenuItem asChild>
+                  <Link to="/categories" className="w-full cursor-pointer">All Categories</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/products" className="w-full cursor-pointer">Browse Products</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Firearms <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
+                <DropdownMenuItem asChild>
+                  <Link to="/firearms" className="w-full cursor-pointer">All Firearms</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/firearm-categories" className="w-full cursor-pointer">By Category</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Resources <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
+                <DropdownMenuItem asChild>
+                  <Link to="/how-to-buy" className="w-full cursor-pointer">How to Buy</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/firearms-license" className="w-full cursor-pointer">License Requirements</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/shipping" className="w-full cursor-pointer">Shipping Info</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/reloading-guide" className="w-full cursor-pointer">Reloading Guide</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/ballistic-calculator" className="w-full cursor-pointer">Ballistic Calculator</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/load-recipes" className="w-full cursor-pointer">Load Recipes</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/reloading-cost-calculator" className="w-full cursor-pointer">Cost Calculator</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
                 About <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-64">
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
                 {aboutPages.map((page) => (
                   <DropdownMenuItem key={page.path} asChild>
                     <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
@@ -196,24 +184,13 @@ export const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+            
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
                 Contact <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-64">
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
                 {contactPages.map((page) => (
-                  <DropdownMenuItem key={page.path} asChild>
-                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
-                Reviews <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-64">
-                {reviewsPages.map((page) => (
                   <DropdownMenuItem key={page.path} asChild>
                     <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
                   </DropdownMenuItem>

@@ -27,15 +27,6 @@ const About2 = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative h-[500px] flex items-center justify-center bg-gradient-to-br from-[#2E2E2E] via-[#000000] to-[#556B2F]">
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-[#CBB994] text-black">OUR LEGACY</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase font-['Oswald']">Four Decades of Excellence</h1>
-          <p className="text-xl text-gray-200">Building trust through quality since 1985</p>
-        </div>
-      </section>
 
       {/* Brand Origins */}
       <section className="container mx-auto px-4 py-20">

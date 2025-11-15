@@ -13,13 +13,6 @@ const Contact7 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <section className="relative h-[400px] flex items-center justify-center bg-gradient-to-br from-[#556B2F] to-[#000000]">
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 text-center text-white px-4">
-          <Badge className="mb-4 bg-[#CBB994] text-black">DISTRIBUTION</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase font-['Oswald']">Distributor Access</h1>
-        </div>
-      </section>
       <section className="container mx-auto px-4 py-20">
         <Card className="max-w-2xl mx-auto border-l-4 border-l-[#556B2F]">
           <CardContent className="p-8">
