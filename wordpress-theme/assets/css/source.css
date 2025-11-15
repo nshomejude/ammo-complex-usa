@@ -1,0 +1,180 @@
+/**
+ * Arms Complex Theme - Source CSS
+ * 
+ * This file is compiled with Tailwind CSS to generate main.css
+ * Run: npm run build:css
+ * 
+ * @package Arms_Complex
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Custom Base Styles
+ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Custom Component Styles
+ */
+@layer components {
+  /* Button Styles */
+  .button,
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold transition-colors;
+    @apply bg-tactical text-tactical-foreground hover:bg-tactical-hover;
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+  
+  .button-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+  
+  .button-outline {
+    @apply border-2 border-tactical bg-transparent text-tactical hover:bg-tactical hover:text-tactical-foreground;
+  }
+  
+  /* Card Styles */
+  .card {
+    @apply rounded-lg border bg-card text-card-foreground shadow-sm;
+  }
+  
+  /* Badge Styles */
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+  
+  /* Input Styles */
+  .input {
+    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm;
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+  
+  /* Product Card Specific */
+  .product-card {
+    @apply transition-all duration-300;
+  }
+  
+  .product-card:hover {
+    @apply -translate-y-1 shadow-xl;
+  }
+  
+  /* Wishlist Button */
+  .wishlist-button.in-wishlist {
+    @apply border-tactical bg-tactical/10 text-tactical;
+  }
+  
+  /* Comparison Button */
+  .comparison-button.in-comparison {
+    @apply border-tactical bg-tactical/10 text-tactical;
+  }
+}
+
+/**
+ * Custom Utility Classes
+ */
+@layer utilities {
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-tactical to-tactical-hover bg-clip-text text-transparent;
+  }
+  
+  /* Glassmorphism */
+  .glass {
+    @apply bg-background/80 backdrop-blur-md;
+  }
+  
+  /* Scrollbar styling */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/50 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+/**
+ * WooCommerce Specific Styles
+ */
+.woocommerce {
+  /* Product Grid */
+  ul.products {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+    @apply list-none m-0 p-0;
+  }
+  
+  /* Price */
+  .price {
+    @apply text-tactical font-bold;
+  }
+  
+  .price del {
+    @apply text-muted-foreground;
+  }
+  
+  /* Add to Cart Button */
+  .button.add_to_cart_button,
+  .button.product_type_simple,
+  .button.product_type_variable {
+    @apply w-full bg-tactical text-tactical-foreground hover:bg-tactical-hover;
+  }
+  
+  /* Pagination */
+  .woocommerce-pagination {
+    @apply mt-8;
+  }
+  
+  .woocommerce-pagination ul {
+    @apply flex gap-2 justify-center;
+  }
+  
+  .woocommerce-pagination li {
+    @apply list-none;
+  }
+  
+  .woocommerce-pagination a,
+  .woocommerce-pagination span {
+    @apply inline-flex items-center justify-center w-10 h-10 rounded-lg border border-border;
+    @apply transition-colors hover:bg-muted;
+  }
+  
+  .woocommerce-pagination .current {
+    @apply bg-tactical text-tactical-foreground border-tactical;
+  }
+}
+
+/**
+ * Responsive Typography
+ */
+@media (max-width: 768px) {
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  h3 {
+    @apply text-xl;
+  }
+}
