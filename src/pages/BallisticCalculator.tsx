@@ -317,8 +317,8 @@ const BallisticCalculator = () => {
           </CardContent>
         </Card>
 
-        <Alert className="mb-8">
-          <Info className="h-4 w-4" />
+        <Alert className="mb-8 border-destructive bg-destructive/10">
+          <Info className="h-4 w-4 text-destructive" />
           <AlertDescription>
             This calculator uses simplified ballistic models for educational purposes. For precision long-range shooting, 
             consult professional ballistic software and verify calculations with actual shooting data. Environmental conditions 

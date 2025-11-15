@@ -312,9 +312,9 @@ const ReloadingCostCalculator = () => {
                 />
               </div>
               
-              <Alert className="border-tactical/30 bg-tactical/5">
-                <AlertCircle className="h-4 w-4 text-tactical" />
-                <AlertTitle>Cost Breakdown</AlertTitle>
+              <Alert className="border-destructive bg-destructive/10">
+                <AlertCircle className="h-4 w-4 text-destructive" />
+                <AlertTitle className="text-destructive">Cost Breakdown</AlertTitle>
                 <AlertDescription>
                   <div className="mt-2 space-y-1 text-sm">
                     <div className="flex justify-between">

@@ -132,10 +132,10 @@ const FirearmDetail = () => {
       <Navigation />
       
       <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-8 border-warning bg-warning/10">
-          <AlertTriangle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">FFL Transfer Required</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+        <Alert className="mb-8 border-destructive bg-destructive/10">
+          <AlertTriangle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-destructive">FFL Transfer Required</AlertTitle>
+          <AlertDescription>
             This firearm must be transferred to a licensed FFL dealer. Background check and age verification (21+ for handguns, 18+ for long guns) required by federal law.
           </AlertDescription>
         </Alert>
@@ -242,9 +242,9 @@ const FirearmDetail = () => {
             </p>
 
             {firearm.whyChoose && (
-              <Alert className="mb-6 border-tactical/50 bg-tactical/5">
-                <Award className="h-5 w-5 text-tactical" />
-                <AlertTitle className="text-lg font-bold">Why Choose This Firearm</AlertTitle>
+              <Alert className="mb-6 border-destructive bg-destructive/10">
+                <Award className="h-5 w-5 text-destructive" />
+                <AlertTitle className="text-lg font-bold text-destructive">Why Choose This Firearm</AlertTitle>
                 <AlertDescription className="text-sm mt-2 leading-relaxed">
                   {firearm.whyChoose}
                 </AlertDescription>
@@ -345,7 +345,7 @@ const FirearmDetail = () => {
             </div>
 
             {category && (
-              <Alert className="mt-6">
+              <Alert className="mt-6 border-destructive bg-destructive/10">
                 <AlertDescription>
                   <strong>Age Requirement:</strong> {category.ageRequirement}+ years old
                 </AlertDescription>

@@ -114,10 +114,10 @@ const Firearms = () => {
               <SidebarTrigger className="mb-3 sm:mb-4" />
             </div>
             
-            <Alert className="mb-6 sm:mb-8 border-warning bg-warning/10">
-          <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-sm sm:text-base text-warning-foreground">FFL Transfer Required</AlertTitle>
-          <AlertDescription className="text-xs sm:text-sm text-warning-foreground">
+            <Alert className="mb-6 sm:mb-8 border-destructive bg-destructive/10">
+          <AlertCircle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-sm sm:text-base text-destructive">FFL Transfer Required</AlertTitle>
+          <AlertDescription className="text-xs sm:text-sm">
             All firearm purchases require transfer to a licensed FFL dealer. Age restrictions and background checks apply.
           </AlertDescription>
         </Alert>

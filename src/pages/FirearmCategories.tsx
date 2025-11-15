@@ -51,10 +51,10 @@ const FirearmCategories = () => {
           </div>
         </div>
 
-        <Alert className="mb-6 sm:mb-8 border-warning bg-warning/10">
-          <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-sm sm:text-base text-warning-foreground">Information Notice</AlertTitle>
-          <AlertDescription className="text-xs sm:text-sm text-warning-foreground">
+        <Alert className="mb-6 sm:mb-8 border-destructive bg-destructive/10">
+          <AlertCircle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-sm sm:text-base text-destructive">Information Notice</AlertTitle>
+          <AlertDescription className="text-xs sm:text-sm">
             Arms Complex specializes in ammunition sales. These categories represent the types of firearms our ammunition supports. 
             All ammunition purchases require proper licensing and age verification.
           </AlertDescription>

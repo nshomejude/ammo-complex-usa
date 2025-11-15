@@ -238,9 +238,9 @@ const ProductDetail = () => {
             </div>
 
             {product.whyChoose && (
-              <Alert className="border-tactical/50 bg-tactical/5">
-                <Award className="h-5 w-5 text-tactical" />
-                <AlertTitle className="text-base font-bold">Why Choose This Ammunition</AlertTitle>
+              <Alert className="border-destructive bg-destructive/10">
+                <Award className="h-5 w-5 text-destructive" />
+                <AlertTitle className="text-base font-bold text-destructive">Why Choose This Ammunition</AlertTitle>
                 <AlertDescription className="text-sm mt-2 leading-relaxed line-clamp-3">
                   {product.whyChoose}
                 </AlertDescription>
@@ -350,10 +350,10 @@ const ProductDetail = () => {
             </Card>
 
             {/* Legal Notice */}
-            <Alert className="border-warning bg-warning/10">
-              <AlertCircle className="h-4 w-4 text-warning" />
-              <AlertTitle className="text-warning-foreground">Legal Purchase Requirements</AlertTitle>
-              <AlertDescription className="text-warning-foreground text-sm">
+            <Alert className="border-destructive bg-destructive/10">
+              <AlertCircle className="h-4 w-4 text-destructive" />
+              <AlertTitle className="text-destructive">Legal Purchase Requirements</AlertTitle>
+              <AlertDescription className="text-sm">
                 You must be 18+ for rifle/shotgun ammunition and 21+ for handgun ammunition. 
                 Valid ID and compliance with all federal, state, and local laws required.
               </AlertDescription>

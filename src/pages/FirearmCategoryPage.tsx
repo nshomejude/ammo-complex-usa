@@ -161,10 +161,10 @@ const FirearmCategoryPage = () => {
       <Navigation />
       
       <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-8 border-warning bg-warning/10">
-          <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">FFL Transfer Required</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+        <Alert className="mb-8 border-destructive bg-destructive/10">
+          <AlertCircle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-destructive">FFL Transfer Required</AlertTitle>
+          <AlertDescription>
             All firearm purchases require transfer to a licensed FFL dealer. Age restrictions and background checks apply.
           </AlertDescription>
         </Alert>

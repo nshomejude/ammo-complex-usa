@@ -18,10 +18,10 @@ const Shipping = () => {
           </p>
         </div>
 
-        <Alert className="mb-8 border-warning bg-warning/10">
-          <AlertCircle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">Ammunition Shipping Notice</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+        <Alert className="mb-8 border-destructive bg-destructive/10">
+          <AlertCircle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-destructive">Ammunition Shipping Notice</AlertTitle>
+          <AlertDescription>
             Ammunition requires special hazardous materials (HazMat) shipping procedures. Adult signature required upon delivery. Additional fees may apply.
           </AlertDescription>
         </Alert>
@@ -127,8 +127,8 @@ const Shipping = () => {
                 </ul>
               </div>
 
-              <Alert className="border-tactical/30 bg-tactical/5">
-                <CheckCircle className="h-4 w-4 text-tactical" />
+              <Alert className="border-destructive bg-destructive/10">
+                <CheckCircle className="h-4 w-4 text-destructive" />
                 <AlertDescription className="text-sm">
                   <strong>FREE SHIPPING</strong> on orders over $500 (HazMat fees still apply)
                 </AlertDescription>

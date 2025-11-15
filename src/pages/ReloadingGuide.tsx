@@ -166,8 +166,8 @@ const ReloadingGuide = () => {
                 </div>
               </Button>
             </div>
-            <Alert className="mt-4">
-              <BookOpen className="h-4 w-4" />
+            <Alert className="mt-4 border-destructive bg-destructive/10">
+              <BookOpen className="h-4 w-4 text-destructive" />
               <AlertDescription className="text-sm">
                 These PDF checklists are designed to be printed and laminated for use at your reloading bench. 
                 Keep them visible and reference them during every reloading session for maximum safety and consistency.
@@ -263,8 +263,8 @@ const ReloadingGuide = () => {
               })}
             </div>
 
-            <Alert className="mt-6">
-              <BookOpen className="h-4 w-4" />
+            <Alert className="mt-6 border-destructive bg-destructive/10">
+              <BookOpen className="h-4 w-4 text-destructive" />
               <AlertDescription>
                 <strong>Reloading Manuals:</strong> Essential references include Lyman Reloading Handbook, 
                 Sierra Reloading Manual, Hornady Handbook, and powder manufacturer guides (Hodgdon, Alliant, Vihtavuori).
