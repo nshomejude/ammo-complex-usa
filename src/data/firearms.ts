@@ -3707,12 +3707,61 @@ export const firearms: Firearm[] = [
     barrelLength: "24 inches",
     weight: "14.8 lbs",
     finish: "Black",
+    shortDescription: "The Barrett MRAD is the revolutionary multi-caliber sniper rifle that won the U.S. Special Operations Command's Precision Sniper Rifle contract. From the makers of the legendary .50 BMG rifles, this platform delivers uncompromising precision at extreme range.",
+    longDescription: "The Barrett MRAD (Multi-Role Adaptive Design) represents the culmination of Barrett's decades of experience building precision rifles for the world's most elite military units. After rigorous evaluation, U.S. Special Operations Command selected the MRAD as their next-generation Precision Sniper Rifle, replacing multiple legacy platforms with this single adaptable system. Barrett, famous for revolutionizing anti-materiel warfare with their .50 BMG rifles, applied that same innovation to create a modular precision rifle that operators can reconfigure for different missions in minutes. The MRAD's most revolutionary feature is its user-changeable barrel system that allows switching between .338 Lapua Magnum, .300 Winchester Magnum, .308 Winchester, and 6.5 Creedmoor without tools - simply unlock the barrel, swap it out, and you have a different rifle. This modularity means one weapon system can serve multiple roles from urban precision shooting with .308 to extreme long-range interdiction with .338 Lapua. The match-grade barrel features 5R rifling for superior accuracy and reduced fouling. The adjustable folding stock allows length-of-pull and cheek height customization for perfect fit with any optic. The dual-stage trigger breaks cleanly at 2.5-4 pounds with no creep or overtravel. The aluminum chassis system provides exceptional rigidity while the M-LOK forend allows mounting accessories exactly where needed. Barrett's flush-cup quick-detach sling mounts and integral adjustable bipod mounting ensure the MRAD is mission-ready. The fluted barrel provides optimal heat dissipation during sustained engagements while reducing weight. For professional precision shooters, military snipers, and serious long-range competitors who demand the absolute best, the Barrett MRAD delivers accuracy and adaptability that lesser rifles cannot match.",
+    features: [
+      "User-changeable barrel system - switch calibers in minutes without tools",
+      "U.S. SOCOM Precision Sniper Rifle contract winner",
+      "Match-grade barrels with 5R rifling for accuracy and reduced fouling",
+      "Adjustable folding stock with length-of-pull and cheek height adjustment",
+      "Dual-stage match trigger adjustable from 2.5-4 pounds",
+      "Aluminum chassis system for maximum rigidity and accuracy",
+      "M-LOK forend for accessory mounting at any position",
+      "Fluted heavy barrel for heat dissipation and weight reduction",
+      "Flush-cup quick-detach sling mounting points",
+      "Available in multiple Cerakote finish colors including FDE, OD Green, and Black"
+    ],
+    benefits: [
+      "One rifle serves multiple missions through caliber interchangeability",
+      "Combat-proven design selected after rigorous military evaluation",
+      "Barrett's reputation for extreme long-range accuracy",
+      "Adjustable ergonomics fit any shooter perfectly",
+      "Superior accuracy through match-grade barrels and rigid chassis",
+      "Mission flexibility without needing multiple rifles"
+    ],
+    useCases: [
+      "Military special operations precision engagement",
+      "Law enforcement SWAT and tactical team deployment",
+      "Long-range precision rifle competition (PRS, F-Class)",
+      "Extreme long-range hunting for dangerous game",
+      "Professional precision shooting instruction",
+      "Serious long-range training and skill development"
+    ],
+    technicalDetails: "The Barrett MRAD features a user-changeable barrel system using a proprietary quick-change barrel locking mechanism that requires no tools and maintains zero. Match-grade barrels are manufactured with 5R rifling (5 grooves with gentler angles) that improves accuracy, reduces fouling, and extends barrel life compared to conventional rifling. The button-rifled barrels are stress-relieved and hand-lapped for match-grade precision. The aluminum chassis provides exceptional rigidity with V-block bedding system. The dual-stage match trigger is adjustable from 2.5 to 4 pounds with virtually no creep and minimal overtravel. The folding stock adjusts for length-of-pull from 12.75 to 15.25 inches with tool-free adjustment. Cheek height adjusts over 1 inch range to align perfectly with any optic. The monolithic top rail provides 27 MOA of internal elevation adjustment. The heavy fluted barrel provides optimal stiffness-to-weight ratio with enhanced cooling during rapid firing. The 10-round detachable magazine feeds reliably. Overall weight with .338 Lapua barrel is approximately 14.8 pounds. Accuracy guarantee is sub-MOA with match ammunition. The rifle disassembles into components under 28 inches for compact transport.",
+    whyChoose: "Choose the Barrett MRAD when you need the sniper rifle trusted by U.S. Special Operations Command after the most comprehensive precision rifle evaluation in military history. Barrett's selection wasn't political - it was earned through demonstrated superiority in accuracy, reliability, modularity, and mission effectiveness. The MRAD's ability to switch between calibers means you're investing in a complete weapon system rather than a single-purpose rifle. Need urban precision with .308? Done. Require extreme long-range capability with .338 Lapua? Swap the barrel in minutes. This adaptability eliminates the need for multiple rifles while ensuring optimal performance for each mission. Barrett's reputation isn't built on marketing - it's earned through rifles that hold the longest recorded sniper kills and serve the world's most elite military units. The MRAD represents Barrett's precision rifle expertise applied to a modular platform. The match-grade barrels deliver accuracy that rivals custom builds costing thousands more, while the adjustable stock system ensures perfect fit regardless of shooter size or optic choice. For serious precision shooters who refuse to compromise, the MRAD offers military-proven performance with unprecedented versatility. This is the rifle that U.S. Special Forces operators bet their lives on - choose it when only the best will suffice.",
+    seoKeywords: [
+      "barrett mrad for sale",
+      "barrett multi-role adaptive design",
+      "buy barrett mrad",
+      "socom precision sniper rifle",
+      "barrett mrad price",
+      "multi-caliber sniper rifle",
+      "barrett mrad 338 lapua",
+      "best precision rifle",
+      "military sniper rifle",
+      "barrett mrad review",
+      "modular sniper system",
+      "barrett mrad 300 win mag",
+      "tactical sniper rifle",
+      "barrett mrad 6.5 creedmoor",
+      "long range precision rifle"
+    ],
     ballisticData: {
       effectiveRange: "1,500 meters (.338 Lapua)",
       maxRange: "1,700 meters",
-      muzzleVelocity: "2,940 fps (.338 Lapua)",
+      muzzleVelocity: "2,940 fps (.338 Lapua 300gr)",
       muzzleEnergy: "4,712 ft-lbs",
-      accuracy: "Sub-MOA guaranteed"
+      accuracy: "Sub-MOA guaranteed with match ammunition"
     }
   },
   {
@@ -3729,12 +3778,61 @@ export const firearms: Firearm[] = [
     barrelLength: "27 inches",
     weight: "15.3 lbs",
     finish: "Pale Brown",
+    shortDescription: "The Accuracy International AXMC is the legendary British sniper rifle trusted by elite military forces in over 70 countries. The pinnacle of combat-proven precision engineering with field-changeable caliber capability.",
+    longDescription: "The Accuracy International AXMC (Accuracy eXtreme Multi-Caliber) represents the apex of British firearms engineering, continuing AI's legendary legacy of equipping the world's most elite military snipers. Accuracy International revolutionized military sniping with the L96 in 1982, which became the British Armed Forces' standard sniper rifle and established AI as the gold standard for precision. The AXMC evolved from decades of operational feedback from SAS, SBS, Royal Marines, and special forces worldwide operating in the most extreme environments on Earth - from Arctic Norway to desert Iraq to jungle Southeast Asia. The AXMC's most revolutionary feature is its field-changeable caliber system that allows switching between .338 Lapua Magnum, .300 Winchester Magnum, and .308 Winchester by simply changing the barrel, bolt, and magazine - no gunsmith required. This modularity means military units can adapt to mission requirements with a single weapon platform. The cold-hammer-forged, button-rifled barrel delivers match-grade accuracy that AI guarantees at 0.5 MOA or better with factory match ammunition. The aluminum chassis features AI's proprietary wedge-lock bedding system that maintains zero even after barrel changes. The folding stock adjusts for length and cheek height with robust mechanisms designed to withstand combat abuse. The two-stage trigger breaks crisply at 3-3.5 pounds. The keyslot forend allows mounting accessories while maintaining optimal barrel harmonics. AI's legendary reliability stems from designing every component to function in temperatures from -40°F to 140°F in sand, mud, rain, and snow. For professional snipers, serious precision competitors, and discriminating long-range hunters who demand absolute reliability and accuracy under any conditions, the AXMC delivers British engineering excellence proven in combat worldwide.",
+    features: [
+      "Field-changeable caliber system - switch between .338 Lapua, .300 Win Mag, .308 Win",
+      "Cold-hammer-forged match-grade barrel with button rifling",
+      "AI's proprietary wedge-lock bedding system maintains zero after barrel changes",
+      "Folding stock with length-of-pull and cheek height adjustment",
+      "Two-stage match trigger with 3-3.5 lb pull weight",
+      "Aluminum chassis system designed for extreme durability",
+      "Keyslot forend for accessory mounting without affecting harmonics",
+      "Double-stack high-capacity magazines for sustained engagement",
+      "Full-length Picatinny rail for optics mounting",
+      "Combat-proven in 70+ countries over four decades"
+    ],
+    benefits: [
+      "Unmatched combat reliability in extreme conditions",
+      "British engineering precision and quality control",
+      "Guaranteed 0.5 MOA accuracy with factory match ammunition",
+      "Field-changeable calibers provide mission flexibility",
+      "Proven through decades of actual combat operations",
+      "Maintains zero through barrel changes and hard use"
+    ],
+    useCases: [
+      "Military special operations and tactical sniping",
+      "Law enforcement precision rifle teams",
+      "Long-range precision competition (PRS, ELR)",
+      "Extreme long-range hunting expeditions",
+      "Professional sniper training and instruction",
+      "Arctic and desert military operations"
+    ],
+    technicalDetails: "The Accuracy International AXMC features AI's proprietary quick-change barrel system using a wedge-lock mechanism that maintains zero across barrel changes. Match-grade barrels are cold-hammer-forged and button-rifled with stress relieving for consistent accuracy. The barrel can be changed in the field in under 5 minutes without tools. The aluminum chassis uses AI's wedge-lock bedding that clamps the action with extreme force for exceptional rigidity. The two-stage trigger features a light take-up followed by crisp break at 3-3.5 pounds with minimal overtravel. The folding stock adjusts length-of-pull over 3 inches and cheek height over 1.5 inches with robust locking mechanisms. The action features a 60-degree bolt throw for rapid cycling with oversize bolt knob. The double-stack magazine holds 10 rounds of .338 Lapua or .300 Win Mag with anti-tilt follower. The rifle is designed to function in temperature extremes from -40°F to 140°F. The Pale Brown finish provides optimal camouflage in varied terrain. Overall weight is 15.3 pounds in .338 Lapua configuration. The rifle guarantees 0.5 MOA accuracy with Lapua Scenar, Federal Gold Medal Match, or comparable ammunition.",
+    whyChoose: "Choose the Accuracy International AXMC when you demand the sniper rifle trusted by British SAS, U.S. Navy SEALs, and elite military forces in over 70 countries worldwide. AI's reputation isn't marketing hype - it's earned through four decades of rifles that have saved operators' lives in actual combat from the Falklands to Afghanistan to Ukraine. The AXMC represents the pinnacle of British precision engineering, where every component is designed not just for accuracy but for absolute reliability in the harshest environments on Earth. While competitors may claim similar accuracy, few can match AI's combat-proven durability and ability to maintain zero through extreme temperature swings, rough handling, and barrel changes. The AXMC's field-changeable caliber system provides genuine tactical flexibility - not a gimmick, but a capability proven essential in real-world military operations. British craftsmanship ensures quality control that meets genuine military specifications. For serious precision shooters who understand that reliability under stress matters as much as accuracy on the range, the AXMC delivers time-tested excellence. This is the rifle that British and American special forces operators trust with their lives - choose it when failure is not an option.",
+    seoKeywords: [
+      "accuracy international axmc",
+      "ai axmc for sale",
+      "buy accuracy international",
+      "axmc multi caliber",
+      "british sniper rifle",
+      "accuracy international price",
+      "ai axmc 338 lapua",
+      "military sniper rifle",
+      "accuracy international review",
+      "best precision rifle",
+      "ai axmc 300 win mag",
+      "tactical sniper system",
+      "accuracy international axmc price",
+      "elite sniper rifle",
+      "long range tactical rifle"
+    ],
     ballisticData: {
       effectiveRange: "1,500 meters (.338 Lapua)",
       maxRange: "1,700 meters",
-      muzzleVelocity: "2,950 fps (.338 Lapua)",
+      muzzleVelocity: "2,950 fps (.338 Lapua 300gr)",
       muzzleEnergy: "4,750 ft-lbs",
-      accuracy: "0.5 MOA"
+      accuracy: "0.5 MOA guaranteed"
     }
   },
   {
@@ -3773,12 +3871,61 @@ export const firearms: Firearm[] = [
     barrelLength: "29 inches",
     weight: "26 lbs",
     finish: "Olive Drab",
+    shortDescription: "The McMillan TAC-50 holds the world record for the longest confirmed sniper kill at 3,540 meters (3,871 yards). The ultimate extreme long-range anti-materiel rifle trusted by Canadian special forces.",
+    longDescription: "The McMillan TAC-50 achieved legendary status on March 2002 when Canadian sniper Corporal Rob Furlong used it to make a confirmed kill at 2,430 meters (2,657 yards) during Operation Anaconda in Afghanistan - a world record that stood for years. That record was broken in 2017 by another Canadian sniper using the same rifle system, this time at an astonishing 3,540 meters (3,871 yards, or 2.2 miles) - a shot so extreme it took the projectile nearly 10 seconds to reach the target. These aren't lucky shots - they represent the TAC-50's inherent capability to deliver match-grade accuracy at distances that defy belief. McMillan Firearms has built extreme long-range rifles for military, law enforcement, and competitive shooters since 1973, earning a reputation for absolute precision. The TAC-50 combines a match-grade, free-floated barrel with McMillan's proprietary fiberglass stock featuring an advanced recoil management system essential for controlling the massive .50 BMG cartridge. The rifle's bolt-action design provides the rigidity and consistency impossible with semi-automatic actions at these extreme ranges. The heavy fluted barrel maintains accuracy through extended shooting sessions while the massive muzzle brake reduces recoil to manageable levels. The adjustable cheek piece and buttpad allow custom fit for any shooter or optic configuration. The TAC-50 isn't just for snipers - it serves critical roles in explosive ordnance disposal, disabling vehicles and equipment, and engaging targets behind cover at ranges where smaller calibers lose effectiveness. For extreme long-range shooting beyond 1,500 meters, materiel destruction missions, or simply owning the rifle platform that holds the longest recorded precision shot in history, the TAC-50 represents the apex of long-range capability.",
+    features: [
+      "World record holder for longest confirmed sniper kill - 3,540 meters",
+      "Match-grade free-floated barrel with precision chamber",
+      "McMillan fiberglass stock with advanced recoil management",
+      "Massive multi-chamber muzzle brake reduces felt recoil",
+      "Heavy fluted barrel for heat dissipation and rigidity",
+      "Adjustable cheek piece and buttpad for custom fit",
+      "Remington 700-style action scaled to .50 BMG",
+      "Detachable 5-round box magazine",
+      "Full-length Picatinny rail for long-range optics mounting",
+      "Bipod mounting provisions for stable shooting platform"
+    ],
+    benefits: [
+      "Proven at longest recorded precision shots in history",
+      "Canadian military's primary extreme long-range platform",
+      "Unmatched anti-materiel capability with .50 BMG power",
+      "McMillan's 50+ years of precision rifle expertise",
+      "Match accuracy at ranges exceeding 2 miles",
+      "Destroys vehicles, equipment, and hardened targets"
+    ],
+    useCases: [
+      "Military counter-sniper operations at extreme ranges",
+      "Anti-materiel missions against vehicles and equipment",
+      "Explosive ordnance disposal - detonating IEDs from safety",
+      "Border patrol and counter-drug operations",
+      "Extreme long-range (ELR) competition shooting",
+      "Hard target interdiction beyond 1,500 meters"
+    ],
+    technicalDetails: "The McMillan TAC-50 features a match-grade, hand-lapped, button-rifled barrel manufactured from 416R stainless steel. The barrel is free-floated in McMillan's proprietary fiberglass stock with aluminum bedding block. The stock incorporates a sophisticated recoil management system essential for controlling the .50 BMG's extreme recoil impulse. The action is based on the Remington 700 footprint scaled to .50 BMG dimensions with dual front locking lugs and full-length guide rails. The massive muzzle brake features multiple expansion chambers that redirect propellant gases to reduce felt recoil to levels comparable to .308 Winchester rifles despite firing projectiles with 5x the energy. The 29-inch heavy barrel provides optimal velocity from .50 BMG cartridges while the 1:15 twist rate stabilizes 647-750 grain military projectiles. The adjustable cheek piece provides 2 inches of height adjustment to align perfectly with large tactical optics. The buttpad adjusts for length-of-pull from 13 to 15 inches. The 5-round detachable magazine feeds reliably with both M33 ball and Mk 211 Raufoss multipurpose rounds. Overall weight is 26 pounds without optics. Accuracy guarantee is 0.5 MOA with match ammunition - translating to 5-inch groups at 1,000 yards.",
+    whyChoose: "Choose the McMillan TAC-50 when you need the rifle platform proven at the longest recorded precision shots in history. This isn't marketing hype - Canadian snipers using TAC-50 rifles have set multiple world records for extreme long-range engagements, including the current record at 3,540 meters. The TAC-50's .50 BMG cartridge delivers over 13,000 foot-pounds of energy at the muzzle - enough to disable light vehicles, penetrate substantial cover, and deliver decisive terminal effects at ranges where smaller calibers become ineffective. McMillan's reputation for extreme precision is earned through decades of building rifles for the most demanding military and competition applications. While other .50 BMG rifles exist, few can match the TAC-50's proven accuracy and reliability under combat conditions. The rifle has served Canadian forces through Afghanistan, Iraq, and Syria with flawless performance. For extreme long-range competition, the TAC-50 dominates ELR matches where precision beyond 2,000 yards separates winners from participants. If you need to engage targets at ranges that most shooters consider impossible, destroy hard targets with authority, or own the rifle platform with documented kills beyond 2 miles, the TAC-50 delivers capability that cannot be matched by lesser calibers.",
+    seoKeywords: [
+      "mcmillan tac-50",
+      "tac 50 sniper rifle",
+      "50 bmg precision rifle",
+      "world record sniper rifle",
+      "canadian military sniper",
+      "mcmillan tac-50 for sale",
+      "anti materiel rifle",
+      "extreme long range rifle",
+      "50 bmg tactical rifle",
+      "longest sniper shot rifle",
+      "mcmillan firearms",
+      "tac-50 price",
+      "military sniper 50 cal",
+      "precision 50 bmg",
+      "long range 50 caliber"
+    ],
     ballisticData: {
-      effectiveRange: "2,000 meters",
-      maxRange: "3,500+ meters (record: 3,540m)",
-      muzzleVelocity: "2,799 fps",
+      effectiveRange: "2,000 meters (confirmed hits beyond 3,500 meters)",
+      maxRange: "3,500+ meters (world record: 3,540m)",
+      muzzleVelocity: "2,799 fps (.50 BMG 647gr)",
       muzzleEnergy: "13,350 ft-lbs",
-      accuracy: "0.5 MOA"
+      accuracy: "0.5 MOA guaranteed"
     }
   },
   {
@@ -3795,12 +3942,61 @@ export const firearms: Firearm[] = [
     barrelLength: "26 inches",
     weight: "14.5 lbs",
     finish: "Flat Dark Earth",
+    shortDescription: "The Desert Tech SRS-A2 revolutionizes precision rifle design with its bullpup configuration and convertible multi-caliber system. Delivers full-length barrel performance in a package 10 inches shorter than conventional rifles.",
+    longDescription: "The Desert Tech Stealth Recon Scout A2 (SRS-A2) represents one of the most innovative precision rifle designs in modern firearms history. While most precision rifles follow century-old conventions with actions ahead of triggers, Desert Tech engineers recognized that bullpup configuration - moving the action behind the trigger - offers dramatic advantages for tactical applications. The SRS-A2 delivers a full 26-inch barrel in an overall length of just 37 inches - the same as a conventional precision rifle with only a 16-inch barrel. This compact profile transforms weapon handling in vehicles, buildings, helicopters, and confined spaces while maintaining the ballistic performance of full-length barrels. Desert Tech's convertible design allows switching between .338 Lapua Magnum, .300 Winchester Magnum, .308 Winchester, and 6.5 Creedmoor by changing the barrel and bolt - a complete caliber conversion in under 2 minutes without gunsmithing. The SRS-A2's forward ejection system throws spent cases away from the shooter's face, making it equally effective for right or left-handed operators. The match-grade barrel features Desert Tech's proprietary chamber and crown geometry for consistency. The aluminum chassis provides exceptional rigidity while the adjustable cheek piece and length-of-pull accommodate any shooter or optic. The integral Arca rail simplifies mounting to precision shooting rests and tripods. The smooth bolt throw with 45-degree lift provides rapid follow-up shots. For military special operations requiring compact precision, tactical law enforcement in urban environments, competitors seeking advantages through innovative design, and shooters who appreciate engineering excellence, the SRS-A2 delivers capabilities impossible with conventional rifle architectures.",
+    features: [
+      "Bullpup design provides 10 inches shorter overall length than conventional rifles",
+      "Convertible multi-caliber system - switch between 4 calibers",
+      "Forward ejection system works equally well for left or right-handed shooters",
+      "Match-grade barrel with Desert Tech's proprietary chamber geometry",
+      "Aluminum chassis system for maximum rigidity",
+      "Adjustable cheek piece and length-of-pull for custom fit",
+      "Integral Arca rail for easy mounting to precision rests",
+      "45-degree bolt throw for rapid cycling",
+      "Full-length top Picatinny rail for optics",
+      "Side-folding monopod for stable rear support"
+    ],
+    benefits: [
+      "Dramatically shorter overall length improves maneuverability",
+      "Full-length barrel performance in compact package",
+      "Multi-caliber capability eliminates need for multiple rifles",
+      "True ambidextrous design from forward ejection",
+      "Innovative engineering from American manufacturer",
+      "Proven in military and law enforcement service"
+    ],
+    useCases: [
+      "Military special operations in confined environments",
+      "Law enforcement tactical teams in urban settings",
+      "Vehicle-mounted precision rifle deployment",
+      "Helicopter or aircraft-based precision shooting",
+      "Precision Rifle Series (PRS) competition",
+      "Tactical hunting where maneuverability matters"
+    ],
+    technicalDetails: "The Desert Tech SRS-A2 features a match-grade, button-rifled barrel manufactured from 416R stainless steel with Desert Tech's proprietary 5R rifling and chamber geometry. The barrel conversion system uses a robust locking collar that maintains zero across caliber changes. The bullpup design places the 26-inch barrel's breech behind the trigger, reducing overall length to 37 inches with stock extended (31 inches folded). The forward ejection system uses a curved ejection chute that throws cases forward and to the right regardless of shooter position. The aluminum chassis with V-block bedding provides exceptional rigidity. The match trigger breaks at 2.5-3.5 pounds with minimal take-up and crisp break. The adjustable cheek piece provides 1.5 inches of height adjustment. Length-of-pull adjusts from 12 to 14.5 inches. The Arca rail on the forend allows direct mounting to Arca-Swiss compatible rests and tripods without adapters. Magazine capacity is 6 rounds for .338 Lapua, 7 rounds for .300 Win Mag, and 8 rounds for .308/.65CM. Weight is 14.5 pounds in .338 Lapua configuration. Accuracy guarantee is 0.5 MOA with match ammunition. The rifle includes a side-folding monopod and integral quick-detach flush cup sling mounts.",
+    whyChoose: "Choose the Desert Tech SRS-A2 when you need full precision rifle performance without the limitations of conventional length. The bullpup configuration isn't a gimmick - it solves real tactical problems faced by operators working from vehicles, helicopters, buildings, and other confined spaces where conventional rifles prove unwieldy. The 10-inch length reduction compared to traditional designs is transformative for maneuverability while maintaining identical ballistic performance. The convertible multi-caliber system provides genuine capability to adapt one rifle for different missions - urban precision with .308, intermediate range with 6.5 Creedmoor, or extreme long-range with .338 Lapua. Desert Tech's American engineering and manufacturing ensures quality and innovation. The forward ejection makes this truly ambidextrous without compromise - unlike conventional rifles where left-handed shooters deal with brass ejecting across their face. For tactical professionals requiring compact precision, competitors seeking innovative advantages, or shooters who appreciate engineering that challenges conventions, the SRS-A2 delivers capabilities that conventional designs cannot match. This is precision shooting reimagined for modern tactical requirements.",
+    seoKeywords: [
+      "desert tech srs-a2",
+      "stealth recon scout",
+      "bullpup sniper rifle",
+      "desert tech srs for sale",
+      "compact precision rifle",
+      "multi caliber tactical rifle",
+      "srs-a2 price",
+      "bullpup 338 lapua",
+      "short precision rifle",
+      "desert tech firearms",
+      "convertible sniper rifle",
+      "tactical bullpup rifle",
+      "ambidextrous sniper",
+      "desert tech review",
+      "compact tactical rifle"
+    ],
     ballisticData: {
       effectiveRange: "1,500 meters (.338 Lapua)",
       maxRange: "1,700 meters",
-      muzzleVelocity: "2,950 fps (.338 Lapua)",
+      muzzleVelocity: "2,950 fps (.338 Lapua 300gr)",
       muzzleEnergy: "4,750 ft-lbs",
-      accuracy: "0.5 MOA"
+      accuracy: "0.5 MOA guaranteed"
     }
   },
   {
@@ -3993,12 +4189,61 @@ export const firearms: Firearm[] = [
     barrelLength: "26 inches",
     weight: "7.2 lbs",
     finish: "Black/Carbon",
+    shortDescription: "The Christensen Arms Modern Precision Rifle represents the pinnacle of custom carbon fiber rifle building. Delivering sub-MOA accuracy at weights that defy conventional precision rifle design.",
+    longDescription: "The Christensen Arms Modern Precision Rifle (MPR) revolutionizes long-range shooting by delivering match-grade accuracy in a package weighing barely more than a hunting rifle. Christensen Arms pioneered carbon fiber barrel technology in the 1990s and has spent over 25 years perfecting the art of wrapping match-grade steel liners with aerospace-grade carbon fiber for unmatched stiffness-to-weight ratio. The MPR represents the culmination of this expertise applied to a purpose-built precision rifle platform. At just 7.2 pounds, the MPR weighs 40-50% less than comparable all-steel precision rifles while delivering equal or superior accuracy through carbon fiber's superior harmonic damping and thermal stability. The carbon fiber-wrapped barrel maintains point-of-impact consistency through heat cycles that would walk point-of-impact on steel barrels - the carbon fiber dissipates heat rapidly while remaining rigid. The Remington 700-pattern action is blueprinted and trued for perfect alignment, then bedded in an aluminum V-block chassis that provides exceptional rigidity. The TriggerTech trigger breaks at a crisp 2.5 pounds with zero creep or overtravel. The carbon fiber handguard with M-LOK attachment points allows mounting accessories while maintaining featherweight overall mass. The adjustable stock provides length-of-pull and cheek height customization for perfect fit. The fluted bolt reduces reciprocating mass for faster lock time. For mountain hunters requiring long-range precision without pack-breaking weight, PRS competitors seeking an advantage through reduced fatigue, and tactical operators conducting extended missions where every ounce matters, the MPR delivers custom rifle accuracy with weight that must be experienced to be believed.",
+    features: [
+      "Carbon fiber-wrapped match-grade barrel for minimum weight and maximum accuracy",
+      "Remington 700-pattern action blueprinted and trued for precision",
+      "Aluminum V-block chassis provides exceptional rigidity at minimal weight",
+      "TriggerTech trigger with 2.5 lb pull and zero creep",
+      "Carbon fiber handguard with M-LOK attachment system",
+      "Adjustable stock with length-of-pull and cheek height adjustment",
+      "Fluted bolt reduces lock time for improved accuracy",
+      "Match chamber and hand-lapped bore for consistency",
+      "Sub-MOA accuracy guarantee with factory match ammunition",
+      "Available in multiple calibers from 6.5 CM to .300 Win Mag"
+    ],
+    benefits: [
+      "Unmatched weight-to-accuracy ratio saves 3-5 pounds vs. steel rifles",
+      "Carbon fiber maintains accuracy through heat cycles",
+      "Reduced weight enables extended carry without fatigue",
+      "Custom rifle accuracy at production rifle prices",
+      "Superior barrel harmonics from carbon fiber damping",
+      "25+ years of carbon fiber barrel expertise"
+    ],
+    useCases: [
+      "Mountain hunting requiring long-range accuracy with minimal weight",
+      "Precision Rifle Series (PRS) competition shooting",
+      "Long-range hunting where pack weight matters",
+      "Extended tactical operations requiring lightweight precision",
+      "Competitive long-range shooting in weight-limited classes",
+      "Backcountry hunting expeditions"
+    ],
+    technicalDetails: "The Christensen Arms MPR features a match-grade stainless steel barrel liner that is stress-relieved, hand-lapped, and button-rifled to Christensen's specifications. The barrel liner is then wrapped with aerospace-grade carbon fiber using proprietary resin and curing processes developed over 25 years. The carbon fiber adds rigidity equivalent to a much heavier steel barrel while dissipating heat more effectively. The Remington 700 footprint action is blueprinted with squared action face, trued threads, and precision lug seats. The action is bedded in an aluminum chassis using V-block bedding for maximum rigidity. The TriggerTech trigger uses zero-creep roller design with adjustable pull weight from 1.5 to 4 pounds, set at 2.5 pounds from factory. The carbon fiber handguard features full-length M-LOK slots at 3, 6, and 9 o'clock positions. The adjustable stock provides 3 inches of length-of-pull adjustment and 1 inch of cheek height adjustment with repeatable locking. Magazine capacity is 5 rounds with AICS-pattern magazines. Overall weight in 6.5 Creedmoor configuration is 7.2 pounds. Accuracy guarantee is 0.5 MOA or better with premium factory match ammunition. The rifle includes a threaded muzzle with thread protector and accepts standard precision rifle accessories.",
+    whyChoose: "Choose the Christensen Arms Modern Precision Rifle when you refuse to compromise between accuracy and weight. While traditional precision rifles deliver exceptional accuracy through sheer mass and rigidity, they impose a penalty of 12-16 pounds that creates fatigue, limits mobility, and becomes oppressive during extended operations. The MPR proves that modern materials science can deliver equal accuracy at nearly half the weight. Christensen Arms' 25+ years of carbon fiber expertise isn't matched by newcomers offering 'carbon' rifles - CA pioneered and perfected the technology. The MPR's carbon fiber barrels maintain accuracy through heat cycles that cause steel barrels to walk point-of-impact, giving competitive advantages in rapid-fire stages. For mountain hunters, the weight savings mean you can carry a true long-range precision rifle into terrain where others are forced to use lighter hunting rifles with inferior accuracy. The MPR delivers custom rifle accuracy - we're talking consistent half-MOA groups - at a price point thousands below comparable custom builds. The Remington 700 footprint ensures compatibility with the massive aftermarket of stocks, triggers, and accessories. If you've been frustrated by the trade-off between accuracy and weight, the MPR solves it definitively.",
+    seoKeywords: [
+      "christensen arms mpr",
+      "carbon fiber precision rifle",
+      "lightweight tactical rifle",
+      "christensen modern precision",
+      "carbon barrel rifle",
+      "best lightweight precision rifle",
+      "christensen arms for sale",
+      "prs competition rifle",
+      "mountain hunting rifle",
+      "carbon fiber sniper rifle",
+      "lightweight 6.5 creedmoor",
+      "christensen mpr price",
+      "custom precision rifle",
+      "carbon wrapped barrel",
+      "ultralight tactical rifle"
+    ],
     ballisticData: {
-      effectiveRange: "1,200 meters",
+      effectiveRange: "1,200 meters (6.5 CM), 1,400 meters (.300 Win Mag)",
       maxRange: "1,500 meters",
-      muzzleVelocity: "2,850 fps (.300 Win Mag)",
-      muzzleEnergy: "3,501 ft-lbs",
-      accuracy: "0.5 MOA"
+      muzzleVelocity: "2,850 fps (.300 Win Mag 190gr), 2,700 fps (6.5 CM 140gr)",
+      muzzleEnergy: "3,501 ft-lbs (.300 WM), 2,266 ft-lbs (6.5 CM)",
+      accuracy: "0.5 MOA guaranteed with match ammunition"
     }
   },
   {
