@@ -357,11 +357,11 @@ const FirearmDetail = () => {
         {/* Detailed Information Tabs */}
         <section className="mb-12">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 lg:w-auto lg:inline-grid">
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="features">Features & Benefits</TabsTrigger>
-              <TabsTrigger value="technical">Technical Details</TabsTrigger>
-              <TabsTrigger value="uses">Use Cases</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:w-auto lg:inline-grid gap-1">
+              <TabsTrigger value="overview" className="text-xs sm:text-sm">Overview</TabsTrigger>
+              <TabsTrigger value="features" className="text-xs sm:text-sm">Features & Benefits</TabsTrigger>
+              <TabsTrigger value="technical" className="text-xs sm:text-sm">Technical Details</TabsTrigger>
+              <TabsTrigger value="uses" className="text-xs sm:text-sm">Use Cases</TabsTrigger>
             </TabsList>
 
             <TabsContent value="overview" className="mt-6">
