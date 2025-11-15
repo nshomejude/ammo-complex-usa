@@ -18,10 +18,10 @@ const FirearmsLicense = () => {
           </p>
         </div>
 
-        <Alert className="mb-8 border-tactical/30 bg-tactical/5">
-          <Shield className="h-4 w-4 text-tactical" />
-          <AlertTitle className="text-foreground">Federal Compliance Required</AlertTitle>
-          <AlertDescription className="text-muted-foreground">
+        <Alert className="mb-8 border-destructive bg-destructive/10">
+          <Shield className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-destructive">Federal Compliance Required</AlertTitle>
+          <AlertDescription>
             Arms Complex operates under Federal Firearms License (FFL) regulations. All customers must comply with federal, state, and local laws regarding ammunition purchases.
           </AlertDescription>
         </Alert>
@@ -115,8 +115,8 @@ const FirearmsLicense = () => {
                 </div>
               </div>
 
-              <Alert className="border-warning/30 bg-warning/5">
-                <AlertTriangle className="h-4 w-4 text-warning" />
+              <Alert className="border-destructive bg-destructive/10">
+                <AlertTriangle className="h-4 w-4 text-destructive" />
                 <AlertDescription className="text-sm">
                   <strong>California Notice:</strong> Direct-to-consumer ammunition sales are prohibited. California residents must purchase through an FFL dealer.
                 </AlertDescription>
@@ -228,10 +228,10 @@ const FirearmsLicense = () => {
           </CardContent>
         </Card>
 
-        <Alert className="border-warning bg-warning/10 mb-6">
-          <AlertTriangle className="h-4 w-4 text-warning" />
-          <AlertTitle className="text-warning-foreground">Important Legal Notice</AlertTitle>
-          <AlertDescription className="text-warning-foreground">
+        <Alert className="border-destructive bg-destructive/10 mb-6">
+          <AlertTriangle className="h-4 w-4 text-destructive" />
+          <AlertTitle className="text-destructive">Important Legal Notice</AlertTitle>
+          <AlertDescription>
             By purchasing ammunition from Arms Complex, you certify that you are legally permitted to purchase and possess ammunition under all applicable federal, state, and local laws. Providing false information is a federal crime punishable by imprisonment and fines.
           </AlertDescription>
         </Alert>

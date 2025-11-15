@@ -100,8 +100,8 @@ const HowToBuy = () => {
                       </ul>
                     </div>
 
-                    <Alert className="border-tactical/30 bg-tactical/5">
-                      <CheckCircle className="h-4 w-4 text-tactical" />
+                    <Alert className="border-destructive bg-destructive/10">
+                      <CheckCircle className="h-4 w-4 text-destructive" />
                       <AlertDescription className="text-sm">
                         Verification typically takes 1-3 business days. You'll receive an email when approved.
                       </AlertDescription>
@@ -194,8 +194,8 @@ const HowToBuy = () => {
                       </ul>
                     </div>
 
-                    <Alert className="border-tactical/30 bg-tactical/5">
-                      <CheckCircle className="h-4 w-4 text-tactical" />
+                    <Alert className="border-destructive bg-destructive/10">
+                      <CheckCircle className="h-4 w-4 text-destructive" />
                       <AlertDescription className="text-sm">
                         All transactions are secured with 256-bit SSL encryption. Your payment information is never stored on our servers.
                       </AlertDescription>

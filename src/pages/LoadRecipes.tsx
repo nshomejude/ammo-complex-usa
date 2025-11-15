@@ -213,8 +213,8 @@ const LoadRecipes = () => {
       <div className="min-h-screen bg-background">
         <Navigation />
         <main className="container mx-auto px-4 py-12">
-          <Alert className="max-w-2xl mx-auto">
-            <LogIn className="h-4 w-4" />
+          <Alert className="max-w-2xl mx-auto border-destructive bg-destructive/10">
+            <LogIn className="h-4 w-4 text-destructive" />
             <AlertDescription className="ml-2">
               <div className="flex items-center justify-between">
                 <span>Please log in to view and manage your load recipes</span>
