@@ -165,13 +165,13 @@ const Categories = () => {
         <div className="flex-1 flex flex-col">
           <Navigation />
           
-          <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
+          <main className="container mx-auto px-3 sm:px-4 py-4 sm:py-6">
             <div className="mb-3 sm:mb-4">
               <SidebarTrigger className="mb-3 sm:mb-4" />
             </div>
             
             {/* Header Section with SEO-optimized content */}
-            <header className="mb-8 sm:mb-12">
+            <header className="mb-6 sm:mb-8">
           <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
             <Package className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Ammunition Catalog</h1>
@@ -180,7 +180,7 @@ const Categories = () => {
             Browse our complete collection of ammunition across {totalCategories} categories including 
             9mm Luger, .223 Remington, 12 Gauge, .308 Winchester, .45 ACP, and specialty cartridges
           </p>
-          <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
+          <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
             <Badge variant="secondary" className="text-xs sm:text-sm">
               {totalProducts} Products Available
             </Badge>
@@ -204,14 +204,14 @@ const Categories = () => {
 
         {/* Trending Section */}
         {trendingAmmunition.length > 0 && (
-          <section className="mb-8 sm:mb-12" aria-labelledby="trending-heading">
-            <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6">
+          <section className="mb-6 sm:mb-8" aria-labelledby="trending-heading">
+            <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4">
               <h2 id="trending-heading" className="text-xl sm:text-2xl font-bold text-tactical">
                 🔥 Trending Ammunition Categories
               </h2>
               <Badge variant="destructive" className="animate-pulse text-xs sm:text-sm">Hot</Badge>
             </div>
-            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {trendingAmmunition.map((ammo) => (
                 <article key={ammo.id} className="relative">
                   <TopSellingCard
@@ -237,10 +237,10 @@ const Categories = () => {
         {/* All Categories Section */}
         {otherAmmunition.length > 0 && (
           <section aria-labelledby="all-categories-heading">
-            <h2 id="all-categories-heading" className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
+            <h2 id="all-categories-heading" className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
               All Ammunition Categories
             </h2>
-            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {otherAmmunition.map((ammo) => (
                 <article key={ammo.id} className="relative">
                   <TopSellingCard

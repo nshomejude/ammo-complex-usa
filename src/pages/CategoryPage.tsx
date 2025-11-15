@@ -179,17 +179,17 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <main className="container mx-auto p-6 py-12">
+      <main className="container mx-auto p-4 sm:p-6 py-4 sm:py-6">
         <nav aria-label="Breadcrumb">
           <Link to="/categories">
-            <Button variant="ghost" className="mb-6">
+            <Button variant="ghost" className="mb-4">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Categories
             </Button>
           </Link>
         </nav>
 
-        <header className="mb-12">
+        <header className="mb-8">
           <div className="flex items-start gap-4 mb-4">
             {CategoryIcon && (
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-xl bg-tactical/10 text-tactical">
@@ -215,7 +215,7 @@ const CategoryPage = () => {
           </div>
         </header>
 
-        <div className="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+        <div className="mb-4 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
           <div className="flex items-center gap-2 text-muted-foreground">
             <Package className="h-5 w-5" />
             <span className="font-medium">
@@ -251,7 +251,7 @@ const CategoryPage = () => {
         </div>
 
         {sortedProducts.length > 0 ? (
-          <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4 grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4 grid-cols-2">
             {sortedProducts.map((product) => (
               <ProductCard 
                 key={product.id} 
@@ -265,10 +265,10 @@ const CategoryPage = () => {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16">
-            <Package className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
-            <h3 className="text-xl font-semibold mb-2">No Products Found</h3>
-            <p className="text-muted-foreground mb-6">
+          <div className="text-center py-8 sm:py-12">
+            <Package className="h-12 w-12 sm:h-16 sm:w-16 mx-auto mb-3 sm:mb-4 text-muted-foreground" />
+            <h3 className="text-lg sm:text-xl font-semibold mb-2">No Products Found</h3>
+            <p className="text-muted-foreground mb-4 sm:mb-6">
               {stockFilter === "inStock"
                 ? "No products are currently in stock for this category."
                 : stockFilter === "outOfStock"

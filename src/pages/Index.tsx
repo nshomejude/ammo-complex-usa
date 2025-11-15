@@ -33,8 +33,8 @@ const Index = () => {
       <Navigation />
       <Hero />
       
-      <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-12 border-destructive bg-destructive/10">
+      <section className="container mx-auto px-4 py-4 sm:py-6">
+        <Alert className="mb-8 border-destructive bg-destructive/10">
           <AlertCircle className="h-4 w-4 text-destructive" />
           <AlertTitle className="text-destructive-foreground">Legal Notice</AlertTitle>
           <AlertDescription className="text-destructive-foreground">
@@ -43,8 +43,8 @@ const Index = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="mb-16">
-          <div className="mb-8 flex items-center gap-3">
+        <div className="mb-8">
+          <div className="mb-4 flex items-center gap-3">
             <TrendingUp className="h-8 w-8 text-tactical" />
             <div>
               <h2 className="text-3xl font-bold">Top Selling Firearm Categories</h2>
@@ -52,13 +52,13 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {topFirearmCategories.map((category) => (
               <FirearmCategoryCard key={category.id} {...category} />
             ))}
           </div>
 
-          <div className="mt-6 text-center">
+          <div className="mt-4 text-center">
             <Link to="/firearm-categories">
               <Button variant="outline" className="border-tactical text-tactical hover:bg-tactical hover:text-tactical-foreground">
                 View All 20 Categories
@@ -67,11 +67,11 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="mb-16">
+        <div className="mb-8">
           <h2 className="text-3xl font-bold mb-4">Featured Firearms</h2>
-          <p className="text-muted-foreground mb-8">Popular firearms available now</p>
+          <p className="text-muted-foreground mb-4">Popular firearms available now</p>
           
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {featuredFirearms.map((firearm) => (
               <FirearmCard 
                 key={firearm.id} 
@@ -85,7 +85,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="mt-6 text-center">
+          <div className="mt-4 text-center">
             <Link to="/firearms">
               <Button variant="outline" className="border-tactical text-tactical hover:bg-tactical hover:text-tactical-foreground">
                 Browse All Firearms
@@ -94,11 +94,11 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-4">Shop by Category</h2>
-          <p className="text-muted-foreground mb-8">Find the right ammunition for your needs</p>
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold mb-4">Popular Ammunition Categories</h2>
+          <p className="text-muted-foreground mb-4">Browse ammunition by caliber</p>
           
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((category) => (
               <CategoryCard key={category.slug} {...category} />
             ))}
@@ -106,10 +106,10 @@ const Index = () => {
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold mb-4">Featured Products</h2>
-          <p className="text-muted-foreground mb-8">Popular ammunition in stock now</p>
+          <h2 className="text-3xl font-bold mb-4">Featured Ammunition</h2>
+          <p className="text-muted-foreground mb-4">In-stock ammunition ready to ship</p>
           
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {featuredProducts.map((product) => (
               <ProductCard 
                 key={product.id} 
