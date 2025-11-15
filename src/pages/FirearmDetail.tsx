@@ -205,9 +205,9 @@ const FirearmDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Left Column - Image and Desktop-only sections */}
           <div>
-            <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6">
+            <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
-                <Shield className="h-20 w-20 mx-auto text-tactical mb-3" />
+                <Shield className="h-16 w-16 mx-auto text-tactical mb-3" />
                 <Badge variant="secondary" className="px-3 py-1">{firearm.actionType}</Badge>
               </div>
             </div>
