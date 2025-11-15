@@ -364,16 +364,16 @@ const FirearmDetail = () => {
               <TabsTrigger value="uses" className="text-xs sm:text-sm">Use Cases</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="overview" className="mt-6">
+            <TabsContent value="overview" className="mt-4 sm:mt-6">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-tactical" />
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                    <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                     Product Overview
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="prose prose-slate max-w-none">
-                  <div className="text-base leading-relaxed space-y-4">
+                <CardContent className="prose prose-slate max-w-none p-4 sm:p-6">
+                  <div className="text-sm sm:text-base leading-relaxed space-y-3 sm:space-y-4">
                     {firearm.longDescription ? (
                       firearm.longDescription.split('\n\n').map((paragraph, idx) => (
                         <p key={idx}>{paragraph}</p>
@@ -386,22 +386,22 @@ const FirearmDetail = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="features" className="mt-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <TabsContent value="features" className="mt-4 sm:mt-6">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 {firearm.features && firearm.features.length > 0 && (
                   <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-tactical" />
+                    <CardHeader className="p-4 sm:p-6">
+                      <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                        <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                         Key Features
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-3">
+                    <CardContent className="p-4 sm:p-6">
+                      <ul className="space-y-2 sm:space-y-3">
                         {firearm.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <CheckCircle className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
-                            <span className="text-sm">{feature}</span>
+                            <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
+                            <span className="text-xs sm:text-sm">{feature}</span>
                           </li>
                         ))}
                       </ul>
@@ -411,18 +411,18 @@ const FirearmDetail = () => {
 
                 {firearm.benefits && firearm.benefits.length > 0 && (
                   <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Award className="h-5 w-5 text-tactical" />
+                    <CardHeader className="p-4 sm:p-6">
+                      <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                        <Award className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                         Benefits
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-3">
+                    <CardContent className="p-4 sm:p-6">
+                      <ul className="space-y-2 sm:space-y-3">
                         {firearm.benefits.map((benefit, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <Award className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
-                            <span className="text-sm">{benefit}</span>
+                            <Award className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
+                            <span className="text-xs sm:text-sm">{benefit}</span>
                           </li>
                         ))}
                       </ul>
@@ -434,46 +434,46 @@ const FirearmDetail = () => {
               {(!firearm.features || firearm.features.length === 0) && 
                (!firearm.benefits || firearm.benefits.length === 0) && (
                 <Card>
-                  <CardContent className="py-8 text-center text-muted-foreground">
+                  <CardContent className="py-6 sm:py-8 text-center text-muted-foreground text-xs sm:text-sm p-4 sm:p-6">
                     Detailed features and benefits information coming soon.
                   </CardContent>
                 </Card>
               )}
             </TabsContent>
 
-            <TabsContent value="technical" className="mt-6">
+            <TabsContent value="technical" className="mt-4 sm:mt-6">
               <Card>
-                <CardHeader>
-                  <CardTitle>Technical Specifications & Details</CardTitle>
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="text-base sm:text-lg">Technical Specifications & Details</CardTitle>
                 </CardHeader>
-                <CardContent className="prose prose-slate max-w-none">
+                <CardContent className="prose prose-slate max-w-none p-4 sm:p-6">
                   {firearm.technicalDetails ? (
-                    <div className="text-sm leading-relaxed space-y-4">
+                    <div className="text-xs sm:text-sm leading-relaxed space-y-3 sm:space-y-4">
                       {firearm.technicalDetails.split('\n\n').map((paragraph, idx) => (
                         <p key={idx}>{paragraph}</p>
                       ))}
                     </div>
                   ) : (
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                       <div>
-                        <p className="text-sm text-muted-foreground">Action Type</p>
-                        <p className="font-semibold">{firearm.actionType}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Action Type</p>
+                        <p className="font-semibold text-xs sm:text-sm">{firearm.actionType}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Capacity</p>
-                        <p className="font-semibold">{firearm.capacity}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Capacity</p>
+                        <p className="font-semibold text-xs sm:text-sm">{firearm.capacity}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Barrel Length</p>
-                        <p className="font-semibold">{firearm.barrelLength}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Barrel Length</p>
+                        <p className="font-semibold text-xs sm:text-sm">{firearm.barrelLength}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Weight</p>
-                        <p className="font-semibold">{firearm.weight}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Weight</p>
+                        <p className="font-semibold text-xs sm:text-sm">{firearm.weight}</p>
                       </div>
-                      <div className="col-span-2">
-                        <p className="text-sm text-muted-foreground">Finish</p>
-                        <p className="font-semibold">{firearm.finish}</p>
+                      <div className="col-span-1 sm:col-span-2">
+                        <p className="text-xs sm:text-sm text-muted-foreground">Finish</p>
+                        <p className="font-semibold text-xs sm:text-sm">{firearm.finish}</p>
                       </div>
                     </div>
                   )}
@@ -481,21 +481,21 @@ const FirearmDetail = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="uses" className="mt-6">
+            <TabsContent value="uses" className="mt-4 sm:mt-6">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Target className="h-5 w-5 text-tactical" />
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                    <Target className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                     Recommended Applications
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="p-4 sm:p-6">
                   {firearm.useCases && firearm.useCases.length > 0 ? (
-                    <div className="grid md:grid-cols-2 gap-4">
+                    <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
                       {firearm.useCases.map((useCase, idx) => (
-                        <div key={idx} className="flex items-start gap-3 p-4 rounded-lg border bg-secondary/30">
-                          <Target className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
-                          <p className="text-sm">{useCase}</p>
+                        <div key={idx} className="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg border bg-secondary/30">
+                          <Target className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
+                          <p className="text-xs sm:text-sm">{useCase}</p>
                         </div>
                       ))}
                     </div>

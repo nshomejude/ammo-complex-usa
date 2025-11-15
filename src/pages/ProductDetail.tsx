@@ -469,16 +469,16 @@ const ProductDetail = () => {
               <TabsTrigger value="uses" className="text-xs sm:text-sm">Use Cases</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="overview" className="mt-6">
+            <TabsContent value="overview" className="mt-4 sm:mt-6">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Package className="h-5 w-5 text-tactical" />
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                    <Package className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                     Product Overview
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="prose prose-slate max-w-none">
-                  <div className="text-base leading-relaxed space-y-4">
+                <CardContent className="prose prose-slate max-w-none p-4 sm:p-6">
+                  <div className="text-sm sm:text-base leading-relaxed space-y-3 sm:space-y-4">
                     {product.longDescription ? (
                       <div className="space-y-6">
                         {product.longDescription.split('\n\n').map((paragraph, idx) => {
@@ -486,10 +486,10 @@ const ProductDetail = () => {
                           if (paragraph.startsWith('## ')) {
                             const headerText = paragraph.replace('## ', '');
                             return (
-                              <div key={idx} className="mt-8 mb-4">
-                                <div className="flex items-center gap-3 mb-4">
-                                  <div className="h-1 w-12 bg-tactical rounded"></div>
-                                  <h3 className="text-2xl font-bold text-foreground">{headerText}</h3>
+                              <div key={idx} className="mt-6 sm:mt-8 mb-3 sm:mb-4">
+                                <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                                  <div className="h-1 w-8 sm:w-12 bg-tactical rounded"></div>
+                                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">{headerText}</h3>
                                 </div>
                               </div>
                             );
@@ -499,9 +499,9 @@ const ProductDetail = () => {
                           if (paragraph.startsWith('• ') || paragraph.startsWith('- ')) {
                             const items = paragraph.split('\n').filter(line => line.trim());
                             return (
-                              <ul key={idx} className="space-y-2 ml-6">
+                              <ul key={idx} className="space-y-2 ml-4 sm:ml-6">
                                 {items.map((item, itemIdx) => (
-                                  <li key={itemIdx} className="text-base leading-relaxed text-foreground list-disc">
+                                  <li key={itemIdx} className="text-sm sm:text-base leading-relaxed text-foreground list-disc">
                                     {item.replace(/^[•-]\s*/, '')}
                                   </li>
                                 ))}
@@ -513,9 +513,9 @@ const ProductDetail = () => {
                           if (/^\d+\.\s/.test(paragraph)) {
                             const items = paragraph.split('\n').filter(line => line.trim());
                             return (
-                              <ol key={idx} className="space-y-2 ml-6 list-decimal">
+                              <ol key={idx} className="space-y-2 ml-4 sm:ml-6 list-decimal">
                                 {items.map((item, itemIdx) => (
-                                  <li key={itemIdx} className="text-base leading-relaxed text-foreground">
+                                  <li key={itemIdx} className="text-sm sm:text-base leading-relaxed text-foreground">
                                     {item.replace(/^\d+\.\s*/, '')}
                                   </li>
                                 ))}
@@ -531,7 +531,7 @@ const ProductDetail = () => {
                           return (
                             <p 
                               key={idx} 
-                              className="text-base leading-relaxed text-foreground"
+                              className="text-sm sm:text-base leading-relaxed text-foreground"
                               dangerouslySetInnerHTML={{ __html: formattedParagraph }}
                             />
                           );
@@ -545,22 +545,22 @@ const ProductDetail = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="features" className="mt-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <TabsContent value="features" className="mt-4 sm:mt-6">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 {product.features && product.features.length > 0 && (
                   <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-tactical" />
+                    <CardHeader className="p-4 sm:p-6">
+                      <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                        <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                         Key Features
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-3">
+                    <CardContent className="p-4 sm:p-6">
+                      <ul className="space-y-2 sm:space-y-3">
                         {product.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <CheckCircle className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
-                            <span className="text-sm">{feature}</span>
+                            <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
+                            <span className="text-xs sm:text-sm">{feature}</span>
                           </li>
                         ))}
                       </ul>
@@ -570,18 +570,18 @@ const ProductDetail = () => {
 
                 {product.benefits && product.benefits.length > 0 && (
                   <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Award className="h-5 w-5 text-tactical" />
+                    <CardHeader className="p-4 sm:p-6">
+                      <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                        <Award className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                         Benefits
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-3">
+                    <CardContent className="p-4 sm:p-6">
+                      <ul className="space-y-2 sm:space-y-3">
                         {product.benefits.map((benefit, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <Award className="h-5 w-5 text-tactical mt-0.5 flex-shrink-0" />
-                            <span className="text-sm">{benefit}</span>
+                            <Award className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
+                            <span className="text-xs sm:text-sm">{benefit}</span>
                           </li>
                         ))}
                       </ul>
@@ -593,45 +593,45 @@ const ProductDetail = () => {
               {(!product.features || product.features.length === 0) && 
                (!product.benefits || product.benefits.length === 0) && (
                 <Card>
-                  <CardContent className="py-8 text-center text-muted-foreground">
+                  <CardContent className="py-6 sm:py-8 text-center text-muted-foreground text-xs sm:text-sm p-4 sm:p-6">
                     Detailed features and benefits information coming soon.
                   </CardContent>
                 </Card>
               )}
             </TabsContent>
 
-            <TabsContent value="technical" className="mt-6">
+            <TabsContent value="technical" className="mt-4 sm:mt-6">
               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Zap className="h-5 w-5 text-tactical" />
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                    <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                     Technical Specifications & Ballistic Details
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="prose prose-slate max-w-none">
+                <CardContent className="prose prose-slate max-w-none p-4 sm:p-6">
                   {product.technicalDetails ? (
-                    <div className="text-sm leading-relaxed space-y-4">
+                    <div className="text-xs sm:text-sm leading-relaxed space-y-3 sm:space-y-4">
                       {product.technicalDetails.split('\n\n').map((paragraph, idx) => (
                         <p key={idx}>{paragraph}</p>
                       ))}
                     </div>
                   ) : (
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                       <div>
-                        <p className="text-sm text-muted-foreground">Caliber</p>
-                        <p className="font-semibold">{product.caliber}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Caliber</p>
+                        <p className="font-semibold text-xs sm:text-sm">{product.caliber}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Rounds per Box</p>
-                        <p className="font-semibold">{product.rounds}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Rounds per Box</p>
+                        <p className="font-semibold text-xs sm:text-sm">{product.rounds}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Grain Weight</p>
-                        <p className="font-semibold">{product.grainWeight || 'Varies'}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Grain Weight</p>
+                        <p className="font-semibold text-xs sm:text-sm">{product.grainWeight || 'Varies'}</p>
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">Manufacturer</p>
-                        <p className="font-semibold">{product.manufacturer || 'Various'}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Manufacturer</p>
+                        <p className="font-semibold text-xs sm:text-sm">{product.manufacturer || 'Various'}</p>
                       </div>
                     </div>
                   )}
