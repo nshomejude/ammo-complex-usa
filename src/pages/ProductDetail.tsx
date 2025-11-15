@@ -677,8 +677,8 @@ const ProductDetail = () => {
         </section>
 
         {/* Product Specifications */}
-        <div className="grid gap-6 lg:grid-cols-3 mb-12">
-          <Card className="lg:col-span-2">
+        <section className="mb-8">
+          <Card>
             <CardHeader>
               <CardTitle>Product Specifications</CardTitle>
             </CardHeader>
@@ -783,11 +783,10 @@ const ProductDetail = () => {
                   )}
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
           {/* FAQ Section */}
-          <div className="col-span-full mt-6">
+          <Separator className="my-6" />
+          <div className="mt-6">
             <h3 className="text-2xl font-bold mb-4">Frequently Asked Questions</h3>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
@@ -810,73 +809,83 @@ const ProductDetail = () => {
               </AccordionItem>
             </Accordion>
           </div>
+            </CardContent>
+          </Card>
+        </section>
 
-          <div className="space-y-6">
-            <Card className="border-tactical/30 bg-tactical/5">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Package className="h-5 w-5 text-tactical" />
-                  Shipping Info
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Weight:</span>
-                  <span className="font-semibold">
+        {/* Shipping Info */}
+        <section className="mb-8">
+          <Card className="border-tactical/30 bg-tactical/5">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Package className="h-5 w-5 text-tactical" />
+                Shipping Info
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <div>
+                  <p className="text-muted-foreground mb-1">Weight:</p>
+                  <p className="font-semibold">
                     {product.rounds >= 50 ? '2-3 lbs' : 
                      product.rounds >= 20 ? '1-2 lbs' : '0.5-1 lb'}
-                  </span>
+                  </p>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">HazMat Required:</span>
-                  <span className="font-semibold">Yes</span>
+                <div>
+                  <p className="text-muted-foreground mb-1">HazMat Required:</p>
+                  <p className="font-semibold">Yes</p>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Signature Required:</span>
-                  <span className="font-semibold">Adult (21+)</span>
+                <div>
+                  <p className="text-muted-foreground mb-1">Signature Required:</p>
+                  <p className="font-semibold">Adult (21+)</p>
                 </div>
-                <Separator />
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Standard Shipping:</span>
-                  <span className="font-semibold">3-7 days</span>
+                <div>
+                  <p className="text-muted-foreground mb-1">Standard Shipping:</p>
+                  <p className="font-semibold">3-7 days</p>
                 </div>
-                <Link to="/shipping">
-                  <Button variant="outline" size="sm" className="w-full mt-2">
-                    View Shipping Policy
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+              </div>
+              <Link to="/shipping">
+                <Button variant="outline" size="sm" className="w-full sm:w-auto mt-4">
+                  View Shipping Policy
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </section>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-tactical" />
-                  Guarantee
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm text-muted-foreground">
+        {/* Guarantee */}
+        <section className="mb-8">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Shield className="h-5 w-5 text-tactical" />
+                Guarantee
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-tactical mt-0.5 shrink-0" />
-                  <span>Factory fresh ammunition</span>
+                  <span className="text-muted-foreground">Factory fresh ammunition</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-tactical mt-0.5 shrink-0" />
-                  <span>Quality guaranteed by manufacturer</span>
+                  <span className="text-muted-foreground">Quality guaranteed by manufacturer</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-tactical mt-0.5 shrink-0" />
-                  <span>Secure HazMat packaging</span>
+                  <span className="text-muted-foreground">Secure HazMat packaging</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-tactical mt-0.5 shrink-0" />
-                  <span>Full compliance verification</span>
+                  <span className="text-muted-foreground">Full compliance verification</span>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
+        
         {/* Why Buy From Us Section */}
         <WhyBuyFromUs />
 
