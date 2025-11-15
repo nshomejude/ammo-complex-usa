@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MessageCircle } from "lucide-react";
+import { Phone, Mail, MessageCircle, Send } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface ContactWidgetProps {
@@ -49,6 +49,20 @@ export const ContactWidget = ({ variant = "default", className = "" }: ContactWi
             <div>
               <p className="font-medium">info@armscomplex.com</p>
               {!isCompact && !isSidebar && <p className="text-xs text-muted-foreground">Response within 24 hours</p>}
+            </div>
+          </a>
+          <a 
+            href="https://t.me/armscomplex" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center gap-3 ${isCompact || isSidebar ? "text-xs" : "text-sm"} hover:text-tactical transition-colors group`}
+          >
+            <div className={`flex items-center justify-center ${isCompact || isSidebar ? "h-8 w-8" : "h-10 w-10"} rounded-lg bg-tactical/10 group-hover:bg-tactical/20 transition-colors`}>
+              <Send className={`${isCompact || isSidebar ? "h-3.5 w-3.5" : "h-4 w-4"} text-tactical`} />
+            </div>
+            <div>
+              <p className="font-medium">@armscomplex</p>
+              {!isCompact && !isSidebar && <p className="text-xs text-muted-foreground">Instant messaging</p>}
             </div>
           </a>
         </div>
