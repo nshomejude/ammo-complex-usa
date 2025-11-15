@@ -414,7 +414,7 @@ const FirearmCategoryPage = () => {
                 <p className="text-sm text-muted-foreground mb-6">
                   Showing {filteredFirearms.length} {filteredFirearms.length === 1 ? 'firearm' : 'firearms'}
                 </p>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-2 gap-6 sm:gap-6 md:grid-cols-3 lg:grid-cols-3">
                   {filteredFirearms.map((firearm) => (
                     <FirearmCard 
                       key={firearm.id} 

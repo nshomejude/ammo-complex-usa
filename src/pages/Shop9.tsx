@@ -145,7 +145,7 @@ export default function Shop9() {
               </div>
 
               {/* Products Grid - 3 columns compact */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {paginatedProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />

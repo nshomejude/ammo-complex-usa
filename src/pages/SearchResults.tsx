@@ -328,7 +328,7 @@ const SearchResults = () => {
                     <h2 className="text-2xl font-bold mb-6">
                       Firearms ({filteredResults.firearms.length})
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                       {filteredResults.firearms.map(firearm => (
                         <FirearmCard 
                           key={firearm.id} 
@@ -349,7 +349,7 @@ const SearchResults = () => {
                     <h2 className="text-2xl font-bold mb-6">
                       Ammunition ({filteredResults.products.length})
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                       {filteredResults.products.map(product => (
                         <ProductCard 
                           key={product.id} 
