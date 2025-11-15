@@ -71,20 +71,20 @@ const FirearmDetail = () => {
 
   // Extract sections for reuse in desktop/mobile layouts
   const fflTransferSection = (
-    <Alert className="border-red-500 bg-red-500/10">
-      <AlertCircle className="h-4 w-4 text-red-500" />
-      <AlertTitle className="text-red-500">FFL Transfer Required</AlertTitle>
-      <AlertDescription className="text-red-500/90">
+    <Alert className="border-red-500 bg-red-500/10 p-3 sm:p-4">
+      <AlertCircle className="h-3 w-3 sm:h-4 sm:w-4 text-red-500" />
+      <AlertTitle className="text-sm sm:text-base text-red-500">FFL Transfer Required</AlertTitle>
+      <AlertDescription className="text-xs sm:text-sm text-red-500/90">
         This firearm must be transferred to a licensed FFL dealer. Background check and age verification (21+ for handguns, 18+ for long guns) required by federal law.
       </AlertDescription>
     </Alert>
   );
 
   const whyChooseSection = firearm.whyChoose && (
-    <Alert className="border-destructive bg-destructive/10">
-      <Award className="h-5 w-5 text-destructive" />
-      <AlertTitle className="text-lg font-bold text-destructive">Why Choose This Firearm</AlertTitle>
-      <AlertDescription className="text-sm mt-2 leading-relaxed">
+    <Alert className="border-destructive bg-destructive/10 p-3 sm:p-4">
+      <Award className="h-4 w-4 sm:h-5 sm:w-5 text-destructive" />
+      <AlertTitle className="text-base sm:text-lg font-bold text-destructive">Why Choose This Firearm</AlertTitle>
+      <AlertDescription className="text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed">
         {firearm.whyChoose}
       </AlertDescription>
     </Alert>
@@ -92,29 +92,29 @@ const FirearmDetail = () => {
 
   const quickSpecsSection = (
     <Card>
-      <CardHeader>
-        <CardTitle>Quick Specifications</CardTitle>
+      <CardHeader className="p-3 sm:p-4">
+        <CardTitle className="text-base sm:text-lg">Quick Specifications</CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-2 gap-4">
+      <CardContent className="grid grid-cols-2 gap-3 p-3 sm:p-4 pt-0">
         <div>
-          <p className="text-sm text-muted-foreground">Action Type</p>
-          <p className="font-semibold">{firearm.actionType}</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">Action Type</p>
+          <p className="font-semibold text-sm">{firearm.actionType}</p>
         </div>
         <div>
-          <p className="text-sm text-muted-foreground">Capacity</p>
-          <p className="font-semibold">{firearm.capacity}</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">Capacity</p>
+          <p className="font-semibold text-sm">{firearm.capacity}</p>
         </div>
         <div>
-          <p className="text-sm text-muted-foreground">Barrel Length</p>
-          <p className="font-semibold">{firearm.barrelLength}</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">Barrel Length</p>
+          <p className="font-semibold text-sm">{firearm.barrelLength}</p>
         </div>
         <div>
-          <p className="text-sm text-muted-foreground">Weight</p>
-          <p className="font-semibold">{firearm.weight}</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">Weight</p>
+          <p className="font-semibold text-sm">{firearm.weight}</p>
         </div>
         <div className="col-span-2">
-          <p className="text-sm text-muted-foreground">Finish</p>
-          <p className="font-semibold">{firearm.finish}</p>
+          <p className="text-xs sm:text-sm text-muted-foreground">Finish</p>
+          <p className="font-semibold text-sm">{firearm.finish}</p>
         </div>
       </CardContent>
     </Card>
@@ -205,7 +205,7 @@ const FirearmDetail = () => {
         <div className="grid grid-cols-1 gap-2 lg:gap-3 lg:grid-cols-2 mb-12">
           {/* Left Column - Image and Desktop-only sections */}
           <div>
-            <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6 max-w-md mx-auto lg:mx-0">
+            <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-3 sm:p-4 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
                 <Shield className="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-tactical mb-3" />
                 <Badge variant="secondary" className="px-3 py-1 text-sm">{firearm.actionType}</Badge>
@@ -292,17 +292,17 @@ const FirearmDetail = () => {
 
             <Button 
               size="lg" 
-              className="w-full mb-6"
+              className="w-full mb-4 sm:mb-6 text-base sm:text-lg py-4 sm:py-5"
               disabled={!firearm.inStock}
               onClick={handleAddToCart}
             >
-              <ShoppingCart className="mr-2 h-5 w-5" />
+              <ShoppingCart className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Add to Cart
             </Button>
 
             {/* Shipping Calculator */}
-            <Card className="mb-6 border-tactical/30 bg-tactical/5">
-              <CardContent className="p-4">
+            <Card className="mb-4 sm:mb-6 border-tactical/30 bg-tactical/5">
+              <CardContent className="p-3 sm:p-4">
                 <ShippingCalculator quantity={1} />
               </CardContent>
             </Card>
