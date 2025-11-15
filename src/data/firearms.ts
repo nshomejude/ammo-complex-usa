@@ -8777,12 +8777,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1349,
     inStock: true,
-    description: "Tactical Operations model with night sights and rail.",
+    description: "Tactical Operations 1911 from SIG - Swiss/German precision applied to American classic. Features night sights, accessory rail, and magwell for professional tactical applications.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "40.6 oz",
-    finish: "Nitron"
+    finish: "Nitron",
+    shortDescription: "The SIG 1911 TacOps combines Swiss precision engineering with tactical enhancements for professional applications. Night sights, accessory rail, and match-grade components create the ultimate tactical 1911.",
+    longDescription: "The SIG Sauer 1911 TacOps represents Swiss-German precision engineering applied to the American 1911 platform, creating a tactical pistol that exceeds the standards of traditional American manufacturers. When SIG Sauer - renowned for their service pistols like the P226 and P320 - entered the 1911 market, they brought their exacting manufacturing standards and tactical focus to Browning's classic design. The TacOps model specifically targets professional tactical users, incorporating features demanded by special operations units, SWAT teams, and serious defensive shooters. The foundation is a precision-machined stainless steel frame and slide held to tolerances that exceed industry standards - typical of SIG's Swiss heritage. The proprietary Nitron finish provides exceptional corrosion resistance and reduced wear compared to traditional bluing or parkerizing. This finish is critical for duty weapons exposed to sweat, weather, and harsh operational environments. The black Nitron coating also reduces signature in low-light tactical situations. The match-grade barrel features SIG's precision rifling and chamber dimensions for exceptional accuracy. Many TacOps owners report consistent 1.5-2 inch groups at 25 yards - accuracy rivaling custom guns. The barrel is hand-fitted to the slide for tight lockup. Four-port slide lightening cuts reduce reciprocating mass for faster cycling. The tactical enhancements distinguish the TacOps from traditional 1911s. SIGLITE tritium night sights provide three-dot illumination in darkness or low light - essential for defensive use. The integral M1913 Picatinny accessory rail allows mounting tactical lights or lasers for positive target identification. The extended beavertail grip safety prevents hammer bite while ensuring positive activation. The checkered front strap provides secure purchase without gloves or tape. An integrated magwell speeds reloads under stress - critical in tactical situations. Custom G10 grips provide aggressive texture with slim profile. The trigger is outstanding - crisp break between 4-5 pounds with minimal take-up and short reset. SIG's single-action trigger work rivals any manufacturer. Ambidextrous thumb safety accommodates all shooters. The TacOps ships with four 8-round magazines - an excellent value compared to competitors. Adopted by numerous tactical units and competitive shooters who appreciate the combination of Swiss precision, tactical enhancements, and 1911 tradition, the TacOps delivers professional-grade performance. For serious defensive shooters, tactical professionals, or competitive shooters wanting the best tactical 1911 available, the SIG TacOps combines European precision with American firepower.",
+    features: [
+      "Swiss-German precision manufacturing to exacting tolerances",
+      "Proprietary Nitron finish for superior corrosion resistance",
+      "SIGLITE tritium night sights for low-light capability",
+      "Integral M1913 Picatinny rail for lights and lasers",
+      "Match-grade barrel with precision rifling and chamber",
+      "Integrated magwell for rapid reload capability",
+      "Extended beavertail grip safety prevents hammer bite",
+      "Checkered front strap for secure tactical grip",
+      "Custom G10 grips with aggressive texture",
+      "Ambidextrous thumb safety for all shooters"
+    ],
+    benefits: [
+      "SIG Sauer precision engineering exceeds industry standards",
+      "Tactical enhancements eliminate expensive custom modifications",
+      "Night sights and rail come factory-installed",
+      "Match-grade accuracy suitable for precision tactical work",
+      "Adopted by professional tactical units worldwide",
+      "Four magazines included provide exceptional value"
+    ],
+    useCases: [
+      "Law enforcement tactical operations and SWAT deployment",
+      "Special operations and counter-terrorism applications",
+      "Professional tactical training and instruction",
+      "USPSA Single Stack competition with tactical features",
+      "Home defense with tactical light for target identification",
+      "Duty backup weapon for agencies requiring tactical capability"
+    ],
+    technicalDetails: "The SIG 1911 TacOps features precision-machined stainless steel frame and slide with Nitron finish. Match-grade barrel with SIG precision rifling, hand-fitted to slide. Single-action trigger with 4-5 pound pull, crisp break and short reset. SIGLITE tritium three-dot night sights. Integral M1913 Picatinny accessory rail. Integrated magwell for speed reloads. Extended beavertail grip safety. 25 LPI front strap checkering. Custom G10 grips. Ambidextrous thumb safety. Four-port slide lightening cuts. Overall length 8.65 inches. Weight 40.6 oz. Ships with four 8-round magazines. Made in USA under SIG Swiss quality standards.",
+    whyChoose: "Choose the SIG 1911 TacOps when you want Swiss precision applied to tactical 1911 design. SIG's manufacturing standards exceed traditional American manufacturers, delivering tolerances and finish quality that rival custom shops. The tactical enhancements - night sights, accessory rail, magwell - come factory-installed and integrated, eliminating $500+ in custom modifications. Match-grade accuracy enables precision tactical work. Professional tactical units worldwide choose SIG for reliability in life-or-death situations. Four included magazines provide value. For tactical professionals, serious defensive shooters, or competitive shooters who demand the best, the TacOps combines European precision with American 1911 tradition in the ultimate tactical package.",
+    seoKeywords: ["SIG 1911 TacOps", "tactical 1911", "night sight 1911", "rail 1911", "SIG Sauer 1911", "precision 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "1.5-2 inch groups at 25 yards"
+    }
   },
   {
     id: "ruger-sr1911",
@@ -8792,12 +8831,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 979,
     inStock: true,
-    description: "Modern take on classic 1911 with stainless construction.",
+    description: "Ruger's precision-crafted 1911 with stainless construction throughout. Modern manufacturing meets classic design with exceptional value and reliability.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "39 oz",
-    finish: "Stainless"
+    finish: "Stainless",
+    shortDescription: "The Ruger SR1911 represents modern American manufacturing applied to Browning's classic design. CNC-machined stainless construction delivers exceptional accuracy and reliability at a price that challenges the industry.",
+    longDescription: "The Ruger SR1911 demonstrates what happens when a modern American manufacturer applies 21st-century CNC machining technology and quality control to John Browning's timeless 1911 design. Ruger entered the 1911 market in 2011 - exactly 100 years after the pistol's military adoption - with a goal of producing a high-quality 1911 at a price accessible to more shooters. The result exceeded expectations, creating a pistol that competes with guns costing significantly more while maintaining Ruger's legendary reliability and customer service. The SR1911 begins with investment-cast stainless steel components that are then CNC-machined to tight tolerances. While some 1911 purists prefer forged frames, Ruger's investment casting process creates components with exceptional dimensional consistency and surface finish. The subsequent CNC machining ensures every SR1911 meets the same specifications - critical for reliability and accuracy. This modern manufacturing approach allows Ruger to deliver consistent quality across production while maintaining competitive pricing. The all-stainless construction provides multiple benefits: corrosion resistance superior to blued carbon steel, attractive bright finish that many shooters prefer aesthetically, and enhanced longevity. The stainless slide rides on stainless frame rails, creating a pistol that will maintain its appearance and function for generations. Ruger includes features that competitors charge extra for - oversize ejection port for reliable extraction, extended magazine release for fast reloads, and skeletonized hammer and trigger that reduce lock time. The Series 70-style firing system (without firing pin safety) provides enhanced trigger characteristics preferred by competitive shooters and enthusiasts. The trigger breaks cleanly between 4.5-5 pounds with minimal take-up and positive reset. The match-grade barrel bushing system ensures accuracy, with many SR1911 owners reporting consistent 2-inch groups at 25 yards. Checkered cocobolo grips provide both classic aesthetics and comfortable ergonomics. The low-profile Novak three-dot sights are dovetail-mounted for easy replacement. Ruger's customer service is legendary - the company stands behind their products with responsive support. The SR1911 has earned acceptance among competitors, with many IDPA and USPSA shooters using SR1911s successfully in Single Stack divisions. For shooters wanting a quality 1911 with modern manufacturing precision, stainless durability, and outstanding value, the Ruger SR1911 delivers exceptional performance at a price that makes the 1911 platform accessible.",
+    features: [
+      "CNC-machined stainless steel frame and slide for precision",
+      "Investment-cast components with dimensional consistency",
+      "All-stainless construction for superior corrosion resistance",
+      "Series 70-style firing system for enhanced trigger",
+      "Match-grade barrel bushing system for accuracy",
+      "Oversize ejection port for reliable extraction",
+      "Extended magazine release for fast reloads",
+      "Skeletonized hammer and trigger reduce lock time",
+      "Low-profile Novak-style three-dot sights",
+      "Premium cocobolo grips with double-diamond checkering"
+    ],
+    benefits: [
+      "Modern CNC manufacturing ensures consistent quality",
+      "Stainless construction provides lifetime corrosion resistance",
+      "Competitive pricing makes quality 1911 accessible",
+      "Ruger's legendary customer service and warranty",
+      "Series 70 system preferred by competitive shooters",
+      "Excellent accuracy suitable for competition use"
+    ],
+    useCases: [
+      "USPSA Single Stack competition on budget",
+      "IDPA Enhanced Service Pistol division",
+      "Home defense with proven .45 ACP stopping power",
+      "Range shooting with low-maintenance stainless finish",
+      "First 1911 purchase with quality at reasonable price",
+      "Collection addition representing modern American manufacturing"
+    ],
+    technicalDetails: "The Ruger SR1911 features investment-cast stainless steel frame and slide, CNC-machined to tight tolerances. Series 70-style firing mechanism without firing pin safety. Single-action trigger with 4.5-5 pound pull weight. Match-grade barrel bushing system. Oversized ejection port. Extended magazine release and thumb safety. Skeletonized lightweight hammer and trigger. Low-profile Novak-style three-dot sights, dovetail-mounted. Checkered cocobolo grips. Checkered flat mainspring housing. Titanium firing pin for reduced lock time. Overall length 8.67 inches. Ships with two 8-round stainless magazines. Made in USA.",
+    whyChoose: "Choose the Ruger SR1911 when you want proven 1911 reliability with modern manufacturing precision at exceptional value. Ruger's CNC machining ensures consistent quality - every SR1911 meets the same tight tolerances that enable the accuracy and reliability this pistol is known for. The all-stainless construction eliminates corrosion concerns while providing attractive appearance that improves with age. At under $1000, the SR1911 delivers features and accuracy that challenge guns costing $1500+. Ruger's legendary customer service means any issues are handled quickly and professionally. For competitive shooters on budget, first-time 1911 buyers, or anyone wanting maximum value in a 1911, the SR1911 delivers Ruger quality at Ruger pricing.",
+    seoKeywords: ["Ruger SR1911", "stainless 1911", "value 1911", "CNC machined 1911", "affordable 1911", "Ruger 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "remington-r1",
@@ -8807,12 +8885,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 799,
     inStock: true,
-    description: "Traditional GI-style 1911 at affordable price.",
+    description: "Traditional GI-style 1911 at entry-level pricing - authentic military aesthetics with modern reliability. The most affordable path to genuine 1911 ownership.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "38.5 oz",
-    finish: "Satin Black Oxide"
+    finish: "Satin Black Oxide",
+    shortDescription: "The Remington 1911 R1 delivers authentic GI-style 1911 aesthetics and operation at the most accessible price point in the market. Traditional design meets modern manufacturing for reliable performance.",
+    longDescription: "The Remington 1911 R1 represents the most affordable entry point into genuine 1911 ownership from a major American manufacturer. When Remington re-entered the 1911 market in 2010, their goal was straightforward: produce an authentic GI-style 1911 with modern manufacturing quality at a price that makes the platform accessible to shooters who might otherwise be priced out. The R1 achieves this mission brilliantly, delivering traditional 1911 aesthetics and reliable operation at under $800. The R1 follows the traditional GI specification closely - simple, functional, and proven. The carbon steel frame and slide feature a satin black oxide finish that echoes the parkerized finish of military 1911s while requiring less maintenance. The traditional GI-style grip safety, short trigger, and double-diamond walnut grips provide authentic period-correct aesthetics. Unlike heavily modernized 1911s with extended controls and tactical features, the R1 maintains the clean lines and classic appearance of Browning's original design. This traditional approach appeals to purists, collectors seeking affordable authentic 1911s, and shooters who appreciate the simplicity of the original configuration. Despite the affordable pricing, Remington doesn't compromise on critical components. The barrel features button rifling and a polished feed ramp for reliable feeding. The extractor is properly tensioned. The firing pin stop is correctly sized. These details ensure the R1 functions reliably - critical for a defensive pistol. The trigger breaks between 4-6 pounds, typical of GI-specification triggers. While not match-grade, it's entirely adequate for defensive accuracy and recreational shooting. The sights are basic fixed three-dot configuration - functional if not fancy. The R1 uses Series 80-style firing pin safety for enhanced drop safety. For many shooters, the R1 serves as an excellent introduction to 1911 ownership. It provides the authentic single-action trigger, .45 ACP power, and traditional 1911 manual of arms at a price that allows new shooters to experience the platform. The R1 also serves well as a project gun - many gunsmiths and hobbyists use R1s as starting points for custom builds, knowing the foundational quality is sound. While the R1 lacks the match-grade components, enhanced features, and premium finishes of more expensive 1911s, it delivers the essential 1911 experience: reliable single-action operation, proven .45 ACP stopping power, and classic American design. For budget-conscious shooters, first-time 1911 buyers, or anyone wanting to own a piece of firearms history without expensive investment, the Remington R1 delivers authentic 1911 ownership at America's best value.",
+    features: [
+      "Traditional GI-style design with period-correct aesthetics",
+      "Carbon steel frame and slide with satin black oxide finish",
+      "Button-rifled barrel with polished feed ramp",
+      "Series 80-style firing pin safety for drop protection",
+      "Traditional short trigger and GI grip safety",
+      "Double-diamond walnut grips for classic appearance",
+      "Fixed three-dot combat sights",
+      "Standard recoil system with bushing",
+      "Traditional thumb safety operation",
+      "7+1 capacity with included magazine"
+    ],
+    benefits: [
+      "Most affordable genuine 1911 from major manufacturer",
+      "Authentic GI-style aesthetics for traditionalists",
+      "Reliable operation with proven design",
+      "Excellent starting point for custom modifications",
+      "Simple, straightforward operation perfect for beginners",
+      "Remington brand heritage and support"
+    ],
+    useCases: [
+      "Introduction to 1911 platform at affordable price",
+      "Budget home defense with .45 ACP stopping power",
+      "Range shooting and recreational use",
+      "Starting point for custom 1911 build projects",
+      "Collection addition representing affordable 1911",
+      "Backup or truck gun where finish wear is not concern"
+    ],
+    technicalDetails: "The Remington 1911 R1 features carbon steel frame and slide with satin black oxide finish. Button-rifled 5-inch barrel. Series 80-style firing pin safety mechanism. Single-action trigger with 4-6 pound pull weight. Traditional GI-style short trigger and grip safety. Fixed three-dot combat sights. Double-diamond checkered walnut grips. Standard-length guide rod and recoil spring. Traditional barrel bushing. Overall length 8.5 inches. Weight 38.5 oz unloaded. Ships with one 7-round magazine. Made in USA.",
+    whyChoose: "Choose the Remington 1911 R1 when you want to own a genuine 1911 without breaking the bank. At under $800, the R1 provides the authentic 1911 experience - single-action trigger, .45 ACP power, all-steel construction - at a price that makes the platform accessible. While it lacks the match-grade components and enhanced features of premium 1911s, it delivers reliable operation and traditional aesthetics. Perfect for first-time 1911 buyers learning the platform, budget-conscious shooters wanting proven defensive capability, or hobbyists seeking an affordable foundation for custom builds. The R1 proves you don't need to spend $1500+ to own a functional, reliable 1911 from a major American manufacturer.",
+    seoKeywords: ["Remington R1 1911", "affordable 1911", "budget 1911", "GI style 1911", "entry level 1911", "cheap 1911"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "3-4 inch groups at 25 yards"
+    }
   },
   {
     id: "colt-1911-commander",
@@ -9011,12 +9128,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1309,
     inStock: true,
-    description: "Black Nitron with custom G10 grips.",
+    description: "Aggressive all-black tactical 1911 with distinctive Nightmare finish and custom G10 grips. SIG precision with menacing aesthetics for serious defensive applications.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "41.6 oz",
-    finish: "Black Nitron"
+    finish: "Black Nitron",
+    shortDescription: "The SIG 1911 Nightmare combines SIG's Swiss precision with aggressive tactical styling. All-black Nitron finish and custom Hogue G10 grips create a distinctive appearance backed by match-grade performance.",
+    longDescription: "The SIG Sauer 1911 Nightmare represents SIG's most aggressive and distinctive tactical 1911 styling, combining menacing all-black aesthetics with the Swiss precision manufacturing that defines the SIG brand. Part of SIG's popular Nightmare series that includes modern pistol platforms, the 1911 Nightmare applies the concept to Browning's classic design - creating a pistol that looks as serious as it performs. The defining visual characteristic is the all-black treatment - SIG's proprietary Nitron finish on the stainless steel slide and frame creates a uniform, non-reflective black appearance that eliminates tactical signature in low-light operations. Unlike simple black oxide or paint, Nitron is a physical coating that provides exceptional corrosion resistance, wear resistance, and lubricity. The finish maintains its appearance through thousands of rounds and harsh conditions. Black controls, sights, and hardware complete the monochromatic tactical aesthetic. The custom Hogue G10 grips are distinctive Nightmare-series components featuring aggressive texturing and black-with-silver accents. G10 composite material is impervious to moisture, chemicals, and temperature extremes - ideal for duty weapons. The slim profile provides excellent purchase without adding bulk. The grip texture works equally well with bare hands or gloves. Beyond aesthetics, the Nightmare delivers SIG's match-grade performance. The precision-machined stainless steel frame and slide are held to SIG's exacting Swiss-influenced tolerances. The match-grade barrel features precision rifling and chamber dimensions for exceptional accuracy. Typical Nightmare owners report 2-inch or better groups at 25 yards. The trigger breaks cleanly between 4-5 pounds with minimal take-up and positive reset - quality that rivals custom trigger work. Low-profile SIGLITE night sights provide tritium illumination in darkness without adding snag points - critical for concealed carry or tactical deployment. Extended beavertail grip safety prevents hammer bite. Checkered front strap ensures secure purchase. The Nightmare features front and rear slide serrations for positive manipulation in any conditions. The Nightmare appeals to tactical users wanting aggressive styling, concealed carriers appreciating the non-reflective finish, and shooters who simply prefer the distinctive all-black appearance. Adopted by plainclothes officers, federal agents, and tactical units who appreciate both the performance and the professional tactical aesthetic. For those wanting SIG Swiss precision with aggressive tactical styling and the proven 1911 platform, the Nightmare delivers both substance and style.",
+    features: [
+      "All-black Nitron finish for uniform tactical appearance",
+      "Custom Hogue G10 grips with aggressive tactical texturing",
+      "SIGLITE low-profile tritium night sights",
+      "Match-grade barrel with precision SIG rifling",
+      "Swiss-precision machined stainless steel construction",
+      "Extended beavertail grip safety prevents hammer bite",
+      "Checkered front strap for secure tactical grip",
+      "Front and rear slide serrations for positive manipulation",
+      "Non-reflective finish eliminates tactical signature",
+      "Professional-grade trigger with 4-5 lb break"
+    ],
+    benefits: [
+      "Distinctive Nightmare styling sets it apart from standard 1911s",
+      "SIG Swiss precision manufacturing ensures reliability",
+      "Nitron finish provides superior corrosion and wear resistance",
+      "G10 grips impervious to environmental conditions",
+      "Match-grade accuracy suitable for precision work",
+      "Low-profile night sights ideal for concealed carry"
+    ],
+    useCases: [
+      "Plainclothes law enforcement duty weapon",
+      "Federal agent concealed carry with tactical capability",
+      "SWAT and tactical unit backup weapon",
+      "Competitive shooting with aggressive tactical aesthetics",
+      "Home defense with night sights and reliability",
+      "Concealed carry for those preferring 1911 platform"
+    ],
+    technicalDetails: "The SIG 1911 Nightmare features precision-machined stainless steel frame and slide with all-black Nitron finish. Match-grade barrel with SIG precision chamber and rifling. Single-action trigger system with 4-5 pound pull weight. SIGLITE low-profile tritium three-dot night sights. Custom Hogue G10 grips with aggressive texturing. Extended beavertail grip safety. 25 LPI checkered front strap. Front and rear slide serrations. Ambidextrous thumb safety optional. Overall length 8.65 inches. Weight 41.6 oz unloaded. Ships with two 8-round magazines. Made in USA under SIG Swiss quality control standards.",
+    whyChoose: "Choose the SIG 1911 Nightmare when you want Swiss precision engineering with aggressive tactical styling. The all-black Nitron finish and custom G10 grips create a distinctive appearance that stands apart from traditional 1911s while the SIG precision manufacturing ensures reliability and accuracy that rival custom guns. The non-reflective finish and low-profile night sights make it ideal for tactical applications and concealed carry. Whether you're a tactical professional wanting a backup weapon with professional aesthetics, a competitive shooter appreciating the aggressive styling, or simply someone who prefers the Nightmare's distinctive appearance, this pistol delivers SIG quality with unmistakable tactical presence.",
+    seoKeywords: ["SIG 1911 Nightmare", "black 1911", "tactical 1911", "G10 grip 1911", "all black 1911", "SIG tactical pistol"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "ruger-sr1911-target",
@@ -9026,12 +9182,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1019,
     inStock: true,
-    description: "Target sights and adjustable trigger.",
+    description: "Competition-oriented SR1911 with adjustable target sights and enhanced accuracy features. Ruger's precision manufacturing optimized for competitive shooting.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "39 oz",
-    finish: "Stainless"
+    finish: "Stainless",
+    shortDescription: "The Ruger SR1911 Target takes the proven SR1911 platform and optimizes it for competitive shooting with adjustable target sights, enhanced barrel, and precision trigger. Competition accuracy at Ruger value pricing.",
+    longDescription: "The Ruger SR1911 Target represents Ruger's competition-focused evolution of their successful SR1911 platform. Building on the standard SR1911's foundation of precision CNC manufacturing and stainless construction, the Target model adds features specifically demanded by competitive shooters in USPSA Single Stack, IDPA Enhanced Service Pistol, and Bullseye disciplines. At just over $1000, the SR1911 Target delivers competition features that typically require $1500+ investments or expensive custom modifications. The defining upgrade is the target sight system. Fully adjustable Bomar-style rear sight allows precise windage and elevation adjustments for perfect zero at any distance. The sight features positive click adjustments with clear markings for repeatable settings. The fiber optic front sight provides a bright, easily-acquired aiming point that stands out against targets in various lighting conditions. This sight combination enables the precision aiming required for competitive accuracy while the fiber optic front allows rapid acquisition for practical shooting disciplines. The sight upgrade alone would cost $200+ as aftermarket installation. The barrel receives enhanced attention with additional hand-fitting and precision chamber work. Ruger's target-grade barrel features tighter chamber dimensions and enhanced crown work for improved accuracy. The barrel bushing is also hand-fitted for minimal play. These improvements result in measurably better accuracy - many SR1911 Target owners report consistent 1.5-2 inch groups at 25 yards, with some pistols achieving sub-1.5 inch groups with match ammunition. This accuracy level competes with guns costing twice as much. The trigger receives competition-focused tuning with lighter pull weight (approximately 4-4.5 pounds versus 4.5-5 on standard SR1911) and enhanced break characteristics. The trigger work doesn't require expensive custom gunsmithing - it's part of Ruger's standard Target production process. The crisp break and short reset enable rapid precision fire required in competition. Extended controls include oversize thumb safety for positive manipulation and extended magazine release for fast reloads. Front and rear slide serrations provide positive grip for press checks and manipulation. The checkered flat mainspring housing preferred by many competitive shooters comes standard. Two 8-round stainless magazines are included. The SR1911 Target maintains all the benefits of standard SR1911 construction - all-stainless corrosion resistance, CNC precision manufacturing, and Ruger's legendary customer service. The investment-cast stainless components provide dimensional consistency across production. For competitive shooters on budget, the SR1911 Target delivers match-winning accuracy without requiring a second mortgage. Many successful USPSA Single Stack competitors use SR1911 Targets effectively against guns costing $3000+. The combination of Ruger precision, competition features, and value pricing makes the Target model one of the best competition 1911 values available.",
+    features: [
+      "Fully adjustable Bomar-style target rear sight with click adjustments",
+      "Fiber optic front sight for high-visibility target acquisition",
+      "Enhanced hand-fitted target barrel for competition accuracy",
+      "Precision chamber and crown work for consistency",
+      "Competition-tuned trigger: 4-4.5 lb pull with crisp break",
+      "Extended thumb safety for positive manipulation",
+      "Extended magazine release for competition reloads",
+      "Front and rear slide serrations for positive control",
+      "Checkered flat mainspring housing preferred by competitors",
+      "All-stainless construction for durability and corrosion resistance"
+    ],
+    benefits: [
+      "Competition accuracy at fraction of custom gun pricing",
+      "Adjustable sights enable perfect zero at any distance",
+      "Enhanced barrel delivers sub-2-inch groups consistently",
+      "Competition trigger suitable for match use without modifications",
+      "Ruger's CNC precision ensures consistent quality",
+      "Successful in major competitions against expensive customs"
+    ],
+    useCases: [
+      "USPSA Single Stack Major and Minor division competition",
+      "IDPA Enhanced Service Pistol division shooting",
+      "NRA Bullseye precision shooting and competition",
+      "Steel Challenge and action shooting sports",
+      "Competition training and practice with match-grade equipment",
+      "Precision recreational shooting demanding accuracy"
+    ],
+    technicalDetails: "The Ruger SR1911 Target features CNC-machined investment-cast stainless steel frame and slide. Enhanced target-grade barrel with precision chamber, hand-fitted to slide and bushing. Fully adjustable Bomar-style rear sight with windage and elevation click adjustments. Fiber optic front sight. Competition-tuned single-action trigger with 4-4.5 pound pull weight. Extended thumb safety and magazine release. Front and rear slide serrations. Checkered flat mainspring housing. Skeletonized hammer and trigger. Novak-style ejection port. Overall length 8.67 inches. Weight 39 oz unloaded. Ships with two 8-round stainless magazines. Made in USA.",
+    whyChoose: "Choose the Ruger SR1911 Target when you want to compete seriously without spending custom-gun money. At just over $1000, you get adjustable target sights ($200+ value), enhanced barrel work, competition trigger tuning, and extended controls - features that would require $1500-2000+ from other manufacturers or expensive custom work on base models. The Target consistently shoots sub-2-inch groups, enabling competitive success. Many successful USPSA and IDPA competitors use SR1911 Targets to win against customs costing three times as much. Ruger's precision manufacturing and legendary customer service ensure reliability. Whether you're starting in competition or upgrading from a base model, the SR1911 Target delivers match-winning accuracy at Ruger value pricing.",
+    seoKeywords: ["Ruger SR1911 Target", "competition 1911", "adjustable sight 1911", "match 1911", "USPSA 1911", "accurate 1911"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "1.5-2 inch groups at 25 yards"
+    }
   },
   {
     id: "remington-r1-enhanced",
@@ -9041,12 +9236,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 999,
     inStock: true,
-    description: "Enhanced model with fiber optic front sight.",
+    description: "Enhanced R1 with upgraded features - fiber optic front sight, adjustable rear, stainless finish, and improved trigger. Best value in enhanced 1911s.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "38 oz",
-    finish: "Stainless Satin"
+    finish: "Stainless Satin",
+    shortDescription: "The Remington 1911 R1 Enhanced takes the proven R1 platform and adds premium features - adjustable sights, enhanced trigger, and stainless construction - creating exceptional value in the enhanced 1911 category.",
+    longDescription: "The Remington 1911 R1 Enhanced represents the logical evolution of Remington's entry-level R1, taking the reliable foundation and adding premium features that shooters want. While the base R1 focuses on traditional GI aesthetics and affordable pricing, the R1 Enhanced targets shooters seeking improved features and performance without jumping to $1500+ premium models. At under $1000, the R1 Enhanced delivers $1500-class features and represents outstanding value in the 1911 market. The most significant upgrade is the sighting system. Where the base R1 features basic fixed three-dot sights, the Enhanced model includes a red fiber optic front sight paired with an adjustable rear sight. The fiber optic front pipe gathers ambient light, creating a bright aiming point that's visible in various lighting conditions - particularly helpful in bright outdoor environments or when transitioning between light and shadow. The adjustable rear sight allows precise zero at different distances, enabling competitive-level accuracy. This sight combination would typically cost $150+ as an aftermarket upgrade. The Enhanced model switches to stainless steel construction throughout. The bright satin stainless finish provides both aesthetic appeal and practical benefits - superior corrosion resistance compared to carbon steel, lower maintenance requirements, and longevity. The stainless slide on stainless frame eliminates the rust concerns common with carbon steel pistols in humid climates or marine environments. The trigger receives enhanced attention with lighter pull weight and improved feel compared to the base R1. While not match-grade, the Enhanced trigger breaks more cleanly and consistently. Extended controls include extended thumb safety for positive manipulation and skeletonized hammer and trigger that reduce lock time. The grip safety features extended beavertail to prevent hammer bite. Wood grips with double-diamond checkering provide comfortable ergonomics. The barrel receives enhanced polishing and the feed ramp is carefully profiled for reliable feeding with all ammunition types. Accuracy improvements result from tighter tolerances and enhanced barrel fitting. Many R1 Enhanced owners report 2.5-inch groups at 25 yards - respectable accuracy for the price point. The Enhanced model includes two 8-round magazines versus the single 7-rounder with the base R1. For competitive shooters on budget, first-time 1911 buyers wanting enhanced features, or shooters seeking maximum value with improved capability, the R1 Enhanced delivers premium features at mid-range pricing. It represents the sweet spot in Remington's 1911 lineup - more features than the base R1 without the price jump to custom-level guns.",
+    features: [
+      "Red fiber optic front sight for high-visibility aiming",
+      "Adjustable rear sight for precision zero",
+      "Stainless steel construction throughout for corrosion resistance",
+      "Enhanced trigger with improved pull weight and feel",
+      "Extended beavertail grip safety prevents hammer bite",
+      "Extended thumb safety for positive manipulation",
+      "Skeletonized hammer and trigger reduce lock time",
+      "Satin stainless finish for attractive appearance",
+      "Enhanced barrel polishing and feed ramp profiling",
+      "Two 8-round magazines included for added value"
+    ],
+    benefits: [
+      "Premium features at mid-range pricing ($1500 features under $1000)",
+      "Fiber optic sight provides excellent visibility",
+      "Adjustable sights enable competitive-level accuracy",
+      "Stainless construction eliminates rust and corrosion concerns",
+      "Enhanced trigger improves shooting performance",
+      "Excellent value proposition in enhanced 1911 category"
+    ],
+    useCases: [
+      "USPSA Single Stack competition on budget",
+      "IDPA Enhanced Service Pistol division",
+      "Outdoor range shooting benefiting from fiber optic sight",
+      "Competition training and practice",
+      "Home defense with improved sights and reliability",
+      "First enhanced 1911 offering features without premium pricing"
+    ],
+    technicalDetails: "The Remington 1911 R1 Enhanced features stainless steel frame and slide with satin finish. 5-inch barrel with enhanced polishing and profiled feed ramp. Red fiber optic front sight paired with adjustable rear sight, both dovetail-mounted. Enhanced single-action trigger with lighter pull weight (approximately 4.5 pounds). Extended beavertail grip safety. Extended thumb safety. Skeletonized lightweight hammer and trigger. Double-diamond checkered wood grips. Overall length 8.5 inches. Weight 38 oz unloaded. Ships with two 8-round stainless magazines. Made in USA.",
+    whyChoose: "Choose the Remington 1911 R1 Enhanced when you want premium 1911 features without premium pricing. At under $1000, you get fiber optic and adjustable sights ($150+ value), stainless construction, enhanced trigger, extended controls, and two magazines - features that would cost $1500+ from other manufacturers. The adjustable sights allow competition-level accuracy. The stainless construction eliminates maintenance concerns. The enhanced trigger improves performance. Whether you're competing on budget, seeking an enhanced 1911 for serious use, or want maximum features per dollar, the R1 Enhanced represents one of the best values in the 1911 market. This is the enhanced 1911 for shooters who appreciate value.",
+    seoKeywords: ["Remington R1 Enhanced", "fiber optic 1911", "adjustable sight 1911", "stainless 1911", "value enhanced 1911", "affordable competition 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2.5 inch groups at 25 yards"
+    }
   },
   {
     id: "colt-rail-gun",
