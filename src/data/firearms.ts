@@ -2241,15 +2241,53 @@ export const firearms: Firearm[] = [
     name: "Model 856",
     manufacturer: "Taurus",
     categorySlug: "revolvers",
-    caliber: [".38 Special"],
+    caliber: [".38 Special", ".38 Special +P"],
     price: 399,
     inStock: true,
-    description: "6-shot snub-nose revolver with rubber grip and transfer bar safety.",
+    description: "Six-shot compact revolver offering capacity advantage over five-shot competitors. Budget-friendly defensive revolver with modern safety features.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "2 inches",
     weight: "22 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Taurus 856 delivers a genuine advantage - six rounds instead of five in a compact carry revolver. Modern transfer bar safety, comfortable grips, and aggressive pricing make reliable defense accessible.",
+    longDescription: "The Taurus Model 856 represents Brazilian engineering applied to solve a fundamental revolver challenge: how to fit six rounds into a frame size traditionally limited to five. Where Smith & Wesson J-frames and similar designs accept five rounds of .38 Special, the 856 holds six through clever engineering that slightly enlarges the cylinder while maintaining practical carry dimensions. This additional round provides a meaningful advantage - 20% more capacity in the same form factor. For defensive use where every round matters and reloads are unlikely, this sixth shot could prove decisive. The 856's development reflects Taurus's aggressive approach to value engineering. The company identified features consumers actually need for defensive use, eliminated expensive but non-essential elements, and applied modern manufacturing to deliver capability at prices that undercut premium competitors by half. The 856 uses investment casting for the frame and cylinder, CNC machining for critical surfaces, and modern quality control that has significantly improved Taurus reliability from earlier generations. The result is a revolver offering genuine six-shot capacity at prices comparable to economy five-shot competitors. The 856's frame construction uses heat-treated steel throughout, providing necessary strength for +P ammunition while keeping weight manageable at 22 ounces. This weight sits in the sweet spot - heavy enough to tame recoil from defensive loads yet light enough for comfortable all-day carry. The matte black or stainless finish resists corrosion adequately with basic maintenance. The transfer bar safety system is a critical modern feature that Taurus implements effectively. This safety design interposes a transfer bar between the hammer and firing pin only when the trigger is fully pressed. The result is genuine drop safety - the 856 cannot fire if dropped, even with the hammer cocked. This allows safe carry with all six chambers loaded, maximizing the capacity advantage. Older revolvers without transfer bars required carrying with empty chambers under the hammer, negating capacity benefits. The 856's double-action trigger typically breaks around 10-13 pounds, heavier than premium revolvers but acceptable for defensive use. The trigger face is smooth, and the pull straightens after break-in or minor gunsmith attention. Single-action mode provides a lighter break when time permits careful aim. The rubber grips, typically Taurus's own design or Hogue-style patterns, provide adequate control and recoil absorption. The grip shape accommodates most hand sizes reasonably well, though aftermarket options allow customization. The fixed sights are simple notch and ramp configuration regulated for typical defensive distances with 158-grain ammunition. While basic, these sights prove adequate for the 856's intended role - close-quarters defense within 15 yards. The serrated ramp front sight reduces glare, and the rear notch provides enough definition for rapid sight acquisition. The 856's 2-inch barrel achieves complete powder burn with modern defensive ammunition, providing velocities comparable to longer barrels while maintaining concealability. Modern .38 Special +P loads like Federal HST Micro or Speer Gold Dot achieve excellent expansion and FBI-standard penetration from this barrel length. The 856 has gained market acceptance among budget-conscious defenders, new gun owners, and those seeking maximum capacity in compact revolvers. While it lacks the refined fit and finish of Smith & Wesson or Ruger revolvers, the 856 delivers functional reliability with meaningful capacity advantage. Taurus backs the 856 with their lifetime warranty, and parts availability has improved significantly as the model gained popularity. For shooters prioritizing capacity and value over brand prestige, the 856 offers six-shot capability that genuinely outperforms traditional five-shot competitors in the fundamental metric of ammunition capacity. The 856 proves that smart engineering focused on practical advantages can deliver meaningful improvements in defensive capability.",
+    features: [
+      "Six-round capacity in compact revolver platform",
+      "Transfer bar safety prevents accidental discharge",
+      "Steel frame construction rated for +P ammunition",
+      "Comfortable rubber grips with finger grooves",
+      "Fixed sights regulated for defensive distances",
+      "Available in matte black or stainless finish",
+      "2-inch barrel optimizes velocity and concealability",
+      "Double-action/single-action trigger operation",
+      "Lifetime manufacturer warranty",
+      "Cylinder locks at crane and through cylinder stop"
+    ],
+    benefits: [
+      "20% more capacity than traditional five-shot snubbies",
+      "Exceptional value at half the cost of premium brands",
+      "Modern safety features allow safe six-round carry",
+      "Weight balance provides manageable recoil with +P loads",
+      "Simple operation ideal for new defensive shooters",
+      "Reliable revolver platform eliminates magazine concerns"
+    ],
+    useCases: [
+      "Budget-conscious concealed carry with capacity advantage",
+      "First-time gun buyers seeking reliable defense",
+      "Home defense for those preferring revolver simplicity",
+      "Vehicle or bedside gun where six rounds beats five",
+      "Backup gun offering capacity edge over competitors",
+      "Rural property defense where value maximizes options",
+      "Elderly or budget-limited shooters needing effective protection"
+    ],
+    seoKeywords: ["Taurus 856", "six shot 38 special", "budget snub nose", "856 revolver review", "6 round carry revolver", "affordable defensive revolver"],
+    ballisticData: {
+      effectiveRange: "15 yards (optimal defensive distance)",
+      muzzleVelocity: "870 fps (130gr .38 Special +P)",
+      muzzleEnergy: "218 ft-lbs (130gr .38 Special +P)",
+      accuracy: "3-4 inch groups at 15 yards"
+    }
   },
   {
     id: "colt-king-cobra",
@@ -2379,15 +2417,53 @@ export const firearms: Firearm[] = [
     name: "K6s",
     manufacturer: "Kimber",
     categorySlug: "revolvers",
-    caliber: [".357 Magnum"],
+    caliber: [".357 Magnum", ".38 Special"],
     price: 899,
-    inStock: false,
-    description: "Premium 6-shot snub-nose with match-grade tolerances.",
+    inStock: true,
+    description: "Premium six-shot .357 Magnum snub-nose built to Kimber's match-grade standards. The smallest six-shot .357 revolver available with hand-fitted precision.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "2 inches",
     weight: "23 oz",
-    finish: "Stainless Steel"
+    finish: "Brushed Stainless Steel",
+    shortDescription: "The Kimber K6s achieves the impossible - six rounds of .357 Magnum in the smallest revolver frame ever designed. Match-grade manufacturing and premium finish define this carry revolver built without compromise.",
+    longDescription: "The Kimber K6s represents the pinnacle of compact revolver engineering - a six-shot .357 Magnum built to match-grade tolerances in the smallest possible package. When Kimber entered the revolver market in 2016, they approached the challenge as they do all firearms: identify what shooters truly want, then engineer solutions without accepting traditional limitations. Shooters wanted six-shot capacity in snub-nose size, full .357 Magnum power in lightweight frames, and premium quality throughout. The K6s delivers all three through innovative engineering that rewrites compact revolver design rules. The K6s accomplishes what other manufacturers claimed impossible - fitting six rounds of .357 Magnum into a frame size comparable to traditional five-shot .38 Specials. Smith & Wesson's six-shot .357 L-frame revolvers weigh 36+ ounces and measure significantly larger. Taurus fits six .38 Special rounds through frame enlargement. The K6s achieves six .357 rounds in just 23 ounces through revolutionary cylinder design that maximizes powder capacity while minimizing external dimensions. The cylinder uses unique serrations that create valleys between cartridges, allowing the cylinder to nestle closer to the frame. The frame itself employs minimal material while maintaining strength through modern metallurgical analysis and CNC precision. Every surface is machined to tolerances typical of custom guns, not production revolvers. The result is a revolver that measures barely larger than five-shot competitors while delivering six shots of full magnum power. The K6s's construction reflects Kimber's premium manufacturing approach. The stainless steel frame and cylinder receive extensive hand-fitting during assembly. Gunsmiths literally fit each cylinder to its frame, ensuring perfect timing and lock-up. The forcing cone is individually polished, the barrel is match-grade quality, and the crane-to-frame interface is fitted to eliminate play. This attention to detail results in accuracy exceptional for snub-nose revolvers - the K6s regularly shoots 2-inch groups at 25 yards, precision unheard of in compact carry revolvers. The trigger system incorporates Kimber's match-grade philosophy. The double-action pull is smoother than any production revolver, typically breaking around 9-10 pounds with glassy smoothness. There's no stacking, no grit, just progressive pressure until a clean break. Single-action mode delivers a crisp 4-5 pound break with minimal overtravel. Serious revolver shooters immediately recognize the trigger quality as exceptional - this is the trigger that custom revolver smiths strive to achieve through extensive hand-fitting. The sights employ Kimber's practical approach - a serrated front ramp eliminates glare, while the rear notch provides clear sight picture without snag potential. The sights are drift-adjustable for windage, allowing precise zeroing impossible with typical fixed-sight snubbies. Night sight options provide low-light visibility for defensive use. The brushed stainless finish resists corrosion while remaining subdued for concealment. Kimber's finishing process includes extensive hand-polishing before the final brush, creating depth and richness absent in production revolvers. The grip frame accepts Kimber's custom G10 grips featuring aggressive texturing and palm swells that enhance control during magnum recoil. The grips are slim enough for deep concealment yet shaped to distribute recoil effectively across the palm. The K6s handles .357 Magnum ammunition with authority - the 23-ounce weight manages recoil better than lighter aluminum-frame revolvers, while the precision construction ensures the gun tracks straight through recoil. For those preferring less recoil, .38 Special and .38 Special +P ammunition turns the K6s into an exceptionally controllable defensive tool. The K6s serves serious defensive shooters who refuse to compromise. Off-duty detectives carry K6s as primary pieces knowing six magnum rounds and match-grade accuracy provide maximum capability. Federal air marshals adopted the K6s for deep concealment missions requiring both discretion and stopping power. Civilian defensive shooters who appreciate precision tools recognize the K6s as the ultimate evolution of the snub-nose revolver - combining six-shot capacity, full magnum power, match-grade accuracy, and premium construction in a package sized for daily carry. The K6s costs more than economy revolvers, but delivers capabilities no other compact revolver can match. For those demanding the absolute best compact carry revolver available, the Kimber K6s sets the standard that others attempt to match.",
+    features: [
+      "Six-shot .357 Magnum capacity in smallest possible frame",
+      "Match-grade hand-fitted cylinder and frame interface",
+      "Premium trigger with 9-10 pound smooth double-action pull",
+      "Drift-adjustable sights for precision zeroing",
+      "Serrated forcing cone for enhanced accuracy",
+      "Brushed stainless finish with extensive hand-polishing",
+      "Custom G10 grips with aggressive texturing and palm swells",
+      "Lightweight 23-ounce construction with magnum capability",
+      "Available with night sights for low-light use",
+      "Unique serrated cylinder design maximizes capacity"
+    ],
+    benefits: [
+      "Only compact revolver combining six shots and .357 Magnum power",
+      "Match-grade accuracy unmatched by other snub-nose revolvers",
+      "Premium trigger quality eliminates need for gunsmith work",
+      "Hand-fitted construction ensures perfect timing and reliability",
+      "Lightweight yet controllable with full magnum loads",
+      "Kimber's reputation for precision manufacturing"
+    ],
+    useCases: [
+      "Primary concealed carry for professionals demanding best capability",
+      "Federal law enforcement deep concealment missions",
+      "Off-duty detective primary carry with magnum stopping power",
+      "Plainclothes professionals requiring six shots in minimal package",
+      "Enthusiast carry for those appreciating match-grade quality",
+      "Backup gun for special operations personnel",
+      "Precision defensive tool for shooters refusing compromise"
+    ],
+    seoKeywords: ["Kimber K6s", "six shot 357 magnum", "compact magnum revolver", "K6s review", "premium snub nose", "match grade revolver", "Kimber K6s carry"],
+    ballisticData: {
+      effectiveRange: "25 yards (exceptional for snub-nose)",
+      muzzleVelocity: "1,220 fps (125gr .357 Magnum)",
+      muzzleEnergy: "413 ft-lbs (125gr .357 Magnum)",
+      accuracy: "2 inch groups at 25 yards with match ammunition"
+    }
   },
   {
     id: "charter-arms-bulldog",
@@ -2523,15 +2599,53 @@ export const firearms: Firearm[] = [
     name: "Cobra",
     manufacturer: "Colt",
     categorySlug: "revolvers",
-    caliber: [".38 Special"],
+    caliber: [".38 Special", ".38 Special +P"],
     price: 699,
     inStock: true,
-    description: "Modern reissue of the classic Cobra snub-nose with VZ grips.",
+    description: "Modern reissue of Colt's legendary compact revolver combining heritage design with contemporary engineering. Six-shot capacity with Colt's renowned action quality.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "2 inches",
     weight: "25 oz",
-    finish: "Brushed Stainless"
+    finish: "Brushed Stainless Steel",
+    shortDescription: "The Colt Cobra returns after decades, combining the legendary name with modern manufacturing. Six rounds, premium VZ grips, and Colt's famous action smoothness define this heritage revolver reimagined for contemporary carry.",
+    longDescription: "The Colt Cobra nameplate carries significant history - original Cobras produced from 1950-1981 served as Colt's lightweight .38 Special answer to Smith & Wesson's Chief's Special. These aluminum-frame revolvers equipped countless detectives, off-duty officers, and private citizens during the golden age of American snub-nose revolvers. When Colt discontinued the Cobra in 1981, original examples became collectibles commanding premium prices. In 2017, Colt resurrected the Cobra with contemporary engineering while respecting the heritage that made the name legendary. The modern Cobra represents Colt's commitment to premium quality while incorporating manufacturing improvements unavailable to 1950s designers. Where original Cobras used aluminum frames limiting them to standard pressure ammunition, the new Cobra employs stainless steel construction rated for +P loads. This steel frame increases weight to 25 ounces - heavier than aluminum-frame competitors but perfectly positioned between ultra-lightweight snubbies that punish shooters and heavy steel-frame models that burden carriers. The 25-ounce weight tames recoil from defensive +P ammunition while remaining comfortable for all-day belt carry. The Cobra's defining characteristic remains its action - Colt's double-action trigger has defined quality since the 19th century. The new Cobra continues this tradition with a trigger that veteran revolver shooters immediately recognize as exceptional. The double-action pull is smooth and consistent through the entire stroke, breaking cleanly around 9 pounds with no stacking or grittiness. Single-action mode provides a crisp 4-5 pound break with minimal creep. This trigger quality results from Colt's hand-fitted approach - unlike mass-produced competitors using interchangeable parts, Colt gunsmiths fit critical components during assembly, ensuring optimal geometry and timing. The six-shot capacity provides meaningful advantage over traditional five-shot J-frames. Colt achieves this through larger cylinder dimensions while maintaining practical carry size. The cylinder employs full-diameter construction without weight-reduction fluting, contributing to the Cobra's stability during recoil and ensuring adequate steel thickness for thousands of +P rounds. The linear leaf mainspring, a Colt design dating to the Python, provides consistent ignition while contributing to the exceptional trigger pull. The Cobra's construction quality reflects Colt's premium positioning. The stainless steel receives extensive polishing before the final brushed finish, creating depth and luster absent in economy revolvers. The barrel features Colt's traditional deep crown and hand-polished forcing cone for enhanced accuracy. The front sight is a serrated ramp silver-soldered to the barrel, while the rear notch is milled into the frame topstrap - simple but effective sights regulated for typical defensive distances. The frame-to-cylinder gap is minimized through precise fitting, reducing gas cutting and enhancing longevity. The VZ G10 grips represent modern tactical aesthetic while providing superior control. The aggressive diamond texturing prevents slippage during recoil, while the grip shape distributes force effectively across the palm. These grips transform the shooting experience compared to traditional smooth walnut or rubber grips - the Cobra remains secure in the hand during rapid fire or from awkward shooting positions. The Cobra's 2-inch barrel represents optimal compromise for defensive revolvers - long enough for complete powder burn and adequate sight radius while short enough for genuine concealment. Modern .38 Special +P defensive ammunition achieves excellent performance from this barrel length. Loads like Speer Gold Dot 135-grain +P or Federal HST Micro expand reliably while penetrating to FBI standards. The Cobra serves shooters appreciating heritage combined with modern capability. Detectives who carried original Cobras recognize the name's significance and appreciate the improvements. Colt enthusiasts who own Pythons and SAAs add Cobras as carry pieces continuing their Colt collection. Shooters simply wanting premium compact revolvers appreciate the Cobra's quality without requiring brand loyalty. The Cobra occupies the middle ground between economy revolvers and ultra-premium customs - more refined than Taurus or basic Ruger models, more affordable than Kimber's match-grade K6s. For those valuing American heritage combined with contemporary engineering, the Colt Cobra delivers legendary quality in a package sized for modern carry. The rampant Colt pony on the grip frame signifies more than brand - it represents over 180 years of American firearms excellence applied to defensive revolver design.",
+    features: [
+      "Six-shot capacity in premium stainless steel frame",
+      "Legendary Colt double-action trigger with 9-pound smooth pull",
+      "Linear leaf mainspring ensures consistent ignition",
+      "Hand-fitted components for optimal timing and lock-up",
+      "Premium VZ G10 grips with aggressive diamond texturing",
+      "Brushed stainless finish with extensive hand-polishing",
+      "Full-diameter cylinder without weight-reduction fluting",
+      "Serrated ramp front sight silver-soldered to barrel",
+      "Deep crown barrel with hand-polished forcing cone",
+      "Transfer bar safety allows safe six-round carry"
+    ],
+    benefits: [
+      "Colt's legendary action quality with smooth trigger pull",
+      "Heritage nameplate with modern manufacturing improvements",
+      "25-ounce weight perfectly balances carryability and shootability",
+      "Premium construction and finish justify higher price point",
+      "Six-shot capacity advantage over traditional five-shot snubbies",
+      "Hand-fitting ensures consistent quality and reliability"
+    ],
+    useCases: [
+      "Premium concealed carry for Colt enthusiasts",
+      "Off-duty carry for officers appreciating heritage quality",
+      "Complement to Colt Python or SAA collections",
+      "Discerning shooters valuing premium fit and finish",
+      "Belt carry where weight isn't primary concern",
+      "Home defense combining reliability with six-shot capacity",
+      "Collectors seeking modern Colt snub-nose for shooting"
+    ],
+    seoKeywords: ["Colt Cobra", "Colt snub nose revolver", "six shot 38 special", "Cobra revolver review", "modern Colt Cobra", "VZ grips Cobra", "premium carry revolver"],
+    ballisticData: {
+      effectiveRange: "15 yards (optimal defensive distance)",
+      muzzleVelocity: "880 fps (135gr .38 Special +P)",
+      muzzleEnergy: "232 ft-lbs (135gr .38 Special +P)",
+      accuracy: "2-3 inch groups at 15 yards"
+    }
   },
   {
     id: "ruger-single-six",
