@@ -65,16 +65,16 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
             e.currentTarget.src = placeholderImage;
           }}
         />
-        <Badge className="absolute top-2 right-2 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
+        <Badge className="absolute top-1 sm:top-2 right-1 sm:right-2 text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 bg-tactical/90 text-tactical-foreground backdrop-blur-sm transition-all duration-300">
           {selectedVariation.rounds} Rounds
         </Badge>
         
-        <div className="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="absolute top-1 sm:top-2 left-1 sm:left-2 opacity-0 group-hover:opacity-100 transition-opacity">
           <WishlistButton productId={id} productName={name} variant="icon" />
         </div>
         
         {hasPriceChange && showPriceChange && (
-          <div className={`absolute bottom-2 left-2 px-3 py-1.5 rounded-full backdrop-blur-sm font-semibold text-sm animate-scale-in ${
+          <div className={`absolute bottom-1 sm:bottom-2 left-1 sm:left-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full backdrop-blur-sm font-semibold text-xs sm:text-sm animate-scale-in ${
             isCheaper 
               ? 'bg-green-500/90 text-white' 
               : 'bg-orange-500/90 text-white'
@@ -84,19 +84,19 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
         )}
       </div>
       
-      <CardContent className="p-4">
-        <h3 className="font-semibold mb-2 line-clamp-2">{name}</h3>
-        <p className="text-xs text-muted-foreground mb-2">{caliber}</p>
+      <CardContent className="p-2 sm:p-4">
+        <h3 className="font-semibold mb-1 sm:mb-2 line-clamp-2 text-sm sm:text-base">{name}</h3>
+        <p className="text-[10px] sm:text-xs text-muted-foreground mb-1 sm:mb-2">{caliber}</p>
         
         {quantityVariations && quantityVariations.length > 0 && (
-          <div className="mb-3">
-            <p className="text-xs text-muted-foreground mb-1.5">Quantity:</p>
-            <div className="flex flex-wrap gap-1.5">
+          <div className="mb-2 sm:mb-3">
+            <p className="text-[10px] sm:text-xs text-muted-foreground mb-1 sm:mb-1.5">Quantity:</p>
+            <div className="flex flex-wrap gap-1 sm:gap-1.5">
               {quantityVariations.map((variant, idx) => (
                 <button
                   key={idx}
                   onClick={(e) => handleVariationClick(e, variant)}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-md border transition-all duration-200 ${
+                  className={`px-2 sm:px-3 py-1 sm:py-1.5 text-[10px] sm:text-xs font-semibold rounded-md border transition-all duration-200 ${
                     variant.rounds === selectedVariation.rounds
                       ? 'bg-tactical text-tactical-foreground border-tactical shadow-sm scale-105'
                       : variant.inStock
@@ -113,8 +113,8 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
         )}
         
         <div className="flex items-center justify-between mb-1">
-          <div className="flex items-baseline gap-2">
-            <span className={`text-2xl font-bold transition-all duration-300 ${
+          <div className="flex items-baseline gap-1 sm:gap-2">
+            <span className={`text-lg sm:text-2xl font-bold transition-all duration-300 ${
               hasPriceChange && showPriceChange 
                 ? isCheaper 
                   ? 'text-green-500 animate-pulse' 
@@ -124,7 +124,7 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
               ${selectedVariation.price.toFixed(2)}
             </span>
             {hasPriceChange && (
-              <span className={`text-xs font-medium transition-all duration-300 ${
+              <span className={`text-[9px] sm:text-xs font-medium transition-all duration-300 ${
                 isCheaper ? 'text-green-500' : 'text-orange-500'
               }`}>
                 {isCheaper ? `Save $${Math.abs(priceDifference).toFixed(2)}` : `+$${priceDifference.toFixed(2)}`}
@@ -132,25 +132,25 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
             )}
           </div>
           {selectedVariation.inStock ? (
-            <Badge variant="outline" className="border-tactical text-tactical transition-all duration-300">In Stock</Badge>
+            <Badge variant="outline" className="border-tactical text-tactical text-[9px] sm:text-xs px-1.5 sm:px-2 py-0.5 transition-all duration-300">In Stock</Badge>
           ) : (
-            <Badge variant="outline" className="border-destructive text-destructive transition-all duration-300">Out of Stock</Badge>
+            <Badge variant="outline" className="border-destructive text-destructive text-[9px] sm:text-xs px-1.5 sm:px-2 py-0.5 transition-all duration-300">Out of Stock</Badge>
           )}
         </div>
         
         {hasPriceChange && (
-          <div className="text-xs text-muted-foreground line-through">
+          <div className="text-[10px] sm:text-xs text-muted-foreground line-through">
             Base: ${initialPrice.toFixed(2)}
           </div>
         )}
       </CardContent>
       
-      <CardFooter className="p-4 pt-0 flex flex-col gap-2">
+      <CardFooter className="p-2 sm:p-4 sm:pt-0 pt-0 flex flex-col gap-1.5 sm:gap-2">
         <Button 
-          className="w-full bg-tactical hover:bg-tactical/90 transition-all duration-300" 
+          className="w-full bg-tactical hover:bg-tactical/90 transition-all duration-300 h-8 sm:h-10 text-xs sm:text-sm" 
           disabled={!selectedVariation.inStock}
         >
-          <ShoppingCart className="mr-2 h-4 w-4" />
+          <ShoppingCart className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
           {selectedVariation.inStock ? 'View Details' : 'Out of Stock'}
         </Button>
         
@@ -158,7 +158,7 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
           productId={id} 
           productName={name} 
           variant="checkbox" 
-          className="justify-center"
+          className="justify-center text-xs sm:text-sm h-7 sm:h-9"
         />
       </CardFooter>
       </Card>

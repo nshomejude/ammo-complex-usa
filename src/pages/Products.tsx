@@ -6,10 +6,11 @@ import { products as rawProducts } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Package } from "lucide-react";
+import { Search, Package, LayoutGrid, Rows } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { Button } from "@/components/ui/button";
 
 const Products = () => {
   // Add variations to all products
@@ -17,6 +18,10 @@ const Products = () => {
   
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const [viewMode, setViewMode] = useState<"single" | "double">(() => {
+    const saved = localStorage.getItem("productViewMode");
+    return (saved === "single" || saved === "double") ? saved : "double";
+  });
 
   // Advanced filters
   const [filters, setFilters] = useState({
@@ -24,6 +29,12 @@ const Products = () => {
     selectedBrands: [] as string[],
     stockStatus: "all" as "all" | "inStock" | "outOfStock"
   });
+
+  const toggleViewMode = () => {
+    const newMode = viewMode === "double" ? "single" : "double";
+    setViewMode(newMode);
+    localStorage.setItem("productViewMode", newMode);
+  };
 
   // Get unique brands from products
   const availableBrands = Array.from(new Set(products.map(p => p.name.split(" ")[0]))).sort();
@@ -184,23 +195,37 @@ const Products = () => {
             />
           </div>
           
-          <Select value={categoryFilter} onValueChange={setCategoryFilter}>
-            <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] h-10 sm:h-11">
-              <SelectValue placeholder="All Categories" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Categories</SelectItem>
-              <SelectItem value="rifle">Rifle</SelectItem>
-              <SelectItem value="pistol">Pistol</SelectItem>
-              <SelectItem value="shotgun">Shotgun</SelectItem>
-              <SelectItem value="rimfire">Rimfire</SelectItem>
-              <SelectItem value="specialty">Specialty</SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={toggleViewMode}
+              className="sm:hidden h-10 w-10"
+              aria-label="Toggle view mode"
+            >
+              {viewMode === "double" ? <Rows className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
+            </Button>
+            
+            <Select value={categoryFilter} onValueChange={setCategoryFilter}>
+              <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] h-10 sm:h-11">
+                <SelectValue placeholder="All Categories" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Categories</SelectItem>
+                <SelectItem value="rifle">Rifle</SelectItem>
+                <SelectItem value="pistol">Pistol</SelectItem>
+                <SelectItem value="shotgun">Shotgun</SelectItem>
+                <SelectItem value="rimfire">Rimfire</SelectItem>
+                <SelectItem value="specialty">Specialty</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         <section aria-label="Product listing">
-          <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+          <div className={`grid gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 ${
+            viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
+          }`}>
             {filteredProducts.map((product) => (
               <ProductCard 
                 key={product.id} 
