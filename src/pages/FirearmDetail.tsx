@@ -150,7 +150,13 @@ const FirearmDetail = () => {
 
           <div>
             <div className="mb-4">
-              <p className="text-sm text-muted-foreground mb-2">{firearm.manufacturer}</p>
+              <Link 
+                to={`/search?q=${encodeURIComponent(firearm.manufacturer)}`}
+                className="inline-flex items-center gap-2 text-sm text-tactical hover:underline mb-2"
+              >
+                <Award className="h-4 w-4" />
+                <span className="font-semibold">{firearm.manufacturer}</span>
+              </Link>
               <h1 className="text-4xl font-bold mb-4">{firearm.name}</h1>
               <div className="flex flex-wrap gap-2 mb-4">
                 {firearm.caliber.map((cal, idx) => (

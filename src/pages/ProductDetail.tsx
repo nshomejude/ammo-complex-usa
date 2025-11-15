@@ -221,6 +221,17 @@ const ProductDetail = () => {
           <div className="space-y-6" itemScope itemType="https://schema.org/Product">
             <div>
               <h1 className="text-4xl font-bold mb-2" itemProp="name">{product.name}</h1>
+              {product.manufacturer && (
+                <div className="mb-3">
+                  <Link 
+                    to={`/search?q=${encodeURIComponent(product.manufacturer)}`}
+                    className="inline-flex items-center gap-2 text-lg text-tactical hover:underline"
+                  >
+                    <Award className="h-5 w-5" />
+                    <span className="font-semibold">{product.manufacturer}</span>
+                  </Link>
+                </div>
+              )}
               <p className="text-lg text-muted-foreground" itemProp="description">
                 {product.shortDescription || product.description}
               </p>
