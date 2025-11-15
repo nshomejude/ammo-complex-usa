@@ -281,7 +281,7 @@ const ProductDetail = () => {
         <article className="grid gap-0.5 lg:gap-1 lg:grid-cols-2 mb-8">
           {/* Left Column - Product Image and Desktop-only sections */}
           <div>
-            <Card className="overflow-hidden max-w-md mx-auto lg:mx-0">
+            <Card className="overflow-hidden w-full mx-auto lg:mx-0">
               <div className="aspect-square bg-secondary flex items-center justify-center p-3 sm:p-4">
                 <div className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold text-tactical mb-2">{product.caliber}</div>
@@ -299,11 +299,11 @@ const ProductDetail = () => {
           </div>
 
           {/* Product Info */}
-          <div className="space-y-2 sm:space-y-3" itemScope itemType="https://schema.org/Product">
+          <div className="space-y-0" itemScope itemType="https://schema.org/Product">
             <div>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2" itemProp="name">{product.name}</h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-0" itemProp="name">{product.name}</h1>
               {product.manufacturer && (
-                <div className="mb-2">
+                <div className="mb-0.5">
                   <Link 
                     to={`/brands/${product.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                     className="inline-flex items-center gap-2 text-sm sm:text-base lg:text-lg text-tactical hover:underline"
@@ -313,7 +313,7 @@ const ProductDetail = () => {
                   </Link>
                 </div>
               )}
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground" itemProp="description">
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-snug" itemProp="description">
                 {product.shortDescription || product.description}
               </p>
             </div>
@@ -323,7 +323,7 @@ const ProductDetail = () => {
               {whyChooseSection}
             </div>
 
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap items-center gap-1">
               {product.inStock ? (
                 <Badge className="bg-tactical text-tactical-foreground border-0 text-sm sm:text-base px-3 sm:px-4 py-1">
                   <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
@@ -339,10 +339,10 @@ const ProductDetail = () => {
               </Badge>
             </div>
 
-            <Separator className="my-2" />
+            <Separator className="my-0" />
 
             <div>
-              <div className="text-3xl sm:text-4xl font-bold text-tactical mb-1 sm:mb-2">
+              <div className="text-3xl sm:text-4xl font-bold text-tactical mb-0">
                 ${product.price.toFixed(2)}
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground">Per box of {product.rounds} rounds</p>
@@ -354,7 +354,7 @@ const ProductDetail = () => {
             {/* Quantity Variations */}
             {product.quantityVariations && product.quantityVariations.length > 0 && (
               <div>
-                <label className="text-sm font-semibold mb-2 block">Select Package:</label>
+                <label className="text-sm font-semibold mb-1 block">Select Package:</label>
                 <div className="flex flex-wrap gap-2">
                   {product.quantityVariations.map((variant, idx) => (
                     <button
