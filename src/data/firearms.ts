@@ -9479,12 +9479,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1449,
     inStock: true,
-    description: "Full-size with distinctive fastback mainspring housing.",
+    description: "Full-size SIG with distinctive fastback mainspring housing and desert Emperor Scorpion finish. Unique ergonomics meet aggressive tactical styling in SIG's most distinctive 1911.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "38.8 oz",
-    finish: "FDE Cerakote"
+    finish: "FDE Cerakote",
+    shortDescription: "The SIG 1911 Fastback Emperor Scorpion combines unique fastback ergonomics with aggressive desert tan styling. The round-butt mainspring housing and FDE Cerakote create SIG's most distinctive and comfortable 1911.",
+    longDescription: "The SIG Sauer 1911 Fastback Emperor Scorpion represents one of the most distinctive and innovative variations in SIG's 1911 lineup, combining unique ergonomics with aggressive desert tactical styling. The 'Fastback' designation refers to the rounded, bobtailed mainspring housing that eliminates the traditional sharp angle between grip and housing. This design innovation, pioneered by custom 1911 smiths but rare in production guns, provides multiple benefits: enhanced concealment by eliminating the sharp corner that can print through clothing, more comfortable carry by removing the edge that can dig into the body, and improved control through more natural hand positioning. The fastback profile allows the hand to sit higher on the gun, improving recoil control and enabling faster follow-up shots. The Emperor Scorpion treatment provides the aggressive tactical aesthetic that defines this series. The Flat Dark Earth (FDE) Cerakote finish covers all metal surfaces, creating a uniform desert tan appearance that's both tactically functional and visually striking. Cerakote provides superior corrosion and wear resistance compared to traditional finishes, critical for duty weapons or guns carried in harsh environments. The FDE color reduces signature in desert and arid environments while providing distinctive appearance. Custom Hogue G10 Emperor Scorpion grips feature aggressive texturing in matching desert tones with distinctive scorpion medallions. The G10 composite material is impervious to moisture, chemicals, and temperature extremes - ideal for all-weather carry. The slim profile provides excellent purchase without adding bulk, and the texture works with bare hands or gloves. Beyond the unique aesthetics and ergonomics, the Fastback Emperor Scorpion delivers SIG's match-grade performance. The precision-machined stainless steel frame and slide are held to SIG's exacting Swiss-influenced tolerances. The match-grade barrel features precision rifling and chamber dimensions for exceptional accuracy - many owners report consistent 2-inch groups at 25 yards. The trigger breaks cleanly between 4-5 pounds with minimal take-up and positive reset. SIGLITE night sights provide tritium illumination in darkness. Extended beavertail grip safety prevents hammer bite while ensuring positive activation. Front and rear slide serrations provide positive manipulation. The Fastback is particularly popular among concealed carriers who appreciate the enhanced comfort and reduced printing of the bobtailed design. The aggressive styling appeals to tactical users and those wanting a distinctive appearance. Competitive shooters benefit from the improved ergonomics and high-hand grip enabled by the fastback profile. For those wanting SIG Swiss precision with unique ergonomics and distinctive Emperor Scorpion styling, the Fastback delivers both innovative design and proven performance.",
+    features: [
+      "Unique fastback rounded mainspring housing for enhanced ergonomics",
+      "Bobtailed design improves concealment and comfort",
+      "Flat Dark Earth Cerakote finish for tactical appearance and protection",
+      "Custom Hogue G10 Emperor Scorpion grips with aggressive texture",
+      "SIGLITE tritium night sights for low-light capability",
+      "Match-grade barrel with SIG precision rifling",
+      "Swiss-precision machined stainless steel construction",
+      "Extended beavertail grip safety prevents hammer bite",
+      "Front and rear slide serrations for positive control",
+      "Professional-grade trigger with 4-5 lb crisp break"
+    ],
+    benefits: [
+      "Fastback profile improves concealment and carrying comfort",
+      "Higher hand grip enhances recoil control and speed",
+      "Distinctive Emperor Scorpion styling sets it apart",
+      "Cerakote finish provides superior durability and weather resistance",
+      "SIG Swiss precision ensures reliability and accuracy",
+      "G10 grips impervious to environmental conditions"
+    ],
+    useCases: [
+      "Concealed carry with enhanced comfort from fastback design",
+      "Tactical applications appreciating FDE finish and durability",
+      "Competition shooting benefiting from improved ergonomics",
+      "Desert and arid environment operations",
+      "Duty carry for those wanting distinctive professional appearance",
+      "Collection centerpiece representing unique 1911 design innovation"
+    ],
+    technicalDetails: "The SIG 1911 Fastback Emperor Scorpion features precision-machined stainless steel frame and slide with Flat Dark Earth Cerakote finish. Distinctive fastback rounded mainspring housing with bobtailed profile. Match-grade barrel with SIG precision chamber and rifling. Single-action trigger system with 4-5 pound pull weight. SIGLITE tritium three-dot night sights. Custom Hogue G10 Emperor Scorpion grips with scorpion medallions. Extended beavertail grip safety. 25 LPI checkered front strap. Front and rear slide serrations. Overall length 8.65 inches. Weight 38.8 oz unloaded. Ships with two 8-round magazines. Made in USA under SIG Swiss quality standards.",
+    whyChoose: "Choose the SIG 1911 Fastback Emperor Scorpion when you want innovative ergonomics with distinctive styling. The fastback rounded mainspring housing provides genuine benefits - improved concealment, enhanced comfort, and better control through higher hand grip. The bobtailed design eliminates printing issues that plague traditional 1911s in concealed carry. The FDE Cerakote and Emperor Scorpion grips create one of the most distinctive 1911s available. SIG's Swiss precision manufacturing ensures reliability and accuracy that rival custom guns. Whether you're a concealed carrier wanting improved comfort, a tactical user appreciating the FDE finish and durability, or simply someone who wants the most distinctive and innovative 1911 in SIG's lineup, the Fastback Emperor Scorpion delivers both substance and style.",
+    seoKeywords: ["SIG Fastback 1911", "Emperor Scorpion 1911", "bobtail 1911", "FDE 1911", "round butt 1911", "concealed carry 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "ruger-lightweight-commander",
@@ -9569,12 +9608,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1249,
     inStock: true,
-    description: "Executive Officer model with Hogue grips.",
+    description: "Executive Officer model - SIG's premium carry 1911 with contrast two-tone finish, Hogue G10 grips, and enhanced features for discerning professionals.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "41 oz",
-    finish: "Nitron"
+    finish: "Nitron",
+    shortDescription: "The SIG 1911 XO (Executive Officer) represents SIG's premium full-size 1911 designed for professionals who demand both performance and distinctive appearance. Contrast two-tone finish and premium features throughout.",
+    longDescription: "The SIG Sauer 1911 XO (Executive Officer) embodies SIG's vision of the ideal professional's 1911 - a pistol that delivers Swiss precision, enhanced features, and distinctive aesthetics appropriate for executives, senior officers, and discerning professionals. The XO designation traditionally refers to a ship's Executive Officer - the second-in-command who ensures operational excellence. SIG applies this philosophy to create a 1911 that excels in every operational aspect while maintaining the refined appearance befitting senior professionals. The defining visual characteristic is the striking contrast two-tone finish. The stainless steel frame features a bright natural stainless finish while the slide receives SIG's proprietary black Nitron coating. This contrast creates a distinctive, professional appearance that stands apart from all-black tactical guns or all-stainless models. The two-tone aesthetic has historical precedent in custom 1911s built for executives and senior officers who wanted distinctive appearance reflecting their status. Beyond aesthetics, the contrasting finishes serve practical purposes - the Nitron-coated slide provides superior corrosion resistance and reduced glare while the stainless frame eliminates corrosion concerns and provides attractive appearance even with holster wear. The custom Hogue G10 XO-series grips are premium components featuring aggressive texturing for secure purchase combined with slim profile for comfortable carry. The G10 composite material is impervious to moisture, temperature extremes, and chemicals - critical for all-weather professional use. The ergonomics provide excellent control without excessive bulk. The XO incorporates premium features throughout. SIGLITE night sights with tritium inserts provide low-light capability essential for defensive use. The match-grade barrel features SIG's precision rifling and chamber work for exceptional accuracy - typical XO pistols shoot 2-inch or better groups at 25 yards. The trigger breaks cleanly between 4-5 pounds with SIG's characteristic crisp break and short reset. Extended beavertail grip safety prevents hammer bite while ensuring positive activation. The front strap features 25 LPI checkering for secure grip. Front and rear slide serrations provide positive manipulation in all conditions. The XO uses SIG's precision-machined stainless steel frame and slide held to Swiss-influenced tolerances for reliability and longevity. The pistol ships with four 8-round magazines - exceptional value that many competitors don't match. The XO appeals to professionals wanting a 1911 with both performance and appropriate appearance, competitive shooters appreciating the features and accuracy, and collectors seeking premium SIG 1911s. For those wanting SIG's best full-size carry 1911 with distinctive professional appearance, the XO delivers executive-level performance and aesthetics.",
+    features: [
+      "Distinctive contrast two-tone finish: stainless frame with black Nitron slide",
+      "Custom Hogue G10 XO-series grips with premium texture",
+      "SIGLITE tritium night sights for low-light capability",
+      "Match-grade barrel with SIG precision chamber and rifling",
+      "Swiss-precision machined stainless steel construction",
+      "Professional-grade trigger: 4-5 lb crisp break with short reset",
+      "Extended beavertail grip safety prevents hammer bite",
+      "25 LPI front strap checkering for secure grip",
+      "Front and rear slide serrations for positive manipulation",
+      "Four 8-round magazines included for exceptional value"
+    ],
+    benefits: [
+      "Distinctive two-tone appearance appropriate for professionals",
+      "SIG Swiss precision manufacturing ensures reliability",
+      "Premium features throughout eliminate need for modifications",
+      "Match-grade accuracy suitable for serious use",
+      "Nitron slide coating provides superior corrosion resistance",
+      "Four magazines included saves $100+ versus competitors"
+    ],
+    useCases: [
+      "Executive and professional carry with appropriate aesthetics",
+      "Senior officer duty weapon for those preferring 1911 platform",
+      "Competitive shooting in USPSA Single Stack divisions",
+      "Premium concealed carry for discerning professionals",
+      "Collection centerpiece representing SIG premium 1911s",
+      "Presentation piece or executive gift with distinctive appearance"
+    ],
+    technicalDetails: "The SIG 1911 XO features precision-machined stainless steel frame with natural stainless finish and stainless steel slide with black Nitron coating creating distinctive two-tone appearance. Match-grade barrel with SIG precision chamber and rifling. Single-action trigger system with 4-5 pound pull weight, crisp break and positive reset. SIGLITE tritium three-dot night sights. Custom Hogue G10 XO-series grips. Extended beavertail grip safety with checkered memory bump. 25 LPI front strap checkering. Front and rear slide serrations. Overall length 8.65 inches. Weight 41 oz unloaded. Ships with four 8-round magazines. Made in USA under SIG Swiss quality control standards.",
+    whyChoose: "Choose the SIG 1911 XO when you want a premium professional's 1911 with both substance and style. The distinctive two-tone finish provides appearance appropriate for executives and senior professionals while the SIG precision manufacturing ensures reliability. Premium features throughout - night sights, match-grade barrel, custom G10 grips, extended controls - come standard rather than requiring expensive modifications. The inclusion of four magazines provides exceptional value. Whether you're a professional wanting a 1911 befitting your status, a competitive shooter demanding accuracy and features, or a collector seeking premium SIG pistols, the XO delivers executive-level performance with distinctive aesthetics that command respect.",
+    seoKeywords: ["SIG 1911 XO", "two tone 1911", "executive 1911", "premium 1911", "contrast finish 1911", "professional carry 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "wilson-classic",
@@ -9842,12 +9920,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 999,
     inStock: true,
-    description: "Classic GI-style with modern enhancements.",
+    description: "Classic GI-style aesthetics with SIG Swiss precision and modern reliability enhancements. Traditional 1911 appearance meets European manufacturing excellence.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "41 oz",
-    finish: "Nitron"
+    finish: "Nitron",
+    shortDescription: "The SIG 1911 Traditional combines authentic GI-style aesthetics with SIG's Swiss precision manufacturing. Classic military appearance with European reliability and modern enhancements.",
+    longDescription: "The SIG Sauer 1911 Traditional represents SIG's respectful homage to the original military 1911 specification, combining authentic GI-style aesthetics with Swiss-German precision manufacturing that exceeds original military standards. When SIG Sauer - a company renowned for modern service pistols and Swiss engineering - decided to produce traditional-style 1911s, they brought their characteristic attention to manufacturing precision while maintaining the classic appearance that defines the military 1911. The result is a pistol that looks like an authentic GI 1911 but functions with modern reliability and precision. The Traditional follows classic military 1911 specifications in appearance: full-size 5-inch configuration, traditional short trigger, standard GI-style grip safety, and simple fixed sights. The black Nitron finish approximates the parkerized finish of military 1911s while providing superior corrosion resistance and durability. Unlike authentic parkerizing which requires significant maintenance, Nitron resists corrosion in humid environments and requires minimal care - practical modern enhancement maintaining traditional appearance. The double-diamond checkered wood grips echo the classic military aesthetic. Where SIG departs from original specifications is in manufacturing precision and quality control. The frame and slide are precision-machined to tolerances that exceed original military specifications by significant margins. SIG's Swiss-influenced manufacturing processes ensure dimensional consistency that simply wasn't achievable in 1911-era production. This precision translates to enhanced reliability - the Traditional feeds modern defensive ammunition flawlessly, where original military 1911s often required break-in periods and tuning. The barrel features modern button rifling and precision chamber work for improved accuracy. Many Traditional owners report 2.5-inch groups at 25 yards - accuracy that exceeds original military specifications while maintaining classic appearance. The trigger, while appearing traditional, receives SIG's attention to sear engagement and spring weights for consistent 5-6 pound pull with clean break. Internal components receive SIG's quality control and material selection, ensuring longevity that exceeds original military pistols. The Traditional includes modern safety enhancements - extended thumb safety for more positive manipulation, enhanced grip safety for reliability, and modern firing pin safety for drop protection. These improvements maintain traditional appearance while incorporating lessons learned from a century of 1911 evolution. The Traditional appeals to purists wanting classic aesthetics with modern reliability, collectors seeking authentic-appearing 1911s without vintage maintenance requirements, and shooters who appreciate traditional design enhanced by Swiss precision. For those wanting authentic GI-style appearance with Swiss manufacturing excellence, the SIG 1911 Traditional delivers both historical respect and modern performance.",
+    features: [
+      "Authentic GI-style appearance with traditional aesthetics",
+      "Swiss-precision machined for superior dimensional consistency",
+      "Black Nitron finish approximates parkerized appearance with better protection",
+      "Modern barrel rifling and chamber work for enhanced accuracy",
+      "Precision trigger work within traditional specification",
+      "Extended thumb safety for positive manipulation",
+      "Enhanced grip safety for reliable activation",
+      "Modern firing pin safety for drop protection",
+      "Traditional double-diamond wood grips",
+      "Fixed GI-style three-dot sights"
+    ],
+    benefits: [
+      "Classic military aesthetics with modern manufacturing precision",
+      "Swiss quality control ensures reliability exceeding originals",
+      "Nitron finish provides low-maintenance corrosion protection",
+      "Enhanced accuracy from modern barrel work and tight tolerances",
+      "Modern safety features without compromising appearance",
+      "Exceptional value - Swiss precision at reasonable pricing"
+    ],
+    useCases: [
+      "Collection representation of military 1911 with modern quality",
+      "Range shooting with traditional aesthetics and reliability",
+      "Historical reenactment and period-correct shooting events",
+      "Home defense with classic .45 ACP stopping power",
+      "Introduction to 1911 platform with authentic appearance",
+      "Gift for military veterans appreciating traditional 1911 design"
+    ],
+    technicalDetails: "The SIG 1911 Traditional features precision-machined stainless steel frame and slide with black Nitron finish. Traditional 5-inch barrel with modern button rifling and precision chamber. Single-action trigger with 5-6 pound pull weight and clean break. Fixed three-dot GI-style sights. Traditional short trigger and grip safety with modern enhanced activation. Extended thumb safety. Double-diamond checkered wood grips. Modern firing pin safety for drop protection. Overall length 8.65 inches. Weight 41 oz unloaded. Ships with two 7-round magazines. Made in USA under SIG Swiss quality standards.",
+    whyChoose: "Choose the SIG 1911 Traditional when you want authentic GI-style aesthetics enhanced by Swiss precision manufacturing. This isn't a budget clone - it's a SIG Sauer pistol held to the same exacting standards as their service pistols. The classic appearance respects the original military 1911 while the Swiss manufacturing precision ensures reliability and accuracy that exceed original specifications. At under $1000, you get authentic appearance, modern reliability, and SIG's legendary quality control. Whether you're a collector wanting traditional aesthetics without vintage maintenance hassles, a shooter appreciating classic design with modern performance, or someone drawn to the historical significance of the military 1911, the Traditional delivers both respect for history and Swiss engineering excellence.",
+    seoKeywords: ["SIG 1911 Traditional", "GI style 1911", "military 1911", "classic 1911", "authentic 1911", "traditional 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2.5 inch groups at 25 yards"
+    }
   },
 
   // Category 24: Striker-Fired Polymer Pistols (50 products)
