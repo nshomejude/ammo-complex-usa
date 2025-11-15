@@ -1863,12 +1863,64 @@ export const firearms: Firearm[] = [
     caliber: ["9mm"],
     price: 579,
     inStock: true,
-    description: "Optics-ready micro-compact with 12+1 capacity and tritium front sight.",
+    description: "Optics-ready micro-compact with class-leading 12+1 capacity, tritium front sight, and Ruger's legendary reliability at an unbeatable price.",
     actionType: "Semi-Automatic",
     capacity: "12+1",
     barrelLength: "3.2 inches",
     weight: "18.4 oz",
-    finish: "Black Oxide"
+    finish: "Black Oxide",
+    shortDescription: "The Ruger MAX-9 combines maximum capacity with minimal size, delivering 12+1 rounds in a truly micro-compact package. Factory optics-ready with tritium sights and Ruger reliability at an exceptional value.",
+    longDescription: "Ruger entered the micro-compact 9mm market with the MAX-9 and immediately made a statement by offering the highest standard capacity in the segment - 12+1 rounds. The MAX-9 directly challenges the SIG P365 and Springfield Hellcat while undercutting both on price, making it an outstanding value proposition. At 18.4 ounces and just over 1 inch wide, the MAX-9 maintains excellent concealability despite its impressive capacity. Every MAX-9 ships optics-ready with a factory-installed removable plate that accepts popular Shield RMSc footprint micro red dots, eliminating the need for expensive milling services. The tritium front sight ensures low-light capability even without an optic mounted. Ruger's trigger design provides a clean break with positive reset, earning praise from reviewers as one of the better micro-compact triggers available. The grip texture strikes an ideal balance - aggressive enough for secure purchase without being uncomfortable against bare skin. The MAX-9 features bilateral slide stop levers and a reversible magazine release for ambidextrous operation. Magazine compatibility includes flush-fit 10 and 12-round options, plus extended magazines for training or competition. Ruger's extensive testing protocol and American manufacturing ensure the MAX-9 delivers the legendary Ruger reliability. The aggressive front and rear slide serrations provide excellent purchase even with wet or gloved hands. For concealed carriers seeking maximum capacity and modern features without premium pricing, the MAX-9 represents exceptional value.",
+    features: [
+      "Class-leading 12+1 standard capacity in micro-compact size",
+      "Factory optics-ready with Shield RMSc footprint mount",
+      "Tritium front sight for low-light capability",
+      "Excellent trigger with clean break and positive reset",
+      "Bilateral slide stop levers for ambidextrous use",
+      "Reversible magazine release",
+      "Aggressive texturing on frame and slide",
+      "Black oxide finish for durability and corrosion resistance",
+      "Pinky extension on 12-round magazine for full grip",
+      "Front and rear slide serrations",
+      "Lightweight at 18.4 oz unloaded"
+    ],
+    benefits: [
+      "Highest standard capacity in true micro-compact class",
+      "Outstanding value - premium features at mid-range price",
+      "Ruger legendary reliability and customer service",
+      "No milling required for red dot mounting",
+      "Comfortable all-day carry despite capacity",
+      "Suitable for shooters with larger hands due to grip design",
+      "American-made quality and extensive testing"
+    ],
+    useCases: [
+      "Primary concealed carry pistol",
+      "Backup gun with maximum capacity",
+      "Deep concealment with serious capability",
+      "Budget-conscious first CCW purchase",
+      "Off-duty law enforcement carry",
+      "Training and competition in micro-compact class"
+    ],
+    technicalDetails: "The MAX-9 features a striker-fired trigger system with internal safeties including trigger safety, striker block, and disconnector. The barrel is made from alloy steel with precision rifling and black oxide finish. The slide is machined from through-hardened alloy steel. The frame is glass-filled nylon with an integrated serialized stainless steel chassis. The optics mounting system uses a removable adapter plate that accepts Shield RMSc footprint optics including Shield RMSc, Holosun 407k/507k, and SwampFox Sentinel. Trigger pull weight is approximately 5.5-6.5 lbs with short reset. Overall length is 6 inches with a height of 4.3 inches and width of 1.02 inches. Ships with two magazines (10-round and 12-round), optics adapter plate, and hard case.",
+    whyChoose: "Choose the Ruger MAX-9 when you want maximum capacity and modern features without paying premium prices. Ruger has a well-earned reputation for delivering reliable firearms with excellent value, and the MAX-9 continues that tradition. With the highest standard capacity in its class, factory optics-ready capability, tritium sights, and quality manufacturing, the MAX-9 delivers features that competitors charge $100-200 more for. Ruger's legendary customer service and extensive dealer network mean support is always available. For practical concealed carriers who want maximum capability per dollar, the MAX-9 is hard to beat.",
+    seoKeywords: [
+      "ruger max-9",
+      "ruger max 9",
+      "max 9 pistol",
+      "micro compact 9mm",
+      "concealed carry pistol",
+      "optics ready subcompact",
+      "12 round micro compact",
+      "ruger ccw",
+      "best value ccw"
+    ],
+    ballisticData: {
+      effectiveRange: "25 yards",
+      maxRange: "1,500 yards",
+      muzzleVelocity: "1,125 fps (124gr)",
+      muzzleEnergy: "349 ft-lbs",
+      accuracy: "3 inch groups at 15 yards"
+    }
   },
   {
     id: "walther-pps",
