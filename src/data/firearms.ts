@@ -10528,7 +10528,63 @@ export const firearms: Firearm[] = [
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "38 oz",
-    finish: "Armor-Tuff Black"
+    finish: "Armor-Tuff Black",
+    shortDescription: "The Wilson Combat CQB Elite represents the pinnacle of custom 1911 craftsmanship. Hand-fitted by master gunsmiths using proprietary components, delivering accuracy and reliability that defines the ultimate fighting pistol.",
+    longDescription: "The Wilson Combat CQB (Close Quarter Battle) Elite stands at the apex of 1911 development - a hand-built custom pistol that represents everything a 1911 should be after 40+ years of refinement by America's premier custom 1911 manufacturer. Founded by legendary pistolsmith Bill Wilson in 1977, Wilson Combat earned its reputation building 1911 pistols for serious professionals who stake their lives on reliability. The company's customer list reads like a who's who of special operations forces, federal agencies, and competitive shooting champions. The CQB Elite begins its life as forged steel components that are precision-machined in Wilson's Arkansas facility. Every critical dimension is held to tolerances measured in ten-thousandths of an inch. The match-grade stainless steel barrel features Wilson's proprietary chamber design and is hand-fitted to the slide with zero play. The barrel bushing receives the same hand-fitting attention, creating lockup so tight you can feel the precision when cycling the slide. This obsessive attention to fit translates to accuracy that makes production guns weep - most CQB Elites will shoot 1.5-inch groups at 25 yards with quality ammunition, and many shoot considerably better. The trigger is a masterpiece of the gunsmith's art. Wilson's trigger system features wire EDM-cut components with engagement surfaces ground to exacting specifications. The result is a crisp, clean break between 3.5-4 pounds with zero creep, minimal take-up, and a reset so short and positive you can feel exactly when the sear re-engages. Professional shooters and serious enthusiasts universally praise Wilson triggers as the finest available. The CQB Elite incorporates Wilson's Battlesight with Tritium front sight and tactical rear sight with aggressive U-notch for rapid sight acquisition. The extended thumb safety, beavertail grip safety, and magazine release are all precision-fitted and tuned for positive operation without being overly stiff. The front strap receives 30 LPI checkering for secure purchase. Wilson's Armor-Tuff finish provides corrosion resistance far exceeding traditional bluing or hard chrome while maintaining the subdued appearance professionals demand. G10 Starburst grips provide aggressive texture without sharpness. Every Wilson Combat pistol undergoes a 27-point inspection before shipping and comes with a lifetime warranty backed by a company known for standing behind its products. For discriminating shooters who understand that true custom quality requires master craftsmanship, the CQB Elite delivers performance worth every penny of its premium price.",
+    features: [
+      "Hand-fitted by master gunsmiths to tolerances measured in ten-thousandths",
+      "Match-grade stainless barrel with proprietary Wilson chamber design",
+      "Wire EDM-cut trigger components with precision-ground engagement surfaces",
+      "Trigger breaks at 3.5-4 lbs with zero creep and minimal take-up",
+      "Battlesight Tritium front sight with tactical U-notch rear",
+      "Forged steel frame and slide machined to Wilson's exacting standards",
+      "Precision barrel bushing hand-fitted for zero play",
+      "Extended controls - thumb safety, slide stop, magazine release",
+      "30 LPI front strap checkering for secure grip",
+      "Armor-Tuff finish provides superior corrosion protection"
+    ],
+    benefits: [
+      "Wilson Combat's 40+ years of custom 1911 expertise in every pistol",
+      "Hand-built quality impossible to achieve with production methods",
+      "Accuracy rivals custom guns costing significantly more",
+      "Lifetime warranty backed by company known for customer service",
+      "Trusted by special operations forces and federal agencies",
+      "Investment-grade custom pistol that appreciates over time"
+    ],
+    useCases: [
+      "Professional defensive carry for those demanding ultimate reliability",
+      "IDPA and USPSA competition at the highest levels",
+      "Serious tactical training and instruction",
+      "Collection centerpiece representing the ultimate 1911",
+      "Heirloom firearm built to last generations",
+      "Home defense with proven custom quality"
+    ],
+    technicalDetails: "The Wilson Combat CQB Elite features a match-grade stainless steel barrel manufactured with Wilson's proprietary chamber design and hand-fitted to the slide with zero play. The barrel bushing is also hand-fitted for exceptional lockup. The barrel is throated and polished for reliable feeding with all bullet profiles. The slide and frame are forged from carbon steel and machined to tolerances of +/- 0.0005 inches. The trigger system uses wire EDM-cut components with engagement surfaces ground to precise angles, delivering 3.5-4 pound break with zero creep. The hammer and sear are precision-matched for consistent engagement. The extended thumb safety is hand-fitted to the frame and tuned for positive engagement. The beavertail grip safety features Wilson's high-ride design and is hand-fitted to eliminate rattle while ensuring reliable activation. The magazine well is beveled for rapid reloading. The Battlesight features a Tritium insert in the front sight and tactical U-notch rear for rapid acquisition. The front strap is checkered at 30 LPI. G10 Starburst grips provide aggressive texture. Armor-Tuff finish is applied over bead-blasted steel. Ships with two 8-round Elite Tactical magazines. Overall length 8.7 inches. Every pistol undergoes 27-point quality inspection including function testing and accuracy verification. Lifetime warranty with legendary Wilson Combat customer service.",
+    whyChoose: "Choose the Wilson Combat CQB Elite when you refuse to compromise and understand the difference between production guns and true custom quality. Wilson Combat's reputation isn't built on marketing - it's earned through four decades of building 1911 pistols for the world's most elite military units, federal agents, and competitive champions who literally bet their lives on reliability. The CQB Elite represents the accumulated knowledge of tens of thousands of custom builds, with every lesson learned incorporated into each pistol. While $3,795 seems expensive compared to production guns, consider what you're actually getting: hand-fitted match-grade barrel and bushing, wire EDM-cut trigger components ground to exacting specifications, precision-machined forged steel components held to tolerances production guns cannot achieve, and the craftsmanship of master gunsmiths who've dedicated their careers to perfecting the 1911. This isn't assembly-line production - it's genuine custom gunsmithing that takes time, skill, and experience. The CQB Elite's accuracy, reliability, and trigger quality will spoil you for lesser guns. For serious professionals, accomplished competitors, and discerning collectors who understand that exceptional quality costs more but delivers performance that justifies the investment, the Wilson Combat CQB Elite represents the finest fighting 1911 money can buy. This is the 1911 that sets the standard by which all others are judged.",
+    seoKeywords: [
+      "wilson combat cqb elite",
+      "custom 1911 pistol",
+      "wilson combat 1911",
+      "hand fitted 1911",
+      "best custom 1911",
+      "wilson combat for sale",
+      "cqb elite price",
+      "premium 1911 pistol",
+      "tactical 1911 custom",
+      "wilson combat review",
+      "professional 1911",
+      "competition 1911",
+      "custom 45 acp",
+      "wilson combat firearms",
+      "ultimate fighting pistol"
+    ],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      maxRange: "1,800 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "1.5 inch groups or better at 25 yards"
+    }
   },
   {
     id: "rock-island-gi",
