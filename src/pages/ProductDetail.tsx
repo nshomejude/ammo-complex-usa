@@ -278,7 +278,7 @@ const ProductDetail = () => {
           </Button>
         </nav>
 
-        <article className="grid gap-2 lg:gap-3 lg:grid-cols-2 mb-8">
+        <article className="grid gap-0.5 lg:gap-1 lg:grid-cols-2 mb-8">
           {/* Left Column - Product Image and Desktop-only sections */}
           <div>
             <Card className="overflow-hidden max-w-md mx-auto lg:mx-0">
