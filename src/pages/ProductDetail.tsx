@@ -18,6 +18,7 @@ import { ShippingCalculator } from "@/components/ShippingCalculator";
 import { useCart } from "@/hooks/useCart";
 import { generateProductLoadDataPDF } from "@/utils/pdfGenerator";
 import { firearms } from "@/data/firearms";
+import { ProductReviews } from "@/components/reviews/ProductReviews";
 
 const ProductDetail = () => {
   // Add variations to all products
@@ -917,6 +918,11 @@ const ProductDetail = () => {
 
       <main className="container mx-auto px-4 py-8">
         
+        {/* Reviews Section */}
+        <section className="mb-12">
+          <ProductReviews productId={product.id} productType="product" />
+        </section>
+
         {/* Why Buy From Us Section */}
         <WhyBuyFromUs />
 
