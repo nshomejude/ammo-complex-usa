@@ -89,6 +89,67 @@ const ProductDetail = () => {
     toast.success('Load data sheet downloaded successfully');
   };
 
+  // Extract sections for reuse in desktop/mobile layouts
+  const whyChooseSection = product.whyChoose && (
+    <Alert className="border-destructive bg-destructive/10">
+      <Award className="h-5 w-5 text-destructive" />
+      <AlertTitle className="text-base font-bold text-destructive">Why Choose This Ammunition</AlertTitle>
+      <AlertDescription className="text-sm mt-2 leading-relaxed line-clamp-3">
+        {product.whyChoose}
+      </AlertDescription>
+    </Alert>
+  );
+
+  const legalRequirementsSection = (
+    <Alert className="border-destructive bg-destructive/10">
+      <AlertCircle className="h-4 w-4 text-destructive" />
+      <AlertTitle className="text-destructive">Legal Purchase Requirements</AlertTitle>
+      <AlertDescription className="text-sm">
+        You must be 18+ for rifle/shotgun ammunition and 21+ for handgun ammunition. 
+        Valid ID and compliance with all federal, state, and local laws required.
+      </AlertDescription>
+    </Alert>
+  );
+
+  const professionalToolsSection = (
+    <Card className="border-primary/30 bg-primary/5">
+      <CardHeader>
+        <CardTitle className="text-lg flex items-center gap-2">
+          <Zap className="h-5 w-5 text-primary" />
+          Professional Tools
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3">
+        <Button
+          variant="outline"
+          className="w-full justify-start"
+          onClick={handleDownloadLoadData}
+        >
+          <Download className="mr-2 h-4 w-4" />
+          Download Load Data Sheet
+        </Button>
+        <Link to={`/ballistic-calculator?caliber=${encodeURIComponent(product.caliber)}`}>
+          <Button
+            variant="outline"
+            className="w-full justify-start"
+          >
+            <Calculator className="mr-2 h-4 w-4" />
+            Calculate Ballistics for {product.caliber}
+          </Button>
+        </Link>
+        <Link to="/reloading-guide">
+          <Button
+            variant="outline"
+            className="w-full justify-start"
+          >
+            <BookOpen className="mr-2 h-4 w-4" />
+            View Reloading Guide
+          </Button>
+        </Link>
+      </CardContent>
+    </Card>
+  );
+
   // SEO: Update document title and meta tags
   useEffect(() => {
     document.title = `${product.name} - ${product.caliber} ${product.rounds} Rounds | Arms Complex`;
@@ -207,15 +268,24 @@ const ProductDetail = () => {
         </nav>
 
         <article className="grid gap-8 lg:grid-cols-2 mb-12">
-          {/* Product Image/Placeholder */}
-          <Card className="overflow-hidden">
-            <div className="aspect-square bg-secondary flex items-center justify-center p-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-tactical mb-2">{product.caliber}</div>
-                <div className="text-base text-muted-foreground">{product.rounds} Rounds</div>
+          {/* Left Column - Product Image and Desktop-only sections */}
+          <div>
+            <Card className="overflow-hidden">
+              <div className="aspect-square bg-secondary flex items-center justify-center p-8">
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-tactical mb-2">{product.caliber}</div>
+                  <div className="text-base text-muted-foreground">{product.rounds} Rounds</div>
+                </div>
               </div>
+            </Card>
+
+            {/* Desktop only - sections under image */}
+            <div className="hidden lg:block space-y-6 mt-6">
+              {whyChooseSection}
+              {legalRequirementsSection}
+              {professionalToolsSection}
             </div>
-          </Card>
+          </div>
 
           {/* Product Info */}
           <div className="space-y-6" itemScope itemType="https://schema.org/Product">
@@ -237,15 +307,10 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            {product.whyChoose && (
-              <Alert className="border-destructive bg-destructive/10">
-                <Award className="h-5 w-5 text-destructive" />
-                <AlertTitle className="text-base font-bold text-destructive">Why Choose This Ammunition</AlertTitle>
-                <AlertDescription className="text-sm mt-2 leading-relaxed line-clamp-3">
-                  {product.whyChoose}
-                </AlertDescription>
-              </Alert>
-            )}
+            {/* Mobile/Tablet only - Why Choose section */}
+            <div className="lg:hidden">
+              {whyChooseSection}
+            </div>
 
             <div className="flex items-center gap-3">
               {product.inStock ? (
@@ -349,53 +414,11 @@ const ProductDetail = () => {
               </CardContent>
             </Card>
 
-            {/* Legal Notice */}
-            <Alert className="border-destructive bg-destructive/10">
-              <AlertCircle className="h-4 w-4 text-destructive" />
-              <AlertTitle className="text-destructive">Legal Purchase Requirements</AlertTitle>
-              <AlertDescription className="text-sm">
-                You must be 18+ for rifle/shotgun ammunition and 21+ for handgun ammunition. 
-                Valid ID and compliance with all federal, state, and local laws required.
-              </AlertDescription>
-            </Alert>
-
-            {/* Quick Actions */}
-            <Card className="border-primary/30 bg-primary/5">
-              <CardHeader>
-                <CardTitle className="text-lg flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-primary" />
-                  Professional Tools
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <Button
-                  variant="outline"
-                  className="w-full justify-start"
-                  onClick={handleDownloadLoadData}
-                >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Load Data Sheet
-                </Button>
-                <Link to={`/ballistic-calculator?caliber=${encodeURIComponent(product.caliber)}`}>
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start"
-                  >
-                    <Calculator className="mr-2 h-4 w-4" />
-                    Calculate Ballistics for {product.caliber}
-                  </Button>
-                </Link>
-                <Link to="/reloading-guide">
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start"
-                  >
-                    <BookOpen className="mr-2 h-4 w-4" />
-                    View Reloading Guide
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            {/* Mobile/Tablet only - Legal Requirements and Professional Tools */}
+            <div className="lg:hidden space-y-6">
+              {legalRequirementsSection}
+              {professionalToolsSection}
+            </div>
           </div>
         </article>
 
