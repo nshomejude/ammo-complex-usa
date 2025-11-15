@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { firearms as rawFirearms } from "@/data/firearms";
 import { addFirearmVariations } from "@/utils/addDefaultVariations";
 import { firearmCategories } from "@/data/firearmCategories";
-import { Search, Filter, Shield } from "lucide-react";
+import { Search, Filter, Shield, LayoutGrid, Rows } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
@@ -25,6 +25,10 @@ const Firearms = () => {
   const [stockFilter, setStockFilter] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 20;
+  const [viewMode, setViewMode] = useState<"single" | "double">(() => {
+    const saved = localStorage.getItem("firearmViewMode");
+    return (saved === "single" || saved === "double") ? saved : "double";
+  });
 
   // Advanced filters
   const [filters, setFilters] = useState({
@@ -32,6 +36,12 @@ const Firearms = () => {
     selectedBrands: [] as string[],
     stockStatus: "all" as "all" | "inStock" | "outOfStock"
   });
+
+  const toggleViewMode = () => {
+    const newMode = viewMode === "double" ? "single" : "double";
+    setViewMode(newMode);
+    localStorage.setItem("firearmViewMode", newMode);
+  };
 
   // Get unique manufacturers from firearms
   const availableManufacturers = Array.from(new Set(firearms.map(f => f.manufacturer))).sort();
@@ -147,33 +157,45 @@ const Firearms = () => {
               />
             </div>
             
-            <Select value={categoryFilter} onValueChange={(value) => {
-              setCategoryFilter(value);
-              setCurrentPage(1);
-            }}>
-              <SelectTrigger className="h-10 sm:h-11">
-                <Filter className="mr-2 h-4 w-4" />
-                <SelectValue placeholder="Category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Categories</SelectItem>
-                {firearmCategories.map(cat => (
-                  <SelectItem key={cat.id} value={cat.slug}>{cat.name}</SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <div className="flex gap-2 lg:col-span-2">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={toggleViewMode}
+                className="sm:hidden h-10 w-10 flex-shrink-0"
+                aria-label="Toggle view mode"
+              >
+                {viewMode === "double" ? <Rows className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
+              </Button>
 
-            <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger className="h-10 sm:h-11">
-                <SelectValue placeholder="Sort by" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="name">Name (A-Z)</SelectItem>
-                <SelectItem value="price-low">Price (Low to High)</SelectItem>
-                <SelectItem value="price-high">Price (High to Low)</SelectItem>
-                <SelectItem value="manufacturer">Manufacturer</SelectItem>
-              </SelectContent>
-            </Select>
+              <Select value={categoryFilter} onValueChange={(value) => {
+                setCategoryFilter(value);
+                setCurrentPage(1);
+              }}>
+                <SelectTrigger className="h-10 sm:h-11 flex-1">
+                  <Filter className="mr-2 h-4 w-4" />
+                  <SelectValue placeholder="Category" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Categories</SelectItem>
+                  {firearmCategories.map(cat => (
+                    <SelectItem key={cat.id} value={cat.slug}>{cat.name}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+
+              <Select value={sortBy} onValueChange={setSortBy}>
+                <SelectTrigger className="h-10 sm:h-11 flex-1">
+                  <SelectValue placeholder="Sort by" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="name">Name (A-Z)</SelectItem>
+                  <SelectItem value="price-low">Price (Low to High)</SelectItem>
+                  <SelectItem value="price-high">Price (High to Low)</SelectItem>
+                  <SelectItem value="manufacturer">Manufacturer</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-4 sm:mb-6">
@@ -238,7 +260,9 @@ const Firearms = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+            <div className={`grid gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 ${
+              viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
+            }`}>
               {paginatedFirearms.map((firearm) => (
                 <FirearmCard 
                   key={firearm.id} 

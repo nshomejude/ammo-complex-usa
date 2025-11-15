@@ -3,14 +3,25 @@ import { Footer } from "@/components/Footer";
 import { FirearmCategoryCard } from "@/components/FirearmCategoryCard";
 import { firearmCategories } from "@/data/firearmCategories";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertCircle, Shield } from "lucide-react";
+import { AlertCircle, Shield, LayoutGrid, Rows } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const FirearmCategories = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterType, setFilterType] = useState("all");
+  const [viewMode, setViewMode] = useState<"single" | "double">(() => {
+    const saved = localStorage.getItem("firearmCategoryViewMode");
+    return (saved === "single" || saved === "double") ? saved : "double";
+  });
+
+  const toggleViewMode = () => {
+    const newMode = viewMode === "double" ? "single" : "double";
+    setViewMode(newMode);
+    localStorage.setItem("firearmCategoryViewMode", newMode);
+  };
 
   const filteredCategories = firearmCategories.filter(category => {
     const matchesSearch = category.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -49,26 +60,38 @@ const FirearmCategories = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <div className="mb-6 sm:mb-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
           <Input
             placeholder="Search firearm categories..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="sm:flex-1"
+            className="flex-1"
           />
           
-          <Select value={filterType} onValueChange={setFilterType}>
-            <SelectTrigger className="w-full sm:w-[200px]">
-              <SelectValue placeholder="Filter by type" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Categories</SelectItem>
-              <SelectItem value="trending">Trending Only</SelectItem>
-              <SelectItem value="pistol">Pistols & Revolvers</SelectItem>
-              <SelectItem value="rifle">Rifles</SelectItem>
-              <SelectItem value="shotgun">Shotguns</SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={toggleViewMode}
+              className="sm:hidden h-10 w-10"
+              aria-label="Toggle view mode"
+            >
+              {viewMode === "double" ? <Rows className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
+            </Button>
+
+            <Select value={filterType} onValueChange={setFilterType}>
+              <SelectTrigger className="w-full sm:w-[200px]">
+                <SelectValue placeholder="Filter by type" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Categories</SelectItem>
+                <SelectItem value="trending">Trending Only</SelectItem>
+                <SelectItem value="pistol">Pistols & Revolvers</SelectItem>
+                <SelectItem value="rifle">Rifles</SelectItem>
+                <SelectItem value="shotgun">Shotguns</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         <div className="mb-4 sm:mb-6">
@@ -78,7 +101,9 @@ const FirearmCategories = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+        <div className={`grid gap-4 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4 ${
+          viewMode === "single" ? "grid-cols-1" : "grid-cols-2 sm:grid-cols-2"
+        }`}>
           {filteredCategories.map((category) => (
             <FirearmCategoryCard key={category.id} {...category} />
           ))}
