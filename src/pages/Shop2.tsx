@@ -117,16 +117,16 @@ export default function Shop2() {
           />
 
           {/* Main Content */}
-          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-4 sm:p-6">
             <div className="max-w-6xl mx-auto">
               {/* Header */}
-              <div className="mb-6 md:mb-8">
+              <div className="mb-4 md:mb-6">
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">Premium Shop</h1>
                 <p className="text-sm md:text-base text-muted-foreground">Clean minimal dark layout with large product cards</p>
               </div>
 
               {/* Search and Sort */}
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4 md:mb-6">
                 <div className="relative flex-1">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
                   <Input
@@ -162,7 +162,7 @@ export default function Shop2() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
+              <div className={`grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
                 viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
               }`}>
                 {filteredProducts.map((product) => (
@@ -182,7 +182,7 @@ export default function Shop2() {
               </div>
 
               {filteredProducts.length === 0 && (
-                <div className="text-center py-12 md:py-16 col-span-2 md:col-span-3 lg:col-span-4">
+                <div className="text-center py-8 md:py-12 col-span-2 md:col-span-3 lg:col-span-4">
                   <p className="text-muted-foreground text-base md:text-lg">No products found matching your criteria.</p>
                 </div>
               )}

@@ -160,8 +160,8 @@ const FirearmCategoryPage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-8 border-destructive bg-destructive/10">
+      <section className="container mx-auto px-4 py-4 sm:py-6">
+        <Alert className="mb-4 border-destructive bg-destructive/10">
           <AlertCircle className="h-4 w-4 text-destructive" />
           <AlertTitle className="text-destructive">FFL Transfer Required</AlertTitle>
           <AlertDescription>
@@ -169,9 +169,9 @@ const FirearmCategoryPage = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="mb-8">
+        <div className="mb-6">
           {category && Icon && (
-            <div className="flex items-start gap-4 mb-6">
+            <div className="flex items-start gap-4 mb-4">
               <div className="p-4 rounded-full bg-tactical/10">
                 <Icon className="h-12 w-12 text-tactical" />
               </div>
@@ -211,7 +211,7 @@ const FirearmCategoryPage = () => {
             </div>
           )}
 
-          <div className="flex flex-col md:flex-row gap-4 mb-6">
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input
@@ -301,7 +301,7 @@ const FirearmCategoryPage = () => {
           )}
         </div>
 
-        <div className="flex gap-6">
+        <div className="flex gap-4 sm:gap-6">
           {/* Filter Sidebar */}
           {showFilters && (
             <aside className="w-72 flex-shrink-0">
@@ -411,10 +411,10 @@ const FirearmCategoryPage = () => {
           <div className="flex-1">
             {filteredFirearms.length > 0 ? (
               <>
-                <p className="text-sm text-muted-foreground mb-6">
+                <p className="text-sm text-muted-foreground mb-4">
                   Showing {filteredFirearms.length} {filteredFirearms.length === 1 ? 'firearm' : 'firearms'}
                 </p>
-                <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-3 grid-cols-2">
+                <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-3 grid-cols-2">
                   {filteredFirearms.map((firearm) => (
                     <FirearmCard 
                       key={firearm.id} 
@@ -429,8 +429,8 @@ const FirearmCategoryPage = () => {
                 </div>
               </>
             ) : (
-              <div className="text-center py-16">
-                <p className="text-muted-foreground text-lg mb-4">No firearms found matching your criteria.</p>
+              <div className="text-center py-8 sm:py-12">
+                <p className="text-muted-foreground text-base sm:text-lg mb-3 sm:mb-4">No firearms found matching your criteria.</p>
                 <Button variant="outline" onClick={clearFilters}>
                   Clear Filters
                 </Button>

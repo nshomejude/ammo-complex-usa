@@ -40,8 +40,8 @@ const FirearmCategories = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
-        <div className="mb-6 sm:mb-8">
+      <main className="container mx-auto px-3 sm:px-4 py-4 sm:py-6">
+        <div className="mb-4 sm:mb-6">
           <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
             <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-tactical" />
             <div>
@@ -51,7 +51,7 @@ const FirearmCategories = () => {
           </div>
         </div>
 
-        <Alert className="mb-6 sm:mb-8 border-destructive bg-destructive/10">
+        <Alert className="mb-4 sm:mb-6 border-destructive bg-destructive/10">
           <AlertCircle className="h-4 w-4 text-destructive" />
           <AlertTitle className="text-sm sm:text-base text-destructive">Information Notice</AlertTitle>
           <AlertDescription className="text-xs sm:text-sm">
@@ -60,7 +60,7 @@ const FirearmCategories = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="mb-6 sm:mb-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
+        <div className="mb-4 sm:mb-6 flex flex-col gap-3 sm:flex-row sm:gap-4">
           <Input
             placeholder="Search firearm categories..."
             value={searchQuery}
@@ -101,7 +101,7 @@ const FirearmCategories = () => {
           </p>
         </div>
 
-        <div className={`grid gap-4 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4 ${
+        <div className={`grid gap-4 lg:grid-cols-3 xl:grid-cols-4 ${
           viewMode === "single" ? "grid-cols-1" : "grid-cols-2 sm:grid-cols-2"
         }`}>
           {filteredCategories.map((category) => (
