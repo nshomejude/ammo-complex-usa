@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "sonner";
+import { contactConfig } from "@/config/theme";
 
 export const ContactWidget3 = () => {
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -18,20 +19,20 @@ export const ContactWidget3 = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@armscomplex.com",
-      link: "mailto:contact@armscomplex.com"
+      value: contactConfig.email,
+      link: contactConfig.emailLink
     },
     {
       icon: MessageSquare,
       label: "Telegram",
-      value: "@armscomplex",
-      link: "https://t.me/armscomplex"
+      value: contactConfig.telegram,
+      link: contactConfig.telegramLink
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (234) 567-890",
-      link: "tel:+1234567890"
+      value: contactConfig.phone,
+      link: contactConfig.phoneLink
     },
     {
       icon: MessageCircle,

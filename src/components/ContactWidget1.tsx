@@ -1,6 +1,7 @@
 import { Mail, MessageSquare, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { contactConfig } from "@/config/theme";
 
 export const ContactWidget1 = () => {
   return (
@@ -13,8 +14,8 @@ export const ContactWidget1 = () => {
             <Mail className="h-5 w-5 text-primary mt-0.5" />
             <div>
               <p className="text-sm font-medium">Email</p>
-              <a href="mailto:contact@armscomplex.com" className="text-sm text-muted-foreground hover:text-primary">
-                contact@armscomplex.com
+              <a href={contactConfig.emailLink} className="text-sm text-muted-foreground hover:text-primary">
+                {contactConfig.email}
               </a>
             </div>
           </div>
@@ -23,8 +24,8 @@ export const ContactWidget1 = () => {
             <MessageSquare className="h-5 w-5 text-primary mt-0.5" />
             <div>
               <p className="text-sm font-medium">Telegram</p>
-              <a href="https://t.me/armscomplex" className="text-sm text-muted-foreground hover:text-primary">
-                @armscomplex
+              <a href={contactConfig.telegramLink} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary">
+                {contactConfig.telegram}
               </a>
             </div>
           </div>
@@ -33,8 +34,8 @@ export const ContactWidget1 = () => {
             <Phone className="h-5 w-5 text-primary mt-0.5" />
             <div>
               <p className="text-sm font-medium">Phone</p>
-              <a href="tel:+1234567890" className="text-sm text-muted-foreground hover:text-primary">
-                +1 (234) 567-890
+              <a href={contactConfig.phoneLink} className="text-sm text-muted-foreground hover:text-primary">
+                {contactConfig.phone}
               </a>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { Mail, MessageSquare, Phone, MessageCircle, Shield, Key } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { contactConfig } from "@/config/theme";
 
 export const ContactWidget2 = () => {
   return (
@@ -12,7 +13,7 @@ export const ContactWidget2 = () => {
             <Mail className="h-5 w-5 text-primary flex-shrink-0" />
             <div className="min-w-0">
               <p className="text-xs font-medium text-muted-foreground">Email</p>
-              <p className="text-sm font-mono truncate">contact@armscomplex.com</p>
+              <p className="text-sm font-mono truncate">{contactConfig.email}</p>
             </div>
           </div>
           
@@ -20,7 +21,7 @@ export const ContactWidget2 = () => {
             <MessageSquare className="h-5 w-5 text-primary flex-shrink-0" />
             <div className="min-w-0">
               <p className="text-xs font-medium text-muted-foreground">Telegram</p>
-              <p className="text-sm font-mono truncate">@armscomplex</p>
+              <p className="text-sm font-mono truncate">{contactConfig.telegram}</p>
             </div>
           </div>
           
@@ -28,7 +29,7 @@ export const ContactWidget2 = () => {
             <Phone className="h-5 w-5 text-primary flex-shrink-0" />
             <div className="min-w-0">
               <p className="text-xs font-medium text-muted-foreground">Phone</p>
-              <p className="text-sm font-mono">+1 (234) 567-890</p>
+              <p className="text-sm font-mono">{contactConfig.phone}</p>
             </div>
           </div>
           

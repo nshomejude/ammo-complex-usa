@@ -43,6 +43,19 @@ All colors MUST be HSL.
     
     --warning: 45 93% 47%;
     --warning-foreground: 0 0% 10%;
+
+    /* Contact Information - Edit these values to update site-wide contact details */
+    --contact-phone: "+1 (555) FIREARMS";
+    --contact-phone-link: "+1-555-FIREARMS";
+    --contact-email: "info@armscomplex.com";
+    --contact-telegram: "@armscomplex";
+    --contact-telegram-link: "https://t.me/armscomplex";
+    
+    /* Notice Colors - Edit these to change notice appearance */
+    --notice-border: 0 84% 60%;
+    --notice-bg: 0 84% 60%;
+    --notice-text: 0 0% 98%;
+    --notice-icon: 0 84% 60%;
   }
 }
 

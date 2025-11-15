@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle, Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import { contactConfig } from "@/config/theme";
 
 interface ContactWidgetProps {
   variant?: "default" | "compact" | "sidebar";
@@ -28,31 +29,31 @@ export const ContactWidget = ({ variant = "default", className = "" }: ContactWi
         </p>
         <div className="space-y-3">
           <a 
-            href="tel:+1-555-FIREARMS" 
+            href={contactConfig.phoneLink} 
             className={`flex items-center gap-3 ${isCompact || isSidebar ? "text-xs" : "text-sm"} hover:text-tactical transition-colors group`}
           >
             <div className={`flex items-center justify-center ${isCompact || isSidebar ? "h-8 w-8" : "h-10 w-10"} rounded-lg bg-tactical/10 group-hover:bg-tactical/20 transition-colors`}>
               <Phone className={`${isCompact || isSidebar ? "h-3.5 w-3.5" : "h-4 w-4"} text-tactical`} />
             </div>
             <div>
-              <p className="font-medium">+1 (555) FIREARMS</p>
+              <p className="font-medium">{contactConfig.phone}</p>
               {!isCompact && !isSidebar && <p className="text-xs text-muted-foreground">Mon-Fri: 9AM-6PM EST</p>}
             </div>
           </a>
           <a 
-            href="mailto:info@armscomplex.com" 
+            href={contactConfig.emailLink} 
             className={`flex items-center gap-3 ${isCompact || isSidebar ? "text-xs" : "text-sm"} hover:text-tactical transition-colors group`}
           >
             <div className={`flex items-center justify-center ${isCompact || isSidebar ? "h-8 w-8" : "h-10 w-10"} rounded-lg bg-tactical/10 group-hover:bg-tactical/20 transition-colors`}>
               <Mail className={`${isCompact || isSidebar ? "h-3.5 w-3.5" : "h-4 w-4"} text-tactical`} />
             </div>
             <div>
-              <p className="font-medium">info@armscomplex.com</p>
+              <p className="font-medium">{contactConfig.email}</p>
               {!isCompact && !isSidebar && <p className="text-xs text-muted-foreground">Response within 24 hours</p>}
             </div>
           </a>
           <a 
-            href="https://t.me/armscomplex" 
+            href={contactConfig.telegramLink} 
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center gap-3 ${isCompact || isSidebar ? "text-xs" : "text-sm"} hover:text-tactical transition-colors group`}
@@ -61,7 +62,7 @@ export const ContactWidget = ({ variant = "default", className = "" }: ContactWi
               <Send className={`${isCompact || isSidebar ? "h-3.5 w-3.5" : "h-4 w-4"} text-tactical`} />
             </div>
             <div>
-              <p className="font-medium">@armscomplex</p>
+              <p className="font-medium">{contactConfig.telegram}</p>
               {!isCompact && !isSidebar && <p className="text-xs text-muted-foreground">Instant messaging</p>}
             </div>
           </a>
