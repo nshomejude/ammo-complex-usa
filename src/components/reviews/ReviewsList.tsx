@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 import { StarRating } from "./StarRating";
 import { supabase } from "@/integrations/supabase/client";
 import { formatDistanceToNow } from "date-fns";
 import { User, ThumbsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 
 interface Review {
   id: string;
@@ -17,7 +17,8 @@ interface Review {
   helpful_count: number;
   verified_purchase: boolean;
   created_at: string;
-  profiles: {
+  user_id: string;
+  profiles?: {
     username: string | null;
   } | null;
 }
@@ -41,19 +42,30 @@ export const ReviewsList = ({ productId, productType = 'product', refreshTrigger
     try {
       const { data, error } = await supabase
         .from('reviews')
-        .select(`
-          *,
-          profiles (
-            username
-          )
-        `)
+        .select('*')
         .eq('product_id', productId)
         .eq('product_type', productType)
         .order('created_at', { ascending: false });
 
       if (error) throw error;
 
-      setReviews(data || []);
+      // Fetch profiles separately
+      const reviewsWithProfiles = await Promise.all(
+        (data || []).map(async (review) => {
+          const { data: profileData } = await supabase
+            .from('profiles')
+            .select('username')
+            .eq('id', review.user_id)
+            .single();
+          
+          return {
+            ...review,
+            profiles: profileData
+          };
+        })
+      );
+
+      setReviews(reviewsWithProfiles);
       
       // Calculate average rating
       if (data && data.length > 0) {
