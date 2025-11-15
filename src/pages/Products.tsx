@@ -225,7 +225,7 @@ const Products = () => {
         </div>
 
         <section aria-label="Product listing">
-          <div className={`grid gap-3 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 ${
+          <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
             viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
           }`}>
             {filteredProducts.map((product) => (

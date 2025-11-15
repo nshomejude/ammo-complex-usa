@@ -115,7 +115,7 @@ export default function Shop8() {
           />
 
           {/* Main Content */}
-          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6">
             <div className="max-w-6xl mx-auto">
               {/* Modern Header with AJAX Badge */}
               <div className="mb-10 relative">
@@ -174,7 +174,7 @@ export default function Shop8() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className={`grid gap-3 md:gap-4 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
+              <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
                 viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
               }`}>
                 {filteredProducts.map((product, index) => (

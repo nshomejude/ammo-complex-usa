@@ -127,7 +127,7 @@ export default function Shop11() {
           </Collapsible>
 
           {/* Main Content */}
-          <main className={`flex-1 w-full overflow-x-hidden p-6 lg:p-8 ${showFilters ? 'lg:max-w-[calc(100%-280px)]' : ''}`}>
+          <main className={`flex-1 w-full overflow-x-hidden p-6 ${showFilters ? 'lg:max-w-[calc(100%-280px)]' : ''}`}>
             <div className="max-w-6xl mx-auto">
               {/* Ultimate Header */}
               <div className="mb-10">
@@ -246,7 +246,7 @@ export default function Shop11() {
               )}
 
               {/* Products Grid - Responsive ultimate layout */}
-              <div className={`grid gap-3 md:gap-4 lg:gap-6 ${
+              <div className={`grid gap-6 ${
                 showFilters 
                   ? viewMode === "single" ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
                   : viewMode === "single" ? "grid-cols-1 md:grid-cols-3 lg:grid-cols-4" : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
