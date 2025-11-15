@@ -5483,30 +5483,106 @@ export const firearms: Firearm[] = [
     name: "870 Express",
     manufacturer: "Remington",
     categorySlug: "pump-shotguns",
-    caliber: ["12 GA"],
+    caliber: ["12 GA", "20 GA"],
     price: 449,
     inStock: true,
-    description: "America's best-selling pump shotgun with proven reliability.",
+    description: "America's best-selling shotgun with over 11 million produced. The unrivaled standard for pump-action reliability trusted by hunters, law enforcement, and homeowners worldwide.",
     actionType: "Pump-Action",
     capacity: "4+1",
     barrelLength: "28 inches",
     weight: "7.5 lbs",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Remington 870 stands as the most successful shotgun in American history with over 11 million sold since 1950. Legendary reliability, unmatched versatility, and proven performance define this iconic pump-action.",
+    longDescription: "The Remington Model 870 represents more than just a shotgun - it embodies 70+ years of American firearms heritage and stands as the best-selling shotgun in history. Introduced in 1950 to replace Remington's Model 31, the 870 was designed to be the ultimate pump-action shotgun: reliable enough for daily use, affordable enough for average Americans, and versatile enough for any shotgunning task. Over 11 million 870s later, Remington achieved exactly that vision. The 870's dominance stems from its ingenious simplicity combined with manufacturing excellence. Chief designer L. Ray Crittendon and his team created an action that uses just three basic parts - the bolt, slide assembly, and action bars. This elegant simplicity means fewer parts to break, easier cleaning, and enhanced reliability. The twin action bars - one on each side of the magazine tube - provide perfectly balanced pump stroke and prevent binding even under hard use. Many economy shotguns use single action bars that can twist or bind, but the 870's dual-bar design ensures smooth operation in any conditions. The 870's receiver is machined from a solid steel billet, providing exceptional strength and rigidity. This steel construction, combined with Remington's precision machining, creates a platform that maintains tight lockup even after tens of thousands of rounds. Many 870s serving police departments have cycled hundreds of thousands of rounds while maintaining function - a testament to the basic design's inherent strength. The bolt locks directly into the barrel extension with interrupted threads providing massive bearing surface and strength far exceeding 12-gauge pressure requirements. The Express model represents the value-oriented 870 configuration featuring matte-finished metal, hardwood or synthetic stock, and basic sights. While the Express lacks the polished finish and fancy woodwork of Wingmaster models, it delivers identical mechanical reliability and function at prices accessible to budget-conscious buyers. The Express proves you don't need premium finishes to get premium performance - the same fundamental 870 reliability serves regardless of surface treatment. The 870's action operates with mechanical precision. The pump stroke is smooth and positive, requiring no conscious thought after minimal practice. The slide release is perfectly positioned for the trigger finger, allowing rapid chambering without shifting the grip. The crossbolt safety behind the trigger provides intuitive operation and works equally well for right or left-handed shooters. The action locks solid when closed, providing confidence in the gun's readiness. The 870's versatility defines its enduring success. The barrel interchanges via a magazine cap, allowing the same receiver to serve as bird gun, deer rifle, home defender, or tactical shotgun by simply swapping barrels. A hunter can use a 28-inch ventilated rib barrel with screw-in chokes for waterfowl, then switch to an 18.5-inch cylinder bore barrel for home defense. This modularity means one 870 can fill multiple roles that would require separate firearms in other platforms. The aftermarket support for the 870 exceeds any other shotgun - stocks, barrels, sights, magazine extensions, sling mounts, and endless accessories allow complete customization. Law enforcement and military adoption established the 870's tactical credentials. The U.S. military has used 870s since the 1960s, with Marine Corps designating the 870 as the M870. Countless police departments worldwide issue 870s as patrol shotguns. The FBI, DEA, Secret Service, and virtually every federal agency employs 870s in various roles. This institutional adoption stems from the 870's proven reliability - agencies trust equipment that works without fail, and the 870 delivers exactly that. The 870 serves recreational shooters equally well. Trap and skeet competitors win championships with 870s. Waterfowl hunters rely on 870s in conditions that destroy lesser guns. Upland hunters appreciate the 870's light weight and quick handling. 3-Gun competitors use specialized tactical 870s for speed and reliability. The platform adapts to virtually any shotgunning discipline. For home defense, the 870 provides unmatched confidence. The pump action is inherently reliable - unlike semi-automatics that require specific ammunition for function, the 870 cycles anything from light target loads to heavy magnum buckshot. The distinctive sound of racking the slide serves as unmistakable warning. The simplicity means less to go wrong in high-stress situations. The 870's legendary toughness ensures it functions when needed most. The 870 Express represents the entry point to 870 ownership - proven reliability at prices competing with economy brands. While newer shotguns offer various features, none match the 870's combination of reliability, versatility, and aftermarket support. For Americans seeking a shotgun that will serve multiple generations through any task, the Remington 870 remains the unmatched standard. Over 11 million shooters can't be wrong.",
+    features: [
+      "Twin action bars provide smooth, balanced pump operation",
+      "Solid steel receiver machined from billet for durability",
+      "Interchangeable barrel system for multi-role versatility",
+      "Three-part action design simplifies maintenance",
+      "Crossbolt safety works for right and left-handed shooters",
+      "Direct bolt-to-barrel lockup ensures strength and longevity",
+      "Available in 12-gauge and 20-gauge configurations",
+      "RemChoke interchangeable choke tubes (IC, Mod, Full included)",
+      "Hardwood or synthetic stock options",
+      "Extensive aftermarket support for customization"
+    ],
+    benefits: [
+      "Over 11 million sold proves unmatched reliability and satisfaction",
+      "70+ years of proven service across military, law enforcement, civilian use",
+      "Barrel interchangeability allows one shotgun for multiple roles",
+      "Simple three-part action means enhanced reliability and easy repair",
+      "Cycles any ammunition from light target to heavy magnum loads",
+      "Unlimited aftermarket accessories enable complete customization"
+    ],
+    useCases: [
+      "Home defense with proven pump-action reliability",
+      "Waterfowl hunting in extreme weather conditions",
+      "Upland bird hunting with quick handling and reliability",
+      "Turkey hunting with interchangeable barrel options",
+      "Law enforcement patrol shotgun use",
+      "Competitive trap and skeet shooting",
+      "Multi-purpose gun for hunters needing one versatile shotgun"
+    ],
+    seoKeywords: ["Remington 870", "870 Express", "best pump shotgun", "870 review", "reliable shotgun", "Remington 870 Express", "pump action 12 gauge"],
+    ballisticData: {
+      effectiveRange: "40 yards (buckshot), 300+ yards (slugs)",
+      muzzleVelocity: "1,325 fps (00 buckshot)",
+      muzzleEnergy: "Varies by load (2,700+ ft-lbs with 1 oz slugs)",
+      accuracy: "4-6 inch groups at 50 yards with rifled slugs"
+    }
   },
   {
     id: "mossberg-500",
     name: "500",
     manufacturer: "Mossberg",
     categorySlug: "pump-shotguns",
-    caliber: ["12 GA", "20 GA"],
+    caliber: ["12 GA", "20 GA", ".410"],
     price: 399,
     inStock: true,
-    description: "Versatile pump shotgun with dual extractors and tang safety.",
+    description: "The value leader in pump shotguns with over 11 million produced. Ambidextrous tang safety and dual extractors define this versatile American classic.",
     actionType: "Pump-Action",
     capacity: "5+1",
     barrelLength: "28 inches",
     weight: "7.5 lbs",
-    finish: "Blued"
+    finish: "Blued",
+    shortDescription: "The Mossberg 500 challenges the Remington 870 as America's pump shotgun with over 11 million sold. Ambidextrous safety, dual extractors, and exceptional value make the 500 a smart choice for budget-conscious shooters.",
+    longDescription: "The Mossberg Model 500 stands as the great alternative to the Remington 870, offering comparable reliability and versatility while incorporating unique features that many shooters prefer. Introduced in 1960, the 500 represented O.F. Mossberg & Sons' answer to Remington's dominance in pump shotguns. Rather than simply copying the 870, Mossberg designed the 500 with distinctive features that provide genuine advantages for many users. With over 11 million units sold, the 500 proves that smart engineering and aggressive value pricing can challenge even the most established competitors. The 500's most distinctive feature is its top-mounted tang safety - a sliding button positioned on top of the receiver behind the action. This ambidextrous design works equally well for right and left-handed shooters without requiring adaptation or special left-handed models. The safety operates naturally with the shooting hand thumb, allowing manipulation without releasing the grip or shifting hand position. For shotgunners who shoot from both shoulders or for families where members have different hand dominance, this ambidextrous safety provides significant practical advantage. The 500's dual extractors represent another intelligent design choice. Where most pump shotguns use a single extractor claw, the 500 employs twin extractors positioned on opposite sides of the bolt face. This dual-extraction system provides more secure shell gripping and reduces the possibility of extraction failures. When firing thousands of rounds in dirty conditions or with varying ammunition quality, this redundancy enhances reliability. If one extractor encounters debris or wear, the second continues functioning, preventing jams that would stop single-extractor designs. The 500's aluminum receiver differs from the 870's steel construction. While some perceive steel as inherently superior, Mossberg's aluminum alloy provides adequate strength for 12-gauge pressures while reducing weight by approximately 0.5 pounds. For hunters carrying shotguns through miles of terrain or for home defenders concerned about maneuverability, this weight reduction matters. The aluminum receiver also resists corrosion naturally, requiring less maintenance in humid or marine environments. The anodized finish provides excellent protection against the elements. The 500's action uses a single action bar rather than the 870's twin-bar design. While twin bars provide more rigid pump stroke, Mossberg's single bar with proper manufacturing tolerances operates smoothly without binding. The slightly less rigid action actually absorbs some recoil energy, making the 500 feel softer shooting than the 870 to many shooters. The action slides open and closed with minimal effort, and the simplicity means one less part that could potentially fail. The 500's bolt locks into the barrel via a rotating bolt head, similar in concept to the 870 but with Mossberg's unique implementation. The lockup is solid and secure, maintaining timing even after extensive use. The barrel disconnects via an elevator mechanism rather than threaded barrel nut, providing tool-free barrel changes - drop the barrel in place, slide the forend forward, and the gun is ready. This simplicity makes field barrel swaps even easier than the 870's already simple system. Mossberg's approach to value defines the 500's market position. The company focuses resources on functional components rather than fancy finishes, delivering reliable performance at prices undercutting premium competitors. The base 500 features matte-finished metal and basic synthetic or wood stocks, but the action operates just as smoothly as more expensive models. Mossberg proves that reliability doesn't require premium pricing - smart engineering and efficient manufacturing create value without compromising function. The 500's versatility matches or exceeds any pump shotgun. Interchangeable barrels allow the same receiver to serve as hunting gun, home defender, or tactical shotgun. The massive aftermarket - nearly matching the 870's - provides endless customization options. Stocks, barrels, sights, magazine extensions, and tactical accessories transform the basic 500 into specialized tools for specific missions. Law enforcement and military services worldwide employ Mossberg 500-series shotguns. The U.S. military's Joint Service Combat Shotgun program selected the Mossberg 590A1 (a reinforced 500 variant) as the official combat shotgun. Countless police departments issue 500s as patrol shotguns, appreciating the combination of reliability and value that frees budget for other equipment. This institutional adoption validates the 500's core reliability and durability. For recreational shooters, the 500 serves admirably across all shotgunning disciplines. Waterfowl hunters appreciate the corrosion-resistant aluminum receiver in marsh conditions. Upland hunters value the lighter weight during all-day carries. Turkey hunters use specialized 500 models with short barrels and effective choke systems. Home defenders trust the 500's simplicity and reliability. The platform adapts to virtually any shotgun application. The 500's value proposition appeals to budget-conscious buyers seeking genuine reliability without premium prices. For families purchasing their first shotgun, young hunters getting started, or experienced shooters wanting a workhorse gun they won't worry about scratching, the 500 delivers proven pump-action reliability at prices that don't require months of saving. Mossberg backs every 500 with a lifetime warranty, demonstrating their confidence in the design's durability. The Mossberg 500 proves that genuine quality doesn't require premium pricing. Through smart engineering choices like ambidextrous safety and dual extractors, aggressive value pricing, and six decades of proven reliability, the 500 stands as the intelligent alternative to more expensive pump shotguns. For shooters seeking maximum value in proven pump-action reliability, the Mossberg 500 delivers everything needed without unnecessary cost.",
+    features: [
+      "Ambidextrous top-mounted tang safety for universal use",
+      "Dual extractors provide redundant extraction reliability",
+      "Aluminum alloy receiver reduces weight and resists corrosion",
+      "Tool-free barrel interchangeability for multi-role versatility",
+      "Anti-jam elevator prevents double-feeding",
+      "Interchangeable Accu-Choke tubes (Mod, Full, IC included)",
+      "Available in 12-gauge, 20-gauge, and .410 bore",
+      "Synthetic or wood stock options",
+      "Disconnecting trigger system prevents slam-fires",
+      "Lifetime warranty from manufacturer"
+    ],
+    benefits: [
+      "Over 11 million sold validates reliability and customer satisfaction",
+      "Ambidextrous safety eliminates need for left-hand specific models",
+      "Lighter aluminum receiver reduces fatigue during extended carry",
+      "Exceptional value pricing without compromising reliability",
+      "Dual extractors enhance reliability in adverse conditions",
+      "Easy barrel changes enable one gun for multiple applications"
+    ],
+    useCases: [
+      "Home defense with reliable pump-action simplicity",
+      "Waterfowl hunting in corrosive saltwater environments",
+      "Upland bird hunting with lightweight configuration",
+      "Turkey hunting with specialized short-barrel models",
+      "Budget-conscious first shotgun purchase",
+      "Youth and left-handed shooters benefiting from ambidextrous safety",
+      "Multi-purpose hunting gun for various game species"
+    ],
+    seoKeywords: ["Mossberg 500", "500 shotgun", "best budget shotgun", "Mossberg 500 review", "reliable pump shotgun", "ambidextrous shotgun", "500 vs 870"],
+    ballisticData: {
+      effectiveRange: "40 yards (buckshot), 300+ yards (slugs)",
+      muzzleVelocity: "1,325 fps (00 buckshot)",
+      muzzleEnergy: "Varies by load (2,700+ ft-lbs with 1 oz slugs)",
+      accuracy: "4-6 inch groups at 50 yards with rifled slugs"
+    }
   },
   {
     id: "mossberg-590",
@@ -5516,12 +5592,50 @@ export const firearms: Firearm[] = [
     caliber: ["12 GA"],
     price: 499,
     inStock: true,
-    description: "Heavy-duty tactical pump with metal trigger guard and safety.",
+    description: "Heavy-duty tactical pump built to military specifications. Metal trigger guard and safety distinguish this combat-proven workhorse trusted by military and law enforcement worldwide.",
     actionType: "Pump-Action",
     capacity: "8+1",
     barrelLength: "20 inches",
     weight: "7 lbs",
-    finish: "Parkerized"
+    finish: "Parkerized",
+    shortDescription: "The Mossberg 590 represents Mossberg's tactical evolution of the Model 500 with reinforced components for military and law enforcement use. The official U.S. military combat shotgun combining proven reliability with enhanced durability.",
+    longDescription: "The Mossberg Model 590 stands as the tactical evolution of the legendary Model 500, engineered specifically for military and law enforcement applications where equipment failure isn't merely inconvenient - it's potentially fatal. Introduced in the 1980s to meet military specifications for combat shotguns, the 590 incorporates reinforcements and features that distinguish it from the standard Model 500 while maintaining the core reliability that made Mossberg famous. The 590's crowning achievement came in 1987 when the U.S. military selected the 590A1 (a further-reinforced 590 variant) as the official Joint Service Combat Shotgun, defeating competitors including Remington, Benelli, and others. This military adoption validates the 590's combat credentials and ensures its place in American firearms history. The 590's key distinguishing feature is its heavy-duty construction throughout. Where the Model 500 uses an aluminum trigger guard, the 590 employs a steel trigger guard and safety assembly. This metal construction provides enhanced durability under hard use - the trigger guard won't crack or break if the shotgun is dropped or used as an impact weapon, critical considerations for combat and law enforcement service. The metal safety button operates positively and withstands abuse that could damage plastic components. The 590's magazine tube extends to the muzzle rather than ending midway down the barrel like the 500. This full-length magazine tube allows 8+1 capacity with standard 2.75-inch shells or 6+1 with 3-inch magnums - substantial firepower advantage over 5+1 capacity shotguns. For tactical applications where reload opportunities may be limited, this additional ammunition makes meaningful difference. The extended magazine also provides structural support to the barrel, enhancing rigidity and durability. The 590 employs a thicker barrel wall than standard hunting shotguns. While this adds weight, the heavy barrel resists damage from sustained use and provides greater margin of safety for various ammunition types. The cylinder bore or improved cylinder chokes optimize the 590 for defensive buckshot and slug use at typical tactical distances. The thick-walled barrel maintains zero even when heated through rapid-fire use, ensuring consistent point of impact during high-volume training or operations. The 590's action is essentially the proven Model 500 system with enhanced components. The ambidextrous top-mounted tang safety allows rapid manipulation by either hand - critical when shooting from cover or barricade positions. The dual extractors provide redundancy that enhances reliability when functioning in adverse conditions with various ammunition types. The aluminum receiver saves weight while providing adequate strength, and the anodized finish resists corrosion in demanding field environments. The Parkerized finish on 590s provides military-grade corrosion protection superior to basic bluing. This manganese phosphate finish not only resists moisture and corrosion but also reduces light reflection - important for tactical applications. The finish requires minimal maintenance while providing years of protection even in harsh environments. Some 590 variants feature Marinecote finishes for extreme saltwater environments. The 590's barrel mounting system uses a barrel clamp that encircles both the barrel and magazine tube, providing exceptional stability and strength. This clamping system ensures the barrel and magazine tube remain perfectly aligned even under hard use or if the gun is dropped. The barrel nut is torqued to substantial specifications, creating a rigid assembly that maintains zero and timing indefinitely. The 590's sight systems vary by model but typically include robust ghost ring sights or simple bead sights regulated for slug and buckshot use at tactical distances. Ghost ring sights provide rapid target acquisition while maintaining adequate precision for slug accuracy out to 100 yards. The sights are overbuilt to withstand impact and abuse without losing zero. The 590 accepts M-LOK or Picatinny rail systems for mounting lights, lasers, and optics. The 590's stock options include traditional fixed stocks, adjustable tactical stocks, or pistol grip configurations. Mossberg designs these stocks to withstand heavy recoil from full-power buckshot and slug ammunition without cracking or loosening. The stock mounting system provides rigid attachment preventing the stock wobble common on lesser shotguns. The 590 earned military and law enforcement adoption worldwide. Beyond U.S. military service, agencies across America issue 590s as patrol shotguns. International military and police forces employ 590s where reliability under adverse conditions matters most. This institutional adoption reflects the 590's proven track record - agencies trust equipment that works without fail, and the 590 delivers exactly that. For serious civilian defensive use, the 590 provides military-proven reliability at accessible prices. The enhanced durability means the 590 withstands training and practice that would wear lesser shotguns. The 8+1 capacity provides more ammunition than typical home defenders will ever need but reflects the tactical \"better to have and not need\" philosophy. The 590 represents serious defensive capability without the premium price of imported combat shotguns. The Mossberg 590 proves that American manufacturing can produce military-specification firearms at prices civilians can afford. Through thoughtful engineering that reinforces critical components, extensive military and law enforcement service, and Mossberg's commitment to value, the 590 delivers combat-proven reliability for defensive applications. For shooters seeking serious tactical capability backed by U.S. military adoption, the Mossberg 590 provides genuine combat shotgun performance without premium pricing.",
+    features: [
+      "Heavy-duty metal trigger guard and safety assembly",
+      "Full-length magazine tube provides 8+1 capacity (2.75 shells)",
+      "Thick-walled barrel withstands sustained tactical use",
+      "Parkerized finish provides military-grade corrosion protection",
+      "Ambidextrous top-mounted tang safety for universal operation",
+      "Dual extractors ensure reliable extraction under adverse conditions",
+      "Reinforced barrel clamp system maintains zero under hard use",
+      "Cylinder bore optimized for defensive buckshot and slugs",
+      "Ghost ring sights (select models) for rapid target acquisition",
+      "Official U.S. military combat shotgun designation"
+    ],
+    benefits: [
+      "U.S. military adoption validates combat reliability and durability",
+      "8+1 capacity provides substantial firepower for tactical use",
+      "Enhanced metal components withstand hard professional use",
+      "Parkerized finish requires minimal maintenance while resisting corrosion",
+      "Proven reliability across military and law enforcement worldwide",
+      "American-made military specification at civilian-accessible pricing"
+    ],
+    useCases: [
+      "Home defense with military-proven reliability",
+      "Law enforcement patrol shotgun for departments",
+      "Military combat operations as designated combat shotgun",
+      "Tactical training and defensive shotgun courses",
+      "Security and executive protection details",
+      "Property defense where enhanced capacity matters",
+      "Serious defensive application requiring proven combat capability"
+    ],
+    seoKeywords: ["Mossberg 590", "590 tactical shotgun", "military combat shotgun", "590 review", "tactical pump shotgun", "Mossberg 590A1", "590 vs 500"],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "Varies by load (2,700+ ft-lbs with 1 oz slugs)",
+      accuracy: "3-5 inch groups at 50 yards with slugs"
+    }
   },
   {
     id: "winchester-sxp",
@@ -5902,18 +6016,56 @@ export const firearms: Firearm[] = [
   },
   {
     id: "benelli-m4",
-    name: "M4",
+    name: "M4 Tactical (M1014)",
     manufacturer: "Benelli",
     categorySlug: "semi-auto-shotguns",
     caliber: ["12 GA"],
     price: 1999,
     inStock: true,
-    description: "Military-grade tactical semi-auto with ARGO piston system.",
+    description: "The most reliable combat shotgun ever produced. Auto-Regulating Gas-Operated (ARGO) system ensures 100% reliability with any ammunition from light to magnum loads.",
     actionType: "Semi-Automatic",
     capacity: "5+1",
     barrelLength: "18.5 inches",
     weight: "7.8 lbs",
-    finish: "Black"
+    finish: "Black Synthetic",
+    shortDescription: "The Benelli M4 represents the pinnacle of combat shotgun evolution. Adopted by U.S. Marine Corps as the M1014, this gas-operated semi-auto delivers unmatched reliability that defines modern military shotgun technology.",
+    longDescription: "The Benelli M4 (military designation M1014) stands as the most advanced and reliable combat shotgun ever created. When the U.S. military issued requirements for the next-generation Joint Service Combat Shotgun in the 1990s, they demanded unprecedented reliability - the new shotgun must cycle any 12-gauge ammunition from light target loads to heavy magnum buckshot and slugs without adjustment, function in temperatures from -40°F to 140°F, withstand sand, mud, and saltwater immersion, and maintain function through 25,000+ rounds. Benelli's M4 not only met these requirements but exceeded them so convincingly that it earned adoption by the U.S. Marine Corps in 1999, replacing the venerable Mossberg 590A1. The M4 has since served in Iraq, Afghanistan, and worldwide proving its combat credentials under the harshest conditions imaginable. The M4's revolutionary Auto-Regulating Gas-Operated (ARGO) system represents Benelli's greatest engineering achievement. Traditional gas-operated shotguns use a single gas port that bleeds gas from the barrel to cycle the action. These systems struggle with different ammunition types - light loads may not provide enough gas to cycle, while heavy loads can batter components. The ARGO system employs twin gas cylinders positioned just ahead of the chamber, each with its own piston that drives the bolt. This dual-piston design provides massive force for reliable cycling while the short piston stroke reduces felt recoil and enhances controllability. The true genius of ARGO is its self-regulation - the system automatically adjusts to different ammunition pressures. Light loads generate less gas but the efficient twin-piston design cycles reliably. Heavy magnum loads generate more gas but the short stroke prevents excessive bolt velocity that could damage components. The result is a shotgun that digests absolutely any 12-gauge ammunition without adjustment or modification. Load it with 2.75-inch target loads, 3-inch magnum buckshot, or slugs of any weight - the M4 cycles with 100% reliability. This true multi-ammunition capability distinguishes the M4 from all competitors and defines its combat value. The M4's bolt design uses a rotating bolt head that locks into the barrel extension via three massive lugs - similar to rifle bolt design. This positive locking system provides exceptional strength far exceeding 12-gauge pressure requirements while ensuring precise headspace and timing. The bolt components are machined to aerospace tolerances and hard-chromed for enhanced durability and corrosion resistance. Benelli rates the M4 for over 25,000 rounds before major component replacement - a service life exceeding most owners' lifetime ammunition consumption. The M4's barrel features a heavy profile that resists heat buildup during rapid-fire use. The chrome-lined bore provides corrosion resistance and facilitates cleaning after high-volume shooting. The cylinder bore choke optimizes the M4 for defensive buckshot and slugs at typical tactical distances. The barrel and receiver are finished in titanium cerakote or phosphate depending on variant - both providing military-grade corrosion protection that withstands saltwater immersion and extreme environmental conditions. The M4's ghost ring sights provide rapid target acquisition with adequate precision for slug accuracy out to 100+ yards. The massive rear aperture allows instinctive shooting under stress, while the front post is high-visibility and protected by sturdy wings. The sight base accepts Picatinny rail adapters for mounting red dot optics or magnified optics for extended range slug use. The sights maintain zero under recoil and abuse that would destroy lesser sight systems. The M4's fixed pistol grip stock provides optimal shooting ergonomics while the enlarged bolt release and safety allow manipulation with gloved hands or under stress. The stock incorporates QD sling mounting points at multiple positions. The M-LOK compatible forend accepts tactical lights, lasers, and vertical grips without modification. Every control is overbuilt and positioned for intuitive operation during high-stress combat situations. The M4's magazine tube holds five 2.75-inch shells or four 3-inch shells - modest by pump shotgun standards but adequate for most tactical scenarios given the M4's rapid follow-up shot capability. The semi-automatic action allows firing as fast as you can pull the trigger while maintaining control, providing significantly higher volume of fire than pump shotguns. For room-clearing, building entry, or any scenario requiring rapid engagement of multiple targets, the M4's semi-auto action provides decisive advantage. Military and law enforcement worldwide have adopted the M4 for its proven reliability. U.S. Marine Corps Special Operations Command (MARSOC) and other special operations units employ M4s globally. Federal law enforcement agencies including FBI Hostage Rescue Team use M4s for specialized operations. The M4 serves in over 25 countries' military and police forces where mission-critical reliability matters most. For serious civilian defensive use and competitive three-gun shooting, the M4 represents the ultimate semi-automatic combat shotgun. While the price exceeds budget shotguns, the M4 delivers genuine military-specification capability unavailable elsewhere. The M4 cycles faster, shoots softer, and proves more reliable than any competing semi-auto shotgun. For shooters who understand the difference between consumer products and combat equipment, the Benelli M4 justifies every dollar through unmatched reliability and proven combat performance. The M4 represents the shotgun that U.S. Marines trust with their lives - the ultimate validation of combat reliability.",
+    features: [
+      "Auto-Regulating Gas-Operated (ARGO) twin-piston system",
+      "Cycles any 12-gauge ammunition without adjustment",
+      "Rotating bolt with three massive locking lugs",
+      "Chrome-lined barrel and hard-chromed bolt components",
+      "Ghost ring sights with Picatinny rail compatibility",
+      "Heavy-profile barrel resists heat during rapid fire",
+      "Fixed pistol grip stock optimized for tactical use",
+      "Titanium cerakote or phosphate corrosion-resistant finish",
+      "M-LOK compatible forend for accessory mounting",
+      "Rated for 25,000+ round service life"
+    ],
+    benefits: [
+      "U.S. Marine Corps adoption validates unmatched combat reliability",
+      "ARGO system ensures 100% reliability with any ammunition",
+      "Semi-auto action provides faster follow-up shots than pump shotguns",
+      "Proven in combat across Iraq, Afghanistan, and worldwide operations",
+      "Exceptional durability with 25,000+ round service life",
+      "Italian craftsmanship and engineering excellence"
+    ],
+    useCases: [
+      "Military combat operations as official USMC M1014",
+      "Special operations and tactical team entry work",
+      "Law enforcement high-risk warrant service",
+      "Premium home defense with maximum reliability",
+      "Competitive three-gun shooting for speed and reliability",
+      "Security and executive protection demanding best equipment",
+      "Professional defensive use requiring zero-compromise reliability"
+    ],
+    seoKeywords: ["Benelli M4", "M1014 shotgun", "USMC combat shotgun", "M4 tactical review", "ARGO system", "best semi-auto shotgun", "military shotgun"],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "Varies by load (2,700+ ft-lbs with 1 oz slugs)",
+      accuracy: "3-4 inch groups at 50 yards with slugs"
+    }
   },
   {
     id: "remington-versamax",
@@ -13390,12 +13542,50 @@ export const firearms: Firearm[] = [
     caliber: ["12 GA"],
     price: 1299,
     inStock: true,
-    description: "Fast-cycling semi-auto for rapid follow-up shots.",
+    description: "The fastest-cycling semi-auto shotgun manufactured. Blink Gas Operating System delivers lightning-fast follow-up shots with reduced recoil for competitive and defensive excellence.",
     actionType: "Semi-Automatic",
     capacity: "5+1",
     barrelLength: "18.5 inches",
     weight: "6.35 lbs",
-    finish: "Black Synthetic"
+    finish: "Black Synthetic",
+    shortDescription: "The Beretta 1301 Tactical redefines semi-auto shotgun speed. Competition-proven BLINK gas system cycles faster than any competitor while reducing recoil, making the 1301 the choice of champions in three-gun competition.",
+    longDescription: "The Beretta 1301 Tactical represents Italian engineering focused on a singular obsession: speed. When Beretta set out to create the ultimate competition and tactical shotgun, they didn't aim to match competitors - they aimed to make the fastest-cycling semi-automatic shotgun ever produced. The result is the 1301 Tactical with its revolutionary BLINK (Beretta Link) gas operating system that cycles in approximately 0.036 seconds - faster than human reaction time and significantly faster than any competing shotgun. This blinding speed has made the 1301 Tactical the dominant shotgun in competitive three-gun shooting, where champions chose the 1301 because fractions of seconds determine winners. The same speed that wins championships provides decisive advantage in defensive scenarios where rapid engagement of multiple threats means survival. The BLINK system represents Beretta's evolution of traditional gas-operated shotgun design. Where conventional gas systems use long piston strokes and heavy springs to cycle the action, BLINK employs a radically short piston stroke with precisely calculated spring rates. The gas piston travels just enough to unlock the bolt and initiate rearward motion, then momentum and the action spring complete the cycle. This minimal piston movement means less mass in motion and faster cycle time. The system requires approximately 36% less time to cycle than Benelli's excellent Inertia-Driven system and 40% faster than traditional gas shotguns. The practical result is dramatic - shooters can fire follow-up shots so quickly that the shotgun seems to fire as fast as you can think about pulling the trigger. The 1301's lightweight construction amplifies its speed advantage. The aluminum alloy receiver and carbon steel barrel create a package weighing just 6.35 pounds - remarkably light for a tactical shotgun and substantially lighter than the 7.8-pound Benelli M4. This reduced weight means faster target transitions, less fatigue during extended shooting sessions, and enhanced maneuverability in confined spaces. The weight balance favors neither muzzle nor receiver, providing neutral handling that responds instantly to shooter input. Female shooters and those with smaller stature particularly appreciate the 1301's light weight and reduced recoil. The BLINK system's efficiency also reduces felt recoil significantly. By capturing just enough gas to cycle the action without excess, the system minimizes bolt velocity and battering forces. The short recoil stroke and efficient spring design turn heavy 12-gauge buckshot into surprisingly soft impulses. Shooters consistently report the 1301 feels like firing 20-gauge ammunition despite shooting full-power 12-gauge loads. This reduced recoil allows faster follow-up shots, better control, and more comfortable extended shooting sessions. New shotgun shooters find the 1301 less intimidating than heavier-recoiling alternatives. The 1301's barrel features a chrome-lined bore that resists corrosion and facilitates cleaning. The Mobilchoke threading accepts Beretta's interchangeable choke tubes or Benelli Crio chokes, providing compatibility with extensive aftermarket choke options. The cylinder bore choke included optimizes the 1301 for defensive buckshot patterns at typical home defense distances. The oversized charging handle provides positive manipulation with gloved hands or under stress. The controls - bolt release, safety, and charging handle - are sized and positioned for rapid operation without requiring shooters to shift their grip. The fiber optic front sight provides rapid target acquisition in varying light conditions, while the receiver is drilled and tapped for optics mounting. Many competition shooters mount red dot sights for maximum speed, while tactical users add lights and lasers via the Picatinny rail section integrated into the magazine cap area. The 1301's magazine capacity holds five 2.75-inch shells plus one in the chamber - modest by pump shotgun standards but adequate given the 1301's rapid-fire capability. The loading port is generously sized and beveled for rapid reloading during competitive stage transitions or tactical reloading scenarios. Competition shooters regularly achieve sub-2-second quad-loads through the 1301's friendly loading port. The synthetic stock and forend provide secure grip in all conditions while keeping weight minimal. The stock features a 14-inch length of pull suitable for most adult shooters, and the grip angle promotes natural pointability. The stock includes QD sling mounting points while the forend accepts M-LOK accessories for lights and controls. The 1301's reliability matches its speed. The BLINK system cycles everything from 2.75-inch light target loads to 3-inch magnum buckshot without adjustment. While Beretta recommends heavier loads (1oz or heavier) for optimal reliability, the system functions with broader ammunition variety than inertia-driven competitors that struggle with light loads. The chrome-plated bolt and carrier resist corrosion while the enlarged bolt handle and controls accommodate operation in adverse conditions. The 1301 Tactical has dominated competitive three-gun shooting in heavy metal divisions where shotguns feed from the tube rather than box magazines. Champions including Taran Butler built careers around the 1301's speed advantage, winning major championships and setting records. This competitive success translates directly to defensive capability - the same speed that wins matches allows rapid engagement of multiple threats with minimal time between shots. Law enforcement agencies worldwide have adopted the 1301 Tactical for patrol and tactical team use, appreciating the combination of speed, light weight, and proven reliability. For civilian home defense, the 1301 provides the fastest semi-automatic shotgun available at prices significantly lower than the Benelli M4. The Italian craftsmanship and engineering excellence justify the premium over budget semi-autos, while the performance advantage over competitors makes the 1301 the obvious choice for serious defensive and competitive use. The Beretta 1301 Tactical proves that focused engineering creates genuine performance advantages. Through revolutionary BLINK gas system, lightweight construction, and competition-proven reliability, the 1301 delivers the fastest shotgun available for those demanding maximum speed in defensive or competitive applications.",
+    features: [
+      "BLINK Gas Operating System with 0.036-second cycle time",
+      "Lightweight 6.35-pound construction for rapid handling",
+      "Chrome-lined barrel with Mobilchoke threading",
+      "Oversized controls optimized for speed and reliability",
+      "Fiber optic front sight for rapid target acquisition",
+      "Aluminum alloy receiver reduces weight and resists corrosion",
+      "Generous loading port facilitates rapid reloading",
+      "Synthetic stock with QD sling mounting points",
+      "M-LOK compatible forend for accessory mounting",
+      "Cycles 2.75-inch and 3-inch ammunition reliably"
+    ],
+    benefits: [
+      "Fastest-cycling semi-auto shotgun manufactured worldwide",
+      "Reduced recoil makes 12-gauge feel like 20-gauge shooting",
+      "Lightweight construction reduces fatigue and increases speed",
+      "Competition-proven dominance in three-gun championships",
+      "Italian craftsmanship and Beretta's 500-year heritage",
+      "Significantly lighter than Benelli M4 while maintaining reliability"
+    ],
+    useCases: [
+      "Competitive three-gun shooting in heavy metal division",
+      "Home defense requiring fastest possible follow-up shots",
+      "Law enforcement patrol and tactical team operations",
+      "Defensive training and tactical shotgun courses",
+      "Female shooters and smaller-statured defenders needing light weight",
+      "Rapid-fire clay target shooting and practical shotgun",
+      "Premium defensive application where speed provides advantage"
+    ],
+    seoKeywords: ["Beretta 1301 Tactical", "1301 shotgun", "fastest shotgun", "three-gun shotgun", "BLINK system", "1301 review", "competition shotgun"],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "Varies by load (2,700+ ft-lbs with 1 oz slugs)",
+      accuracy: "3-5 inch groups at 50 yards with slugs"
+    }
   },
   {
     id: "smith-mp-shield-ez",
