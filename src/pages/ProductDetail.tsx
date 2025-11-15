@@ -278,9 +278,9 @@ const ProductDetail = () => {
           </Button>
         </nav>
 
-        <article className="grid items-start gap-0 lg:grid-cols-[max-content,1fr] lg:gap-x-0 mb-8">
+        <article className="grid gap-0.5 lg:gap-1 lg:grid-cols-2 mb-8">
           {/* Left Column - Product Image and Desktop-only sections */}
-          <div className="max-w-sm mx-auto lg:mx-0 justify-self-start">
+          <div>
             <Card className="overflow-hidden max-w-sm mx-auto lg:mx-0">
               <div className="aspect-square bg-secondary flex items-center justify-center p-3 sm:p-4">
                 <div className="text-center">
