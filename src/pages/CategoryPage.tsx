@@ -179,7 +179,7 @@ const CategoryPage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto p-6 py-12">
         <nav aria-label="Breadcrumb">
           <Link to="/categories">
             <Button variant="ghost" className="mb-6">
@@ -251,7 +251,7 @@ const CategoryPage = () => {
         </div>
 
         {sortedProducts.length > 0 ? (
-          <div className="grid grid-cols-2 gap-6 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4 grid-cols-2">
             {sortedProducts.map((product) => (
               <ProductCard 
                 key={product.id} 

@@ -116,7 +116,7 @@ export default function Shop7() {
           />
 
           {/* Main Content */}
-          <main className="flex-1 w-full lg:max-w-[calc(100%-552px)] overflow-x-hidden p-4 md:p-6 lg:p-8 bg-background">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-552px)] overflow-x-hidden p-6 bg-background">
             <div className="max-w-4xl mx-auto">
               <div className="mb-6 md:mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">Dual Filter Layout</h1>
@@ -161,7 +161,7 @@ export default function Shop7() {
                 </div>
               </div>
 
-              <div className={`grid gap-3 md:gap-4 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 ${
+              <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 ${
                 viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
               }`}>
                 {filteredProducts.map((product) => (

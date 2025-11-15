@@ -104,7 +104,7 @@ export default function Shop3() {
         
         <div className="flex flex-1 w-full">
           {/* Main Content */}
-          <main className="flex-1 w-full xl:max-w-[calc(100%-280px)] overflow-x-hidden p-4 md:p-6 lg:p-8">
+          <main className="flex-1 w-full xl:max-w-[calc(100%-280px)] overflow-x-hidden p-6">
             <div className="max-w-6xl mx-auto">
               {/* Tactical Hero */}
               <div className="mb-8 md:mb-12 relative overflow-hidden rounded-lg border border-border bg-gradient-to-r from-tactical/20 to-accent/10 p-6 md:p-8">
@@ -150,7 +150,7 @@ export default function Shop3() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className={`grid gap-3 md:gap-4 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
+              <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
                 viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
               }`}>
                 {filteredProducts.map((product) => (

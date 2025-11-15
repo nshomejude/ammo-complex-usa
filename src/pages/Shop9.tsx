@@ -113,7 +113,7 @@ export default function Shop9() {
         
         <div className="flex flex-1 w-full">
           {/* Main Content */}
-          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6">
             <div className="max-w-5xl mx-auto">
               {/* Stencil Header */}
               <div className="mb-10 border-4 border-border p-6">
@@ -166,7 +166,7 @@ export default function Shop9() {
               </div>
 
               {/* Products Grid - 3 columns compact */}
-              <div className={`grid gap-5 md:grid-cols-2 lg:grid-cols-3 ${
+              <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 ${
                 viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
               }`}>
                 {paginatedProducts.map((product) => (

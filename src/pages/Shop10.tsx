@@ -116,7 +116,7 @@ export default function Shop10() {
           />
 
           {/* Main Content */}
-          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6">
             <div className="max-w-5xl mx-auto">
               {/* Premium Header */}
               <div className="mb-10 relative">
@@ -187,7 +187,7 @@ export default function Shop10() {
               )}
 
               {/* Products Grid - Responsive premium spacing */}
-              <div className={`grid gap-4 md:gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
+              <div className={`grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
                 viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
               }`}>
                 {filteredProducts.map((product) => (
