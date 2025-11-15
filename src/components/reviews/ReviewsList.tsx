@@ -3,10 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { StarRating } from "./StarRating";
 import { supabase } from "@/integrations/supabase/client";
 import { formatDistanceToNow } from "date-fns";
-import { User, ThumbsUp } from "lucide-react";
+import { User, ThumbsUp, ArrowUpDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Review {
@@ -27,25 +28,45 @@ interface ReviewsListProps {
   productId: string;
   productType?: string;
   refreshTrigger?: number;
+  showProductLink?: boolean;
 }
 
-export const ReviewsList = ({ productId, productType = 'product', refreshTrigger }: ReviewsListProps) => {
+export const ReviewsList = ({ productId, productType = 'product', refreshTrigger, showProductLink = false }: ReviewsListProps) => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [loading, setLoading] = useState(true);
   const [averageRating, setAverageRating] = useState(0);
+  const [sortBy, setSortBy] = useState<'recent' | 'highest' | 'lowest' | 'helpful'>('recent');
 
   useEffect(() => {
     fetchReviews();
-  }, [productId, productType, refreshTrigger]);
+  }, [productId, productType, refreshTrigger, sortBy]);
 
   const fetchReviews = async () => {
     try {
-      const { data, error } = await supabase
+      let query = supabase
         .from('reviews')
         .select('*')
         .eq('product_id', productId)
-        .eq('product_type', productType)
-        .order('created_at', { ascending: false });
+        .eq('product_type', productType);
+
+      // Apply sorting
+      switch (sortBy) {
+        case 'highest':
+          query = query.order('rating', { ascending: false });
+          break;
+        case 'lowest':
+          query = query.order('rating', { ascending: true });
+          break;
+        case 'helpful':
+          query = query.order('helpful_count', { ascending: false });
+          break;
+        case 'recent':
+        default:
+          query = query.order('created_at', { ascending: false });
+          break;
+      }
+
+      const { data, error } = await query;
 
       if (error) throw error;
 
@@ -102,18 +123,36 @@ export const ReviewsList = ({ productId, productType = 'product', refreshTrigger
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center justify-between">
-          <span>Customer Reviews</span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <CardTitle className="flex items-center gap-2">
+            <span>Customer Reviews</span>
+            {reviews.length > 0 && (
+              <div className="flex items-center gap-2">
+                <StarRating rating={averageRating} size={20} />
+                <span className="text-lg font-bold">{averageRating.toFixed(1)}</span>
+                <span className="text-sm text-muted-foreground">
+                  ({reviews.length} {reviews.length === 1 ? 'review' : 'reviews'})
+                </span>
+              </div>
+            )}
+          </CardTitle>
           {reviews.length > 0 && (
             <div className="flex items-center gap-2">
-              <StarRating rating={averageRating} size={20} />
-              <span className="text-lg font-bold">{averageRating.toFixed(1)}</span>
-              <span className="text-sm text-muted-foreground">
-                ({reviews.length} {reviews.length === 1 ? 'review' : 'reviews'})
-              </span>
+              <ArrowUpDown className="h-4 w-4 text-muted-foreground" />
+              <Select value={sortBy} onValueChange={(value: any) => setSortBy(value)}>
+                <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Sort by" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="recent">Most Recent</SelectItem>
+                  <SelectItem value="highest">Highest Rated</SelectItem>
+                  <SelectItem value="lowest">Lowest Rated</SelectItem>
+                  <SelectItem value="helpful">Most Helpful</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
           )}
-        </CardTitle>
+        </div>
       </CardHeader>
       <CardContent>
         {reviews.length === 0 ? (
@@ -122,9 +161,9 @@ export const ReviewsList = ({ productId, productType = 'product', refreshTrigger
           </p>
         ) : (
           <div className="space-y-6">
-            {reviews.map((review, index) => (
-              <div key={review.id}>
-                {index > 0 && <Separator className="mb-6" />}
+          {reviews.map((review, index) => (
+            <div key={review.id} id={`review-${review.id}`}>
+              {index > 0 && <Separator className="mb-6" />}
                 <div className="space-y-3">
                   <div className="flex items-start justify-between">
                     <div className="space-y-1">
