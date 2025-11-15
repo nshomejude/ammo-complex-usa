@@ -193,8 +193,8 @@ const FirearmDetail = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section className="container mx-auto px-4 py-16">
-        <Alert className="mb-8 border-destructive bg-destructive/10">
+      <section className="container mx-auto px-4 py-4 sm:py-6">
+        <Alert className="mb-4 border-destructive bg-destructive/10">
           <AlertTriangle className="h-4 w-4 text-destructive" />
           <AlertTitle className="text-destructive">FFL Transfer Required</AlertTitle>
           <AlertDescription>
@@ -202,7 +202,7 @@ const FirearmDetail = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="grid grid-cols-1 gap-2 lg:gap-3 lg:grid-cols-2 mb-12">
+        <div className="grid grid-cols-1 gap-2 lg:gap-3 lg:grid-cols-2 mb-8">
           {/* Left Column - Image and Desktop-only sections */}
           <div>
             <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-3 sm:p-4 max-w-md mx-auto lg:mx-0">
@@ -265,8 +265,8 @@ const FirearmDetail = () => {
             </div>
 
             {firearm.quantityVariations && firearm.quantityVariations.length > 0 && (
-              <div className="mb-6">
-                <p className="text-sm font-medium mb-3">Select Quantity:</p>
+              <div className="mb-4">
+                <p className="text-sm font-medium mb-2">Select Quantity:</p>
                 <div className="flex flex-wrap gap-2">
                   {firearm.quantityVariations.map((variant, idx) => (
                     <button
@@ -307,12 +307,12 @@ const FirearmDetail = () => {
               </CardContent>
             </Card>
 
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-4">
               {firearm.shortDescription || firearm.description}
             </p>
 
             {/* Mobile/Tablet only - Why Choose and Quick Specs sections */}
-            <div className="lg:hidden space-y-6 mb-6">
+            <div className="lg:hidden space-y-2 mb-4">
               {whyChooseSection}
               {quickSpecsSection}
             </div>
@@ -402,16 +402,16 @@ const FirearmDetail = () => {
               <TabsTrigger value="uses" className="text-xs sm:text-sm">Use Cases</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="overview" className="mt-4 sm:mt-6">
+            <TabsContent value="overview" className="mt-4">
               <Card>
-                <CardHeader className="p-4 sm:p-6">
+                <CardHeader className="p-3 sm:p-4">
                   <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
                     <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                     Product Overview
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="prose prose-slate max-w-none p-4 sm:p-6">
-                  <div className="text-sm sm:text-base leading-relaxed space-y-3 sm:space-y-4">
+                <CardContent className="prose prose-slate max-w-none p-3 sm:p-4 pt-0">
+                  <div className="text-sm sm:text-base leading-relaxed space-y-2">
                     {firearm.longDescription ? (
                       firearm.longDescription.split('\n\n').map((paragraph, idx) => (
                         <p key={idx}>{paragraph}</p>
@@ -424,18 +424,18 @@ const FirearmDetail = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="features" className="mt-4 sm:mt-6">
-              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+            <TabsContent value="features" className="mt-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 {firearm.features && firearm.features.length > 0 && (
                   <Card>
-                    <CardHeader className="p-4 sm:p-6">
+                    <CardHeader className="p-3 sm:p-4">
                       <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
                         <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                         Key Features
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="p-4 sm:p-6">
-                      <ul className="space-y-2 sm:space-y-3">
+                    <CardContent className="p-3 sm:p-4 pt-0">
+                      <ul className="space-y-2">
                         {firearm.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-2">
                             <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
@@ -449,14 +449,14 @@ const FirearmDetail = () => {
 
                 {firearm.benefits && firearm.benefits.length > 0 && (
                   <Card>
-                    <CardHeader className="p-4 sm:p-6">
+                    <CardHeader className="p-3 sm:p-4">
                       <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
                         <Award className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                         Benefits
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="p-4 sm:p-6">
-                      <ul className="space-y-2 sm:space-y-3">
+                    <CardContent className="p-3 sm:p-4 pt-0">
+                      <ul className="space-y-2">
                         {firearm.benefits.map((benefit, idx) => (
                           <li key={idx} className="flex items-start gap-2">
                             <Award className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
@@ -472,7 +472,7 @@ const FirearmDetail = () => {
               {(!firearm.features || firearm.features.length === 0) && 
                (!firearm.benefits || firearm.benefits.length === 0) && (
                 <Card>
-                  <CardContent className="py-6 sm:py-8 text-center text-muted-foreground text-xs sm:text-sm p-4 sm:p-6">
+                  <CardContent className="py-4 sm:py-6 text-center text-muted-foreground text-xs sm:text-sm p-3 sm:p-4">
                     Detailed features and benefits information coming soon.
                   </CardContent>
                 </Card>
@@ -519,19 +519,19 @@ const FirearmDetail = () => {
               </Card>
             </TabsContent>
 
-            <TabsContent value="uses" className="mt-4 sm:mt-6">
+            <TabsContent value="uses" className="mt-4">
               <Card>
-                <CardHeader className="p-4 sm:p-6">
+                <CardHeader className="p-3 sm:p-4">
                   <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
                     <Target className="h-4 w-4 sm:h-5 sm:w-5 text-tactical" />
                     Recommended Applications
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6">
+                <CardContent className="p-3 sm:p-4 pt-0">
                   {firearm.useCases && firearm.useCases.length > 0 ? (
-                    <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
+                    <div className="grid md:grid-cols-2 gap-3">
                       {firearm.useCases.map((useCase, idx) => (
-                        <div key={idx} className="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg border bg-secondary/30">
+                        <div key={idx} className="flex items-start gap-2 p-3 rounded-lg border bg-secondary/30">
                           <Target className="h-4 w-4 sm:h-5 sm:w-5 text-tactical mt-0.5 flex-shrink-0" />
                           <p className="text-xs sm:text-sm">{useCase}</p>
                         </div>
@@ -549,8 +549,8 @@ const FirearmDetail = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+        <section className="mb-8">
+          <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>How do I purchase this firearm?</AccordionTrigger>
@@ -586,7 +586,7 @@ const FirearmDetail = () => {
         </section>
 
         {/* Reviews Section */}
-        <section className="mb-12">
+        <section className="mb-8">
           <ProductReviews productId={firearm.id} productType="firearm" />
         </section>
 
@@ -594,9 +594,9 @@ const FirearmDetail = () => {
         <WhyBuyFromUs />
 
         {compatibleAmmo.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">Compatible Ammunition</h2>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold mb-4">Compatible Ammunition</h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {compatibleAmmo.map((product) => (
                 <ProductCard 
                   key={product.id} 
@@ -614,8 +614,8 @@ const FirearmDetail = () => {
 
         {relatedFirearms.length > 0 && (
           <div>
-            <h2 className="text-3xl font-bold mb-6">Related Firearms</h2>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <h2 className="text-3xl font-bold mb-4">Related Firearms</h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {relatedFirearms.map((related) => (
                 <FirearmCard 
                   key={related.id} 
