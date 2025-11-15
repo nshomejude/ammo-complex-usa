@@ -107,68 +107,68 @@ const ReloadingGuide = () => {
 
         {/* Downloadable Checklists */}
         <Card className="mb-8 bg-tactical/5 border-tactical/20">
-          <CardHeader>
-            <CardTitle className="text-2xl flex items-center gap-2">
-              <Download className="h-6 w-6 text-tactical" />
+          <CardHeader className="p-4 sm:p-6">
+            <CardTitle className="text-lg sm:text-2xl flex items-center gap-2">
+              <Download className="h-5 w-5 sm:h-6 sm:w-6 text-tactical" />
               Downloadable Checklists
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-xs sm:text-sm">
               Print these checklists and keep them at your reloading bench for reference
             </CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <CardContent className="p-4 sm:p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               <Button 
                 onClick={generateSafetyChecklistPDF}
-                className="h-auto py-6 flex flex-col items-center gap-2"
+                className="h-auto py-4 sm:py-6 flex flex-col items-center gap-2"
                 variant="outline"
               >
-                <Download className="h-6 w-6 text-tactical" />
+                <Download className="h-5 w-5 sm:h-6 sm:w-6 text-tactical" />
                 <div className="text-center">
-                  <div className="font-semibold">Safety Checklist</div>
+                  <div className="font-semibold text-sm sm:text-base">Safety Checklist</div>
                   <div className="text-xs text-muted-foreground mt-1">Pre & post-session safety protocols</div>
                 </div>
               </Button>
 
               <Button 
                 onClick={generateProcessChecklistPDF}
-                className="h-auto py-6 flex flex-col items-center gap-2"
+                className="h-auto py-4 sm:py-6 flex flex-col items-center gap-2"
                 variant="outline"
               >
-                <Download className="h-6 w-6 text-tactical" />
+                <Download className="h-5 w-5 sm:h-6 sm:w-6 text-tactical" />
                 <div className="text-center">
-                  <div className="font-semibold">Process Checklist</div>
+                  <div className="font-semibold text-sm sm:text-base">Process Checklist</div>
                   <div className="text-xs text-muted-foreground mt-1">Step-by-step reloading workflow</div>
                 </div>
               </Button>
 
               <Button 
                 onClick={generateEquipmentChecklistPDF}
-                className="h-auto py-6 flex flex-col items-center gap-2"
+                className="h-auto py-4 sm:py-6 flex flex-col items-center gap-2"
                 variant="outline"
               >
-                <Download className="h-6 w-6 text-tactical" />
+                <Download className="h-5 w-5 sm:h-6 sm:w-6 text-tactical" />
                 <div className="text-center">
-                  <div className="font-semibold">Equipment List</div>
+                  <div className="font-semibold text-sm sm:text-base">Equipment List</div>
                   <div className="text-xs text-muted-foreground mt-1">Essential & recommended tools</div>
                 </div>
               </Button>
 
               <Button 
                 onClick={generateLoadDataSheetPDF}
-                className="h-auto py-6 flex flex-col items-center gap-2"
+                className="h-auto py-4 sm:py-6 flex flex-col items-center gap-2"
                 variant="outline"
               >
-                <Download className="h-6 w-6 text-tactical" />
+                <Download className="h-5 w-5 sm:h-6 sm:w-6 text-tactical" />
                 <div className="text-center">
-                  <div className="font-semibold">Load Data Sheet</div>
+                  <div className="font-semibold text-sm sm:text-base">Load Data Sheet</div>
                   <div className="text-xs text-muted-foreground mt-1">Record test results & observations</div>
                 </div>
               </Button>
             </div>
-            <Alert className="mt-4 border-destructive bg-destructive/10">
+            <Alert className="mt-3 sm:mt-4 border-destructive bg-destructive/10">
               <BookOpen className="h-4 w-4 text-destructive" />
-              <AlertDescription className="text-sm">
+              <AlertDescription className="text-xs sm:text-sm">
                 These PDF checklists are designed to be printed and laminated for use at your reloading bench. 
                 Keep them visible and reference them during every reloading session for maximum safety and consistency.
               </AlertDescription>
