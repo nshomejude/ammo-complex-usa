@@ -3833,33 +3833,109 @@ export const firearms: Firearm[] = [
   },
   {
     id: "sw-mp15",
-    name: "M&P15",
+    name: "M&P15 Sport II",
     manufacturer: "Smith & Wesson",
     categorySlug: "ar-platform",
     caliber: ["5.56 NATO", ".223 REM"],
     price: 899,
     inStock: true,
-    description: "Popular AR-15 variant with Armornite barrel and adjustable stock.",
+    description: "America's most popular AR-15 delivering legendary Smith & Wesson quality at accessible pricing. Over one million sold - proven reliability meets modern sporting rifle versatility.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16 inches",
     weight: "6.5 lbs",
-    finish: "Black"
+    finish: "Black Armornite",
+    shortDescription: "The Smith & Wesson M&P15 Sport II has become America's entry-level AR-15 benchmark. With over one million rifles sold, this platform combines Smith & Wesson's 170-year manufacturing excellence with affordable modern sporting rifle capability.",
+    longDescription: "The Smith & Wesson M&P15 Sport II represents the democratization of AR-15 ownership in America. When Smith & Wesson introduced the M&P15 line in 2006, they applied lessons learned from supplying military and law enforcement to create civilian AR-15s that balanced quality, features, and affordability. The Sport II, launched in 2016 as an evolution of the original Sport, has become the best-selling AR-15 in American history with over one million units sold - a testament to Smith & Wesson's understanding of what shooters actually need versus marketing hype. The M&P15 Sport II achieves its market dominance through smart engineering focused on essential features. Rather than loading the rifle with accessories that drive up price, Smith & Wesson concentrated on core reliability and accuracy. The heart of the Sport II is its 16-inch barrel featuring Smith & Wesson's proprietary Armornite finish - a durable coating that provides excellent corrosion and wear resistance while maintaining the accuracy potential of the 1:9 twist rate chrome-moly steel barrel. This twist rate stabilizes both 55-grain and 62-grain ammunition effectively, making the Sport II versatile for various applications from plinking to predator hunting to home defense. The barrel is MP-tested (Magnetic Particle inspection) to ensure no material defects that could compromise safety or accuracy. The 5R rifling reduces fouling and jacket deformation, contributing to the Sport II's reputation for consistent 2-3 MOA accuracy with quality ammunition. The gas system uses a standard carbine-length design with a properly staked A2-style front sight base that doubles as the gas block. This traditional configuration has proven reliable through millions of rounds across decades of AR-15 use. The front sight is elevation-adjustable, while the removable carry handle rear sight provides windage adjustment and dual-aperture ranging. For shooters preferring optics, the flat-top Picatinny rail accepts any standard mounting system, and the carry handle removes easily. The Sport II's upper and lower receivers are forged 7075-T6 aluminum, the same material and process used in military M4 carbines. This forging process aligns the metal's grain structure for maximum strength, providing durability far exceeding cast or billet receivers at lower cost. The receivers are hard-coat anodized for corrosion resistance and wear protection. The bolt carrier group uses a chrome-plated gas key properly staked with Grade 8 fasteners - a critical quality indicator often skipped on budget AR-15s. The bolt itself is shot-peened Carpenter 158 steel with properly cut extractor and ejector, ensuring reliable function with various ammunition types. Smith & Wesson specs all M&P15 components to mil-spec standards, meaning parts interchange with other quality AR-15s and replacement components are universally available. The trigger is a standard mil-spec single-stage design breaking around 6.5-7 pounds - not a precision match trigger but entirely adequate for the Sport II's intended roles. Many owners shoot thousands of rounds with the factory trigger before considering upgrades, and when desired, any aftermarket AR-15 trigger drops in without modification. The six-position collapsible stock adjusts for shooter size and accommodates different shooting positions or body armor. The pistol grip is standard A2 configuration - basic but functional, and easily replaced if desired. The Sport II includes a 30-round Magpul PMAG, the industry-standard magazine known for reliability. The rifle ships with one magazine, though most owners immediately purchase additional Magpul or comparable magazines. The Sport II's modularity embodies the AR-15's greatest strength - owners can customize nearly every component as skills and preferences evolve. Basic Sport IIs serve perfectly for new shooters learning fundamentals, while the same platform accepts upgraded triggers, free-float handguards, enhanced bolt carrier groups, and countless other improvements. This upgrade path means the Sport II grows with the shooter rather than requiring replacement as skills advance. The M&P15 Sport II has earned widespread acceptance across civilian, law enforcement, and training markets. Many police departments issue Sport IIs as patrol rifles based on their reliability and value. Numerous shooting schools use Sport IIs as rental guns - these rifles endure thousands of rounds from students of all skill levels while maintaining function. The civilian market embraced the Sport II as an affordable first AR-15 that doesn't compromise on Smith & Wesson quality. For Americans seeking to exercise Second Amendment rights with a quality modern sporting rifle, the M&P15 Sport II delivers proven capability at prices that don't require saving for months. Smith & Wesson's lifetime service policy backs every Sport II, and their customer service consistently earns praise for responsiveness. The Sport II proves that essential quality doesn't require premium pricing - by focusing on what matters most (reliability, accuracy, durability), Smith & Wesson created the AR-15 that introduced millions of Americans to modern sporting rifles.",
+    features: [
+      "16-inch chrome-moly barrel with Armornite corrosion-resistant finish",
+      "1:9 twist rate stabilizes 55-grain and 62-grain ammunition",
+      "5R rifling reduces fouling and enhances accuracy",
+      "Forged 7075-T6 aluminum upper and lower receivers",
+      "MP-tested barrel ensures material integrity",
+      "Properly staked chrome-plated gas key on bolt carrier",
+      "Carpenter 158 steel bolt with shot-peening treatment",
+      "Adjustable A2 front sight and removable carry handle rear sight",
+      "Six-position collapsible M4-style stock",
+      "Includes one 30-round Magpul PMAG magazine"
+    ],
+    benefits: [
+      "Over one million sold proves reliability and customer satisfaction",
+      "Smith & Wesson's 170-year manufacturing reputation",
+      "Mil-spec components ensure parts compatibility and availability",
+      "Consistent 2-3 MOA accuracy suitable for most applications",
+      "Lifetime service policy from major American manufacturer",
+      "Excellent platform for customization as skills develop"
+    ],
+    useCases: [
+      "First AR-15 for new modern sporting rifle owners",
+      "Home defense with 30-round capacity and minimal recoil",
+      "Predator and varmint hunting with flat-shooting 5.56 NATO",
+      "Range training and skills development without expensive platform",
+      "Law enforcement patrol rifle for budget-conscious departments",
+      "Truck or property defense rifle requiring proven reliability",
+      "Competition shooting in practical rifle divisions"
+    ],
+    seoKeywords: ["Smith Wesson M&P15", "M&P15 Sport II", "best first AR-15", "affordable AR-15", "SW MP15 review", "reliable AR-15", "M&P Sport II"],
+    ballisticData: {
+      effectiveRange: "500 yards (5.56 NATO with quality ammunition)",
+      muzzleVelocity: "3,100 fps (55gr 5.56 NATO)",
+      muzzleEnergy: "1,175 ft-lbs (55gr 5.56 NATO)",
+      accuracy: "2-3 MOA with quality ammunition"
+    }
   },
   {
     id: "daniel-defense-ddm4",
     name: "DDM4 V7",
     manufacturer: "Daniel Defense",
     categorySlug: "ar-platform",
-    caliber: ["5.56 NATO"],
+    caliber: ["5.56 NATO", ".223 REM"],
     price: 1899,
     inStock: true,
-    description: "Premium AR-15 with cold hammer forged barrel and mid-length gas system.",
+    description: "Premium American-made AR-15 with cold hammer-forged barrel and mid-length gas system. The professional's choice combining match-grade accuracy with combat reliability.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16 inches",
     weight: "6.28 lbs",
-    finish: "Black Cerakote"
+    finish: "Mil-Spec+ Black Cerakote",
+    shortDescription: "The Daniel Defense DDM4 V7 represents the pinnacle of American AR-15 manufacturing. Trusted by elite military units worldwide, this rifle combines cold hammer-forged accuracy with proven battlefield reliability in a lightweight package.",
+    longDescription: "Daniel Defense occupies a unique position in American firearms manufacturing - a company that supplies Tier-1 special operations units while remaining committed to the civilian market with identical quality standards. The DDM4 V7 embodies this philosophy, delivering military-grade reliability and accuracy to civilian shooters demanding the absolute best. Founded in 2002 by Marty Daniel, Daniel Defense grew from a small garage operation producing AR-15 rail systems to a manufacturer trusted by U.S. Special Operations Command (USSOCOM) and allied special forces worldwide. Their MK18 rifles serve with Delta Force, DEVGRU (SEAL Team 6), and other units where equipment failure means mission failure. The DDM4 V7 brings this same uncompromising quality to the civilian market. The V7's defining feature is its 16-inch cold hammer-forged (CHF) barrel - arguably the finest production AR-15 barrel manufactured in America. Cold hammer forging compresses and work-hardens the steel through hydraulic hammering over a mandrel, creating a barrel that is simultaneously lighter, stronger, more accurate, and longer-lasting than traditional button-rifled or cut-rifled barrels. The process aligns the steel's molecular structure along the bore axis, eliminating weak points. Daniel Defense's CHF process produces barrels rated for 20,000+ rounds of accuracy life - three to four times that of standard barrels. The barrel features a mid-length gas system, a significant upgrade over carbine-length systems used on most 16-inch AR-15s. The mid-length gas port location reduces bolt velocity and felt recoil while enhancing reliability and extending parts life. The result is a rifle that shoots softer than comparable carbine-gas guns while maintaining 100% reliability with any quality ammunition. The chrome-lined barrel interior provides corrosion resistance and easy cleaning - critical features for professional use that benefit civilian shooters through enhanced longevity. The 1:7 twist rate stabilizes all 5.56 NATO loads from 55-grain to 77-grain match ammunition, providing optimal versatility. The M-LOK handguard represents Daniel Defense's industry-leading approach to modular accessories. Their slim-profile design measures just 1.5 inches in diameter, providing comfortable ergonomics for shooters with smaller hands while accepting any M-LOK accessory. The free-floating design eliminates barrel contact, preserving the inherent accuracy of the CHF barrel. The handguard features Daniel Defense's patented KeyMod/M-LOK attachment system at the 3, 6, and 9 o'clock positions, allowing tactical light, laser, and vertical grip mounting without adding bulk. Four QD sling swivel attachment points provide ambidextrous sling mounting options. The bolt carrier group uses Daniel Defense's proprietary design featuring shot-peened Carpenter 158 steel bolt, chrome-lined carrier, and enhanced gas key staking that exceeds mil-spec requirements. The extractor features an upgraded spring and black oxide O-ring insert for enhanced reliability. The firing pin is shrouded to prevent slam-fires with free-floating firing pins. Every component is magnetic particle inspected to detect microscopic flaws that could lead to failure. The trigger is Daniel Defense's own design - a mil-spec single-stage unit with refined geometry delivering crisp 5.5-6 pound breaks with minimal creep. While not a match trigger, the DD trigger represents the best mil-spec trigger available, and many competitive shooters use them without upgrades. For those wanting match triggers, any aftermarket AR trigger installs without modification. The furniture includes Daniel Defense's Buttstock and Pistol Grip with Soft Touch overmolding - providing secure grip in all conditions while remaining comfortable during extended shooting sessions. The stock features an integral QD mounting point and rubber buttpad. The upper and lower receivers are forged 7075-T6 aluminum with Daniel Defense's Mil-Spec+ Type III hard-coat anodizing process that exceeds standard mil-spec durability. The upper receiver features M4 feed ramps machined into the receiver extension - a critical feature ensuring reliable feeding with modern ammunition. The Daniel Defense iron sights, when included, are among the finest back-up iron sights (BUIS) manufactured. The front sight is a fixed A-frame gas block design, while the rear sight folds flat when using optics. Both sights are precision-machined and provide battle-proven reliability. The DDM4 V7 ships with a Daniel Defense buttstock, pistol grip, and 32-round Magpul PMAG. Everything needed for immediate use is included. Daniel Defense's quality control process ensures every rifle meets specifications - random rifles are pulled from production and subjected to 10,000-round endurance testing. This commitment to quality means DDM4 rifles simply work, regardless of conditions or ammunition. The V7 has earned adoption by law enforcement agencies nationwide, competitive shooters in three-gun and precision rifle competitions, and serious civilian shooters who appreciate rifles built to professional standards. The premium price reflects genuine quality - Daniel Defense rifles are not expensive because of marketing, they're expensive because they're built better than almost any other production AR-15. For shooters demanding absolute reliability combined with match-grade accuracy in a lightweight package backed by American manufacturing excellence, the Daniel Defense DDM4 V7 justifies every dollar.",
+    features: [
+      "16-inch cold hammer-forged chrome-lined barrel",
+      "Mid-length gas system reduces recoil and enhances reliability",
+      "1:7 twist rate stabilizes all 5.56 NATO ammunition",
+      "Free-floating M-LOK handguard with slim 1.5-inch diameter",
+      "Enhanced bolt carrier group with magnetic particle inspection",
+      "Mil-Spec+ Type III hard-coat anodizing exceeds standard specs",
+      "Daniel Defense Buttstock and Pistol Grip with Soft Touch",
+      "M4 feed ramps machined into receiver for reliability",
+      "Four QD sling mounting points for ambidextrous use",
+      "Includes Daniel Defense iron sights and 32-round Magpul PMAG"
+    ],
+    benefits: [
+      "Trusted by U.S. Special Operations Command and elite units",
+      "20,000+ round barrel life exceeds competitors by 3-4x",
+      "Mid-length gas system provides softer shooting and longer life",
+      "100% American manufacturing in Black Creek, Georgia",
+      "Lightweight 6.28 pounds without sacrificing durability",
+      "Every rifle tested to same standards as military contracts"
+    ],
+    useCases: [
+      "Professional use by law enforcement and security personnel",
+      "Competitive three-gun and practical rifle shooting",
+      "Serious home defense with proven combat reliability",
+      "Long-range precision shooting with 77-grain match ammunition",
+      "Predator hunting requiring accuracy and quick follow-up shots",
+      "Tactical training and defensive carbine courses",
+      "Premium AR-15 for shooters accepting no compromises"
+    ],
+    seoKeywords: ["Daniel Defense DDM4 V7", "DDM4 V7 review", "best AR-15", "cold hammer forged AR", "Daniel Defense rifle", "premium AR-15", "SOCOM AR-15"],
+    ballisticData: {
+      effectiveRange: "600+ yards (with match ammunition)",
+      muzzleVelocity: "3,150 fps (55gr 5.56 NATO)",
+      muzzleEnergy: "1,212 ft-lbs (55gr 5.56 NATO)",
+      accuracy: "1-1.5 MOA with match ammunition"
+    }
   },
   {
     id: "ruger-ar556",
@@ -3869,12 +3945,50 @@ export const firearms: Firearm[] = [
     caliber: ["5.56 NATO", ".223 REM"],
     price: 849,
     inStock: true,
-    description: "Value-priced AR-15 with chrome-plated bolt carrier and milled gas block.",
+    description: "American-made value AR-15 with premium features at accessible pricing. Ruger's legendary durability applied to modern sporting rifle platform with no shortcuts.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16.1 inches",
     weight: "6.5 lbs",
-    finish: "Black"
+    finish: "Black Oxide",
+    shortDescription: "The Ruger AR-556 delivers Ruger's reputation for bombproof reliability to the AR-15 platform. With features typically found on rifles costing hundreds more, the AR-556 proves quality doesn't require premium pricing.",
+    longDescription: "The Ruger AR-556 embodies everything Ruger stands for - overbuilt reliability, American manufacturing, and exceptional value. When Ruger entered the AR-15 market in 2014, they could have simply assembled rifles from outsourced components like many competitors. Instead, Ruger applied their 70+ years of manufacturing expertise to produce an AR-15 that includes premium features at prices challenging economy competitors. The result is an AR-15 that consistently outsells rifles costing twice as much because shooters recognize genuine value when they see it. The AR-556's barrel represents Ruger's commitment to quality. The 16.1-inch cold hammer-forged chrome-moly steel barrel uses the same manufacturing process that produces barrels for military contracts. Cold hammer forging work-hardens the steel while maintaining dimensional consistency impossible with traditional rifling methods. The result is a barrel that delivers consistent accuracy through thousands of rounds while resisting erosion and heat damage. The 1:8 twist rate represents optimal compromise - it stabilizes everything from 55-grain varmint bullets to 77-grain match ammunition while providing best-in-class accuracy with the most common 62-grain loads. Ruger applies their proprietary medium contour profile that provides stiffness for accuracy while keeping weight manageable. The 5R rifling reduces copper fouling and maintains accuracy longer between cleanings - a feature typically found only on premium barrels. The AR-556's most significant feature is the milled gas block - an area where most economy AR-15s cut corners with cast or stamped blocks. Ruger precision-mills each gas block from steel bar stock, ensuring perfect alignment and preventing gas leaks that cause reliability issues. The gas block is pinned in place with roll pins, not set screws that can vibrate loose. This attention to detail in a non-visible component exemplifies Ruger's engineering philosophy - do it right regardless of what competitors do. The carbine-length gas system provides reliable function with virtually any ammunition while the properly staked gas tube prevents loosening even after thousands of rounds. The bolt carrier group features the Ruger-marked chrome-plated bolt carrier with properly staked gas key using Grade 8 fasteners. The bolt is machined from Carpenter 158 steel - the same material specified for military M16/M4 rifles. Shot-peening treatment relieves stress points and enhances fatigue resistance, allowing the bolt to endure tens of thousands of firing cycles. The extractor features dual springs with black insert for enhanced extraction reliability, while the ejector is properly staked to prevent walking out. Every bolt is magnetic particle inspected to detect microscopic flaws invisible to the naked eye. This level of inspection at Ruger's price point demonstrates their commitment to quality. The upper and lower receivers are forged from 7075-T6 aluminum and finished with Ruger's black oxide coating that resists corrosion while remaining cost-effective. The receivers feature M4 feed ramps for enhanced reliability with modern ammunition. The flat-top upper accepts any standard optic mounting system, while the forward assist and dust cover provide traditional military carbine features. The trigger is Ruger's own design - a crisp single-stage unit breaking around 6.5 pounds with minimal creep. While not a precision match trigger, the Ruger trigger surpasses most economy AR-15 triggers and satisfies most shooters without upgrades. When desired, any aftermarket AR trigger installs without modification. The furniture includes Ruger's rapid-deploy folding rear sight and milled F-height gas block with integral post front sight. These sights provide immediate usability out of the box while folding flat when adding optics. The six-position collapsible buttstock features multiple QD mounting points for sling attachment, while the A2-style pistol grip provides adequate control and accepts any aftermarket grip upgrade. The handguard is a standard carbine-length design with ample rail space for lights, lasers, or other accessories. While not free-floating, the standard handguard keeps weight and cost down while providing adequate accuracy for most applications. Ruger designed the AR-556 for easy upgrades - the barrel nut uses standard wrench flats allowing drop-in installation of any free-float handguard system. The AR-556 includes a Magpul PMAG magazine and comes with Ruger's transferable lifetime warranty - if anything breaks, Ruger fixes it regardless of who owns the gun. This warranty backing reflects Ruger's confidence in their manufacturing quality and provides peace of mind no budget AR-15 can match. The AR-556 has earned widespread adoption across civilian, law enforcement training, and educational markets. Many shooting schools purchase AR-556s as rental guns because they withstand abuse from thousands of student rounds while maintaining function. Police departments with limited budgets issue AR-556s as patrol rifles knowing they'll perform when needed. Civilian shooters appreciate the AR-556 as an outstanding first AR-15 that includes features typically costing hundreds extra. The AR-556 proves Ruger's philosophy - build it stronger than necessary, include features shooters actually need, and price it fairly. For Americans seeking proven AR-15 reliability backed by American manufacturing and lifetime warranty, the Ruger AR-556 delivers exceptional value.",
+    features: [
+      "16.1-inch cold hammer-forged chrome-moly barrel",
+      "1:8 twist rate optimized for 55-77 grain ammunition",
+      "Precision-milled gas block prevents alignment issues",
+      "5R rifling reduces fouling and enhances accuracy",
+      "Carpenter 158 steel bolt with shot-peening treatment",
+      "Chrome-plated bolt carrier with properly staked gas key",
+      "Forged 7075-T6 aluminum upper and lower receivers",
+      "Ruger rapid-deploy folding sights included",
+      "M4 feed ramps for enhanced reliability",
+      "Lifetime transferable warranty"
+    ],
+    benefits: [
+      "Cold hammer-forged barrel provides premium accuracy at value price",
+      "Milled gas block ensures reliable function exceeding budget competitors",
+      "Ruger's 70+ year manufacturing reputation and quality control",
+      "Lifetime warranty transfers to subsequent owners",
+      "American-made in Ruger's New Hampshire facility",
+      "Features typically found on rifles costing $300-500 more"
+    ],
+    useCases: [
+      "First AR-15 offering premium features at entry pricing",
+      "Home defense with 30-round capacity and reliable function",
+      "Varmint and predator hunting with flat-shooting 5.56 NATO",
+      "Range training and competition shooting without expensive platform",
+      "Law enforcement training rifles for academy use",
+      "Property and ranch defense requiring proven reliability",
+      "Platform for customization as shooting skills develop"
+    ],
+    seoKeywords: ["Ruger AR-556", "AR-556 review", "best budget AR-15", "American made AR-15", "Ruger AR556", "value AR-15", "reliable AR-15"],
+    ballisticData: {
+      effectiveRange: "500 yards (with quality ammunition)",
+      muzzleVelocity: "3,100 fps (55gr 5.56 NATO)",
+      muzzleEnergy: "1,175 ft-lbs (55gr 5.56 NATO)",
+      accuracy: "2 MOA with quality ammunition"
+    }
   },
   {
     id: "psa-pa15",
@@ -3908,18 +4022,56 @@ export const firearms: Firearm[] = [
   },
   {
     id: "bcm-recce16",
-    name: "RECCE-16",
-    manufacturer: "BCM",
+    name: "RECCE-16 MCMR",
+    manufacturer: "BCM (Bravo Company)",
     categorySlug: "ar-platform",
-    caliber: ["5.56 NATO"],
+    caliber: ["5.56 NATO", ".223 REM"],
     price: 1699,
     inStock: true,
-    description: "Bravo Company rifle built for reliability with BFH barrel.",
+    description: "Purpose-built professional carbine with BFH barrel and battle-proven reliability. The choice of serious shooters who trust their lives to their equipment.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16 inches",
     weight: "6.4 lbs",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The BCM RECCE-16 represents no-compromise professional AR-15 design. Trusted by military special operations, federal law enforcement, and serious civilians who understand the difference between marketing and mission-critical quality.",
+    longDescription: "Bravo Company Manufacturing (BCM) occupies a unique niche in the AR-15 market - a company that eschews marketing flash in favor of engineering excellence and battlefield-proven reliability. Founded in 2003 by former U.S. Marine Paul Buffoni, BCM builds rifles for people whose lives depend on their equipment functioning without fail. The RECCE-16 embodies this philosophy, delivering military-grade reliability without the marketing premium that inflates prices of some competitors. The RECCE (Reconnaissance) concept originated with U.S. military special operations units seeking carbines optimized for versatile deployment - light enough for extended carry, accurate enough for precision work, and reliable enough to stake lives on. The RECCE-16 delivers exactly this capability to civilian and professional shooters. The RECCE-16's barrel represents BCM's uncompromising approach to critical components. The 16-inch barrel features BCM's BFH (Barrel, Hammer Forged) treatment using cold hammer forging technology to create barrels that exceed military specifications. The forging process work-hardens the steel while eliminating microscopic voids and inclusions that could lead to premature failure. BCM stress-relieves each barrel before machining the barrel extension and chamber, preventing dimensional changes during the critical headspace area. The chrome lining extends through the chamber, providing enhanced corrosion resistance and easier cleaning - critical for professional use where cleaning opportunities may be limited. The 1:7 twist rate stabilizes all 5.56 NATO ammunition from 55-grain to 80-grain, though BCM designed the RECCE-16 around 62-grain and heavier bullets that provide optimal performance. The barrel features BCM's ELW (Enhanced Lightweight) profile that removes material from areas not contributing to accuracy while maintaining stiffness where it matters. This results in a barrel weighing less than government profile barrels while delivering equal or superior accuracy and rigidity. The mid-length gas system provides the RECCE-16's legendary smooth shooting characteristics. Compared to carbine-length gas systems common on 16-inch barrels, the mid-length system reduces bolt velocity and felt recoil while extending component life. The result is a rifle that shoots softer, extracts more reliably, and maintains accuracy longer between cleanings. BCM individually tests gas port sizes to ensure proper function with a wide range of ammunition while preventing overgassing that accelerates wear. The low-profile gas block is precision-machined and pinned with roll pins rather than set screws that can vibrate loose. The BCM bolt carrier group represents the state of the art in AR-15 fire control components. The carrier is machined from 8620 steel bar stock (not forged), shot-peened for stress relief, then chrome-lined inside and out. The bolt is machined from Carpenter 158 steel, shot-peened, magnetic particle inspected for defects, then properly heat-treated to achieve optimal hardness. The extractor uses BCM's upgraded spring and black oxide D-shaped insert for enhanced extraction reliability. The gas key is Grade 8 hardened and staked so aggressively that removal requires cutting - a quality indicator that separates professional-grade from consumer-grade BCGs. Every component undergoes high-pressure testing to verify proper heat treatment. The MCMR (M-LOK Compatible Modular Rail) handguard defines modern AR-15 rail design. BCM's engineers eliminated unnecessary material while maintaining strength, creating a handguard that measures just 1.5 inches in diameter yet provides rock-solid mounting for accessories. The M-LOK attachment points at the 3, 6, and 9 o'clock positions accept lights, lasers, vertical grips, and hand stops without adding bulk when not needed. The full-length top rail provides ample space for optics mounting while maintaining the same plane as the upper receiver - critical for maintaining zero when removing and remounting optics. The handguard free-floats the barrel, eliminating contact that could affect accuracy. BCM QD sling mounting points at the rear provide ambidextrous sling attachment. The BCM Mod 0 buttstock and Mod 3 pistol grip represent BCM's attention to ergonomic details. The stock features extended rubber buttpad, QD mounting points, and BCM's proprietary locking mechanism that eliminates wobble between buffer tube and stock. The pistol grip features reduced-angle ergonomics and aggressive texturing for secure control in all conditions. The trigger is a mil-spec single-stage unit built to BCM specifications - not a match trigger, but a combat-reliable trigger with consistent pull and positive reset. Many competitive shooters use BCM triggers without modification, while those desiring match triggers find any aftermarket AR trigger installs seamlessly. The upper and lower receivers are forged 7075-T6 aluminum with M4 feed ramps and BCM's enhanced finishes that exceed standard mil-spec specifications. The charging handle is BCM's Gunfighter design with extended latches providing positive manipulation with either hand. BCM's quality control process ensures every rifle meets specifications. Random rifles are pulled from production for 10,000-round endurance testing. BCM's warranty is simple - if a component fails under normal use, BCM replaces it. This confidence reflects the reality that BCM rifles simply don't break when used as designed. The RECCE-16 serves with U.S. Special Operations units, federal law enforcement agencies, and serious civilians worldwide. Competitive shooters win matches with RECCE-16s. Professional trainers trust them for thousands of student rounds. For shooters who understand that true quality costs more than marketing hype, the BCM RECCE-16 delivers battlefield-proven reliability with accuracy that rivals custom rifles. The premium price reflects genuine manufacturing excellence - not fancy packaging or sponsored shooters, but rifles built to standards that save lives.",
+    features: [
+      "16-inch BFH cold hammer-forged chrome-lined barrel",
+      "Mid-length gas system for softer recoil and enhanced reliability",
+      "ELW profile reduces weight while maintaining accuracy",
+      "Enhanced bolt carrier group with aggressive gas key staking",
+      "MCMR M-LOK handguard with slim 1.5-inch diameter",
+      "BCM Mod 0 stock and Mod 3 pistol grip with enhanced ergonomics",
+      "Precision gas port sizing for optimal function",
+      "Carpenter 158 steel bolt with magnetic particle inspection",
+      "BCM Gunfighter charging handle with ambidextrous operation",
+      "Forged receivers with M4 feed ramps and enhanced finishes"
+    ],
+    benefits: [
+      "Trusted by U.S. Special Operations and federal law enforcement",
+      "Mid-length gas system extends parts life and improves shooting",
+      "Every rifle tested to same standards regardless of customer",
+      "BFH barrel provides 20,000+ round accuracy life",
+      "No-marketing approach focuses budget on quality components",
+      "Proven reliability in combat and competition worldwide"
+    ],
+    useCases: [
+      "Professional use by military special operations personnel",
+      "Federal and local law enforcement duty rifles",
+      "Competitive shooting in three-gun and practical rifle",
+      "Serious defensive carbine for trained shooters",
+      "Tactical training and professional instruction use",
+      "Premium AR-15 for shooters who understand quality differences",
+      "Long-range precision work with heavy match ammunition"
+    ],
+    seoKeywords: ["BCM RECCE-16", "Bravo Company rifle", "BCM AR-15", "RECCE 16 review", "professional AR-15", "BFH barrel", "BCM MCMR"],
+    ballisticData: {
+      effectiveRange: "600+ yards (with match ammunition)",
+      muzzleVelocity: "3,150 fps (55gr 5.56 NATO)",
+      muzzleEnergy: "1,212 ft-lbs (55gr 5.56 NATO)",
+      accuracy: "1.5 MOA with match ammunition"
+    }
   },
   {
     id: "sig-m400",
