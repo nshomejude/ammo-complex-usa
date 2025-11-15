@@ -52,7 +52,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {topFirearmCategories.map((category) => (
               <FirearmCategoryCard key={category.id} {...category} />
             ))}
@@ -71,7 +71,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-4">Featured Firearms</h2>
           <p className="text-muted-foreground mb-8">Popular firearms available now</p>
           
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {featuredFirearms.map((firearm) => (
               <FirearmCard 
                 key={firearm.id} 
@@ -98,7 +98,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-4">Shop by Category</h2>
           <p className="text-muted-foreground mb-8">Find the right ammunition for your needs</p>
           
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {categories.map((category) => (
               <CategoryCard key={category.slug} {...category} />
             ))}
@@ -109,7 +109,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-4">Featured Products</h2>
           <p className="text-muted-foreground mb-8">Popular ammunition in stock now</p>
           
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {featuredProducts.map((product) => (
               <ProductCard 
                 key={product.id} 
