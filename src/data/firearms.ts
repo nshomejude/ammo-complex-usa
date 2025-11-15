@@ -2066,15 +2066,53 @@ export const firearms: Firearm[] = [
     name: "Model 642",
     manufacturer: "Smith & Wesson",
     categorySlug: "revolvers",
-    caliber: [".38 Special"],
+    caliber: [".38 Special", ".38 Special +P"],
     price: 549,
     inStock: true,
-    description: "Lightweight J-frame Airweight revolver ideal for concealed carry.",
+    description: "Ultra-lightweight J-frame Airweight revolver weighing just 15 ounces. The ultimate pocket revolver for serious concealed carry.",
     actionType: "Double-Action Revolver",
     capacity: "5",
     barrelLength: "1.875 inches",
     weight: "15 oz",
-    finish: "Matte Silver"
+    finish: "Matte Silver",
+    shortDescription: "The Smith & Wesson 642 Airweight represents the pinnacle of pocket revolver design - a 15-ounce .38 Special that disappears in carry yet delivers reliable stopping power. Internal hammer eliminates snagging.",
+    longDescription: "The Smith & Wesson Model 642 Airweight exemplifies over 160 years of revolver refinement concentrated into a 15-ounce package that has saved countless lives. Part of Smith & Wesson's legendary J-frame Centennial series, the 642 traces its lineage to the Model 40 introduced in 1952, combining the best features of hammerless design with modern materials. The 642's defining characteristic is its weight - or lack thereof. At just 15 ounces unloaded, this aluminum-frame revolver weighs less than most loaded semi-automatic magazines. This featherweight construction makes the 642 genuinely pocket-carriable all day without special clothing or holsters. Yet this lightness comes with engineering challenges that Smith & Wesson solved through decades of experience. The aluminum alloy frame uses precise metallurgy to handle +P ammunition despite minimal weight. The stainless steel cylinder and barrel liner provide the strength where pressures concentrate. The internal hammer design eliminates the primary cause of pocket snags - the hammer spur catching on clothing during draws. This hammerless configuration makes the 642 a true double-action-only (DAO) revolver, with every shot requiring a full trigger pull. While this results in heavier trigger pulls around 10-12 pounds, it ensures consistent manipulation and eliminates potential issues with manually cocking hammers in high-stress situations. The enclosed hammer also prevents potential injury from hammer bite during rapid fire - a concern with exposed hammers on lightweight revolvers. The 1.875-inch barrel represents optimal compromise for pocket carry - long enough for complete powder burn and reasonable velocity, yet short enough for true concealment. Combined with the 642's minimal width of just 1.31 inches, the entire package disappears under light clothing. The fixed sights are ramped and integral to the barrel shroud, eliminating sharp edges that could catch fabric. While fixed sights can't be adjusted, Smith & Wesson regulates 642s to hit point-of-aim with standard 158-grain loads at typical defensive distances. The matte silver finish resists corrosion while remaining subdued for concealment. The synthetic grips, typically Uncle Mike's Boot Grips or similar compact stocks, minimize size while providing adequate control. For those prioritizing deep concealment, even smaller grips are available, though recoil increases noticeably. The 642's five-shot capacity seems minimal compared to modern semi-automatics, but reflects the reality of most defensive encounters. Statistics show the average defensive shooting involves 2-3 rounds fired. The 642's reliability advantage - no magazine, no feed ramp, no battery - often outweighs capacity differences in true emergency use. The revolver's ability to fire with contact against an attacker (pressing the muzzle against a body) without jamming provides a critical advantage in extreme close-quarters encounters. The 642 handles standard .38 Special ammunition comfortably and is rated for +P for those seeking enhanced performance. Modern defensive loads like the Speer Gold Dot 135-grain +P achieve excellent expansion and penetration from the short barrel. The 642's lightweight makes recoil noticeable, particularly with +P ammunition, but manageable for trained shooters. Practice with lighter target loads, then validate defensive ammunition performance. The 642 has served as backup gun for countless law enforcement officers and primary carry for plainclothes detectives, off-duty personnel, and civilian concealed carriers worldwide. Its simplicity makes it ideal for less-experienced shooters or those who want reliable protection without extensive training. The 642 represents Smith & Wesson's J-frame heritage perfected for modern concealed carry - a gun that's actually carried because it's easy to carry, which makes it more likely to be available when needed. For deep concealment without compromise, the 642 Airweight remains the gold standard.",
+    features: [
+      "Ultra-lightweight 15-ounce aluminum alloy frame",
+      "Internal hammer design eliminates snagging on clothing",
+      "Double-action-only (DAO) trigger for consistent operation",
+      "Stainless steel cylinder and barrel for durability",
+      "Rated for .38 Special +P ammunition",
+      "Fixed integral sights designed for concealment",
+      "Compact 1.31-inch width profile for deep concealment",
+      "Boot grip provides adequate control while minimizing printing",
+      "Matte silver finish resists corrosion in carry environments",
+      "Transfer bar safety allows safe carry with all chambers loaded"
+    ],
+    benefits: [
+      "Truly pocket-carriable weight enables all-day comfortable carry",
+      "Hammerless design ensures snag-free draws from pockets or purses",
+      "Absolute reliability without magazines or feed mechanisms",
+      "Can be fired pressed against attacker without jamming",
+      "Simple operation ideal for less-experienced shooters",
+      "Minimal maintenance requirements compared to semi-automatics"
+    ],
+    useCases: [
+      "Primary concealed carry for maximum discretion",
+      "Backup gun for law enforcement and armed professionals",
+      "Pocket carry in non-permissive or hostile carry environments",
+      "Vehicle gun for safe storage in center consoles or gloveboxes",
+      "Elderly or recoil-sensitive shooters needing reliable protection",
+      "Plainclothes detectives requiring extreme concealment",
+      "Joggers and exercisers needing lightweight defense option"
+    ],
+    seoKeywords: ["Smith & Wesson 642", "Airweight revolver", "pocket carry gun", "hammerless 38 special", "backup revolver", "J-frame concealed carry", "SW 642 review"],
+    ballisticData: {
+      effectiveRange: "15 yards (optimal defensive range)",
+      muzzleVelocity: "850 fps (135gr .38 Special +P)",
+      muzzleEnergy: "216 ft-lbs (135gr .38 Special +P)",
+      accuracy: "3-4 inch groups at 15 yards with fixed sights"
+    }
   },
   {
     id: "ruger-gp100",
@@ -2135,15 +2173,53 @@ export const firearms: Firearm[] = [
     name: "LCR",
     manufacturer: "Ruger",
     categorySlug: "revolvers",
-    caliber: [".38 Special"],
+    caliber: [".38 Special", ".38 Special +P", ".357 Magnum"],
     price: 669,
     inStock: true,
-    description: "Lightweight compact revolver with polymer frame and Hogue Tamer grip.",
+    description: "Revolutionary polymer-framed revolver with friction-reducing cam trigger. Modern engineering meets revolver reliability for ultimate concealed carry.",
     actionType: "Double-Action Revolver",
     capacity: "5",
     barrelLength: "1.87 inches",
     weight: "13.5 oz",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Ruger LCR revolutionizes snub-nose revolver design with aerospace polymer frame, patented friction-reducing cam trigger, and monolithic frame construction. The lightest, smoothest-shooting compact revolver available.",
+    longDescription: "The Ruger LCR (Lightweight Compact Revolver) represents the most significant innovation in small-frame revolver design in decades. Introduced in 2009, the LCR challenged century-old conventions by incorporating modern materials and engineering principles while maintaining revolver simplicity and reliability. Where traditional revolvers use steel or aluminum frames, the LCR employs an aerospace-grade polymer frame that dramatically reduces weight while maintaining strength through a monolithic aluminum chassis embedded within the polymer. This chassis-within-frame design concentrates strength where needed - the cylinder window and lockwork - while using lightweight polymer for the grip frame. The result is a revolver weighing just 13.5 ounces in .38 Special configuration, lighter than any comparable all-metal snubby. But the LCR's innovation extends beyond weight. The internal fire control mechanism incorporates Ruger's patented friction-reducing cam, a sophisticated system that progressively reduces trigger pull weight as the trigger travels. Traditional double-action revolvers require constant heavy pressure throughout the trigger stroke. The LCR's cam system requires initial effort to begin cylinder rotation, then reduces resistance as the hammer cocks, resulting in a smoother, more controllable trigger pull despite similar overall weight. This cam system transforms the shooting experience - where traditional snubbies feel heavy and gritty, the LCR's trigger feels smooth and progressive. Experienced shooters immediately notice the difference, and new shooters find the LCR easier to shoot accurately than conventional designs. The LCR's monolithic frame construction eliminates traditional side plates and multiple frame components. The entire fire control group mounts to the embedded aluminum chassis, then the polymer overmolded frame encapsulates everything. This construction provides several advantages: fewer parts reduce potential failure points, the polymer frame absorbs more recoil energy than metal frames, and the design allows precise control of grip dimensions and texture. The aggressive grip texturing molded into the polymer provides secure purchase without requiring replaceable grip panels. The Hogue Tamer grip further enhances control while distributing recoil across maximum palm area - critical with lightweight revolvers. The combination of polymer frame flex and cushioned grip makes the 13.5-ounce LCR more comfortable to shoot than heavier all-metal snubbies. The fluted cylinder reduces rotational mass for faster lock time, while the pinned front sight allows replacement if damaged. The rear sight notch is integral to the frame, eliminating adjustments but ensuring durability. The LCR's external appearance reflects modern aesthetics - clean lines, minimal exposed metal, and no visible screws. The flush-mounted cylinder release and enclosed hammer contribute to the snag-free profile essential for pocket or purse carry. The LCR is available in multiple caliber configurations: .38 Special, .38 Special +P, .357 Magnum, .327 Federal Magnum, and 9mm. The .38 Special version provides optimal balance between shootability and capability. The .357 Magnum version, while slightly heavier at 17 ounces, allows full magnum performance for those wanting maximum power. The 1.87-inch barrel achieves complete powder burn with modern defensive ammunition. Loads like Hornady Critical Defense or Speer Gold Dot achieve excellent expansion and penetration from this barrel length. The LCR has gained widespread acceptance among law enforcement as backup guns and among civilians as primary carry pieces. Its combination of light weight, excellent trigger, and modern design makes it particularly popular with female shooters and those with less hand strength who find traditional revolver triggers challenging. The LCR proves that respecting revolver fundamentals while embracing modern materials and engineering produces genuine improvements. For those seeking the lightest, smoothest-shooting snub-nose revolver available, the LCR represents cutting-edge defensive handgun design.",
+    features: [
+      "Patented friction-reducing cam trigger system",
+      "Aerospace-grade polymer frame with embedded aluminum chassis",
+      "Monolithic frame construction eliminates side plates",
+      "Ultra-lightweight 13.5 ounces in .38 Special configuration",
+      "Hogue Tamer grip with cushioned insert absorbs recoil",
+      "Fluted stainless steel cylinder reduces rotational mass",
+      "Replaceable pinned front sight for durability",
+      "Available in .38 Special, .357 Magnum, .327 Federal, and 9mm",
+      "Hammerless design with internal hammer for snag-free carry",
+      "Aggressive grip texturing molded into polymer frame"
+    ],
+    benefits: [
+      "Smoothest double-action trigger of any compact revolver",
+      "Lightest weight in class makes all-day carry comfortable",
+      "Polymer frame absorbs more recoil than metal frames",
+      "Modern materials provide corrosion resistance without maintenance",
+      "Simplified design reduces potential mechanical failures",
+      "Ideal for shooters with less hand strength or arthritis"
+    ],
+    useCases: [
+      "Primary concealed carry for weight-conscious carriers",
+      "Backup gun for law enforcement with excellent trigger",
+      "Elderly shooters needing lightweight defensive option",
+      "Female carriers seeking manageable recoil in compact package",
+      "Ankle holster carry where minimal weight is critical",
+      "Joggers and exercisers needing ultralight protection",
+      "Plainclothes professionals requiring modern snub-nose"
+    ],
+    seoKeywords: ["Ruger LCR", "polymer frame revolver", "lightweight 38 special", "friction reducing cam", "LCR trigger", "modern snub nose", "Ruger LCR review"],
+    ballisticData: {
+      effectiveRange: "15 yards (optimal defensive distance)",
+      muzzleVelocity: "860 fps (110gr .38 Special +P)",
+      muzzleEnergy: "181 ft-lbs (110gr .38 Special +P)",
+      accuracy: "3 inch groups at 15 yards"
+    }
   },
   {
     id: "taurus-66",
@@ -2477,15 +2553,53 @@ export const firearms: Firearm[] = [
     name: "Model 442",
     manufacturer: "Smith & Wesson",
     categorySlug: "revolvers",
-    caliber: [".38 Special"],
+    caliber: [".38 Special", ".38 Special +P"],
     price: 549,
     inStock: true,
-    description: "Hammerless J-frame Airweight for snag-free concealed carry.",
+    description: "Matte black hammerless J-frame Airweight weighing just 15 ounces. The 642's tactical sibling with low-visibility finish for serious concealment.",
     actionType: "Double-Action Revolver",
     capacity: "5",
     barrelLength: "1.875 inches",
     weight: "15 oz",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Smith & Wesson 442 combines the legendary 642 design with tactical matte black finish for maximum concealment and discretion. Purpose-built for deep cover carry by those who need invisible protection.",
+    longDescription: "The Smith & Wesson Model 442 represents the tactical evolution of America's most popular pocket revolver. Mechanically identical to the legendary Model 642, the 442 distinguishes itself through its non-reflective matte black finish - a seemingly simple difference that carries significant tactical advantages. Where the 642's matte silver finish provides corrosion resistance and traditional aesthetics, the 442's black oxide coating serves professionals requiring absolute discretion. The completely black gun eliminates any potential for light reflection or visual detection - critical for plainclothes law enforcement, undercover operatives, and private citizens practicing deep concealment. The 442 shares the 642's aluminum alloy frame construction, achieving the same remarkable 15-ounce weight that revolutionized pocket carry. This featherweight design means the 442 disappears in ankle holsters, pocket holsters, or even smaller inside-the-waistband positions without printing or causing discomfort. For professionals working long surveillance shifts or civilians carrying through hot summers, this minimal weight makes all-day carry genuinely practical. The internal hammer design defines the gun's utility - with no external hammer spur to catch on clothing, the 442 draws cleanly from pockets, purses, or concealment garments. This hammerless configuration creates a true double-action-only operation where every trigger pull is consistent. While the 10-12 pound trigger pull feels heavy compared to single-action triggers, this weight ensures the gun won't fire accidentally during stressful handling and provides a built-in safety measure. The consistent DAO trigger becomes natural with practice, and the heavier pull actually benefits high-stress scenarios by preventing accidental discharges during adrenaline surges. The 442's 1.875-inch barrel length represents decades of data proving this the optimal compromise for defensive revolvers. Shorter barrels sacrifice velocity without meaningful size reduction, while longer barrels add length that defeats pocket carry. This barrel length achieves complete powder burn with modern defensive loads while keeping overall length under 7 inches. Modern .38 Special +P ammunition like Speer Gold Dot 135-grain or Federal HST Micro achieves excellent expansion and FBI-standard penetration depths from this barrel length. The fixed sights are ramped to prevent snagging and regulated for typical defensive distances with 158-grain loads. While not adjustable, these sights provide adequate accuracy for the 442's intended role - extreme close-quarters defense typically within 7 yards. At these distances, the fixed sights prove perfectly adequate, and their snag-free profile becomes more important than adjustability. The stainless steel cylinder and barrel liner provide necessary strength despite the aluminum frame, allowing safe use of +P ammunition. This +P rating gives the 442 meaningful stopping power from its compact package - modern +P defensive loads achieve velocities and energy approaching .357 Magnum from longer barrels. The five-shot capacity reflects reality-based defensive doctrine. Research shows most civilian defensive encounters involve 2-3 rounds fired, making the 442's capacity adequate for realistic scenarios while maintaining minimal size. The simplicity of the revolver design - no magazine, no feed ramp, no complex cycling mechanism - translates to absolute reliability. The 442 will fire every time the trigger is pulled, regardless of grip angle, contact shots, or awkward positions that might induce malfunctions in semi-automatics. This reliability advantage often outweighs capacity differences in life-threatening encounters. The synthetic grips, typically compact Uncle Mike's Boot Grips, keep overall dimensions minimal while providing adequate control. The grip texture prevents slippage during recoil, though the light weight makes recoil with +P ammunition noticeable. Smart carriers practice extensively with target loads, then validate their carry ammunition with limited +P practice. The 442 serves as primary carry for countless plainclothes detectives, private investigators, federal agents, and armed civilians who need invisible protection. Its matte black finish eliminates visual detection, while its mechanical simplicity ensures it functions when needed. For those committed to armed self-defense but unwilling to compromise on concealment, the 442 delivers Smith & Wesson reliability in a package that truly disappears. The black finish makes a statement - this is a serious tool for serious situations, built by professionals for professionals.",
+    features: [
+      "Ultra-lightweight 15-ounce aluminum alloy frame",
+      "Non-reflective matte black finish eliminates light reflection",
+      "Internal hammer design for completely snag-free operation",
+      "Double-action-only trigger with consistent 10-12 pound pull",
+      "Stainless steel cylinder and barrel rated for +P ammunition",
+      "Fixed ramped sights optimized for defensive distances",
+      "Compact 6.31-inch overall length fits pockets and ankle holsters",
+      "1.31-inch width profile for deep concealment",
+      "Synthetic boot grips minimize printing while maintaining control",
+      "Transfer bar safety system allows safe five-round carry"
+    ],
+    benefits: [
+      "Tactical black finish provides maximum visual discretion",
+      "Pocket-carriable weight enables genuine all-day comfort",
+      "Hammerless design ensures clean draws from any position",
+      "Revolver reliability eliminates magazine-related malfunctions",
+      "Simple operation ideal for high-stress defensive situations",
+      "Minimal maintenance compared to semi-automatic pistols"
+    ],
+    useCases: [
+      "Plainclothes law enforcement requiring invisible backup",
+      "Undercover operations demanding deep concealment",
+      "Ankle holster backup gun for uniformed officers",
+      "Pocket carry in hostile or non-permissive environments",
+      "Suit pocket carry for business professionals",
+      "Private investigators needing covert protection",
+      "Civilian concealed carriers prioritizing ultimate discretion"
+    ],
+    seoKeywords: ["Smith & Wesson 442", "black Airweight", "hammerless 38", "tactical pocket revolver", "plainclothes carry", "J-frame 442", "matte black snubby"],
+    ballisticData: {
+      effectiveRange: "15 yards (optimal defensive distance)",
+      muzzleVelocity: "850 fps (135gr .38 Special +P)",
+      muzzleEnergy: "216 ft-lbs (135gr .38 Special +P)",
+      accuracy: "3-4 inch groups at 15 yards"
+    }
   },
   {
     id: "charter-arms-undercover",
@@ -2495,12 +2609,50 @@ export const firearms: Firearm[] = [
     caliber: [".38 Special"],
     price: 399,
     inStock: true,
-    description: "Compact 5-shot revolver with traditional American craftsmanship.",
+    description: "Traditional American-made compact revolver offering exceptional value. The affordable alternative to premium snubbies with proven reliability since 1965.",
     actionType: "Double-Action Revolver",
     capacity: "5",
     barrelLength: "2 inches",
     weight: "16 oz",
-    finish: "Blued"
+    finish: "Blued",
+    shortDescription: "The Charter Arms Undercover delivers American-made quality at a fraction of premium revolver prices. Since 1965, this no-nonsense snubby has provided reliable protection for budget-conscious defenders without sacrificing performance.",
+    longDescription: "The Charter Arms Undercover represents an important philosophy in American firearms manufacturing: reliable defensive capability should be accessible to everyone, regardless of budget. Introduced in 1965 by Charter Arms founder Doug McClenahan, the Undercover was designed as an affordable alternative to Smith & Wesson and Colt snub-nose revolvers that were pricing many Americans out of effective self-defense. McClenahan's vision was straightforward - build a compact, reliable .38 Special revolver using efficient manufacturing methods, eliminate unnecessary features, and sell it at prices working people could afford. Over five decades later, the Undercover continues this mission, offering genuine defensive capability at roughly half the cost of premium J-frame revolvers. The Undercover's construction reflects practical design choices that reduce costs without compromising function. The frame uses traditional steel construction rather than exotic alloys or polymers, resulting in a 16-ounce package that's lightweight enough for comfortable carry while providing sufficient mass to manage recoil. This weight sits perfectly between ultra-lightweight aluminum-frame revolvers that punish the shooter and heavier steel-frame models that become burdensome. The 2-inch barrel provides optimal balance - long enough for adequate velocity with defensive ammunition while short enough for genuine concealment. The traditional blued or stainless steel finish lacks fancy Cerakote or PVD coatings but provides adequate corrosion resistance with minimal maintenance. The fixed sights are simple notch-and-post configuration regulated for typical defensive distances with standard 158-grain ammunition. While not adjustable, these sights prove perfectly adequate for the Undercover's intended role - close-quarters defense within 15 yards. The simplicity of fixed sights eliminates adjustment mechanisms that could fail or shift, contributing to the revolver's overall reliability. Charter Arms builds the Undercover using traditional methods including some hand-fitting, giving each revolver a personal touch increasingly rare in modern manufacturing. While this results in more variability between individual guns than mass-produced competitors, it also means skilled gunsmiths can easily tune Undercover triggers to excellent smoothness. The double-action trigger typically breaks around 10-12 pounds out of the box, similar to Smith & Wesson J-frames, and can be improved through break-in or minor gunsmithing. Single-action mode provides a light, crisp break for precision shooting when time allows. The Undercover's grip frame accepts various aftermarket grips, allowing customization for hand size and carry method. Compact boot grips minimize printing for deep concealment, while fuller grips improve control and recoil management. The standard factory grips provide reasonable compromise between concealability and shootability. Charter Arms' unique safety features include a hammer block system that prevents firing unless the trigger is fully pulled, allowing safe carry with all five chambers loaded. The cylinder locks positively at the crane and through the cylinder stop, ensuring reliable timing even after extensive use. The Undercover's five-shot capacity matches competitors in its size class - research consistently shows defensive encounters average 2-3 rounds fired, making five rounds adequate for realistic scenarios. The simplicity of the revolver platform - no magazine, no feed ramp, no complex cycling mechanism - provides absolute reliability when needed. The Undercover will fire every time regardless of grip angle, ammunition choice, or shooting position. This reliability advantage often outweighs capacity differences in life-threatening situations. Charter Arms manufactures all Undercover revolvers in Shelton, Connecticut, maintaining American jobs and supporting domestic firearms industry. The company's lifetime warranty backs their products, though the Undercover's simplicity means it rarely needs factory service. Common replacement parts are readily available through gunsmith supply houses. The Undercover has served countless Americans as primary carry gun, backup piece, and home defender since 1965. Its combination of reliability, adequate power, and genuine affordability makes defensive capability accessible to those who cannot afford premium revolvers. For shooters seeking proven .38 Special performance without premium prices, the Charter Arms Undercover delivers honest defensive capability with American-made quality.",
+    features: [
+      "Traditional all-steel construction for durability",
+      "Optimal 16-ounce weight balances carryability and shootability",
+      "2-inch barrel provides best velocity/concealability compromise",
+      "Traditional blued or stainless finish resists corrosion",
+      "Fixed sights regulated for defensive distances",
+      "Hammer block safety allows safe five-round carry",
+      "Accepts wide variety of aftermarket grip options",
+      "Traditional double-action/single-action operation",
+      "American-made in Shelton, Connecticut",
+      "Lifetime manufacturer's warranty"
+    ],
+    benefits: [
+      "Exceptional value at half the cost of premium competitors",
+      "Steel construction provides ideal weight for recoil management",
+      "Simple design ensures easy maintenance and repair",
+      "American manufacturing supports domestic firearms industry",
+      "Traditional revolver reliability without magazine issues",
+      "Suitable for shooters on budget without compromising safety"
+    ],
+    useCases: [
+      "Budget-conscious first-time gun buyers seeking reliable defense",
+      "Backup gun for those who cannot afford premium snubbies",
+      "Vehicle or truck gun where theft risk requires lower investment",
+      "Elderly on fixed income needing affordable protection",
+      "Rural property defense where simplicity trumps features",
+      "Training gun for learning revolver fundamentals economically",
+      "Home defense for families with limited firearms budget"
+    ],
+    seoKeywords: ["Charter Arms Undercover", "affordable 38 special", "budget snub nose", "American made revolver", "Undercover revolver review", "cheap defensive revolver"],
+    ballisticData: {
+      effectiveRange: "15 yards (optimal defensive distance)",
+      muzzleVelocity: "850 fps (125gr .38 Special)",
+      muzzleEnergy: "201 ft-lbs (125gr .38 Special)",
+      accuracy: "3-4 inch groups at 15 yards with fixed sights"
+    }
   },
 
   // Category 4: Bolt-Action Hunting Rifles
