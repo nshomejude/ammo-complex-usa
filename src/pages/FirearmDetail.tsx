@@ -202,7 +202,7 @@ const FirearmDetail = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="grid grid-cols-1 gap-2 lg:gap-3 lg:grid-cols-2 mb-8">
+        <div className="grid grid-cols-1 gap-0.5 lg:gap-1 lg:grid-cols-2 mb-8">
           {/* Left Column - Image and Desktop-only sections */}
           <div>
             <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-3 sm:p-4 max-w-md mx-auto lg:mx-0">
