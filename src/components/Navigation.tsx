@@ -197,6 +197,33 @@ export const Navigation = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Reviews <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-64 bg-background z-50">
+                {reviewsPages.map((page) => (
+                  <DropdownMenuItem key={page.path} asChild>
+                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
+                Demos <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-64 bg-background z-50">
+                {landingPages.map((page) => (
+                  <DropdownMenuItem key={page.path} asChild>
+                    <Link to={page.path} className="w-full cursor-pointer">{page.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <Link to="/admin" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Admin
             </Link>
