@@ -4482,12 +4482,62 @@ export const firearms: Firearm[] = [
     caliber: ["7.62×39"],
     price: 899,
     inStock: true,
-    description: "Romanian AK-47 clone, most popular imported AK in America.",
+    description: "America's most popular imported AK-47, the Romanian WASR-10 delivers authentic AK reliability and proven combat design at an accessible price point.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16.25 inches",
     weight: "7.5 lbs",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The WASR-10 is the AK that introduced millions of Americans to the Kalashnikov platform. Built in Romania's Cugir factory with decades of military production experience, it offers genuine military-spec construction and legendary AK reliability.",
+    longDescription: "The Century Arms WASR-10 has earned its reputation as America's best-selling imported AK-47 through decades of consistent performance and unbeatable value. Manufactured at Romania's Cugir factory, the same facility that produced military AKs for the Romanian army and Warsaw Pact nations, the WASR-10 brings authentic Eastern Bloc manufacturing quality to the American market. Originally built as select-fire military rifles, WASR-10s are converted to semi-automatic configuration before importation and modified to accept standard double-stack AK magazines. The WASR-10 features a chrome-lined barrel that provides exceptional durability and corrosion resistance - a critical military specification that ensures the rifle can fire thousands of rounds without accuracy degradation. The stamped steel receiver, while lighter than milled receivers, represents the evolutionary pinnacle of AK design, proven through decades of military use worldwide. Every WASR-10 includes the authentic AK features that made the design legendary: long-stroke gas piston operation that cycles reliably regardless of conditions, robust construction that shrugs off abuse, and simplicity that enables field maintenance with minimal tools. The rifle accepts all standard AK furniture and accessories, providing vast customization potential. Wood furniture gives classic military aesthetics while modern polymer options reduce weight. The WASR-10's reputation for reliability is well-earned - these rifles function in conditions that would stop lesser firearms. Mud, sand, extreme cold, and neglect rarely phase a WASR. The 7.62×39 cartridge delivers significant stopping power with manageable recoil, making the WASR effective for defense, hunting medium game, and recreational shooting. While fit and finish may show tooling marks compared to premium AKs, the WASR-10's mechanical reliability and durability rival rifles costing twice as much. For shooters wanting authentic AK experience and legendary reliability without premium pricing, the WASR-10 delivers proven performance.",
+    features: [
+      "Romanian military factory construction with decades of experience",
+      "Chrome-lined barrel for exceptional durability and corrosion resistance",
+      "Stamped steel receiver - proven evolutionary AK design",
+      "Long-stroke gas piston operation ensures reliable cycling",
+      "Accepts all standard AK-47 magazines and accessories",
+      "Authentic military specifications and proven design",
+      "Standard 16.25-inch barrel for optimal ballistic performance",
+      "Traditional wood furniture with classic military aesthetics",
+      "Front sight adjustable for windage and elevation",
+      "Cleaning rod stored under barrel per military tradition"
+    ],
+    benefits: [
+      "Legendary AK reliability proven through decades of military service",
+      "Best value in authentic military-spec AK rifles",
+      "Chrome-lined barrel lasts tens of thousands of rounds",
+      "Functions reliably in adverse conditions other rifles can't handle",
+      "Huge aftermarket support for customization and upgrades",
+      "7.62×39 ammunition widely available and affordable",
+      "Simple design enables easy maintenance and repair"
+    ],
+    useCases: [
+      "Home defense with proven military stopping power",
+      "Hunting medium game like deer and hogs within 200 yards",
+      "Recreational shooting and AK platform familiarization",
+      "Prepping and emergency preparedness scenarios",
+      "Ranch and farm utility rifle for livestock protection",
+      "Competitive shooting in AK-specific divisions"
+    ],
+    technicalDetails: "The WASR-10 features a stamped 1mm steel receiver manufactured at Romania's Cugir Arms Factory. The barrel is hammer-forged and chrome-lined with 1:10 right-hand twist rifling optimized for 7.62×39 ballistics. The long-stroke gas piston system uses a rotating bolt with dual locking lugs. The rifle includes a slant-style muzzle brake that reduces muzzle climb during rapid fire. Standard configuration includes wood stock, pistol grip, and handguard. The trigger is standard AK single-stage design pulling approximately 5.5-7 lbs. Sights consist of adjustable front post and U-notch rear graduated to 1000 meters. The rifle accepts standard AK-47 double-stack 30-round magazines. Overall length is 34.25 inches. Weight is approximately 7.5 lbs unloaded. Ships with one magazine, cleaning kit, and sling.",
+    whyChoose: "Choose the WASR-10 when you want authentic AK experience and legendary reliability without paying premium prices. This is the rifle that introduced millions to the AK platform and continues outselling competitors through proven performance. Built in the same factory that armed military forces, the WASR-10 delivers genuine military-spec construction and durability. While premium AKs offer enhanced fit and finish, the WASR's mechanical reliability and chrome-lined barrel durability rival any AK regardless of price. For shooters wanting the legendary Kalashnikov reliability, proven 7.62×39 power, and vast customization potential at an accessible price, the WASR-10 remains the gold standard value.",
+    seoKeywords: [
+      "WASR-10",
+      "wasr 10 for sale",
+      "romanian ak-47",
+      "century arms wasr",
+      "ak-47 rifle",
+      "best budget ak",
+      "7.62x39 rifle",
+      "imported ak-47"
+    ],
+    ballisticData: {
+      effectiveRange: "400 yards",
+      maxRange: "3,000 yards",
+      muzzleVelocity: "2,350 fps (123gr)",
+      muzzleEnergy: "1,508 ft-lbs",
+      accuracy: "3-4 MOA with quality ammunition"
+    }
   },
   {
     id: "zastava-zpap",
@@ -4512,27 +4562,127 @@ export const firearms: Firearm[] = [
     caliber: ["7.62×39"],
     price: 1899,
     inStock: true,
-    description: "Premium milled receiver AK built in Bulgaria to highest standards.",
+    description: "The pinnacle of AK craftsmanship. Bulgarian military contractor Arsenal produces the SAM7 with milled receiver, premium materials, and exceptional fit and finish that defines world-class AK quality.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16.3 inches",
     weight: "8.5 lbs",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Arsenal SAM7 represents the absolute pinnacle of AK-47 manufacturing. Built by Bulgaria's premier military contractor with a forged and milled receiver, the SAM7 delivers accuracy, durability, and refinement that sets the gold standard for AK excellence.",
+    longDescription: "Arsenal Bulgaria has been manufacturing military small arms for over 120 years, supplying Bulgarian armed forces and exporting worldwide. The SAM7 represents their flagship commercial offering, built to the same exacting standards as military contract weapons. What sets the SAM7 apart is the milled receiver - machined from a solid billet of steel rather than stamped from sheet metal. This traditional manufacturing method, used in original Russian AK-47s before the AKM stamped design, provides unmatched rigidity, precision, and durability. The additional weight from the milled receiver significantly reduces felt recoil and muzzle rise, improving controllability and enabling faster accurate follow-up shots. The SAM7's cold hammer-forged barrel with chrome lining is manufactured to military specifications exceeding commercial standards. Arsenal's legendary barrel quality delivers accuracy that surprises shooters accustomed to typical AK precision - many SAM7 owners report 1.5-2 MOA accuracy with quality ammunition, performance rivaling many AR-15s. The rifle's fit and finish is exceptional, with smooth action, tight tolerances, and attention to detail throughout. Arsenal tests every rifle for function, headspace, and accuracy before leaving the factory. The SAM7 includes premium features: enhanced fire control group with smoother trigger, steel magazine with bolt-hold-open follower, cleaning kit, and sling. The double-stage trigger, while heavier than AR triggers, breaks cleanly and predictably. Furniture is quality polymer designed for durability and comfort. The side rail mount accepts optics while maintaining perfect alignment. While the SAM7 costs twice what budget AKs command, the quality difference is immediately apparent. Smoother action, superior accuracy, enhanced reliability, and exceptional durability justify the investment for serious shooters. The SAM7 represents what AK-47s were meant to be - built without compromise to military contractor standards.",
+    features: [
+      "Forged and milled receiver machined from solid steel billet",
+      "Cold hammer-forged chrome-lined barrel to military specification",
+      "Bulgarian military contractor quality and testing standards",
+      "Enhanced fire control group with improved trigger characteristics",
+      "Exceptional 1.5-2 MOA accuracy potential with quality ammunition",
+      "Side rail mount for optics maintains zero perfectly",
+      "Tight tolerances and superior fit and finish throughout",
+      "Premium polymer furniture designed for durability",
+      "Every rifle function tested and accuracy verified at factory",
+      "Heavier milled receiver reduces recoil and improves control"
+    ],
+    benefits: [
+      "Finest AK-47 quality available - built to military contract standards",
+      "Milled receiver provides unmatched rigidity and durability",
+      "Accuracy rivals many AR-15s, exceptional for AK platform",
+      "Premium materials and construction ensure multi-generational service life",
+      "Smoother action and tighter tolerances than budget AKs",
+      "Factory testing ensures reliability and proper function",
+      "Retains value extremely well due to limited production and premium quality"
+    ],
+    useCases: [
+      "Serious defensive rifle for those demanding absolute reliability",
+      "Precision shooting at extended ranges where AK accuracy typically limits performance",
+      "Competitive shooting requiring accuracy and reliability",
+      "Collection centerpiece representing finest AK craftsmanship",
+      "Multi-generational heirloom firearm built for lifetime use",
+      "Professional use requiring uncompromising quality"
+    ],
+    technicalDetails: "The SAM7 features a forged and milled receiver machined from solid ordnance-grade steel. The barrel is cold hammer-forged with chrome lining and 1:9.45 right-hand twist rifling. The enhanced trigger system provides improved feel with approximately 5-6 lb pull weight. Front sight is adjustable for windage and elevation. Rear sight is graduated to 800 meters. The side optics rail accepts standard AK scope mounts. Overall length is 37 inches with stock extended, 27.75 inches folded (SF model). The rifle ships with one steel 10-round magazine (upgradeable to 30-round), cleaning kit, sling, and owner's manual. The SAM7SF variant includes side-folding stock. All SAM7 rifles are proof tested at Bulgarian military proof houses before export.",
+    whyChoose: "Choose the Arsenal SAM7 when only the finest AK-47 quality will suffice. This is not a budget rifle - it's an investment in the absolute best the AK platform offers. Built by Bulgaria's premier military contractor to standards exceeding commercial production, the SAM7 delivers accuracy, reliability, and refinement that justify the premium price. The milled receiver provides rigidity and durability that will outlast generations. The accuracy rivals many AR-15s. The fit, finish, and attention to detail are exceptional. For shooters who appreciate superior craftsmanship, want multi-generational durability, or demand maximum AK performance, the SAM7 represents the pinnacle of Kalashnikov engineering.",
+    seoKeywords: [
+      "arsenal sam7",
+      "arsenal sam7sf",
+      "milled receiver ak",
+      "bulgarian ak-47",
+      "premium ak rifle",
+      "best ak-47",
+      "arsenal bulgaria",
+      "milled ak for sale"
+    ],
+    ballisticData: {
+      effectiveRange: "500 yards",
+      maxRange: "3,000 yards",
+      muzzleVelocity: "2,380 fps (123gr)",
+      muzzleEnergy: "1,548 ft-lbs",
+      accuracy: "1.5-2 MOA with match ammunition"
+    }
   },
   {
     id: "psa-ak47",
-    name: "AK-47",
+    name: "AK-47 GF3",
     manufacturer: "Palmetto State Armory",
     categorySlug: "ak-pattern",
     caliber: ["7.62×39"],
     price: 799,
     inStock: true,
-    description: "American-made AK with forged trunnion and chrome-lined barrel.",
+    description: "100% American-made AK-47 with forged trunnions, chrome-lined barrel, and lifetime warranty. PSA's Gen 3 design delivers proven reliability at exceptional value.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16.5 inches",
     weight: "7.8 lbs",
-    finish: "Black"
+    finish: "Black Nitride",
+    shortDescription: "The PSA AK-47 GF3 represents American AK manufacturing coming of age. Completely made in the USA with forged trunnions, FN hammer-forged barrel, and robust construction backed by lifetime warranty, the GF3 offers imported AK quality at domestic prices.",
+    longDescription: "Palmetto State Armory's AK-47 GF3 (Generation 3) represents the culmination of years of American AK manufacturing development. After studying the strengths and weaknesses of imported AKs and refining their manufacturing processes through previous generations, PSA created the GF3 as a 100% American-made AK that matches or exceeds imported quality. The heart of any AK is the trunnion - the component that holds the barrel and absorbs recoil forces. PSA's GF3 features a forged 4140 steel front trunnion and forged S7 tool steel bolt, the strongest materials available for these critical components. Many imported AKs use cast trunnions that can crack under sustained use, but PSA's forged trunnions are virtually indestructible. The barrel is made by FN (Fabrique Nationale), the legendary Belgian arms manufacturer, hammer-forged and chrome-lined to military specifications. This premium barrel rivals the finest imported AK barrels for accuracy and durability. The bolt carrier is properly heat-treated and machined to specification. The GF3's receiver is stamped from 4140 steel, maintaining traditional AK weight and handling characteristics. PSA's attention to detail shows throughout the rifle - proper rivet placement, smooth finish, correctly contoured furniture. The trigger, while standard AK design, is properly assembled with correct hammer/disconnector engagement. Front and rear sights are properly aligned and staked. The rifle includes modern improvements: enhanced safety selector, cleaning rod, front sight adjustment tool. Perhaps most impressive is PSA's lifetime warranty - they stand behind their manufacturing with unlimited round count, no-questions-asked coverage. This confidence comes from extensive testing including 5,000+ round torture tests. The GF3 accepts all standard AK furniture and magazines. Users report excellent reliability and accuracy comparable to WASR-10 and other imported AKs. For American-made quality, lifetime warranty, and value pricing, the PSA GF3 proves domestic AK manufacturing can compete with imports.",
+    features: [
+      "100% American manufactured with lifetime warranty",
+      "Forged 4140 steel front trunnion - virtually indestructible",
+      "Forged S7 tool steel bolt for maximum strength",
+      "FN hammer-forged chrome-lined barrel to military spec",
+      "Properly heat-treated bolt carrier and components",
+      "4140 steel stamped receiver with correct specifications",
+      "Enhanced safety selector for easier manipulation",
+      "Black nitride finish for corrosion resistance",
+      "Front sight adjustment tool included",
+      "Accepts all standard AK furniture and magazines"
+    ],
+    benefits: [
+      "Lifetime warranty with unlimited round count coverage",
+      "Forged trunnions provide superior durability over cast alternatives",
+      "FN barrel ensures accuracy and longevity",
+      "American manufacturing supports domestic gun industry",
+      "Extensive factory testing validates reliability",
+      "Outstanding value - imported quality at lower price",
+      "No waiting for imports or dealing with foreign supply issues"
+    ],
+    useCases: [
+      "Home defense with proven AK reliability and American warranty",
+      "Range shooting and training with affordable 7.62×39 ammunition",
+      "Hunting medium game within AK effective ranges",
+      "Prepping and emergency preparedness applications",
+      "Supporting American firearms manufacturing",
+      "First AK purchase with warranty peace of mind"
+    ],
+    technicalDetails: "The PSA GF3 features a 4140 steel stamped receiver with properly riveted construction. The front trunnion is forged 4140 steel, bolt is forged S7 tool steel. Barrel is FN hammer-forged chrome-lined with 1:9.5 right-hand twist. Overall length is 36.5 inches with weight of 7.8 lbs unloaded. Trigger pull is approximately 5.5-6.5 lbs. Front sight is adjustable for windage and elevation, rear sight graduated to 800 meters. Gas block is standard AK design with adjustable gas port. Furniture is mil-spec polymer in black finish. Ships with one 30-round Magpul PMAG, cleaning kit, and adjustment tool. Made entirely in Palmetto State Armory's South Carolina facility.",
+    whyChoose: "Choose the PSA AK-47 GF3 when you want American-made quality with lifetime warranty backing. PSA's forged trunnions and FN barrel provide durability and accuracy matching expensive imports, while the lifetime warranty offers peace of mind unavailable with foreign rifles. The GF3's extensive testing and refinement through multiple generations resulted in a rifle that proves American manufacturers can build quality AKs. Supporting domestic manufacturing, getting unlimited warranty coverage, and paying less than imported alternatives makes the GF3 an intelligent choice for practical shooters.",
+    seoKeywords: [
+      "PSA AK-47",
+      "palmetto state armory ak",
+      "american made ak-47",
+      "PSA GF3",
+      "usa ak rifle",
+      "lifetime warranty ak",
+      "budget ak-47",
+      "forged trunnion ak"
+    ],
+    ballisticData: {
+      effectiveRange: "400 yards",
+      maxRange: "3,000 yards",
+      muzzleVelocity: "2,350 fps (123gr)",
+      muzzleEnergy: "1,508 ft-lbs",
+      accuracy: "3-4 MOA with quality ammunition"
+    }
   },
   {
     id: "riley-defense-rak47",
@@ -4542,12 +4692,62 @@ export const firearms: Firearm[] = [
     caliber: ["7.62×39"],
     price: 849,
     inStock: true,
-    description: "USA-made AK with forged components and lifetime warranty.",
+    description: "American-made AK-47 with forged components throughout, enhanced trigger, and true lifetime warranty. Riley Defense builds premium quality AKs with meticulous attention to detail.",
     actionType: "Semi-Automatic",
     capacity: "30+1",
     barrelLength: "16.5 inches",
     weight: "7.6 lbs",
-    finish: "Black"
+    finish: "Black Nitride",
+    shortDescription: "The Riley Defense RAK47 combines old-world AK craftsmanship with American manufacturing innovation. Built with forged trunnions, enhanced trigger, and backed by legitimate lifetime warranty, the RAK47 delivers premium features at mid-range prices.",
+    longDescription: "Riley Defense entered the American AK market with a commitment to building rifles that honor the original Kalashnikov design while incorporating modern manufacturing improvements. The RAK47 represents their flagship offering - a meticulously assembled AK-47 featuring quality components and enhanced features. Riley Defense uses forged trunnions throughout, providing the strength and durability that stamped receivers require. The front trunnion, which bears the brunt of recoil forces, is forged from 4140 steel and properly heat-treated. The bolt and bolt carrier are likewise forged and heat-treated to specification. Riley sources their barrels from premium American manufacturers, cold hammer-forged and chrome-lined for extended service life. What distinguishes the RAK47 is attention to details many manufacturers overlook. The trigger group is enhanced with improved geometry providing smoother, lighter pull than standard AK triggers - typically 4.5-5.5 lbs compared to 6-8 lbs for military triggers. The rifle is properly head-spaced and test-fired at the factory. Furniture fitment is tight with no rattles or looseness. Rivets are properly sized and installed with correct crush. The finish is durable black nitride providing excellent corrosion resistance. Riley includes upgraded furniture options including Magpul MOE or classic wood depending on configuration. The rifle ships with enhanced safety selector, cleaning kit, and adjustment tools. Riley Defense backs the RAK47 with a true lifetime warranty covering the original purchaser for unlimited rounds with no time limit. This isn't marketing speak - Riley honors warranty claims and provides excellent customer service. The company's reputation for standing behind their products gives buyers confidence. While priced between budget imports and premium Arsenal rifles, the RAK47 delivers value by including enhanced features and American-made quality. Accuracy is excellent for an AK, typically 2-3 MOA with quality ammunition. Reliability matches military-spec AKs. For shooters wanting American-made quality with enhanced features and real warranty backing, Riley Defense offers compelling value.",
+    features: [
+      "Forged 4140 steel trunnions throughout for maximum strength",
+      "Premium cold hammer-forged chrome-lined barrel",
+      "Enhanced trigger group with improved geometry and lighter pull",
+      "True lifetime warranty covering unlimited rounds",
+      "Factory test-fired and properly head-spaced",
+      "Black nitride finish for superior corrosion resistance",
+      "Quality Magpul MOE furniture or classic wood options",
+      "Enhanced safety selector for easier operation",
+      "Properly crushed rivets and tight component fitment",
+      "American manufacturing and quality control"
+    ],
+    benefits: [
+      "Enhanced trigger provides superior shooting experience",
+      "Forged components ensure multi-generational durability",
+      "Lifetime warranty backed by responsive customer service",
+      "Better fit and finish than typical imported AKs",
+      "Excellent accuracy potential for AK platform",
+      "American-made supports domestic manufacturing",
+      "Mid-range pricing with premium features"
+    ],
+    useCases: [
+      "Home defense rifle with enhanced trigger for accurate shooting",
+      "Range training and recreational shooting with quality trigger",
+      "Hunting medium game with improved AK accuracy",
+      "Competition shooting in AK divisions",
+      "Collecting quality American-made firearms",
+      "Prepping with lifetime warranty assurance"
+    ],
+    technicalDetails: "The Riley Defense RAK47 features a stamped 4140 steel receiver with forged trunnions. Front trunnion is forged 4140 steel, properly heat-treated. Bolt and carrier are forged and heat-treated to specification. Barrel is cold hammer-forged with chrome lining and 1:10 right-hand twist. Enhanced trigger pulls 4.5-5.5 lbs with improved geometry. Overall length 36.5 inches, weight 7.6 lbs unloaded. Front sight adjustable for windage and elevation, rear graduated to 800 meters. Gas system is standard long-stroke piston design. Furniture options include Magpul MOE polymer or classic wood. Ships with one 30-round magazine, cleaning kit, adjustment tool, and sling. Manufactured in Riley Defense's facility with American components.",
+    whyChoose: "Choose the Riley Defense RAK47 when enhanced features and true lifetime warranty matter. Riley's attention to detail shows in the enhanced trigger, tight fitment, and quality finish. The forged components provide durability while the lifetime warranty offers peace of mind. Unlike many warranties with exclusions and time limits, Riley's covers unlimited rounds for the original owner. The enhanced trigger alone makes the RAK47 more enjoyable to shoot than military-spec triggers. For shooters wanting American quality, enhanced features, and legitimate warranty backing at reasonable prices, the RAK47 delivers exceptional value.",
+    seoKeywords: [
+      "riley defense rak47",
+      "riley ak-47",
+      "american made ak",
+      "enhanced trigger ak",
+      "lifetime warranty ak",
+      "usa ak rifle",
+      "quality ak-47",
+      "rak47 for sale"
+    ],
+    ballisticData: {
+      effectiveRange: "400 yards",
+      maxRange: "3,000 yards",
+      muzzleVelocity: "2,350 fps (123gr)",
+      muzzleEnergy: "1,508 ft-lbs",
+      accuracy: "2-3 MOA with quality ammunition"
+    }
   },
   {
     id: "century-c39v2",
