@@ -202,7 +202,7 @@ const FirearmDetail = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="grid grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 mb-12">
+        <div className="grid grid-cols-1 gap-2 lg:gap-3 lg:grid-cols-2 mb-12">
           {/* Left Column - Image and Desktop-only sections */}
           <div>
             <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6 max-w-md mx-auto lg:mx-0">
@@ -213,7 +213,7 @@ const FirearmDetail = () => {
             </div>
 
             {/* Desktop only - sections under image */}
-            <div className="hidden lg:block space-y-4 mt-4">
+            <div className="hidden lg:block space-y-2 mt-2">
               {fflTransferSection}
               {whyChooseSection}
               {quickSpecsSection}
@@ -222,16 +222,16 @@ const FirearmDetail = () => {
 
           {/* Right Column - Product Info */}
           <div>
-            <div className="mb-4">
+            <div className="mb-2 sm:mb-3">
               <Link 
                 to={`/brands/${firearm.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                className="inline-flex items-center gap-2 text-xs sm:text-sm text-tactical hover:underline mb-2"
+                className="inline-flex items-center gap-2 text-xs sm:text-sm text-tactical hover:underline mb-1 sm:mb-2"
               >
                 <Award className="h-3 w-3 sm:h-4 sm:w-4" />
                 <span className="font-semibold">{firearm.manufacturer}</span>
               </Link>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">{firearm.name}</h1>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3">{firearm.name}</h1>
+              <div className="flex flex-wrap gap-2 mb-2 sm:mb-3">
                 {firearm.caliber.map((cal, idx) => (
                   <Badge key={idx} variant="outline" className="border-tactical text-tactical">
                     {cal}
@@ -248,12 +248,12 @@ const FirearmDetail = () => {
             </div>
 
             {/* Mobile/Tablet only - FFL Transfer section */}
-            <div className="lg:hidden mb-4 sm:mb-6">
+            <div className="lg:hidden mb-2 sm:mb-3">
               {fflTransferSection}
             </div>
 
-            <div className="mb-4 sm:mb-6">
-              <div className="flex items-baseline gap-3 sm:gap-4 mb-2 flex-wrap">
+            <div className="mb-2 sm:mb-3">
+              <div className="flex items-baseline gap-2 sm:gap-3 mb-1 sm:mb-2 flex-wrap">
                 <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary">${firearm.price.toFixed(2)}</span>
                 {firearm.inStock ? (
                   <Badge className="bg-tactical text-tactical-foreground text-sm">Available</Badge>

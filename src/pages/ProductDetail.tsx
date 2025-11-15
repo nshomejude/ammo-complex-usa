@@ -278,7 +278,7 @@ const ProductDetail = () => {
           </Button>
         </nav>
 
-        <article className="grid gap-4 lg:gap-6 lg:grid-cols-2 mb-12">
+        <article className="grid gap-2 lg:gap-3 lg:grid-cols-2 mb-12">
           {/* Left Column - Product Image and Desktop-only sections */}
           <div>
             <Card className="overflow-hidden max-w-md mx-auto lg:mx-0">
@@ -291,7 +291,7 @@ const ProductDetail = () => {
             </Card>
 
             {/* Desktop only - sections under image */}
-            <div className="hidden lg:block space-y-4 mt-4">
+            <div className="hidden lg:block space-y-2 mt-2">
               {whyChooseSection}
               {legalRequirementsSection}
               {professionalToolsSection}
@@ -299,9 +299,9 @@ const ProductDetail = () => {
           </div>
 
           {/* Product Info */}
-          <div className="space-y-4 sm:space-y-6" itemScope itemType="https://schema.org/Product">
+          <div className="space-y-2 sm:space-y-3" itemScope itemType="https://schema.org/Product">
             <div>
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2" itemProp="name">{product.name}</h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2" itemProp="name">{product.name}</h1>
               {product.manufacturer && (
                 <div className="mb-3">
                   <Link 
