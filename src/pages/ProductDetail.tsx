@@ -271,14 +271,14 @@ const ProductDetail = () => {
           <Button 
             variant="ghost" 
             onClick={() => navigate(-1)}
-            className="mb-6"
+            className="mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back
           </Button>
         </nav>
 
-        <article className="grid gap-2 lg:gap-3 lg:grid-cols-2 mb-12">
+        <article className="grid gap-2 lg:gap-3 lg:grid-cols-2 mb-8">
           {/* Left Column - Product Image and Desktop-only sections */}
           <div>
             <Card className="overflow-hidden max-w-md mx-auto lg:mx-0">
@@ -303,7 +303,7 @@ const ProductDetail = () => {
             <div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2" itemProp="name">{product.name}</h1>
               {product.manufacturer && (
-                <div className="mb-3">
+                <div className="mb-2">
                   <Link 
                     to={`/brands/${product.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                     className="inline-flex items-center gap-2 text-sm sm:text-base lg:text-lg text-tactical hover:underline"
@@ -323,7 +323,7 @@ const ProductDetail = () => {
               {whyChooseSection}
             </div>
 
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            <div className="flex flex-wrap items-center gap-2">
               {product.inStock ? (
                 <Badge className="bg-tactical text-tactical-foreground border-0 text-sm sm:text-base px-3 sm:px-4 py-1">
                   <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
@@ -339,10 +339,10 @@ const ProductDetail = () => {
               </Badge>
             </div>
 
-            <Separator />
+            <Separator className="my-2" />
 
             <div>
-              <div className="text-3xl sm:text-4xl font-bold text-tactical mb-2">
+              <div className="text-3xl sm:text-4xl font-bold text-tactical mb-1 sm:mb-2">
                 ${product.price.toFixed(2)}
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground">Per box of {product.rounds} rounds</p>
@@ -354,13 +354,13 @@ const ProductDetail = () => {
             {/* Quantity Variations */}
             {product.quantityVariations && product.quantityVariations.length > 0 && (
               <div>
-                <label className="text-sm font-semibold mb-3 block">Select Package:</label>
+                <label className="text-sm font-semibold mb-2 block">Select Package:</label>
                 <div className="flex flex-wrap gap-2">
                   {product.quantityVariations.map((variant, idx) => (
                     <button
                       key={idx}
                       onClick={() => setQuantity(Math.ceil(variant.rounds / product.rounds))}
-                      className={`px-4 py-3 text-sm font-semibold rounded-lg border-2 transition-all duration-200 ${
+                      className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-lg border-2 transition-all duration-200 ${
                         variant.rounds === product.rounds
                           ? 'bg-primary text-primary-foreground border-primary shadow-md scale-105'
                           : variant.inStock
@@ -370,7 +370,7 @@ const ProductDetail = () => {
                       disabled={!variant.inStock}
                     >
                       {variant.rounds} Rounds
-                      <span className="block text-xs mt-1 font-normal">
+                      <span className="block text-xs mt-0.5 font-normal">
                         ${variant.price.toFixed(2)}
                       </span>
                     </button>
@@ -382,28 +382,30 @@ const ProductDetail = () => {
             {/* Quantity Selector */}
             <div>
               <label className="text-sm font-semibold mb-2 block">Quantity</label>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <div className="flex items-center border rounded-lg">
                   <Button
                     variant="ghost"
                     size="icon"
                     onClick={decrementQuantity}
                     disabled={quantity <= 1}
+                    className="h-8 w-8"
                   >
-                    <Minus className="h-4 w-4" />
+                    <Minus className="h-3 w-3 sm:h-4 sm:w-4" />
                   </Button>
-                  <span className="w-12 text-center font-semibold">{quantity}</span>
+                  <span className="w-10 sm:w-12 text-center font-semibold text-sm">{quantity}</span>
                   <Button
                     variant="ghost"
                     size="icon"
                     onClick={incrementQuantity}
                     disabled={quantity >= 50}
+                    className="h-8 w-8"
                   >
-                    <Plus className="h-4 w-4" />
+                    <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
                   </Button>
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  Total: <span className="text-xl font-bold text-foreground">${totalPrice}</span>
+                <div className="text-xs sm:text-sm text-muted-foreground">
+                  Total: <span className="text-lg sm:text-xl font-bold text-foreground">${totalPrice}</span>
                 </div>
               </div>
             </div>
@@ -426,7 +428,7 @@ const ProductDetail = () => {
             </Card>
 
             {/* Mobile/Tablet only - Legal Requirements and Professional Tools */}
-            <div className="lg:hidden space-y-6">
+            <div className="lg:hidden space-y-2">
               {legalRequirementsSection}
               {professionalToolsSection}
             </div>
@@ -434,7 +436,7 @@ const ProductDetail = () => {
         </article>
 
         {/* Reloading Information Section */}
-        <section className="mb-12">
+        <section className="mb-8">
           <Card className="border-tactical/30">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -494,7 +496,7 @@ const ProductDetail = () => {
         </section>
 
         {/* Detailed Information Tabs */}
-        <section className="mb-12">
+        <section className="mb-8">
           <Tabs defaultValue="overview" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 lg:w-auto lg:inline-grid gap-1">
               <TabsTrigger value="overview" className="text-xs sm:text-sm">Overview</TabsTrigger>
@@ -580,7 +582,7 @@ const ProductDetail = () => {
             </TabsContent>
 
             <TabsContent value="features" className="mt-4 sm:mt-6">
-              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
                 {product.features && product.features.length > 0 && (
                   <Card>
                     <CardHeader className="p-4 sm:p-6">
@@ -627,7 +629,7 @@ const ProductDetail = () => {
               {(!product.features || product.features.length === 0) && 
                (!product.benefits || product.benefits.length === 0) && (
                 <Card>
-                  <CardContent className="py-6 sm:py-8 text-center text-muted-foreground text-xs sm:text-sm p-4 sm:p-6">
+                  <CardContent className="py-4 sm:py-6 text-center text-muted-foreground text-xs sm:text-sm p-3 sm:p-4">
                     Detailed features and benefits information coming soon.
                   </CardContent>
                 </Card>
@@ -712,7 +714,7 @@ const ProductDetail = () => {
       </main>
 
       {/* Product Specifications - Full Width */}
-      <section className="mb-8 bg-muted/30 py-8">
+      <section className="mb-6 bg-muted/30 py-4 sm:py-6">
         <div className="container mx-auto px-4">
           <Card>
             <CardHeader>
@@ -851,7 +853,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Shipping Info - Full Width */}
-      <section className="mb-8 bg-tactical/5 py-8">
+      <section className="mb-6 bg-tactical/5 py-4 sm:py-6">
         <div className="container mx-auto px-4">
           <Card className="border-tactical/30 bg-background">
             <CardHeader>
@@ -893,7 +895,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Guarantee - Full Width */}
-      <section className="mb-8 bg-muted/30 py-8">
+      <section className="mb-6 bg-muted/30 py-4 sm:py-6">
         <div className="container mx-auto px-4">
           <Card>
             <CardHeader>
@@ -929,7 +931,7 @@ const ProductDetail = () => {
       <main className="container mx-auto px-4 py-8">
         
         {/* Reviews Section */}
-        <section className="mb-12">
+        <section className="mb-8">
           <ProductReviews productId={product.id} productType="product" />
         </section>
 
@@ -938,7 +940,7 @@ const ProductDetail = () => {
 
         {/* Compatible Firearms */}
         {compatibleFirearms.length > 0 && (
-          <section className="mb-12">
+          <section className="mb-8">
             <Card className="border-tactical/30">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -1003,18 +1005,18 @@ const ProductDetail = () => {
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold mb-6">Similar Products</h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <h2 className="text-2xl font-bold mb-4">Similar Products</h2>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {relatedProducts.map((relatedProduct) => (
                 <Link key={relatedProduct.id} to={`/product/${relatedProduct.id}`}>
                   <Card className="overflow-hidden transition-all hover:shadow-lg hover:border-tactical/50 cursor-pointer">
                     <div className="aspect-square bg-secondary flex items-center justify-center">
-                      <div className="text-center p-6">
-                        <div className="text-4xl font-bold text-tactical mb-2">{relatedProduct.caliber}</div>
-                        <div className="text-sm text-muted-foreground">{relatedProduct.rounds} Rounds</div>
+                      <div className="text-center p-3 sm:p-4">
+                        <div className="text-3xl sm:text-4xl font-bold text-tactical mb-2">{relatedProduct.caliber}</div>
+                        <div className="text-xs sm:text-sm text-muted-foreground">{relatedProduct.rounds} Rounds</div>
                       </div>
                     </div>
-                    <CardContent className="p-4">
+                    <CardContent className="p-3 sm:p-4">
                       <h3 className="font-semibold mb-2 line-clamp-2">{relatedProduct.name}</h3>
                       <div className="flex items-center justify-between">
                         <span className="text-2xl font-bold text-tactical">${relatedProduct.price.toFixed(2)}</span>
