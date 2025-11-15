@@ -2775,15 +2775,53 @@ export const firearms: Firearm[] = [
     name: "Model 700",
     manufacturer: "Remington",
     categorySlug: "bolt-action-hunting",
-    caliber: [".308 WIN", ".30-06", "6.5 CM", ".270 WIN"],
+    caliber: [".308 WIN", ".30-06", "6.5 CM", ".270 WIN", ".243 WIN", ".300 Win Mag"],
     price: 849,
     inStock: true,
-    description: "America's most popular bolt-action hunting rifle. Legendary accuracy and reliability.",
+    description: "America's most successful bolt-action rifle with over 5 million produced. The accuracy standard by which all other hunting rifles are measured for over 60 years.",
     actionType: "Bolt-Action",
     capacity: "4+1",
     barrelLength: "24 inches",
     weight: "7.5 lbs",
-    finish: "Matte Blued"
+    finish: "Matte Blued",
+    shortDescription: "The Remington 700 has dominated American hunting for over six decades with unmatched accuracy and reliability. More than 5 million sold - the rifle trusted by hunters, military snipers, and precision shooters worldwide.",
+    longDescription: "The Remington Model 700 stands as the most influential and successful bolt-action rifle in American history. Introduced in 1962 as Remington's premium sporting rifle, the 700 established new standards for out-of-the-box accuracy, reliability, and value that competitors have spent six decades trying to match. With over 5 million rifles produced, the 700 has taken more game animals than any other rifle in history and serves as the basis for the most successful military and law enforcement sniper rifles worldwide including the M24 Sniper Weapon System and M40 series. The 700's enduring dominance stems from fundamental engineering excellence combined with manufacturing precision. Chief designer Mike Walker and his team created an action so elegant and effective that it remains virtually unchanged after 60 years - the ultimate validation of superior design. The 700's action uses a cylindrical receiver machined from solid steel bar stock, providing exceptional strength and perfect concentricity around the bolt. The receiver ring completely encircles the cartridge, containing pressure in all directions and ensuring the bolt face maintains perfect alignment with the chamber. This concentric design contributes significantly to the 700's legendary accuracy. The bolt features three large locking lugs positioned at the rear of the bolt body rather than at the front like Mauser-style actions. This rear-locking design provides several advantages: shorter bolt throw for faster cycling, more bearing surface for greater strength, and the ability to position the trigger closer to the bolt face for enhanced trigger feel. The 700's bolt operates with glassy smoothness - the cylindrical bolt body reciprocating within the cylindrical receiver creates minimal friction and precise alignment. Many shooters consider the 700's bolt the smoothest-operating of any production rifle. The 700's trigger mechanism represents one of Walker's greatest achievements. The trigger uses a simple, elegant design with minimal parts that breaks crisply with minimal creep or overtravel. Factory triggers typically break around 3-4 pounds - light enough for precision shooting yet safe for field use. The trigger is externally adjustable for pull weight without disassembly, allowing shooters to customize trigger feel. The aftermarket offers numerous replacement triggers, but many competitive shooters and hunters find the factory trigger entirely adequate after minor adjustment. The 700's barrel, typically button-rifled from chrome-moly steel, consistently delivers accuracy that exceeds more expensive competitors. Remington's button-rifling process creates uniform, concentric rifling that enhances accuracy while keeping costs reasonable. Most 700s shoot 1-MOA (minute of angle) or better with quality ammunition - groups of 1 inch or smaller at 100 yards. This level of accuracy from a mass-produced hunting rifle was revolutionary in 1962 and remains impressive today. Many custom rifle builders use Remington 700 actions as the foundation for precision rifles because the basic action already provides the accuracy potential of custom actions costing thousands more. The 700's stock design has evolved through numerous variants, but the fundamental bedding system remains consistent. The receiver and barrel are pillar-bedded to the stock using aluminum pillars that prevent stock compression and maintain consistent barrel harmonics. The free-floating barrel - where the barrel doesn't contact the stock forward of the bedding - eliminates stock pressure variables that affect accuracy. This bedding system allows the rifle to maintain zero through temperature changes and field use. The 700's safety, positioned on the right side of the receiver, operates positively and locks both the trigger and bolt. While some criticize the right-side safety as less accessible for left-handed shooters, the design provides absolute security - the rifle cannot fire with the safety engaged regardless of trigger manipulation. Aftermarket trigger systems offer three-position safeties that allow bolt operation with safety engaged for safe unloading. The 700's modularity and aftermarket support exceed any competing rifle platform. The action accepts virtually any stock design through standard bedding systems. Barrels interchange via simple barrel-nut systems, allowing shooters to rebarrel rifles as needed. Trigger systems, bottom metal, scope bases, and countless accessories allow complete customization. This modularity means a base 700 can evolve from hunting rifle to long-range precision tool to dedicated varmint rifle through component swaps. Military and law enforcement adoption established the 700's precision credentials. The U.S. Army's M24 Sniper Weapon System and Marine Corps M40 series are purpose-built versions of the 700 action chambered in .308 Winchester and .300 Winchester Magnum. SEAL Team sniper rifles use 700 actions. Countless police departments employ 700-based precision rifles. This institutional adoption by organizations demanding absolute reliability and accuracy validates the 700's capabilities at the highest level. For hunters, the 700 serves across all game species and hunting styles. Varmint hunters appreciate the 700's accuracy for long-range prairie dog shooting. Deer hunters trust 700s in .308, .30-06, or .270 for reliable one-shot kills. Elk hunters choose .300 Winchester Magnum 700s for long-range mountain shooting. African dangerous game hunters use 700s in heavy calibers. The platform adapts to any hunting application through appropriate chambering and configuration. The base Model 700 ADL (grade designation no longer used) and SPS (Special Purpose Synthetic) represent value-oriented configurations with synthetic stocks and basic finishes. These rifles deliver the same fundamental accuracy as more expensive variants - the action and barrel remain identical regardless of stock material or finish quality. Upgraded models like the CDL (Classic Deluxe) feature high-grade walnut stocks and polished finishes for those valuing aesthetics. The 700's legendary accuracy, proven reliability through 60+ years and 5 million rifles, unmatched aftermarket support, and military/law enforcement validation make it the standard against which all bolt-action rifles are measured. For Americans seeking a hunting rifle that will serve multiple generations while delivering genuine sub-MOA accuracy, the Remington 700 remains the unmatched benchmark.",
+    features: [
+      "Cylindrical receiver machined from solid steel bar stock",
+      "Three-lug rear-locking bolt provides short throw and strength",
+      "Externally adjustable trigger breaking at 3-4 pounds",
+      "Button-rifled chrome-moly barrel delivers consistent sub-MOA accuracy",
+      "Pillar-bedded action with free-floating barrel",
+      "Hinged floorplate for rapid magazine clearing",
+      "Two-position safety locks trigger and bolt",
+      "Available in extensive caliber range from .243 to .300 Win Mag",
+      "Accepts Remington 700 footprint accessories and stocks",
+      "Glassy-smooth bolt operation"
+    ],
+    benefits: [
+      "Over 5 million sold validates unmatched reliability and satisfaction",
+      "Basis for U.S. military M24 and M40 sniper rifles",
+      "Consistent sub-MOA accuracy from mass-produced hunting rifle",
+      "Unmatched aftermarket support enables complete customization",
+      "60+ years of proven service across all hunting applications",
+      "Action serves as foundation for custom precision rifles"
+    ],
+    useCases: [
+      "Big game hunting from deer to elk to African plains game",
+      "Long-range varmint shooting requiring precision accuracy",
+      "Mountain hunting where reliability and accuracy matter most",
+      "Competitive long-range shooting in hunting rifle divisions",
+      "Custom rifle builds using proven 700 action as foundation",
+      "Multi-generational family hunting rifle built to last decades",
+      "Any hunting application requiring sub-MOA accuracy"
+    ],
+    seoKeywords: ["Remington 700", "Model 700 rifle", "best hunting rifle", "700 accuracy", "Remington 700 review", "sub-MOA rifle", "700 vs Tikka"],
+    ballisticData: {
+      effectiveRange: "800+ yards (.308 WIN), 1000+ yards (.300 Win Mag)",
+      muzzleVelocity: "2,820 fps (.308 WIN 150gr), 3,100 fps (.30-06 150gr)",
+      muzzleEnergy: "2,650 ft-lbs (.308 WIN 150gr), 3,200 ft-lbs (.30-06 150gr)",
+      accuracy: "Sub-MOA (under 1 inch at 100 yards with quality ammunition)"
+    }
   },
   {
     id: "ruger-american",
@@ -2805,15 +2843,53 @@ export const firearms: Firearm[] = [
     name: "T3x",
     manufacturer: "Tikka",
     categorySlug: "bolt-action-hunting",
-    caliber: [".308 WIN", ".30-06", "6.5 CM", ".270 WIN", ".300 Win Mag"],
+    caliber: [".308 WIN", ".30-06", "6.5 CM", ".270 WIN", ".300 Win Mag", ".243 WIN"],
     price: 999,
     inStock: true,
-    description: "Finnish-made precision hunting rifle with smooth action and sub-MOA guarantee.",
+    description: "Finnish precision engineering delivers guaranteed sub-MOA accuracy. The smoothest-operating bolt-action rifle with legendary reliability that defines Scandinavian quality.",
     actionType: "Bolt-Action",
     capacity: "3+1",
     barrelLength: "24.3 inches",
     weight: "6.9 lbs",
-    finish: "Stainless Steel"
+    finish: "Stainless Steel",
+    shortDescription: "The Tikka T3x represents Finnish precision manufacturing at its finest. Every rifle guaranteed sub-MOA accuracy with the smoothest bolt operation of any production rifle. Scandinavian quality at accessible pricing.",
+    longDescription: "The Tikka T3x embodies Scandinavian engineering philosophy - uncompromising quality, elegant simplicity, and meticulous attention to detail that creates rifles performing far beyond their price point. Manufactured by Sako in Riihimäki, Finland, the T3x carries over a century of Nordic firearms expertise refined through countless arctic hunts and Finnish military contracts. While Tikka operates as Sako's value brand, the manufacturing standards and quality control remain essentially identical - T3x rifles receive the same precision machining and hand-fitting that defines Sako's custom-grade rifles costing thousands more. The result is a rifle that consistently embarrasses competitors costing twice as much through superior accuracy, reliability, and buttery-smooth operation. The T3x action represents the culmination of decades of Sako/Tikka bolt-action development. The cylindrical receiver is machined from a single piece of high-grade steel to tolerances measured in ten-thousandths of an inch. This precision machining creates a receiver bore so perfectly concentric and dimensionally consistent that it allows the bolt to reciprocate with virtually no friction. Tikka achieves bolt smoothness that even custom rifle builders struggle to match - the bolt operates with one-finger effort throughout its throw, opening and closing with glass-rod smoothness. New T3x owners universally comment on the action's silky operation - it simply glides rather than scrapes like lesser actions. The T3x bolt features dual opposed locking lugs positioned at the front of the bolt, complemented by a safety lug at the rear. This three-point locking system provides massive bearing surface distributing bolt thrust across a large area, ensuring the action maintains timing and headspace even after tens of thousands of rounds. The 70-degree bolt throw represents optimal compromise - short enough for rapid cycling yet long enough to provide adequate camming power for primary extraction of stuck cases. The bolt handle is positioned for natural hand placement, and the oversized bolt knob provides positive grip even with gloved hands. The T3x trigger, while simple in design, delivers crisp, clean breaks averaging 2-4 pounds adjustable without gunsmithing. The trigger features a straight blade face and minimal take-up, breaking cleanly with imperceptible creep. Single-stage design provides consistent pull weight and positive reset. While aftermarket triggers exist for the T3x, most owners find the factory trigger entirely adequate - it's genuinely a good trigger, not merely acceptable. The T3x barrel represents Tikka's greatest accuracy advantage. Every barrel is cold hammer-forged - a process where the barrel blank is hammered over a mandrel under extreme hydraulic pressure. This cold-forging process work-hardens the steel, aligns the molecular structure along the bore axis, and creates the rifling simultaneously. The result is a barrel that is stronger, more accurate, and longer-lasting than traditional button-rifled or cut-rifled barrels. Tikka's forging process achieves dimensional consistency impossible with other methods - the bore diameter varies less than 0.0002 inches along the entire length. This precision translates directly to accuracy. The T3x carries Tikka's unconditional sub-MOA accuracy guarantee - every rifle, in every caliber, will shoot three-shot groups under one inch at 100 yards with quality ammunition. This isn't marketing hyperbole - Tikka test-fires every rifle and will replace any that doesn't meet the guarantee. In practice, most T3x rifles shoot considerably better than 1 MOA, with many producing 0.5-0.7 MOA groups. This level of accuracy from a mass-produced hunting rifle costing under $1,000 was unprecedented when the original T3 launched and remains remarkable today. The T3x stock system features modular design with interchangeable pistol grips and recoil pads allowing customization for shooter size and preference. The synthetic stock uses reinforced polymer that won't warp, crack, or swell with moisture changes. The stock features Tikka's asymmetrical grip design that positions the trigger hand naturally. The forend includes quick-detach sling mounting points and accepts Tikka's flush-cup system. The recoil pad is substantial and effectively absorbs recoil even from magnum calibers. The T3x magazine system uses Tikka's distinctive single-stack magazine design. While limiting capacity to 3+1 in most calibers, the single-stack magazine allows slimmer receiver dimensions and more natural hand positioning. The magazine detaches easily for safe unloading or switching between ammunition types. The magazine well is precisely machined with no slop or wobble - magazines seat positively and release cleanly. The T3x safety is located on the right side of the action and operates silently - critical for hunting where noise matters. The safety locks the trigger and bolt, providing absolute security. The bolt shroud features a cocking indicator that protrudes when the firing pin is cocked, providing tactile and visual confirmation of the rifle's status. The T3x's quality control process exceeds industry standards. Sako employs skilled Finnish craftsmen who hand-inspect and test-fire every rifle. Any rifle not meeting specifications returns for rework or rejection - Sako won't ship rifles that don't meet their standards regardless of production pressure. This uncompromising quality control ensures every T3x leaving the factory performs to specification. The T3x has earned widespread adoption among hunters who prioritize accuracy and reliability over brand name recognition. European hunters - particularly Scandinavian hunters pursuing moose, reindeer, and bear in extreme arctic conditions - trust T3x rifles because they function flawlessly in temperatures where lesser rifles fail. North American hunters increasingly recognize the T3x's exceptional value - genuine sub-MOA accuracy with the smoothest action available at prices challenging economy competitors. For hunters seeking maximum accuracy, reliability, and quality at rational prices, the Tikka T3x delivers Scandinavian precision that consistently outperforms American rifles costing significantly more. The T3x proves that prioritizing engineering over marketing creates genuine value - Finnish quality without the Finnish price premium.",
+    features: [
+      "Cold hammer-forged barrel with unconditional sub-MOA guarantee",
+      "Precision-machined cylindrical receiver with tolerances under 0.001 inch",
+      "Glass-smooth bolt operation requiring single-finger effort",
+      "Dual front locking lugs plus rear safety lug",
+      "Modular stock system with interchangeable grips and recoil pads",
+      "Adjustable trigger breaking cleanly at 2-4 pounds",
+      "70-degree bolt throw optimizes speed and leverage",
+      "Single-stack detachable magazine maintains slim profile",
+      "Stainless steel barrel and receiver resist corrosion",
+      "Hand-inspected and test-fired in Finland"
+    ],
+    benefits: [
+      "Every rifle guaranteed sub-MOA accuracy or money back",
+      "Smoothest bolt operation of any production hunting rifle",
+      "Over 100 years of Finnish firearms manufacturing expertise",
+      "Cold hammer-forged barrel provides exceptional accuracy and longevity",
+      "Premium quality at prices competing with entry-level competitors",
+      "Consistently shoots 0.5-0.7 MOA with quality ammunition"
+    ],
+    useCases: [
+      "Precision hunting requiring guaranteed first-shot accuracy",
+      "Mountain hunting where light weight and reliability matter",
+      "Long-range hunting leveraging exceptional accuracy",
+      "Arctic and extreme cold hunting trusting Finnish engineering",
+      "Competitive shooting in factory rifle divisions",
+      "Discriminating hunters valuing quality over brand names",
+      "Any hunting application demanding sub-MOA precision"
+    ],
+    seoKeywords: ["Tikka T3x", "T3x accuracy", "Finnish hunting rifle", "sub-MOA guarantee", "Tikka T3x review", "smoothest bolt action", "T3x vs 700"],
+    ballisticData: {
+      effectiveRange: "800+ yards (.308 WIN), 1000+ yards (.300 Win Mag)",
+      muzzleVelocity: "2,820 fps (.308 WIN 150gr), 3,100 fps (.30-06 150gr)",
+      muzzleEnergy: "2,650 ft-lbs (.308 WIN 150gr), 3,200 ft-lbs (.30-06 150gr)",
+      accuracy: "Sub-MOA guaranteed (typically 0.5-0.7 MOA with match ammunition)"
+    }
   },
   {
     id: "savage-axis",
@@ -2835,15 +2911,53 @@ export const firearms: Firearm[] = [
     name: "Model 110",
     manufacturer: "Savage",
     categorySlug: "bolt-action-hunting",
-    caliber: [".308 WIN", ".30-06", "6.5 CM", ".300 Win Mag"],
+    caliber: [".308 WIN", ".30-06", "6.5 CM", ".270 WIN", ".300 Win Mag", ".243 WIN"],
     price: 899,
     inStock: true,
-    description: "Modern hunting rifle with AccuFit stock and user-adjustable AccuTrigger.",
+    description: "The working hunter's rifle with user-adjustable AccuTrigger and AccuFit stock system. Outstanding accuracy at blue-collar pricing defines Savage's utilitarian excellence.",
     actionType: "Bolt-Action",
     capacity: "4+1",
     barrelLength: "24 inches",
     weight: "8.1 lbs",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Savage 110 delivers legendary accuracy through innovative AccuTrigger and button-rifled barrels at prices accessible to average Americans. The rifle that democratized sub-MOA precision for working-class hunters.",
+    longDescription: "The Savage Model 110 represents American ingenuity applied to democratizing rifle accuracy. While premium manufacturers charged thousands for sub-MOA precision, Savage asked a different question: how do we deliver genuine accuracy to hunters who can't afford custom rifles? The answer became the Model 110 with its groundbreaking AccuTrigger, button-rifled barrels, and innovative manufacturing processes that produce accuracy rivaling custom rifles at prices competing with economy competitors. Introduced in 1958 and continuously evolved through over six decades, the modern 110 continues Savage's tradition of providing maximum capability per dollar spent. The 110's accuracy reputation stems from Savage's manufacturing philosophy - rather than accepting traditional methods, Savage pioneered processes that enhance precision without inflating costs. The barrel, button-rifled from premium steel, features a floating barrel design where the barrel threads into the receiver but doesn't contact the stock forward of the action. This free-floating barrel eliminates stock pressure variables that affect accuracy in traditional rifles. The barrel nut system - once criticized for aesthetics - allows precise headspace adjustment during assembly, ensuring optimal bolt-face-to-chamber relationship. This adjustable system means every 110 achieves proper headspace regardless of normal manufacturing tolerances, contributing significantly to consistent accuracy. The AccuTrigger represents Savage's greatest innovation and most significant contribution to firearms design. Introduced in 2003, the AccuTrigger revolutionized rifle triggers by providing user-adjustable pull weight from 1.5 to 6 pounds without gunsmithing, while incorporating a blade safety that prevents accidental discharge from jarring or dropping. Before AccuTrigger, adjusting trigger pull required skilled gunsmith work costing hundreds of dollars. Savage made precision trigger adjustment as simple as turning a wrench, democratizing trigger quality previously available only through custom work. The AccuTrigger breaks cleanly with minimal creep and positive reset - trigger quality that embarrassed competitors charging thousands more. The trigger blade safety (the small lever within the trigger) must be depressed to fire, providing drop safety while remaining completely intuitive during normal firing. The modern 110 features Savage's AccuFit stock system - a modular synthetic stock with length-of-pull and comb height adjustment. Five included comb risers and length-of-pull spacers allow customization for shooter size and scope height without modifying the stock. This adjustability ensures proper fit for shooters from youth to large-framed adults, maximizing comfort and accuracy. The stock's grip angle and forend shape accommodate modern shooting techniques including higher mounted scopes and prone shooting positions. The stock material - reinforced synthetic polymer - won't warp with moisture and withstands field abuse that would damage wood. The 110's action uses Savage's time-tested design featuring dual opposed locking lugs at the front of the bolt. While less glamorous than Remington's three-lug design or Tikka's precision machining, Savage's action delivers entirely adequate strength and reliability. The bolt operates smoothly after break-in, and the 90-degree bolt throw provides positive primary extraction leverage. The extractor and ejector are robust and reliable, functioning consistently even with dirty ammunition or adverse conditions. The modern 110's receiver features a Picatinny rail section machined integral to the receiver, eliminating separate scope bases. This one-piece rail provides rigid scope mounting and ensures the scope sits on the same plane as the bore axis. The rail accepts any Picatinny-compatible rings, providing compatibility with vast aftermarket accessory options. The 110's detachable box magazine system provides convenient ammunition management. The magazines are sturdy, feed reliably, and drop free when released. While some traditional hunters prefer hinged floorplates, the detachable magazine allows rapid ammunition changes and safe clearing without cycling rounds through the action. Savage's quality control process, while less intensive than Tikka's hand-fitting approach, produces consistent accuracy through precise machining and process control. Savage test-fires random samples from production and guarantees specific accuracy levels depending on model - base 110 models guarantee 1 MOA or better. In practice, most 110s shoot considerably better than guaranteed, with many producing 0.5-0.75 MOA groups. The 110 has earned loyal following among practical hunters who prioritize function over prestige. The rifle doesn't feature polished finishes or fancy engraving, but it shoots straight, cycles reliably, and costs substantially less than comparable competitors. For hunters who spent their money on optics, ammunition, and hunting trips rather than rifle brand names, the 110 delivers everything needed without unnecessary cost. The 110's popularity among budget-conscious precision shooters speaks to its genuine accuracy potential - many F-Class and long-range shooting competitors use 110 actions as foundations for custom builds. The adjustable barrel nut system, AccuTrigger, and accurate barrels provide excellent starting points for precision rifle projects. The aftermarket supports 110s with stocks, triggers, barrels, and accessories that transform basic hunting rifles into specialized precision tools. The Savage 110 proves that genuine accuracy doesn't require premium pricing. Through innovative AccuTrigger design, precise manufacturing processes, and Savage's commitment to value, the 110 delivers sub-MOA accuracy accessible to average Americans. For working-class hunters who need reliable precision without second mortgages, the Savage 110 represents honest capability at honest prices.",
+    features: [
+      "User-adjustable AccuTrigger from 1.5 to 6 pounds pull weight",
+      "AccuFit modular stock system with adjustable length and comb height",
+      "Button-rifled free-floating barrel for consistent accuracy",
+      "Adjustable barrel nut system ensures optimal headspace",
+      "Integrated Picatinny rail provides rigid scope mounting",
+      "Dual front locking lugs with 90-degree bolt throw",
+      "Detachable box magazine for convenient reloading",
+      "AccuTrigger blade safety prevents accidental discharge",
+      "Soft-grip surfaces on stock and forend",
+      "Sub-MOA accuracy guarantee"
+    ],
+    benefits: [
+      "AccuTrigger eliminates need for expensive gunsmith trigger work",
+      "Consistent sub-MOA accuracy at prices under $900",
+      "AccuFit system accommodates shooters from youth to large adults",
+      "Free-floating barrel design maximizes accuracy potential",
+      "Savage's 100+ year reputation for accuracy at value pricing",
+      "Strong aftermarket support for customization and upgrades"
+    ],
+    useCases: [
+      "Budget-conscious hunting requiring reliable accuracy",
+      "Long-range hunting leveraging sub-MOA precision",
+      "Family hunting rifle with adjustable stock for multiple shooters",
+      "First centerfire rifle offering accuracy and features",
+      "Competition shooting in factory rifle classes",
+      "Foundation for custom precision rifle builds",
+      "Any hunting application where accuracy matters more than brand prestige"
+    ],
+    seoKeywords: ["Savage 110", "AccuTrigger", "best value hunting rifle", "110 accuracy", "Savage 110 review", "AccuFit stock", "budget precision rifle"],
+    ballisticData: {
+      effectiveRange: "800+ yards (.308 WIN), 1000+ yards (.300 Win Mag)",
+      muzzleVelocity: "2,820 fps (.308 WIN 150gr), 3,100 fps (.30-06 150gr)",
+      muzzleEnergy: "2,650 ft-lbs (.308 WIN 150gr), 3,200 ft-lbs (.30-06 150gr)",
+      accuracy: "Sub-MOA guaranteed (typically 0.5-0.75 MOA with quality ammunition)"
+    }
   },
   {
     id: "browning-xbolt",
@@ -2922,18 +3036,56 @@ export const firearms: Firearm[] = [
   },
   {
     id: "bergara-b14",
-    name: "B-14",
+    name: "B-14 Hunter",
     manufacturer: "Bergara",
     categorySlug: "bolt-action-hunting",
-    caliber: [".308 WIN", "6.5 CM", ".30-06", ".300 Win Mag"],
+    caliber: [".308 WIN", "6.5 CM", ".30-06", ".300 Win Mag", ".270 WIN", "7mm Rem Mag"],
     price: 1099,
     inStock: true,
-    description: "Spanish barrel maker's hunting rifle with precision button-rifled barrel.",
+    description: "Spanish master barrel maker's hunting rifle with match-grade button-rifled barrel. Precision manufacturing meets hunting rifle practicality for exceptional accuracy.",
     actionType: "Bolt-Action",
     capacity: "4+1",
     barrelLength: "24 inches",
     weight: "7.3 lbs",
-    finish: "Cerakote"
+    finish: "Cerakote",
+    shortDescription: "Bergara brings over 60 years of Spanish barrel-making excellence to hunting rifles. Match-grade barrels that win competitions paired with hunting-weight practicality define the B-14's competitive accuracy advantage.",
+    longDescription: "Bergara represents the convergence of Old World barrel-making mastery with modern American hunting rifle design. Founded in 1969 in the Basque region of Spain, Bergara Barrels earned reputation among competitive shooters and custom rifle builders for producing some of the finest button-rifled barrels available. Bergara barrels won benchrest championships, F-Class competitions, and precision rifle matches worldwide based purely on accuracy merit. When Bergara decided to produce complete rifles in 2016, they brought six decades of barrel-making expertise to create hunting rifles featuring the same match-grade barrels that win competitions. The B-14 Hunter represents Bergara's philosophy - why should hunters accept mediocre accuracy when competition-grade precision fits hunting-weight rifles? The B-14's defining feature is its barrel - the component where Bergara's expertise shines. Every B-14 barrel begins as a premium steel blank that undergoes Bergara's proprietary button-rifling process. Button-rifling pushes a hardened button through the barrel bore, creating the rifling grooves through cold-working the steel. Bergara's button design and process create rifling with exceptional uniformity and concentricity. The lands and grooves are perfectly consistent along the entire barrel length, eliminating the slight variations that affect accuracy in lesser barrels. The bore diameter varies less than 0.0002 inches - precision rivaling custom barrels costing $600+ purchased separately. After rifling, each barrel undergoes stress-relieving heat treatment that prevents dimensional changes during firing. The barrel receives final lapping that polishes the bore to mirror finish, reducing fouling and enhancing accuracy. The chamber is cut using Bergara's proprietary reamers ground to exact SAAMI specifications with minimal tolerances. This attention to chamber dimensions ensures consistent cartridge headspacing and alignment - critical factors affecting accuracy. The result is a barrel that consistently produces sub-MOA accuracy with quality ammunition, with many B-14s shooting 0.5 MOA or better. This accuracy level from a $1,100 hunting rifle embarrasses custom rifles costing three times as much. The B-14 action, while not manufactured by Bergara, uses a Remington 700-style footprint action manufactured to Bergara's specifications. This choice provides two significant advantages: proven reliability of the 700 design and compatibility with the massive Remington 700 aftermarket. Shooters can upgrade stocks, triggers, bottom metal, and accessories using readily available components. The action receives precision machining ensuring the bolt raceway tolerances that affect accuracy. The dual front locking lugs provide adequate strength for any hunting cartridge, while the two-position safety locks the firing pin. The B-14 trigger is an adjustable unit breaking cleanly between 2.5-4 pounds. While not matching premium aftermarket triggers, the B-14 trigger delivers crisp breaks with minimal creep adequate for precision shooting. The trigger blade face is curved naturally fitting the finger pad, and the pull weight adjusts externally using an Allen wrench. For shooters desiring upgrade triggers, any Remington 700-compatible trigger installs without modification. The B-14 stock uses Bergara's synthetic design that balances light weight with stability. The stock features SoftTouch coating providing secure grip in wet conditions while remaining pleasant to handle in cold weather. The forend includes flush-cup sling mounting and accepts QD swivels. The grip angle accommodates modern shooting positions including prone with higher-mounted scopes. The recoil pad is substantial and effectively absorbs recoil from magnum calibers. The stock uses pillar bedding with aluminum pillars preventing stock compression and maintaining consistent receiver-to-stock interface. The barrel floats completely free of stock contact forward of the bedding, maximizing accuracy potential. The B-14's hinged floorplate provides traditional aesthetics while allowing safe clearing without removing the magazine. The magazine well is precisely machined with tight tolerances eliminating wobble. The hinged floorplate operates positively and locks securely preventing accidental opening. For shooters preferring detachable magazines, Bergara offers BDL (Bottom Detachable Magazine) variants. The B-14 ships with Bergara's Performance Guarantee - every rifle will shoot a three-shot group of 1 MOA or better at 100 yards with quality ammunition, or Bergara replaces it. This guarantee reflects Bergara's confidence in their barrel-making expertise and quality control. In practice, most B-14s significantly exceed the guarantee, producing groups well under 1 MOA. The Cerakote finish provides excellent corrosion protection exceeding traditional bluing while remaining subdued for hunting. The finish resists scratching and wear from field use, maintaining appearance through years of hunting. The metalwork is matte-finished eliminating glare that could spook game. The B-14 has earned adoption among discriminating hunters who understand barrel quality determines accuracy. Precision long-range hunters choose B-14s knowing the match-grade barrel provides confidence for ethical shots at extended ranges. Mountain hunters appreciate the combination of accuracy and reasonable weight - the 7.3-pound B-14 carries comfortably while delivering precision when opportunities arise. Competitive shooters use B-14s in factory rifle divisions, winning matches through superior accuracy. The B-14's value proposition appeals to shooters seeking maximum accuracy without custom rifle pricing. The rifle delivers genuinely competition-grade barrel quality in a hunting-weight package at prices thousands less than custom rifles. For hunters who understand that first-shot accuracy matters most and that barrel quality determines accuracy, the Bergara B-14 provides Spanish barrel-making mastery meeting American hunting rifle practicality. The B-14 proves that focusing resources on the component that matters most - the barrel - creates genuine accuracy advantages that cheap barrels cannot match regardless of other features.",
+    features: [
+      "Match-grade button-rifled barrel from master Spanish barrel makers",
+      "Stress-relieved and lapped barrel for consistent sub-MOA accuracy",
+      "Remington 700 footprint action for aftermarket compatibility",
+      "Adjustable trigger breaking cleanly at 2.5-4 pounds",
+      "Pillar-bedded synthetic stock with free-floating barrel",
+      "SoftTouch stock coating for secure grip in all conditions",
+      "Premium Cerakote metal finish resists corrosion and wear",
+      "Hinged floorplate with precise magazine well machining",
+      "Two-position safety locks firing pin",
+      "Sub-MOA Performance Guarantee"
+    ],
+    benefits: [
+      "60+ years of Spanish barrel-making expertise",
+      "Match-grade accuracy from competition-proven barrels",
+      "Remington 700 compatibility provides vast aftermarket options",
+      "Consistently shoots 0.5 MOA or better with quality ammunition",
+      "Premium features at prices competing with entry-level rifles",
+      "Barrels win benchrest and F-Class competitions worldwide"
+    ],
+    useCases: [
+      "Long-range precision hunting requiring match-grade accuracy",
+      "Mountain hunting needing accuracy and manageable weight",
+      "Competition shooting in factory rifle divisions",
+      "Ethical hunting at extended ranges leveraging barrel quality",
+      "Discriminating hunters valuing accuracy over brand names",
+      "Platform for light customization using 700 aftermarket",
+      "Any hunting application where barrel quality determines success"
+    ],
+    seoKeywords: ["Bergara B-14", "B14 Hunter", "match grade hunting rifle", "Spanish barrel", "Bergara accuracy", "B-14 review", "best hunting rifle under 1500"],
+    ballisticData: {
+      effectiveRange: "900+ yards (.308 WIN), 1200+ yards (.300 Win Mag)",
+      muzzleVelocity: "2,820 fps (.308 WIN 150gr), 3,100 fps (.30-06 150gr)",
+      muzzleEnergy: "2,650 ft-lbs (.308 WIN 150gr), 3,200 ft-lbs (.30-06 150gr)",
+      accuracy: "Sub-MOA guaranteed (typically 0.3-0.5 MOA with match ammunition)"
+    }
   },
   {
     id: "remington-783",
