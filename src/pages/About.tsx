@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, FileText, MapPin, AlertTriangle } from "lucide-react";
+import { ContactWidget } from "@/components/ContactWidget";
 
 const About = () => {
   return (
@@ -160,17 +161,19 @@ const About = () => {
         </div>
         </div>
 
-        <Card className="mt-6 border-tactical/30 bg-tactical/5">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-bold mb-3">Contact Information</h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p><strong>Federal Firearms License:</strong> [FFL Number]</p>
-              <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
-              <p><strong>Email:</strong> sales@armscomplex.com</p>
-              <p><strong>Phone:</strong> 1-800-ARMS-COMPLEX</p>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="grid gap-6 lg:grid-cols-3 mt-6">
+          <Card className="lg:col-span-2 border-tactical/30 bg-tactical/5">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-3">Business Information</h3>
+              <div className="space-y-2 text-muted-foreground">
+                <p><strong>Federal Firearms License:</strong> [FFL Number]</p>
+                <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
+                <p><strong>Established:</strong> 2020</p>
+              </div>
+            </CardContent>
+          </Card>
+          <ContactWidget variant="compact" />
+        </div>
       </main>
 
       <Footer />

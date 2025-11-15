@@ -5,6 +5,7 @@ import { ShoppingCart, UserPlus, FileCheck, CreditCard, Package, CheckCircle, Ar
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ContactWidget } from "@/components/ContactWidget";
 
 const HowToBuy = () => {
   return (
@@ -260,8 +261,8 @@ const HowToBuy = () => {
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2 mb-8">
-          <Card>
+        <div className="grid gap-6 lg:grid-cols-3 mb-8">
+          <Card className="lg:col-span-2">
             <CardHeader>
               <CardTitle>Important Notes</CardTitle>
             </CardHeader>
@@ -279,28 +280,7 @@ const HowToBuy = () => {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Need Help?</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
-                Our customer support team is here to assist you through every step of the purchase process.
-              </p>
-              <div className="space-y-2 text-sm">
-                <p><strong>Email:</strong> support@armscomplex.com</p>
-                <p><strong>Phone:</strong> 1-800-ARMS-COMPLEX</p>
-                <p><strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST</p>
-              </div>
-              <div className="pt-2">
-                <Link to="/contact">
-                  <Button className="w-full bg-tactical hover:bg-tactical/90">
-                    Contact Support
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+          <ContactWidget variant="compact" />
         </div>
 
         <Card className="border-tactical/30 bg-tactical/5">

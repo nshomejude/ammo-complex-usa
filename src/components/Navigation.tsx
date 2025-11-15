@@ -247,18 +247,18 @@ export const Navigation = () => {
                 </div>
 
                 <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="landing-pages">
-                    <AccordionTrigger className="text-base font-semibold">
+                  <AccordionItem value="landing-pages" className="border-b">
+                    <AccordionTrigger className="text-base font-semibold py-4 px-2 hover:no-underline hover:bg-tactical/5 rounded-md">
                       Landing Pages
                     </AccordionTrigger>
                     <AccordionContent>
-                      <div className="flex flex-col gap-2 pl-4">
+                      <div className="flex flex-col gap-1 pl-2 pt-2">
                         {landingPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
                             onClick={() => setOpen(false)}
-                            className="py-2 text-sm hover:text-tactical transition-colors"
+                            className="py-3 px-3 text-sm hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                           >
                             {page.label}
                           </Link>
@@ -266,18 +266,18 @@ export const Navigation = () => {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
-                  <AccordionItem value="about-pages">
-                    <AccordionTrigger className="text-base font-semibold">
+                  <AccordionItem value="about-pages" className="border-b">
+                    <AccordionTrigger className="text-base font-semibold py-4 px-2 hover:no-underline hover:bg-tactical/5 rounded-md">
                       About
                     </AccordionTrigger>
                     <AccordionContent>
-                      <div className="flex flex-col gap-2 pl-4">
+                      <div className="flex flex-col gap-1 pl-2 pt-2">
                         {aboutPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
                             onClick={() => setOpen(false)}
-                            className="py-2 text-sm hover:text-tactical transition-colors"
+                            className="py-3 px-3 text-sm hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                           >
                             {page.label}
                           </Link>
@@ -285,18 +285,18 @@ export const Navigation = () => {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
-                  <AccordionItem value="contact-pages">
-                    <AccordionTrigger className="text-base font-semibold">
+                  <AccordionItem value="contact-pages" className="border-b">
+                    <AccordionTrigger className="text-base font-semibold py-4 px-2 hover:no-underline hover:bg-tactical/5 rounded-md">
                       Contact
                     </AccordionTrigger>
                     <AccordionContent>
-                      <div className="flex flex-col gap-2 pl-4">
+                      <div className="flex flex-col gap-1 pl-2 pt-2">
                         {contactPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
                             onClick={() => setOpen(false)}
-                            className="py-2 text-sm hover:text-tactical transition-colors"
+                            className="py-3 px-3 text-sm hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                           >
                             {page.label}
                           </Link>
@@ -304,18 +304,18 @@ export const Navigation = () => {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
-                  <AccordionItem value="reviews-pages">
-                    <AccordionTrigger className="text-base font-semibold">
+                  <AccordionItem value="reviews-pages" className="border-b">
+                    <AccordionTrigger className="text-base font-semibold py-4 px-2 hover:no-underline hover:bg-tactical/5 rounded-md">
                       Reviews
                     </AccordionTrigger>
                     <AccordionContent>
-                      <div className="flex flex-col gap-2 pl-4">
+                      <div className="flex flex-col gap-1 pl-2 pt-2">
                         {reviewsPages.map((page) => (
                           <Link
                             key={page.path}
                             to={page.path}
                             onClick={() => setOpen(false)}
-                            className="py-2 text-sm hover:text-tactical transition-colors"
+                            className="py-3 px-3 text-sm hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                           >
                             {page.label}
                           </Link>
@@ -323,8 +323,8 @@ export const Navigation = () => {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
-                  <AccordionItem value="shop-pages">
-                    <AccordionTrigger className="text-base font-semibold">
+                  <AccordionItem value="shop-pages" className="border-b">
+                    <AccordionTrigger className="text-base font-semibold py-4 px-2 hover:no-underline hover:bg-tactical/5 rounded-md">
                       Shop Pages
                     </AccordionTrigger>
                     <AccordionContent>

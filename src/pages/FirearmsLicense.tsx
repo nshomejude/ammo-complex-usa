@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, FileCheck, AlertTriangle, HelpCircle, CheckCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { ContactWidget } from "@/components/ContactWidget";
 
 const FirearmsLicense = () => {
   return (
@@ -227,13 +228,27 @@ const FirearmsLicense = () => {
           </CardContent>
         </Card>
 
-        <Alert className="border-warning bg-warning/10">
+        <Alert className="border-warning bg-warning/10 mb-6">
           <AlertTriangle className="h-4 w-4 text-warning" />
           <AlertTitle className="text-warning-foreground">Important Legal Notice</AlertTitle>
           <AlertDescription className="text-warning-foreground">
             By purchasing ammunition from Arms Complex, you certify that you are legally permitted to purchase and possess ammunition under all applicable federal, state, and local laws. Providing false information is a federal crime punishable by imprisonment and fines.
           </AlertDescription>
         </Alert>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <Card className="border-tactical/30 bg-tactical/5">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">Questions About Licensing?</h3>
+                <p className="text-muted-foreground">
+                  Our team is available to help you understand the requirements for your specific situation and location.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          <ContactWidget variant="compact" />
+        </div>
       </main>
 
       <Footer />
