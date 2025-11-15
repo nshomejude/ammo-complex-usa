@@ -227,6 +227,9 @@ export const Navigation = () => {
             <Link to="/admin" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
               Admin
             </Link>
+            <Link to="/auth" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              <User className="h-5 w-5" />
+            </Link>
             <CartButton />
           </div>
 
