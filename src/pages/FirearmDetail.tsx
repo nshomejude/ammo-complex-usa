@@ -202,18 +202,18 @@ const FirearmDetail = () => {
           </AlertDescription>
         </Alert>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 gap-4 lg:gap-6 lg:grid-cols-2 mb-12">
           {/* Left Column - Image and Desktop-only sections */}
           <div>
             <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6 max-w-md mx-auto lg:mx-0">
               <div className="text-center">
-                <Shield className="h-16 w-16 mx-auto text-tactical mb-3" />
-                <Badge variant="secondary" className="px-3 py-1">{firearm.actionType}</Badge>
+                <Shield className="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-tactical mb-3" />
+                <Badge variant="secondary" className="px-3 py-1 text-sm">{firearm.actionType}</Badge>
               </div>
             </div>
 
             {/* Desktop only - sections under image */}
-            <div className="hidden lg:block space-y-6 mt-6">
+            <div className="hidden lg:block space-y-4 mt-4">
               {fflTransferSection}
               {whyChooseSection}
               {quickSpecsSection}
@@ -225,12 +225,12 @@ const FirearmDetail = () => {
             <div className="mb-4">
               <Link 
                 to={`/brands/${firearm.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                className="inline-flex items-center gap-2 text-sm text-tactical hover:underline mb-2"
+                className="inline-flex items-center gap-2 text-xs sm:text-sm text-tactical hover:underline mb-2"
               >
-                <Award className="h-4 w-4" />
+                <Award className="h-3 w-3 sm:h-4 sm:w-4" />
                 <span className="font-semibold">{firearm.manufacturer}</span>
               </Link>
-              <h1 className="text-4xl font-bold mb-4">{firearm.name}</h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">{firearm.name}</h1>
               <div className="flex flex-wrap gap-2 mb-4">
                 {firearm.caliber.map((cal, idx) => (
                   <Badge key={idx} variant="outline" className="border-tactical text-tactical">
@@ -248,20 +248,20 @@ const FirearmDetail = () => {
             </div>
 
             {/* Mobile/Tablet only - FFL Transfer section */}
-            <div className="lg:hidden mb-6">
+            <div className="lg:hidden mb-4 sm:mb-6">
               {fflTransferSection}
             </div>
 
-            <div className="mb-6">
-              <div className="flex items-baseline gap-4 mb-2">
-                <span className="text-4xl font-bold text-primary">${firearm.price.toFixed(2)}</span>
+            <div className="mb-4 sm:mb-6">
+              <div className="flex items-baseline gap-3 sm:gap-4 mb-2 flex-wrap">
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary">${firearm.price.toFixed(2)}</span>
                 {firearm.inStock ? (
-                  <Badge className="bg-tactical text-tactical-foreground">Available</Badge>
+                  <Badge className="bg-tactical text-tactical-foreground text-sm">Available</Badge>
                 ) : (
-                  <Badge variant="destructive">Out of Stock</Badge>
+                  <Badge variant="destructive" className="text-sm">Out of Stock</Badge>
                 )}
               </div>
-              <p className="text-sm text-muted-foreground">Price may vary by location and FFL dealer fees apply</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Price may vary by location and FFL dealer fees apply</p>
             </div>
 
             {firearm.quantityVariations && firearm.quantityVariations.length > 0 && (

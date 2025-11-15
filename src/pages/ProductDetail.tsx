@@ -278,20 +278,20 @@ const ProductDetail = () => {
           </Button>
         </nav>
 
-        <article className="grid gap-8 lg:grid-cols-2 mb-12">
+        <article className="grid gap-4 lg:gap-6 lg:grid-cols-2 mb-12">
           {/* Left Column - Product Image and Desktop-only sections */}
           <div>
             <Card className="overflow-hidden max-w-md mx-auto lg:mx-0">
               <div className="aspect-square bg-secondary flex items-center justify-center p-6">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-tactical mb-2">{product.caliber}</div>
-                  <div className="text-sm text-muted-foreground">{product.rounds} Rounds</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-tactical mb-2">{product.caliber}</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">{product.rounds} Rounds</div>
                 </div>
               </div>
             </Card>
 
             {/* Desktop only - sections under image */}
-            <div className="hidden lg:block space-y-6 mt-6">
+            <div className="hidden lg:block space-y-4 mt-4">
               {whyChooseSection}
               {legalRequirementsSection}
               {professionalToolsSection}
@@ -299,21 +299,21 @@ const ProductDetail = () => {
           </div>
 
           {/* Product Info */}
-          <div className="space-y-6" itemScope itemType="https://schema.org/Product">
+          <div className="space-y-4 sm:space-y-6" itemScope itemType="https://schema.org/Product">
             <div>
-              <h1 className="text-4xl font-bold mb-2" itemProp="name">{product.name}</h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2" itemProp="name">{product.name}</h1>
               {product.manufacturer && (
                 <div className="mb-3">
                   <Link 
                     to={`/brands/${product.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                    className="inline-flex items-center gap-2 text-lg text-tactical hover:underline"
+                    className="inline-flex items-center gap-2 text-sm sm:text-base lg:text-lg text-tactical hover:underline"
                   >
-                    <Award className="h-5 w-5" />
+                    <Award className="h-4 w-4 sm:h-5 sm:w-5" />
                     <span className="font-semibold">{product.manufacturer}</span>
                   </Link>
                 </div>
               )}
-              <p className="text-lg text-muted-foreground" itemProp="description">
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground" itemProp="description">
                 {product.shortDescription || product.description}
               </p>
             </div>
@@ -323,18 +323,18 @@ const ProductDetail = () => {
               {whyChooseSection}
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
               {product.inStock ? (
-                <Badge className="bg-tactical text-tactical-foreground border-0 text-base px-4 py-1">
-                  <CheckCircle className="h-4 w-4 mr-2" />
+                <Badge className="bg-tactical text-tactical-foreground border-0 text-sm sm:text-base px-3 sm:px-4 py-1">
+                  <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
                   In Stock
                 </Badge>
               ) : (
-                <Badge variant="outline" className="border-destructive text-destructive text-base px-4 py-1">
+                <Badge variant="outline" className="border-destructive text-destructive text-sm sm:text-base px-3 sm:px-4 py-1">
                   Out of Stock
                 </Badge>
               )}
-              <Badge variant="outline" className="text-base px-4 py-1">
+              <Badge variant="outline" className="text-sm sm:text-base px-3 sm:px-4 py-1">
                 {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
               </Badge>
             </div>
@@ -342,10 +342,10 @@ const ProductDetail = () => {
             <Separator />
 
             <div>
-              <div className="text-4xl font-bold text-tactical mb-2">
+              <div className="text-3xl sm:text-4xl font-bold text-tactical mb-2">
                 ${product.price.toFixed(2)}
               </div>
-              <p className="text-sm text-muted-foreground">Per box of {product.rounds} rounds</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Per box of {product.rounds} rounds</p>
               <p className="text-xs text-muted-foreground mt-1">
                 ${(product.price / product.rounds).toFixed(3)} per round
               </p>
