@@ -7462,12 +7462,68 @@ export const firearms: Firearm[] = [
     caliber: ["12 GA"],
     price: 549,
     inStock: true,
-    description: "18.5-inch barrel tactical pump with XS ghost ring sights.",
+    description: "18.5-inch barrel tactical pump with XS ghost ring sights. The legendary 870 platform proven through 70+ years of law enforcement and military service worldwide.",
     actionType: "Pump-Action",
     capacity: "6+1",
     barrelLength: "18.5 inches",
     weight: "7.5 lbs",
-    finish: "Black Oxide"
+    finish: "Black Oxide",
+    shortDescription: "The Remington 870 is the best-selling shotgun in American history with over 12 million produced. Law enforcement's choice for decades, the 870 combines proven reliability with unmatched aftermarket support.",
+    longDescription: "The Remington 870 stands as the most successful pump-action shotgun design in history, with over 12 million units produced since its introduction in 1951. This remarkable production figure represents more than all competitors combined, validating the 870's reputation for reliability, durability, and value. The 870's dominance spans military, law enforcement, competitive shooting, and civilian markets - a versatility that few firearms can match. Law enforcement agencies adopted the 870 as their primary tactical shotgun beginning in the 1960s, and it remains the most common police shotgun in America today. The 870's action represents the refinement of pump shotgun design, featuring dual steel action bars that prevent binding during rapid manipulation. The massive steel bolt locks into a barrel extension with substantial engagement, providing exceptional strength for magnum loads and slugs. The action's smooth operation results from precision machining and hand-fitting that Remington perfected over decades. Veterans describe the 870's action as 'buttery smooth' - cycling effortlessly even under stress. The Tactical model features several enhancements over sporting 870s that optimize it for defensive use. The 18.5-inch barrel provides optimal balance between maneuverability in confined spaces and adequate velocity for buckshot and slugs. The cylinder bore choke allows buckshot patterns to open appropriately for defensive distances. The extended magazine tube provides 6+1 capacity - seven rounds of 12-gauge firepower. The XS ghost ring sights enable rapid target acquisition while maintaining accuracy capability with slugs to 75+ yards. The synthetic stock withstands harsh conditions that would damage wood, while the textured grip surfaces provide secure purchase. The Remington 870's greatest advantage beyond its proven reliability is unmatched aftermarket support. Virtually every tactical accessory manufacturer produces 870-compatible parts - extended magazines, side saddles, tactical lights, red dot mounts, sling attachments, and stocks in every configuration imaginable. This extensive aftermarket allows customizing the 870 to any specific requirement or preference. Need side-mounted shell carrier? Dozens are available. Want magazine extension to 8+1 capacity? Multiple options at various price points. This parts availability ensures 870s can be maintained and upgraded indefinitely. The 870 has served through Vietnam, Iraq, Afghanistan, and countless law enforcement operations. Police armorers report 870s functioning reliably through hundreds of thousands of rounds with minimal maintenance. The design's simplicity contributes to this reliability - fewer parts mean fewer potential failures. Field stripping for cleaning requires no tools and can be accomplished in seconds. At $549, the 870 Tactical delivers legendary reliability and performance at the most accessible price point for a quality tactical shotgun. While newer designs offer innovative features, the 870 remains the benchmark against which all pump shotguns are measured. For those wanting proven performance backed by 70 years of continuous improvement and production, the 870 Tactical delivers uncompromising value.",
+    features: [
+      "Best-selling shotgun in history with 12+ million produced",
+      "Dual steel action bars prevent binding during rapid operation",
+      "Massive steel bolt provides exceptional strength and reliability",
+      "XS ghost ring sights for rapid acquisition and slug accuracy",
+      "18.5-inch barrel optimized for defensive use",
+      "Extended magazine provides 6+1 capacity",
+      "Synthetic stock withstands harsh environmental conditions",
+      "Unmatched aftermarket support with thousands of accessories available",
+      "Proven through 70+ years of law enforcement and military service",
+      "Simple design enables easy maintenance and reliability"
+    ],
+    benefits: [
+      "Legendary reliability proven through millions of guns over decades",
+      "Smoothest pump action in the industry",
+      "Customize with virtually unlimited aftermarket accessories",
+      "Strong and accurate enough for magnum slugs",
+      "Parts and service available everywhere",
+      "Outstanding value at most accessible price point"
+    ],
+    useCases: [
+      "Law enforcement patrol and tactical operations",
+      "Home defense with proven reliability",
+      "Security applications requiring dependable performance",
+      "Competitive shooting in pump shotgun divisions",
+      "Training platform with extensive aftermarket support",
+      "General purpose tactical shotgun for any application"
+    ],
+    technicalDetails: "The Remington 870 Tactical features dual steel action bars connecting fore-end to bolt assembly, eliminating binding during rapid cycling. Steel receiver machined from solid billet provides exceptional strength and rigidity. Rotating bolt locks into barrel extension with substantial lug engagement for safe containment of magnum pressures. 18.5-inch barrel with cylinder bore allows optimal buckshot patterns at defensive distances. Extended magazine tube holds 6 rounds of 2-3/4 inch shells plus one in chamber (6+1 capacity). XS ghost ring rear sight with protected tritium front post enables rapid acquisition in low light and slug accuracy to 75+ yards. Synthetic stock and fore-end resist environmental damage. Black oxide finish provides corrosion protection. Overall length 38.5 inches. Weight 7.5 lbs unloaded. Action designed for right-hand ejection and controls. Simple takedown requires no tools for field maintenance. Successfully proven through Vietnam, Iraq, Afghanistan, and decades of law enforcement service. Made in USA with extensive parts availability and aftermarket support.",
+    whyChoose: "Choose the Remington 870 Tactical when you want the most proven pump shotgun design in history at the most accessible price. The 870's 12+ million production run represents the greatest validation of reliability and performance any firearm can achieve. This isn't a new design requiring proof - it's 70 years of continuous refinement and improvement based on feedback from military, law enforcement, and civilian users. The smooth action results from decades of manufacturing experience and precision machining. While premium shotguns offer exotic materials or novel features, the 870 delivers time-tested reliability that professionals have trusted with their lives for generations. The unmatched aftermarket support means you can customize the 870 to any requirement - side saddle shell carriers, extended magazines, tactical lights, red dot sights, different stocks, and countless other accessories are readily available from dozens of manufacturers. This ensures your 870 can evolve with your needs and that parts will be available for decades. At $549, the 870 Tactical delivers legendary performance at budget-friendly pricing. For home defenders, law enforcement on limited budgets, or anyone wanting a tactical shotgun that simply works, the 870 remains the gold standard.",
+    seoKeywords: [
+      "remington 870 tactical",
+      "870 police shotgun",
+      "remington 870 for sale",
+      "best pump shotgun",
+      "870 tactical price",
+      "law enforcement shotgun",
+      "remington 870 review",
+      "tactical pump action",
+      "870 home defense",
+      "police pump shotgun",
+      "remington 870 accessories",
+      "870 ghost ring",
+      "tactical shotgun 12 gauge",
+      "870 express tactical",
+      "defensive shotgun"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      maxRange: "300 yards",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "2,485 ft-lbs (00 buckshot 9-pellet), 2,365 ft-lbs (1 oz slug)",
+      accuracy: "5-7 inch groups at 50 yards with slugs"
+    }
   },
   {
     id: "mossberg-590-tactical",
@@ -7492,12 +7548,68 @@ export const firearms: Firearm[] = [
     caliber: ["12 GA"],
     price: 1999,
     inStock: true,
-    description: "Military M4 with ARGO piston system and collapsible stock.",
+    description: "Military M4 with ARGO piston system and collapsible stock. The U.S. Marine Corps' combat shotgun delivering unmatched reliability in the harshest conditions.",
     actionType: "Semi-Automatic",
     capacity: "5+1",
     barrelLength: "18.5 inches",
     weight: "7.8 lbs",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Benelli M4 is the only semi-automatic shotgun ever adopted by the U.S. military as a primary combat weapon. Proven through battles in Iraq and Afghanistan, this is the ultimate tactical shotgun.",
+    longDescription: "The Benelli M4 (militarily designated M1014) represents the pinnacle of combat shotgun development, earning the distinction as the first and only semi-automatic shotgun ever adopted as a primary service weapon by the U.S. military. When the U.S. Marine Corps issued requirements for a new combat shotgun in the late 1990s, they demanded unprecedented reliability, durability, and performance under the most extreme combat conditions. After rigorous testing including 25,000-round torture tests in sand, mud, saltwater, and arctic conditions, Benelli's M4 proved superior to all competitors. Since adoption in 1999, the M4 has served Marines through Iraq, Afghanistan, and global operations, establishing a combat record that validates its design excellence. The M4's revolutionary ARGO (Auto Regulating Gas Operated) system represents Benelli's brilliant solution to semi-automatic shotgun reliability challenges. Traditional gas-operated shotguns use a single gas port that can become fouled or require adjustment for different ammunition power levels. Benelli's ARGO system uses dual gas cylinders positioned near the chamber that capture gas directly from the barrel through two symmetrical ports. This design self-regulates gas pressure - hot ammunition exhausts excess gas while mild loads receive sufficient pressure, eliminating the need for adjustment. The twin gas pistons drive the bolt carrier rearward with extreme reliability even when heavily fouled. This system proves so reliable that Marines report M4s functioning through thousands of rounds without cleaning, even in desert sand storms. The rotating bolt head locks into the barrel extension using three locking lugs similar to rifle designs, providing exceptional strength and accuracy compared to traditional inertia or long-recoil shotgun actions. This positive locking ensures consistent headspace and chamber pressure containment even with high-brass magnum loads. The chrome-lined barrel and chamber resist corrosion and erosion from thousands of rounds of 00 buckshot and slugs. The collapsible pistol grip stock adjusts length-of-pull for body armor and different operators while the pistol grip provides excellent recoil control. The oversized controls - charging handle, bolt release, and safety - function reliably with gloves in adverse conditions. The M4's Picatinny rail accepts optics, lights, and aiming devices. The ghost ring sights provide rapid target acquisition at combat distances. Perhaps most impressively, the M4 digests all 12-gauge ammunition from light 2-3/4 inch target loads to heavy 3-inch magnums without adjustment - no other semi-automatic combat shotgun can claim such versatility. While the $2000 price seems steep, the M4 represents genuine military-grade quality that will function flawlessly through decades of hard use. This isn't a civilian shotgun with 'tactical' features - it's an actual military weapon system proven in combat by the world's most elite warriors. For law enforcement, serious home defenders, and competitive 3-gun shooters who demand absolute reliability, the Benelli M4 delivers uncompromising performance.",
+    features: [
+      "U.S. Military M1014 - officially adopted by Marines as primary combat weapon",
+      "ARGO dual-piston gas system provides unmatched reliability",
+      "Rotating bolt with 3-lug lockup for rifle-like strength and accuracy",
+      "Cycles all 12-gauge loads from light target to heavy magnum without adjustment",
+      "Chrome-lined barrel and chamber for extreme durability",
+      "Collapsible pistol grip stock adjusts for body armor and different shooters",
+      "Oversized controls function reliably with gloves",
+      "Picatinny rail for optics and tactical accessories",
+      "Ghost ring sights for rapid combat acquisition",
+      "Proven through combat in Iraq and Afghanistan"
+    ],
+    benefits: [
+      "Genuine military reliability proven in actual combat",
+      "Functions flawlessly even when heavily fouled",
+      "No adjustment needed for different ammunition types",
+      "Unmatched durability through decades of hard use",
+      "Italian craftsmanship from 500+ year Benelli tradition",
+      "Investment in the finest combat shotgun ever made"
+    ],
+    useCases: [
+      "Military combat operations - primary Marine Corps weapon",
+      "Law enforcement tactical teams and patrol",
+      "Serious home defense demanding ultimate reliability",
+      "3-Gun Heavy Metal competition",
+      "Professional firearms instruction and training",
+      "Collection piece representing military shotgun evolution"
+    ],
+    technicalDetails: "The Benelli M4 features the proprietary ARGO (Auto Regulating Gas Operated) system using dual gas cylinders positioned symmetrically near the chamber. Twin stainless steel pistons drive the bolt carrier rearward, with self-regulating gas pressure accommodating all 12-gauge loads from light 2-3/4 inch target rounds to heavy 3-inch magnums without adjustment. The rotating bolt head locks via three lugs into the barrel extension, providing 8,000+ PSI pressure containment and rifle-like accuracy. The barrel is cold-hammer-forged with chrome lining for extreme durability. Chamber is also chrome-lined to resist corrosion and erosion. The tactical stock features 5-position collapsible buttstock (13-14.5 inch length-of-pull) with pistol grip. Oversized charging handle, bolt release button, and cross-bolt safety operate with gloves. Full-length Picatinny rail accepts optics and lights. Ghost ring rear sight with protected front post. Magazine capacity is 5+1 (extended tubes available). Overall length 35.5-39.75 inches depending on stock position. Weight 7.8 lbs unloaded, 8.4 lbs loaded. Cyclic rate approximately 4 rounds per second. Proven reliable through 25,000+ round military torture tests in sand, mud, arctic cold, and tropical humidity. Made in Italy with lifetime warranty.",
+    whyChoose: "Choose the Benelli M4 when you demand the absolute finest combat shotgun ever created. This isn't marketing hyperbole - the M4 is the only semi-automatic shotgun ever adopted as a primary combat weapon by the U.S. military after the most rigorous testing in firearms history. The ARGO system delivers reliability that lesser shotguns cannot match, functioning flawlessly even when choked with sand or fouled with thousands of rounds without cleaning. Combat veterans report M4s firing continuously through entire deployments without failure. The ability to cycle all ammunition without adjustment means you can use cheap target loads for practice and switch to heavy magnums for defense without touching any controls. While $2000 seems expensive, this is genuine military-grade equipment built to last lifetimes of hard use. The M4 will outlive you and function for your grandchildren. For law enforcement professionals whose lives depend on their equipment, serious home defenders who refuse to compromise on reliability, or competitive shooters demanding the fastest-cycling combat shotgun, the M4 delivers performance that justifies its legendary status. This is the shotgun that elite warriors chose after exhaustive testing. Accept no substitutes.",
+    seoKeywords: [
+      "benelli m4 for sale",
+      "m1014 marine shotgun",
+      "benelli m4 tactical",
+      "military combat shotgun",
+      "marine corps shotgun",
+      "argo gas system",
+      "benelli m4 price",
+      "best tactical shotgun",
+      "semi auto combat shotgun",
+      "benelli m4 review",
+      "m1014 shotgun",
+      "tactical semi automatic",
+      "benelli m4 specs",
+      "combat proven shotgun",
+      "law enforcement shotgun"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      maxRange: "300 yards",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "2,485 ft-lbs (00 buckshot 9-pellet), 2,365 ft-lbs (1 oz slug)",
+      accuracy: "4-6 inch groups at 50 yards with slugs"
+    }
   },
   {
     id: "winchester-sxp-def",
@@ -7522,12 +7634,68 @@ export const firearms: Firearm[] = [
     caliber: ["12 GA"],
     price: 999,
     inStock: true,
-    description: "Bullpup pump with dual tube magazines for 14+1 capacity.",
+    description: "Bullpup pump with dual tube magazines for 14+1 capacity. Revolutionary design delivering unprecedented firepower in compact package with innovative dual magazine system.",
     actionType: "Pump-Action",
     capacity: "14+1",
     barrelLength: "18.5 inches",
     weight: "6.9 lbs",
-    finish: "Black"
+    finish: "Black",
+    shortDescription: "The Kel-Tec KSG revolutionized tactical shotgun design with its bullpup configuration and dual magazine tubes. Fifteen rounds of 12-gauge in a package shorter than most carbines - innovation meets overwhelming firepower.",
+    longDescription: "The Kel-Tec KSG (Kel-Tec Shotgun) represents one of the most innovative tactical shotgun designs in modern firearms history, applying bullpup configuration and dual magazine tubes to create a shotgun with unprecedented capacity in an extraordinarily compact package. When Kel-Tec introduced the KSG in 2011, it immediately captured attention through sheer audacity of design - a pump-action shotgun holding fifteen rounds (14+1) of 12-gauge ammunition in an overall length of just 26.1 inches, shorter than most AR-15 carbines. This achievement required completely rethinking traditional shotgun architecture. The KSG's bullpup design places the action and magazine tubes behind the trigger, similar to rifles like the Steyr AUG or IWI Tavor. This configuration allows a full 18.5-inch barrel while maintaining the overall length of shotguns with 10-inch barrels - providing optimal ballistic performance without National Firearms Act registration requirements for short-barreled shotguns. The compact length makes the KSG exceptionally maneuverable in vehicles, buildings, and confined spaces where traditional shotguns prove unwieldy. The KSG's most revolutionary feature is its dual magazine tube system. Two independent magazine tubes run parallel beneath the barrel, each holding seven rounds of 2-3/4 inch 12-gauge shells. A selector switch allows the shooter to choose which tube feeds - left tube, right tube, or alternate between them. This system provides tactical flexibility impossible with traditional shotguns. Load one tube with 00 buckshot for close-range stopping power and the other with slugs for precision at distance, switching between them as situations demand. Or load both tubes with buckshot for an astounding 14+1 capacity that rivals some pistol-caliber carbines. The dual-tube concept also provides redundancy - if one tube malfunctions, simply switch to the other and continue firing. The downward-ejecting pump action eliminates concerns about ejected shells hitting shooters or bystanders, while making the KSG equally suitable for right or left-handed users. The pump mechanism requires deliberate, complete cycling to ensure reliability - short-stroking can cause malfunctions, but proper technique yields reliable function. The KSG features a dual-action pump that both chambers a fresh round and cocks the internal firing mechanism. The fixed front sight and adjustable rear sight enable slug accuracy to 75+ yards. The full-length Picatinny rail accepts optics, lights, and lasers for customization. The downside-feed design from tubes positioned below the barrel requires shooters to adapt loading technique, but enables the compact configuration. The KSG has found favor with law enforcement for vehicle deployment, home defenders appreciating compact storage and maneuverability, and 3-gun competitors in specialized divisions. While requiring more familiarization than traditional shotguns, the KSG delivers capabilities that conventional designs cannot match. The 14+1 capacity provides overwhelming firepower for defensive scenarios. The compact length enables use in situations where traditional shotguns prove too long. For shooters willing to embrace innovative design for genuine tactical advantages, the KSG delivers unique capabilities.",
+    features: [
+      "Revolutionary dual magazine tube system holds 7+7+1 (14+1 total)",
+      "Bullpup design provides 18.5-inch barrel in 26.1-inch overall length",
+      "Selector switch chooses left tube, right tube, or alternates between them",
+      "Downward ejection works for right or left-handed shooters",
+      "Compact length exceptional for vehicles and confined spaces",
+      "Full-length Picatinny rail for optics and accessories",
+      "Dual tube allows tactical load selection - buckshot and slugs ready",
+      "Weighs just 6.9 lbs despite 15-round capacity",
+      "Polymer construction resists environmental damage",
+      "Innovative American engineering from Kel-Tec"
+    ],
+    benefits: [
+      "Unprecedented 14+1 capacity in pump-action shotgun",
+      "Extremely compact for maneuverability in tight spaces",
+      "Tactical flexibility switching between ammunition types instantly",
+      "Ambidextrous design from downward ejection",
+      "Innovative solution to capacity and length limitations",
+      "Overwhelming firepower for defensive applications"
+    ],
+    useCases: [
+      "Law enforcement vehicle deployment",
+      "Home defense in confined spaces",
+      "Security applications requiring compact firepower",
+      "Tactical scenarios demanding high capacity",
+      "3-Gun competition in specialty divisions",
+      "Situations requiring both buckshot and slug capability"
+    ],
+    technicalDetails: "The Kel-Tec KSG features bullpup configuration placing action behind trigger to achieve 18.5-inch barrel in 26.1-inch overall length. Dual magazine tubes beneath barrel each hold 7 rounds of 2-3/4 inch 12-gauge shells (14+1 total capacity). Selector switch allows choosing left tube, right tube, or alternating between tubes. Pump action uses downward ejection for ambidextrous operation. Dual-action pump both chambers round and cocks firing mechanism, requiring complete cycling for reliability. Steel barrel with chrome-moly construction and cylinder bore. Polymer receiver and furniture resist corrosion and impact damage. Fixed front sight with adjustable rear sight enables slug accuracy. Full-length MIL-STD-1913 Picatinny rail on top accepts optics and lights. Vertical foregrip helps control during rapid fire. Weight 6.9 lbs unloaded, approximately 8.7 lbs fully loaded with 15 rounds. Overall length 26.1 inches. The compact bullpup design requires shooters to adapt to different balance point compared to traditional shotguns. Made in USA by Kel-Tec with innovation-focused engineering.",
+    whyChoose: "Choose the Kel-Tec KSG when you need maximum 12-gauge firepower in minimum space. The 14+1 capacity exceeds every other tactical shotgun while the 26.1-inch overall length makes it shorter than most carbines. This combination of overwhelming capacity and extreme compactness solves problems that traditional shotgun designs cannot address. The dual magazine system provides genuine tactical advantages - instantly switching between buckshot and slugs as situations change, or simply carrying 15 rounds of your preferred load. The compact length makes the KSG ideal for vehicle deployment where traditional shotguns prove awkward, home defense in confined spaces, or any application where maneuverability matters. The downward ejection makes it truly ambidextrous without compromise. While the KSG requires more training than traditional shotguns to master proper pump technique and loading procedures, the capabilities justify the learning curve. For law enforcement vehicle operators, home defenders in apartments or small homes, or anyone needing maximum shotgun firepower in minimum space, the KSG delivers capabilities impossible with conventional designs. This is innovation solving real tactical problems through engineering rather than incremental improvements.",
+    seoKeywords: [
+      "kel-tec ksg for sale",
+      "ksg shotgun",
+      "bullpup tactical shotgun",
+      "dual tube shotgun",
+      "high capacity shotgun",
+      "kel-tec ksg price",
+      "compact tactical shotgun",
+      "ksg 12 gauge",
+      "ksg review",
+      "innovative shotgun design",
+      "14 round shotgun",
+      "bullpup pump action",
+      "keltec ksg specs",
+      "tactical bullpup",
+      "home defense shotgun"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      maxRange: "300 yards",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "2,485 ft-lbs (00 buckshot 9-pellet), 2,365 ft-lbs (1 oz slug)",
+      accuracy: "5-7 inch groups at 50 yards with slugs from 18.5-inch barrel"
+    }
   },
   {
     id: "mossberg-500-persuader",
@@ -7582,12 +7750,68 @@ export const firearms: Firearm[] = [
     caliber: ["12 GA"],
     price: 699,
     inStock: true,
-    description: "Mil-spec tactical with Speedfeed stock and metal trigger group.",
+    description: "Mil-spec tactical with Speedfeed stock and metal trigger group. Military-proven pump shotgun meeting rigorous military specifications for reliability and durability.",
     actionType: "Pump-Action",
     capacity: "8+1",
     barrelLength: "20 inches",
     weight: "7.5 lbs",
-    finish: "Parkerized"
+    finish: "Parkerized",
+    shortDescription: "The Mossberg 590A1 is the only pump-action shotgun to pass U.S. military Mil-Spec 3443G testing. Proven through military and law enforcement service worldwide as the ultimate fighting pump gun.",
+    longDescription: "The Mossberg 590A1 represents the gold standard for military and law enforcement pump-action shotguns, earning the distinction as the only shotgun to pass the rigorous U.S. military specification Mil-Spec 3443G. This demanding test protocol subjects shotguns to torture that would destroy lesser firearms - including firing proof loads generating 30% over normal pressure, extreme temperature cycling from -40°F to 140°F, repeated drops on concrete, prolonged saltwater immersion, and 3,000-round endurance testing without cleaning or lubrication. The 590A1's successful completion of Mil-Spec 3443G resulted in adoption by military forces worldwide, including the U.S. Army, Navy, Air Force, and Marine Corps for military police and security duties. The 590A1 distinguishes itself from standard 590 models through critical upgrades that justify its mil-spec designation. The barrel features heavy walls (compared to standard sporting shotgun barrels) manufactured from ordnance-grade steel and finished in corrosion-resistant parkerization. This heavy barrel withstands sustained full-power buckshot and slug firing that would eventually wear lighter barrels. The heavy barrel also includes a bayonet lug - while bayonet use is rare, the lug provides a mounting point for breaching attachments. The receiver is machined from thicker aluminum, providing exceptional strength and rigidity. Perhaps most significantly, the trigger group housing is machined from solid aluminum rather than plastic found in sporting models - this metal trigger housing ensures long-term durability under professional use and rough handling. The dual action bars (Mossberg's signature feature since the 1960s) eliminate the binding that can plague single action bar shotguns when subjected to hard use or side loading. The ambidextrous tang-mounted safety allows operation by right or left-handed users - critical for military applications where shooters of either hand dominance need immediate access. The 590A1's 8+1 capacity (nine rounds total) provides substantial firepower, with the 20-inch barrel offering optimal balance between maneuverability and velocity. The ghost ring sights enable rapid target acquisition at combat distances while maintaining precision capability with slugs out to 75+ yards. The Speedfeed synthetic stock includes integrated shell storage in the buttstock for immediate tactical reloads. The 590A1 has proven itself through decades of military service in hostile environments from desert Iraq to tropical jungles to Arctic operations. Military armorers report 590A1s functioning flawlessly through tens of thousands of rounds with minimal maintenance. For law enforcement, the 590A1 serves as primary patrol shotgun for countless agencies who appreciate the combination of reliability, capacity, and proven performance. At $699, the 590A1 delivers genuine military-specification quality at a price that makes professional-grade equipment accessible. This isn't tactical marketing - it's actual mil-spec hardware proven through military adoption and decades of hard service.",
+    features: [
+      "Only pump shotgun to pass U.S. Military Mil-Spec 3443G testing",
+      "Heavy-walled barrel from ordnance-grade steel for extreme durability",
+      "Metal trigger group housing for long-term professional use",
+      "Dual action bars eliminate binding under hard use",
+      "Parkerized finish resists corrosion in hostile environments",
+      "Ambidextrous tang safety for left or right-handed operation",
+      "Ghost ring sights for rapid combat acquisition",
+      "Speedfeed stock with integrated shell storage",
+      "8+1 capacity provides substantial firepower",
+      "Bayonet lug for breaching attachments"
+    ],
+    benefits: [
+      "Genuine military reliability at affordable price",
+      "Proven through decades of military and law enforcement service",
+      "Extreme durability withstands professional hard use",
+      "Metal trigger housing ensures long-term functionality",
+      "Ambidextrous design accommodates all shooters",
+      "American manufacturing supports domestic jobs"
+    ],
+    useCases: [
+      "Military police and security operations",
+      "Law enforcement patrol and tactical deployment",
+      "Home defense demanding reliability and capacity",
+      "3-Gun competition in pump shotgun divisions",
+      "Professional firearms training and instruction",
+      "Security applications requiring proven performance"
+    ],
+    technicalDetails: "The Mossberg 590A1 features heavy-walled barrel manufactured from ordnance-grade steel with parkerized corrosion-resistant finish. Barrel thickness exceeds standard sporting shotgun specifications for sustained magnum use. Metal trigger group housing machined from aluminum rather than plastic provides long-term durability. Dual action bars connect fore-end to bolt, eliminating binding during rapid manipulation. Receiver machined from thicker aluminum for enhanced strength. Ambidextrous tang-mounted safety accessible to right or left-handed shooters. Ghost ring rear sight with protected front post enables rapid acquisition and slug accuracy to 75+ yards. Speedfeed synthetic stock includes four-shell storage in buttstock. Magazine tube holds 8 rounds of 2-3/4 inch shells, plus one in chamber (8+1 capacity). Overall length 40.5 inches. Weight 7.5 lbs unloaded, approximately 8.4 lbs loaded. Bayonet lug standard. Successfully completed Mil-Spec 3443G testing including proof loads, extreme temperatures, drop tests, corrosion resistance, and 3,000-round endurance. Adopted by U.S. military and law enforcement worldwide. Made in USA with unlimited warranty.",
+    whyChoose: "Choose the Mossberg 590A1 when you want proven military-specification reliability at civilian-accessible pricing. The 590A1 isn't simply marketed as 'tactical' - it actually passed Mil-Spec 3443G, the most demanding pump shotgun testing protocol in existence. This military adoption validates the 590A1's superiority in reliability, durability, and performance. The heavy barrel, metal trigger housing, and dual action bars represent genuine engineering differences that ensure long-term functionality under professional use. Military and law enforcement agencies worldwide trust the 590A1 because it simply works, even when abused. At $699, the 590A1 delivers mil-spec quality at half the price of comparable combat shotguns. For law enforcement professionals operating on department budgets, serious home defenders wanting military-proven reliability, or anyone demanding a shotgun that will function flawlessly for decades, the 590A1 delivers exceptional value. The ambidextrous safety and dual action bars provide functional advantages over competing designs. This is the pump shotgun that sets the standard for combat reliability - choose it when failure is not an option.",
+    seoKeywords: [
+      "mossberg 590a1 for sale",
+      "mil-spec shotgun",
+      "mossberg 590a1 tactical",
+      "military pump shotgun",
+      "law enforcement shotgun",
+      "mossberg 590a1 price",
+      "best tactical pump",
+      "combat pump shotgun",
+      "590a1 review",
+      "mil-spec 3443g",
+      "heavy barrel shotgun",
+      "mossberg tactical",
+      "590a1 specs",
+      "military grade shotgun",
+      "police shotgun"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards (00 buckshot), 100+ yards (slugs)",
+      maxRange: "300 yards",
+      muzzleVelocity: "1,325 fps (00 buckshot), 1,600 fps (slugs)",
+      muzzleEnergy: "2,485 ft-lbs (00 buckshot 9-pellet), 2,365 ft-lbs (1 oz slug)",
+      accuracy: "5-7 inch groups at 50 yards with slugs"
+    }
   },
   {
     id: "remington-870-tac14",
