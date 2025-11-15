@@ -2015,12 +2015,51 @@ export const firearms: Firearm[] = [
     caliber: [".357 Magnum", ".38 Special"],
     price: 899,
     inStock: true,
-    description: "Legendary L-frame stainless revolver with 6-shot capacity. Perfect balance of power and control.",
+    description: "Legendary L-frame stainless revolver - the perfect balance of power, durability, and shootability. The 686 defined the modern .357 Magnum duty revolver.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "4 inches",
     weight: "40 oz",
-    finish: "Stainless Steel"
+    finish: "Stainless Steel",
+    shortDescription: "The Smith & Wesson Model 686 represents the pinnacle of .357 Magnum revolver design. Introduced in 1980, this L-frame stainless beauty delivers legendary Smith & Wesson quality with 6-shot capacity and perfect ergonomics.",
+    longDescription: "The Smith & Wesson Model 686 stands as one of the most successful and beloved revolvers ever produced, representing over 40 years of continuous production and refinement. Introduced in 1980 to meet law enforcement demand for stainless steel service revolvers, the 686 quickly became the gold standard for .357 Magnum revolvers, balancing power, durability, and shootability in a package that has satisfied generations of shooters. The L-frame (Large) designation indicates the 686's position between Smith & Wesson's medium K-frame and heavy N-frame revolvers. This sizing proves ideal for .357 Magnum use - substantial enough to handle magnum pressures and recoil comfortably while remaining svelte enough for all-day carry and easy manipulation. The frame's meat and cylinder walls are engineered specifically for sustained magnum use, unlike earlier K-frames which sometimes showed wear when fired exclusively with full-power magnums. The 686 can digest tens of thousands of full-power .357 Magnum rounds without stress. The 6-shot cylinder gives the 686 one more round than traditional 5-shot magnums, providing 20% more firepower - significant in defensive scenarios. The extra capacity comes without excessive bulk through clever engineering. Chambered for both .357 Magnum and .38 Special, the 686 offers tremendous versatility. Full-power .357 Magnum loads deliver devastating stopping power and excellent penetration for defense against threats both two-legged and four-legged. The round's flat trajectory and power make it suitable for small game hunting and pest control. For practice, mild .38 Special loads allow comfortable high-volume training at fraction of magnum ammo costs. Stainless steel construction throughout ensures the 686 laughs at corrosion, weather, and hard use. The satin stainless finish provides attractive appearance while eliminating the rust concerns that plague blued revolvers in humid climates or marine environments. Minimal maintenance keeps a 686 functioning for life. Smith & Wesson's legendary action - both single-action and double-action - receives extensive hand-fitting and tuning. The double-action trigger pull, while substantial at 10-12 pounds, is smooth throughout with minimal stacking. The single-action break is crisp and light, enabling precision shooting. The adjustable rear sight allows precise zero for different loads while the red ramp front sight provides excellent visibility. The 4-inch barrel provides the perfect balance - enough length for complete powder burn and good velocity while remaining compact enough for practical carry. The full underlug provides weight that reduces muzzle flip and improves rapid-fire control. Adopted by countless law enforcement agencies before the semi-auto transition, the 686 served with distinction. Today it remains popular among outdoorsmen, target shooters, and those who appreciate the simplicity and reliability of the wheelgun. For those wanting the finest .357 Magnum revolver money can buy, the Smith & Wesson 686 remains the benchmark all others are measured against.",
+    features: [
+      "L-frame perfectly sized for .357 Magnum use without excessive bulk",
+      "6-shot cylinder provides 20% more capacity than 5-shot competitors",
+      "Chambers both .357 Magnum and .38 Special for versatility",
+      "Stainless steel construction eliminates corrosion concerns",
+      "Legendary Smith & Wesson double-action/single-action trigger",
+      "Adjustable rear sight for precise zeroing with different loads",
+      "Red ramp front sight for excellent visibility",
+      "Full underlug barrel provides weight for recoil management",
+      "Ergonomic grip frame fits wide range of hand sizes",
+      "150+ years of Smith & Wesson manufacturing expertise"
+    ],
+    benefits: [
+      "Perfect balance between power and controllability",
+      "6-shot capacity edges competitors with only 5 rounds",
+      "Stainless construction ensures lifetime durability",
+      "Versatility of magnum power or economical .38 practice",
+      "Smith & Wesson's legendary quality and customer service",
+      "Holds value as collectible and proven performer"
+    ],
+    useCases: [
+      "Home defense with proven .357 Magnum stopping power",
+      "Trail and camping gun for wilderness protection",
+      "Target shooting and PPC competition",
+      "Small game hunting and pest control",
+      "Backup duty weapon for rural law enforcement",
+      "Collection centerpiece representing modern revolver excellence"
+    ],
+    technicalDetails: "The Smith & Wesson Model 686 features stainless steel L-frame construction with 6-shot cylinder. Traditional double-action/single-action trigger mechanism with smooth 10-12 lb double-action pull and crisp 4-5 lb single-action break. Adjustable white-outline rear sight paired with red ramp front sight. Full underlug 4-inch barrel provides weight forward for recoil management and complete powder burn. Checkered rubber or wood grips depending on variant. Recessed cylinder for cartridge rim protection. Transfer bar safety prevents discharge unless trigger fully pressed. Overall length 9.5 inches. Weight 40 oz unloaded. Made in USA with Smith & Wesson's lifetime service policy.",
+    whyChoose: "Choose the Smith & Wesson Model 686 when you want the finest .357 Magnum revolver available. This isn't just another magnum - it's the result of over 40 years of continuous refinement based on feedback from law enforcement, competitive shooters, and enthusiasts. The L-frame sizing hits the sweet spot - robust enough for lifetime magnum use without the bulk of N-frames. Six shots beat the competition's five. Stainless construction ensures your grandchildren will inherit a functional firearm. The 686 shoots .38 Special for practice and .357 Magnum for serious business. Smith & Wesson's legendary craftsmanship means smooth actions, precise timing, and reliability you can stake your life on. Whether you're defending your home, hiking backcountry trails, competing in precision revolver matches, or simply want the best wheelgun available, the 686 delivers uncompromising quality. This is the revolver that set the standard.",
+    seoKeywords: ["Smith Wesson 686", "357 Magnum revolver", "L-frame revolver", "stainless revolver", "6 shot 357", "best 357 magnum"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,450 fps (125gr .357 Magnum)",
+      muzzleEnergy: "584 ft-lbs (125gr .357 Magnum)",
+      accuracy: "2-3 inch groups at 25 yards"
+    }
   },
   {
     id: "sw-642",
@@ -2045,12 +2084,51 @@ export const firearms: Firearm[] = [
     caliber: [".357 Magnum", ".38 Special"],
     price: 849,
     inStock: true,
-    description: "Rugged medium-frame revolver built for a lifetime of use.",
+    description: "Rugged medium-frame revolver built like a tank for lifetime use. Ruger's engineering excellence applied to the .357 Magnum platform with unmatched durability.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "4.2 inches",
     weight: "40 oz",
-    finish: "Stainless Steel"
+    finish: "Stainless Steel",
+    shortDescription: "The Ruger GP100 represents American manufacturing at its finest - a virtually indestructible .357 Magnum revolver engineered for unlimited magnum diet. Built for shooters who demand absolute reliability.",
+    longDescription: "The Ruger GP100 exemplifies Ruger's engineering philosophy: build firearms stronger than necessary, make them affordable, and back them with legendary customer service. Introduced in 1985 to compete with Smith & Wesson's dominance in the .357 Magnum market, the GP100 took a different approach - instead of traditional methods, Ruger applied modern investment casting and CNC machining to create a revolver so robust it redefines durability standards. The GP100 is simply overbuilt in the best possible way. While other manufacturers thread frame-to-barrel connections, Ruger uses a unique system where the barrel, frame, and shroud are triple-locked together creating exceptional strength and rigidity. This construction makes the GP100 virtually immune to loosening or timing issues even after tens of thousands of full-power magnum rounds. The cylinder walls are substantially thicker than competitors, the frame webbing is reinforced, and the yoke is beefier. This tank-like construction means the GP100 laughs at magnum pressures that would eventually wear lesser revolvers. The full-length ejector rod shroud not only provides weight forward for recoil management but also protects the ejector rod from damage - a practical consideration for field use. The cushioned rubber grips with hardwood inserts absorb recoil effectively while providing secure purchase in all conditions. Unlike firearms with separate grip panels that can crack or loosen, the GP100's grip design ensures long-term integrity. Ruger's trigger mechanism, while different from Smith & Wesson's approach, delivers smooth double-action pulls and crisp single-action breaks after modest break-in. The transfer bar safety system provides drop safety while allowing safe carry with all six chambers loaded - a significant advantage over older designs requiring empty chambers. The GP100 features Ruger's unique triple-locking cylinder that locks at the crane, ejector rod, and cylinder stop - providing exceptional alignment and timing. This contributes to the GP100's legendary accuracy, with many examples shooting 2-inch groups at 25 yards. The adjustable rear sight is robust and resistant to impact, while the interchangeable front sight allows customization for different applications. Available in various barrel lengths from snub-nose to 6 inches, the GP100 serves roles from concealed carry to hunting. The 4.2-inch model provides optimal balance - enough barrel for complete powder burn and good sight radius while remaining practical for field carry. Adopted by numerous law enforcement agencies and beloved by outdoorsmen, hunters, and target shooters, the GP100 has earned its reputation through decades of flawless performance. The GP100 represents Ruger quality at an American-made price point that challenges more expensive competitors. For shooters who want a .357 Magnum revolver built to last multiple lifetimes, the GP100 delivers uncompromising durability.",
+    features: [
+      "Triple-locked barrel-frame-shroud system for maximum strength",
+      "Investment-cast construction with CNC machining precision",
+      "Substantially thicker cylinder walls than competitors",
+      "Full-length ejector rod shroud protects against damage",
+      "Cushioned rubber grips with hardwood inserts for recoil absorption",
+      "Transfer bar safety allows safe carry with six rounds",
+      "Triple-locking cylinder for exceptional timing and accuracy",
+      "Adjustable rear sight with robust, impact-resistant design",
+      "Interchangeable front sight for customization",
+      "Ruger's legendary lifetime warranty and customer service"
+    ],
+    benefits: [
+      "Virtually indestructible construction handles unlimited magnum diet",
+      "American-made quality at competitive pricing",
+      "Simpler, more robust design than traditional DA revolvers",
+      "Safe six-shot carry with transfer bar safety",
+      "Excellent accuracy despite tank-like durability",
+      "Ruger's no-questions-asked warranty provides peace of mind"
+    ],
+    useCases: [
+      "Heavy-use magnum shooting without wear concerns",
+      "Backcountry and wilderness defense against dangerous game",
+      "Hunting handgun for deer and hogs within ethical ranges",
+      "Trail gun where durability and reliability are paramount",
+      "Law enforcement backup gun for rural agencies",
+      "Range gun for unlimited magnum practice without worry"
+    ],
+    technicalDetails: "The Ruger GP100 features investment-cast stainless steel construction with CNC machining. Unique triple-locked barrel-to-frame system provides exceptional strength. 6-shot cylinder with extra-thick walls. Double-action/single-action trigger mechanism with transfer bar safety. Smooth 10-12 lb double-action pull, crisp 5 lb single-action break. Adjustable white-outline rear sight, interchangeable front. Full-length ejector shroud with 4.2-inch barrel. Cushioned rubber Hogue grips with hardwood inserts. Triple-locking cylinder (crane, ejector, cylinder stop). Overall length 9.5 inches. Weight 40 oz unloaded. Made in USA with Ruger lifetime warranty.",
+    whyChoose: "Choose the Ruger GP100 when you want a .357 Magnum revolver engineered for absolute durability at America's best value. Ruger didn't try to copy Smith & Wesson - they reimagined revolver construction using modern manufacturing methods to create something stronger. The GP100 is overbuilt in every dimension: thicker cylinder walls, beefier frame, triple-locked barrel system, reinforced yoke. This tank-like construction means unlimited full-power magnum shooting without timing or wear concerns. The transfer bar safety allows safe six-round carry. Ruger's legendary customer service and no-questions warranty ensure any issues (rare as they are) are handled immediately. At under $900, the GP100 delivers durability that shames revolvers costing twice as much. Whether you're a magnum enthusiast who shoots thousands of rounds annually, a wilderness guide needing ultimate reliability, or simply someone who appreciates overbuilt American quality, the GP100 is engineered to outlast you.",
+    seoKeywords: ["Ruger GP100", "357 Magnum Ruger", "durable revolver", "lifetime revolver", "stainless 357", "GP100 review"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "1,450 fps (125gr .357 Magnum)",
+      muzzleEnergy: "584 ft-lbs (125gr .357 Magnum)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "ruger-lcr",
@@ -2105,12 +2183,51 @@ export const firearms: Firearm[] = [
     caliber: [".357 Magnum", ".38 Special"],
     price: 999,
     inStock: true,
-    description: "Modern reissue of the classic King Cobra with updated internals.",
+    description: "Modern reissue of the classic King Cobra with updated internals and Colt's legendary fit and finish. Premium .357 Magnum revolver combining heritage with contemporary engineering.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "3 inches",
     weight: "28 oz",
-    finish: "Brushed Stainless"
+    finish: "Brushed Stainless",
+    shortDescription: "The Colt King Cobra returns as a premium .357 Magnum revolver combining Colt's legendary quality with modern engineering. Compact 3-inch configuration ideal for carry with full magnum capability.",
+    longDescription: "The Colt King Cobra represents Colt's triumphant return to the revolver market with a premium .357 Magnum that combines the company's legendary heritage with modern manufacturing and design. Originally produced from 1986-1998, the King Cobra earned acclaim for build quality, smooth action, and durability. When Colt reintroduced the King Cobra in 2019, they didn't simply resurrect the old design - they reimagined it using contemporary CNC machining, advanced metallurgy, and lessons learned from decades of revolver evolution. The result is a King Cobra that honors its heritage while incorporating meaningful improvements. The modern King Cobra features stainless steel construction with Colt's distinctive brushed finish that provides both corrosion resistance and attractive appearance. The barrel utilizes a linear leaf spring in the mainspring system rather than traditional coil springs, reducing lock time and contributing to the smoothest factory double-action trigger available in a production revolver. This trigger quality represents a significant achievement - many King Cobra owners describe it as better than Smith & Wesson or Ruger triggers costing similar amounts. The 3-inch barrel configuration makes the King Cobra ideal for concealed carry while maintaining enough length for respectable velocity and complete powder burn with most loads. The combination of full-size grip frame with compact barrel creates a revolver that's concealable yet provides full controllability. At 28 ounces, the King Cobra achieves an excellent balance - heavy enough to manage recoil effectively but light enough for comfortable all-day carry. The Hogue overmolded rubber grip provides excellent recoil absorption and secure purchase while the VZ G10 grip option offers thinner profile for concealment. The fiber optic front sight paired with user-adjustable rear sight allows precise zeroing while providing rapid acquisition. The high-polish cylinder and frame with brushed finish create a distinctive two-tone appearance that sets the King Cobra apart visually. Colt's attention to timing and cylinder lockup ensures the King Cobra delivers accuracy rivaling target revolvers. The full-length ejector shroud protects the ejector rod while providing weight forward for balance. Modern features include recessed target crown, full-length ejector rod for positive extraction, and Colt's renowned cylinder latch that operates with bank-vault precision. The King Cobra occupies the premium tier of .357 Magnum carry revolvers - more refined than utilitarian Rugers, more modern than classic Smith & Wessons, and distinctively Colt in execution. For those wanting a premium carry revolver from America's oldest firearms manufacturer, the King Cobra delivers both heritage and contemporary excellence.",
+    features: [
+      "Modern CNC manufacturing combined with Colt heritage",
+      "Linear leaf spring trigger system for exceptionally smooth DA pull",
+      "Brushed stainless finish with polished cylinder for distinctive appearance",
+      "Fiber optic front sight for rapid acquisition",
+      "User-adjustable rear sight for precise zeroing",
+      "3-inch barrel ideal for carry with full magnum capability",
+      "Hogue overmolded rubber grip for recoil management",
+      "Full-length ejector shroud protects rod and adds forward weight",
+      "Recessed target crown for accuracy and protection",
+      "Colt's legendary cylinder lockup precision and timing"
+    ],
+    benefits: [
+      "Smoothest factory DA trigger in production revolvers",
+      "Premium Colt quality and attention to detail",
+      "Ideal carry size without sacrificing shootability",
+      "Modern features with classic Colt refinement",
+      "Distinctive appearance sets it apart from competitors",
+      "American heritage dating to 1836 and Colt's founding"
+    ],
+    useCases: [
+      "Premium concealed carry with full .357 Magnum capability",
+      "Backup duty weapon for law enforcement preferring revolvers",
+      "Home defense with reliability of wheelgun simplicity",
+      "Trail gun where compact size and power are both priorities",
+      "Collection representation of Colt's revolver return",
+      "Carry revolver for enthusiasts demanding premium quality"
+    ],
+    technicalDetails: "The Colt King Cobra features stainless steel construction with brushed finish on frame and high-polish cylinder. Linear leaf mainspring system reduces lock time and smooths double-action pull. 6-shot cylinder chambered for .357 Magnum and .38 Special. Double-action/single-action trigger with exceptionally smooth 8-10 lb DA pull and crisp 4-5 lb SA break. Fiber optic front sight with user-adjustable rear. 3-inch barrel with full-length ejector shroud and recessed target crown. Hogue overmolded rubber grip standard. Overall length 8 inches. Weight 28 oz unloaded - ideal for carry. Made in USA.",
+    whyChoose: "Choose the Colt King Cobra when you want premium .357 Magnum quality from America's oldest and most storied firearms manufacturer. Colt didn't return to revolvers with a budget offering - they created a premium carry gun that competes at the highest level. The linear leaf spring trigger system delivers DA smoothness that shames competitors. The 3-inch barrel provides optimal carry size while the full-size grip ensures controllability. CNC manufacturing ensures consistency while hand-finishing provides Colt's legendary attention to detail. The distinctive brushed/polished finish and fiber optic sights create immediate visual impact. Whether you're a revolver enthusiast demanding the best, a Colt collector welcoming their return to wheelguns, or a carry practitioner wanting premium quality, the King Cobra delivers modern excellence wrapped in American heritage.",
+    seoKeywords: ["Colt King Cobra", "357 carry revolver", "premium revolver", "Colt revolver", "3 inch 357", "concealed carry revolver"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "1,350 fps (125gr .357 Magnum)",
+      muzzleEnergy: "506 ft-lbs (125gr .357 Magnum)",
+      accuracy: "2.5 inch groups at 25 yards"
+    }
   },
   {
     id: "sw-629",
@@ -2120,12 +2237,51 @@ export const firearms: Firearm[] = [
     caliber: [".44 Magnum", ".44 Special"],
     price: 1099,
     inStock: true,
-    description: "Powerful N-frame revolver made famous by Dirty Harry. Stainless steel construction.",
+    description: "Powerful N-frame revolver made famous by Dirty Harry. The most powerful handgun in the world - stainless steel construction for lifetime durability and legendary stopping power.",
     actionType: "Double-Action Revolver",
     capacity: "6",
     barrelLength: "6 inches",
     weight: "44.8 oz",
-    finish: "Stainless Steel"
+    finish: "Stainless Steel",
+    shortDescription: "The Smith & Wesson Model 629 is the stainless version of the legendary Model 29 - Dirty Harry's hand cannon. The .44 Magnum delivers devastating power for hunting, wilderness defense, and those who demand maximum capability.",
+    longDescription: "The Smith & Wesson Model 629 holds a unique place in firearms history as the stainless steel version of the Model 29 - the revolver that Clint Eastwood's 'Dirty Harry' Callahan made legendary with the line 'the most powerful handgun in the world.' While that claim has been surpassed by newer cartridges, the .44 Magnum remains one of the most iconic and capable handgun rounds ever created, and the 629 is its finest expression. Introduced in 1979 as the stainless counterpart to the blued Model 29, the 629 brings corrosion-proof durability to Smith & Wesson's largest production revolver frame - the massive N-frame. This substantial platform is necessary to handle the tremendous forces generated by the .44 Magnum cartridge, which produces over 1,000 ft-lbs of energy - more than double most service pistol rounds. The N-frame's size provides sufficient mass to manage recoil while the precision-machined stainless steel construction ensures the 629 will handle unlimited full-power magnum loads without stress. The .44 Magnum's power makes the 629 suitable for applications beyond typical handgun roles. Hunters use it for deer, hogs, and black bear within ethical ranges. The round's deep penetration and devastating wound channels create reliable one-shot stops on game. Wilderness guides and backcountry travelers carry 629s for protection against dangerous animals including grizzly bears - few handgun cartridges provide more confidence against large predators. The round's flat trajectory extends effective range compared to lesser magnums. For versatility, the 629 also chambers the milder .44 Special cartridge. These reduced-power loads allow comfortable practice without magnum recoil and expense while still delivering more energy than .45 ACP. The ability to shoot both magnums for serious work and Specials for practice makes the 629 more practical than magnum-only designs. The 6-inch barrel provides the optimal balance for the .44 Magnum - enough length for complete powder burn and maximum velocity while remaining practical for field carry. The full underlug adds weight forward that significantly reduces muzzle flip. The adjustable rear sight allows precise zeroing for different loads while the red ramp front sight provides excellent visibility against varied backgrounds. Smith & Wesson's legendary double-action trigger, while heavy at 12+ pounds due to the massive hammer spring necessary for reliable ignition of magnum primers, remains smooth throughout the stroke. The single-action break is crisp and light, enabling precision shooting. The 629's stainless construction eliminates the rust concerns that plague blued revolvers in field use. Rain, snow, humidity, or salt air won't affect the 629's appearance or function. This durability makes it ideal for wilderness use where maintenance facilities are nonexistent. For those who demand maximum handgun power with legendary Smith & Wesson quality, the 629 delivers capability unmatched by lesser calibers.",
+    features: [
+      "Massive N-frame construction engineered for .44 Magnum pressures",
+      "Stainless steel throughout eliminates corrosion concerns",
+      "Chambers both .44 Magnum and .44 Special for versatility",
+      "6-inch barrel provides optimal velocity and sight radius",
+      "Full underlug barrel design reduces muzzle flip",
+      "Adjustable rear sight for precise load-specific zeroing",
+      "Red ramp front sight for visibility in field conditions",
+      "Legendary Smith & Wesson double-action/single-action trigger",
+      "Robust construction handles unlimited magnum diet",
+      "Heritage of Dirty Harry and iconic status in firearms history"
+    ],
+    benefits: [
+      "Maximum handgun stopping power for dangerous game",
+      "Suitable for hunting deer-sized game within ethical ranges",
+      "Stainless durability perfect for wilderness and marine use",
+      "Versatility of magnum power or economical .44 Special practice",
+      "Smith & Wesson's 170+ years of revolver expertise",
+      "Iconic status and collectibility as Dirty Harry's hand cannon"
+    ],
+    useCases: [
+      "Hunting handgun for deer, hogs, and black bear",
+      "Wilderness defense against dangerous game including bears",
+      "Backcountry and hiking protection in grizzly country",
+      "Handgun hunting within state-legal ranges",
+      "Collection centerpiece representing magnum revolver heritage",
+      "Maximum-power home defense for those wanting ultimate capability"
+    ],
+    technicalDetails: "The Smith & Wesson Model 629 features stainless steel N-frame construction - Smith & Wesson's largest production frame. 6-shot cylinder chambered for .44 Magnum and .44 Special. Traditional double-action/single-action trigger mechanism with heavy 12+ lb double-action pull (necessary for reliable magnum primer ignition) and crisp 4-5 lb single-action break. Adjustable white-outline rear sight with red ramp front. Full underlug 6-inch barrel provides weight forward and complete powder burn. Checkered rubber or wood grips depending on variant. Transfer bar safety in modern production. Overall length 11.5 inches. Weight 44.8 oz unloaded - substantial mass necessary for recoil management. Made in USA with Smith & Wesson lifetime service policy.",
+    whyChoose: "Choose the Smith & Wesson Model 629 when you need maximum handgun power in a revolver platform. This is Dirty Harry's hand cannon in corrosion-proof stainless - the pinnacle of Smith & Wesson's 170+ years of revolver manufacturing. The .44 Magnum delivers energy levels that eclipse virtually all service pistol cartridges, providing capability for hunting medium game and defense against the largest predators. The N-frame's substantial construction handles unlimited magnum loads while the stainless steel laughs at weather and hard use. Shoot .44 Magnum for serious work and .44 Special for practice. The 6-inch barrel extracts maximum performance while remaining practical. Whether you're a handgun hunter, wilderness guide, backcountry traveler in bear country, or simply someone who wants the most powerful production revolver Smith & Wesson makes, the 629 delivers legendary capability. This isn't just a revolver - it's an icon.",
+    seoKeywords: ["Smith Wesson 629", "44 Magnum revolver", "Dirty Harry gun", "hunting revolver", "bear defense revolver", "N-frame Smith"],
+    ballisticData: {
+      effectiveRange: "125 yards",
+      muzzleVelocity: "1,350 fps (240gr .44 Magnum)",
+      muzzleEnergy: "971 ft-lbs (240gr .44 Magnum)",
+      accuracy: "2.5-3 inch groups at 25 yards"
+    }
   },
   {
     id: "ruger-vaquero",
@@ -2195,12 +2351,51 @@ export const firearms: Firearm[] = [
     caliber: [".410 Bore", ".45 Colt"],
     price: 549,
     inStock: true,
-    description: "Unique dual-caliber revolver firing .410 shotshells and .45 Colt.",
+    description: "Unique dual-caliber revolver firing both .410 shotshells and .45 Colt ammunition. Revolutionary design for close-range defense with devastating shotshell capability and versatile ammunition options.",
     actionType: "Double-Action Revolver",
     capacity: "5",
     barrelLength: "3 inches",
     weight: "35.2 oz",
-    finish: "Matte Stainless"
+    finish: "Matte Stainless",
+    shortDescription: "The Taurus Judge revolutionized defensive revolvers by chambering both .410 shotshells and .45 Colt cartridges. Five rounds of devastating close-range firepower with ammunition versatility unmatched by traditional revolvers.",
+    longDescription: "The Taurus Judge represents one of the most innovative and controversial firearms designs of the 21st century. Introduced in 2006, the Judge challenged conventional wisdom by creating a revolver that chambers both .410 bore shotshells and .45 Colt ammunition - providing unprecedented ammunition versatility and close-range firepower. The concept proved wildly successful, spawning numerous imitators and establishing an entirely new category of defensive handguns. The Judge's name reportedly comes from judges who kept them in courtrooms for protection - the shotshell capability providing devastating close-range stopping power without overpenetration concerns in populated environments. The ability to fire .410 shotshells from a handgun creates unique defensive capabilities. A .410 shell loaded with buckshot puts multiple projectiles downrange with each trigger pull, increasing hit probability at typical defensive distances. The spread pattern provides some forgiveness for less-than-perfect aim under stress while the multiple projectiles ensure hits on vital areas. Popular defensive loads include 000 buckshot (3-5 pellets) and specialized defensive discs. The Judge also chambers traditional .45 Colt ammunition, one of the most proven and powerful revolver cartridges ever created. This versatility means you can load according to mission: buckshot for close-range defense, birdshot for pest control, slugs for barrier penetration, or .45 Colt for traditional revolver performance. Some owners alternate loads - .45 Colt for penetration followed by buckshot for spread, or vice versa. The Judge's cylinder is necessarily longer and wider than traditional revolver cylinders to accommodate the 2.5-inch .410 shells (3-inch chamber in Public Defender Poly models). This results in a larger, heavier revolver than comparable .357 or .44 magnums. However, the substantial mass helps manage the Judge's recoil, which is moderate with .410 loads and .45 Colt. The rifled barrel maintains .45 Colt accuracy while providing adequate shotshell pattern. The fiber optic front sight aids rapid acquisition critical for defensive use. The Judge's matte stainless finish provides corrosion resistance and reduced glare. Ribbed rubber grips absorb recoil and provide secure purchase. The transfer bar safety allows safe carry with all five chambers loaded. Critics argue the Judge's shotshell patterns open too quickly beyond 7-10 yards and that .410 buckshot provides less penetration than traditional defensive handgun rounds. Proponents counter that most defensive encounters occur at close range where the Judge excels, and that the ammunition versatility provides tactical options. Regardless of debate, the Judge's commercial success is undeniable - it remains one of Taurus' best-selling firearms. For home defense, vehicle carry, trail use, and situations where close-range firepower and versatility are priorities, the Judge delivers unique capability unavailable in traditional revolvers.",
+    features: [
+      "Unique dual-caliber capability: .410 shotshells and .45 Colt",
+      "2.5-inch .410 chamber accommodates wide variety of loads",
+      "5-shot cylinder provides adequate capacity with large-bore rounds",
+      "Fiber optic front sight for rapid defensive acquisition",
+      "Rifled barrel maintains .45 Colt accuracy while handling shotshells",
+      "Matte stainless construction for corrosion resistance",
+      "Ribbed rubber grip absorbs recoil and provides secure hold",
+      "Transfer bar safety for drop protection",
+      "Multiple ammunition options for varied applications",
+      "Taurus Security System allows key-lock safety engagement"
+    ],
+    benefits: [
+      "Unprecedented ammunition versatility in single platform",
+      "Devastating close-range stopping power with buckshot",
+      "Multiple projectiles per shotshell increase hit probability",
+      ".45 Colt option provides traditional revolver capability",
+      "Reduced overpenetration concerns with proper ammunition selection",
+      "Affordable price point makes unique capability accessible"
+    ],
+    useCases: [
+      "Home defense with shotshell devastating close-range power",
+      "Vehicle defense gun where spread aids hit probability",
+      "Trail and camping gun for snakes and pest control with birdshot",
+      "Close-quarters defensive situations in populated areas",
+      "Property defense where versatility and stopping power matter",
+      "Backup gun for rural law enforcement or security professionals"
+    ],
+    technicalDetails: "The Taurus Judge features stainless steel construction with matte finish. Enlarged cylinder chambers both 2.5-inch .410 shotshells and .45 Colt cartridges. 5-shot capacity due to large-bore rounds. Double-action/single-action trigger mechanism with transfer bar safety. Fiber optic front sight for rapid acquisition. Rifled 3-inch barrel handles both shotshells and traditional ammunition. Ribbed rubber Taurus Ribber grips. Taurus Security System key-lock. Overall length 7.5 inches. Weight 35.2 oz unloaded - substantial for recoil management. Made in Brazil by Taurus with lifetime warranty.",
+    whyChoose: "Choose the Taurus Judge when you want defensive versatility unavailable in traditional revolvers. The ability to fire both .410 shotshells and .45 Colt provides tactical flexibility - buckshot for devastating close-range defense, slugs for barrier penetration, birdshot for pest control, or .45 Colt for traditional revolver performance. The Judge excels in roles where close-range firepower and hit probability matter more than long-range precision. For home defenders, the buckshot option provides confidence without excessive overpenetration concerns. For rural property owners, the ammunition variety handles everything from snakes to serious threats. While purists debate its merits, the Judge's commercial success proves its appeal. If you want something different from traditional defensive revolvers with capability unavailable elsewhere at this price point, the Judge delivers unique utility.",
+    seoKeywords: ["Taurus Judge", "410 revolver", "shotshell revolver", "Judge 45 Colt", "410 handgun", "dual caliber revolver"],
+    ballisticData: {
+      effectiveRange: "15 yards (shotshells), 50 yards (.45 Colt)",
+      muzzleVelocity: "1,000 fps (.410 buckshot), 900 fps (.45 Colt 250gr)",
+      muzzleEnergy: "Varies by load - buckshot delivers multiple projectiles",
+      accuracy: "Pattern-dependent for shotshells, 3-4 inches at 25 yards with .45 Colt"
+    }
   },
   {
     id: "sw-model-10",
