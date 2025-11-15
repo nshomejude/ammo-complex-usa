@@ -52,15 +52,6 @@ const Contact3 = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative h-[400px] flex items-center justify-center bg-gradient-to-br from-[#000000] via-[#2E2E2E] to-[#556B2F]">
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-[#CBB994] text-black">WORLDWIDE PRESENCE</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase font-['Oswald']">Global Offices</h1>
-          <p className="text-xl text-gray-200">Serving customers across 6 continents</p>
-        </div>
-      </section>
 
       {/* Global Map Visual */}
       <section className="py-20 bg-gradient-to-br from-[#556B2F]/10 to-background">

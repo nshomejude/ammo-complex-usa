@@ -41,17 +41,6 @@ const About9 = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-br from-[#2E2E2E] to-[#000000]">
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-[#CBB994] text-black">OUR MISSION</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 uppercase font-['Oswald']">Serving Those Who Serve</h1>
-          <p className="text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            To provide superior firearms and ammunition to military, law enforcement, and civilian markets 
-            through innovation, quality, and unwavering commitment to safety.
-          </p>
-        </div>
-      </section>
 
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">

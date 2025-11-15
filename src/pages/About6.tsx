@@ -25,14 +25,6 @@ const About6 = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <section className="relative h-[500px] flex items-center justify-center bg-gradient-to-br from-[#556B2F] to-[#000000]">
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-[#CBB994] text-black">MANUFACTURING EXCELLENCE</Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase font-['Oswald']">The Manufacturing Edge</h1>
-          <p className="text-xl text-gray-200">Precision craftsmanship meets modern technology</p>
-        </div>
-      </section>
 
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
