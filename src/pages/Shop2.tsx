@@ -8,7 +8,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { products as rawProducts, Product } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Eye } from "lucide-react";
+import { Search, Eye, LayoutGrid, Rows } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { QuickViewModal } from "@/components/QuickViewModal";
@@ -22,8 +22,18 @@ export default function Shop2() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
   const [isComparisonOpen, setIsComparisonOpen] = useState(false);
+  const [viewMode, setViewMode] = useState<"single" | "double">(() => {
+    const saved = localStorage.getItem("shop2ViewMode");
+    return (saved === "single" || saved === "double") ? saved : "double";
+  });
 
   const maxPrice = useMemo(() => Math.max(...products.map(p => p.price)), []);
+
+  const toggleViewMode = () => {
+    const newMode = viewMode === "double" ? "single" : "double";
+    setViewMode(newMode);
+    localStorage.setItem("shop2ViewMode", newMode);
+  };
 
   // Initialize state from URL params
   const [searchTerm, setSearchTerm] = useState(searchParams.get("search") || "");
@@ -127,21 +137,34 @@ export default function Shop2() {
                     className="pl-10 bg-card border-border h-10 md:h-11"
                   />
                 </div>
-                <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] bg-card border-border h-10 md:h-11">
-                    <SelectValue placeholder="Sort by" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="popularity">Popularity</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
-                    <SelectItem value="name">Name</SelectItem>
-                  </SelectContent>
-                </Select>
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={toggleViewMode}
+                    className="sm:hidden h-10 w-10"
+                    aria-label="Toggle view mode"
+                  >
+                    {viewMode === "double" ? <Rows className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
+                  </Button>
+                  <Select value={sortBy} onValueChange={setSortBy}>
+                    <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] bg-card border-border h-10 md:h-11">
+                      <SelectValue placeholder="Sort by" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="popularity">Popularity</SelectItem>
+                      <SelectItem value="price-low">Price: Low to High</SelectItem>
+                      <SelectItem value="price-high">Price: High to Low</SelectItem>
+                      <SelectItem value="name">Name</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className={`grid gap-3 md:gap-4 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${
+                viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
+              }`}>
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
