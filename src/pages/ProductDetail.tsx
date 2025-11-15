@@ -675,9 +675,11 @@ const ProductDetail = () => {
             </TabsContent>
           </Tabs>
         </section>
+      </main>
 
-        {/* Product Specifications */}
-        <section className="mb-8">
+      {/* Product Specifications - Full Width */}
+      <section className="mb-8 bg-muted/30 py-8">
+        <div className="container mx-auto px-4">
           <Card>
             <CardHeader>
               <CardTitle>Product Specifications</CardTitle>
@@ -811,11 +813,13 @@ const ProductDetail = () => {
           </div>
             </CardContent>
           </Card>
-        </section>
+        </div>
+      </section>
 
-        {/* Shipping Info */}
-        <section className="mb-8">
-          <Card className="border-tactical/30 bg-tactical/5">
+      {/* Shipping Info - Full Width */}
+      <section className="mb-8 bg-tactical/5 py-8">
+        <div className="container mx-auto px-4">
+          <Card className="border-tactical/30 bg-background">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Package className="h-5 w-5 text-tactical" />
@@ -847,14 +851,16 @@ const ProductDetail = () => {
               <Link to="/shipping">
                 <Button variant="outline" size="sm" className="w-full sm:w-auto mt-4">
                   View Shipping Policy
-                </Button>
-              </Link>
+              </Button>
+            </Link>
             </CardContent>
           </Card>
-        </section>
+        </div>
+      </section>
 
-        {/* Guarantee */}
-        <section className="mb-8">
+      {/* Guarantee - Full Width */}
+      <section className="mb-8 bg-muted/30 py-8">
+        <div className="container mx-auto px-4">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -883,8 +889,10 @@ const ProductDetail = () => {
               </div>
             </CardContent>
           </Card>
-        </section>
+        </div>
+      </section>
 
+      <main className="container mx-auto px-4 py-8">
         
         {/* Why Buy From Us Section */}
         <WhyBuyFromUs />
