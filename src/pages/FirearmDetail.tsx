@@ -68,6 +68,57 @@ const FirearmDetail = () => {
     toast.success(`Added ${firearm.name} to cart`);
   };
 
+  // Extract sections for reuse in desktop/mobile layouts
+  const fflTransferSection = (
+    <Alert className="border-red-500 bg-red-500/10">
+      <AlertCircle className="h-4 w-4 text-red-500" />
+      <AlertTitle className="text-red-500">FFL Transfer Required</AlertTitle>
+      <AlertDescription className="text-red-500/90">
+        This firearm must be transferred to a licensed FFL dealer. Background check and age verification (21+ for handguns, 18+ for long guns) required by federal law.
+      </AlertDescription>
+    </Alert>
+  );
+
+  const whyChooseSection = firearm.whyChoose && (
+    <Alert className="border-destructive bg-destructive/10">
+      <Award className="h-5 w-5 text-destructive" />
+      <AlertTitle className="text-lg font-bold text-destructive">Why Choose This Firearm</AlertTitle>
+      <AlertDescription className="text-sm mt-2 leading-relaxed">
+        {firearm.whyChoose}
+      </AlertDescription>
+    </Alert>
+  );
+
+  const quickSpecsSection = (
+    <Card>
+      <CardHeader>
+        <CardTitle>Quick Specifications</CardTitle>
+      </CardHeader>
+      <CardContent className="grid grid-cols-2 gap-4">
+        <div>
+          <p className="text-sm text-muted-foreground">Action Type</p>
+          <p className="font-semibold">{firearm.actionType}</p>
+        </div>
+        <div>
+          <p className="text-sm text-muted-foreground">Capacity</p>
+          <p className="font-semibold">{firearm.capacity}</p>
+        </div>
+        <div>
+          <p className="text-sm text-muted-foreground">Barrel Length</p>
+          <p className="font-semibold">{firearm.barrelLength}</p>
+        </div>
+        <div>
+          <p className="text-sm text-muted-foreground">Weight</p>
+          <p className="font-semibold">{firearm.weight}</p>
+        </div>
+        <div className="col-span-2">
+          <p className="text-sm text-muted-foreground">Finish</p>
+          <p className="font-semibold">{firearm.finish}</p>
+        </div>
+      </CardContent>
+    </Card>
+  );
+
   // SEO: Update document title and meta tags
   useEffect(() => {
     if (firearm) {
@@ -141,13 +192,24 @@ const FirearmDetail = () => {
         </Alert>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6">
-            <div className="text-center">
-              <Shield className="h-20 w-20 mx-auto text-tactical mb-3" />
-              <Badge variant="secondary" className="px-3 py-1">{firearm.actionType}</Badge>
+          {/* Left Column - Image and Desktop-only sections */}
+          <div>
+            <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center p-6">
+              <div className="text-center">
+                <Shield className="h-20 w-20 mx-auto text-tactical mb-3" />
+                <Badge variant="secondary" className="px-3 py-1">{firearm.actionType}</Badge>
+              </div>
+            </div>
+
+            {/* Desktop only - sections under image */}
+            <div className="hidden lg:block space-y-6 mt-6">
+              {fflTransferSection}
+              {whyChooseSection}
+              {quickSpecsSection}
             </div>
           </div>
 
+          {/* Right Column - Product Info */}
           <div>
             <div className="mb-4">
               <Link 
@@ -174,13 +236,10 @@ const FirearmDetail = () => {
               </div>
             </div>
 
-            <Alert className="mb-6 border-red-500 bg-red-500/10">
-              <AlertCircle className="h-4 w-4 text-red-500" />
-              <AlertTitle className="text-red-500">FFL Transfer Required</AlertTitle>
-              <AlertDescription className="text-red-500/90">
-                This firearm must be transferred to a licensed FFL dealer. Background check and age verification (21+ for handguns, 18+ for long guns) required by federal law.
-              </AlertDescription>
-            </Alert>
+            {/* Mobile/Tablet only - FFL Transfer section */}
+            <div className="lg:hidden mb-6">
+              {fflTransferSection}
+            </div>
 
             <div className="mb-6">
               <div className="flex items-baseline gap-4 mb-2">
@@ -241,43 +300,11 @@ const FirearmDetail = () => {
               {firearm.shortDescription || firearm.description}
             </p>
 
-            {firearm.whyChoose && (
-              <Alert className="mb-6 border-destructive bg-destructive/10">
-                <Award className="h-5 w-5 text-destructive" />
-                <AlertTitle className="text-lg font-bold text-destructive">Why Choose This Firearm</AlertTitle>
-                <AlertDescription className="text-sm mt-2 leading-relaxed">
-                  {firearm.whyChoose}
-                </AlertDescription>
-              </Alert>
-            )}
-
-            <Card className="mb-6">
-              <CardHeader>
-                <CardTitle>Quick Specifications</CardTitle>
-              </CardHeader>
-              <CardContent className="grid grid-cols-2 gap-4">
-                <div>
-                  <p className="text-sm text-muted-foreground">Action Type</p>
-                  <p className="font-semibold">{firearm.actionType}</p>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Capacity</p>
-                  <p className="font-semibold">{firearm.capacity}</p>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Barrel Length</p>
-                  <p className="font-semibold">{firearm.barrelLength}</p>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Weight</p>
-                  <p className="font-semibold">{firearm.weight}</p>
-                </div>
-                <div className="col-span-2">
-                  <p className="text-sm text-muted-foreground">Finish</p>
-                  <p className="font-semibold">{firearm.finish}</p>
-                </div>
-              </CardContent>
-            </Card>
+            {/* Mobile/Tablet only - Why Choose and Quick Specs sections */}
+            <div className="lg:hidden space-y-6 mb-6">
+              {whyChooseSection}
+              {quickSpecsSection}
+            </div>
 
             {firearm.ballisticData && (
               <>
