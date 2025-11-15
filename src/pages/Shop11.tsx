@@ -8,7 +8,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { products as rawProducts, Product } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Star, TrendingUp, Filter, X, Eye } from "lucide-react";
+import { Search, Star, TrendingUp, Filter, X, Eye, LayoutGrid, Rows } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,8 +26,18 @@ export default function Shop11() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
   const [isComparisonOpen, setIsComparisonOpen] = useState(false);
+  const [viewMode, setViewMode] = useState<"single" | "double">(() => {
+    const saved = localStorage.getItem("shop11ViewMode");
+    return (saved === "single" || saved === "double") ? saved : "double";
+  });
 
   const maxPrice = useMemo(() => Math.max(...products.map(p => p.price)), []);
+
+  const toggleViewMode = () => {
+    const newMode = viewMode === "double" ? "single" : "double";
+    setViewMode(newMode);
+    localStorage.setItem("shop11ViewMode", newMode);
+  };
 
   const [searchTerm, setSearchTerm] = useState(searchParams.get("search") || "");
   const [sortBy, setSortBy] = useState(searchParams.get("sort") || "popularity");
@@ -175,17 +185,28 @@ export default function Shop11() {
                   )}
                 </div>
                 
-                <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="w-full md:w-[220px]">
-                    <SelectValue placeholder="Sort by" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="popularity">Most Popular</SelectItem>
-                    <SelectItem value="price-low">Price: Low to High</SelectItem>
-                    <SelectItem value="price-high">Price: High to Low</SelectItem>
-                    <SelectItem value="name">Alphabetical</SelectItem>
-                  </SelectContent>
-                </Select>
+                <div className="flex gap-2 flex-1">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={toggleViewMode}
+                    className="md:hidden h-10 w-10"
+                    aria-label="Toggle view mode"
+                  >
+                    {viewMode === "double" ? <Rows className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
+                  </Button>
+                  <Select value={sortBy} onValueChange={setSortBy}>
+                    <SelectTrigger className="flex-1 md:w-[220px]">
+                      <SelectValue placeholder="Sort by" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="popularity">Most Popular</SelectItem>
+                      <SelectItem value="price-low">Price: Low to High</SelectItem>
+                      <SelectItem value="price-high">Price: High to Low</SelectItem>
+                      <SelectItem value="name">Alphabetical</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
 
               {/* Active Filters Display */}
@@ -225,7 +246,11 @@ export default function Shop11() {
               )}
 
               {/* Products Grid - Responsive ultimate layout */}
-              <div className={`grid gap-3 md:gap-4 lg:gap-6 ${showFilters ? 'grid-cols-2 md:grid-cols-2 lg:grid-cols-3' : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4'}`}>
+              <div className={`grid gap-3 md:gap-4 lg:gap-6 ${
+                showFilters 
+                  ? viewMode === "single" ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+                  : viewMode === "single" ? "grid-cols-1 md:grid-cols-3 lg:grid-cols-4" : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+              }`}>
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />

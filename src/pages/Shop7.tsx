@@ -8,7 +8,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { products as rawProducts, Product } from "@/data/products";
 import { addProductVariations } from "@/utils/addDefaultVariations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Star, Eye } from "lucide-react";
+import { Search, Star, Eye, LayoutGrid, Rows } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,8 +24,18 @@ export default function Shop7() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isQuickViewOpen, setIsQuickViewOpen] = useState(false);
   const [isComparisonOpen, setIsComparisonOpen] = useState(false);
+  const [viewMode, setViewMode] = useState<"single" | "double">(() => {
+    const saved = localStorage.getItem("shop7ViewMode");
+    return (saved === "single" || saved === "double") ? saved : "double";
+  });
 
   const maxPrice = useMemo(() => Math.max(...products.map(p => p.price)), []);
+
+  const toggleViewMode = () => {
+    const newMode = viewMode === "double" ? "single" : "double";
+    setViewMode(newMode);
+    localStorage.setItem("shop7ViewMode", newMode);
+  };
 
   const [searchTerm, setSearchTerm] = useState(searchParams.get("search") || "");
   const [sortBy, setSortBy] = useState(searchParams.get("sort") || "popularity");
@@ -125,6 +135,15 @@ export default function Shop7() {
                   />
                 </div>
                 <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={toggleViewMode}
+                    className="sm:hidden h-10 w-10"
+                    aria-label="Toggle view mode"
+                  >
+                    {viewMode === "double" ? <Rows className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
+                  </Button>
                   <Select value={sortBy} onValueChange={setSortBy}>
                     <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] h-10 md:h-11">
                       <SelectValue placeholder="Sort by" />
@@ -136,13 +155,15 @@ export default function Shop7() {
                       <SelectItem value="name">Name</SelectItem>
                     </SelectContent>
                   </Select>
-                  <Badge variant="secondary" className="flex items-center gap-1 h-10 md:h-11 px-3 md:px-4 text-xs md:text-sm">
+                  <Badge variant="secondary" className="hidden sm:flex items-center gap-1 h-10 md:h-11 px-3 md:px-4 text-xs md:text-sm">
                     {filteredProducts.length} Products
                   </Badge>
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
+              <div className={`grid gap-3 md:gap-4 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 ${
+                viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
+              }`}>
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
