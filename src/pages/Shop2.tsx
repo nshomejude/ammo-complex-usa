@@ -103,11 +103,12 @@ export default function Shop2() {
             onFiltersChange={setFilters}
             availableBrands={availableBrands}
             maxPrice={maxPrice}
+            className="hidden lg:block"
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-4 md:p-6 lg:p-8">
-            <div className="max-w-7xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-4 md:p-6 lg:p-8">
+            <div className="max-w-6xl mx-auto">
               {/* Header */}
               <div className="mb-6 md:mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">Premium Shop</h1>
@@ -140,7 +141,7 @@ export default function Shop2() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />

@@ -103,11 +103,12 @@ export default function Shop5() {
             onFiltersChange={setFilters}
             availableBrands={availableBrands}
             maxPrice={maxPrice}
+            className="hidden lg:block"
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
-            <div className="max-w-7xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+            <div className="max-w-6xl mx-auto">
               {/* Glass Header */}
               <div className="mb-8 backdrop-blur-xl bg-card/30 border border-border/50 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-3">
@@ -151,7 +152,7 @@ export default function Shop5() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group hover:-translate-y-1 md:hover:-translate-y-2 transition-transform duration-300">
                     <ProductCard {...product} />

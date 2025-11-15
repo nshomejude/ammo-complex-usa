@@ -102,11 +102,12 @@ export default function Shop10() {
             onFiltersChange={setFilters}
             availableBrands={availableBrands}
             maxPrice={maxPrice}
+            className="hidden lg:block"
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
-            <div className="max-w-6xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+            <div className="max-w-5xl mx-auto">
               {/* Premium Header */}
               <div className="mb-10 relative">
                 <div className="flex items-center justify-between mb-4">
@@ -165,7 +166,7 @@ export default function Shop10() {
               )}
 
               {/* Products Grid - Responsive premium spacing */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                 {filteredProducts.map((product) => (
                   <div 
                     key={product.id} 

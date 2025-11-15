@@ -94,8 +94,8 @@ export default function Shop3() {
         
         <div className="flex flex-1 w-full">
           {/* Main Content */}
-          <main className="flex-1 p-4 md:p-6 lg:p-8">
-            <div className="max-w-7xl mx-auto">
+          <main className="flex-1 w-full xl:max-w-[calc(100%-280px)] overflow-x-hidden p-4 md:p-6 lg:p-8">
+            <div className="max-w-6xl mx-auto">
               {/* Tactical Hero */}
               <div className="mb-8 md:mb-12 relative overflow-hidden rounded-lg border border-border bg-gradient-to-r from-tactical/20 to-accent/10 p-6 md:p-8">
                 <Target className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 h-20 md:h-32 w-20 md:w-32 text-tactical/20" />
@@ -129,7 +129,7 @@ export default function Shop3() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />

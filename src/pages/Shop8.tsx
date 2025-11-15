@@ -101,11 +101,12 @@ export default function Shop8() {
             onFiltersChange={setFilters}
             availableBrands={availableBrands}
             maxPrice={maxPrice}
+            className="hidden lg:block"
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
-            <div className="max-w-7xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+            <div className="max-w-6xl mx-auto">
               {/* Modern Header with AJAX Badge */}
               <div className="mb-10 relative">
                 <div className="flex items-center gap-4 mb-3">
@@ -152,7 +153,7 @@ export default function Shop8() {
               </div>
 
               {/* Products Grid - Responsive */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product, index) => (
                   <div 
                     key={product.id} 

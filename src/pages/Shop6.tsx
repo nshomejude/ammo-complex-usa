@@ -94,8 +94,8 @@ export default function Shop6() {
         
         <div className="flex flex-1 w-full">
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
-            <div className="max-w-7xl mx-auto">
+          <main className="flex-1 w-full xl:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+            <div className="max-w-6xl mx-auto">
               {/* Military Header */}
               <div className="mb-10 border-l-4 border-destructive pl-6 py-4">
                 <div className="flex items-center gap-4 mb-2">
@@ -136,7 +136,7 @@ export default function Shop6() {
               </div>
 
               {/* Products Grid - 4 columns with shadow effects */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group hover:shadow-xl md:hover:shadow-2xl hover:shadow-destructive/20 transition-shadow duration-300">
                     <ProductCard {...product} />

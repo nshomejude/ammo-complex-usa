@@ -103,8 +103,8 @@ export default function Shop9() {
         
         <div className="flex flex-1 w-full">
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
-            <div className="max-w-6xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-6 lg:p-8">
+            <div className="max-w-5xl mx-auto">
               {/* Stencil Header */}
               <div className="mb-10 border-4 border-border p-6">
                 <h1 className="text-6xl font-black text-foreground tracking-wider uppercase mb-2"
@@ -216,6 +216,7 @@ export default function Shop9() {
               onFiltersChange={setFilters}
               availableBrands={availableBrands}
               maxPrice={maxPrice}
+              className="hidden xl:block"
             />
           </div>
         </div>

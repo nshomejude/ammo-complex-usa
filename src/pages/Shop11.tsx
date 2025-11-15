@@ -111,13 +111,14 @@ export default function Shop11() {
                 onFiltersChange={setFilters}
                 availableBrands={availableBrands}
                 maxPrice={maxPrice}
+                className="hidden lg:block"
               />
             </CollapsibleContent>
           </Collapsible>
 
           {/* Main Content */}
-          <main className="flex-1 p-6 lg:p-8">
-            <div className="max-w-7xl mx-auto">
+          <main className={`flex-1 w-full overflow-x-hidden p-6 lg:p-8 ${showFilters ? 'lg:max-w-[calc(100%-280px)]' : ''}`}>
+            <div className="max-w-6xl mx-auto">
               {/* Ultimate Header */}
               <div className="mb-10">
                 <div className="flex items-center justify-between mb-6">
@@ -224,7 +225,7 @@ export default function Shop11() {
               )}
 
               {/* Products Grid - Responsive ultimate layout */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className={`grid gap-3 md:gap-4 lg:gap-6 ${showFilters ? 'grid-cols-2 md:grid-cols-2 lg:grid-cols-3' : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4'}`}>
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
