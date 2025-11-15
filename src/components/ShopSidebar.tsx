@@ -19,7 +19,7 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ContactWidget } from "@/components/ContactWidget";
 
 interface FilterOptions {
   priceRange: [number, number];
@@ -441,38 +441,7 @@ export function ShopSidebar({
           <>
             <Separator className="my-4" />
             <div className="px-3 pb-4">
-              <Card className="border-tactical/20 bg-tactical/5">
-                <CardHeader className="p-4 pb-3">
-                  <CardTitle className="text-sm font-semibold flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-tactical" />
-                    Need Help?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="p-4 pt-0 space-y-3">
-                  <p className="text-xs text-muted-foreground">
-                    Our experts are ready to assist you with product selection and licensing requirements.
-                  </p>
-                  <div className="space-y-2">
-                    <a 
-                      href="tel:+1-555-FIREARMS" 
-                      className="flex items-center gap-2 text-xs hover:text-tactical transition-colors"
-                    >
-                      <Phone className="h-3 w-3" />
-                      <span className="font-medium">+1 (555) FIREARMS</span>
-                    </a>
-                    <a 
-                      href="mailto:info@armscomplex.com" 
-                      className="flex items-center gap-2 text-xs hover:text-tactical transition-colors"
-                    >
-                      <Mail className="h-3 w-3" />
-                      <span className="font-medium">info@armscomplex.com</span>
-                    </a>
-                  </div>
-                  <Button asChild variant="outline" size="sm" className="w-full text-xs">
-                    <Link to="/contact">Contact Us</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <ContactWidget variant="sidebar" />
             </div>
           </>
         )}

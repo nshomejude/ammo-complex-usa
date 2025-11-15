@@ -224,7 +224,7 @@ const ProductDetail = () => {
               {product.manufacturer && (
                 <div className="mb-3">
                   <Link 
-                    to={`/search?q=${encodeURIComponent(product.manufacturer)}`}
+                    to={`/brands/${product.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                     className="inline-flex items-center gap-2 text-lg text-tactical hover:underline"
                   >
                     <Award className="h-5 w-5" />

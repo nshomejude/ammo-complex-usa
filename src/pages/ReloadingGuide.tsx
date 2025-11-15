@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Shield, AlertTriangle, Wrench, Target, CheckCircle2, BookOpen, Gauge, Ruler, Scale, FlaskConical, Eye, Zap, Download } from "lucide-react";
 import { useEffect } from "react";
 import { generateSafetyChecklistPDF, generateProcessChecklistPDF, generateEquipmentChecklistPDF, generateLoadDataSheetPDF } from "@/utils/pdfGenerator";
+import { ContactWidget } from "@/components/ContactWidget";
 
 const ReloadingGuide = () => {
   useEffect(() => {
@@ -808,47 +809,50 @@ const ReloadingGuide = () => {
         </Card>
 
         {/* Resources */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-2xl flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-tactical" />
-              Essential Resources & References
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-3">
-                <h3 className="font-semibold">Reloading Manuals</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Lyman 51st Edition Reloading Handbook</li>
-                  <li>• Sierra Reloading Manual (6th Edition)</li>
-                  <li>• Hornady Handbook of Cartridge Reloading</li>
-                  <li>• Nosler Reloading Guide</li>
-                  <li>• Speer Reloading Manual #15</li>
-                </ul>
+        <div className="grid gap-6 lg:grid-cols-3">
+          <Card className="lg:col-span-2">
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
+                <BookOpen className="h-6 w-6 text-tactical" />
+                Essential Resources & References
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <h3 className="font-semibold">Reloading Manuals</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Lyman 51st Edition Reloading Handbook</li>
+                    <li>• Sierra Reloading Manual (6th Edition)</li>
+                    <li>• Hornady Handbook of Cartridge Reloading</li>
+                    <li>• Nosler Reloading Guide</li>
+                    <li>• Speer Reloading Manual #15</li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="font-semibold">Powder Manufacturer Data</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Hodgdon Load Data Center (online)</li>
+                    <li>• Alliant Powder Reloading Guide</li>
+                    <li>• Vihtavuori Reloading Manual</li>
+                    <li>• IMR Powder Load Data</li>
+                    <li>• Accurate Powder Load Guide</li>
+                  </ul>
+                </div>
               </div>
-              <div className="space-y-3">
-                <h3 className="font-semibold">Powder Manufacturer Data</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Hodgdon Load Data Center (online)</li>
-                  <li>• Alliant Powder Reloading Guide</li>
-                  <li>• Vihtavuori Reloading Manual</li>
-                  <li>• IMR Powder Load Data</li>
-                  <li>• Accurate Powder Load Guide</li>
-                </ul>
-              </div>
-            </div>
 
-            <Alert>
-              <Shield className="h-4 w-4" />
-              <AlertDescription>
-                Always cross-reference load data from multiple sources. When starting a new load, begin at the starting 
-                (minimum) charge listed in manuals and work up carefully while monitoring for pressure signs. Never exceed 
-                maximum published loads.
-              </AlertDescription>
-            </Alert>
-          </CardContent>
-        </Card>
+              <Alert>
+                <Shield className="h-4 w-4" />
+                <AlertDescription>
+                  Always cross-reference load data from multiple sources. When starting a new load, begin at the starting 
+                  (minimum) charge listed in manuals and work up carefully while monitoring for pressure signs. Never exceed 
+                  maximum published loads.
+                </AlertDescription>
+              </Alert>
+            </CardContent>
+          </Card>
+          <ContactWidget variant="compact" />
+        </div>
       </main>
 
       <Footer />

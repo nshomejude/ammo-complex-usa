@@ -151,7 +151,7 @@ const FirearmDetail = () => {
           <div>
             <div className="mb-4">
               <Link 
-                to={`/search?q=${encodeURIComponent(firearm.manufacturer)}`}
+                to={`/brands/${firearm.manufacturer.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                 className="inline-flex items-center gap-2 text-sm text-tactical hover:underline mb-2"
               >
                 <Award className="h-4 w-4" />
