@@ -92,20 +92,20 @@ const ProductDetail = () => {
 
   // Extract sections for reuse in desktop/mobile layouts
   const whyChooseSection = product.whyChoose && (
-    <Alert className="border-destructive bg-destructive/10">
-      <Award className="h-5 w-5 text-destructive" />
-      <AlertTitle className="text-base font-bold text-destructive">Why Choose This Ammunition</AlertTitle>
-      <AlertDescription className="text-sm mt-2 leading-relaxed line-clamp-3">
+    <Alert className="border-destructive bg-destructive/10 p-3 sm:p-4">
+      <Award className="h-4 w-4 sm:h-5 sm:w-5 text-destructive" />
+      <AlertTitle className="text-sm sm:text-base font-bold text-destructive">Why Choose This Ammunition</AlertTitle>
+      <AlertDescription className="text-xs sm:text-sm mt-1 sm:mt-2 leading-relaxed line-clamp-3">
         {product.whyChoose}
       </AlertDescription>
     </Alert>
   );
 
   const legalRequirementsSection = (
-    <Alert className="border-destructive bg-destructive/10">
-      <AlertCircle className="h-4 w-4 text-destructive" />
-      <AlertTitle className="text-destructive">Legal Purchase Requirements</AlertTitle>
-      <AlertDescription className="text-sm">
+    <Alert className="border-destructive bg-destructive/10 p-3 sm:p-4">
+      <AlertCircle className="h-3 w-3 sm:h-4 sm:w-4 text-destructive" />
+      <AlertTitle className="text-sm sm:text-base text-destructive">Legal Purchase Requirements</AlertTitle>
+      <AlertDescription className="text-xs sm:text-sm">
         You must be 18+ for rifle/shotgun ammunition and 21+ for handgun ammunition. 
         Valid ID and compliance with all federal, state, and local laws required.
       </AlertDescription>
@@ -114,36 +114,36 @@ const ProductDetail = () => {
 
   const professionalToolsSection = (
     <Card className="border-primary/30 bg-primary/5">
-      <CardHeader>
-        <CardTitle className="text-lg flex items-center gap-2">
-          <Zap className="h-5 w-5 text-primary" />
+      <CardHeader className="p-3 sm:p-4">
+        <CardTitle className="text-base sm:text-lg flex items-center gap-2">
+          <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
           Professional Tools
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-3">
+      <CardContent className="space-y-2 p-3 sm:p-4 pt-0">
         <Button
           variant="outline"
-          className="w-full justify-start"
+          className="w-full justify-start text-sm h-9"
           onClick={handleDownloadLoadData}
         >
-          <Download className="mr-2 h-4 w-4" />
+          <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
           Download Load Data Sheet
         </Button>
         <Link to={`/ballistic-calculator?caliber=${encodeURIComponent(product.caliber)}`}>
           <Button
             variant="outline"
-            className="w-full justify-start"
+            className="w-full justify-start text-sm h-9"
           >
-            <Calculator className="mr-2 h-4 w-4" />
+            <Calculator className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
             Calculate Ballistics for {product.caliber}
           </Button>
         </Link>
         <Link to="/reloading-guide">
           <Button
             variant="outline"
-            className="w-full justify-start"
+            className="w-full justify-start text-sm h-9"
           >
-            <BookOpen className="mr-2 h-4 w-4" />
+            <BookOpen className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
             View Reloading Guide
           </Button>
         </Link>
@@ -282,7 +282,7 @@ const ProductDetail = () => {
           {/* Left Column - Product Image and Desktop-only sections */}
           <div>
             <Card className="overflow-hidden max-w-md mx-auto lg:mx-0">
-              <div className="aspect-square bg-secondary flex items-center justify-center p-6">
+              <div className="aspect-square bg-secondary flex items-center justify-center p-3 sm:p-4">
                 <div className="text-center">
                   <div className="text-3xl sm:text-4xl font-bold text-tactical mb-2">{product.caliber}</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">{product.rounds} Rounds</div>
@@ -410,17 +410,17 @@ const ProductDetail = () => {
 
             {/* Add to Cart Button */}
             <Button 
-              className="w-full bg-tactical hover:bg-tactical/90 text-lg py-6"
+              className="w-full bg-tactical hover:bg-tactical/90 text-base sm:text-lg py-4 sm:py-5"
               disabled={!product.inStock}
               onClick={handleAddToCart}
             >
-              <ShoppingCart className="mr-2 h-5 w-5" />
+              <ShoppingCart className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               {product.inStock ? 'Add to Cart' : 'Out of Stock'}
             </Button>
 
             {/* Shipping Calculator */}
             <Card className="border-tactical/30 bg-tactical/5">
-              <CardContent className="p-4">
+              <CardContent className="p-3 sm:p-4">
                 <ShippingCalculator quantity={quantity} />
               </CardContent>
             </Card>
