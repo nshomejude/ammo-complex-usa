@@ -1066,6 +1066,77 @@ export const firearms: Firearm[] = [
     }
   },
   {
+    id: "fn-509",
+    name: "509",
+    manufacturer: "FN America",
+    categorySlug: "semi-auto-pistols",
+    caliber: ["9mm"],
+    price: 649,
+    inStock: true,
+    description: "Modern striker-fired service pistol developed from U.S. Army trials. Features fully ambidextrous controls and cold-hammer-forged barrel.",
+    actionType: "Semi-Automatic",
+    capacity: "17+1",
+    barrelLength: "4 inches",
+    weight: "26.9 oz",
+    finish: "Black/FDE",
+    shortDescription: "The FN 509 is the civilian version of FN's U.S. Army Modular Handgun System competition entry. Built by the makers of the military's M4, M16, M249, and M240, it delivers uncompromising reliability and professional-grade performance.",
+    longDescription: "The FN 509 represents FN America's entry into the competitive striker-fired service pistol market, developed directly from their submission to the U.S. Army's Modular Handgun System competition. While SIG's P320 ultimately won that contract, FN's competition experience resulted in a pistol incorporating features demanded by the world's most rigorous military testing protocol. FN Herstal, the parent company, has supplied firearms to military forces worldwide for over 130 years, including the U.S. military's M4 carbines, M249 SAW, and M240 machine guns - this institutional knowledge of military requirements is evident throughout the 509's design. The pistol features truly ambidextrous controls with slide stop levers and magazine releases on both sides of the frame, making it equally effective for left and right-handed shooters without compromise. The low bore axis design reduces muzzle flip significantly, enabling faster follow-up shots and better control during rapid fire. The cold-hammer-forged barrel delivers match-grade accuracy while providing extreme durability for high round counts. The trigger system breaks cleanly at approximately 5.5-6.5 pounds with minimal take-up and positive reset - superior to many competitors in this price range. The enhanced polymer grip texture provides secure purchase in all conditions without being overly aggressive. Interchangeable backstraps allow customization for different hand sizes. The recessed slide stop prevents inadvertent activation during firing. For shooters seeking a modern service pistol from a manufacturer with unmatched military credentials, the FN 509 delivers professional performance at a competitive price point.",
+    features: [
+      "Fully ambidextrous controls - slide stops and magazine release on both sides",
+      "Cold-hammer-forged barrel for match-grade accuracy and longevity",
+      "Low bore axis design reduces muzzle flip for faster follow-up shots",
+      "Enhanced grip texture for secure hold in all conditions",
+      "Interchangeable backstraps for custom fit (small, medium, large)",
+      "Recessed slide stop prevents inadvertent activation",
+      "MIL-STD-1913 accessory rail for lights and lasers",
+      "Loaded chamber indicator and striker status indicator",
+      "Superior trigger with clean break and positive reset",
+      "Standard height night sights from factory"
+    ],
+    benefits: [
+      "Professional-grade reliability from U.S. military's primary firearms supplier",
+      "True ambidextrous design without compromise for either hand",
+      "Exceptional accuracy from cold-hammer-forged barrel",
+      "Low bore axis provides superior control and speed",
+      "Developed from U.S. Army competition requirements",
+      "Outstanding value compared to competitors with similar features"
+    ],
+    useCases: [
+      "Law enforcement duty weapon for patrol and investigative personnel",
+      "Home defense with light attachment capability",
+      "Concealed carry for those preferring full-size service pistols",
+      "Competition shooting in Production and Carry Optics divisions",
+      "Professional training and instruction",
+      "Range shooting and recreational practice"
+    ],
+    technicalDetails: "The FN 509 features a cold-hammer-forged, chrome-lined barrel manufactured to FN's military specifications with conventional land-and-groove rifling. The striker-fired trigger system provides approximately 5.5-6.5 pound pull weight with short take-up, clean break, and positive reset. The pistol incorporates multiple safety systems including trigger safety, striker safety, and out-of-battery safety. The low bore axis design places the barrel centerline closer to the shooter's hand, reducing muzzle rise and accelerating sight recovery. The polymer frame features an embedded stainless steel chassis for structural rigidity and is available in black or flat dark earth finishes. The slide is machined from stainless steel with front and rear cocking serrations for manipulation in adverse conditions. Standard capacity is 17 rounds using steel magazines with polymer followers. The accessory rail accepts standard MIL-STD-1913 compatible lights and lasers. The pistol includes three interchangeable backstraps (small, medium, large) to accommodate various hand sizes. Overall dimensions measure 7.4 inches in length with 4-inch barrel, 5.5 inches height, and 1.5 inches width. FN's quality control includes individual function testing and accuracy verification before shipping.",
+    whyChoose: "Choose the FN 509 when you want a service pistol from the company that supplies the U.S. military with their primary combat rifles and machine guns. FN's reputation for military-grade reliability isn't marketing - it's earned through decades of providing firearms that soldiers depend on in life-threatening situations. The 509's development through the U.S. Army's Modular Handgun System competition means it was tested against the most rigorous standards in the world. While it didn't win the contract, the experience resulted in a pistol that incorporates military requirements at a civilian price point. The truly ambidextrous design isn't an afterthought - both slide stops and magazine releases are fully functional on both sides, making it equally effective for any shooter. The cold-hammer-forged barrel provides accuracy and longevity that many competitors cannot match at this price. The low bore axis design delivers measurably faster follow-up shots compared to higher-bore-axis competitors. For those who appreciate proven military manufacturing expertise, genuine ambidextrous capability, and exceptional accuracy in a modern striker-fired package, the FN 509 delivers professional performance without compromise.",
+    seoKeywords: [
+      "fn 509 for sale",
+      "fn america 509",
+      "buy fn 509 online",
+      "fn 509 9mm",
+      "fn 509 price",
+      "striker fired service pistol",
+      "ambidextrous pistol 9mm",
+      "fn 509 review",
+      "military grade handgun",
+      "fn 509 vs glock",
+      "best duty pistol",
+      "fn 509 full size",
+      "fn pistol 9mm",
+      "fn 509 holster",
+      "fn herstal 509"
+    ],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      maxRange: "1,800 yards",
+      muzzleVelocity: "1,150 fps (124gr)",
+      muzzleEnergy: "364 ft-lbs",
+      accuracy: "2-inch groups at 25 yards"
+    }
+  },
+  {
     id: "ruger-american",
     name: "American Pistol",
     manufacturer: "Ruger",
