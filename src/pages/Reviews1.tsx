@@ -1,61 +1,21 @@
-import { useState } from "react";
-import { Star, Plus } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Slider } from "@/components/ui/slider";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Review } from "@/data/reviews";
-import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
-import { useReviews } from "@/contexts/ReviewContext";
-import { ReviewDetailModal } from "@/components/ReviewDetailModal";
-import { ReviewSubmissionForm } from "@/components/ReviewSubmissionForm";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { AllReviewsList } from "@/components/reviews/AllReviewsList";
+import { useEffect } from "react";
 
 export default function Reviews1() {
-  const { reviews } = useReviews();
-  const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
-  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 12;
-  const [priceRange, setPriceRange] = useState([0, 1000]);
-  const [selectedReview, setSelectedReview] = useState<Review | null>(null);
-  const [showReviewModal, setShowReviewModal] = useState(false);
-  const [showSubmitForm, setShowSubmitForm] = useState(false);
-
-  const filteredReviews = reviews.filter(review => {
-    if (selectedRatings.length > 0 && !selectedRatings.includes(review.rating)) return false;
-    if (selectedTypes.length > 0 && !selectedTypes.includes(review.productType)) return false;
+  useEffect(() => {
+    document.title = "Customer Reviews | Arms Complex";
     
-    // Map price range to our review price ranges
-    const priceRanges = {
-      'under-50': [0, 50],
-      '50-200': [50, 200],
-      '200-500': [200, 500],
-      'over-500': [500, 10000]
-    };
-    
-    const reviewPriceRange = priceRanges[review.priceRange];
-    const maxPrice = Math.max(reviewPriceRange[0], reviewPriceRange[1]);
-    if (maxPrice < priceRange[0] || reviewPriceRange[0] > priceRange[1]) return false;
-    
-    return true;
-  });
-
-  const totalPages = Math.ceil(filteredReviews.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const paginatedReviews = filteredReviews.slice(startIndex, startIndex + itemsPerPage);
-
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }).map((_, i) => (
-      <Star key={i} className={`h-4 w-4 ${i < rating ? "fill-warning text-warning" : "text-muted"}`} />
-    ));
-  };
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Read authentic customer reviews of firearms, ammunition, and tactical accessories from Arms Complex customers.');
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
-      <title>Customer Reviews | Arms Complex</title>
-      <meta name="description" content="Read authentic customer reviews of firearms, ammunition, and tactical accessories from Arms Complex customers." />
+      <Navigation />
       
       {/* Hero */}
       <div className="relative h-48 bg-gradient-to-br from-tactical via-background to-card flex items-center justify-center">
@@ -66,158 +26,10 @@ export default function Reviews1() {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl font-bold">All Reviews ({filteredReviews.length})</h2>
-          <Dialog open={showSubmitForm} onOpenChange={setShowSubmitForm}>
-            <DialogTrigger asChild>
-              <Button className="gap-2">
-                <Plus className="h-4 w-4" />
-                Write a Review
-              </Button>
-            </DialogTrigger>
-            <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-              <DialogHeader>
-                <DialogTitle>Submit Your Review</DialogTitle>
-              </DialogHeader>
-              <ReviewSubmissionForm onSuccess={() => setShowSubmitForm(false)} />
-            </DialogContent>
-          </Dialog>
-        </div>
-        
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Sidebar */}
-          <aside className="w-full lg:w-64 space-y-6">
-            <Card className="bg-card border-border">
-              <CardContent className="p-6 space-y-6">
-                <div>
-                  <Label className="text-lg font-semibold mb-4 block">Filter by Rating</Label>
-                  {[5, 4, 3, 2, 1].map(rating => (
-                    <div key={rating} className="flex items-center space-x-2 mb-3">
-                      <Checkbox
-                        checked={selectedRatings.includes(rating)}
-                        onCheckedChange={(checked) => {
-                          if (checked) {
-                            setSelectedRatings([...selectedRatings, rating]);
-                          } else {
-                            setSelectedRatings(selectedRatings.filter(r => r !== rating));
-                          }
-                        }}
-                      />
-                      <div className="flex items-center gap-1">
-                        {renderStars(rating)}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="border-t border-border pt-6">
-                  <Label className="text-lg font-semibold mb-4 block">Product Type</Label>
-                  {["Ammunition", "Firearms", "Accessories"].map(type => (
-                    <div key={type} className="flex items-center space-x-2 mb-3">
-                      <Checkbox
-                        checked={selectedTypes.includes(type)}
-                        onCheckedChange={(checked) => {
-                          if (checked) {
-                            setSelectedTypes([...selectedTypes, type]);
-                          } else {
-                            setSelectedTypes(selectedTypes.filter(t => t !== type));
-                          }
-                        }}
-                      />
-                      <Label>{type}</Label>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="border-t border-border pt-6">
-                  <Label className="text-lg font-semibold mb-4 block">Price Range</Label>
-                  <Slider
-                    value={priceRange}
-                    onValueChange={setPriceRange}
-                    max={1000}
-                    step={10}
-                    className="mb-2"
-                  />
-                  <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>${priceRange[0]}</span>
-                    <span>${priceRange[1]}</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </aside>
-
-          {/* Reviews Grid */}
-          <div className="flex-1">
-            <div className="mb-6">
-              <p className="text-muted-foreground">{filteredReviews.length} reviews found</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {paginatedReviews.map(review => (
-                <Card 
-                  key={review.id} 
-                  className="bg-card border-border hover:shadow-lg transition-shadow duration-300 cursor-pointer hover:border-primary/50"
-                  onClick={() => {
-                    setSelectedReview(review);
-                    setShowReviewModal(true);
-                  }}
-                >
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-bold text-foreground mb-2">{review.productName}</h3>
-                    <div className="flex items-center gap-1 mb-3">
-                      {renderStars(review.rating)}
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{review.reviewSummary}</p>
-                    <div className="border-t border-border pt-4">
-                      <p className="text-xs font-semibold text-foreground">{review.reviewerName}</p>
-                      <p className="text-xs text-muted-foreground">{new Date(review.reviewDate).toLocaleDateString()}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {totalPages > 1 && (
-              <Pagination className="mt-12">
-                <PaginationContent>
-                  <PaginationItem>
-                    <PaginationPrevious 
-                      onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
-                      className={currentPage === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
-                    />
-                  </PaginationItem>
-                  
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                    <PaginationItem key={page}>
-                      <PaginationLink
-                        onClick={() => setCurrentPage(page)}
-                        isActive={currentPage === page}
-                        className="cursor-pointer"
-                      >
-                        {page}
-                      </PaginationLink>
-                    </PaginationItem>
-                  ))}
-                  
-                  <PaginationItem>
-                    <PaginationNext 
-                      onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
-                      className={currentPage === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
-                    />
-                  </PaginationItem>
-                </PaginationContent>
-              </Pagination>
-            )}
-          </div>
-        </div>
+        <AllReviewsList />
       </div>
-      
-      <ReviewDetailModal 
-        review={selectedReview}
-        open={showReviewModal}
-        onOpenChange={setShowReviewModal}
-      />
+
+      <Footer />
     </div>
   );
 }

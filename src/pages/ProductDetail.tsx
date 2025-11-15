@@ -155,6 +155,16 @@ const ProductDetail = () => {
   useEffect(() => {
     document.title = `${product.name} - ${product.caliber} ${product.rounds} Rounds | Arms Complex`;
 
+    // Scroll to review if hash is present
+    if (window.location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 500);
+    }
+
     const updateMeta = (name: string, content: string) => {
       let meta = document.querySelector(`meta[name="${name}"]`);
       if (!meta) {

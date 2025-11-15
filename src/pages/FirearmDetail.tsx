@@ -14,6 +14,7 @@ import { firearms as rawFirearms } from "@/data/firearms";
 import { firearmCategories } from "@/data/firearmCategories";
 import { products as rawProducts } from "@/data/products";
 import { addFirearmVariations, addProductVariations } from "@/utils/addDefaultVariations";
+import { ProductReviews } from "@/components/reviews/ProductReviews";
 import { Shield, Phone, Mail, MapPin, AlertTriangle, CheckCircle, Target, Award, AlertCircle, ShoppingCart } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
@@ -124,6 +125,16 @@ const FirearmDetail = () => {
     if (firearm) {
       const title = `${firearm.name} - ${firearm.manufacturer} | ${firearm.caliber.join('/')} | Buy Online`;
       document.title = title;
+
+      // Scroll to review if hash is present
+      if (window.location.hash) {
+        setTimeout(() => {
+          const element = document.querySelector(window.location.hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 500);
+      }
 
       const updateMeta = (name: string, content: string) => {
         let meta = document.querySelector(`meta[name="${name}"]`);
@@ -572,6 +583,11 @@ const FirearmDetail = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+        </section>
+
+        {/* Reviews Section */}
+        <section className="mb-12">
+          <ProductReviews productId={firearm.id} productType="firearm" />
         </section>
 
         {/* Why Buy From Us Section */}
