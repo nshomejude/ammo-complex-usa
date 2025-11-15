@@ -211,7 +211,7 @@ const Categories = () => {
               </h2>
               <Badge variant="destructive" className="animate-pulse text-xs sm:text-sm">Hot</Badge>
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
               {trendingAmmunition.map((ammo) => (
                 <article key={ammo.id} className="relative">
                   <TopSellingCard
@@ -240,7 +240,7 @@ const Categories = () => {
             <h2 id="all-categories-heading" className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
               All Ammunition Categories
             </h2>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
               {otherAmmunition.map((ammo) => (
                 <article key={ammo.id} className="relative">
                   <TopSellingCard
