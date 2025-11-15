@@ -33,6 +33,7 @@ interface ShopSidebarProps {
   onFiltersChange?: (filters: FilterOptions) => void;
   availableBrands?: string[];
   maxPrice?: number;
+  className?: string;
 }
 
 export function ShopSidebar({ 
@@ -40,7 +41,8 @@ export function ShopSidebar({
   filters,
   onFiltersChange,
   availableBrands = [],
-  maxPrice = 1000
+  maxPrice = 1000,
+  className = ""
 }: ShopSidebarProps) {
   const location = useLocation();
   const { state } = useSidebar();
@@ -135,7 +137,7 @@ export function ShopSidebar({
   ];
 
   return (
-    <Sidebar className={collapsed ? "w-16" : "w-72"} collapsible="icon">
+    <Sidebar className={`${collapsed ? "w-16" : "w-72"} ${className}`} collapsible="icon">
       <SidebarHeader className="border-b border-border p-4">
         {!collapsed && (
           <div className="flex items-center justify-between">

@@ -102,11 +102,12 @@ export default function Shop7() {
             onFiltersChange={setFilters}
             availableBrands={availableBrands}
             maxPrice={maxPrice}
+            className="hidden lg:block"
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-4 md:p-6 lg:p-8 bg-background">
-            <div className="max-w-5xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-552px)] overflow-x-hidden p-4 md:p-6 lg:p-8 bg-background">
+            <div className="max-w-4xl mx-auto">
               <div className="mb-6 md:mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">Dual Filter Layout</h1>
                 <p className="text-sm md:text-base text-muted-foreground">Advanced filtering system with attribute controls</p>
@@ -141,7 +142,7 @@ export default function Shop7() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
@@ -167,7 +168,7 @@ export default function Shop7() {
           </main>
 
           {/* Right Sidebar - Reviews Summary */}
-          <aside className="hidden lg:block w-72 p-6 border-l border-border bg-card/50">
+          <aside className="hidden xl:block w-72 p-6 border-l border-border bg-card/50">
             <div className="sticky top-6 space-y-6">
               <Card>
                 <CardHeader>

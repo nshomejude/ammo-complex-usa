@@ -101,11 +101,12 @@ export default function Shop4() {
             onFiltersChange={setFilters}
             availableBrands={availableBrands}
             maxPrice={maxPrice}
+            className="hidden lg:block"
           />
 
           {/* Main Content */}
-          <main className="flex-1 p-4 md:p-6 lg:p-8">
-            <div className="max-w-6xl mx-auto">
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden p-4 md:p-6 lg:p-8">
+            <div className="max-w-5xl mx-auto">
               <div className="mb-6 md:mb-8">
                 <h1 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">Dual Filter Shop</h1>
                 <p className="text-sm md:text-base text-muted-foreground">Advanced filtering with category navigation</p>
@@ -135,7 +136,7 @@ export default function Shop4() {
                 </Select>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <div key={product.id} className="relative group">
                     <ProductCard {...product} />
@@ -161,7 +162,7 @@ export default function Shop4() {
           </main>
 
           {/* Right Sidebar - Contact Widget */}
-          <aside className="hidden lg:block w-80 p-6 border-l border-border">
+          <aside className="hidden xl:block w-80 p-6 border-l border-border">
             <div className="sticky top-6 space-y-6">
               <Card>
                 <CardHeader>

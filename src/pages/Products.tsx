@@ -141,22 +141,24 @@ const Products = () => {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen bg-background flex w-full">
-        <ShopSidebar 
-          type="products" 
-          filters={filters}
-          onFiltersChange={setFilters}
-          availableBrands={availableBrands}
-          maxPrice={maxPrice}
-        />
+      <div className="min-h-screen bg-background flex flex-col w-full">
+        <Navigation />
         
-        <div className="flex-1 flex flex-col">
-          <Navigation />
+        <div className="flex flex-1 w-full">
+          <ShopSidebar 
+            type="products" 
+            filters={filters}
+            onFiltersChange={setFilters}
+            availableBrands={availableBrands}
+            maxPrice={maxPrice}
+            className="hidden lg:block"
+          />
           
-          <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
-            <div className="mb-3 sm:mb-4">
-              <SidebarTrigger className="mb-3 sm:mb-4" />
-            </div>
+          <main className="flex-1 w-full lg:max-w-[calc(100%-280px)] overflow-x-hidden">
+            <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 md:py-12">
+              <div className="mb-3 sm:mb-4 lg:hidden">
+                <SidebarTrigger className="mb-3 sm:mb-4" />
+              </div>
             
             <header className="mb-6 sm:mb-8">
               <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
@@ -223,7 +225,7 @@ const Products = () => {
         </div>
 
         <section aria-label="Product listing">
-          <div className={`grid gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 ${
+          <div className={`grid gap-3 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 ${
             viewMode === "single" ? "grid-cols-1" : "grid-cols-2"
           }`}>
             {filteredProducts.map((product) => (
@@ -245,10 +247,11 @@ const Products = () => {
             </div>
           )}
           </section>
-        </main>
-
-        <Footer />
+            </div>
+          </main>
         </div>
+        
+        <Footer />
       </div>
     </SidebarProvider>
   );
