@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Package, Clock, MapPin, DollarSign, AlertCircle, CheckCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { ContactWidget } from "@/components/ContactWidget";
 
 const Shipping = () => {
   return (
@@ -168,27 +169,27 @@ const Shipping = () => {
           </Card>
         </div>
 
-        <Card className="border-tactical/30 bg-tactical/5">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-              <Package className="h-5 w-5 text-tactical" />
-              Package Tracking
-            </h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p>
-                Once your order ships, you will receive a tracking number via email. You can track your shipment through:
-              </p>
-              <ul className="list-inside list-disc space-y-1 ml-2">
-                <li>Your Arms Complex account dashboard</li>
-                <li>Direct carrier tracking (UPS, FedEx)</li>
-                <li>Email notifications at key delivery milestones</li>
-              </ul>
-              <p className="text-sm pt-2">
-                For shipping questions, contact our support team at <strong>shipping@armscomplex.com</strong> or call <strong>1-800-ARMS-COMPLEX</strong>
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="grid gap-6 lg:grid-cols-3">
+          <Card className="lg:col-span-2 border-tactical/30 bg-tactical/5">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                <Package className="h-5 w-5 text-tactical" />
+                Package Tracking
+              </h3>
+              <div className="space-y-2 text-muted-foreground">
+                <p>
+                  Once your order ships, you will receive a tracking number via email. You can track your shipment through:
+                </p>
+                <ul className="list-inside list-disc space-y-1 ml-2">
+                  <li>Your Arms Complex account dashboard</li>
+                  <li>Direct carrier tracking (UPS, FedEx)</li>
+                  <li>Email notifications at key delivery milestones</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+          <ContactWidget variant="compact" />
+        </div>
       </main>
 
       <Footer />

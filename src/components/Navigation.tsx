@@ -198,6 +198,10 @@ export const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             
+            <Link to="/brands" className="text-sm font-medium text-foreground hover:text-tactical transition-colors">
+              Brands
+            </Link>
+            
             <DropdownMenu>
               <DropdownMenuTrigger className="text-sm font-medium text-foreground hover:text-tactical transition-colors flex items-center gap-1">
                 Reviews <ChevronDown className="h-4 w-4" />
@@ -419,15 +423,23 @@ export const Navigation = () => {
                 <Link
                   to="/load-recipes"
                   onClick={() => setOpen(false)}
-                  className="text-base font-medium hover:text-tactical transition-colors"
+                  className="py-3 px-3 text-base font-medium hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                 >
                   Load Recipes
                 </Link>
                 
                 <Link
+                  to="/brands"
+                  onClick={() => setOpen(false)}
+                  className="py-3 px-3 text-base font-medium hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
+                >
+                  Brands
+                </Link>
+                
+                <Link
                   to="/reloading-cost-calculator"
                   onClick={() => setOpen(false)}
-                  className="text-base font-medium hover:text-tactical transition-colors"
+                  className="py-3 px-3 text-base font-medium hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                 >
                   Cost Calculator
                 </Link>
@@ -435,7 +447,7 @@ export const Navigation = () => {
                 <Link
                   to="/admin"
                   onClick={() => setOpen(false)}
-                  className="text-base font-medium hover:text-tactical transition-colors"
+                  className="py-3 px-3 text-base font-medium hover:text-tactical hover:bg-tactical/5 rounded-md transition-colors min-h-[44px] flex items-center"
                 >
                   Admin
                 </Link>
