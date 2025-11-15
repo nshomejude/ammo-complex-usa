@@ -8615,12 +8615,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 949,
     inStock: true,
-    description: "The original 1911 design. Single-action, full-size service pistol.",
+    description: "The original 1911 design by Colt - the pistol that defined American handguns. Single-action service pistol with legendary stopping power.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "39 oz",
-    finish: "Blued Steel"
+    finish: "Blued Steel",
+    shortDescription: "The Colt 1911 Government Model is the authentic original - John Moses Browning's masterpiece as manufactured by Colt since 1911. This is not a clone or reproduction, but the genuine article from the company that created the legend.",
+    longDescription: "The Colt 1911 Government Model represents one of the most significant firearms designs in history - a pistol so perfect in its original conception that it remains largely unchanged over 110 years later. Designed by legendary firearms inventor John Moses Browning and adopted by the U.S. military in 1911, this single-action semi-automatic pistol served as America's primary service sidearm through two World Wars, Korea, Vietnam, and into the 1980s. The 1911's combat record is unparalleled - it stopped Moro warriors in the Philippines, served in the trenches of WWI, supported Allied forces throughout WWII, and equipped special operations forces well into the 21st century. The pistol earned a reputation for absolute reliability and legendary stopping power from the .45 ACP cartridge. Colt's modern Government Model maintains the essential design elements that made the 1911 famous while incorporating precision CNC machining and modern quality control. The full-size 5-inch barrel delivers excellent accuracy and sight radius. The all-steel construction provides substantial weight that reduces felt recoil despite the powerful .45 ACP chambering. The single-action trigger - requiring manual cocking of the hammer - delivers a crisp break between 4-6 pounds that's perfect for precision shooting. The grip safety and manual thumb safety provide multiple layers of security while remaining intuitive to operate. Series 70 firing system eliminates the firing pin safety for enhanced trigger quality preferred by enthusiasts and competitive shooters. The classic blued steel finish offers timeless aesthetics that collectors and traditionalists appreciate. Colt's heritage as the original manufacturer means authentic markings, correct dimensions, and the prestige of owning a genuine Colt. While many manufacturers produce 1911-pattern pistols, there's only one original - and serious collectors and shooters recognize the difference. The Government Model works equally well as a range gun, competition pistol, home defense firearm, or valuable addition to any collection. For those who want the authentic American classic from the company that created it, accept no substitutes - this is the real Colt 1911.",
+    features: [
+      "Authentic Colt 1911 Government Model from original manufacturer",
+      "Series 70 firing system for enhanced trigger without firing pin safety",
+      "Full-size 5-inch barrel for optimal accuracy and velocity",
+      "Traditional blued steel finish with classic aesthetics",
+      "All-steel frame and slide construction for durability",
+      "Single-action trigger with crisp 4-6 lb break",
+      "Grip safety and manual thumb safety for secure handling",
+      "Genuine Colt markings and rollmarks",
+      "7+1 capacity with .45 ACP chambering",
+      "Fixed combat sights with traditional three-dot configuration"
+    ],
+    benefits: [
+      "Own the authentic original 1911 from the company that created it",
+      "110+ years of proven combat reliability and stopping power",
+      "Holds value and appreciates as collectible Colt firearm",
+      "Series 70 system preferred by purists and competitive shooters",
+      "All-steel construction provides natural recoil reduction",
+      "Timeless design that never goes out of style"
+    ],
+    useCases: [
+      "Firearms collection - authentic piece of American history",
+      "Competitive shooting in .45 ACP divisions",
+      "Home defense with proven .45 ACP stopping power",
+      "Range shooting and recreational use",
+      "Heirloom firearm passed through generations",
+      "IDPA competition in Enhanced Service Pistol division"
+    ],
+    technicalDetails: "The Colt 1911 Government Model features Series 70 firing system without firing pin safety for traditional operation and enhanced trigger quality. Forged carbon steel frame and slide provide superior strength. National Match-grade barrel bushing ensures accuracy. Single-action trigger mechanism requires manual hammer cocking. Traditional grip safety prevents discharge unless properly gripped. Manual thumb safety locks sear when engaged. Fixed three-dot combat sights. Traditional blued finish applied to polished steel. Checkered double-diamond walnut grips. Overall length 8.5 inches. Height 5.5 inches. Made in USA.",
+    whyChoose: "Choose the Colt 1911 Government Model when you want the authentic original from the company that invented and perfected the 1911. While many manufacturers produce 1911-pattern pistols, only Colt offers the genuine article with correct rollmarks, authentic dimensions, and the prestige of owning a real Colt. This is the pistol that won two World Wars, defined American handgun design, and established the .45 ACP as the definitive defensive cartridge. For collectors, the Colt name ensures value retention and appreciation. For shooters, the Series 70 system delivers the trigger quality purists demand. Whether you're building a historical collection, seeking a competition pistol with traditional credentials, or want an authentic piece of firearms history, the Colt Government Model is the only genuine choice. Accept no substitutes - this is the real deal.",
+    seoKeywords: ["Colt 1911 Government", "original 1911 pistol", "authentic Colt 1911", "Series 70 Colt", ".45 ACP Government Model", "genuine Colt 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2-3 inch groups at 25 yards"
+    }
   },
   {
     id: "springfield-1911-trp",
@@ -8630,12 +8669,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1649,
     inStock: true,
-    description: "Tactical Response Pistol with match-grade barrel and trigger.",
+    description: "Tactical Response Pistol - professional-grade 1911 developed with FBI Hostage Rescue Team. Match-grade barrel, trigger, and tactical features throughout.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "42 oz",
-    finish: "Black Armory Kote"
+    finish: "Black Armory Kote",
+    shortDescription: "The Springfield TRP (Tactical Response Pistol) was developed in collaboration with the FBI's elite Hostage Rescue Team and Special Operations Group. Represents the pinnacle of tactical 1911 design with professional-grade components throughout.",
+    longDescription: "The Springfield Armory TRP (Tactical Response Pistol) stands as the ultimate tactical 1911, developed through collaboration with the FBI's elite Hostage Rescue Team (HRT) and Special Operations Group (SOG). When the FBI needed a 1911 that could meet the extreme demands of hostage rescue, counter-terrorism, and high-risk tactical operations, they turned to Springfield Armory to develop a pistol that would function flawlessly in the most critical situations. The result is the TRP - a professional-grade 1911 that incorporates every lesson learned from decades of tactical operations. The TRP begins with a forged steel frame and slide for maximum strength and durability. The match-grade 5-inch stainless steel barrel is fully supported and hand-fitted to the slide bushing, delivering accuracy that exceeds most competitors at any price point. Many TRP owners report consistent 1.5-inch groups at 25 yards with quality ammunition. The trigger is a masterpiece - a clean, crisp break between 4-5 pounds with minimal overtravel and a positive reset that enables rapid precision fire. The front strap features aggressive 20 LPI checkering that provides secure purchase without requiring gloves or tape. The mainspring housing is also checkered to match. Springfield's Armory Kote finish provides corrosion resistance superior to bluing or parkerizing, critical for duty weapons exposed to sweat, weather, and harsh environments. Tactical features include tritium three-dot night sights for low-light capability, extended ambidextrous thumb safety for fast manipulation, and an integral accessory rail for weapon-mounted lights or lasers - essential for tactical applications. The beavertail grip safety with memory bump ensures consistent hand position and positive activation. Two 7-round magazines come standard. The TRP has been adopted by numerous federal agencies, SWAT teams, and tactical units who require absolute reliability and accuracy. While designed for professionals, the TRP excels equally in competition, with many shooters using it stock in IDPA Enhanced Service Pistol and USPSA Single Stack divisions. For serious shooters who demand professional-grade equipment, the TRP delivers everything a tactical 1911 should be.",
+    features: [
+      "Developed with FBI Hostage Rescue Team for tactical operations",
+      "Match-grade 5-inch stainless steel barrel with full support",
+      "Hand-fitted barrel bushing for exceptional accuracy",
+      "Professional-grade trigger: 4-5 lb break with minimal overtravel",
+      "20 LPI front strap checkering for secure grip",
+      "Tritium three-dot night sights for low-light capability",
+      "Extended ambidextrous thumb safety for rapid manipulation",
+      "Integral Picatinny accessory rail for lights and lasers",
+      "Beavertail grip safety with memory bump for consistency",
+      "Black Armory Kote finish for superior corrosion resistance"
+    ],
+    benefits: [
+      "FBI-proven reliability for mission-critical situations",
+      "Match-grade accuracy suitable for competitive shooting",
+      "Tactical features eliminate need for custom modifications",
+      "Ambidextrous controls accommodate all shooters",
+      "Professional-grade components at reasonable price point",
+      "Adopted by federal agencies and tactical units nationwide"
+    ],
+    useCases: [
+      "Law enforcement tactical operations and SWAT deployment",
+      "Federal agent duty weapon for specialized units",
+      "IDPA Enhanced Service Pistol division competition",
+      "USPSA Single Stack division shooting",
+      "Professional firearms training and instruction",
+      "Home defense with weapon light for positive target ID"
+    ],
+    technicalDetails: "The Springfield TRP features forged steel frame and slide for maximum strength. Match-grade 5-inch stainless steel barrel with fully supported chamber and hand-fitted bushing delivers sub-2-inch groups at 25 yards. Trigger system provides 4-5 pound single-action break with minimal take-up and overtravel. Front strap and mainspring housing feature 20 LPI checkering. Trijicon tritium three-dot night sights. Extended ambidextrous thumb safety. Beavertail grip safety with raised memory bump ensures consistent activation. Integral Picatinny rail accommodates tactical lights and lasers. Black Armory Kote finish over forged steel for corrosion resistance. VZ G10 grips standard. Ships with two 7-round stainless steel magazines. Overall length 8.6 inches.",
+    whyChoose: "Choose the Springfield TRP when you need a tactical 1911 that meets professional standards without custom gunsmithing. Developed with the FBI's elite tactical units, the TRP incorporates real-world operational experience into factory production. Match-grade accuracy, professional trigger quality, night sights, accessory rail, and ambidextrous controls come standard - features that would cost thousands in custom work. Federal agencies and tactical teams trust the TRP in life-or-death situations. Competitive shooters win matches with stock TRPs right out of the box. For those who demand the best tactical 1911 available without commissioning a custom build, the TRP delivers FBI-proven performance.",
+    seoKeywords: ["Springfield TRP", "FBI 1911 pistol", "tactical 1911", "Hostage Rescue Team pistol", "match grade 1911", "tactical response pistol"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "1.5-2 inch groups at 25 yards"
+    }
   },
   {
     id: "kimber-custom-ii",
@@ -8645,12 +8723,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 999,
     inStock: true,
-    description: "Premium 1911 with match-grade accuracy.",
+    description: "Premium 1911 with match-grade components throughout - the pistol that redefined production 1911 quality standards in the 1990s.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "38 oz",
-    finish: "Matte Black"
+    finish: "Matte Black",
+    shortDescription: "The Kimber Custom II represents the foundation of Kimber's 1911 lineup - the pistol that proved production guns could achieve custom-shop accuracy. Hand-fitted match-grade barrel and exceptional trigger quality set new standards.",
+    longDescription: "The Kimber Custom II is the pistol that changed the 1911 market forever. When Kimber entered the 1911 business in the late 1990s, the conventional wisdom held that truly accurate 1911 pistols required expensive custom gunsmithing with hand-fitting and precision machining that only custom shops could provide. Kimber challenged this assumption by creating manufacturing processes that delivered custom-shop quality in production guns. The Custom II carries forward this revolutionary approach, providing match-grade accuracy and premium components at prices that make exceptional 1911s accessible to serious shooters. Every Custom II begins with a precision-machined forged steel frame and slide held to tolerances that exceed industry standards. The match-grade stainless steel barrel features Kimber's proprietary chamber design that ensures reliable feeding while maximizing accuracy potential. Each barrel is hand-fitted to its slide, creating the tight lockup necessary for consistent shot placement. The match-grade bushing is also hand-fitted to eliminate play. This level of precision work allows the Custom II to routinely shoot 2-inch or better groups at 25 yards - accuracy that would have required $3000+ custom guns before Kimber's innovations. The trigger deserves special mention - a crisp, clean break between 4-5 pounds with minimal take-up, a positive wall, and short reset. Many competitive shooters run completely stock Custom II triggers in matches without any modifications. The trigger quality results from precision machining of the sear and hammer engagement surfaces plus careful spring selection. Kimber's low-glare matte black finish combines durability with subdued appearance. The Custom II features high-cut beavertail grip safety that allows a higher grip and prevents hammer bite while providing positive activation. The front strap is checkered at 30 LPI - aggressive enough for secure purchase but not so sharp as to be uncomfortable. Premium walnut grips provide classic aesthetics. Dovetail-mounted fixed sights allow easy replacement if desired. For shooters seeking a premium 1911 that delivers custom-shop accuracy without custom-shop pricing, the Kimber Custom II remains the benchmark that forced competitors to improve their offerings.",
+    features: [
+      "Match-grade stainless steel barrel hand-fitted to slide",
+      "Hand-fitted match-grade barrel bushing for precision",
+      "Precision trigger: clean 4-5 lb break with minimal take-up",
+      "Forged steel frame and slide machined to tight tolerances",
+      "High-cut beavertail grip safety prevents hammer bite",
+      "30 LPI front strap checkering for secure grip",
+      "Low-glare matte black finish on all steel surfaces",
+      "Premium walnut grips with classic aesthetics",
+      "Dovetail-mounted fixed sights for easy customization",
+      "Series II firing pin safety for enhanced drop safety"
+    ],
+    benefits: [
+      "Custom-shop accuracy at production gun pricing",
+      "Kimber's reputation for precision manufacturing excellence",
+      "Exceptional trigger quality suitable for competition",
+      "Hand-fitting ensures tight tolerances and reliability",
+      "Premium components throughout justify the investment",
+      "Holds accuracy and value over decades of use"
+    ],
+    useCases: [
+      "IDPA Enhanced Service Pistol division competition",
+      "USPSA Single Stack division shooting",
+      "Bullseye competition with match-grade accuracy",
+      "Range shooting demanding precision performance",
+      "Collection centerpiece representing 1911 evolution",
+      "Home defense with proven .45 ACP stopping power"
+    ],
+    technicalDetails: "The Kimber Custom II features match-grade stainless steel barrel with Kimber proprietary chamber design, hand-fitted to slide and bushing. Forged steel frame and slide with matte black finish. Single-action trigger system with 4-5 pound pull weight, aluminum trigger, precision sear engagement. High-cut beavertail grip safety with memory bump. 30 LPI checkered front strap. Series II firing pin safety provides drop protection. Dovetail-mounted fixed low-profile combat sights. Premium double-diamond checkered walnut grips. Extended thumb safety. Full-length guide rod. Match-grade barrel bushing. Overall length 8.7 inches. Ships with one 7-round magazine.",
+    whyChoose: "Choose the Kimber Custom II when you want a 1911 that shoots as well as pistols costing twice as much. Kimber revolutionized the market by proving that production processes could deliver custom-shop accuracy, and the Custom II represents their core philosophy perfected. The hand-fitted match-grade barrel delivers 2-inch groups at 25 yards. The trigger breaks cleanly without modifications. The fit and finish exceed most competitors. Whether you're a competitive shooter seeking an affordable match gun, a collector wanting a significant modern 1911, or a shooter who appreciates precision craftsmanship, the Custom II delivers Kimber's promise of custom accuracy in a production gun.",
+    seoKeywords: ["Kimber Custom II", "match grade 1911", "precision 1911", "custom shop accuracy", "Kimber 1911", "accurate 45 ACP"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "sig-1911-tacops",
@@ -8705,12 +8822,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1049,
     inStock: true,
-    description: "Compact 4.25-inch barrel for concealed carry.",
+    description: "Colt's original compact 1911 introduced in 1950 - the Commander-size that defined carry-sized 1911s for 70+ years.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "4.25 inches",
     weight: "36 oz",
-    finish: "Blue/Stainless"
+    finish: "Blue/Stainless",
+    shortDescription: "The Colt Commander is the original compact 1911, introduced in 1950 for military officers wanting a lighter carry pistol. This 4.25-inch model created the Commander size adopted industry-wide as the ideal 1911 carry configuration.",
+    longDescription: "The Colt Commander holds a unique place in 1911 history as the first factory-produced compact variant of Browning's design. Introduced in 1950, the Commander was developed for U.S. Air Force officers and military personnel who wanted the firepower and accuracy of the 1911 in a more portable package. Colt shortened the slide and barrel from the Government Model's 5 inches to 4.25 inches, creating what would become the most popular 1911 configuration for concealed carry and plainclothes duty work. The Commander size offers the perfect compromise - enough barrel length to maintain excellent velocity and accuracy while reducing overall length by 0.75 inches for easier concealment and carry comfort. The shorter slide cycles slightly faster than the Government Model, providing a small speed advantage in rapid fire. Despite the reduced dimensions, the Commander maintains a full-size grip frame, ensuring a complete three-finger hold for controllability and allowing the use of 8-round magazines for additional capacity over the standard 7-round Government Model magazines. Colt's modern Commander incorporates precision CNC machining while preserving the classic lines and authentic features of the original design. The all-steel construction provides natural recoil management despite the compact dimensions. The blued steel or stainless finish options offer either classic aesthetics or enhanced corrosion resistance. Series 80 firing pin safety provides drop protection while maintaining excellent trigger characteristics. Upswept beavertail grip safety allows a high grip without hammer bite. The Commander has been carried by federal agents, detectives, military officers, and armed professionals for over 70 years. Its balanced dimensions make it equally suitable for concealed carry, competition in IDPA Custom Defensive Pistol division, or home defense. The Commander's influence on the industry is profound - virtually every 1911 manufacturer now offers Commander-sized models, but Colt's original remains the benchmark. For those wanting a genuine Colt in the carry-optimized configuration that defined compact 1911s, the Commander delivers authentic heritage with modern manufacturing quality.",
+    features: [
+      "Original Commander-size 1911 introduced by Colt in 1950",
+      "4.25-inch barrel balances concealability and performance",
+      "Full-size grip frame provides complete firing grip",
+      "8+1 capacity with extended magazines (7+1 standard)",
+      "All-steel construction for natural recoil reduction",
+      "Series 80 firing pin safety for drop protection",
+      "Upswept beavertail grip safety prevents hammer bite",
+      "Choice of blued steel or stainless finish",
+      "Genuine Colt rollmarks and authentic design",
+      "Three-dot combat sights with dovetail mounting"
+    ],
+    benefits: [
+      "Authentic Colt Commander from original manufacturer",
+      "70+ years of proven performance as premier carry 1911",
+      "Ideal size balance between full and compact models",
+      "All-steel weight reduces felt recoil for controllability",
+      "Full-size grip ensures proper hand fit and control",
+      "Genuine Colt collectibility and value retention"
+    ],
+    useCases: [
+      "Concealed carry for those preferring steel-frame 1911s",
+      "Plainclothes detective or federal agent duty weapon",
+      "IDPA Custom Defensive Pistol division competition",
+      "USPSA Single Stack Minor division",
+      "Home defense with classic .45 ACP stopping power",
+      "Collection representation of historic Commander model"
+    ],
+    technicalDetails: "The Colt Commander features 4.25-inch barrel with traditional bushing system. Forged steel frame and slide. Series 80 firing pin safety mechanism provides drop protection. Single-action trigger with 4.5-6 pound pull weight. Upswept beavertail grip safety with checkered memory bump. Checkered frontstrap and mainspring housing. Three-dot combat sights, dovetail-mounted. Extended thumb safety. Double-diamond checkered walnut or composite grips depending on model. Overall length 7.75 inches (compared to 8.5 inches for Government). Weight approximately 36 oz in steel configuration. Ships with one 8-round magazine. Available in blued steel or stainless finishes.",
+    whyChoose: "Choose the Colt Commander when you want the authentic original compact 1911 from the company that created both the Government Model and the Commander size. This isn't a clone or copy - it's a genuine Colt with proper rollmarks, authentic dimensions, and the prestige that comes with owning the original. The Commander size has proven itself over 70 years as the ideal balance for carry - compact enough to conceal comfortably while maintaining enough barrel length for velocity and accuracy. The all-steel construction provides weight that manages recoil naturally. For collectors, the Colt name ensures value. For carriers, the Commander's dimensions have been proven by generations of professionals. Accept only the original Colt Commander.",
+    seoKeywords: ["Colt Commander", "Commander 1911", "4.25 inch 1911", "carry 1911", "compact Colt 1911", "Commander size pistol"],
+    ballisticData: {
+      effectiveRange: "50 yards",
+      muzzleVelocity: "830 fps (230gr)",
+      muzzleEnergy: "352 ft-lbs (230gr)",
+      accuracy: "2.5 inch groups at 25 yards"
+    }
   },
   {
     id: "springfield-ronin",
@@ -9020,12 +9176,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 999,
     inStock: true,
-    description: "Feature-rich 1911 with cocobolo grips.",
+    description: "Feature-rich 1911 'loaded' with premium components - match barrel, adjustable sights, extended controls, and beautiful cocobolo grips at outstanding value.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "43 oz",
-    finish: "Stainless"
+    finish: "Stainless",
+    shortDescription: "The Springfield 1911 Loaded lives up to its name with premium features throughout - match-grade barrel, Novak-style sights, extended controls, and gorgeous cocobolo grips. Everything you want in a 1911 comes standard.",
+    longDescription: "The Springfield Armory 1911 Loaded represents exceptional value in the 1911 market - a pistol 'loaded' with premium features and upgrades that competitors charge extra for or don't offer at all. Springfield developed the Loaded to answer a simple question: what if we took all the most-requested 1911 features and made them standard instead of custom options? The result is a pistol that delivers $1500+ worth of features at $999 pricing. The foundation is Springfield's precision-forged stainless steel frame and slide held to tight tolerances through CNC machining. The stainless construction provides corrosion resistance, longevity, and attractive bright finish that many shooters prefer over blued steel. The match-grade 5-inch stainless barrel features a fully supported chamber for enhanced safety with +P ammunition and delivers accuracy exceeding most competitors. Springfield's barrel fitting process ensures tight lockup for consistency. The Novak-style low-mount tritium sights provide excellent sight picture with three luminous dots that glow in low light - a significant upgrade over basic fixed sights. Dovetail mounting allows easy replacement if different sight configurations are desired. The Loaded comes with extended controls throughout - extended thumb safety for positive manipulation, extended grip safety beavertail prevents hammer bite, and skeletonized hammer and trigger reduce lock time slightly while providing aggressive purchase. These extended controls would typically require custom work on base-model 1911s. The gorgeous cocobolo grips deserve special mention - these premium hardwood grips feature beautiful grain patterns, comfortable ergonomics, and double-diamond checkering. Cocobolo grips alone often cost $100+ as aftermarket upgrades. The trigger breaks cleanly between 4-5 pounds with Springfield's precision trigger work. The front strap features checkering for grip security. The Loaded includes Springfield's Armory Kote finish alternative or stainless for those preferring bright finish. Springfield's legendary accuracy means the Loaded routinely shoots 2-inch groups at 25 yards. The combination of match-grade components, premium features, and competitive pricing makes the Loaded one of the best values in the 1911 market. Whether you're a first-time 1911 buyer wanting a feature-rich pistol, a competitor seeking an affordable match gun, or an experienced shooter appreciating value, the Loaded delivers everything you need without expensive custom work.",
+    features: [
+      "Match-grade 5-inch stainless steel barrel for precision",
+      "Novak-style low-mount tritium night sights for low-light use",
+      "Premium cocobolo grips with beautiful grain and double-diamond checkering",
+      "Extended beavertail grip safety prevents hammer bite",
+      "Extended thumb safety for positive manipulation",
+      "Skeletonized hammer and trigger for reduced lock time",
+      "Checkered front strap for secure grip",
+      "Forged stainless steel frame and slide construction",
+      "Fully supported chamber for +P ammunition safety",
+      "Comes 'loaded' with features others charge extra for"
+    ],
+    benefits: [
+      "Exceptional value - $1500+ features at $999 pricing",
+      "Match-grade accuracy suitable for competition",
+      "Premium components come standard, not as upgrades",
+      "Stainless construction eliminates corrosion concerns",
+      "Springfield's lifetime warranty and customer support",
+      "Night sights included eliminate expensive aftermarket upgrade"
+    ],
+    useCases: [
+      "USPSA Single Stack competition with excellent value proposition",
+      "IDPA Enhanced Service Pistol division shooting",
+      "Home defense with .45 ACP stopping power and night sights",
+      "Range shooting with premium accuracy and features",
+      "First 1911 purchase with all desired features included",
+      "Competition training gun before upgrading to custom models"
+    ],
+    technicalDetails: "The Springfield 1911 Loaded features forged stainless steel frame and slide. Match-grade 5-inch stainless barrel with fully supported chamber. Novak-style low-mount tritium three-dot night sights, dovetail-mounted. Single-action trigger with 4-5 pound pull weight. Extended beavertail grip safety with memory bump. Extended thumb safety. Skeletonized lightweight hammer and trigger. Checkered front strap. Premium cocobolo grips with double-diamond checkering. Stainless finish or Black Armory Kote options. Delta lightweight hammer. Loaded chamber indicator. Overall length 8.6 inches. Ships with two 7-round stainless magazines.",
+    whyChoose: "Choose the Springfield 1911 Loaded when you want a feature-rich 1911 without paying custom gun prices. The name says it all - this pistol comes loaded with premium features that competitors charge hundreds extra for: night sights ($150 value), extended controls ($100+ value), match barrel, cocobolo grips ($100 value), and more. You get a complete, competition-ready 1911 for $999 instead of spending $1500+ for similar features elsewhere. Springfield's reputation for value and quality ensures you're getting genuine premium components, not marketing hype. Whether you're buying your first 1911 or adding to an existing collection, the Loaded delivers unbeatable features-per-dollar. This is the 1911 for shooters who appreciate value without compromising quality.",
+    seoKeywords: ["Springfield Loaded 1911", "value 1911", "feature rich 1911", "night sight 1911", "cocobolo grip 1911", "stainless 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2 inch groups at 25 yards"
+    }
   },
   {
     id: "kimber-aegis-elite",
@@ -9290,12 +9485,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 999,
     inStock: true,
-    description: "Classic Series 70 design without firing pin safety.",
+    description: "Classic Series 70 design without firing pin safety - the purist's 1911 with enhanced trigger characteristics preferred by competitors and traditionalists.",
     actionType: "Single-Action",
     capacity: "7+1",
     barrelLength: "5 inches",
     weight: "37.5 oz",
-    finish: "Royal Blue"
+    finish: "Royal Blue",
+    shortDescription: "The Colt Series 70 represents the 1911 in its purest form - without the Series 80 firing pin safety. Features the enhanced trigger quality and traditional operation that purists and competitive shooters demand.",
+    longDescription: "The Colt Series 70 Government Model represents a return to the classic 1911 design that dominated from 1970-1983, before Colt introduced the Series 80 firing pin safety mechanism. For purists, competitive shooters, and traditionalists, the Series 70 is the definitive 1911 - featuring the clean, simple design that made Browning's pistol legendary without additional safety mechanisms that can affect trigger quality. The distinction between Series 70 and Series 80 centers on the firing pin safety. Series 80 pistols incorporate a plunger-style firing pin block that prevents discharge if the pistol is dropped, even with the hammer cocked. While this adds a measure of safety for some users, the mechanism adds components to the trigger path that can affect trigger quality. Series 70 pistols omit this mechanism, providing a more direct trigger path that allows enhanced trigger characteristics. Competitive shooters particularly appreciate Series 70 triggers for their potential to achieve cleaner breaks with less take-up. The Series 70 features Colt's beautiful Royal Blue finish - a deep, lustrous blue applied to highly polished steel that represents traditional American gun finishing at its finest. This finish requires more maintenance than modern coatings but provides aesthetics that collectors and traditionalists prize. The blued finish also allows shooters to appreciate the natural steel wearing patterns that develop over decades of use. Colt's modern Series 70 production incorporates CNC machining precision while maintaining traditional fitting and finishing standards. The forged steel frame and slide provide strength and longevity. The 5-inch National Match barrel bushing system ensures accuracy. Traditional walnut grips with double-diamond checkering provide classic aesthetics. The trigger is the Series 70's highlight - a clean, crisp break between 4-5 pounds without the Series 80 plunger creating additional resistance. Many competitive shooters and gunsmiths prefer Series 70 actions as starting points for match triggers because the simpler mechanism allows easier tuning and optimization. The Series 70 has been adopted by USPSA Single Stack competitors, Bullseye shooters, and anyone who appreciates the 1911 in its traditional configuration. For collectors, the Series 70 represents an important period in Colt history. For shooters, it delivers the trigger quality and traditional operation that made the 1911 famous. If you want a genuine Colt 1911 in its classic configuration without modern safety additions, the Series 70 is the authentic choice.",
+    features: [
+      "Series 70 design without firing pin safety for enhanced trigger",
+      "Royal Blue finish on polished steel for classic aesthetics",
+      "National Match barrel bushing for improved accuracy",
+      "Forged steel frame and slide construction",
+      "Traditional single-action trigger with clean break",
+      "Classic double-diamond walnut grips",
+      "Genuine Colt rollmarks and authentic specifications",
+      "Fixed combat sights with three-dot configuration",
+      "Standard-length guide rod for traditional operation",
+      "Arched mainspring housing for classic feel"
+    ],
+    benefits: [
+      "Enhanced trigger quality preferred by competitive shooters",
+      "Classic Royal Blue finish appreciated by collectors",
+      "Simpler mechanism allows easier trigger tuning",
+      "Traditional 1911 operation without modern modifications",
+      "Genuine Colt from original manufacturer",
+      "Collectible Series 70 configuration with historical significance"
+    ],
+    useCases: [
+      "USPSA Single Stack competition with optimized trigger",
+      "NRA Bullseye shooting demanding precise trigger control",
+      "Collection representation of classic Series 70 period",
+      "Custom build starting point for match guns",
+      "Traditional 1911 enthusiasts preferring original design",
+      "Competitive shooting where trigger quality is paramount"
+    ],
+    technicalDetails: "The Colt Series 70 features traditional firing mechanism without Series 80 firing pin safety plunger. Forged carbon steel frame and slide. Royal Blue finish applied to highly polished steel surfaces. National Match-style barrel bushing for enhanced accuracy potential. Single-action trigger mechanism with 4-5 pound pull weight, direct sear engagement without firing pin block. Fixed three-dot combat sights. Double-diamond checkered walnut grips. Standard-length recoil guide rod. Arched mainspring housing. Overall length 8.5 inches. Weight 37.5 oz unloaded. Ships with one 7-round magazine. Made in USA.",
+    whyChoose: "Choose the Colt Series 70 when you want a genuine Colt 1911 in its traditional configuration without modern firing pin safety mechanisms. Competitive shooters appreciate the enhanced trigger potential of Series 70 actions. Collectors value the Series 70 as an important period in Colt's history. Traditionalists prefer the simpler mechanism and classic operation. The Royal Blue finish provides timeless aesthetics that represent American gun finishing at its finest. Whether you're building a match gun, starting a Colt collection, or simply want the 1911 in its purest form, the Series 70 delivers authentic Colt quality in the configuration purists demand. This is the 1911 for those who appreciate tradition and optimal trigger characteristics.",
+    seoKeywords: ["Colt Series 70", "Series 70 1911", "no firing pin safety 1911", "classic Colt 1911", "Royal Blue 1911", "competition 1911"],
+    ballisticData: {
+      effectiveRange: "75 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "2.5 inch groups at 25 yards"
+    }
   },
   {
     id: "springfield-pi9229l",
@@ -9320,12 +9554,51 @@ export const firearms: Firearm[] = [
     caliber: [".45 ACP"],
     price: 1599,
     inStock: true,
-    description: "Match-grade barrel with stainless construction.",
+    description: "Kimber's premier competition 1911 with match-grade barrel, premium trigger, and stainless construction throughout for ultimate accuracy.",
     actionType: "Single-Action",
     capacity: "8+1",
     barrelLength: "5 inches",
     weight: "38 oz",
-    finish: "Stainless"
+    finish: "Stainless",
+    shortDescription: "The Kimber Gold Match II represents the pinnacle of production 1911 accuracy. With match-grade components throughout and a trigger that rivals custom guns, this is the pistol serious competitive shooters choose when accuracy matters most.",
+    longDescription: "The Kimber Gold Match II stands at the apex of Kimber's 1911 lineup as their premier competition-oriented pistol. While the Custom II delivers excellent accuracy for a production gun, the Gold Match takes precision to another level with enhanced components and meticulous hand-fitting that approaches true custom shop quality. This is the pistol you choose when placing shots inside the X-ring consistently matters more than price. The Gold Match's defining feature is its premium match-grade barrel - stainless steel, hand-fitted not just to the slide but also to a precision match bushing for the tightest possible lockup. The chamber is match-cut for optimal alignment and the rifling is held to tolerances that exceed even Kimber's already-high standards. This attention to barrel precision allows the Gold Match to routinely shoot 1-inch groups at 25 yards with quality ammunition - accuracy that exceeds many pistols costing significantly more. The trigger is extraordinary - hand-fit and adjusted to break between 3.5-4.5 pounds (lighter than standard Custom II) with virtually no take-up, an imperceptible wall, glass-rod-crisp break, and minimal overtravel. The trigger alone justifies much of the Gold Match's premium over standard models. Many bullseye and precision shooters use Gold Match triggers completely unmodified in national-level competition. The all-stainless construction provides corrosion resistance and enhanced longevity. The bright stainless finish is not just attractive but functional - it reveals wear patterns that allow competitive shooters to diagnose issues before they affect performance. The frame and slide are held to tighter tolerances than Custom series pistols. The Gold Match features adjustable target sights - essential for competition where precise sight picture adjustments maximize accuracy at various distances. The premium aluminum match-grade trigger provides consistent feel. Extended ambidextrous thumb safety allows rapid manipulation for either-handed shooters. Checkered front strap at 30 LPI provides grip security. Premium rosewood grips offer classic aesthetics appropriate to the pistol's premium status. The Gold Match has won countless Bullseye matches, USPSA Single Stack competitions, and precision shooting events. Professional shooters and serious competitors recognize the Gold Match as delivering custom-shop accuracy at production-gun availability and pricing. While designed primarily for competition, the Gold Match's accuracy makes it equally suited to serious range work or any application where precision matters. For shooters who demand the absolute best accuracy Kimber offers in a production pistol, the Gold Match II delivers match-winning performance.",
+    features: [
+      "Premium match-grade stainless barrel with hand-fitted match bushing",
+      "Competition trigger: 3.5-4.5 lb break, glass-crisp with minimal overtravel",
+      "Adjustable target sights for precise sight picture tuning",
+      "All-stainless construction for corrosion resistance and longevity",
+      "Enhanced hand-fitting for tightest possible slide-to-frame lockup",
+      "Premium aluminum match-grade trigger",
+      "Extended ambidextrous thumb safety for competition manipulation",
+      "30 LPI checkered front strap for secure grip",
+      "Premium rosewood grips with elegant aesthetics",
+      "Enhanced ejection port for reliable extraction"
+    ],
+    benefits: [
+      "Match-winning accuracy: 1-inch groups at 25 yards achievable",
+      "Competition trigger quality rivals $3000+ custom guns",
+      "Stainless construction eliminates corrosion concerns",
+      "Adjustable sights allow precise zero at any distance",
+      "Hand-fitting ensures exceptional reliability with match tolerances",
+      "Chosen by national-level competitive shooters"
+    ],
+    useCases: [
+      "NRA Bullseye competition at Camp Perry and national matches",
+      "USPSA Single Stack Major and Minor division competition",
+      "IDPA Enhanced Service Pistol division",
+      "Precision pistol training and marksmanship development",
+      "Range accuracy work and load development",
+      "Premium collection centerpiece representing Kimber's best"
+    ],
+    technicalDetails: "The Kimber Gold Match II features premium stainless steel match-grade barrel, match-cut chamber, hand-fitted to slide and precision match bushing. Stainless steel frame and slide held to enhanced tolerances. Competition trigger system: 3.5-4.5 pound pull, aluminum trigger, hand-fit sear engagement surfaces. Kimber adjustable target sights with fine click adjustments. Extended ambidextrous thumb safety. 30 LPI checkered front strap. Full-length guide rod. Premium rosewood double-diamond grips. Enhanced ejection port. Stainless steel construction throughout. Overall length 8.7 inches. Ships with one 8-round stainless magazine. Match-grade barrel bushing system.",
+    whyChoose: "Choose the Kimber Gold Match II when accuracy is your primary criterion and you want production-gun availability with custom-shop performance. This pistol delivers 1-inch groups at 25 yards - accuracy that allows competitive success at the highest levels. The trigger breaks like a custom gun costing $3000+. Adjustable sights allow precise zero. Stainless construction eliminates maintenance concerns. Whether you're competing at Camp Perry in Bullseye, shooting USPSA Single Stack, or simply demanding the best accuracy available in a production 1911, the Gold Match II delivers match-winning precision. This is the pistol serious competitors choose when placing shots exactly where they need to be matters more than anything else.",
+    seoKeywords: ["Kimber Gold Match", "competition 1911", "match grade 1911", "bullseye pistol", "accurate 1911", "competition 45 ACP"],
+    ballisticData: {
+      effectiveRange: "100 yards",
+      muzzleVelocity: "850 fps (230gr)",
+      muzzleEnergy: "369 ft-lbs (230gr)",
+      accuracy: "1 inch groups at 25 yards"
+    }
   },
   {
     id: "sig-1911-traditional",
