@@ -137,10 +137,73 @@ function arms_complex_scripts() {
         true
     );
     
-    // Localize script for AJAX
+    // Product variations JavaScript
+    wp_enqueue_script(
+        'arms-complex-variations',
+        ARMS_COMPLEX_THEME_URI . '/assets/js/product-variations.js',
+        array('jquery', 'arms-complex-main'),
+        ARMS_COMPLEX_VERSION,
+        true
+    );
+    
+    // Wishlist JavaScript
+    wp_enqueue_script(
+        'arms-complex-wishlist',
+        ARMS_COMPLEX_THEME_URI . '/assets/js/wishlist.js',
+        array('jquery', 'arms-complex-main'),
+        ARMS_COMPLEX_VERSION,
+        true
+    );
+    
+    // Comparison JavaScript
+    wp_enqueue_script(
+        'arms-complex-comparison',
+        ARMS_COMPLEX_THEME_URI . '/assets/js/comparison.js',
+        array('jquery', 'arms-complex-main'),
+        ARMS_COMPLEX_VERSION,
+        true
+    );
+    
+    // Ballistic Calculator JavaScript (only on ballistic calculator page)
+    if (is_page_template('page-templates/page-ballistic-calculator.php')) {
+        wp_enqueue_script(
+            'arms-complex-ballistic-calculator',
+            ARMS_COMPLEX_THEME_URI . '/assets/js/ballistic-calculator.js',
+            array('jquery'),
+            ARMS_COMPLEX_VERSION,
+            true
+        );
+    }
+    
+    // Localize script for AJAX and settings
     wp_localize_script('arms-complex-main', 'armsComplex', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
         'nonce'   => wp_create_nonce('arms-complex-nonce'),
+        'homeUrl' => home_url('/'),
+        'themeUrl' => ARMS_COMPLEX_THEME_URI,
+        'userId' => get_current_user_id(),
+        'isUserLoggedIn' => is_user_logged_in(),
+        'woocommerce' => array(
+            'currency' => get_woocommerce_currency(),
+            'currencySymbol' => get_woocommerce_currency_symbol(),
+            'priceDecimals' => wc_get_price_decimals(),
+            'priceDecimalSeparator' => wc_get_price_decimal_separator(),
+            'priceThousandSeparator' => wc_get_price_thousand_separator(),
+        ),
+        'i18n' => array(
+            'addToCart' => __('Add to Cart', 'arms-complex'),
+            'addedToCart' => __('Added to Cart', 'arms-complex'),
+            'addToWishlist' => __('Add to Wishlist', 'arms-complex'),
+            'addedToWishlist' => __('Added to Wishlist', 'arms-complex'),
+            'removeFromWishlist' => __('Remove from Wishlist', 'arms-complex'),
+            'addToCompare' => __('Add to Compare', 'arms-complex'),
+            'addedToCompare' => __('Added to Compare', 'arms-complex'),
+            'removeFromCompare' => __('Remove from Compare', 'arms-complex'),
+            'selectOptions' => __('Select Options', 'arms-complex'),
+            'outOfStock' => __('Out of Stock', 'arms-complex'),
+            'error' => __('An error occurred', 'arms-complex'),
+            'loading' => __('Loading...', 'arms-complex'),
+        ),
     ));
     
     // Comments script
