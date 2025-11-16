@@ -2,7 +2,8 @@
 /**
  * Template Name: Reloading Guide
  * 
- * Converts: src/pages/ReloadingGuide.tsx
+ * Comprehensive guide to ammunition reloading covering safety,
+ * equipment, and step-by-step process.
  * 
  * @package Arms_Complex
  */
@@ -12,388 +13,345 @@ get_header();
 
 <main id="primary" class="site-main reloading-guide-page">
     <div class="container mx-auto px-4 py-8">
-        <!-- Page Header -->
-        <div class="page-header text-center mb-12">
-            <h1 class="text-5xl font-bold mb-4">
-                <?php esc_html_e('Complete Reloading Guide', 'arms-complex'); ?>
-            </h1>
-            <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
-                <?php esc_html_e('Learn the art and science of ammunition reloading. From beginner basics to advanced techniques.', 'arms-complex'); ?>
-            </p>
-        </div>
-
-        <!-- Table of Contents -->
-        <div class="toc bg-card border border-border rounded-lg p-6 mb-12 max-w-2xl mx-auto">
-            <h2 class="text-2xl font-bold mb-4"><?php esc_html_e('Table of Contents', 'arms-complex'); ?></h2>
-            <nav class="toc-nav space-y-2">
-                <a href="#getting-started" class="block text-tactical hover:underline">
-                    1. <?php esc_html_e('Getting Started', 'arms-complex'); ?>
-                </a>
-                <a href="#equipment" class="block text-tactical hover:underline">
-                    2. <?php esc_html_e('Essential Equipment', 'arms-complex'); ?>
-                </a>
-                <a href="#components" class="block text-tactical hover:underline">
-                    3. <?php esc_html_e('Reloading Components', 'arms-complex'); ?>
-                </a>
-                <a href="#process" class="block text-tactical hover:underline">
-                    4. <?php esc_html_e('The Reloading Process', 'arms-complex'); ?>
-                </a>
-                <a href="#safety" class="block text-tactical hover:underline">
-                    5. <?php esc_html_e('Safety Guidelines', 'arms-complex'); ?>
-                </a>
-                <a href="#troubleshooting" class="block text-tactical hover:underline">
-                    6. <?php esc_html_e('Troubleshooting', 'arms-complex'); ?>
-                </a>
-                <a href="#advanced" class="block text-tactical hover:underline">
-                    7. <?php esc_html_e('Advanced Techniques', 'arms-complex'); ?>
-                </a>
-            </nav>
-        </div>
-
-        <!-- Content Sections -->
-        <div class="guide-content max-w-4xl mx-auto space-y-12">
+        <!-- Hero Section -->
+        <div class="mb-12 text-center space-y-4">
+            <div class="flex justify-center mb-4">
+                <div class="rounded-full bg-tactical/10 p-4">
+                    <svg class="h-12 w-12 text-tactical" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+            </div>
             
-            <!-- Getting Started -->
-            <section id="getting-started" class="guide-section">
-                <div class="bg-card border border-border rounded-lg p-8">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="bg-tactical text-tactical-foreground rounded-full w-10 h-10 flex items-center justify-center mr-4">1</span>
-                        <?php esc_html_e('Getting Started', 'arms-complex'); ?>
-                    </h2>
-                    <div class="prose max-w-none">
-                        <p class="text-lg mb-4">
-                            <?php esc_html_e('Reloading your own ammunition can be rewarding, cost-effective, and allows you to customize loads for your specific firearms. This guide will walk you through everything you need to know.', 'arms-complex'); ?>
-                        </p>
-                        
-                        <h3 class="text-xl font-semibold mt-6 mb-3"><?php esc_html_e('Why Reload?', 'arms-complex'); ?></h3>
-                        <ul class="list-disc list-inside space-y-2 text-muted-foreground">
-                            <li><?php esc_html_e('Cost savings - Save 40-60% on ammunition costs', 'arms-complex'); ?></li>
-                            <li><?php esc_html_e('Custom loads - Tailor ammunition to your specific needs', 'arms-complex'); ?></li>
-                            <li><?php esc_html_e('Better accuracy - Fine-tune for maximum precision', 'arms-complex'); ?></li>
-                            <li><?php esc_html_e('Availability - Make ammunition when factory options are scarce', 'arms-complex'); ?></li>
-                            <li><?php esc_html_e('Satisfaction - Pride in creating your own ammunition', 'arms-complex'); ?></li>
-                        </ul>
+            <h1 class="text-4xl md:text-5xl font-bold">
+                <?php esc_html_e('Ammunition Reloading Guide', 'arms-complex'); ?>
+            </h1>
+            
+            <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                <?php esc_html_e('Complete guide to reloading ammunition safely and accurately. Learn the equipment, process, and best practices.', 'arms-complex'); ?>
+            </p>
 
-                        <div class="bg-tactical/10 border border-tactical rounded-lg p-4 mt-6">
-                            <p class="font-semibold text-tactical mb-2">⚠️ <?php esc_html_e('Important', 'arms-complex'); ?></p>
-                            <p class="text-sm">
-                                <?php esc_html_e('Reloading requires attention to detail and strict adherence to safety protocols. Always follow published load data and never exceed maximum recommended charges.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <span class="badge badge-primary"><?php esc_html_e('Safety First', 'arms-complex'); ?></span>
+                <span class="badge badge-primary"><?php esc_html_e('Step-by-Step', 'arms-complex'); ?></span>
+                <span class="badge badge-primary"><?php esc_html_e('Expert Tips', 'arms-complex'); ?></span>
+            </div>
+        </div>
 
-            <!-- Equipment -->
-            <section id="equipment" class="guide-section">
-                <div class="bg-card border border-border rounded-lg p-8">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="bg-tactical text-tactical-foreground rounded-full w-10 h-10 flex items-center justify-center mr-4">2</span>
-                        <?php esc_html_e('Essential Equipment', 'arms-complex'); ?>
-                    </h2>
-                    
-                    <div class="equipment-grid grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Reloading Press -->
-                        <div class="equipment-item bg-muted/30 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold mb-3">🔧 <?php esc_html_e('Reloading Press', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3">
-                                <?php esc_html_e('The heart of your reloading setup. Choose between:', 'arms-complex'); ?>
-                            </p>
-                            <ul class="list-disc list-inside space-y-1 text-sm">
-                                <li><?php esc_html_e('Single Stage - Best for beginners and precision loading', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Turret Press - Good balance of speed and precision', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Progressive - Highest volume production', 'arms-complex'); ?></li>
-                            </ul>
-                        </div>
-
-                        <!-- Dies -->
-                        <div class="equipment-item bg-muted/30 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold mb-3">🔩 <?php esc_html_e('Dies', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3">
-                                <?php esc_html_e('Essential for resizing and bullet seating:', 'arms-complex'); ?>
-                            </p>
-                            <ul class="list-disc list-inside space-y-1 text-sm">
-                                <li><?php esc_html_e('Sizing die - Resizes brass to proper dimensions', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Seating die - Seats bullet to correct depth', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Crimp die - Applies crimp (if needed)', 'arms-complex'); ?></li>
-                            </ul>
-                        </div>
-
-                        <!-- Scale -->
-                        <div class="equipment-item bg-muted/30 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold mb-3">⚖️ <?php esc_html_e('Powder Scale', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground text-sm">
-                                <?php esc_html_e('Accurate powder measurement is critical. Digital scales offer convenience, but beam scales are proven reliable. Calibrate regularly.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-
-                        <!-- Calipers -->
-                        <div class="equipment-item bg-muted/30 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold mb-3">📏 <?php esc_html_e('Calipers', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground text-sm">
-                                <?php esc_html_e('Measure case length, overall cartridge length, and verify dimensions. Digital calipers are recommended for ease of use.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-
-                        <!-- Case Prep Tools -->
-                        <div class="equipment-item bg-muted/30 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold mb-3">🛠️ <?php esc_html_e('Case Prep Tools', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3"><?php esc_html_e('For cleaning and preparing brass:', 'arms-complex'); ?></p>
-                            <ul class="list-disc list-inside space-y-1 text-sm">
-                                <li><?php esc_html_e('Tumbler or ultrasonic cleaner', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Case trimmer', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Deburring tool', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Primer pocket cleaner', 'arms-complex'); ?></li>
-                            </ul>
-                        </div>
-
-                        <!-- Powder Measure -->
-                        <div class="equipment-item bg-muted/30 rounded-lg p-6">
-                            <h3 class="text-xl font-semibold mb-3">⚗️ <?php esc_html_e('Powder Measure', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground text-sm">
-                                <?php esc_html_e('Speeds up powder dispensing. Always verify charges with a scale. Progressive reloaders benefit most from a powder measure.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 bg-accent/10 border border-accent rounded-lg p-4">
-                        <p class="font-semibold mb-2">💡 <?php esc_html_e('Starter Kit Recommendation', 'arms-complex'); ?></p>
-                        <p class="text-sm text-muted-foreground">
-                            <?php esc_html_e('For beginners, consider a complete starter kit that includes press, dies, scale, and accessories. Budget $300-500 for a quality setup.', 'arms-complex'); ?>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Components -->
-            <section id="components" class="guide-section">
-                <div class="bg-card border border-border rounded-lg p-8">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="bg-tactical text-tactical-foreground rounded-full w-10 h-10 flex items-center justify-center mr-4">3</span>
-                        <?php esc_html_e('Reloading Components', 'arms-complex'); ?>
-                    </h2>
-                    
-                    <div class="space-y-6">
-                        <div class="component-section">
-                            <h3 class="text-xl font-semibold mb-3">1. <?php esc_html_e('Brass Cases', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3">
-                                <?php esc_html_e('The foundation of your cartridge. Quality brass can be reloaded multiple times.', 'arms-complex'); ?>
-                            </p>
-                            <ul class="list-disc list-inside space-y-1 text-sm text-muted-foreground ml-4">
-                                <li><?php esc_html_e('Inspect for cracks, splits, or excessive wear', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Trim to proper length if needed', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Clean thoroughly before reloading', 'arms-complex'); ?></li>
-                                <li><?php esc_html_e('Track number of firings for each batch', 'arms-complex'); ?></li>
-                            </ul>
-                        </div>
-
-                        <div class="component-section">
-                            <h3 class="text-xl font-semibold mb-3">2. <?php esc_html_e('Primers', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3">
-                                <?php esc_html_e('Ignite the powder charge. Choose the correct type:', 'arms-complex'); ?>
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-4">
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('Small Rifle', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('.223, .204, etc.', 'arms-complex'); ?></p>
-                                </div>
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('Large Rifle', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('.308, .30-06, etc.', 'arms-complex'); ?></p>
-                                </div>
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('Small Pistol', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('9mm, .380, etc.', 'arms-complex'); ?></p>
-                                </div>
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('Large Pistol', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('.45 ACP, .44 Mag, etc.', 'arms-complex'); ?></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="component-section">
-                            <h3 class="text-xl font-semibold mb-3">3. <?php esc_html_e('Powder', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3">
-                                <?php esc_html_e('The propellant that drives the bullet. Critical safety considerations:', 'arms-complex'); ?>
-                            </p>
-                            <div class="bg-destructive/10 border border-destructive rounded-lg p-4">
-                                <ul class="space-y-2 text-sm">
-                                    <li><strong><?php esc_html_e('NEVER substitute powders', 'arms-complex'); ?></strong></li>
-                                    <li><?php esc_html_e('Always use published load data', 'arms-complex'); ?></li>
-                                    <li><?php esc_html_e('Store powder properly in original containers', 'arms-complex'); ?></li>
-                                    <li><?php esc_html_e('Start at minimum charge and work up', 'arms-complex'); ?></li>
-                                    <li><?php esc_html_e('Keep a reloading log', 'arms-complex'); ?></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="component-section">
-                            <h3 class="text-xl font-semibold mb-3">4. <?php esc_html_e('Bullets', 'arms-complex'); ?></h3>
-                            <p class="text-muted-foreground mb-3">
-                                <?php esc_html_e('Choose based on your application:', 'arms-complex'); ?>
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ml-4">
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('FMJ', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('Target/Practice', 'arms-complex'); ?></p>
-                                </div>
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('HP/JHP', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('Defense/Hunting', 'arms-complex'); ?></p>
-                                </div>
-                                <div class="bg-muted/30 rounded p-3">
-                                    <p class="font-semibold mb-1"><?php esc_html_e('Match', 'arms-complex'); ?></p>
-                                    <p class="text-sm text-muted-foreground"><?php esc_html_e('Competition', 'arms-complex'); ?></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Process -->
-            <section id="process" class="guide-section">
-                <div class="bg-card border border-border rounded-lg p-8">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center">
-                        <span class="bg-tactical text-tactical-foreground rounded-full w-10 h-10 flex items-center justify-center mr-4">4</span>
-                        <?php esc_html_e('The Reloading Process', 'arms-complex'); ?>
-                    </h2>
-                    
-                    <div class="process-steps space-y-6">
-                        <?php
-                        $steps = array(
-                            array(
-                                'number' => '1',
-                                'title' => 'Case Inspection & Cleaning',
-                                'description' => 'Inspect brass for cracks, splits, or damage. Clean thoroughly using tumbler or ultrasonic cleaner. Remove any debris from primer pockets.',
-                            ),
-                            array(
-                                'number' => '2',
-                                'title' => 'Decapping & Resizing',
-                                'description' => 'Remove spent primer and resize case to proper dimensions using sizing die. Lubricate cases before resizing.',
-                            ),
-                            array(
-                                'number' => '3',
-                                'title' => 'Case Trimming',
-                                'description' => 'Measure case length with calipers. Trim if exceeding maximum length. Deburr and chamfer case mouth.',
-                            ),
-                            array(
-                                'number' => '4',
-                                'title' => 'Primer Seating',
-                                'description' => 'Seat new primer flush with case head or slightly below. Never force primers. Feel for smooth, consistent seating.',
-                            ),
-                            array(
-                                'number' => '5',
-                                'title' => 'Powder Charging',
-                                'description' => 'Measure powder charge carefully. Verify each charge with scale. Check for double charges or empty cases before proceeding.',
-                            ),
-                            array(
-                                'number' => '6',
-                                'title' => 'Bullet Seating',
-                                'description' => 'Seat bullet to proper overall cartridge length (OAL). Measure with calipers. Apply crimp if required by load data.',
-                            ),
-                            array(
-                                'number' => '7',
-                                'title' => 'Final Inspection',
-                                'description' => 'Inspect finished cartridges. Check OAL, look for defects. Verify all cases have primers and bullets. Store properly with load information.',
-                            ),
-                        );
-                        
-                        foreach ($steps as $step) :
-                        ?>
-                            <div class="process-step bg-muted/30 rounded-lg p-6">
-                                <div class="flex items-start gap-4">
-                                    <div class="step-number flex-shrink-0 w-12 h-12 bg-tactical text-tactical-foreground rounded-full flex items-center justify-center font-bold text-lg">
-                                        <?php echo esc_html($step['number']); ?>
-                                    </div>
-                                    <div class="step-content flex-1">
-                                        <h3 class="text-xl font-semibold mb-2">
-                                            <?php echo esc_html($step['title']); ?>
-                                        </h3>
-                                        <p class="text-muted-foreground">
-                                            <?php echo esc_html($step['description']); ?>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Safety -->
-            <section id="safety" class="guide-section">
-                <div class="bg-destructive/10 border-2 border-destructive rounded-lg p-8">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center text-destructive">
-                        <span class="bg-destructive text-destructive-foreground rounded-full w-10 h-10 flex items-center justify-center mr-4">⚠️</span>
-                        <?php esc_html_e('Critical Safety Guidelines', 'arms-complex'); ?>
-                    </h2>
-                    
-                    <div class="space-y-4">
-                        <div class="safety-rule bg-background rounded-lg p-4">
-                            <p class="font-semibold mb-2">🚫 <?php esc_html_e('NEVER mix powders or substitute loads', 'arms-complex'); ?></p>
-                            <p class="text-sm text-muted-foreground">
-                                <?php esc_html_e('Different powders have dramatically different burn rates. Using the wrong powder can cause catastrophic pressure.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                        
-                        <div class="safety-rule bg-background rounded-lg p-4">
-                            <p class="font-semibold mb-2">📖 <?php esc_html_e('Always use published load data', 'arms-complex'); ?></p>
-                            <p class="text-sm text-muted-foreground">
-                                <?php esc_html_e('Start at minimum charges and work up carefully. Never exceed maximum loads.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                        
-                        <div class="safety-rule bg-background rounded-lg p-4">
-                            <p class="font-semibold mb-2">⚖️ <?php esc_html_e('Verify every powder charge', 'arms-complex'); ?></p>
-                            <p class="text-sm text-muted-foreground">
-                                <?php esc_html_e('Use a scale to verify charges. Check for double charges or empty cases.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                        
-                        <div class="safety-rule bg-background rounded-lg p-4">
-                            <p class="font-semibold mb-2">🎯 <?php esc_html_e('Maintain focus and eliminate distractions', 'arms-complex'); ?></p>
-                            <p class="text-sm text-muted-foreground">
-                                <?php esc_html_e('Reloading requires concentration. Work in a clean, organized space without interruptions.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                        
-                        <div class="safety-rule bg-background rounded-lg p-4">
-                            <p class="font-semibold mb-2">📝 <?php esc_html_e('Keep detailed records', 'arms-complex'); ?></p>
-                            <p class="text-sm text-muted-foreground">
-                                <?php esc_html_e('Document all loads including components, charges, and performance. Essential for troubleshooting and reproducing accurate loads.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                        
-                        <div class="safety-rule bg-background rounded-lg p-4">
-                            <p class="font-semibold mb-2">👓 <?php esc_html_e('Wear safety glasses', 'arms-complex'); ?></p>
-                            <p class="text-sm text-muted-foreground">
-                                <?php esc_html_e('Protect your eyes from primers and debris during the reloading process.', 'arms-complex'); ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CTA Section -->
-            <div class="cta-section bg-gradient-to-r from-tactical/10 to-tactical/5 rounded-lg p-8 text-center">
-                <h2 class="text-2xl font-bold mb-4">
-                    <?php esc_html_e('Ready to Start Reloading?', 'arms-complex'); ?>
-                </h2>
-                <p class="text-muted-foreground mb-6">
-                    <?php esc_html_e('Browse our selection of reloading components and equipment', 'arms-complex'); ?>
-                </p>
-                <div class="flex gap-4 justify-center flex-wrap">
-                    <a href="<?php echo esc_url(wc_get_page_permalink('shop')); ?>" class="button">
-                        <?php esc_html_e('Shop Components', 'arms-complex'); ?>
-                    </a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('load-recipes'))); ?>" class="button-outline">
-                        <?php esc_html_e('View Load Recipes', 'arms-complex'); ?>
-                    </a>
+        <!-- Critical Safety Alert -->
+        <div class="mb-12 bg-destructive/10 border-2 border-destructive rounded-lg p-6">
+            <div class="flex items-start gap-4">
+                <svg class="w-8 h-8 text-destructive flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <div>
+                    <h3 class="text-xl font-bold text-destructive mb-2">
+                        <?php esc_html_e('Critical Safety Information', 'arms-complex'); ?>
+                    </h3>
+                    <p class="text-foreground mb-4">
+                        <?php esc_html_e('Reloading ammunition involves working with explosive components and can be dangerous if done improperly. Always:', 'arms-complex'); ?>
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span><?php esc_html_e('Consult multiple reloading manuals before starting', 'arms-complex'); ?></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span><?php esc_html_e('Start at minimum loads and work up slowly', 'arms-complex'); ?></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span><?php esc_html_e('Never exceed maximum published loads', 'arms-complex'); ?></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span><?php esc_html_e('Wear safety glasses and work in a dedicated space', 'arms-complex'); ?></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Essential Equipment -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                <?php esc_html_e('Essential Reloading Equipment', 'arms-complex'); ?>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Reloading Press -->
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Reloading Press', 'arms-complex'); ?></h3>
+                    <p class="text-muted-foreground mb-3">
+                        <?php esc_html_e('Single-stage or progressive press for resizing cases and seating bullets', 'arms-complex'); ?>
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                        <strong><?php esc_html_e('Examples:', 'arms-complex'); ?></strong>
+                        <?php esc_html_e('RCBS Rock Chucker, Dillon XL750, Lee Classic Cast', 'arms-complex'); ?>
+                    </p>
+                </div>
+
+                <!-- Powder Scale -->
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Powder Scale', 'arms-complex'); ?></h3>
+                    <p class="text-muted-foreground mb-3">
+                        <?php esc_html_e('Digital or balance beam scale for precise powder measurement', 'arms-complex'); ?>
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                        <strong><?php esc_html_e('Examples:', 'arms-complex'); ?></strong>
+                        <?php esc_html_e('RCBS ChargeMaster, Frankford Arsenal Intellidropper', 'arms-complex'); ?>
+                    </p>
+                </div>
+
+                <!-- Calipers -->
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Calipers', 'arms-complex'); ?></h3>
+                    <p class="text-muted-foreground mb-3">
+                        <?php esc_html_e('Digital or dial calipers for measuring case length and overall length', 'arms-complex'); ?>
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                        <strong><?php esc_html_e('Examples:', 'arms-complex'); ?></strong>
+                        <?php esc_html_e('Mitutoyo Digital, Hornady Digital, Starrett', 'arms-complex'); ?>
+                    </p>
+                </div>
+
+                <!-- Case Tumbler -->
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Case Tumbler', 'arms-complex'); ?></h3>
+                    <p class="text-muted-foreground mb-3">
+                        <?php esc_html_e('For cleaning brass cases before reloading', 'arms-complex'); ?>
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                        <strong><?php esc_html_e('Examples:', 'arms-complex'); ?></strong>
+                        <?php esc_html_e('Frankford Arsenal rotary, ultrasonic cleaners', 'arms-complex'); ?>
+                    </p>
+                </div>
+
+                <!-- Dies Set -->
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Dies Set', 'arms-complex'); ?></h3>
+                    <p class="text-muted-foreground mb-3">
+                        <?php esc_html_e('Caliber-specific sizing, decapping, and seating dies', 'arms-complex'); ?>
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                        <strong><?php esc_html_e('Examples:', 'arms-complex'); ?></strong>
+                        <?php esc_html_e('Redding, RCBS, Lee, Hornady die sets', 'arms-complex'); ?>
+                    </p>
+                </div>
+
+                <!-- Case Gauge -->
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Case Gauge', 'arms-complex'); ?></h3>
+                    <p class="text-muted-foreground mb-3">
+                        <?php esc_html_e('Ensures proper case dimensions and headspace', 'arms-complex'); ?>
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                        <strong><?php esc_html_e('Examples:', 'arms-complex'); ?></strong>
+                        <?php esc_html_e('Wilson case gauges, L.E. Wilson', 'arms-complex'); ?>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Rules -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                <?php esc_html_e('Top 10 Safety Rules', 'arms-complex'); ?>
+            </h2>
+            
+            <div class="bg-card rounded-lg border border-border p-8 max-w-4xl mx-auto">
+                <ol class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">1</span>
+                        <p><?php esc_html_e('Always wear safety glasses and follow manufacturer\'s load data exactly', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">2</span>
+                        <p><?php esc_html_e('Work in a well-ventilated, organized area free from distractions', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">3</span>
+                        <p><?php esc_html_e('Never exceed maximum published loads - start 10% below max', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">4</span>
+                        <p><?php esc_html_e('Use only one powder type at a time and clearly label containers', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">5</span>
+                        <p><?php esc_html_e('Inspect every case for cracks, splits, or defects before loading', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">6</span>
+                        <p><?php esc_html_e('Double-check powder charges - never rely on volume alone', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">7</span>
+                        <p><?php esc_html_e('Keep detailed records of all loads including date, components, and results', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">8</span>
+                        <p><?php esc_html_e('Store primers and powder separately in approved containers', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">9</span>
+                        <p><?php esc_html_e('Never smoke or use open flames near reloading components', 'arms-complex'); ?></p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">10</span>
+                        <p><?php esc_html_e('Test fire new loads at reduced velocity first before full-power loads', 'arms-complex'); ?></p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Reloading Process Steps -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">
+                <?php esc_html_e('Step-by-Step Reloading Process', 'arms-complex'); ?>
+            </h2>
+            
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Case Inspection & Cleaning', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Inspect all cases for cracks, splits, or damage. Clean cases using a tumbler or ultrasonic cleaner.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Lubrication & Sizing', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Lubricate cases and run through sizing die to restore proper dimensions. Deprime spent primers.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Case Trimming & Chamfering', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Measure and trim cases to proper length. Chamfer and deburr case mouths for smooth bullet seating.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Priming', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Seat new primers using a priming tool. Ensure primers are flush or slightly below case head.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">5</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Powder Charging', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Carefully measure and dispense powder charges. Double-check each charge with a scale.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">6</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Bullet Seating', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Seat bullets to proper overall length (COAL). Ensure consistent seating depth.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">7</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Crimping (Optional)', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Apply crimp if needed for semi-auto or heavy recoil loads. Check case mouth appearance.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-lg border border-border p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-primary/20 text-primary rounded-full flex items-center justify-center font-bold">8</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2"><?php esc_html_e('Final Inspection & Testing', 'arms-complex'); ?></h3>
+                            <p class="text-muted-foreground"><?php esc_html_e('Inspect completed rounds. Use case gauge to verify dimensions. Test fire at reduced loads first.', 'arms-complex'); ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="text-center py-12 bg-primary/5 rounded-lg">
+            <h2 class="text-3xl font-bold mb-4">
+                <?php esc_html_e('Ready to Start Reloading?', 'arms-complex'); ?>
+            </h2>
+            <p class="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                <?php esc_html_e('Shop our complete selection of reloading equipment, components, and supplies.', 'arms-complex'); ?>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="<?php echo esc_url(get_permalink(wc_get_page_id('shop'))); ?>" class="button button-primary">
+                    <?php esc_html_e('Shop Reloading Supplies', 'arms-complex'); ?>
+                </a>
+                <a href="<?php echo esc_url(home_url('/load-recipes/')); ?>" class="button button-outline">
+                    <?php esc_html_e('View Load Recipes', 'arms-complex'); ?>
+                </a>
+            </div>
+        </section>
     </div>
 </main>
 
