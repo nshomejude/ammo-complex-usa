@@ -119,26 +119,48 @@ if (empty($product) || !$product->is_visible()) {
             </div>
             
             <!-- Add to Cart Button -->
-            <div class="product-actions">
+            <div class="product-actions mb-3">
                 <?php
-                /**
-                 * Hook: woocommerce_after_shop_loop_item
-                 * 
-                 * @hooked woocommerce_template_loop_add_to_cart - 10
-                 */
-                do_action('woocommerce_after_shop_loop_item');
+                // Custom Add to Cart button with proper styling
+                $add_to_cart_url = $product->add_to_cart_url();
+                $add_to_cart_text = $product->add_to_cart_text();
                 ?>
+                <a 
+                    href="<?php echo esc_url($add_to_cart_url); ?>" 
+                    class="button add_to_cart_button w-full bg-tactical text-tactical-foreground hover:opacity-90 px-4 py-2 rounded-lg font-semibold transition-all text-center inline-block"
+                    data-product_id="<?php echo esc_attr($product->get_id()); ?>"
+                    data-product_sku="<?php echo esc_attr($product->get_sku()); ?>"
+                    aria-label="<?php echo esc_attr($add_to_cart_text); ?>"
+                >
+                    <?php echo esc_html($add_to_cart_text); ?>
+                </a>
             </div>
             
-            <!-- Wishlist & Comparison -->
-            <div class="product-secondary-actions flex gap-2 mt-2">
-                <?php
-                // Wishlist button
-                arms_complex_wishlist_button($product->get_id());
+            <!-- Wishlist & Comparison Buttons -->
+            <div class="product-secondary-actions flex gap-2">
+                <!-- Wishlist Button -->
+                <button 
+                    type="button"
+                    class="wishlist-button flex-1 border border-border text-foreground hover:border-tactical hover:bg-tactical/10 px-3 py-2 rounded-lg text-sm font-medium transition-all"
+                    data-product-id="<?php echo esc_attr($product->get_id()); ?>"
+                    aria-label="<?php esc_attr_e('Add to Wishlist', 'arms-complex'); ?>"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
                 
-                // Comparison button
-                arms_complex_comparison_button($product->get_id());
-                ?>
+                <!-- Comparison Button -->
+                <button 
+                    type="button"
+                    class="comparison-button flex-1 border border-border text-foreground hover:border-tactical hover:bg-tactical/10 px-3 py-2 rounded-lg text-sm font-medium transition-all"
+                    data-product-id="<?php echo esc_attr($product->get_id()); ?>"
+                    aria-label="<?php esc_attr_e('Add to Comparison', 'arms-complex'); ?>"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
