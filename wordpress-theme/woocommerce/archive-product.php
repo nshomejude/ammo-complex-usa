@@ -67,24 +67,27 @@ get_header('shop');
                     
                     // Add custom search and filter bar
                     get_template_part('template-parts/shop/toolbar');
+                    ?>
                     
-                    woocommerce_product_loop_start();
-                    
-                    if (wc_get_loop_prop('total')) {
-                        while (have_posts()) {
-                            the_post();
-                            
-                            /**
-                             * Hook: woocommerce_shop_loop
-                             */
-                            do_action('woocommerce_shop_loop');
-                            
-                            wc_get_template_part('content', 'product');
+                    <!-- Product Grid with exact React layout: grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 -->
+                    <ul class="products grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <?php
+                        if (wc_get_loop_prop('total')) {
+                            while (have_posts()) {
+                                the_post();
+                                
+                                /**
+                                 * Hook: woocommerce_shop_loop
+                                 */
+                                do_action('woocommerce_shop_loop');
+                                
+                                wc_get_template_part('content', 'product');
+                            }
                         }
-                    }
+                        ?>
+                    </ul>
                     
-                    woocommerce_product_loop_end();
-                    
+                    <?php
                     /**
                      * Hook: woocommerce_after_shop_loop
                      * 
