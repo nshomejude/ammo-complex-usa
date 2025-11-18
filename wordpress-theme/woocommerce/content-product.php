@@ -21,18 +21,32 @@ if (empty($product) || !$product->is_visible()) {
 <li <?php wc_product_class('product-card group', $product); ?>>
     <div class="product-card-inner bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl hover:border-tactical/50 transition-all duration-300">
         
-        <!-- Product Image -->
-        <div class="product-image relative">
-            <a href="<?php echo esc_url(get_permalink($product->get_id())); ?>" class="block relative overflow-hidden">
+        <!-- Product Image with aspect-square ratio -->
+        <div class="product-image relative aspect-square overflow-hidden">
+            <a href="<?php echo esc_url(get_permalink($product->get_id())); ?>" class="block w-full h-full">
                 <?php
-                /**
-                 * Hook: woocommerce_before_shop_loop_item_title
-                 * 
-                 * @hooked woocommerce_show_product_loop_sale_flash - 10
-                 * @hooked woocommerce_template_loop_product_thumbnail - 10
-                 */
-                do_action('woocommerce_before_shop_loop_item_title');
+                // Get product thumbnail with specific size
+                $image_size = 'woocommerce_thumbnail';
+                $image_id = $product->get_image_id();
+                
+                if ($image_id) {
+                    echo wp_get_attachment_image($image_id, $image_size, false, array(
+                        'class' => 'w-full h-full object-cover',
+                        'alt' => esc_attr($product->get_name())
+                    ));
+                } else {
+                    echo wc_placeholder_img($image_size, array(
+                        'class' => 'w-full h-full object-cover'
+                    ));
+                }
+                
+                // Sale flash
+                if ($product->is_on_sale()) :
                 ?>
+                    <span class="onsale absolute top-2 right-2 bg-destructive text-destructive-foreground text-xs font-bold px-2 py-1 rounded">
+                        <?php esc_html_e('Sale!', 'arms-complex'); ?>
+                    </span>
+                <?php endif; ?>
             </a>
             
             <!-- Quick View Button -->
@@ -47,7 +61,7 @@ if (empty($product) || !$product->is_visible()) {
             </button>
         </div>
         
-        <!-- Product Info -->
+        <!-- Product Info with consistent padding -->
         <div class="product-info p-4 space-y-2">
             <!-- Product Title -->
             <h3 class="product-title text-lg font-semibold mb-1">
