@@ -114,28 +114,59 @@
 
 /**
  * WooCommerce Specific Styles
+ * Matches React Shop layout exactly
  */
 .woocommerce {
-  /* Product Grid */
+  /* Product Grid - Exact match to React: grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 */
   ul.products {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+    @apply grid gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
     @apply list-none m-0 p-0;
+  }
+  
+  /* Product Card - Matches ProductCard.tsx */
+  li.product-card {
+    @apply w-full;
+  }
+  
+  .product-card-inner {
+    @apply bg-card border border-border rounded-lg overflow-hidden;
+    @apply transition-all duration-300;
+  }
+  
+  .product-card:hover .product-card-inner {
+    @apply shadow-xl border-tactical/50;
+  }
+  
+  /* Product Image - Square aspect ratio */
+  .product-image img {
+    @apply aspect-square object-cover w-full;
+  }
+  
+  /* Product Info Padding */
+  .product-info {
+    @apply p-4 space-y-2;
   }
   
   /* Price */
   .price {
-    @apply text-tactical font-bold;
+    @apply text-tactical font-bold text-lg;
   }
   
   .price del {
-    @apply text-muted-foreground;
+    @apply text-muted-foreground text-sm;
   }
   
   /* Add to Cart Button */
   .button.add_to_cart_button,
   .button.product_type_simple,
   .button.product_type_variable {
-    @apply w-full bg-tactical text-tactical-foreground hover:bg-tactical-hover;
+    @apply w-full bg-tactical text-tactical-foreground hover:opacity-90;
+    @apply px-4 py-2 rounded-lg font-semibold transition-all;
+  }
+  
+  /* Stock Badges */
+  .badge {
+    @apply inline-block text-xs px-2 py-1 rounded font-semibold;
   }
   
   /* Pagination */
