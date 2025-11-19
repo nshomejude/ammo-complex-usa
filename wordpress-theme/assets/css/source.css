@@ -70,13 +70,41 @@
   }
   
   /* Wishlist Button */
+  .wishlist-button {
+    @apply transition-all duration-200;
+  }
+  
+  .wishlist-button:hover {
+    @apply border-tactical/70 bg-tactical/5;
+  }
+  
   .wishlist-button.in-wishlist {
     @apply border-tactical bg-tactical/10 text-tactical;
   }
   
+  .wishlist-button.in-wishlist:hover {
+    @apply border-tactical bg-tactical/20;
+  }
+  
+  .wishlist-button.in-wishlist svg {
+    @apply fill-current;
+  }
+  
   /* Comparison Button */
+  .comparison-button {
+    @apply transition-all duration-200;
+  }
+  
+  .comparison-button:hover {
+    @apply border-tactical/70 bg-tactical/5;
+  }
+  
   .comparison-button.in-comparison {
     @apply border-tactical bg-tactical/10 text-tactical;
+  }
+  
+  .comparison-button.in-comparison:hover {
+    @apply border-tactical bg-tactical/20;
   }
 }
 
