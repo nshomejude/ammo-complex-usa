@@ -141,7 +141,7 @@ function arms_complex_wrapper_end() {
 add_action('woocommerce_after_main_content', 'arms_complex_wrapper_end', 10);
 
 /**
- * Enqueue WooCommerce-specific styles
+ * Enqueue WooCommerce-specific styles and scripts
  */
 function arms_complex_woocommerce_styles() {
     wp_enqueue_style(
@@ -150,6 +150,24 @@ function arms_complex_woocommerce_styles() {
         array('arms-complex-style'),
         ARMS_COMPLEX_VERSION
     );
+    
+    // Enqueue product card interactions
+    wp_enqueue_script(
+        'arms-complex-product-card',
+        ARMS_COMPLEX_THEME_URI . '/assets/js/product-card.js',
+        array('jquery', 'arms-complex-wishlist', 'arms-complex-comparison'),
+        ARMS_COMPLEX_VERSION,
+        true
+    );
+    
+    // Localize script for AJAX
+    wp_localize_script('arms-complex-product-card', 'armsComplexProductCard', array(
+        'ajaxUrl' => admin_url('admin-ajax.php'),
+        'nonce' => wp_create_nonce('arms-complex-nonce'),
+        'addToCartText' => __('Add to Cart', 'arms-complex'),
+        'addedText' => __('Added!', 'arms-complex'),
+        'viewCartText' => __('View Cart', 'arms-complex'),
+    ));
 }
 add_action('wp_enqueue_scripts', 'arms_complex_woocommerce_styles');
 
