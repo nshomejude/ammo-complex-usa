@@ -13,9 +13,10 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * AJAX: Quick view product
+ * AJAX: Get Quick View Product
+ * Returns formatted HTML for product quick view modal
  */
-function arms_complex_quick_view_product() {
+function arms_complex_get_quick_view_product() {
     check_ajax_referer('arms-complex-nonce', 'nonce');
     
     $product_id = isset($_POST['product_id']) ? intval($_POST['product_id']) : 0;
@@ -30,14 +31,126 @@ function arms_complex_quick_view_product() {
         wp_send_json_error(array('message' => __('Product not found', 'arms-complex')));
     }
     
+    // Build quick view HTML
     ob_start();
-    wc_get_template('quick-view.php', array('product' => $product));
+    ?>
+    <div class="quick-view-content grid md:grid-cols-2 gap-6">
+        <!-- Product Image -->
+        <div class="product-image">
+            <?php
+            $image_id = $product->get_image_id();
+            if ($image_id) {
+                echo wp_get_attachment_image($image_id, 'large', false, array(
+                    'class' => 'w-full h-auto rounded-lg'
+                ));
+            } else {
+                echo wc_placeholder_img('large');
+            }
+            ?>
+        </div>
+        
+        <!-- Product Details -->
+        <div class="product-details space-y-4">
+            <h2 class="text-2xl font-bold"><?php echo esc_html($product->get_name()); ?></h2>
+            
+            <div class="product-price text-tactical text-2xl font-bold">
+                <?php echo $product->get_price_html(); ?>
+            </div>
+            
+            <?php if ($product->get_short_description()) : ?>
+                <div class="product-excerpt text-muted-foreground">
+                    <?php echo wp_kses_post($product->get_short_description()); ?>
+                </div>
+            <?php endif; ?>
+            
+            <!-- Product Attributes -->
+            <?php
+            $attributes = array('pa_caliber', 'pa_brand', 'pa_bullet_weight');
+            $has_attributes = false;
+            
+            foreach ($attributes as $attr) {
+                if ($product->get_attribute($attr)) {
+                    $has_attributes = true;
+                    break;
+                }
+            }
+            
+            if ($has_attributes) :
+            ?>
+                <div class="product-attributes space-y-2">
+                    <?php
+                    $caliber = $product->get_attribute('pa_caliber');
+                    if ($caliber) :
+                    ?>
+                        <p class="text-sm"><span class="font-semibold">Caliber:</span> <?php echo esc_html($caliber); ?></p>
+                    <?php endif; ?>
+                    
+                    <?php
+                    $brand = $product->get_attribute('pa_brand');
+                    if ($brand) :
+                    ?>
+                        <p class="text-sm"><span class="font-semibold">Brand:</span> <?php echo esc_html($brand); ?></p>
+                    <?php endif; ?>
+                    
+                    <?php
+                    $weight = $product->get_attribute('pa_bullet_weight');
+                    if ($weight) :
+                    ?>
+                        <p class="text-sm"><span class="font-semibold">Bullet Weight:</span> <?php echo esc_html($weight); ?></p>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+            
+            <!-- Stock Status -->
+            <div class="product-stock">
+                <?php if ($product->is_in_stock()) : ?>
+                    <span class="badge bg-accent text-accent-foreground">
+                        <?php esc_html_e('In Stock', 'arms-complex'); ?>
+                    </span>
+                <?php else : ?>
+                    <span class="badge bg-destructive text-destructive-foreground">
+                        <?php esc_html_e('Out of Stock', 'arms-complex'); ?>
+                    </span>
+                <?php endif; ?>
+            </div>
+            
+            <!-- Add to Cart Form -->
+            <div class="product-actions">
+                <?php if ($product->is_type('simple')) : ?>
+                    <a 
+                        href="<?php echo esc_url($product->add_to_cart_url()); ?>" 
+                        class="button add_to_cart_button w-full bg-tactical text-tactical-foreground hover:opacity-90 px-4 py-3 rounded-lg font-semibold transition-all text-center inline-block"
+                        data-product_id="<?php echo esc_attr($product->get_id()); ?>"
+                        data-product_sku="<?php echo esc_attr($product->get_sku()); ?>"
+                    >
+                        <?php echo esc_html($product->add_to_cart_text()); ?>
+                    </a>
+                <?php else : ?>
+                    <a 
+                        href="<?php echo esc_url($product->get_permalink()); ?>" 
+                        class="button w-full bg-tactical text-tactical-foreground hover:opacity-90 px-4 py-3 rounded-lg font-semibold transition-all text-center inline-block"
+                    >
+                        <?php esc_html_e('Select Options', 'arms-complex'); ?>
+                    </a>
+                <?php endif; ?>
+            </div>
+            
+            <!-- View Full Details Link -->
+            <a 
+                href="<?php echo esc_url($product->get_permalink()); ?>" 
+                class="text-tactical hover:underline text-sm inline-block"
+            >
+                <?php esc_html_e('View Full Details →', 'arms-complex'); ?>
+            </a>
+        </div>
+    </div>
+    <?php
     $html = ob_get_clean();
     
     wp_send_json_success(array('html' => $html));
 }
-add_action('wp_ajax_quick_view_product', 'arms_complex_quick_view_product');
-add_action('wp_ajax_nopriv_quick_view_product', 'arms_complex_quick_view_product');
+add_action('wp_ajax_get_quick_view_product', 'arms_complex_get_quick_view_product');
+add_action('wp_ajax_nopriv_get_quick_view_product', 'arms_complex_get_quick_view_product');
 
 /**
  * AJAX: Filter products

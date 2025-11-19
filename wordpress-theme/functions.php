@@ -128,6 +128,14 @@ function arms_complex_scripts() {
         ARMS_COMPLEX_VERSION
     );
     
+    // Animations stylesheet
+    wp_enqueue_style(
+        'arms-complex-animations',
+        ARMS_COMPLEX_THEME_URI . '/assets/css/animations.css',
+        array('arms-complex-style'),
+        ARMS_COMPLEX_VERSION
+    );
+    
     // Main JavaScript file
     wp_enqueue_script(
         'arms-complex-main',
