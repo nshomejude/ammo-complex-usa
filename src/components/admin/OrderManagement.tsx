@@ -14,30 +14,43 @@ interface Order {
   status: string;
   total_amount: number;
   created_at: string;
-  profiles: {
-    username: string;
-  };
+  user_id: string;
+}
+
+interface Profile {
+  id: string;
+  username: string | null;
 }
 
 export const OrderManagement = () => {
   const [orders, setOrders] = useState<Order[]>([]);
+  const [profiles, setProfiles] = useState<Record<string, Profile>>({});
   const [loading, setLoading] = useState(true);
 
   const fetchOrders = async () => {
-    const { data, error } = await supabase
+    const { data: ordersData, error: ordersError } = await supabase
       .from('orders')
-      .select(`
-        *,
-        profiles (username)
-      `)
+      .select('*')
       .order('created_at', { ascending: false });
 
-    if (error) {
+    if (ordersError) {
       toast.error('Failed to fetch orders');
       return;
     }
 
-    setOrders(data || []);
+    const { data: profilesData, error: profilesError } = await supabase
+      .from('profiles')
+      .select('id, username');
+
+    if (!profilesError && profilesData) {
+      const profilesMap = profilesData.reduce((acc, profile) => {
+        acc[profile.id] = profile;
+        return acc;
+      }, {} as Record<string, Profile>);
+      setProfiles(profilesMap);
+    }
+
+    setOrders(ordersData || []);
     setLoading(false);
   };
 
@@ -108,7 +121,7 @@ export const OrderManagement = () => {
                 {orders.map((order) => (
                   <TableRow key={order.id}>
                     <TableCell className="font-medium">{order.order_number}</TableCell>
-                    <TableCell>{order.profiles?.username || 'Unknown'}</TableCell>
+                    <TableCell>{profiles[order.user_id]?.username || 'Unknown'}</TableCell>
                     <TableCell>{new Date(order.created_at).toLocaleDateString()}</TableCell>
                     <TableCell>${Number(order.total_amount).toFixed(2)}</TableCell>
                     <TableCell>

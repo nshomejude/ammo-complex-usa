@@ -9,30 +9,44 @@ import { Users, Shield } from "lucide-react";
 
 interface User {
   id: string;
-  username: string;
+  username: string | null;
   created_at: string;
-  user_roles: Array<{ role: string }>;
+}
+
+interface UserRole {
+  user_id: string;
+  role: string;
 }
 
 export const UserManagement = () => {
   const [users, setUsers] = useState<User[]>([]);
+  const [userRoles, setUserRoles] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true);
 
   const fetchUsers = async () => {
-    const { data, error } = await supabase
+    const { data: usersData, error: usersError } = await supabase
       .from('profiles')
-      .select(`
-        *,
-        user_roles (role)
-      `)
+      .select('*')
       .order('created_at', { ascending: false });
 
-    if (error) {
+    if (usersError) {
       toast.error('Failed to fetch users');
       return;
     }
 
-    setUsers(data || []);
+    const { data: rolesData, error: rolesError } = await supabase
+      .from('user_roles')
+      .select('user_id, role');
+
+    if (!rolesError && rolesData) {
+      const rolesMap = rolesData.reduce((acc, role) => {
+        acc[role.user_id] = role.role;
+        return acc;
+      }, {} as Record<string, string>);
+      setUserRoles(rolesMap);
+    }
+
+    setUsers(usersData || []);
     setLoading(false);
   };
 
@@ -90,10 +104,10 @@ export const UserManagement = () => {
               </TableHeader>
               <TableBody>
                 {users.map((user) => {
-                  const role = user.user_roles?.[0]?.role || 'customer';
+                  const role = userRoles[user.id] || 'customer';
                   return (
                     <TableRow key={user.id}>
-                      <TableCell className="font-medium">{user.username}</TableCell>
+                      <TableCell className="font-medium">{user.username || 'N/A'}</TableCell>
                       <TableCell>{new Date(user.created_at).toLocaleDateString()}</TableCell>
                       <TableCell>
                         <Badge variant={role === 'admin' ? 'default' : 'secondary'}>
