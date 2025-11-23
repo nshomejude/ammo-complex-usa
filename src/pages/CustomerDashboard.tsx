@@ -11,8 +11,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Heart, Package, Settings, User } from "lucide-react";
 import { useWishlist } from "@/hooks/useWishlist";
-import { products } from "@/data/products";
-import { firearms } from "@/data/firearms";
+import { products, Product } from "@/data/products";
+import { firearms, Firearm } from "@/data/firearms";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
@@ -95,7 +95,7 @@ export default function CustomerDashboard() {
   const wishlistItems = [
     ...products.filter(p => wishlist.includes(p.id)),
     ...firearms.filter(f => wishlist.includes(f.id))
-  ];
+  ] as (Product | Firearm)[];
 
   if (loading) {
     return (
@@ -191,22 +191,30 @@ export default function CustomerDashboard() {
                   </div>
                 ) : (
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {wishlistItems.map((item) => (
-                      <Card key={item.id}>
-                        <CardContent className="pt-6">
-                          <img 
-                            src={item.image} 
-                            alt={item.name}
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                          />
-                          <h3 className="font-semibold">{item.name}</h3>
-                          <p className="text-sm text-muted-foreground mb-2">
-                            {'caliber' in item ? item.caliber : item.category}
-                          </p>
-                          <p className="font-bold">${item.price}</p>
-                        </CardContent>
-                      </Card>
-                    ))}
+                    {wishlistItems.map((item) => {
+                      const isFirearm = (item: Product | Firearm): item is Firearm => 'imageUrl' in item;
+                      const imageUrl = isFirearm(item) ? item.imageUrl : '/placeholder.svg';
+                      const displayInfo = isFirearm(item) 
+                        ? (Array.isArray(item.caliber) ? item.caliber[0] : item.caliber)
+                        : (item as Product).category;
+                      
+                      return (
+                        <Card key={item.id}>
+                          <CardContent className="pt-6">
+                            <img 
+                              src={imageUrl || '/placeholder.svg'} 
+                              alt={item.name}
+                              className="w-full h-40 object-cover rounded-md mb-4"
+                            />
+                            <h3 className="font-semibold">{item.name}</h3>
+                            <p className="text-sm text-muted-foreground mb-2">
+                              {displayInfo}
+                            </p>
+                            <p className="font-bold">${item.price}</p>
+                          </CardContent>
+                        </Card>
+                      );
+                    })}
                   </div>
                 )}
               </CardContent>
