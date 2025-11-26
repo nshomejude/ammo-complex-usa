@@ -29,6 +29,7 @@ const ProductDetail = () => {
   const { addToCart } = useCart();
   const product = products.find(p => p.id === id);
   const [quantity, setQuantity] = useState(1);
+  const [selectedVariation, setSelectedVariation] = useState<{ rounds: number; price: number } | null>(null);
 
   if (!product) {
     return (
@@ -56,22 +57,31 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
+    const actualPrice = selectedVariation ? selectedVariation.price : product.price;
+    const actualRounds = selectedVariation ? selectedVariation.rounds : product.rounds;
+    
     for (let i = 0; i < quantity; i++) {
       addToCart({
         id: product.id,
         name: product.name,
-        price: product.price,
+        price: actualPrice,
         image: "/placeholder.svg",
-        type: 'product'
+        type: 'product',
+        variation: selectedVariation ? {
+          type: 'rounds',
+          value: `${actualRounds} rounds`
+        } : undefined
       });
     }
-    toast.success(`Added ${quantity}x ${product.name} to cart`);
+    
+    toast.success(`Added ${quantity}x ${product.name} (${actualRounds} rounds) to cart`);
   };
 
   const incrementQuantity = () => setQuantity(prev => Math.min(prev + 1, 50));
   const decrementQuantity = () => setQuantity(prev => Math.max(prev - 1, 1));
 
-  const totalPrice = (product.price * quantity).toFixed(2);
+  const actualPrice = selectedVariation ? selectedVariation.price : product.price;
+  const totalPrice = (actualPrice * quantity).toFixed(2);
 
   // Get related products from same category
   const relatedProducts = products
@@ -359,9 +369,12 @@ const ProductDetail = () => {
                   {product.quantityVariations.map((variant, idx) => (
                     <button
                       key={idx}
-                      onClick={() => setQuantity(Math.ceil(variant.rounds / product.rounds))}
+                      onClick={() => {
+                        setSelectedVariation({ rounds: variant.rounds, price: variant.price });
+                        setQuantity(1);
+                      }}
                       className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-lg border-2 transition-all duration-200 ${
-                        variant.rounds === product.rounds
+                        selectedVariation?.rounds === variant.rounds
                           ? 'bg-primary text-primary-foreground border-primary shadow-md scale-105'
                           : variant.inStock
                           ? 'bg-background border-border hover:border-primary hover:bg-primary/5 hover:scale-105'

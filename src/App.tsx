@@ -25,7 +25,8 @@ import Firearms from "./pages/Firearms";
 import FirearmCategoryPage from "./pages/FirearmCategoryPage";
 import FirearmDetail from "./pages/FirearmDetail";
 import SearchResults from "./pages/SearchResults";
-import Admin from "./pages/Admin";
+import AdminDashboard from "./pages/AdminDashboard";
+import Checkout from "./pages/Checkout";
 import About from "./pages/About";
 import About2 from "./pages/About2";
 import About3 from "./pages/About3";
@@ -110,7 +111,8 @@ const App = () => (
           <Route path="/firearm-category/:slug" element={<FirearmCategoryPage />} />
           <Route path="/firearm/:id" element={<FirearmDetail />} />
           <Route path="/search" element={<SearchResults />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/about" element={<About />} />
           <Route path="/about2" element={<About2 />} />
           <Route path="/about3" element={<About3 />} />
