@@ -129,6 +129,8 @@ export type Database = {
           created_at: string | null
           id: string
           order_number: string
+          payment_address: string | null
+          payment_method: string | null
           shipping_address: Json
           status: string
           total_amount: number
@@ -139,6 +141,8 @@ export type Database = {
           created_at?: string | null
           id?: string
           order_number: string
+          payment_address?: string | null
+          payment_method?: string | null
           shipping_address: Json
           status?: string
           total_amount: number
@@ -149,11 +153,43 @@ export type Database = {
           created_at?: string | null
           id?: string
           order_number?: string
+          payment_address?: string | null
+          payment_method?: string | null
           shipping_address?: Json
           status?: string
           total_amount?: number
           updated_at?: string | null
           user_id?: string
+        }
+        Relationships: []
+      }
+      payment_addresses: {
+        Row: {
+          address: string
+          created_at: string | null
+          id: string
+          is_active: boolean | null
+          label: string | null
+          payment_type: Database["public"]["Enums"]["payment_type"]
+          updated_at: string | null
+        }
+        Insert: {
+          address: string
+          created_at?: string | null
+          id?: string
+          is_active?: boolean | null
+          label?: string | null
+          payment_type: Database["public"]["Enums"]["payment_type"]
+          updated_at?: string | null
+        }
+        Update: {
+          address?: string
+          created_at?: string | null
+          id?: string
+          is_active?: boolean | null
+          label?: string | null
+          payment_type?: Database["public"]["Enums"]["payment_type"]
+          updated_at?: string | null
         }
         Relationships: []
       }
@@ -228,6 +264,33 @@ export type Database = {
           },
         ]
       }
+      site_settings: {
+        Row: {
+          id: string
+          meta_description: string
+          seo_title: string
+          site_name: string
+          tags: string[] | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string
+          meta_description?: string
+          seo_title?: string
+          site_name?: string
+          tags?: string[] | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string
+          meta_description?: string
+          seo_title?: string
+          site_name?: string
+          tags?: string[] | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string | null
@@ -268,6 +331,7 @@ export type Database = {
     }
     Enums: {
       app_role: "admin" | "customer"
+      payment_type: "bitcoin" | "usdt" | "monero"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -396,6 +460,7 @@ export const Constants = {
   public: {
     Enums: {
       app_role: ["admin", "customer"],
+      payment_type: ["bitcoin", "usdt", "monero"],
     },
   },
 } as const

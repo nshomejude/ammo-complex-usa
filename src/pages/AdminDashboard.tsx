@@ -9,8 +9,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ProductManagement } from "@/components/admin/ProductManagement";
 import { OrderManagement } from "@/components/admin/OrderManagement";
 import { UserManagement } from "@/components/admin/UserManagement";
-import { BarChart3, Package, ShoppingBag, Users } from "lucide-react";
+import { BarChart3, Package, ShoppingBag, Users, Globe, Wallet } from "lucide-react";
 import { Loader2 } from "lucide-react";
+import { SiteSettings } from "@/components/admin/SiteSettings";
+import { PaymentSettings } from "@/components/admin/PaymentSettings";
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
@@ -126,6 +128,14 @@ export default function AdminDashboard() {
               <Users className="h-4 w-4" />
               Users
             </TabsTrigger>
+            <TabsTrigger value="site" className="flex items-center gap-2">
+              <Globe className="h-4 w-4" />
+              Site Settings
+            </TabsTrigger>
+            <TabsTrigger value="payment" className="flex items-center gap-2">
+              <Wallet className="h-4 w-4" />
+              Payment Settings
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="products">
@@ -138,6 +148,14 @@ export default function AdminDashboard() {
 
           <TabsContent value="users">
             <UserManagement />
+          </TabsContent>
+
+          <TabsContent value="site">
+            <SiteSettings />
+          </TabsContent>
+
+          <TabsContent value="payment">
+            <PaymentSettings />
           </TabsContent>
         </Tabs>
       </main>

@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart, X, Package, Target, Zap } from "lucide-react";
 import { Product } from "@/data/products";
 import { Separator } from "@/components/ui/separator";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
+import { useCart } from "@/hooks/useCart";
 
 interface QuickViewModalProps {
   product: Product | null;
@@ -15,7 +16,7 @@ interface QuickViewModalProps {
 
 export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps) {
   const [selectedVariation, setSelectedVariation] = useState(0);
-  const { toast } = useToast();
+  const { addToCart } = useCart();
 
   if (!product) return null;
 
@@ -26,10 +27,19 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
   };
 
   const handleAddToCart = () => {
-    toast({
-      title: "Added to Cart",
-      description: `${product.name} (${currentVariation.rounds} rounds) - $${currentVariation.price.toFixed(2)}`,
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: currentVariation.price,
+      image: "/placeholder.svg",
+      type: 'product',
+      variation: product.quantityVariations ? {
+        type: 'rounds',
+        value: `${currentVariation.rounds} rounds`
+      } : undefined
     });
+    
+    toast.success(`Added ${product.name} (${currentVariation.rounds} rounds) to cart`);
   };
 
   return (
