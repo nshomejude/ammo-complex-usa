@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
-import { X, Save } from "lucide-react";
+import { X, Save, Upload } from "lucide-react";
 import { toast } from "sonner";
-import { products as defaultProducts } from "@/data/products";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Select,
   SelectContent,
@@ -15,28 +15,39 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const STORAGE_KEY = "products_data";
-
 interface ProductFormProps {
   product?: any;
   onClose: () => void;
+  onSuccess: () => void;
 }
 
-export const ProductForm = ({ product, onClose }: ProductFormProps) => {
+export const ProductForm = ({ product, onClose, onSuccess }: ProductFormProps) => {
   const [formData, setFormData] = useState({
     id: product?.id || "",
     name: product?.name || "",
     caliber: product?.caliber || "",
     rounds: product?.rounds || 0,
     price: product?.price || 0,
-    inStock: product?.inStock ?? true,
+    inStock: product?.in_stock ?? true,
     category: product?.category || "rifle",
     description: product?.description || "",
     manufacturer: product?.manufacturer || "",
     grainWeight: product?.grainWeight || "",
+    stockQuantity: product?.stock_quantity || 0,
+    lowStockThreshold: product?.low_stock_threshold || 10,
+    imageUrl: product?.image_url || "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [uploading, setUploading] = useState(false);
+
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setImageFile(e.target.files[0]);
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!formData.id || !formData.name || !formData.caliber) {
@@ -44,29 +55,68 @@ export const ProductForm = ({ product, onClose }: ProductFormProps) => {
       return;
     }
 
-    const stored = localStorage.getItem(STORAGE_KEY);
-    const products = stored ? JSON.parse(stored) : defaultProducts;
+    setUploading(true);
 
-    if (product) {
-      // Update existing product
-      const updatedProducts = products.map((p: any) =>
-        p.id === product.id ? { ...formData, price: Number(formData.price), rounds: Number(formData.rounds) } : p
-      );
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedProducts));
-      toast.success("Product updated successfully");
-    } else {
-      // Add new product
-      const newProduct = {
-        ...formData,
+    try {
+      let imageUrl = formData.imageUrl;
+
+      // Upload image if a new file was selected
+      if (imageFile) {
+        const fileExt = imageFile.name.split('.').pop();
+        const fileName = `${formData.id}-${Date.now()}.${fileExt}`;
+        
+        const { error: uploadError } = await supabase.storage
+          .from('product-images')
+          .upload(fileName, imageFile, { upsert: true });
+
+        if (uploadError) throw uploadError;
+
+        const { data: { publicUrl } } = supabase.storage
+          .from('product-images')
+          .getPublicUrl(fileName);
+
+        imageUrl = publicUrl;
+      }
+
+      const productData = {
+        id: formData.id,
+        name: formData.name,
+        caliber: formData.caliber,
         price: Number(formData.price),
         rounds: Number(formData.rounds),
+        manufacturer: formData.manufacturer,
+        description: formData.description,
+        in_stock: formData.inStock,
+        stock_quantity: Number(formData.stockQuantity),
+        low_stock_threshold: Number(formData.lowStockThreshold),
+        image_url: imageUrl,
       };
-      products.push(newProduct);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
-      toast.success("Product added successfully");
-    }
 
-    onClose();
+      if (product) {
+        const { error } = await supabase
+          .from('products')
+          .update(productData)
+          .eq('id', product.id);
+
+        if (error) throw error;
+        toast.success("Product updated successfully");
+      } else {
+        const { error } = await supabase
+          .from('products')
+          .insert([productData]);
+
+        if (error) throw error;
+        toast.success("Product added successfully");
+      }
+
+      onSuccess();
+      onClose();
+    } catch (error: any) {
+      console.error('Error saving product:', error);
+      toast.error(error.message || "Failed to save product");
+    } finally {
+      setUploading(false);
+    }
   };
 
   return (
@@ -78,6 +128,30 @@ export const ProductForm = ({ product, onClose }: ProductFormProps) => {
         <Button variant="ghost" size="sm" onClick={onClose}>
           <X className="h-4 w-4" />
         </Button>
+      </div>
+
+      <div className="space-y-4">
+        <div>
+          <Label htmlFor="image">Product Image</Label>
+          <div className="flex items-center gap-4 mt-2">
+            {formData.imageUrl && (
+              <img 
+                src={formData.imageUrl} 
+                alt="Product preview" 
+                className="w-20 h-20 object-cover rounded-md border"
+              />
+            )}
+            <div className="flex-1">
+              <Input
+                id="image"
+                type="file"
+                accept="image/*"
+                onChange={handleImageChange}
+                className="cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -149,6 +223,30 @@ export const ProductForm = ({ product, onClose }: ProductFormProps) => {
         </div>
 
         <div className="space-y-2">
+          <Label htmlFor="stockQuantity">Stock Quantity *</Label>
+          <Input
+            id="stockQuantity"
+            type="number"
+            min="0"
+            value={formData.stockQuantity}
+            onChange={(e) => setFormData({ ...formData, stockQuantity: parseInt(e.target.value) || 0 })}
+            placeholder="0"
+          />
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="lowStockThreshold">Low Stock Alert Threshold *</Label>
+          <Input
+            id="lowStockThreshold"
+            type="number"
+            min="0"
+            value={formData.lowStockThreshold}
+            onChange={(e) => setFormData({ ...formData, lowStockThreshold: parseInt(e.target.value) || 0 })}
+            placeholder="10"
+          />
+        </div>
+
+        <div className="space-y-2">
           <Label htmlFor="grainWeight">Grain Weight</Label>
           <Input
             id="grainWeight"
@@ -194,9 +292,9 @@ export const ProductForm = ({ product, onClose }: ProductFormProps) => {
       </div>
 
       <div className="flex gap-3 pt-4">
-        <Button type="submit" className="bg-tactical hover:bg-tactical/90">
+        <Button type="submit" className="bg-tactical hover:bg-tactical/90" disabled={uploading}>
           <Save className="mr-2 h-4 w-4" />
-          {product ? "Update Product" : "Add Product"}
+          {uploading ? "Saving..." : product ? "Update Product" : "Add Product"}
         </Button>
         <Button type="button" variant="outline" onClick={onClose}>
           Cancel

@@ -63,6 +63,10 @@ export const ProductManagement = () => {
               <ProductForm
                 product={editingProduct}
                 onClose={handleCloseProductForm}
+                onSuccess={() => {
+                  // Trigger refresh by closing and reopening
+                  setShowProductForm(false);
+                }}
               />
             ) : (
               <ProductList

@@ -193,6 +193,54 @@ export type Database = {
         }
         Relationships: []
       }
+      products: {
+        Row: {
+          caliber: string
+          created_at: string | null
+          description: string | null
+          id: string
+          image_url: string | null
+          in_stock: boolean
+          low_stock_threshold: number
+          manufacturer: string | null
+          name: string
+          price: number
+          rounds: number
+          stock_quantity: number
+          updated_at: string | null
+        }
+        Insert: {
+          caliber: string
+          created_at?: string | null
+          description?: string | null
+          id: string
+          image_url?: string | null
+          in_stock?: boolean
+          low_stock_threshold?: number
+          manufacturer?: string | null
+          name: string
+          price: number
+          rounds?: number
+          stock_quantity?: number
+          updated_at?: string | null
+        }
+        Update: {
+          caliber?: string
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          in_stock?: boolean
+          low_stock_threshold?: number
+          manufacturer?: string | null
+          name?: string
+          price?: number
+          rounds?: number
+          stock_quantity?: number
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string | null
