@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Edit, Trash2, Search } from "lucide-react";
-import { products as defaultProducts } from "@/data/products";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Plus, Edit, Trash2, Search, AlertTriangle } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Table,
   TableBody,
@@ -24,39 +25,92 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 
-const STORAGE_KEY = "products_data";
-
 export const ProductList = ({ onEdit, onAdd }: { onEdit: (product: any) => void; onAdd: () => void }) => {
-  const [products, setProducts] = useState(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    return stored ? JSON.parse(stored) : defaultProducts;
-  });
+  const [products, setProducts] = useState<any[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [deleteId, setDeleteId] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
-  }, [products]);
+    loadProducts();
+  }, []);
 
-  const handleDelete = (id: string) => {
-    setProducts(products.filter((p: any) => p.id !== id));
-    toast.success("Product deleted successfully");
-    setDeleteId(null);
+  const loadProducts = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('products')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) throw error;
+      setProducts(data || []);
+    } catch (error: any) {
+      console.error('Error loading products:', error);
+      toast.error("Failed to load products");
+    } finally {
+      setLoading(false);
+    }
   };
+
+  const handleDelete = async (id: string) => {
+    try {
+      const { error } = await supabase
+        .from('products')
+        .delete()
+        .eq('id', id);
+
+      if (error) throw error;
+      
+      toast.success("Product deleted successfully");
+      loadProducts();
+      setDeleteId(null);
+    } catch (error: any) {
+      console.error('Error deleting product:', error);
+      toast.error("Failed to delete product");
+    }
+  };
+
+  const lowStockProducts = products.filter(
+    p => p.stock_quantity > 0 && p.stock_quantity <= p.low_stock_threshold
+  );
+
+  const outOfStockProducts = products.filter(p => p.stock_quantity === 0);
 
   const filteredProducts = products.filter((p: any) =>
     p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     p.caliber.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    p.category.toLowerCase().includes(searchQuery.toLowerCase())
+    (p.manufacturer && p.manufacturer.toLowerCase().includes(searchQuery.toLowerCase()))
   );
+
+  if (loading) {
+    return <div className="text-center py-8">Loading products...</div>;
+  }
 
   return (
     <>
+      {lowStockProducts.length > 0 && (
+        <Alert variant="destructive" className="mb-4">
+          <AlertTriangle className="h-4 w-4" />
+          <AlertDescription>
+            <strong>Low Stock Alert:</strong> {lowStockProducts.length} product(s) are running low on stock.
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {outOfStockProducts.length > 0 && (
+        <Alert variant="destructive" className="mb-4">
+          <AlertTriangle className="h-4 w-4" />
+          <AlertDescription>
+            <strong>Out of Stock:</strong> {outOfStockProducts.length} product(s) are out of stock.
+          </AlertDescription>
+        </Alert>
+      )}
+
       <div className="flex gap-3 mb-4">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
-            placeholder="Search products by name, caliber, or category..."
+            placeholder="Search products by name, caliber, or manufacturer..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="pl-10"
@@ -73,31 +127,59 @@ export const ProductList = ({ onEdit, onAdd }: { onEdit: (product: any) => void;
           <Table>
             <TableHeader className="sticky top-0 bg-card z-10">
               <TableRow>
+                <TableHead>Image</TableHead>
                 <TableHead>Name</TableHead>
                 <TableHead>Caliber</TableHead>
-                <TableHead>Rounds</TableHead>
                 <TableHead>Price</TableHead>
-                <TableHead>Category</TableHead>
                 <TableHead>Stock</TableHead>
+                <TableHead>Status</TableHead>
                 <TableHead className="text-right">Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {filteredProducts.map((product: any) => (
                 <TableRow key={product.id}>
+                  <TableCell>
+                    {product.image_url ? (
+                      <img 
+                        src={product.image_url} 
+                        alt={product.name}
+                        className="w-12 h-12 object-cover rounded"
+                      />
+                    ) : (
+                      <div className="w-12 h-12 bg-muted rounded flex items-center justify-center text-xs">
+                        No image
+                      </div>
+                    )}
+                  </TableCell>
                   <TableCell className="font-medium">{product.name}</TableCell>
                   <TableCell>{product.caliber}</TableCell>
-                  <TableCell>{product.rounds}</TableCell>
                   <TableCell>${product.price.toFixed(2)}</TableCell>
-                  <TableCell className="capitalize">{product.category}</TableCell>
                   <TableCell>
-                    {product.inStock ? (
+                    <span className={
+                      product.stock_quantity === 0 
+                        ? "text-destructive font-semibold"
+                        : product.stock_quantity <= product.low_stock_threshold
+                        ? "text-orange-500 font-semibold"
+                        : ""
+                    }>
+                      {product.stock_quantity}
+                    </span>
+                  </TableCell>
+                  <TableCell>
+                    {product.stock_quantity === 0 ? (
+                      <Badge variant="destructive">Out of Stock</Badge>
+                    ) : product.stock_quantity <= product.low_stock_threshold ? (
+                      <Badge variant="outline" className="border-orange-500 text-orange-500">
+                        Low Stock
+                      </Badge>
+                    ) : product.in_stock ? (
                       <Badge variant="outline" className="border-tactical text-tactical">
                         In Stock
                       </Badge>
                     ) : (
                       <Badge variant="outline" className="border-destructive text-destructive">
-                        Out of Stock
+                        Unavailable
                       </Badge>
                     )}
                   </TableCell>
