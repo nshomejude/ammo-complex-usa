@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
-import { X, Save, Upload } from "lucide-react";
+import { X, Save, Upload, Plus, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import {
@@ -14,11 +14,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface ProductFormProps {
   product?: any;
   onClose: () => void;
   onSuccess: () => void;
+}
+
+interface Variation {
+  name: string;
+  price_modifier: number;
+  description: string;
 }
 
 export const ProductForm = ({ product, onClose, onSuccess }: ProductFormProps) => {
@@ -36,6 +43,15 @@ export const ProductForm = ({ product, onClose, onSuccess }: ProductFormProps) =
     stockQuantity: product?.stock_quantity || 0,
     lowStockThreshold: product?.low_stock_threshold || 10,
     imageUrl: product?.image_url || "",
+  });
+
+  const [variations, setVariations] = useState<Variation[]>(
+    product?.variations || []
+  );
+  const [newVariation, setNewVariation] = useState<Variation>({
+    name: "",
+    price_modifier: 0,
+    description: "",
   });
 
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -90,6 +106,7 @@ export const ProductForm = ({ product, onClose, onSuccess }: ProductFormProps) =
         stock_quantity: Number(formData.stockQuantity),
         low_stock_threshold: Number(formData.lowStockThreshold),
         image_url: imageUrl,
+        variations: variations.length > 0 ? (variations as any) : null,
       };
 
       if (product) {
@@ -290,6 +307,89 @@ export const ProductForm = ({ product, onClose, onSuccess }: ProductFormProps) =
         />
         <Label htmlFor="inStock">In Stock</Label>
       </div>
+
+      <Card className="mt-6">
+        <CardHeader>
+          <CardTitle className="text-base">Product Variations (Optional)</CardTitle>
+          <p className="text-sm text-muted-foreground">
+            Add quantity or package variations with different pricing
+          </p>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          {variations.map((variation, index) => (
+            <div key={index} className="flex items-center gap-3 p-3 border rounded-lg">
+              <div className="flex-1 grid grid-cols-3 gap-3">
+                <div>
+                  <p className="text-sm font-medium">{variation.name}</p>
+                  <p className="text-xs text-muted-foreground">{variation.description}</p>
+                </div>
+                <div className="text-sm">
+                  Base Price: ${formData.price}
+                </div>
+                <div className="text-sm">
+                  Modifier: ${variation.price_modifier >= 0 ? '+' : ''}{variation.price_modifier}
+                </div>
+              </div>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={() => setVariations(variations.filter((_, i) => i !== index))}
+              >
+                <Trash2 className="h-4 w-4 text-destructive" />
+              </Button>
+            </div>
+          ))}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-3 border border-dashed rounded-lg">
+            <div className="space-y-2">
+              <Label className="text-xs">Variation Name</Label>
+              <Input
+                placeholder="e.g., 50 Rounds"
+                value={newVariation.name}
+                onChange={(e) => setNewVariation({ ...newVariation, name: e.target.value })}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-xs">Price Modifier ($)</Label>
+              <Input
+                type="number"
+                step="0.01"
+                placeholder="e.g., 10"
+                value={newVariation.price_modifier}
+                onChange={(e) => setNewVariation({ ...newVariation, price_modifier: parseFloat(e.target.value) || 0 })}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-xs">Description</Label>
+              <Input
+                placeholder="e.g., Box of 50"
+                value={newVariation.description}
+                onChange={(e) => setNewVariation({ ...newVariation, description: e.target.value })}
+              />
+            </div>
+          </div>
+          
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              if (!newVariation.name.trim()) {
+                toast.error("Please enter a variation name");
+                return;
+              }
+              setVariations([...variations, newVariation]);
+              setNewVariation({ name: "", price_modifier: 0, description: "" });
+              toast.success("Variation added");
+            }}
+            className="w-full"
+          >
+            <Plus className="h-4 w-4 mr-2" />
+            Add Variation
+          </Button>
+        </CardContent>
+      </Card>
 
       <div className="flex gap-3 pt-4">
         <Button type="submit" className="bg-tactical hover:bg-tactical/90" disabled={uploading}>
