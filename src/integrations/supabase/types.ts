@@ -119,6 +119,13 @@ export type Database = {
             foreignKeyName: "order_items_order_id_fkey"
             columns: ["order_id"]
             isOneToOne: false
+            referencedRelation: "order_details"
+            referencedColumns: ["order_id"]
+          },
+          {
+            foreignKeyName: "order_items_order_id_fkey"
+            columns: ["order_id"]
+            isOneToOne: false
             referencedRelation: "orders"
             referencedColumns: ["id"]
           },
@@ -208,6 +215,7 @@ export type Database = {
           rounds: number
           stock_quantity: number
           updated_at: string | null
+          variations: Json | null
         }
         Insert: {
           caliber: string
@@ -223,6 +231,7 @@ export type Database = {
           rounds?: number
           stock_quantity?: number
           updated_at?: string | null
+          variations?: Json | null
         }
         Update: {
           caliber?: string
@@ -238,6 +247,7 @@ export type Database = {
           rounds?: number
           stock_quantity?: number
           updated_at?: string | null
+          variations?: Json | null
         }
         Relationships: []
       }
@@ -362,7 +372,28 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      order_details: {
+        Row: {
+          created_at: string | null
+          item_id: string | null
+          order_id: string | null
+          order_number: string | null
+          payment_address: string | null
+          payment_method: string | null
+          price: number | null
+          product_id: string | null
+          product_name: string | null
+          product_type: string | null
+          quantity: number | null
+          shipping_address: Json | null
+          status: string | null
+          total_amount: number | null
+          updated_at: string | null
+          user_id: string | null
+          variation: Json | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       get_user_role: {
