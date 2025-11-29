@@ -19,6 +19,13 @@ import { useCart } from "@/hooks/useCart";
 import { generateProductLoadDataPDF } from "@/utils/pdfGenerator";
 import { firearms } from "@/data/firearms";
 import { ProductReviews } from "@/components/reviews/ProductReviews";
+import { supabase } from "@/integrations/supabase/client";
+
+interface DBVariation {
+  name: string;
+  price_modifier: number;
+  description: string;
+}
 
 const ProductDetail = () => {
   // Add variations to all products
@@ -29,7 +36,47 @@ const ProductDetail = () => {
   const { addToCart } = useCart();
   const product = products.find(p => p.id === id);
   const [quantity, setQuantity] = useState(1);
-  const [selectedVariation, setSelectedVariation] = useState<{ rounds: number; price: number } | null>(null);
+  const [selectedVariation, setSelectedVariation] = useState<{ name: string; price: number } | null>(null);
+  const [dbVariations, setDbVariations] = useState<DBVariation[]>([]);
+  const [loadingVariations, setLoadingVariations] = useState(false);
+
+  useEffect(() => {
+    if (id) {
+      fetchVariations();
+    }
+  }, [id]);
+
+  const fetchVariations = async () => {
+    if (!id) return;
+    
+    setLoadingVariations(true);
+    try {
+      const { data, error } = await supabase
+        .from('products')
+        .select('variations')
+        .eq('id', id)
+        .maybeSingle();
+
+      if (error) throw error;
+      
+      if (data?.variations) {
+        setDbVariations(data.variations as unknown as DBVariation[]);
+      }
+    } catch (error) {
+      console.error('Error fetching variations:', error);
+    } finally {
+      setLoadingVariations(false);
+    }
+  };
+
+  // Use database variations if available
+  const variations = dbVariations.length > 0 
+    ? dbVariations.map(v => ({
+        name: v.name,
+        price: (product?.price || 0) + v.price_modifier,
+        description: v.description
+      }))
+    : [];
 
   if (!product) {
     return (
@@ -57,8 +104,10 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
+    if (!product) return;
+    
     const actualPrice = selectedVariation ? selectedVariation.price : product.price;
-    const actualRounds = selectedVariation ? selectedVariation.rounds : product.rounds;
+    const variationLabel = selectedVariation ? selectedVariation.name : `${product.rounds} rounds`;
     
     for (let i = 0; i < quantity; i++) {
       addToCart({
@@ -68,13 +117,13 @@ const ProductDetail = () => {
         image: "/placeholder.svg",
         type: 'product',
         variation: selectedVariation ? {
-          type: 'rounds',
-          value: `${actualRounds} rounds`
+          type: 'package',
+          value: variationLabel
         } : undefined
       });
     }
     
-    toast.success(`Added ${quantity}x ${product.name} (${actualRounds} rounds) to cart`);
+    toast.success(`Added ${quantity}x ${product.name} (${variationLabel}) to cart`);
   };
 
   const incrementQuantity = () => setQuantity(prev => Math.min(prev + 1, 50));
@@ -361,31 +410,33 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            {/* Quantity Variations */}
-            {product.quantityVariations && product.quantityVariations.length > 0 && (
+            {/* Package Variations */}
+            {variations.length > 0 && (
               <div>
                 <label className="text-sm font-semibold mb-1 block">Select Package:</label>
                 <div className="flex flex-wrap gap-2">
-                  {product.quantityVariations.map((variant, idx) => (
+                  {variations.map((variant, idx) => (
                     <button
                       key={idx}
                       onClick={() => {
-                        setSelectedVariation({ rounds: variant.rounds, price: variant.price });
+                        setSelectedVariation({ name: variant.name, price: variant.price });
                         setQuantity(1);
                       }}
                       className={`px-3 py-2 text-xs sm:text-sm font-semibold rounded-lg border-2 transition-all duration-200 ${
-                        selectedVariation?.rounds === variant.rounds
+                        selectedVariation?.name === variant.name
                           ? 'bg-primary text-primary-foreground border-primary shadow-md scale-105'
-                          : variant.inStock
-                          ? 'bg-background border-border hover:border-primary hover:bg-primary/5 hover:scale-105'
-                          : 'bg-muted text-muted-foreground border-border opacity-50 cursor-not-allowed'
+                          : 'bg-background border-border hover:border-primary hover:bg-primary/5 hover:scale-105'
                       }`}
-                      disabled={!variant.inStock}
                     >
-                      {variant.rounds} Rounds
+                      {variant.name}
                       <span className="block text-xs mt-0.5 font-normal">
                         ${variant.price.toFixed(2)}
                       </span>
+                      {variant.description && (
+                        <span className="block text-[10px] text-muted-foreground">
+                          {variant.description}
+                        </span>
+                      )}
                     </button>
                   ))}
                 </div>
