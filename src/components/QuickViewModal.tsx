@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +7,7 @@ import { Product } from "@/data/products";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
 import { useCart } from "@/hooks/useCart";
+import { supabase } from "@/integrations/supabase/client";
 
 interface QuickViewModalProps {
   product: Product | null;
@@ -14,16 +15,66 @@ interface QuickViewModalProps {
   onClose: () => void;
 }
 
+interface DBVariation {
+  name: string;
+  price_modifier: number;
+  description: string;
+}
+
 export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps) {
   const [selectedVariation, setSelectedVariation] = useState(0);
+  const [dbVariations, setDbVariations] = useState<DBVariation[]>([]);
+  const [loading, setLoading] = useState(false);
   const { addToCart } = useCart();
+
+  useEffect(() => {
+    if (product && isOpen) {
+      fetchVariations();
+    }
+  }, [product, isOpen]);
+
+  const fetchVariations = async () => {
+    if (!product) return;
+    
+    setLoading(true);
+    try {
+      const { data, error } = await supabase
+        .from('products')
+        .select('variations')
+        .eq('id', product.id)
+        .maybeSingle();
+
+      if (error) throw error;
+      
+      if (data?.variations) {
+        setDbVariations(data.variations as unknown as DBVariation[]);
+      }
+    } catch (error) {
+      console.error('Error fetching variations:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   if (!product) return null;
 
-  const currentVariation = product.quantityVariations?.[selectedVariation] || {
-    rounds: product.rounds,
+  // Use database variations if available, otherwise fall back to local data
+  const variations = dbVariations.length > 0 
+    ? dbVariations.map(v => ({
+        name: v.name,
+        price: product.price + v.price_modifier,
+        description: v.description
+      }))
+    : product.quantityVariations?.map(v => ({
+        name: `${v.rounds} rounds`,
+        price: v.price,
+        description: `Box of ${v.rounds}`
+      })) || [];
+
+  const currentVariation = variations[selectedVariation] || {
+    name: `${product.rounds} rounds`,
     price: product.price,
-    inStock: product.inStock,
+    description: `Box of ${product.rounds}`
   };
 
   const handleAddToCart = () => {
@@ -31,15 +82,15 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
       id: product.id,
       name: product.name,
       price: currentVariation.price,
-      image: "/placeholder.svg",
+      image: (product as any).image || "/placeholder.svg",
       type: 'product',
-      variation: product.quantityVariations ? {
-        type: 'rounds',
-        value: `${currentVariation.rounds} rounds`
+      variation: variations.length > 0 ? {
+        type: 'package',
+        value: currentVariation.name
       } : undefined
     });
     
-    toast.success(`Added ${product.name} (${currentVariation.rounds} rounds) to cart`);
+    toast.success(`Added ${product.name} (${currentVariation.name}) to cart`);
   };
 
   return (
@@ -64,25 +115,6 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
                 className="w-full h-full object-cover"
               />
             </div>
-            
-            {/* Thumbnail Gallery - if product has variations with images */}
-            {product.quantityVariations && product.quantityVariations.some(v => v.image) && (
-              <div className="grid grid-cols-4 gap-2">
-                {product.quantityVariations.filter(v => v.image).slice(0, 4).map((variation, idx) => (
-                  <div
-                    key={idx}
-                    className="aspect-square bg-muted rounded border border-border cursor-pointer hover:border-primary transition-colors overflow-hidden"
-                    onClick={() => setSelectedVariation(idx)}
-                  >
-                    <img
-                      src={variation.image || "/placeholder.svg"}
-                      alt={`${product.name} variation`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
 
           {/* Product Details */}
@@ -99,7 +131,7 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
                     {product.manufacturer}
                   </Badge>
                 )}
-                {currentVariation.inStock ? (
+                {product.inStock ? (
                   <Badge className="bg-tactical text-tactical-foreground">
                     In Stock
                   </Badge>
@@ -117,29 +149,33 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
                 ${currentVariation.price.toFixed(2)}
               </div>
               <div className="text-sm text-muted-foreground">
-                {currentVariation.rounds} rounds
+                {currentVariation.name}
               </div>
+              {currentVariation.description && (
+                <div className="text-xs text-muted-foreground">
+                  {currentVariation.description}
+                </div>
+              )}
             </div>
 
             <Separator />
 
-            {/* Quantity Variations */}
-            {product.quantityVariations && product.quantityVariations.length > 1 && (
+            {/* Package Variations */}
+            {variations.length > 0 && (
               <div className="space-y-3">
-                <label className="text-sm font-medium">Select Quantity</label>
+                <label className="text-sm font-medium">Select Package</label>
                 <div className="grid grid-cols-2 gap-2">
-                  {product.quantityVariations.map((variation, idx) => (
+                  {variations.map((variation, idx) => (
                     <Button
                       key={idx}
                       variant={selectedVariation === idx ? "default" : "outline"}
                       onClick={() => setSelectedVariation(idx)}
                       className="flex flex-col h-auto py-3 items-start"
-                      disabled={!variation.inStock}
                     >
-                      <span className="font-semibold">{variation.rounds} rounds</span>
+                      <span className="font-semibold">{variation.name}</span>
                       <span className="text-sm">${variation.price.toFixed(2)}</span>
-                      {!variation.inStock && (
-                        <span className="text-xs text-destructive">Out of Stock</span>
+                      {variation.description && (
+                        <span className="text-xs text-muted-foreground">{variation.description}</span>
                       )}
                     </Button>
                   ))}
@@ -160,8 +196,8 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
                 </div>
                 <div className="flex items-center gap-2">
                   <Package className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-muted-foreground">Rounds:</span>
-                  <span className="font-medium">{currentVariation.rounds}</span>
+                  <span className="text-muted-foreground">Package:</span>
+                  <span className="font-medium">{currentVariation.name}</span>
                 </div>
                 {product.grainWeight && (
                   <div className="flex items-center gap-2">
@@ -199,10 +235,10 @@ export function QuickViewModal({ product, isOpen, onClose }: QuickViewModalProps
                 className="flex-1"
                 size="lg"
                 onClick={handleAddToCart}
-                disabled={!currentVariation.inStock}
+                disabled={loading}
               >
                 <ShoppingCart className="mr-2 h-5 w-5" />
-                Add to Cart
+                {loading ? 'Loading...' : 'Add to Cart'}
               </Button>
               <Button
                 variant="outline"
