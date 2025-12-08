@@ -218,9 +218,68 @@ export const ammoImages: Record<string, string> = {
   "762x39-tula-steel": "/images/ammo/hornady-308.png",
 };
 
-// Helper function to get firearm image with fallback
-export const getFirearmImage = (id: string): string => {
-  return firearmImages[id] || "/placeholder.svg";
+// Helper function to get firearm image with smart fallbacks based on manufacturer and type
+export const getFirearmImage = (id: string, manufacturer?: string, actionType?: string): string => {
+  // Try exact match first
+  if (firearmImages[id]) return firearmImages[id];
+  
+  const idLower = id.toLowerCase();
+  const mfgLower = (manufacturer || "").toLowerCase();
+  
+  // Try partial ID matching
+  for (const [key, value] of Object.entries(firearmImages)) {
+    if (idLower.includes(key) || key.includes(idLower)) {
+      return value;
+    }
+  }
+  
+  // Manufacturer-based fallbacks
+  if (mfgLower.includes("glock")) return "/images/firearms/glock-17.png";
+  if (mfgLower.includes("sig") || mfgLower.includes("sauer")) return "/images/firearms/sig-p320-axg-legion.png";
+  if (mfgLower.includes("smith") || mfgLower.includes("wesson") || mfgLower === "s&w") return "/images/firearms/sw-mp9-m2.png";
+  if (mfgLower.includes("beretta")) return "/images/firearms/beretta-92fs.png";
+  if (mfgLower.includes("fn") || mfgLower.includes("fabrique")) return "/images/firearms/fn-509-tactical.png";
+  if (mfgLower.includes("hk") || mfgLower.includes("heckler") || mfgLower.includes("koch")) return "/images/firearms/hk-vp9.png";
+  if (mfgLower.includes("walther")) return "/images/firearms/walther-ppq.png";
+  if (mfgLower.includes("springfield")) return "/images/firearms/springfield-1911.png";
+  if (mfgLower.includes("kimber")) return "/images/firearms/kimber-1911.png";
+  if (mfgLower.includes("ruger")) return "/images/firearms/ruger-57.png";
+  if (mfgLower.includes("colt")) return "/images/firearms/colt-python.png";
+  if (mfgLower.includes("canik")) return "/images/firearms/canik-tp9.png";
+  if (mfgLower.includes("cz") || mfgLower.includes("ceska")) return "/images/firearms/cz-p10c.png";
+  if (mfgLower.includes("remington")) {
+    if (idLower.includes("870") || idLower.includes("shotgun")) return "/images/firearms/remington-870.png";
+    if (idLower.includes("700")) return "/images/firearms/remington-700.png";
+    return "/images/firearms/remington-700.png";
+  }
+  if (mfgLower.includes("mossberg")) return "/images/firearms/mossberg-500.png";
+  if (mfgLower.includes("benelli")) return "/images/firearms/benelli-m4.png";
+  if (mfgLower.includes("winchester")) return "/images/firearms/remington-700.png";
+  if (mfgLower.includes("savage")) return "/images/firearms/remington-700.png";
+  if (mfgLower.includes("tikka")) return "/images/firearms/remington-700.png";
+  if (mfgLower.includes("daniel") || mfgLower.includes("dd")) return "/images/firearms/dd-ddm4.png";
+  if (mfgLower.includes("iwi")) return "/images/firearms/iwi-tavor.png";
+  if (mfgLower.includes("zastava") || mfgLower.includes("ak")) return "/images/firearms/ak47.png";
+  
+  // Action type based fallbacks
+  const actionLower = (actionType || "").toLowerCase();
+  if (actionLower.includes("bolt")) return "/images/firearms/remington-700.png";
+  if (actionLower.includes("pump") || actionLower.includes("shotgun")) return "/images/firearms/remington-870.png";
+  if (actionLower.includes("semi") && actionLower.includes("shotgun")) return "/images/firearms/benelli-m4.png";
+  if (actionLower.includes("over") || actionLower.includes("under") || actionLower.includes("break")) return "/images/firearms/remington-870.png";
+  if (actionLower.includes("lever")) return "/images/firearms/remington-700.png";
+  if (actionLower.includes("revolver")) return "/images/firearms/sw-686.png";
+  
+  // ID keyword matching
+  if (idLower.includes("ar") || idLower.includes("rifle") && idLower.includes("semi")) return "/images/firearms/ar15-standard.png";
+  if (idLower.includes("ak") || idLower.includes("kalash")) return "/images/firearms/ak47.png";
+  if (idLower.includes("shotgun") || idLower.includes("12ga") || idLower.includes("gauge")) return "/images/firearms/remington-870.png";
+  if (idLower.includes("revolver")) return "/images/firearms/sw-686.png";
+  if (idLower.includes("1911")) return "/images/firearms/springfield-1911.png";
+  if (idLower.includes("pistol") || idLower.includes("handgun")) return "/images/firearms/glock-17.png";
+  
+  // Default to a generic pistol
+  return "/images/firearms/glock-17.png";
 };
 
 // Helper function to get ammo image with fallback  

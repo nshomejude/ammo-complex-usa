@@ -26,9 +26,8 @@ interface FirearmCardProps {
 }
 
 export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPrice, inStock: initialInStock, actionType, image: initialImage, capacity, quantityVariations }: FirearmCardProps) => {
-  // Use mapped image or fallback to provided image or placeholder
-  const mappedImage = getFirearmImage(id);
-  const displayImage = mappedImage !== "/placeholder.svg" ? mappedImage : (initialImage || placeholderImage);
+  // Use mapped image with smart fallbacks based on manufacturer and action type
+  const displayImage = getFirearmImage(id, manufacturer, actionType) || initialImage || placeholderImage;
   
   const [selectedVariation, setSelectedVariation] = useState({
     quantity: 1,
