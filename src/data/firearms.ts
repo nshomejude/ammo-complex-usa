@@ -54,6 +54,7 @@ export const firearms: Firearm[] = [
     barrelLength: "4.49 inches",
     weight: "25.06 oz",
     finish: "Matte Black",
+    imageUrl: "/images/firearms/glock-17.png",
     shortDescription: "The Glock 17 is the original full-size polymer pistol that revolutionized the firearms industry. Adopted by law enforcement and military units in over 65 countries, it sets the standard for reliability and durability.",
     longDescription: "The Glock 17 Gen5 represents over three decades of continuous refinement and innovation in pistol design. As the pistol that started the polymer revolution, the Glock 17 has earned its reputation through millions of rounds fired in the world's most demanding conditions. From police departments to special forces units, the Glock 17 has proven itself time and again as a reliable, accurate, and exceptionally durable service pistol. The Gen5 model incorporates feedback from military and law enforcement professionals worldwide, featuring improved ergonomics, enhanced accuracy, and refined trigger characteristics. With its 17-round magazine capacity, the Glock 17 provides substantial firepower in a package that remains surprisingly manageable for shooters of all experience levels. The pistol's simple design with only 34 parts means it's incredibly easy to maintain and virtually impervious to adverse conditions including extreme temperatures, sand, mud, and water immersion.",
     features: [
@@ -117,6 +118,7 @@ export const firearms: Firearm[] = [
     barrelLength: "4.02 inches",
     weight: "23.65 oz",
     finish: "Matte Black",
+    imageUrl: "/images/firearms/glock-19.png",
     shortDescription: "The Glock 19 is the world's most popular pistol, perfectly balancing compact concealability with full-size shootability. Trusted by more law enforcement agencies and civilians than any other handgun.",
     longDescription: "The Glock 19 Gen5 represents the perfect compromise between size and capability, earning its reputation as the most versatile and widely adopted pistol in modern history. With over 65% of U.S. law enforcement agencies carrying Glock pistols, and the Glock 19 being the most common model, it has proven itself as the ultimate do-everything handgun. The compact 19 retains the reliability and durability of the full-size Glock 17 while reducing both length and height for improved concealability. Despite its compact dimensions, the Glock 19 maintains a full-size grip that accommodates all but the largest hands, providing excellent control and comfortable extended shooting sessions. The Gen5 iteration incorporates refinements based on millions of rounds of real-world use, including the renowned Glock Marksman Barrel for enhanced accuracy, ambidextrous slide stops, and removal of finger grooves for universal comfort. Whether serving as a duty pistol, concealed carry gun, competition pistol, or home defense weapon, the Glock 19 excels in every role. Its 15+1 capacity provides substantial firepower in a package small enough for all-day concealed carry, while the reduced size and weight minimize fatigue during training. The Glock 19 has become the gold standard by which all other compact pistols are judged.",
     features: [
@@ -181,6 +183,7 @@ export const firearms: Firearm[] = [
     barrelLength: "4.49 inches",
     weight: "25.59 oz",
     finish: "Matte Black",
+    imageUrl: "/images/firearms/glock-22.png",
     shortDescription: "Law enforcement's trusted .40 S&W duty pistol with proven stopping power and Glock reliability. The G22 has served more police officers than any other .40 caliber handgun in history.",
     longDescription: "The Glock 22 revolutionized law enforcement when it was introduced in 1990, becoming the most widely issued .40 S&W duty pistol in American police history. Designed specifically for the FBI's demanding specifications, the G22 chambers the powerful .40 S&W cartridge that bridges the gap between 9mm capacity and .45 ACP stopping power. Its full-size frame accommodates 15+1 rounds while maintaining the legendary Glock reliability that has made it a favorite among law enforcement agencies worldwide. The G22 features Glock's Safe Action trigger system, providing consistent trigger pull and multiple automatic safeties without external levers. The polymer frame with accessory rail accepts tactical lights and lasers, while the tenifer-finished slide resists corrosion and wear. The 4.49-inch barrel delivers excellent accuracy and manageable recoil, making it suitable for both duty use and civilian self-defense. With over two decades of proven performance in the field, the Glock 22 continues to serve as the backbone of many police departments across the United States.",
     features: [
@@ -240,6 +243,7 @@ export const firearms: Firearm[] = [
     barrelLength: "4.02 inches",
     weight: "23.65 oz",
     finish: "Matte Black",
+    imageUrl: "/images/firearms/glock-23.png",
     shortDescription: "Compact .40 S&W powerhouse combining full-power performance with concealable size. The G23 delivers duty-grade stopping power in a package suitable for both law enforcement and concealed carry.",
     longDescription: "The Glock 23 represents the perfect balance between power and portability, chambering the potent .40 S&W cartridge in a compact frame that's easier to conceal than full-size duty pistols. Often called the 'Baby Glock 22,' the G23 delivers identical ballistic performance in a more compact package that appeals to both plainclothes officers and armed citizens. The slightly shorter barrel and grip reduce printing when carried concealed while maintaining 13+1 capacity—only two rounds less than the full-size G22. This pistol has become one of Glock's best-selling models, popular with detectives, off-duty officers, and civilians who want serious stopping power without sacrificing concealability. The G23's compact dimensions make it comfortable for all-day carry while the robust .40 S&W chambering ensures effectiveness against threats. The polymer frame with integrated rail accommodates compact weapon lights, and the shorter slide cycles quickly for rapid follow-up shots. With Gen5 improvements including ambidextrous controls and improved ergonomics, the G23 continues to serve as the workhorse pistol for those who demand .40 caliber performance in a concealable package.",
     features: [
@@ -417,6 +421,7 @@ export const firearms: Firearm[] = [
     barrelLength: "4.7 inches",
     weight: "29.4 oz",
     finish: "Nitron Black",
+    imageUrl: "/images/firearms/sig-p320-axg-legion.png",
     shortDescription: "The SIG Sauer P320 is the revolutionary modular pistol that won the U.S. military's Modular Handgun System competition. Trusted by the armed forces as the M17/M18, it offers unparalleled versatility and performance.",
     longDescription: "The SIG Sauer P320 represents a paradigm shift in pistol design with its innovative modular construction. After a rigorous evaluation process, the U.S. military selected the P320 to replace the legendary M9, designating it as the M17 (full-size) and M18 (compact). This historic adoption validates the P320's exceptional accuracy, reliability, and versatility. Unlike traditional pistols where the frame is the serialized firearm, the P320's fire control unit is the registered component, allowing users to easily swap grip modules, slides, and barrels to configure the pistol for different roles and preferences. This modularity means one P320 can serve as a duty pistol, compact carry gun, or competition pistol simply by changing components. The striker-fired trigger system delivers a smooth, consistent pull that enhances accuracy, while the low bore axis reduces muzzle rise for faster follow-up shots. With its impressive track record in military service and law enforcement adoption across the United States, the P320 has proven itself as one of the finest service pistols available today.",
     features: [
