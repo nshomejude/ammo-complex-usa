@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+    
+    <script>
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHBM28Z');
+</script>
+    
+
+    
+<title></title>
+
+<meta charset="utf-8" />
+
+<!--[if ie]><meta http-equiv=X-UA-Compatible content="IE=Edge"><![endif]-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content=index,follow />
+<meta name="title" />
+<meta name="revisit-after" content="4 days" />
+    <meta name="google-site-verification" content="XNYDhXbgREREXr1wcRxNGAX1yl-WCK7Z5zyaf0DXN2A" />
+
+<!-- Canonical tag -->
+    <link rel="canonical" href="https://us.glock.com/Global/Error%20Pages/Error%20Page" />
+<link rel="alternate" hreflang="en-us" href="https://us.glock.com/" />
+<link rel="alternate" hreflang="en-ca" href="https://us.glock.com/" />
+<link rel="alternate" hreflang="pt-br" href="https://br.glock.com/" />
+<link rel="alternate" hreflang="x-default" href="https://eu.glock.com/" />
+
+<!-- The offscreen image audit test functionality of Lighthouse had a bug that detected images that should be loaded deferred incorrectly        -->
+<!-- The bug was fixed in may 2020. Currently Lighthouse shows only minor possible improvements by deferred loading of images with the given url -->
+<!-- https://developers.google.com/speed/pagespeed/insights/?utm_source=analytics&tab=mobile&url=http%3A%2F%2Feu.glock.com%2Fen%2Fproducts%2Fpistols%3Ffilter%3D9mmluger -->
+<!-- It now shows a saving of deferred image loading of 4kb... -->
+<!-- https://github.com/GoogleChrome/lighthouse/issues/6677 -->
+<!-- A massive improvement of about 6 seconds according to lighthouse can be done by preloading fonts. That is what the next 3 lines do.-->
+
+<link rel="preload" href="/static/css/fonts/GLOCKSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/css/fonts/GLOCKSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/css/fonts/GLOCKSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Page Not Found" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="https://us.glock.com/en/Settings/Error-Site/NotFound" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+
+<!-- favicons -->
+    <link rel="icon" type="image/png" href="/static/img/favicon/pistol/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/static/img/favicon/pistol/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/img/favicon/pistol/favicon-96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/static/img/favicon/pistol/favicon-32.png?v=c305c88e-6d08-41e4-a87c-b3c24aa52a90" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicon/pistol/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicon/pistol/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicon/pistol/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicon/pistol/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicon/pistol/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicon/pistol/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicon/pistol/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicon/pistol/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/pistol/favicon-180.png">
+
+    <link rel="stylesheet" href="/static/css/glock.min.css" />
+
+
+<link rel="stylesheet" href="/static/plugins/flowplayer/skin/skin.css">
+
+
+
+<style>
+    :root {
+        --color-primary: #f58220;
+        --color-secondary: #333333;
+        --color-secondary-90: #333333e9;
+        --color-background: #efefef;
+        --color-highlight: #f58220;
+        --color-main-menu: #000;
+        --color-top-menu-bar: #252525;
+        --color-top-menu-bar-font: #fff;
+    }
+    ;
+</style>
+
+
+
+    <link rel="preconnect" href="https://tags.crwdcntrl.net">
+    <link rel="preconnect" href="https://bcp.crwdcntrl.net">
+    <link rel="dns-prefetch" href="https://tags.crwdcntrl.net">
+    <link rel="dns-prefetch" href="https://bcp.crwdcntrl.net">
+    <script>
+        ! function () {
+            var lotameClientId = '14495';
+            var lotameTagInput = {
+                data: {},
+                config:
+
+                    { clientId: Number(lotameClientId) }
+
+            };
+
+            // Lotame initialization
+            var lotameConfig = lotameTagInput.config || {};
+            var namespace = window['lotame_' + lotameConfig.clientId] = {};
+            namespace.config = lotameConfig;
+            namespace.data = lotameTagInput.data || {};
+            namespace.cmd = namespace.cmd || [];
+        }();
+    </script>
+    <script async src="https://tags.crwdcntrl.net/lt/c/14495/lt.min.js"></script>
+
+<script>
+        var companySettings = 'US';
+</script>
+
+</head>
+<body class="max-width-enabled modern-ui-enabled us-header-enabled ">
+    
+<header class="us-header" style="opacity:0" id="us-header">
+        <div class="us-header__logo">
+            <div class="us-header__logo__inner">
+                <a class="us-header__logo__link" href="/">
+                    <img src="/-/media/Global/EU/GLOCK-GmbH-2019/EU_Global_Elements/GLOCK-Perfection_Logo/GLOCK-Logo_0-0-0-0.ashx" class="us-header__logo__img" alt="Glock Logo" />
+                </a>
+            </div>
+        </div>
+    <ul class="us-header__mobile-list">
+        <li class="us-header__mobile-list__search-item">
+            <a href="javascript:void(0)" class="us-header__mobile-list__search-link js-modern-search-trigger">
+                <svg class="us-header__mobile-list__search-link__icon">
+                    <use xlink:href="/static/img/sprite.svg#menu-search"></use>
+                </svg>
+            </a>
+            <form class="js-search-form us-header__search-form" action="/en/search" method="get">
+                <div class="us-header__search-form__inner">
+                    <input type="text" class="us-header__search-form__query js-search-input" placeholder="Search" name="searchword"
+                           value="">
+                    <button class="us-header__search-form__btn-clear js-search-clear" title="Clear" type="button">
+                        <svg>
+                            <use xlink:href="/static/img/sprite.svg#search-clear"></use>
+                        </svg>
+                    </button>
+                    <button class="us-header__search-form__btn-search js-search-submit" title="Search"
+                            type="submit">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </li>
+        <li>
+            <button class="us-header__nav--toggler collapsed no-transition" type="button" data-toggle="collapse"
+                    data-target="#us-header__nav" aria-controls="us-header__nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="us-header__nav--toggler-icon">
+                    <svg class="us-header__nav--toggler-icon-open">
+                        <use xlink:href="/static/img/sprite.svg#navbar-open"></use>
+                    </svg>
+                    <svg class="us-header__nav--toggler-icon-close">
+                        <use xlink:href="/static/img/sprite.svg#navbar-close"></use>
+                    </svg>
+                </span>
+            </button>
+        </li>
+    </ul>
+    <nav class="us-header__nav" id="us-header__nav">
+        <ul class="us-header__nav-items us-header__nav__list">
+                            <li class="">
+                    
+                    
+
+                        <a href="javascript:void(0)">PRODUCTS</a>
+                                            <div class="us-header-sub">
+                            <ul class="two-levels">
+                                        <li>
+                                                <span>Firearms</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/products/commercial-firearms" class="" >Commercial Firearms</a>                                                        </li>
+                                                        <li>
+<a href="/en/products/law-enforcement" class="" >Law Enforcement Firearms</a>                                                        </li>
+                                                        <li>
+<a href="/en/dealer-locator-usa" class="" >Find a Dealer</a>                                                        </li>
+                                                        <li>
+<a href="/en/products/blue-label-program" class="" >Blue Label Program</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>Parts and Accessories</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/products/plus" class="" >GLOCK+</a>                                                        </li>
+                                                        <li>
+<a href="https://store.glock.us/accessories" class="us-header__link--external" >GLOCK Accessories</a>                                                        </li>
+                                                        <li>
+<a href="https://store.glock.us/parts" class="us-header__link--external" >Firearm Parts</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>Apparel and Gifts</span>
+                                            <ul>
+                                                        <li>
+<a href="https://store.glock.us/" class="us-header__link--external" >GLOCK Shop</a>                                                        </li>
+                                                        <li>
+<a href="https://store.glock.us/apparel" class="us-header__link--external" >Apparel</a>                                                        </li>
+                                                        <li>
+<a href="https://store.glock.us/gifts" class="us-header__link--external" >Gifts</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                            </ul>
+                        </div>
+                </li>
+                <li class="">
+                    
+                    
+
+                        <a href="javascript:void(0)">ABOUT</a>
+                                            <div class="us-header-sub">
+                            <ul class="two-levels">
+                                        <li>
+                                                <span>Resources</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/about/resources/all-about-pistols" class="" >All About Pistols</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/resources/how-to-buy" class="" >How to Buy</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/resources/SAFE" class="" >Safety</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/resources/Events" class="" >Events</a>                                                        </li>
+                                                        <li>
+<a href="/en/Wishlist" class="" >Wishlist</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>Technology</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/about/technology" class="" >GLOCK Technology</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/technology/Safe-Action-System" class="" >Safe Action System</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/technology/performance-trigger" class="" >Performance Trigger</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/technology/gtl2" class="" >GTL II</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/technology/MOS" class="" >MOS</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>About GLOCK</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/about/brand/GLOCK-Brand" class="" >Brand</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/History" class="" >History</a>                                                        </li>
+                                                        <li>
+<a href="/en/PROFESSIONALS" class="" >Professional</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                            </ul>
+                        </div>
+                </li>
+                <li class="">
+                    
+                    
+
+                        <a href="javascript:void(0)">OWNER RESOURCES</a>
+                                            <div class="us-header-sub">
+                            <ul class="two-levels">
+                                        <li>
+                                                <span>Community</span>
+                                            <ul>
+                                                        <li>
+<a href="https://glocksafety.com/" class="us-header__link--external" >Safety Pledge</a>                                                        </li>
+                                                        <li>
+<a href="https://glockiq.com" class="us-header__link--external" >GLOCK IQ</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/community" class="" title="Community Resources" >Community Resources</a>                                                        </li>
+                                                        <li>
+<a href="https://gssf.pro" class="us-header__link--external" >GLOCK Sport Shooting</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/community/newsletter" class="" >Newsletter</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>Owner Resources</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/owners-resources/Warranty" class="" >Warranty Activation</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/Customer-Service" class="" >Customer Service</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/Downloadable-Materials" class="" >Downloadable Materials</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/FAQs" class="" >FAQs</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>Education</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/owners-resources/education/caring-for-your-pistol" class="" >Caring for your GLOCK</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/education/gun-range-etiquette" class="" >Gun Range Etiquette</a>                                                        </li>
+                                                        <li>
+<a href="/en/owners-resources/education/team-glock" class="" >Team GLOCK University</a>                                                        </li>
+                                                        <li>
+<a href="/en/about/resources/SAFE" class="" >Safety</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                                        <li>
+                                                <span>Dealers and Professionals</span>
+                                            <ul>
+                                                        <li>
+<a href="/en/owners-resources/dealers-professionals/programs" class="" >Dealer Programs</a>                                                        </li>
+                                                        <li>
+<a href="/en/PROFESSIONALS" class="" >Professional</a>                                                        </li>
+                                                                                            </ul>
+                                        </li>
+                            </ul>
+                        </div>
+                </li>
+
+            <li class="us-header__nav__search">
+                <a href="javascript:void(0)" class="js-modern-search-trigger">
+                    <svg class="mm-search-button__icon js-mm-search-button">
+                        <use xlink:href="/static/img/sprite.svg#menu-search"></use>
+                    </svg>
+                </a>
+                <div class="us-header-sub">
+                    <form class="js-search-form us-header__search-form" action="/en/search" method="get">
+                        <input type="text" class="us-header__search-form__query js-search-input" placeholder="Search" name="searchword" value="">
+                        <button class="js-search-form us-header__search-form__btn-clear js-search-clear" title="Clear" type="button">
+                            <svg>
+                                <use xlink:href="/static/img/sprite.svg#search-clear"></use>
+                            </svg>
+                        </button>
+                        <button class="js-search-form us-header__search-form__btn-search js-search-submit" title="Search" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+            <ul class="us-header__nav-right us-header__nav-items us-header__nav__list">
+                                <li class="">
+                    
+                    
+
+<a href="/en/Contact-Us" >Contact Us</a>                                    </li>
+                <li class="social-icons-list">
+                    
+    <ul class="us-header__social-icons">
+            <li>
+<a href="https://www.facebook.com/GLOCK" >                    <i class="social-icon">
+                        <svg class="social-icon__svg">
+                            <use xlink:href="/static/img/sprite.svg#facebook-new"/>
+                        </svg>
+                    </i>
+</a>            </li>
+            <li>
+<a href="https://www.instagram.com/glockinc/" >                    <i class="social-icon">
+                        <svg class="social-icon__svg">
+                            <use xlink:href="/static/img/sprite.svg#instagram-new"/>
+                        </svg>
+                    </i>
+</a>            </li>
+            <li>
+<a href="https://twitter.com/GLOCKInc" >                    <i class="social-icon">
+                        <svg class="social-icon__svg">
+                            <use xlink:href="/static/img/sprite.svg#twitter-new"/>
+                        </svg>
+                    </i>
+</a>            </li>
+            <li>
+<a href="https://www.youtube.com/user/GLOCKIncUSA" >                    <i class="social-icon">
+                        <svg class="social-icon__svg">
+                            <use xlink:href="/static/img/sprite.svg#youtube-new"/>
+                        </svg>
+                    </i>
+</a>            </li>
+    </ul>
+
+            </ul>
+    </nav>
+</header>
+
+
+
+
+    <main id="main-content">
+        
+    <div class="rich-text     " style="background-color:inherit; color:inherit;">
+
+<p class="rich-text__header rich-text__header--left ">Page Not Found</p>
+            <div class="rich-text__body">
+                Page not found. To view all pistols, click <a href="/Global/Error Pages/Error Page?item=web%3a%7b22D16C59-9DA9-4C82-AD61-4D71737E032D%7d%40en">here</a>&nbsp;or click <a href="/en/">here</a>&nbsp;to return to the GLOCK homepage.
+            </div>
+
+    </div>
+
+    </main>
+    <div id="tothetop"></div>
+    <footer class="footer-us">
+    <div class="footer-us__container">
+        <h2 class="footer__title">GLOCK Footer</h2>
+        <nav class="footer-us__navigation">
+                <div class="footer-us__column">
+                    <h3 class="footer-us__sub-title">Company</h3>
+                    <ul class="footer-us__navigation-list">
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Contact-Us" class="footer-us__navigation-link" >Contact Us</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/GLOCK-Careers" class="footer-us__navigation-link" >Careers</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Press-Release/News-Page" class="footer-us__navigation-link" >Press</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Donation-and-Sponsorships" class="footer-us__navigation-link" >Donations &amp; Sponsorships</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="footer-us__column">
+                    <h3 class="footer-us__sub-title">Need Help?</h3>
+                    <ul class="footer-us__navigation-list">
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/owners-resources/Customer-Service" class="footer-us__navigation-link" >Customer Service</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/owners-resources/FAQs" class="footer-us__navigation-link" >FAQs</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/products/blue-label-program" class="footer-us__navigation-link" >Blue Label Program</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/PROFESSIONALS" class="footer-us__navigation-link" >Professionals</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="https://glocktraining.com/" class="footer-us__navigation-link" >GLOCK Training</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="footer-us__column">
+                    <h3 class="footer-us__sub-title">Legal</h3>
+                    <ul class="footer-us__navigation-list">
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Personal-Information" class="footer-us__navigation-link" >Do Not Sell or Share My Personal Information</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Privacy-Policy" class="footer-us__navigation-link" >Privacy Policy</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Terms-of-Use" class="footer-us__navigation-link" >Terms of Use</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/en/Whistleblowing" class="footer-us__navigation-link" >Whistleblowing</a>
+                            </li>
+                            <li class="footer-us__navigation-item">
+                                <a href="/-/media/Global/US/old/PDF/Virtual-Patent-Marking_20250930.ashx" class="footer-us__navigation-link" >Patents</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="footer__column footer__column--social">
+        <h3 class="footer__sub-title">Follow</h3>
+        <ul class="footer__navigation-list">
+                <li class="footer__navigation__social-item">
+<a href="https://www.facebook.com/GLOCK" class="footer__navigation__social-link" >                            <i class="social-icon">
+                                <svg class="footer__social-svg">
+                                    <use xlink:href="/static/img/sprite.svg#facebook-new" />
+                                </svg>
+                            </i>
+</a>                </li>
+                <li class="footer__navigation__social-item">
+<a href="https://www.instagram.com/glockinc/" class="footer__navigation__social-link" >                            <i class="social-icon">
+                                <svg class="footer__social-svg">
+                                    <use xlink:href="/static/img/sprite.svg#instagram-new" />
+                                </svg>
+                            </i>
+</a>                </li>
+                <li class="footer__navigation__social-item">
+<a href="https://twitter.com/GLOCKInc" class="footer__navigation__social-link" >                            <i class="social-icon">
+                                <svg class="footer__social-svg">
+                                    <use xlink:href="/static/img/sprite.svg#twitter-new" />
+                                </svg>
+                            </i>
+</a>                </li>
+                <li class="footer__navigation__social-item">
+<a href="https://www.youtube.com/user/GLOCKIncUSA" class="footer__navigation__social-link" >                            <i class="social-icon">
+                                <svg class="footer__social-svg">
+                                    <use xlink:href="/static/img/sprite.svg#youtube-new" />
+                                </svg>
+                            </i>
+</a>                </li>
+        </ul>
+    </div>
+
+        </nav>
+        <div class="footer-us__copyright">
+                <a href="/">&#169;2025 GLOCK, Inc. All rights reserved.</a>
+        </div>
+        
+
+
+
+    </div>
+</footer>
+
+    <div id="breakpoint-xl" class="breakpoint-identify" data-devicetype="xl"></div>
+    <div id="breakpoint-lg" class="breakpoint-identify" data-devicetype="lg"></div>
+    <div id="breakpoint-md" class="breakpoint-identify" data-devicetype="md"></div>
+    <div id="breakpoint-sm" class="breakpoint-identify" data-devicetype="sm"></div>
+    <div id="breakpoint-xs" class="breakpoint-identify" data-devicetype="xs"></div>
+        <script src="/static/javascripts/glock.min.js"></script>
+
+    <script src="/static/plugins/flowplayer/flowplayer.min.js"></script>
+</body>
+</html>

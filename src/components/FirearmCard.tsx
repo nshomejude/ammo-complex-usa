@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 import placeholderImage from "@/assets/placeholder-product.jpg";
+import { getFirearmImage } from "@/utils/productImages";
 import { useState } from "react";
 
 interface FirearmCardProps {
@@ -25,11 +26,15 @@ interface FirearmCardProps {
 }
 
 export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPrice, inStock: initialInStock, actionType, image: initialImage, capacity, quantityVariations }: FirearmCardProps) => {
+  // Use mapped image or fallback to provided image or placeholder
+  const mappedImage = getFirearmImage(id);
+  const displayImage = mappedImage !== "/placeholder.svg" ? mappedImage : (initialImage || placeholderImage);
+  
   const [selectedVariation, setSelectedVariation] = useState({
     quantity: 1,
     price: initialPrice,
     inStock: initialInStock,
-    image: initialImage
+    image: displayImage
   });
   
   const [showPriceChange, setShowPriceChange] = useState(false);
