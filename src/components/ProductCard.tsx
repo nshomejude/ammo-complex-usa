@@ -7,7 +7,6 @@ import placeholderImage from "@/assets/placeholder-product.jpg";
 import { useState } from "react";
 import { WishlistButton } from "@/components/WishlistButton";
 import { ComparisonButton } from "@/components/ComparisonButton";
-import { getAmmoImage } from "@/utils/productImages";
 
 interface ProductCardProps {
   id: string;
@@ -17,6 +16,7 @@ interface ProductCardProps {
   price: number;
   inStock: boolean;
   image?: string;
+  imageUrl?: string;
   quantityVariations?: {
     rounds: number;
     price: number;
@@ -25,10 +25,9 @@ interface ProductCardProps {
   }[];
 }
 
-export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: initialPrice, inStock: initialInStock, image: initialImage, quantityVariations }: ProductCardProps) => {
-  // Use mapped image or fallback to provided image or placeholder
-  const mappedImage = getAmmoImage(id);
-  const displayImage = mappedImage !== "/placeholder.svg" ? mappedImage : (initialImage || placeholderImage);
+export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: initialPrice, inStock: initialInStock, image: initialImage, imageUrl, quantityVariations }: ProductCardProps) => {
+  // Direct image URL approach - use imageUrl or image prop, fallback to placeholder
+  const displayImage = imageUrl || initialImage || placeholderImage;
   
   const [selectedVariation, setSelectedVariation] = useState({
     rounds: initialRounds,
@@ -50,7 +49,7 @@ export const ProductCard = ({ id, name, caliber, rounds: initialRounds, price: i
       rounds: variant.rounds,
       price: variant.price,
       inStock: variant.inStock,
-      image: variant.image || initialImage
+      image: variant.image || displayImage
     });
   };
 

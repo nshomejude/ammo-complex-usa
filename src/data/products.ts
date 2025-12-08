@@ -10,6 +10,7 @@ export interface Product {
   description: string;
   manufacturer?: string;
   grainWeight?: string;
+  imageUrl?: string;
   quantityVariations?: {
     rounds: number;
     price: number;
