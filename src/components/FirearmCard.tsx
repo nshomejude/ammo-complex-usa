@@ -50,7 +50,7 @@ export const FirearmCard = ({ id, name, manufacturer, caliber, price: initialPri
       quantity: variant.quantity,
       price: variant.price,
       inStock: variant.inStock,
-      image: variant.image || initialImage
+      image: variant.image || displayImage
     });
   };
 
